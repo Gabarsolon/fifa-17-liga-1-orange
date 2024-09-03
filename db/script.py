@@ -40,6 +40,7 @@ def change_jersey_number_color(kit_id, color):
 def save_tsv():
     teamkits_df.to_csv(teamkits, sep='\t', encoding='utf-16le', index=False)
     players_df.to_csv(players, sep='\t', encoding='utf-16le', index=False)
+    playernames_df.to_csv(playernames, sep='\t', encoding='utf-16le', index=False)
 
 def change_jersey_name_color(kit_id, color):
     print([col for col in teamkits_df.columns if 'name' in col.lower()])
@@ -130,9 +131,9 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
     print(players_df[players_df.playerid == fifa17_playerid])
     print(playernames_df.iloc[-1])
 
-# save_tsv()
-
 replace_player_from_fifa17_with_one_from_fifa16(
     get_playerid_from_fifa17_given_name_and_team('nnow', fcsb_teamid),
     nitza
 )
+
+save_tsv()
