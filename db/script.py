@@ -11,6 +11,7 @@ nitza = 240007
 nitza_sub = 198455
 
 #FIFA 17 tables
+teams = os.path.join(os.path.dirname(__file__), "teams.txt")
 teamkits = os.path.join(os.path.dirname(__file__), "teamkits.txt")
 players = os.path.join(os.path.dirname(__file__), "players.txt")
 playernames = os.path.join(os.path.dirname(__file__), "playernames.txt")
@@ -21,6 +22,7 @@ fifa16_players = os.path.join(os.path.dirname(__file__), "fifa-16/players.txt")
 fifa16_playernames = os.path.join(os.path.dirname(__file__), "fifa-16/playernames.txt")
 fifa16_teamplayerlinks = os.path.join(os.path.dirname(__file__), "fifa-16/teamplayerlinks.txt")
 
+teams_df = pd.read_csv(teams, sep='\t', encoding='utf-16le')
 teamkits_df = pd.read_csv(teamkits, sep='\t', encoding='utf-16le')
 players_df = pd.read_csv(players, sep='\t', encoding='utf-16le')
 playernames_df = pd.read_csv(playernames, sep='\t', encoding='utf-16le')
@@ -130,10 +132,6 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
     players_df.loc[players_df.playerid == fifa17_playerid, 'playerjerseynameid'] = lastnameid
     print(players_df[players_df.playerid == fifa17_playerid])
     print(playernames_df.iloc[-1])
-
-replace_player_from_fifa17_with_one_from_fifa16(
-    get_playerid_from_fifa17_given_name_and_team('nnow', fcsb_teamid),
-    nitza
-)
-
-save_tsv()
+    
+    
+print([col for col in teams_df.columns if 'id' in col.lower()])
