@@ -73,21 +73,65 @@ def print_player_names():
             playernames_df[playernames_df.nameid == row.commonnameid].name,
             )
 
+def get_player_from_fifa16_given_name_and_team(name, teamid):
+    fifa16_team_players_df = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
+    fifa16_team_players_df = fifa16_team_players_df[fifa16_team_players_df.teamid == teamid]
 
-nitza_df = fifa16_players_df[fifa16_players_df.playerid == nitza]
-nitza_df = nitza_df.drop('playerid', axis=1)
+    for(row) in fifa16_team_players_df.itertuples():
+        firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.firstnameid].name.values[0]
+        lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.lastnameid].name.values[0]
+        
+        if name.lower() in firstname.lower() or name.lower() in lastname.lower():            
+            print(
+                row.playerid,
+                firstname,
+                lastname
+                )
+            return row.playerid
+        
+def get_playerid_from_fifa17_given_name_and_team(name, teamid):
+    team_players_df = pd.merge(players_df, teamplayerlinks_df, on='playerid')
+    team_players_df = team_players_df[team_players_df.teamid == fcsb_teamid]
 
-for column in nitza_df.columns:
-    if column in players_df.columns:
-        players_df.loc[players_df.playerid == nitza_sub, column] = nitza_df[column].values[0]
+    for(row) in team_players_df.itertuples():
+        firstname = playernames_df[playernames_df.nameid == row.firstnameid].name.values[0]
+        lastname = playernames_df[playernames_df.nameid == row.lastnameid].name.values[0]
+        
+        if name.lower() in firstname.lower() or name.lower() in lastname.lower():            
+            print(
+                row.playerid,
+                firstname,
+                lastname
+                )
+            return row.playerid
+   
+def insert_name_into_playernames_df(name):
+    last_available_nameid = playernames_df.iloc[-1].nameid + 1
+    print(playernames_df.iloc[-1])
+    
+    playernames_df.loc[len(playernames_df)] = [name, 900000, last_available_nameid]
+        
+def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_playerid):
+    player_to_replace_df = fifa16_players_df[fifa16_players_df.playerid == fifa16_playerid]
+    player_to_replace_df = player_to_replace_df.drop('playerid', axis=1)
 
-print([col for col in players_df.columns if 'id' in col.lower()])
+    for column in player_to_replace_df.columns:
+        if column in players_df.columns:
+            players_df.loc[players_df.playerid == fifa17_playerid, column] = player_to_replace_df[column].values[0]
 
-print(players_df.loc[players_df.playerid == nitza_sub, 'firstnameid'])
-players_df.loc[players_df.playerid == nitza_sub, 'firstnameid'] = 28708
-players_df.loc[players_df.playerid == nitza_sub, 'lastnameid'] = 28709
-players_df.loc[players_df.playerid == nitza_sub, 'playerjerseynameid'] = 28708
-print(players_df.loc[players_df.playerid == nitza_sub, 'firstnameid'])
+    print([col for col in players_df.columns if 'id' in col.lower()])
+
+    print(players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'])
+    players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'] = 28708
+    players_df.loc[players_df.playerid == fifa17_playerid, 'lastnameid'] = 28709
+    players_df.loc[players_df.playerid == fifa17_playerid, 'playerjerseynameid'] = 28708
+    print(players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'])
 
 
-save_tsv()
+# save_tsv()
+
+get_playerid_from_fifa17_given_name_and_team('nnow', fcsb_teamid)
+# get_playerid_from_fifa16_given_name_and_team('nitza', fcsb_teamid)
+
+insert_name_into_playernames_df('mata')
+insert_name_into_playernames_df('jeeeeeah')
