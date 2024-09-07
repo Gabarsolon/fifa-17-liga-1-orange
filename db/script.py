@@ -11,6 +11,8 @@ nitza = 240007
 nitza_sub = 198455
 
 #FIFA 17 tables
+default_teamsheets = os.path.join(os.path.dirname(__file__), "default_teamsheets.txt")
+formations = os.path.join(os.path.dirname(__file__), "formations.txt")
 teams = os.path.join(os.path.dirname(__file__), "teams.txt")
 teamkits = os.path.join(os.path.dirname(__file__), "teamkits.txt")
 players = os.path.join(os.path.dirname(__file__), "players.txt")
@@ -18,16 +20,26 @@ playernames = os.path.join(os.path.dirname(__file__), "playernames.txt")
 teamplayerlinks = os.path.join(os.path.dirname(__file__), "teamplayerlinks.txt")
 
 #FIFA 16 tables
+fifa16_defaul_teamsheets = os.path.join(os.path.dirname(__file__), "fifa-16/default_teamsheets.txt")
+fifa16_teams = os.path.join(os.path.dirname(__file__), "fifa-16/teams.txt")
+fifa16_teamkits = os.path.join(os.path.dirname(__file__), "fifa-16/teamkits.txt")
+fifa16_formations = os.path.join(os.path.dirname(__file__), "fifa-16/formations.txt")
 fifa16_players = os.path.join(os.path.dirname(__file__), "fifa-16/players.txt")
 fifa16_playernames = os.path.join(os.path.dirname(__file__), "fifa-16/playernames.txt")
 fifa16_teamplayerlinks = os.path.join(os.path.dirname(__file__), "fifa-16/teamplayerlinks.txt")
 
+default_teamsheets_df = pd.read_csv(default_teamsheets, sep='\t', encoding='utf-16le')
+formations_df = pd.read_csv(formations, sep='\t', encoding='utf-16le')
 teams_df = pd.read_csv(teams, sep='\t', encoding='utf-16le')
 teamkits_df = pd.read_csv(teamkits, sep='\t', encoding='utf-16le')
 players_df = pd.read_csv(players, sep='\t', encoding='utf-16le')
 playernames_df = pd.read_csv(playernames, sep='\t', encoding='utf-16le')
 teamplayerlinks_df = pd.read_csv(teamplayerlinks, sep='\t', encoding='utf-16le')
 
+fifa16_defaul_teamsheets_df = pd.read_csv(fifa16_defaul_teamsheets, sep='\t', encoding='utf-16le')
+fifa16_teams_df = pd.read_csv(fifa16_teams, sep='\t', encoding='utf-16le')
+fifa16_teamkits_df = pd.read_csv(fifa16_teamkits, sep='\t', encoding='utf-16le')
+fifa16_formations_df = pd.read_csv(fifa16_formations, sep='\t', encoding='utf-16le')
 fifa16_players_df = pd.read_csv(fifa16_players, sep='\t', encoding='utf-16le')
 fifa16_playernames_df = pd.read_csv(fifa16_playernames, sep='\t', encoding='utf-16le')
 fifa16_teamplayerlinks_df = pd.read_csv(fifa16_teamplayerlinks, sep='\t', encoding='utf-16le')
@@ -43,6 +55,7 @@ def save_tsv():
     teamkits_df.to_csv(teamkits, sep='\t', encoding='utf-16le', index=False)
     players_df.to_csv(players, sep='\t', encoding='utf-16le', index=False)
     playernames_df.to_csv(playernames, sep='\t', encoding='utf-16le', index=False)
+    formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
 
 def change_jersey_name_color(kit_id, color):
     print([col for col in teamkits_df.columns if 'name' in col.lower()])
@@ -113,7 +126,7 @@ def insert_name_into_playernames_df(name):
     playernames_df.loc[len(playernames_df)] = [name, 900000, last_available_nameid]
     return last_available_nameid
         
-def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_playerid):
+def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_playerid, fifa17_teamid, fifa16_teamid):
     player_to_replace_df = fifa16_players_df[fifa16_players_df.playerid == fifa16_playerid]
     player_to_replace_df = player_to_replace_df.drop('playerid', axis=1)
 
@@ -130,8 +143,25 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
     players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'] = firstnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'lastnameid'] = lastnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'playerjerseynameid'] = lastnameid
+    
+    #adjust teamplayer_links
+    fifa16_teamplayerlink_df = fifa16_teamplayerlinks_df[(fifa16_teamplayerlinks_df.teamid == fifa16_teamid) & (fifa16_teamplayerlinks_df.playerid == fifa16_playerid)]
+    fifa16_teamplayerlink_df = fifa16_teamplayerlink_df.drop(['playerid', 'teamid'], axis=1)
+
+    for column in fifa16_teamplayerlink_df.columns:
+        if column in teamplayerlinks_df.columns:
+            teamplayerlinks_df.loc[(teamplayerlinks_df.playerid == fifa17_playerid)  & (teamplayerlinks_df.teamid == fifa17_teamid), column] = fifa16_teamplayerlink_df[column].values[0]
+        
     print(players_df[players_df.playerid == fifa17_playerid])
     print(playernames_df.iloc[-1])
+
+def replace_formation_from_fifa17_with_one_from_fifa16(fifa17_teamid, fifa16_teamid):
+    formation_to_replace_df = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid]
     
-    
-print([col for col in teams_df.columns if 'id' in col.lower()])
+    for column in formation_to_replace_df.columns:
+        if column.endswith('id') is False:
+            print(column)
+            formations_df.loc[formations_df.teamid == fifa17_teamid, column] = formation_to_replace_df[column].values[0]
+
+
+print([col for col in default_teamsheets_df.columns if col.endswith('id')])
