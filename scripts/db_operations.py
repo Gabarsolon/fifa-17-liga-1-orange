@@ -2,59 +2,6 @@ from pathlib import Path
 import pandas as pd
 import os
 
-#Constants
-fcsb_teamid = 269
-fifa16_fcsb_teamid = 106000
-home_kitid = 0
-away_kitid = 1
-nitza = 240007
-nitza_sub = 198455
-
-#FIFA 17 tables
-defaultteamdata = os.path.join(os.path.dirname(__file__), "defaultteamdata.txt")
-default_teamsheets = os.path.join(os.path.dirname(__file__), "default_teamsheets.txt")
-formations = os.path.join(os.path.dirname(__file__), "formations.txt")
-teams = os.path.join(os.path.dirname(__file__), "teams.txt")
-teamkits = os.path.join(os.path.dirname(__file__), "teamkits.txt")
-players = os.path.join(os.path.dirname(__file__), "players.txt")
-playernames = os.path.join(os.path.dirname(__file__), "playernames.txt")
-teamplayerlinks = os.path.join(os.path.dirname(__file__), "teamplayerlinks.txt")
-
-#FIFA 16 tables
-fifa16_defaultteamdata = os.path.join(os.path.dirname(__file__), "fifa-16/defaultteamdata.txt")
-fifa16_defaul_teamsheets = os.path.join(os.path.dirname(__file__), "fifa-16/default_teamsheets.txt")
-fifa16_teams = os.path.join(os.path.dirname(__file__), "fifa-16/teams.txt")
-fifa16_teamkits = os.path.join(os.path.dirname(__file__), "fifa-16/teamkits.txt")
-fifa16_formations = os.path.join(os.path.dirname(__file__), "fifa-16/formations.txt")
-fifa16_players = os.path.join(os.path.dirname(__file__), "fifa-16/players.txt")
-fifa16_playernames = os.path.join(os.path.dirname(__file__), "fifa-16/playernames.txt")
-fifa16_teamplayerlinks = os.path.join(os.path.dirname(__file__), "fifa-16/teamplayerlinks.txt")
-
-defaultteamdata_df = pd.read_csv(defaultteamdata, sep='\t', encoding='utf-16le')
-default_teamsheets_df = pd.read_csv(default_teamsheets, sep='\t', encoding='utf-16le')
-formations_df = pd.read_csv(formations, sep='\t', encoding='utf-16le')
-teams_df = pd.read_csv(teams, sep='\t', encoding='utf-16le')
-teamkits_df = pd.read_csv(teamkits, sep='\t', encoding='utf-16le')
-players_df = pd.read_csv(players, sep='\t', encoding='utf-16le')
-playernames_df = pd.read_csv(playernames, sep='\t', encoding='utf-16le')
-teamplayerlinks_df = pd.read_csv(teamplayerlinks, sep='\t', encoding='utf-16le')
-
-fifa16_defaultteamdata_df = pd.read_csv(fifa16_defaultteamdata, sep='\t', encoding='utf-16le')
-fifa16_defaul_teamsheets_df = pd.read_csv(fifa16_defaul_teamsheets, sep='\t', encoding='utf-16le')
-fifa16_teams_df = pd.read_csv(fifa16_teams, sep='\t', encoding='utf-16le')
-fifa16_teamkits_df = pd.read_csv(fifa16_teamkits, sep='\t', encoding='utf-16le')
-fifa16_formations_df = pd.read_csv(fifa16_formations, sep='\t', encoding='utf-16le')
-fifa16_players_df = pd.read_csv(fifa16_players, sep='\t', encoding='utf-16le')
-fifa16_playernames_df = pd.read_csv(fifa16_playernames, sep='\t', encoding='utf-16le')
-fifa16_teamplayerlinks_df = pd.read_csv(fifa16_teamplayerlinks, sep='\t', encoding='utf-16le')
-
-# print(teamkits_df.columns)
-
-def change_jersey_number_color(kit_id, color):
-    print(teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']])
-
-    teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
-
 def save_tsv():
     teamkits_df.to_csv(teamkits, sep='\t', encoding='utf-16le', index=False)
     players_df.to_csv(players, sep='\t', encoding='utf-16le', index=False)
@@ -62,6 +9,11 @@ def save_tsv():
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
     default_teamsheets_df.to_csv(default_teamsheets, sep='\t', encoding='utf-16le', index=False)
     defaultteamdata_df.to_csv(defaultteamdata, sep='\t', encoding='utf-16le', index=False)
+
+def change_jersey_number_color(kit_id, color):
+    print(teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']])
+
+    teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
 
 def change_jersey_name_color(kit_id, color):
     print([col for col in teamkits_df.columns if 'name' in col.lower()])
@@ -190,6 +142,3 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
-
-replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fcsb_teamid, fifa16_fcsb_teamid)
-save_tsv()
