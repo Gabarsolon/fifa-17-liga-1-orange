@@ -6,3 +6,5 @@
 #Audio files
 *.wav
 
+#Python
+**/__pycache__/**

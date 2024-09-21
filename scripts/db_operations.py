@@ -1,6 +1,8 @@
+import os
 from pathlib import Path
 import pandas as pd
-import os
+from dataframes import *
+from constants import Player
 
 def save_tsv():
     teamkits_df.to_csv(teamkits, sep='\t', encoding='utf-16le', index=False)
@@ -22,11 +24,13 @@ def change_jersey_name_color(kit_id, color):
 
 # print([col for col in fifa16_players_df.columns])
 
-def print_player_names():
-    fifa16_fcsb_players_df = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
-    fifa16_fcsb_players_df = fifa16_fcsb_players_df[fifa16_fcsb_players_df.teamid == fifa16_fcsb_teamid]
+def print_player_names(fifa16_teamid, fifa17_teamid):
+    fifa16_players_and_names_join_df = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
+    fifa16_players_and_names_join_df = fifa16_players_and_names_join_df[fifa16_players_and_names_join_df.teamid == fifa16_teamid]
 
-    for(row) in fifa16_fcsb_players_df.itertuples():
+    print("----------------------------")
+    print("FIFA 16:")
+    for(row) in fifa16_players_and_names_join_df.itertuples():
         print(
             row.playerid,
             fifa16_playernames_df[fifa16_playernames_df.nameid == row.firstnameid].name, 
@@ -36,36 +40,22 @@ def print_player_names():
 
     # print([col for col in players_df.columns])
 
-    fcsb_players_df = pd.merge(players_df, teamplayerlinks_df, on='playerid')
-    fcsb_players_df = fcsb_players_df[fcsb_players_df.teamid == fcsb_teamid]
+    players_and_names_join_df = pd.merge(players_df, teamplayerlinks_df, on='playerid')
+    players_and_names_join_df = players_and_names_join_df[players_and_names_join_df.teamid == fifa17_teamid]
 
-    for(row) in fcsb_players_df.itertuples():
+    print("----------------------------")
+    print("FIFA 17:")
+    for(row) in players_and_names_join_df.itertuples():
         print(
             row.playerid,
             playernames_df[playernames_df.nameid == row.firstnameid].name, 
             playernames_df[playernames_df.nameid == row.lastnameid].name, 
             playernames_df[playernames_df.nameid == row.commonnameid].name,
             )
-
-def get_playerid_from_fifa16_given_name_and_team(name, teamid):
-    fifa16_team_players_df = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
-    fifa16_team_players_df = fifa16_team_players_df[fifa16_team_players_df.teamid == teamid]
-
-    for(row) in fifa16_team_players_df.itertuples():
-        firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.firstnameid].name.values[0]
-        lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.lastnameid].name.values[0]
         
-        if name.lower() in firstname.lower() or name.lower() in lastname.lower():            
-            print(
-                row.playerid,
-                firstname,
-                lastname
-                )
-            return row.playerid
-        
-def get_playerid_from_fifa17_given_name_and_team(name, teamid):
+def get_player_from_fifa17_given_name_and_team(name, teamid):
     team_players_df = pd.merge(players_df, teamplayerlinks_df, on='playerid')
-    team_players_df = team_players_df[team_players_df.teamid == fcsb_teamid]
+    team_players_df = team_players_df[team_players_df.teamid == teamid]
 
     for(row) in team_players_df.itertuples():
         firstname = playernames_df[playernames_df.nameid == row.firstnameid].name.values[0]
@@ -77,7 +67,23 @@ def get_playerid_from_fifa17_given_name_and_team(name, teamid):
                 firstname,
                 lastname
                 )
-            return row.playerid
+            return Player(row.playerid, firstname, lastname)
+        
+def get_player_from_fifa16_given_name_and_team(name, teamid):
+    fifa16_team_players_df = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
+    fifa16_team_players_df = fifa16_team_players_df[fifa16_team_players_df.teamid == teamid]
+
+    for(row) in fifa16_team_players_df.itertuples():
+        firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.firstnameid].name.values[0]
+        lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.lastnameid].name.values[0]
+
+        if name.lower() in firstname.lower() or name.lower() in lastname.lower():
+            print(
+                row.playerid,
+                firstname,
+                lastname
+                )
+            return Player(row.playerid, firstname, lastname)
    
 def insert_name_into_playernames_df(name):
     last_available_nameid = playernames_df.iloc[-1].nameid + 1

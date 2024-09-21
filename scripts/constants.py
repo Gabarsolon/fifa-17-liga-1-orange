@@ -3,9 +3,17 @@ class Team:
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
-    
 
-teams = {
+class Player:
+    def __init__(self, playerid, firstname, lastname):
+        self.playerid = playerid
+        self.firstname = firstname
+        self.lastname = lastname
+    
+    def __str__(self):
+        return f"{self.playerid} {self.firstname} {self.lastname}"
+
+liga1orange_teams = {
     'fcsb' : Team(269, 106000, "FCSB")
 }
 

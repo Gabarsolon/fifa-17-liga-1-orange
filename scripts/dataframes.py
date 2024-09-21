@@ -1,3 +1,6 @@
+import os
+import pandas as pd
+
 #FIFA 17 tables
 defaultteamdata = os.path.join(os.path.dirname(__file__), "..", "db", "defaultteamdata.txt")
 default_teamsheets = os.path.join(os.path.dirname(__file__), "..", "db", "default_teamsheets.txt")
