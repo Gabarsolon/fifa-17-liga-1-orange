@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import pandas as pd
 from dataframes import *
-from constants import Player
+from constants import *
 
 def save_tsv():
     teamkits_df.to_csv(teamkits, sep='\t', encoding='utf-16le', index=False)
@@ -11,6 +11,14 @@ def save_tsv():
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
     default_teamsheets_df.to_csv(default_teamsheets, sep='\t', encoding='utf-16le', index=False)
     defaultteamdata_df.to_csv(defaultteamdata, sep='\t', encoding='utf-16le', index=False)
+    teams_df.to_csv(teams, sep='\t', encoding='utf-16le', index=False)
+    formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
+
+def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid):
+    team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
+    for column in team_details_from_fifa16_df.columns:
+        if column.endswith('id') is False and column in teams_df.columns:
+            teams_df.loc[teams_df.teamid == fifa17_teamid, column] = team_details_from_fifa16_df[column].values[0]
 
 def change_jersey_number_color(kit_id, color):
     print(teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']])
@@ -148,3 +156,4 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
+replace_team_details_from_fifa17_with_ones_from_fif16(fcsb_teamid, fifa16_fcsb_teamid)
