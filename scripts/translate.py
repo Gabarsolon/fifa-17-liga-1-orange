@@ -12,7 +12,8 @@ translator = GoogleTranslator(source='en', target='ro')
 
 import concurrent.futures
 
-language_strings_df['translated'] = False
+if 'translated' not in language_strings_df.columns:
+    language_strings_df['translated'] = False
 
 translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
 lock = threading.Lock()
@@ -25,8 +26,8 @@ def print_translated_dict_size():
         translated_percent = (translated_counter / len(language_strings_df)) * 100
         print(f"Translated {translated_percent:.2f}%", end='\r')
         with stop_saving_tsv_lock:
-            print("Execution finished")
             if stop_saving_tsv:
+                print("Execution finished")
                 return
         language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
         time.sleep(5)
@@ -47,7 +48,7 @@ def translate_rows(start_index, end_index):
             with lock:
                 translated_counter += 1
     except Exception as e:
-        pass
+        print(e)
     with stop_saving_tsv_lock:
         stop_saving_tsv = True
         
