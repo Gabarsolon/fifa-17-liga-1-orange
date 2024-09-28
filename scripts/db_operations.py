@@ -14,10 +14,16 @@ def save_tsv():
     teams_df.to_csv(teams, sep='\t', encoding='utf-16le', index=False)
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
 
-def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid):
+def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year):
+    teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
-    for column in team_details_from_fifa16_df.columns:
-        if column.endswith('id') is False and column in teams_df.columns:
+    columns_to_replace = [
+        'teamcolor1g', 'teamcolor1r', 'teamcolor2b', 'teamcolor2r',
+         'teamcolor3r', 'teamcolor1b',  'teamcolor3g', 'teamcolor2g',
+        'teamcolor3b',
+    ]
+    for column in columns_to_replace:
+        if column in teams_df.columns and column in team_details_from_fifa16_df.columns:
             teams_df.loc[teams_df.teamid == fifa17_teamid, column] = team_details_from_fifa16_df[column].values[0]
 
 def change_jersey_number_color(kit_id, color):
@@ -156,4 +162,5 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
-replace_team_details_from_fifa17_with_ones_from_fif16(fcsb_teamid, fifa16_fcsb_teamid)
+print('\n'.join("{:>30}".format(col) for col in fifa16_teams_df.columns if not col.endswith('id')))
+

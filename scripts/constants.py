@@ -1,8 +1,9 @@
 class Team:
-    def __init__(self, teamid_fifa17, teamid_fifa16, name):
+    def __init__(self, teamid_fifa17, teamid_fifa16, name, foundation_year):
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
+        self.foundation_year = foundation_year
 
 class Player:
     def __init__(self, playerid, firstname, lastname):
@@ -14,7 +15,7 @@ class Player:
         return f"{self.playerid} {self.firstname} {self.lastname}"
 
 liga1orange_teams = {
-    'fcsb' : Team(269, 106000, "FCSB")
+    'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947)
 }
 
 
