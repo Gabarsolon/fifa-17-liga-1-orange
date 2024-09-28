@@ -12,9 +12,9 @@ translator = GoogleTranslator(source='en', target='ro')
 
 import concurrent.futures
 
-language_strings_df['translated'] = False
+# language_strings_df['translated'] = False
 
-translated_counter = 0
+translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
 lock = threading.Lock()
 
 def print_translated_dict_size():
