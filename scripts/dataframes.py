@@ -11,6 +11,7 @@ players = os.path.join(os.path.dirname(__file__), "..", "db", "players.txt")
 playernames = os.path.join(os.path.dirname(__file__), "..", "db", "playernames.txt")
 teamplayerlinks = os.path.join(os.path.dirname(__file__), "..", "db", "teamplayerlinks.txt")
 
+
 defaultteamdata_df = pd.read_csv(defaultteamdata, sep='\t', encoding='utf-16le')
 default_teamsheets_df = pd.read_csv(default_teamsheets, sep='\t', encoding='utf-16le')
 formations_df = pd.read_csv(formations, sep='\t', encoding='utf-16le')
