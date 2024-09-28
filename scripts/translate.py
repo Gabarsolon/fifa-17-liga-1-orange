@@ -24,12 +24,13 @@ def print_translated_dict_size():
     global translated_counter
     while True:
         translated_percent = (translated_counter / len(language_strings_df)) * 100
-        print(f"Translated {translated_percent:.2f}%", end='\r')
         with stop_saving_tsv_lock:
             if stop_saving_tsv:
                 print("Execution finished")
                 return
         language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+        print(f"Translated {translated_percent:.2f}%", end='\r')
+    
         time.sleep(5)
 
 print_thread = threading.Thread(target=print_translated_dict_size)
