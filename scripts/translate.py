@@ -16,12 +16,18 @@ language_strings_df['translated'] = False
 
 translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
 lock = threading.Lock()
+stop_saving_tsv_lock = threading.Lock()
+stop_saving_tsv = False
 
 def print_translated_dict_size():
     global translated_counter
     while True:
         translated_percent = (translated_counter / len(language_strings_df)) * 100
         print(f"Translated {translated_percent:.2f}%", end='\r')
+        with stop_saving_tsv_lock:
+            print("Execution finished")
+            if stop_saving_tsv:
+                return
         language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
         time.sleep(5)
 
@@ -30,15 +36,21 @@ print_thread.daemon = True
 print_thread.start()
 
 def translate_rows(start_index, end_index):
-    global translated_counter
-    for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
-        if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
-            continue
-        language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
-        language_strings_df.iloc[index, 3] = True
-        with lock:
-            translated_counter += 1
-
+    global stop_saving_tsv
+    try:
+        global translated_counter
+        for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
+            if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
+                continue
+            language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
+            language_strings_df.iloc[index, 3] = True
+            with lock:
+                translated_counter += 1
+    except Exception as e:
+        pass
+    with stop_saving_tsv_lock:
+        stop_saving_tsv = True
+        
 num_threads = 8
 rows_per_thread = len(language_strings_df) // num_threads
 
@@ -51,3 +63,6 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
         future.result()
         
 language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+
+while True:
+    time.sleep(3600)
