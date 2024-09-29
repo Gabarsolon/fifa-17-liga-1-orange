@@ -7,8 +7,15 @@ from deep_translator import GoogleTranslator
 
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
-language_strings_df.drop(columns=['to_debug'], inplace=True)
 
+language_strings_og = os.path.join(os.path.dirname(__file__), "..", "db", "original_tables", "LanguageStrings.txt")
+language_strings_og_df = pd.read_csv(language_strings_og, sep='\t', encoding='utf-16le', na_filter=False)
+
+print(language_strings_og_df[language_strings_og_df['stringid'] == 'None'])
+
+# for index, row in language_strings_og_df.iterrows():
+#     if row['sourcetext'] == 'None':
+#         language_strings_df.loc[index, 'sourcetext'] = 'Nici unul'
 
 # for index, row in language_strings_df.iterrows():
 #     print(f"{index}: {row['sourcetext']} -> {row['hashid']} -> {row['stringid']}\n")
