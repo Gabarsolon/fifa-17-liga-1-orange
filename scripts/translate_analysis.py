@@ -7,9 +7,8 @@ from deep_translator import GoogleTranslator
 
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
-language_strings_df = language_strings_df[language_strings_df['to_debug'] == True]
+language_strings_df.drop(columns=['hashid'], inplace=True)
 
-print(language_strings_df[language_strings_df['hashid'] == 381519246])
 
 # for index, row in language_strings_df.iterrows():
 #     print(f"{index}: {row['sourcetext']} -> {row['hashid']} -> {row['stringid']}\n")
