@@ -13,3 +13,5 @@ for index, row in language_strings_df.iterrows():
     print(f"{index}: {row['sourcetext']} -> {row['hashid']} -> {row['stringid']}\n")
 
 
+language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+
