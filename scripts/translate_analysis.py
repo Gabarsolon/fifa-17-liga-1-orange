@@ -9,7 +9,7 @@ language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "Language
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
 language_strings_df = language_strings_df[language_strings_df['to_debug'] == True]
 
+for index, row in language_strings_df.iterrows():
+    print(f"{index}: {row['sourcetext']} -> {row['hashid']} -> {row['stringid']}\n")
 
-# language_strings_df.loc[20375, ['sourcetext', 'stringid']] = ['Nici unul', 'None']
 
-language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
