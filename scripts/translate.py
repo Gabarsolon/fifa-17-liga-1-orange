@@ -19,6 +19,8 @@ lock = threading.Lock()
 stop_saving_tsv_lock = threading.Lock()
 stop_saving_tsv = False
 
+
+
 def translate_with_google():
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
@@ -79,7 +81,7 @@ def translate_with_google():
         stop_saving_tsv = True
     print_thread.join()
     
-translate_with_google()
+
     
 def drop_translation_status_column():
     language_strings_df.drop(columns=['translated'], inplace=True)
@@ -98,3 +100,25 @@ def translate_rows():
     except Exception as e:
         print(e)
     language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+    
+    
+def print_menu():
+    print("\n")
+    print("FIFA 17 LIGA 1 ORANGE TRANSLATOR")
+    print("----------------------------")
+    print("1. Translate LanguageStrings.txt with Google Translator")
+    print("2. Drop translation status column")
+    print("----------------------------")
+    print("Enter your choice: ")
+
+
+    choice = input()
+    if choice == "1":
+        translate_with_google()
+    elif choice == "2":
+        drop_translation_status_column()
+    else:
+        print("Invalid choice. Please try again.")
+        print_menu()
+
+print_menu()
