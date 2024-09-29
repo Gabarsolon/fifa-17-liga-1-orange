@@ -7,6 +7,8 @@ from deep_translator import GoogleTranslator
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
+not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
+not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
 
 translator = GoogleTranslator(source='en', target='ro')
 
@@ -41,7 +43,7 @@ def translate_rows(start_index, end_index):
     global stop_saving_tsv
     try:
         global translated_counter
-        for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
+        for index, row in not_translated_language_strings_df.iloc[start_index:end_index].iterrows():
             if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                 continue
             language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
@@ -52,7 +54,7 @@ def translate_rows(start_index, end_index):
         print(e)
         
 num_threads = 8
-rows_per_thread = len(language_strings_df) // num_threads
+rows_per_thread = len(not_translated_language_strings_df) // num_threads
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
     futures = [
@@ -62,7 +64,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
     for future in concurrent.futures.as_completed(futures):
         future.result()
         
-language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+
 
 with stop_saving_tsv_lock:
     stop_saving_tsv = True
