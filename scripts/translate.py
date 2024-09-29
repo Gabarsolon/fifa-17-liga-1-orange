@@ -6,12 +6,12 @@ import time
 from deep_translator import GoogleTranslator
 
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
-potentially_corrupted_translations = os.path.join(os.path.dirname(__file__), "..", "db", "PotentiallyCorruptedLanguageStrings.txt")
+# potentially_corrupted_translations = os.path.join(os.path.dirname(__file__), "..", "db", "PotentiallyCorruptedLanguageStrings.txt")
 
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
 # not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
 # not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
-potentially_corrupted_translations_df = pd.DataFrame(columns=['original', 'translated'])
+# potentially_corrupted_translations_df = pd.DataFrame(columns=['original', 'translated'])
 
 
 translator = GoogleTranslator(source='en', target='ro')
@@ -27,6 +27,8 @@ stop_saving_tsv = False
 def translate_with_google():
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
+    if 'to_debug' not in language_strings_df.columns:
+        language_strings_df['to_debug'] = False
 
     translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
     lock = threading.Lock()
@@ -46,8 +48,8 @@ def translate_with_google():
                     return
             with save_translation_lock:
                 language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
-            with potentially_corrupted_translations_lock:
-                potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
+            # with potentially_corrupted_translations_lock:
+            #     potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
             print(f"Translated {translated_percent:.2f}%", end='\r')
         
             time.sleep(5)
@@ -67,12 +69,12 @@ def translate_with_google():
                 translated_string = translator.translate(row.iloc[0])
                 if translated_string is None or len(translated_string) == 0:
                     continue
-                with potentially_corrupted_translations_lock:
-                    potentially_corrupted_translations_df.loc[len(potentially_corrupted_translations_df)] = {'original': row.iloc[0], 'translated': translated_string}
+                # with potentially_corrupted_translations_lock:
+                #     potentially_corrupted_translations_df.loc[len(potentially_corrupted_translations_df)] = {'original': row.iloc[0], 'translated': translated_string}
                 with save_translation_lock:
                     language_strings_df.iloc[index, 0] = translated_string
                     language_strings_df.iloc[index, 3] = True
-
+                    language_strings_df.iloc[index, 4] = False
                 with lock:
                     translated_counter += 1
         except Exception as e:
