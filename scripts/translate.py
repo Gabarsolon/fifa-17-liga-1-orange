@@ -27,8 +27,7 @@ stop_saving_tsv = False
 def translate_with_google():
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
-    if 'to_debug' not in language_strings_df.columns:
-        language_strings_df['to_debug'] = False
+    language_strings_df['to_debug'] = False
 
     translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
     lock = threading.Lock()
@@ -101,6 +100,7 @@ def translate_with_google():
     
 def drop_translation_status_column():
     language_strings_df.drop(columns=['translated'], inplace=True)
+    language_strings_df.drop(columns=['to_debug'], inplace=True)
     language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
 
 def translate_rows():
