@@ -51,11 +51,12 @@ def translate_with_google():
             #     potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
             print(f"Translated {translated_percent:.2f}%", end='\r')
         
-            time.sleep(5)
+            time.sleep(3)
 
     print_thread = threading.Thread(target=print_translated_dict_size)
     print_thread.daemon = True
     print_thread.start()
+    
 
     def translate_rows(start_index, end_index):
         global stop_saving_tsv
@@ -87,6 +88,7 @@ def translate_with_google():
             executor.submit(translate_rows, i * rows_per_thread, (i+1) * rows_per_thread)
             for i in range(num_threads)
         ]
+        print_thread.start()
         for future in concurrent.futures.as_completed(futures):
             future.result()
             
