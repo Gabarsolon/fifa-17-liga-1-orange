@@ -107,7 +107,7 @@ def drop_translation_status_column():
 
 def translate_rows():
     try:
-        for index, row in not_translated_language_strings_df.iterrows():
+        for index, row in language_strings_df.iterrows():
             print(row.iloc[0])
             if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                 continue
@@ -124,8 +124,9 @@ def print_menu():
     print("\n")
     print("FIFA 17 LIGA 1 ORANGE TRANSLATOR")
     print("----------------------------")
-    print("1. Translate LanguageStrings.txt with Google Translator")
-    print("2. Drop translation status column")
+    print("1. Translate LanguageStrings.txt multi-threaded")
+    print("2. Translate LanguageStrings.txt single-threaded")
+    print("3. Drop translation status column")
     print("----------------------------")
     print("Enter your choice: ")
 
@@ -134,6 +135,8 @@ def print_menu():
     if choice == "1":
         translate_with_google()
     elif choice == "2":
+        translate_rows()
+    elif choice == "3":
         drop_translation_status_column()
     else:
         print("Invalid choice. Please try again.")
