@@ -57,7 +57,6 @@ def translate_with_google():
         try:
             global translated_counter
             for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
-                print(index)
                 if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                     continue
                 translated_string = translator.translate(row.iloc[0])
