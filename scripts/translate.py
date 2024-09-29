@@ -73,7 +73,7 @@ def translate_with_google():
                 with save_translation_lock:
                     language_strings_df.iloc[index, 0] = translated_string
                     language_strings_df.iloc[index, 3] = True
-                    language_strings_df.iloc[index, 4] = False
+                    language_strings_df.iloc[index, 4] = True
                 with lock:
                     translated_counter += 1
         except Exception as e:
