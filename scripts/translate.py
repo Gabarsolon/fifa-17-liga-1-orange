@@ -11,29 +11,15 @@ language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le
 not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
 not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
 
+
 translator = GoogleTranslator(source='en', target='ro')
 
-def translate_rows():
-    try:
-        for index, row in not_translated_language_strings_df.iterrows():
-            print(row.iloc[0])
-            if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
-                continue
-            print(row.iloc[0])
-            language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
-            language_strings_df.iloc[index, 3] = True
-            print(language_strings_df.iloc[index, 0])
-    except Exception as e:
-        print(e)
-
-translate_rows()
-language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
-
+translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
+lock = threading.Lock()
+stop_saving_tsv_lock = threading.Lock()
+stop_saving_tsv = False
 
 def translate_with_google():
-
-
-    
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
 
@@ -66,7 +52,10 @@ def translate_with_google():
             for index, row in not_translated_language_strings_df.iloc[start_index:end_index].iterrows():
                 if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                     continue
-                language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
+                translated_string = translator.translate(row.iloc[0])
+                if translated_string is None or len(translated_string) == 0:
+                    continue
+                language_strings_df.iloc[index, 0] = translated_string
                 language_strings_df.iloc[index, 3] = True
                 with lock:
                     translated_counter += 1
@@ -89,3 +78,23 @@ def translate_with_google():
     with stop_saving_tsv_lock:
         stop_saving_tsv = True
     print_thread.join()
+    
+translate_with_google()
+    
+def drop_translation_status_column():
+    language_strings_df.drop(columns=['translated'], inplace=True)
+    language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+
+def translate_rows():
+    try:
+        for index, row in not_translated_language_strings_df.iterrows():
+            print(row.iloc[0])
+            if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
+                continue
+            print(row.iloc[0])
+            language_strings_df.iloc[index, 0] = translator.translate(row.iloc[0])
+            language_strings_df.iloc[index, 3] = True
+            print(language_strings_df.iloc[index, 0])
+    except Exception as e:
+        print(e)
+    language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
