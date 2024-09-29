@@ -62,10 +62,11 @@ def translate_with_google():
                 translated_string = translator.translate(row.iloc[0])
                 if translated_string is None or len(translated_string) == 0:
                     continue
-                language_strings_df.iloc[index, 0] = translated_string
-                language_strings_df.iloc[index, 3] = True
                 with potentially_corrupted_translations_lock:
                     potentially_corrupted_translations_df.loc[len(potentially_corrupted_translations_df)] = {'original': row.iloc[0], 'translated': translated_string}
+                language_strings_df.iloc[index, 0] = translated_string
+                language_strings_df.iloc[index, 3] = True
+
                 with lock:
                     translated_counter += 1
         except Exception as e:
