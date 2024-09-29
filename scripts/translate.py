@@ -51,7 +51,7 @@ def translate_with_google():
             #     potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
             print(f"Translated {translated_percent:.2f}%", end='\r')
         
-            time.sleep(3)
+            time.sleep(5)
 
     print_thread = threading.Thread(target=print_translated_dict_size)
     print_thread.daemon = True
