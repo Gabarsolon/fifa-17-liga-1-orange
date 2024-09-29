@@ -20,6 +20,7 @@ translated_counter = language_strings_df[language_strings_df['translated'] == Tr
 lock = threading.Lock()
 stop_saving_tsv_lock = threading.Lock()
 potentially_corrupted_translations_lock = threading.Lock()
+save_translation_lock = threading.Lock()
 stop_saving_tsv = False
 
 
@@ -35,13 +36,16 @@ def translate_with_google():
     def print_translated_dict_size():
         global potentially_corrupted_translations_lock
         global translated_counter
+        global save_translation_lock
+        
         while True:
             translated_percent = (translated_counter / len(language_strings_df)) * 100
             with stop_saving_tsv_lock:
                 if stop_saving_tsv:
                     print("Execution finished")
                     return
-            language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
+            with save_translation_lock:
+                language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
             with potentially_corrupted_translations_lock:
                 potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
             print(f"Translated {translated_percent:.2f}%", end='\r')
@@ -54,6 +58,7 @@ def translate_with_google():
 
     def translate_rows(start_index, end_index):
         global stop_saving_tsv
+        global save_translation_lock
         try:
             global translated_counter
             for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
@@ -64,8 +69,9 @@ def translate_with_google():
                     continue
                 with potentially_corrupted_translations_lock:
                     potentially_corrupted_translations_df.loc[len(potentially_corrupted_translations_df)] = {'original': row.iloc[0], 'translated': translated_string}
-                language_strings_df.iloc[index, 0] = translated_string
-                language_strings_df.iloc[index, 3] = True
+                with save_translation_lock:
+                    language_strings_df.iloc[index, 0] = translated_string
+                    language_strings_df.iloc[index, 3] = True
 
                 with lock:
                     translated_counter += 1
