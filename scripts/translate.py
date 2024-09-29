@@ -9,8 +9,8 @@ language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "Language
 potentially_corrupted_translations = os.path.join(os.path.dirname(__file__), "..", "db", "PotentiallyCorruptedLanguageStrings.txt")
 
 language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
-not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
-not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
+# not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
+# not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
 potentially_corrupted_translations_df = pd.DataFrame(columns=['original', 'translated'])
 
 
@@ -56,7 +56,8 @@ def translate_with_google():
         global stop_saving_tsv
         try:
             global translated_counter
-            for index, row in not_translated_language_strings_df.iloc[start_index:end_index].iterrows():
+            for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
+                print(index)
                 if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                     continue
                 translated_string = translator.translate(row.iloc[0])
@@ -73,7 +74,7 @@ def translate_with_google():
             print(e)
             
     num_threads = 8
-    rows_per_thread = len(not_translated_language_strings_df) // num_threads
+    rows_per_thread = len(language_strings_df) // num_threads
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
         futures = [
