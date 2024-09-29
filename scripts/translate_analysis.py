@@ -15,9 +15,17 @@ language_strings_og_df = pd.read_csv(language_strings_og, sep='\t', encoding='ut
 #     if row['stringid'].startswith('TeamName_Abbr3'):
 #         language_strings_df.loc[index, 'sourcetext'] = row['sourcetext']
 
-for index, row in language_strings_og_df.iterrows():
-    if row['stringid'].startswith('nationname_abbr3'):
-        language_strings_df.loc[index, 'sourcetext'] = row['sourcetext']
+def translate_og_strings(start_index, end_index):
+    for index, row in language_strings_og_df.iloc[start_index:end_index].iterrows():
+        if row['stringid'].startswith('TeamName'):
+            language_strings_df.loc[index, 'sourcetext'] = row['sourcetext']
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+    futures = []
+    for i in range(0, len(language_strings_og_df), len(language_strings_og_df)//8):
+        futures.append(executor.submit(translate_og_strings, i, i + len(language_strings_og_df)//8))
+    for future in concurrent.futures.as_completed(futures):
+        future.result()
 
 
 # print(language_strings_og_df[language_strings_og_df['stringid'] == 'None'])
