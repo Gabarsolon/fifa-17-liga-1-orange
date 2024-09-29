@@ -15,4 +15,8 @@ potentially_corrupted_translations_df.drop(columns=['original'], axis=1, inplace
 
 # potentially_corrupted_translations_df.to_csv(potentially_corrupted_translations, sep='\t', encoding='utf-16le', index=False)
 
-print(language_strings_df.loc[29280:29290, :])
+print(language_strings_df[language_strings_df.iloc[:, 1].isna() | language_strings_df.iloc[:, 2].isna()].index)
+
+language_strings_df.loc[20375, ['sourcetext', 'stringid']] = ['Nici unul', 'None']
+
+language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
