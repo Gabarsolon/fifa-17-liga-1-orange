@@ -3,7 +3,10 @@ import pandas as pd
 import threading
 import concurrent.futures
 import time
-from deep_translator import GoogleTranslator
+from libretranslatepy import LibreTranslateAPI
+
+# Initialize the API client
+lt = LibreTranslateAPI("http://localhost:5000/")
 
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 # potentially_corrupted_translations = os.path.join(os.path.dirname(__file__), "..", "db", "PotentiallyCorruptedLanguageStrings.txt")
@@ -14,9 +17,9 @@ language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le
 # potentially_corrupted_translations_df = pd.DataFrame(columns=['original', 'translated'])
 
 
-translator = GoogleTranslator(source='en', target='ro')
 
 translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
+# translated_counter = 0
 lock = threading.Lock()
 stop_saving_tsv_lock = threading.Lock()
 potentially_corrupted_translations_lock = threading.Lock()
@@ -24,7 +27,7 @@ save_translation_lock = threading.Lock()
 stop_saving_tsv = False
 
 
-def translate_with_google():
+def translate_with_libretranslate():
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
     language_strings_df['to_debug'] = False
@@ -66,7 +69,7 @@ def translate_with_google():
             for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
                 if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                     continue
-                translated_string = translator.translate(row.iloc[0])
+                translated_string = lt.translate(row.iloc[0], source="en", target="ro")
                 if translated_string is None or len(translated_string) == 0:
                     continue
                 # with potentially_corrupted_translations_lock:
@@ -133,7 +136,7 @@ def print_menu():
 
     choice = input()
     if choice == "1":
-        translate_with_google()
+        translate_with_libretranslate()
     elif choice == "2":
         translate_rows()
     elif choice == "3":
