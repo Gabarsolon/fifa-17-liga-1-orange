@@ -19,11 +19,16 @@ with open(language_strings, 'r', encoding='utf-16le') as f, open(language_string
     lines = f.readlines()
     og_lines = og_f.readlines()
     
-with open(language_strings, 'w', encoding='utf-16le') as f:
-    for index, line in enumerate(lines):
-        if line.count('\t') != 2:
-            lines[index] = og_lines[index]
-    f.writelines(lines)
+for index, line in enumerate(lines):
+    if '%' in line:
+        print(line)
+    
+# with open(language_strings, 'w', encoding='utf-16le') as f:
+#     for index, line in enumerate(lines):
+#         if 'TIME' in line:
+#             print(line)
+            # lines[index] = og_lines[index]
+    # f.writelines(lines)
 
 
 

@@ -105,7 +105,7 @@ def translate_with_libretranslate():
     
 def drop_translation_status_column():
     language_strings_df.drop(columns=['translated'], inplace=True)
-    language_strings_df.drop(columns=['to_debug'], inplace=True)
+    # language_strings_df.drop(columns=['to_debug'], inplace=True)
     language_strings_df.to_csv(language_strings, sep='\t', encoding='utf-16le', index=False)
 
 def translate_rows():
