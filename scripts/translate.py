@@ -3,23 +3,20 @@ import pandas as pd
 import threading
 import concurrent.futures
 import time
-from libretranslatepy import LibreTranslateAPI
-
-# Initialize the API client
-lt = LibreTranslateAPI("http://localhost:5000/")
+from deep_translator import GoogleTranslator
 
 language_strings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 # potentially_corrupted_translations = os.path.join(os.path.dirname(__file__), "..", "db", "PotentiallyCorruptedLanguageStrings.txt")
 
-language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
+language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le', keep_default_na=False)
 # not_translated_language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le')
 # not_translated_language_strings_df = not_translated_language_strings_df[not_translated_language_strings_df['translated'] == False]
 # potentially_corrupted_translations_df = pd.DataFrame(columns=['original', 'translated'])
 
 
+translator = GoogleTranslator(source='en', target='ro')
 
-translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
-# translated_counter = 0
+translated_counter = 0
 lock = threading.Lock()
 stop_saving_tsv_lock = threading.Lock()
 potentially_corrupted_translations_lock = threading.Lock()
@@ -27,10 +24,10 @@ save_translation_lock = threading.Lock()
 stop_saving_tsv = False
 
 
-def translate_with_libretranslate():
+def translate_with_google():
     if 'translated' not in language_strings_df.columns:
         language_strings_df['translated'] = False
-    language_strings_df['to_debug'] = False
+    # language_strings_df['to_debug'] = False
 
     translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
     lock = threading.Lock()
@@ -69,7 +66,7 @@ def translate_with_libretranslate():
             for index, row in language_strings_df.iloc[start_index:end_index].iterrows():
                 if language_strings_df.iloc[index, 3] or not isinstance(row.iloc[0], str) or len(row.iloc[0]) > 5000:
                     continue
-                translated_string = lt.translate(row.iloc[0], source="en", target="ro")
+                translated_string = translator.translate(row.iloc[0])
                 if translated_string is None or len(translated_string) == 0:
                     continue
                 # with potentially_corrupted_translations_lock:
@@ -77,7 +74,7 @@ def translate_with_libretranslate():
                 with save_translation_lock:
                     language_strings_df.iloc[index, 0] = translated_string
                     language_strings_df.iloc[index, 3] = True
-                    language_strings_df.iloc[index, 4] = True
+                    # language_strings_df.iloc[index, 4] = True
                 with lock:
                     translated_counter += 1
         except Exception as e:
@@ -136,7 +133,7 @@ def print_menu():
 
     choice = input()
     if choice == "1":
-        translate_with_libretranslate()
+        translate_with_google()
     elif choice == "2":
         translate_rows()
     elif choice == "3":
