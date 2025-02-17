@@ -37,20 +37,21 @@ with open(language_strings, 'r', encoding='utf-16le') as f, open(language_string
     lines = f.readlines()
     og_lines = og_f.readlines()
     
-# for index, line in enumerate(lines):
-#     if '%' in line:
-#         print(line)
-    
-total_lines = 0
-with open(language_strings, 'w', encoding='utf-16le') as f:
+with open('language_strings_playername.txt', 'w', encoding='utf-16le') as f:
     for index, line in enumerate(lines):
-        if 'player' in line.lower():
-            print(line)
-            lines[index] = og_lines[index]
-        total_lines += 1
-    f.writelines(lines)
+        if 'player' in line.lower() and 'player' not in og_lines[index].lower():
+            f.write(lines[index])
 
-print("Total number of lines:", total_lines)
+# total_lines = 0    
+    
+# with open(language_strings, 'w', encoding='utf-16le') as f:
+#     for index, line in enumerate(lines):
+#         if 'player' in line.lower() and 'player' not in og_lines[index].lower():
+#             lines[index] = og_lines[index]
+#             total_lines += 1
+#     f.writelines(lines)
+# print("Total number of lines:", total_lines)
+
 
 
 
