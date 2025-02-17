@@ -16,7 +16,7 @@ language_strings_df = pd.read_csv(language_strings, sep='\t', encoding='utf-16le
 
 translator = GoogleTranslator(source='en', target='ro')
 
-translated_counter = 0
+translated_counter = language_strings_df[language_strings_df['translated'] == True].shape[0]
 lock = threading.Lock()
 stop_saving_tsv_lock = threading.Lock()
 potentially_corrupted_translations_lock = threading.Lock()
