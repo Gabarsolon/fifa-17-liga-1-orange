@@ -2,7 +2,7 @@ import sys
 from constants import *
 from db_operations import *
 
-selected_team = liga1orange_teams['fcsb']
+selected_team = liga1orange_teams['astra']
 selected_fifa17_player = None
 selected_fifa16_player = None
 
@@ -57,8 +57,30 @@ def print_players_menu():
     print("Enter your choice: ")
     
     handle_menu_input(player_menu_options, print_players_menu)
-        
-
+    
+def print_select_team_menu():
+    print("\n")
+    print("Select team")
+    print("----------------------------")
+    for key, team in liga1orange_teams.items():
+        print(f"{key}. {team.name}")
+    print("----------------------------")
+    print("Enter your choice: ")    
+    
+    global selected_team
+    
+    try:
+        choice = input()
+        if choice in liga1orange_teams.keys():
+            selected_team = liga1orange_teams[choice]
+            print_team_menu()
+        else:
+            print("Invalid choice. Please try again.")
+            print_select_team_menu()
+    except:
+        print("Invalid choice. Please try again.")
+        print_select_team_menu()
+    
 
 menu_options = {
     "1": {"name": "Team menu", "function": print_team_menu},
@@ -68,7 +90,7 @@ menu_options = {
 }
 
 team_menu_options = {
-    "1": {"name": "Select team", "function": None},  # TODO: implement function
+    "1": {"name": "Select team", "function": print_select_team_menu},
     "2": {"name": "Change jersey number color", "function": None},  # TODO: implement function
     "3": {"name": "Change jersey name color", "function": None},  # TODO: implement function
     "4": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
