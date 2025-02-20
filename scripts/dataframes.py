@@ -10,6 +10,7 @@ teamkits = os.path.join(os.path.dirname(__file__), "..", "db", "teamkits.txt")
 players = os.path.join(os.path.dirname(__file__), "..", "db", "players.txt")
 playernames = os.path.join(os.path.dirname(__file__), "..", "db", "playernames.txt")
 teamplayerlinks = os.path.join(os.path.dirname(__file__), "..", "db", "teamplayerlinks.txt")
+languagestrings = os.path.join(os.path.dirname(__file__), "..", "db", "LanguageStrings.txt")
 
 
 defaultteamdata_df = pd.read_csv(defaultteamdata, sep='\t', encoding='utf-16le')
