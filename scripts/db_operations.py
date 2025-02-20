@@ -162,5 +162,3 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
-print('\n'.join("{:>30}".format(col) for col in fifa16_teams_df.columns if not col.endswith('id')))
-

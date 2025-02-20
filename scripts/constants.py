@@ -15,7 +15,8 @@ class Player:
         return f"{self.playerid} {self.firstname} {self.lastname}"
 
 liga1orange_teams = {
-    'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947)
+    'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947),
+    'astra': Team(270, 130026, "Astra", foundation_year=1921)
 }
 
 
