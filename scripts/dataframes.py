@@ -21,6 +21,7 @@ teamkits_df = pd.read_csv(teamkits, sep='\t', encoding='utf-16le')
 players_df = pd.read_csv(players, sep='\t', encoding='utf-16le')
 playernames_df = pd.read_csv(playernames, sep='\t', encoding='utf-16le')
 teamplayerlinks_df = pd.read_csv(teamplayerlinks, sep='\t', encoding='utf-16le')
+languagestrings_df = pd.read_csv(languagestrings, sep='\t', encoding='utf-16le')
 
 #FIFA 16 tables
 fifa16_defaultteamdata = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "defaultteamdata.txt")
@@ -31,6 +32,7 @@ fifa16_formations = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16
 fifa16_players = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "players.txt")
 fifa16_playernames = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "playernames.txt")
 fifa16_teamplayerlinks = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "teamplayerlinks.txt")
+fifa16_languagestrings = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "LanguageStrings.txt")
 
 fifa16_defaultteamdata_df = pd.read_csv(fifa16_defaultteamdata, sep='\t', encoding='utf-16le')
 fifa16_defaul_teamsheets_df = pd.read_csv(fifa16_defaul_teamsheets, sep='\t', encoding='utf-16le')
@@ -40,3 +42,4 @@ fifa16_formations_df = pd.read_csv(fifa16_formations, sep='\t', encoding='utf-16
 fifa16_players_df = pd.read_csv(fifa16_players, sep='\t', encoding='utf-16le')
 fifa16_playernames_df = pd.read_csv(fifa16_playernames, sep='\t', encoding='utf-16le')
 fifa16_teamplayerlinks_df = pd.read_csv(fifa16_teamplayerlinks, sep='\t', encoding='utf-16le')
+fifa16_languagestrings_df = pd.read_csv(fifa16_languagestrings, sep='\t', encoding='utf-16le')

@@ -3,6 +3,7 @@ class Team:
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
+        #Foundation year is not part of FIFA 16 table, but part of FIFA 17. Must be modified manually
         self.foundation_year = foundation_year
 
 class Player:

@@ -13,8 +13,18 @@ def save_tsv():
     defaultteamdata_df.to_csv(defaultteamdata, sep='\t', encoding='utf-16le', index=False)
     teams_df.to_csv(teams, sep='\t', encoding='utf-16le', index=False)
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
+    languagestrings_df.to_csv(languagestrings, sep='\t', encoding='utf-16le', index=False)
 
 def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year):
+    fifa16_suffix = f"_{fifa16_teamid}"
+    fifa17_suffix = f"_{fifa17_teamid}"
+
+    for row in fifa16_languagestrings_df.itertuples():
+        if isinstance(row.stringid, str) and row.stringid.endswith(fifa16_suffix):
+            corresponding_stringid = row.stringid.replace(fifa16_suffix, fifa17_suffix)
+            languagestrings_df.loc[languagestrings_df.stringid == corresponding_stringid, 'sourcetext'] = row.sourcetext
+
+    
     teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
     columns_to_replace = [
@@ -162,3 +172,8 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
+def print_language_strings_130026_from_fifa16():
+    print(fifa16_languagestrings_df[fifa16_languagestrings_df['stringid'].str.endswith('_130026', na=False)])
+    print(languagestrings_df[languagestrings_df['stringid'].str.endswith('_270', na=False)])
+
+print_language_strings_130026_from_fifa16()
