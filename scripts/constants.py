@@ -20,6 +20,34 @@ liga1orange_teams = {
     'astra': Team(270, 130026, "Astra", foundation_year=1921)
 }
 
+from enum import Enum
+
+class KitType(Enum):
+    HOME = (0, "home")
+    AWAY = (1, "away")
+    GK = (2, "gk")
+    TERTIARY = (3, "tertiary")
+
+    @property
+    def id(self):
+        return self.value[0]
+
+    @property
+    def name(self):
+        return self.value[1]
+
+    @classmethod
+    def from_id(cls, id):
+        for kit_type in cls:
+            if kit_type.id == id:
+                return kit_type
+            
+    @classmethod
+    def from_name(cls, name):
+        for kit_type in cls:
+            if kit_type.name == name:
+                return kit_type
+
 
 fcsb_teamid = 269
 fifa16_fcsb_teamid = 106000

@@ -36,15 +36,16 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
         if column in teams_df.columns and column in team_details_from_fifa16_df.columns:
             teams_df.loc[teams_df.teamid == fifa17_teamid, column] = team_details_from_fifa16_df[column].values[0]
 
-def change_jersey_number_color(kit_id, color):
-    print(teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']])
+def change_jersey_number_color(team, kit_type, color):
+    teamkittypetechid = KitType.from_name(kit_type).id
+    kitid = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
 
-    teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
+    teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
+def change_jersey_name_color(team, kit_type, color):
+    teamkittypetechid = KitType.from_name(kit_type).id
+    kitid = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
 
-def change_jersey_name_color(kit_id, color):
-    print([col for col in teamkits_df.columns if 'name' in col.lower()])
-    teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']] = color
-    print(teamkits_df.loc[(teamkits_df.teamtechid == fcsb_teamid) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']])
+    teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']] = color
 
 # print([col for col in fifa16_players_df.columns])
 
