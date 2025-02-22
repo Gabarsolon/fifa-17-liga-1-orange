@@ -38,14 +38,13 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
 
 def change_jersey_number_color(team, kit_type, color):
     teamkittypetechid = KitType.from_name(kit_type).id
-    kitid = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
+    kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
 
-    teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
+    teamkits_df.loc[teamkits_df.teamkitid == kit_id, ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = color
 def change_jersey_name_color(team, kit_type, color):
     teamkittypetechid = KitType.from_name(kit_type).id
-    kitid = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
-
-    teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == kit_id), ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']] = color
+    kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
+    teamkits_df.loc[teamkits_df.teamkitid == kit_id, ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']] = color
 
 # print([col for col in fifa16_players_df.columns])
 
@@ -173,8 +172,3 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     
-def print_language_strings_130026_from_fifa16():
-    print(fifa16_languagestrings_df[fifa16_languagestrings_df['stringid'].str.endswith('_130026', na=False)])
-    print(languagestrings_df[languagestrings_df['stringid'].str.endswith('_270', na=False)])
-
-print_language_strings_130026_from_fifa16()
