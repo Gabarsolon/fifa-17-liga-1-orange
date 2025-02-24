@@ -122,10 +122,10 @@ def assign_selected_player_from_fifa16():
 
 def handle_change_jersey_name_color():
     global selected_team
-    change_jersey_name_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), [int(input("Enter the red channel value(0-255): ")), int(input("Enter the green channel value(0-255): ")), int(input("Enter the blue channel value(0-255): "))])
+    change_jersey_name_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "))
     
 def handle_change_jersey_number_color():
     global selected_team
-    change_jersey_number_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), [int(input("Enter the red channel value(0-255): ")), int(input("Enter the green channel value(0-255): ")), int(input("Enter the blue channel value(0-255): "))])
+    change_jersey_number_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): ") )
 
 print_menu()
