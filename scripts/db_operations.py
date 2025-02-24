@@ -40,7 +40,7 @@ def change_jersey_number_color(team, kit_type):
     teamkittypetechid = KitType.from_name(kit_type).id
     kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
     fifa16_kit_id = fifa16_teamkits_df.loc[(fifa16_teamkits_df.teamtechid == team.teamid_fifa16) & (fifa16_teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
-    teamkits_df.loc[teamkits_df.teamkitid == kit_id, ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = fifa16_teamkits_df.loc[fifa16_teamkits_df.teamkitid == fifa16_kit_id, ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']].values[0]
+    teamkits_df.loc[teamkits_df.teamkitid == kit_id, ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb']] = fifa16_teamkits_df.loc[fifa16_teamkits_df.teamkitid == fifa16_kit_id, ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb']].values[0]
 def change_jersey_name_color(team, kit_type):
     teamkittypetechid = KitType.from_name(kit_type).id
     kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
