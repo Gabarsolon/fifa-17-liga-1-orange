@@ -125,14 +125,16 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
 
     firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.firstnameid.values[0]].name.values[0]
     lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.lastnameid.values[0]].name.values[0]
+    commonname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.commonnameid.values[0]].name.values[0]
 
     firstnameid = insert_name_into_playernames_df(firstname)
     lastnameid = insert_name_into_playernames_df(lastname)
+    commonnameid = insert_name_into_playernames_df(commonname)
     
     players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'] = firstnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'lastnameid'] = lastnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'playerjerseynameid'] = lastnameid
-    players_df.loc[players_df.playerid == fifa17_playerid, 'commonnameid'] = 0
+    players_df.loc[players_df.playerid == fifa17_playerid, 'commonnameid'] = commonnameid
     
     #adjust teamplayer_links
     fifa16_teamplayerlink_df = fifa16_teamplayerlinks_df[(fifa16_teamplayerlinks_df.teamid == fifa16_teamid) & (fifa16_teamplayerlinks_df.playerid == fifa16_playerid)]
