@@ -23,6 +23,12 @@ playernames_df = pd.read_csv(playernames, sep='\t', encoding='utf-16le')
 teamplayerlinks_df = pd.read_csv(teamplayerlinks, sep='\t', encoding='utf-16le')
 languagestrings_df = pd.read_csv(languagestrings, sep='\t', encoding='utf-16le')
 
+
+# playernames_df = playernames_df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+# # Strip spaces from the 'Name' column
+# playernames_df['commentaryid'] = playernames_df['commentaryid'].apply(lambda x: str(int(x)) if not pd.isna(x) else x)
+# playernames_df['nameid'] = playernames_df['nameid'].apply(lambda x: str(int(x)) if not pd.isna(x) else x)
+
 #FIFA 16 tables
 fifa16_defaultteamdata = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "defaultteamdata.txt")
 fifa16_defaul_teamsheets = os.path.join(os.path.dirname(__file__), "..", "db", "fifa-16", "default_teamsheets.txt")
