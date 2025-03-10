@@ -1,10 +1,11 @@
 class Team:
-    def __init__(self, teamid_fifa17, teamid_fifa16, name, foundation_year):
+    def __init__(self, teamid_fifa17, teamid_fifa16, name, foundation_year, cityname=""):
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
         #Foundation year is not part of FIFA 16 table, but part of FIFA 17. Must be modified manually
         self.foundation_year = foundation_year
+        self.cityname = cityname
 
 class Player:
     def __init__(self, playerid, firstname, lastname):
@@ -17,7 +18,8 @@ class Player:
 
 liga1orange_teams = {
     'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947),
-    'astra': Team(270, 130026, "Astra", foundation_year=1921)
+    'astra': Team(270, 130026, "Astra", foundation_year=1921),
+    'cfr': Team(271, 130023, "CFR", foundation_year=1907, cityname="Cluj-Napoca"),
 }
 
 from enum import Enum

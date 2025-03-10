@@ -15,7 +15,7 @@ def save_tsv():
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
     languagestrings_df.to_csv(languagestrings, sep='\t', encoding='utf-16le', index=False)
 
-def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year):
+def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year, cityname):
     fifa16_suffix = f"_{fifa16_teamid}"
     fifa17_suffix = f"_{fifa17_teamid}"
 
@@ -27,8 +27,7 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
     #replace city name
     cityid = teams_df.loc[teams_df.teamid == fifa17_teamid, 'cityid'].values[0]
     citystringid = f"CityName_{cityid}_FullChar"
-    fifa16_cityid = fifa16_teams_df.loc[fifa16_teams_df.teamid == fifa16_teamid, 'cityid'].values[0]
-    languagestrings_df.loc[languagestrings_df.stringid == citystringid, 'sourcetext'] = languagestrings_df.loc[languagestrings_df.stringid == f"CityName_{fifa16_cityid}_FullChar", 'sourcetext'].values[0]
+    languagestrings_df.loc[languagestrings_df.stringid == citystringid, 'sourcetext'] = cityname
     
     teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]

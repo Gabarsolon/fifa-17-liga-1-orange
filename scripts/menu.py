@@ -2,7 +2,7 @@ import sys
 from constants import *
 from db_operations import *
 
-selected_team = liga1orange_teams['astra']
+selected_team = liga1orange_teams['cfr']
 selected_fifa17_player = None
 selected_fifa16_player = None
 
@@ -94,7 +94,7 @@ team_menu_options = {
     "2": {"name": "Change jersey number color", "function": lambda: handle_change_jersey_number_color()},
     "3": {"name": "Change jersey name color", "function": lambda: handle_change_jersey_name_color()},
     "4": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
-    "5": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year)},
+    "5": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
     "0": {"name": "Go back", "function": print_menu},
 }
 
