@@ -24,6 +24,11 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
             corresponding_stringid = row.stringid.replace(fifa16_suffix, fifa17_suffix)
             languagestrings_df.loc[languagestrings_df.stringid == corresponding_stringid, 'sourcetext'] = row.sourcetext
 
+    #replace city name
+    cityid = teams_df.loc[teams_df.teamid == fifa17_teamid, 'cityid'].values[0]
+    citystringid = f"CityName_{cityid}_FullChar"
+    fifa16_cityid = fifa16_teams_df.loc[fifa16_teams_df.teamid == fifa16_teamid, 'cityid'].values[0]
+    languagestrings_df.loc[languagestrings_df.stringid == citystringid, 'sourcetext'] = languagestrings_df.loc[languagestrings_df.stringid == f"CityName_{fifa16_cityid}_FullChar", 'sourcetext'].values[0]
     
     teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
@@ -181,4 +186,6 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     formations_df.loc[formations_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
     defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
+
+print(teams_df.loc[teams_df.teamid == 1, 'cityid'].values[0])
     
