@@ -91,8 +91,7 @@ menu_options = {
 
 team_menu_options = {
     "1": {"name": "Select team", "function": print_select_team_menu},
-    "2": {"name": "Change jersey number color", "function": lambda: handle_change_jersey_number_color()},
-    "3": {"name": "Change jersey name color", "function": lambda: handle_change_jersey_name_color()},
+    "2": {"name": "Fix kits colors", "function": lambda: fix_kits_colors(selected_team)},
     "4": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
     "5": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
     "0": {"name": "Go back", "function": print_menu},
@@ -119,13 +118,5 @@ def assign_selected_player_from_fifa16():
     selected_fifa16_player = get_player_from_fifa16_given_name_and_team(
         input("Enter the player name: "), selected_team.teamid_fifa16
     )
-
-def handle_change_jersey_name_color():
-    global selected_team
-    change_jersey_name_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "))
-    
-def handle_change_jersey_number_color():
-    global selected_team
-    change_jersey_number_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): ") )
-
+  
 print_menu()
