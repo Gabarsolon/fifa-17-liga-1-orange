@@ -29,6 +29,8 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
     citystringid = f"CityName_{cityid}_FullChar"
     languagestrings_df.loc[languagestrings_df.stringid == citystringid, 'sourcetext'] = cityname
     
+    fix_kits_colors(Team(teamid_fifa16=fifa16_teamid, teamid_fifa17=fifa17_teamid))
+    
     teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
     columns_to_replace = [
