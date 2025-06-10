@@ -202,12 +202,10 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
 
     fifa16_players = fifa16_players.sort_values(by='overallrating', ascending=False)
 
-    print(fifa16_players[['playerid', 'overallrating']])
+    for (fifa16_index, fifa16_row), (fifa17_index, fifa17_row) in zip(fifa16_players.iterrows(), fifa17_players.iterrows()):
+        replace_player_from_fifa17_with_one_from_fifa16(fifa17_row.playerid, fifa16_row.playerid, fifa17_teamid, fifa16_teamid)
 
-    # for (fifa16_index, fifa16_row), (fifa17_index, fifa17_row) in zip(fifa16_players.iterrows(), fifa17_players.iterrows()):
-    #     replace_player_from_fifa17_with_one_from_fifa16(fifa17_row.playerid, fifa16_row.playerid, fifa17_teamid, fifa16_teamid)
-
-    # if len(fifa16_players) < len(fifa17_players):
-    #     teamplayerlinks_df.drop(teamplayerlinks_df.index[len(fifa16_players):len(fifa17_players)], inplace=True)
+    if len(fifa16_players) < len(fifa17_players):
+        teamplayerlinks_df.drop(teamplayerlinks_df.index[len(fifa16_players):len(fifa17_players)], inplace=True)
 
 print([col for col in players_df.columns])
