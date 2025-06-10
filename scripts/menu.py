@@ -103,6 +103,7 @@ player_menu_options = {
     "3": {"name": "Select player from FIFA 16 given name and selected team", "function": lambda: assign_selected_player_from_fifa16()},
     "4": {"name": "Insert name into playernames table", "function": None},  # TODO: implement function
     "5": {"name": "Replace player from FIFA 17 with one from FIFA 16", "function": lambda: replace_player_from_fifa17_with_one_from_fifa16(selected_fifa17_player.playerid, selected_fifa16_player.playerid, selected_team.teamid_fifa17, selected_team.teamid_fifa16)},
+    "6": {"name" : "Replace all players with the ones from FIFA 16", "function": lambda: replace_players_from_fifa16_with_players_from_fifa17(selected_team.teamid_fifa17, selected_team.teamid_fifa16)},
     "0": {"name": "Go back", "function": print_menu},
 }
 
