@@ -57,6 +57,26 @@ def fix_kits_colors(team):
                     column
                 ].values[0]
 
+def change_kit_foreground_color(team, kit_type, color):
+    teamkittypetechid = KitType.from_name(kit_type).id
+    kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
+
+    color_columns = [
+        ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb'],
+        ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb'],
+        ['shortsnumbercolorprimr', 'shortsnumbercolorprimg', 'shortsnumbercolorprimb'],
+        ['shortsnumbercolorsecr', 'shortsnumbercolorsecg', 'shortsnumbercolorsecb'],
+        ['teamcolorprimr', 'teamcolorprimg', 'teamcolorprimb'],
+        ['teamcolorsecr', 'teamcolorsecg', 'teamcolorsecb'],
+        ['jerseynumbercolorsecr', 'jerseynumbercolorsecg', 'jerseynumbercolorsecb'],
+        ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb'],
+        ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb'],
+        ['shortsnumbercolorprimr', 'shortsnumbercolorprimg', 'shortsnumbercolorprimb'],
+        ['shortsnumbercolorsecr', 'shortsnumbercolorsecg', 'shortsnumbercolorsecb'],
+    ]
+    
+    for color_columns_group in color_columns:
+        teamkits_df.loc[teamkits_df.teamkitid == kit_id, color_columns_group] = color
 
 # print([col for col in fifa16_players_df.columns])
 

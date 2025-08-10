@@ -2,7 +2,7 @@ import sys
 from constants import *
 from db_operations import *
 
-selected_team = liga1orange_teams['cfr']
+selected_team = liga1orange_teams['viitorul']
 selected_fifa17_player = None
 selected_fifa16_player = None
 
@@ -92,8 +92,9 @@ menu_options = {
 team_menu_options = {
     "1": {"name": "Select team", "function": print_select_team_menu},
     "2": {"name": "Fix kits colors", "function": lambda: fix_kits_colors(selected_team)},
-    "4": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
-    "5": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
+    "3": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
+    "4": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
+    "2": {"name": "Change kit's foreground color", "function": lambda: handle_kits_foreground_color_change()},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -119,5 +120,10 @@ def assign_selected_player_from_fifa16():
     selected_fifa16_player = get_player_from_fifa16_given_name_and_team(
         input("Enter the player name: "), selected_team.teamid_fifa16
     )
+
+def handle_kits_foreground_color_change():
+    global selected_team
+    change_kit_foreground_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), [int(input("Enter the red channel value(0-255): ")), int(input("Enter the green channel value(0-255): ")), int(input("Enter the blue channel value(0-255): "))])
+    
   
 print_menu()

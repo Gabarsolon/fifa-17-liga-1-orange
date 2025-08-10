@@ -1,5 +1,5 @@
 class Team:
-    def __init__(self, teamid_fifa17, teamid_fifa16, name, foundation_year, cityname=""):
+    def __init__(self, teamid_fifa17, teamid_fifa16, name="", foundation_year="", cityname=""):
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
@@ -20,6 +20,7 @@ liga1orange_teams = {
     'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947),
     'astra': Team(270, 130026, "Astra", foundation_year=1921),
     'cfr': Team(271, 130023, "CFR", foundation_year=1907, cityname="Cluj-Napoca"),
+    'viitorul': Team(272, 130024, "Viitorul", foundation_year=2009, cityname="Constanța")
 }
 
 from enum import Enum
