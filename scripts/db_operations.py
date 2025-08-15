@@ -76,6 +76,7 @@ def change_kit_foreground_color(team, kit_type, color):
     ]
     
     for color_columns_group in color_columns:
+        print(teamkits_df.loc[teamkits_df.teamkitid == kit_id, color_columns_group])
         teamkits_df.loc[teamkits_df.teamkitid == kit_id, color_columns_group] = color
 
 # print([col for col in fifa16_players_df.columns])
