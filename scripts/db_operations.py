@@ -46,7 +46,7 @@ def fix_kits_colors(team):
     fifa16_kit_types = fifa16_teamkits_df.loc[fifa16_teamkits_df.teamtechid == team.teamid_fifa16, 'teamkittypetechid'].unique()
     for teamkittypetechid in set(teamkits_df.loc[teamkits_df.teamtechid == team.teamid_fifa17, 'teamkittypetechid']).intersection(fifa16_kit_types):
         for column in teamkits_df.columns:
-            if 'color' in column.lower() and column in fifa16_teamkits_df.columns:
+            if ('color' in column.lower() or 'font' in column.lower()) and column in fifa16_teamkits_df.columns:
                 teamkits_df.loc[
                     (teamkits_df.teamtechid == team.teamid_fifa17) & 
                     (teamkits_df.teamkittypetechid == teamkittypetechid), 
@@ -229,4 +229,10 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
     if len(fifa16_players) < len(fifa17_players):
         teamplayerlinks_df.drop(teamplayerlinks_df.index[len(fifa16_players):len(fifa17_players)], inplace=True)
 
-print([col for col in players_df.columns])
+for col in fifa16_teamkits_df.columns:
+    if 'font' in col:
+        print(col)
+print('------------------')
+for col in teamkits_df.columns:
+    if 'font' in col:
+        print(col)
