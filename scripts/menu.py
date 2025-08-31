@@ -94,7 +94,8 @@ team_menu_options = {
     "2": {"name": "Fix kits colors", "function": lambda: fix_kits_colors(selected_team)},
     "3": {"name": "Replace formation and team data from FIFA 17 with one from FIFA 16", "function": lambda: replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(selected_team.teamid_fifa17, selected_team.teamid_fifa16)}, 
     "4": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
-    "2": {"name": "Change kit's foreground color", "function": lambda: handle_kits_foreground_color_change()},
+    "5": {"name": "Change kit's foreground color", "function": lambda: handle_kits_foreground_color_change()},
+    "6": {"name": "Change kit's font type", "function": lambda: handle_kits_font_type_change()},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -125,5 +126,8 @@ def handle_kits_foreground_color_change():
     global selected_team
     change_kit_foreground_color(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), [int(input("Enter the red channel value(0-255): ")), int(input("Enter the green channel value(0-255): ")), int(input("Enter the blue channel value(0-255): "))])
     
+def handle_kits_font_type_change():
+    global selected_team
+    change_kit_font_type(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), int(input("Enter font code: ")))
   
 print_menu()

@@ -46,7 +46,7 @@ def fix_kits_colors(team):
     fifa16_kit_types = fifa16_teamkits_df.loc[fifa16_teamkits_df.teamtechid == team.teamid_fifa16, 'teamkittypetechid'].unique()
     for teamkittypetechid in set(teamkits_df.loc[teamkits_df.teamtechid == team.teamid_fifa17, 'teamkittypetechid']).intersection(fifa16_kit_types):
         for column in teamkits_df.columns:
-            if ('color' in column.lower() or 'font' in column.lower()) and column in fifa16_teamkits_df.columns:
+            if 'color' in column.lower() and column in fifa16_teamkits_df.columns:
                 teamkits_df.loc[
                     (teamkits_df.teamtechid == team.teamid_fifa17) & 
                     (teamkits_df.teamkittypetechid == teamkittypetechid), 
@@ -62,22 +62,26 @@ def change_kit_foreground_color(team, kit_type, color):
     kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
 
     color_columns = [
-        ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb'],
-        ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb'],
-        ['shortsnumbercolorprimr', 'shortsnumbercolorprimg', 'shortsnumbercolorprimb'],
-        ['shortsnumbercolorsecr', 'shortsnumbercolorsecg', 'shortsnumbercolorsecb'],
-        ['teamcolorprimr', 'teamcolorprimg', 'teamcolorprimb'],
-        ['teamcolorsecr', 'teamcolorsecg', 'teamcolorsecb'],
-        ['jerseynumbercolorsecr', 'jerseynumbercolorsecg', 'jerseynumbercolorsecb'],
-        ['jerseynumbercolorprimr', 'jerseynumbercolorprimg', 'jerseynumbercolorprimb'],
-        ['jerseynamecolorr', 'jerseynamecolorg', 'jerseynamecolorb'],
-        ['shortsnumbercolorprimr', 'shortsnumbercolorprimg', 'shortsnumbercolorprimb'],
-        ['shortsnumbercolorsecr', 'shortsnumbercolorsecg', 'shortsnumbercolorsecb'],
+        ['jerseynamecolorb', 'jerseynamecolorg', 'jerseynamecolorr'],
+        ['jerseynumbercolorprimb', 'jerseynumbercolorprimg', 'jerseynumbercolorprimr'],
+        ['jerseynumbercolorsecb', 'jerseynumbercolorsecg', 'jerseynumbercolorsecr'],
+        ['jerseynumbercolorterb', 'jerseynumbercolorterg', 'jerseynumbercolorterr'],
+        ['shortsnumbercolorprimb', 'shortsnumbercolorprimg', 'shortsnumbercolorprimr'],
+        ['shortsnumbercolorsecb', 'shortsnumbercolorsecg', 'shortsnumbercolorsecr'],
+        ['shortsnumbercolorterb', 'shortsnumbercolorterg', 'shortsnumbercolorterr'],
     ]
     
     for color_columns_group in color_columns:
         print(teamkits_df.loc[teamkits_df.teamkitid == kit_id, color_columns_group])
         teamkits_df.loc[teamkits_df.teamkitid == kit_id, color_columns_group] = color
+
+def change_kit_font_type(team, kit_type, font_code):
+    teamkittypetechid = KitType.from_name(kit_type).id
+    kit_id = teamkits_df.loc[(teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == teamkittypetechid), 'teamkitid'].values[0]
+
+    for font_column in ['jerseynamefonttype', 'numberfonttype', 'shortsnumberfonttype']:
+        print(teamkits_df.loc[teamkits_df.teamkitid == kit_id, font_column])
+        teamkits_df.loc[teamkits_df.teamkitid == kit_id, font_column] = font_code
 
 # print([col for col in fifa16_players_df.columns])
 
@@ -229,10 +233,8 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
     if len(fifa16_players) < len(fifa17_players):
         teamplayerlinks_df.drop(teamplayerlinks_df.index[len(fifa16_players):len(fifa17_players)], inplace=True)
 
-for col in fifa16_teamkits_df.columns:
-    if 'font' in col:
-        print(col)
+
+
 print('------------------')
 for col in teamkits_df.columns:
-    if 'font' in col:
-        print(col)
+    print(col)
