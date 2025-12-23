@@ -137,8 +137,9 @@ def get_player_from_fifa16_given_name_and_team(name, teamid):
     for(row) in fifa16_team_players_df.itertuples():
         firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.firstnameid].name.values[0]
         lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == row.lastnameid].name.values[0]
+        fullname = firstname.lower() + ' ' + lastname.lower()
 
-        if name.lower() in firstname.lower() or name.lower() in lastname.lower():
+        if name.lower() in firstname.lower() or name.lower() in lastname.lower() or name.lower() in fullname  or name == row.playerid:
             print(
                 row.playerid,
                 firstname,
