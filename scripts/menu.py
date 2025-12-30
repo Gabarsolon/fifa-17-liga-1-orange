@@ -2,7 +2,7 @@ import sys
 from constants import *
 from db_operations import *
 
-selected_team = liga1orange_teams['craiova']
+selected_team = liga1orange_teams['dinamo']
 selected_fifa17_player = None
 selected_fifa16_player = None
 
