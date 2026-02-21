@@ -188,7 +188,8 @@ cd fifa-17-liga-1-orange
 - TSV files are located in db/
 - Edit tables carefully (respect IDs and relations)
 - Run [menu.py](scripts\menu.py) for automation functions 
-- Import the save 
+- Import the saved TSV's in DBMaster
+- Import saved DB files in Frosty Editor
 
 #### 5️⃣ FIFA 16 FRLT V2 importing 
 - Download the [FRLT V2 Patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) and add it to fifa 16
