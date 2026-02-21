@@ -1,6 +1,6 @@
 <!-- HEADER IMAGE -->
 <p align="center">
-  <img src="assets/league/liga_1_banner.png" alt="Liga 1 Orange 16/17" width="100%">
+  <img src="assets/league/liga_I_logo.png" alt="Liga 1 Orange 16/17" width="100%">
 </p>
 
 <h1 align="center">⚽ FIFA 17 – Liga 1 Orange 16/17</h1>
