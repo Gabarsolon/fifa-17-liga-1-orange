@@ -100,6 +100,7 @@ team_menu_options = {
     "6": {"name": "Change kit's font type", "function": lambda: handle_kits_font_type_change()},
     "7": {"name": "Extract team kits using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16)},
     "8": {"name": "Extract team crests using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16)},
+    "9": {"name": "1-Click Full Team Import (Replace FIFA 17 team with FIFA 16 team)", "function": handle_full_team_import},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -135,7 +136,42 @@ def handle_kits_font_type_change():
     global selected_team
     change_kit_font_type(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), int(input("Enter font code: ")))
 
-def extract_assets_with_cmcli(command, entity_id):
+def handle_full_team_import():
+    global selected_team
+    print(f"\nStarting full 1-click import for {selected_team.name}...")
+    print("1. Replacing team details...")
+    replace_team_details_from_fifa17_with_ones_from_fif16(
+        selected_team.teamid_fifa17, 
+        selected_team.teamid_fifa16, 
+        selected_team.foundation_year, 
+        selected_team.cityname
+    )
+    print("2. Replacing formation and team data...")
+    replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(
+        selected_team.teamid_fifa17, 
+        selected_team.teamid_fifa16
+    )
+    print("3. Replacing players...")
+    replace_players_from_fifa16_with_players_from_fifa17(
+        selected_team.teamid_fifa17, 
+        selected_team.teamid_fifa16
+    )
+    
+    ans = input("\nDo you also want to extract graphical assets (kits, crests) using CmCli? (y/n): ")
+    if ans.lower() == 'y':
+        out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")
+        if out_dir:
+            extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16, out_dir)
+            extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16, out_dir)
+            
+            # Optionally extract players faces too
+            ans_players = input("Extract textures for ALL imported players? (y/n): ")
+            if ans_players.lower() == 'y':
+                print("Note: Batch player extraction is not yet a single CmCli command, but you can use the player menu to extract them individually.")
+    
+    print("\nFull import finished! Don't forget to save changes to TSV's from the main menu.")
+
+def extract_assets_with_cmcli(command, entity_id, out_dir=None):
     if not entity_id:
         print("ERROR: No entity ID provided. Make sure you have selected a valid FIFA 16 team or player first.")
         return
@@ -158,12 +194,13 @@ def extract_assets_with_cmcli(command, entity_id):
     else:
         year = "16"
         
-    out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")
+    if out_dir is None:
+        out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")
     if not out_dir:
         print("Export cancelled.")
         return
         
-    print(f"Running CmCli.exe {command}...")
+    print(f"Running CmCli.exe {command} for ID {entity_id}...")
     try:
         subprocess.run([
             cmcli_path, 
