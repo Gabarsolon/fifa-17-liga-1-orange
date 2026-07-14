@@ -8,11 +8,16 @@ This project is a mod for FIFA 17 that adds the Romanian Liga 1 Orange (2016/201
 ## Important Paths and External Tools
 - **Python Scripts**: The `scripts/` directory contains tools to edit `.tsv` database files (exported from `fifa_ng_db.DB`). Start from `scripts/menu.py` to navigate team and player operations.
 - **CmCli.exe (CreationMaster16 CLI)**: This is a standalone C# CLI used for extracting FIFA 16 `.rx3` graphical assets (kits, crests, player faces). It allows extracting textures from FIFA 16 for injection into FIFA 17. The executable is currently located at: `C:\Users\remus\dnSpy-net-win64\CreationMaster16\CmCli\bin\Debug\CmCli.exe`.
+- **DbCli.exe (DbMaster CLI)**: Used for exporting and importing `.db` table data directly from/to the TSVs. It avoids manual DB Master intervention. Executable located at: `C:\Users\remus\dnSpy-net-win64\DbMaster\DbCli\bin\Debug\DbCli.exe`.
+- **FrostyCli.exe (Frostbite CLI)**: Used for interacting with the `.fbproject` and extracting/inspecting Frostbite engine modifications without launching Frosty Editor. Executable located at: `C:\Users\remus\dnSpy-net-win64\FrostyEditorDecompiled\FrostyCli\bin\Debug\FrostyCli.exe`.
 - **Database TSVs**: Located in the `db/` directory. Be careful when updating these TSVs programmatically. Pay attention to `teamid`, `playerid`, and `leagueid` relations.
 
 ## AI Agent Guidelines
 1. **Never edit Frostbite binary files directly**: Files like `.ebx`, `.res`, `.chunk`, or `.fbproject` should not be modified through code directly unless you specifically know the Frostbite serialization format.
 2. **Work with TSV Database Dumps**: Instead of trying to parse the `.db` files natively, edit the `.tsv` representations found in `db/`. The workflow expects these TSVs to be modified and then imported manually by the user via DB Master.
 3. **Use the Python CLI**: Expand `scripts/menu.py` to add new features or automations rather than creating standalone scattered scripts.
-4. **Interact with CmCli**: When you need to retrieve legacy assets from FIFA 16 (kits, crests, player textures), automate the usage of `CmCli.exe`. 
+4. **Interact with Custom CLIs**: 
+   - **CmCli**: Use this to retrieve legacy assets from FIFA 16 (kits, crests, player textures).
+   - **DbCli**: Use this for automated database table dumps and imports to/from `.tsv` files.
+   - **FrostyCli**: Use this to query modified files in the `.fbproject` programmatically.
 5. **Aesthetics & Documentation**: Keep `README.md` and documentation files updated whenever you introduce a new script or workflow element.

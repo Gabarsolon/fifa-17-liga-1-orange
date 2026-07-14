@@ -42,9 +42,9 @@
 
 ## 🛠 Tools Used
 
-- Frosty Editor  
+- Frosty Editor & FrostyCli 
 - Frosty Mod Manager  
-- DB Master
+- DB Master & DbCli
 - Creation Master 16 & CmCli
 - Photoshop 
 - Blender
@@ -187,8 +187,8 @@ cd fifa-17-liga-1-orange
 - Edit tables carefully (respect IDs and relations)
 - Run `python scripts/menu.py` for automation functions
   - You can fix kit colors, swap player data, and extract FIFA 16 textures (kits, crests, player faces) via CmCli directly from the menu!
-- Import the saved TSV's in DBMaster
-- Import saved DB files in Frosty Editor
+- Import the saved TSV's into the `.db` files using `DbCli` (or DB Master manually)
+- Import saved DB files into Frosty Editor (use `FrostyCli` for automated inspections if needed)
 
 #### 5️⃣ FIFA 16 FRLT V2 importing 
 - Download the [FRLT V2 Patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) and add it to fifa 16
