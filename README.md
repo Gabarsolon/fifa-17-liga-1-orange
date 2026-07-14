@@ -45,7 +45,7 @@
 - Frosty Editor  
 - Frosty Mod Manager  
 - DB Master
-- Creation Master 16
+- Creation Master 16 & CmCli
 - Photoshop 
 - Blender
 ---
@@ -185,13 +185,14 @@ cd fifa-17-liga-1-orange
 #### 4️⃣ Database Workflow
 - TSV files are located in db/
 - Edit tables carefully (respect IDs and relations)
-- Run [menu.py](scripts\menu.py) for automation functions 
+- Run `python scripts/menu.py` for automation functions
+  - You can fix kit colors, swap player data, and extract FIFA 16 textures (kits, crests, player faces) via CmCli directly from the menu!
 - Import the saved TSV's in DBMaster
 - Import saved DB files in Frosty Editor
 
 #### 5️⃣ FIFA 16 FRLT V2 importing 
 - Download the [FRLT V2 Patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) and add it to fifa 16
-- Use CreationMaster16 for reading and exporting data
+- Use CreationMaster16 or the automated `CmCli` tools inside `menu.py` for reading and exporting data
 
 
 

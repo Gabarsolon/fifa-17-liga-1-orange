@@ -8,3 +8,18 @@
 
 #Python
 **/__pycache__/**
+*.pyc
+
+#Database files
+*.db
+*.xml
+*.bak
+
+#Zip files
+*.zip
+
+#IDE / OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db

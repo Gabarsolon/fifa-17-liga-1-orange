@@ -1,4 +1,6 @@
 import sys
+import subprocess
+import os
 from constants import *
 from db_operations import *
 
@@ -96,6 +98,8 @@ team_menu_options = {
     "4": {"name": "Replace team details from FIFA 17 with one from FIFA 16", "function": lambda: replace_team_details_from_fifa17_with_ones_from_fif16(selected_team.teamid_fifa17, selected_team.teamid_fifa16, selected_team.foundation_year, selected_team.cityname)},
     "5": {"name": "Change kit's foreground color", "function": lambda: handle_kits_foreground_color_change()},
     "6": {"name": "Change kit's font type", "function": lambda: handle_kits_font_type_change()},
+    "7": {"name": "Extract team kits using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16)},
+    "8": {"name": "Extract team crests using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16)},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -106,6 +110,7 @@ player_menu_options = {
     "4": {"name": "Insert name into playernames table", "function": None},  # TODO: implement function
     "5": {"name": "Replace player from FIFA 17 with one from FIFA 16", "function": lambda: replace_player_from_fifa17_with_one_from_fifa16(selected_fifa17_player.playerid, selected_fifa16_player.playerid, selected_team.teamid_fifa17, selected_team.teamid_fifa16)},
     "6": {"name" : "Replace all players with the ones from FIFA 16", "function": lambda: replace_players_from_fifa16_with_players_from_fifa17(selected_team.teamid_fifa17, selected_team.teamid_fifa16)},
+    "7": {"name": "Extract player assets using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-player", selected_fifa16_player.playerid if selected_fifa16_player else None)},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -129,5 +134,50 @@ def handle_kits_foreground_color_change():
 def handle_kits_font_type_change():
     global selected_team
     change_kit_font_type(selected_team, input("Enter the kit type (home, away, gk, tertiary): "), int(input("Enter font code: ")))
-  
+
+def extract_assets_with_cmcli(command, entity_id):
+    if not entity_id:
+        print("ERROR: No entity ID provided. Make sure you have selected a valid FIFA 16 team or player first.")
+        return
+
+    cmcli_path = r"C:\Users\remus\dnSpy-net-win64\CreationMaster16\CmCli\bin\Debug\CmCli.exe"
+    if not os.path.exists(cmcli_path):
+        print(f"ERROR: CmCli.exe not found at {cmcli_path}")
+        return
+        
+    db_path = r"D:\Games\FIFA 16\data\db\fifa_ng_db.db"
+    xml_path = r"D:\Games\FIFA 16\data\db\fifa_ng_db-meta.xml"
+    fifa_dir = r"D:\Games\FIFA 16"
+    
+    # Just checking if they have FIFA 14 instead
+    if not os.path.exists(fifa_dir):
+        db_path = r"D:\Games\FIFA 14\Game\data\db\fifa_ng_db.db"
+        xml_path = r"D:\Games\FIFA 14\Game\data\db\fifa_ng_db-meta.xml"
+        fifa_dir = r"D:\Games\FIFA 14\Game"
+        year = "14"
+    else:
+        year = "16"
+        
+    out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")
+    if not out_dir:
+        print("Export cancelled.")
+        return
+        
+    print(f"Running CmCli.exe {command}...")
+    try:
+        subprocess.run([
+            cmcli_path, 
+            command, 
+            db_path, 
+            xml_path, 
+            fifa_dir, 
+            year,
+            str(entity_id), 
+            out_dir
+        ], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"ERROR: CmCli execution failed with exit code {e.returncode}")
+    except Exception as e:
+        print(f"ERROR: Failed to run CmCli: {e}")
+
 print_menu()
