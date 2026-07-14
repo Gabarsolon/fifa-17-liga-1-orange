@@ -161,8 +161,8 @@ def handle_full_team_import():
     if ans.lower() == 'y':
         out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")
         if out_dir:
-            extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16, out_dir)
-            extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16, out_dir)
+            extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16, out_dir, convert_to_dds=True)
+            extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16, out_dir, convert_to_dds=True)
             
             # Optionally extract players faces too
             ans_players = input("Extract textures for ALL imported players? (y/n): ")
@@ -171,7 +171,7 @@ def handle_full_team_import():
     
     print("\nFull import finished! Don't forget to save changes to TSV's from the main menu.")
 
-def extract_assets_with_cmcli(command, entity_id, out_dir=None):
+def extract_assets_with_cmcli(command, entity_id, out_dir=None, convert_to_dds=False):
     if not entity_id:
         print("ERROR: No entity ID provided. Make sure you have selected a valid FIFA 16 team or player first.")
         return
@@ -212,6 +212,20 @@ def extract_assets_with_cmcli(command, entity_id, out_dir=None):
             str(entity_id), 
             out_dir
         ], check=True)
+        
+        if convert_to_dds:
+            ps_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ConvertPNGsToDDS.ps1")
+            if os.path.exists(ps_script):
+                print(f"Converting extracted PNGs to DDS using {ps_script}...")
+                subprocess.run([
+                    "powershell.exe", 
+                    "-ExecutionPolicy", "Bypass", 
+                    "-File", ps_script,
+                    "-TargetDirectory", out_dir
+                ])
+            else:
+                print(f"WARNING: Conversion script not found at {ps_script}")
+                
     except subprocess.CalledProcessError as e:
         print(f"ERROR: CmCli execution failed with exit code {e.returncode}")
     except Exception as e:
