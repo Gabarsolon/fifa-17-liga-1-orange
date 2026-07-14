@@ -201,17 +201,17 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     
     formation_to_replace_df = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid]
     for column in formation_to_replace_df.columns:
-        if column.endswith('id') is False and column in formations_df.columns:
+        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in formations_df.columns:
             formations_df.loc[formations_df.teamid == fifa17_teamid, column] = formation_to_replace_df[column].values[0]
     
     default_teamsheets_to_replace_df = fifa16_defaul_teamsheets_df[fifa16_defaul_teamsheets_df.teamid == fifa16_teamid]
     for column in default_teamsheets_to_replace_df.columns:
-        if not column.endswith('id') and column in default_teamsheets_df.columns:
+        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in default_teamsheets_df.columns:
             default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, column] = default_teamsheets_df[column].values[0]
 
     defaultteamdata_to_replace_df = fifa16_defaultteamdata_df[fifa16_defaultteamdata_df.teamid == fifa16_teamid]
     for column in defaultteamdata_to_replace_df.columns:
-        if column.endswith('id') is False and column in defaultteamdata_df.columns:
+        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in defaultteamdata_df.columns:
             defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, column] = defaultteamdata_to_replace_df[column].values[0]
             
     #set the formationfullnameid which is missing in fifa16 default_teamsheets and defaultteamdata
