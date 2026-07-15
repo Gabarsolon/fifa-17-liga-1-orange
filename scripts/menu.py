@@ -3,6 +3,10 @@ import subprocess
 import os
 from constants import *
 from db_operations import *
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env'))
+
 
 selected_team = liga1orange_teams['dinamo']
 selected_fifa17_player = None
@@ -176,23 +180,20 @@ def extract_assets_with_cmcli(command, entity_id, out_dir=None, convert_to_dds=F
         print("ERROR: No entity ID provided. Make sure you have selected a valid FIFA 16 team or player first.")
         return
 
-    cmcli_path = r"C:\Users\remus\dnSpy-net-win64\CreationMaster16\CmCli\bin\Debug\CmCli.exe"
-    if not os.path.exists(cmcli_path):
+    cmcli_path = os.environ.get("CMCLI_PATH")
+    if not cmcli_path or not os.path.exists(cmcli_path):
         print(f"ERROR: CmCli.exe not found at {cmcli_path}")
         return
         
-    db_path = r"D:\Games\FIFA 16\data\db\fifa_ng_db.db"
-    xml_path = r"D:\Games\FIFA 16\data\db\fifa_ng_db-meta.xml"
-    fifa_dir = r"D:\Games\FIFA 16"
-    
-    # Just checking if they have FIFA 14 instead
-    if not os.path.exists(fifa_dir):
-        db_path = r"D:\Games\FIFA 14\Game\data\db\fifa_ng_db.db"
-        xml_path = r"D:\Games\FIFA 14\Game\data\db\fifa_ng_db-meta.xml"
-        fifa_dir = r"D:\Games\FIFA 14\Game"
-        year = "14"
-    else:
+    fifa16_dir = os.environ.get("FIFA16_DIR")
+    if fifa16_dir and os.path.exists(fifa16_dir):
+        db_path = os.environ.get("FIFA16_DB_PATH")
+        xml_path = os.environ.get("FIFA16_XML_PATH")
+        fifa_dir = fifa16_dir
         year = "16"
+    else:
+        print("ERROR: FIFA 16 directory found as specified in .env is invalid or missing.")
+        return
         
     if out_dir is None:
         out_dir = input("Enter output directory path (e.g. C:\\Users\\remus\\Desktop\\Extracted): ")

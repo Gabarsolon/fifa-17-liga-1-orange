@@ -42,10 +42,10 @@
 
 ## 🛠 Tools Used
 
-- Frosty Editor & FrostyCli 
+- Frosty Editor & FrostyCli (Custom CLI built from decompiled Frosty Editor)
 - Frosty Mod Manager  
-- DB Master & DbCli
-- Creation Master 16 & CmCli
+- DB Master & DbCli (Custom CLI built from decompiled DB Master)
+- Creation Master 16 & CmCli (Custom CLI built from decompiled CM16)
 - Photoshop 
 - Blender
 ---

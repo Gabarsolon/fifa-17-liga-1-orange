@@ -6,10 +6,13 @@ This file provides guidelines and instructions for AI agents working on this pro
 This project is a mod for FIFA 17 that adds the Romanian Liga 1 Orange (2016/2017 season) by replacing the Danish league. It heavily relies on Frosty Editor and Frosty Mod Manager, but database edits and asset generation are assisted by a custom Python CLI (`scripts/menu.py`) and a C# CLI tool (`CmCli.exe`).
 
 ## Important Paths and External Tools
-- **Python Scripts**: The `scripts/` directory contains tools to edit `.tsv` database files (exported from `fifa_ng_db.DB`). Start from `scripts/menu.py` to navigate team and player operations.
-- **CmCli.exe (CreationMaster16 CLI)**: This is a standalone C# CLI used for extracting FIFA 16 `.rx3` graphical assets (kits, crests, player faces). It allows extracting textures from FIFA 16 for injection into FIFA 17. The executable is currently located at: `C:\Users\remus\dnSpy-net-win64\CreationMaster16\CmCli\bin\Debug\CmCli.exe`.
-- **DbCli.exe (DbMaster CLI)**: Used for exporting and importing `.db` table data directly from/to the TSVs. It avoids manual DB Master intervention. Executable located at: `C:\Users\remus\dnSpy-net-win64\DbMaster\DbCli\bin\Debug\DbCli.exe`.
-- **FrostyCli.exe (Frostbite CLI)**: Used for interacting with the `.fbproject` and extracting/inspecting Frostbite engine modifications without launching Frosty Editor. Executable located at: `C:\Users\remus\dnSpy-net-win64\FrostyEditorDecompiled\FrostyCli\bin\Debug\FrostyCli.exe`.
+All external tool paths and game directory paths must be managed through a local `.env` file in the root directory. Hardcoded paths inside the scripts should be avoided.
+
+- **Game Directories**: The project is strictly about importing assets from **FIFA 16** and replacing them in **FIFA 17**. Other game versions (like FIFA 14) are not supported. Example `.env` properties: `FIFA16_DIR`, `FIFA17_DIR`.
+- **Python Scripts**: The `scripts/` directory contains tools to edit `.tsv` database files. Start from `scripts/menu.py`.
+- **CmCli.exe (CreationMaster16 CLI)**: A custom standalone C# CLI wrapper built on top of the decompiled Creation Master 16 source. Used for extracting FIFA 16 `.rx3` graphical assets (kits, crests, player faces). Configure `CMCLI_PATH` and the decompiled source directory `CM16_DECOMPILED_DIR` in `.env`.
+- **DbCli.exe (DbMaster CLI)**: A custom CLI wrapper built from the decompiled DB Master. Used for exporting and importing `.db` table data directly from/to the TSVs. Configure `DBCLI_PATH` and `DBMASTER_DECOMPILED_DIR` in `.env`.
+- **FrostyCli.exe (Frostbite CLI)**: A custom CLI wrapper built on top of the Frosty Editor source code. Used for interacting with the `.fbproject` and extracting/inspecting Frostbite engine modifications. Configure `FROSTYCLI_PATH` and `FROSTY_EDITOR_DECOMPILED_DIR` in `.env`.
 - **Database TSVs**: Located in the `db/` directory. Be careful when updating these TSVs programmatically. Pay attention to `teamid`, `playerid`, and `leagueid` relations.
 - **Conversion Scripts**: The `scripts/ConvertPNGsToDDS.ps1` script is used to batch convert PNGs (exported by CmCli) into `BC3_UNORM` `.dds` format using `texconv`, preparing them for Frosty Editor injection.
 
