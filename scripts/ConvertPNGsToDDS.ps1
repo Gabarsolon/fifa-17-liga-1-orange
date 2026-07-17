@@ -27,7 +27,7 @@ if ($pngFiles.Count -eq 0) {
 # Loop through each PNG file and convert it
 foreach ($file in $pngFiles) {
     $outputFile = [System.IO.Path]::ChangeExtension($file.FullName, ".dds")
-    $command = "texconv -f BC3_UNORM -m 1 -srgb -o $($file.DirectoryName) $($file.FullName) -y"
+    $command = "texconv -f BC3_UNORM -srgb -o $($file.DirectoryName) $($file.FullName) -y"
     
     Write-Host "Converting $($file.Name) to $outputFile"
     Invoke-Expression $command
