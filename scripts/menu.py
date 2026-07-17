@@ -104,7 +104,7 @@ team_menu_options = {
     "6": {"name": "Change kit's font type", "function": lambda: handle_kits_font_type_change()},
     "7": {"name": "Extract team kits using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-kit", selected_team.teamid_fifa16)},
     "8": {"name": "Extract team crests using CmCli (FIFA 16)", "function": lambda: extract_assets_with_cmcli("export-crests", selected_team.teamid_fifa16)},
-    "9": {"name": "1-Click Full Team Import (Replace FIFA 17 team with FIFA 16 team)", "function": handle_full_team_import},
+    "9": {"name": "1-Click Full Team Import (Replace FIFA 17 team with FIFA 16 team)", "function": lambda: handle_full_team_import()},
     "0": {"name": "Go back", "function": print_menu},
 }
 
@@ -232,4 +232,5 @@ def extract_assets_with_cmcli(command, entity_id, out_dir=None, convert_to_dds=F
     except Exception as e:
         print(f"ERROR: Failed to run CmCli: {e}")
 
-print_menu()
+if __name__ == '__main__':
+    print_menu()

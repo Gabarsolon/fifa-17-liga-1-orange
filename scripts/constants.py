@@ -23,6 +23,7 @@ liga1orange_teams = {
     'viitorul': Team(272, 130024, "Viitorul", foundation_year=2009, cityname="Constanța"),
     'craiova': Team(819, 130021, "Craiova", foundation_year=2013, cityname="Craiova"),
     'dinamo': Team(820, 130027, "Dinamo", foundation_year=1948, cityname="București"),
+    'poli': Team(1443, 130022, "Poli", foundation_year=2012, cityname="Timișoara"),
 }
 
 from enum import Enum

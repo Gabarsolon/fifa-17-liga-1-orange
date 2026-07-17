@@ -21,7 +21,8 @@ All external tool paths and game directory paths must be managed through a local
   1. Rewrites database entries for teams and players
   2. Extracts FIFA 16 textures using `CmCli`
   3. Instantly converts the extracted textures to `.dds` using `ConvertPNGsToDDS.ps1`
-- The output `.dds` files are then manually imported into the `.fbproject` using Frosty Editor.
+  4. Automatically injects legacy textures into the `.fbproject` using `FrostyCmd inject-legacy`
+- The project can then be immediately launched from the command line using `FrostyCmd launch-project`.
 
 ## AI Agent Guidelines
 1. **Self-Documentation (CRITICAL)**: You MUST update this `AGENTS.md` file after every discussion and after every new project discovery or workflow modification. This ensures future agents have an up-to-date context of the repository's state.
@@ -33,3 +34,18 @@ All external tool paths and game directory paths must be managed through a local
    - **DbCli**: Use this for automated database table dumps and imports to/from `.tsv` files.
    - **FrostyCli**: Use this to query modified files in the `.fbproject` programmatically.
 5. **Aesthetics & Documentation**: Keep `README.md` and documentation files updated whenever you introduce a new script or workflow element.
+
+## Team Import Workflow Plan
+Here is the step-by-step plan for importing a team from FIFA 16 and replacing one in FIFA 17:
+1. **Identify Target Teams**: Find the FIFA 16 Team ID of the team to import and select a FIFA 17 Team ID (typically from the Danish League) to replace.
+2. **Update Constants**: Add the new team mapping to liga1orange_teams in scripts/constants.py with its foundation year and city name.
+3. **Database Import**: Use scripts/import_poli.py (or the menu's 1-click import) to:
+   - Replace team details (colors, IDs, foundation year).
+   - Replace formation and team data.
+   - Replace player rosters (names, attributes, kit numbers).
+   - Save changes to TSV files in the db/ folder.
+4. **Asset Extraction**: The script will automatically trigger CmCli.exe to extract kits, crests, and optionally player faces from the FIFA 16 database, placing them in ssets/teams/<team_name>/.
+5. **Texture Conversion**: Extracted .png assets are automatically converted to Frosty-compatible .dds formats using ConvertPNGsToDDS.ps1.
+6. **Frostbite Injection**: Automatically inject the newly generated `.dds` assets using `FrostyCmd inject-legacy`.
+7. **Database Import**: Use `DbCli.exe` or DB Master to import the modified TSV files into the actual `.db` file for the mod.
+8. **Final Build**: Automatically build and launch the mod through `FrostyCmd launch-project`.

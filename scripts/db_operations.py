@@ -187,8 +187,8 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
         if column in teamplayerlinks_df.columns:
             teamplayerlinks_df.loc[(teamplayerlinks_df.playerid == fifa17_playerid)  & (teamplayerlinks_df.teamid == fifa17_teamid), column] = fifa16_teamplayerlink_df[column].values[0]
         
-    print(players_df[players_df.playerid == fifa17_playerid])
-    print(playernames_df.iloc[-1])
+    # print(players_df[players_df.playerid == fifa17_playerid])
+    # print(playernames_df.iloc[-1])
 
 def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teamid, fifa16_teamid):
     fifa16_formation_name = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid].formationname.values[0] 
