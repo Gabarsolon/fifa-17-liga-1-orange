@@ -27,13 +27,19 @@ All external tool paths and game directory paths must be managed through a local
 ## AI Agent Guidelines
 1. **Self-Documentation (CRITICAL)**: You MUST update this `AGENTS.md` file after every discussion and after every new project discovery or workflow modification. This ensures future agents have an up-to-date context of the repository's state.
 2. **Never edit Frostbite binary files directly**: Files like `.ebx`, `.res`, `.chunk`, or `.fbproject` should not be modified through code directly unless you specifically know the Frostbite serialization format.
-2. **Work with TSV Database Dumps**: Instead of trying to parse the `.db` files natively, edit the `.tsv` representations found in `db/`. The workflow expects these TSVs to be modified and then imported manually by the user via DB Master.
-3. **Use the Python CLI**: Expand `scripts/menu.py` to add new features or automations rather than creating standalone scattered scripts.
-4. **Interact with Custom CLIs**: 
+3. **Work with TSV Database Dumps**: Instead of trying to parse the `.db` files natively, edit the `.tsv` representations found in `db/`. The workflow expects these TSVs to be modified and then imported manually by the user via DB Master.
+4. **Use the Python CLI**: Expand `scripts/menu.py` to add new features or automations rather than creating standalone scattered scripts.
+5. **Interact with Custom CLIs**: 
    - **CmCli**: Use this to retrieve legacy assets from FIFA 16 (kits, crests, player textures).
-   - **DbCli**: Use this for automated database table dumps and imports to/from `.tsv` files.
-   - **FrostyCli**: Use this to query modified files in the `.fbproject` programmatically.
-5. **Aesthetics & Documentation**: Keep `README.md` and documentation files updated whenever you introduce a new script or workflow element.
+   - **DbCli**: Use this for automated database table dumps and imports to/from `.tsv` files using the `import-all` command. (e.g., `DbCli.exe import-all <input_db> <schema_xml> <tsv_dir> <output_db>`). Always use pristine base files exported directly from FIFA 17 (`clean_from_game_fifa_ng_db.DB` & `clean_from_game_fifa_ng_db-meta.xml`).
+   - **FrostyCli**: Use this to query modified files in the `.fbproject` programmatically. It includes `import-legacy` and `export-legacy` commands to inject and extract custom legacy assets like databases and minikits.
+6. **Team Name String IDs (`CT_TeamName`)**: FIFA 17 uses `CT_TeamName_<teamid>` as the commentary/display team name string in match UI and scoreboards. FIFA 16 database strings did not contain `CT_TeamName`. Whenever replacing team details, `CT_TeamName_<fifa17_teamid>` MUST be explicitly updated in `LanguageStrings.txt` using the team's `TeamName_Abbr15` string to ensure the correct team name appears in-game instead of the default team name.
+7. **UI Legacy Asset Mappings (Crests & Minikits)**: UI crests and minikits in FIFA 17 are stored as legacy file assets in `data/ui/imgAssets/`:
+   - **Crests**: `data/ui/imgAssets/crest/light/l<teamid>.dds`, `data/ui/imgAssets/crest/dark/l<teamid>.dds`, `data/ui/imgAssets/crest16x16/...`, `data/ui/imgAssets/crest32x32/...`, `data/ui/imgAssets/crest50x50/...`
+   - **Minikits**: `data/ui/imgAssets/kits/j0_<teamid>_0.dds` (home), `j1_<teamid>_0.dds` (away), `j2_<teamid>_0.dds` (gk).
+   - Inject these using `FrostyCmd import-legacy` for each team.
+8. **Database & Meta XML Pairing (CRITICAL)**: Whenever `.db` files (`fifa_ng_db.db` or `eng_us.db`) are modified by `DbCli`, you MUST inject **both** the `.db` AND its regenerated `-meta.xml` counterpart (`fifa_ng_db-meta.xml` / `eng_us-meta.xml`) into the `.fbproject` via `FrostyCmd import-legacy`. Failure to inject the matching `-meta.xml` causes index/offset mismatches in the Frostbite engine, resulting in a silent ~500MB RAM crash on startup.
+9. **FrostyCmd GUI Null Check Fix (CRITICAL)**: When running `FrostyCmd` headlessly in CLI mode, `FrostyMessageBox.ShowInternal` was throwing a `NullReferenceException` because `Application.Current.MainWindow` is null. We patched `FrostyMessageBox.cs` constructor and `ShowInternal` method to handle CLI environments gracefully and recompiled `FrostyControls.dll` and `FrostyCmd.exe`.
 
 ## Team Import Workflow Plan
 Here is the step-by-step plan for importing a team from FIFA 16 and replacing one in FIFA 17:

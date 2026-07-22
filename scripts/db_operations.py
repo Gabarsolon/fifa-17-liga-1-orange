@@ -24,6 +24,11 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
             corresponding_stringid = row.stringid.replace(fifa16_suffix, fifa17_suffix)
             languagestrings_df.loc[languagestrings_df.stringid == corresponding_stringid, 'sourcetext'] = row.sourcetext
 
+    ct_stringid = f"CT_TeamName_{fifa17_teamid}"
+    team_name_15 = languagestrings_df.loc[languagestrings_df.stringid == f"TeamName_Abbr15_{fifa17_teamid}", 'sourcetext']
+    if not team_name_15.empty and pd.notna(team_name_15.values[0]):
+        languagestrings_df.loc[languagestrings_df.stringid == ct_stringid, 'sourcetext'] = team_name_15.values[0]
+
     #replace city name
     cityid = teams_df.loc[teams_df.teamid == fifa17_teamid, 'cityid'].values[0]
     citystringid = f"CityName_{cityid}_FullChar"
@@ -160,24 +165,27 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
         if column in players_df.columns:
             players_df.loc[players_df.playerid == fifa17_playerid, column] = player_to_replace_df[column].values[0]
 
-    firstname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.firstnameid.values[0]].name.values[0]
-    lastname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.lastnameid.values[0]].name.values[0]
-    if player_to_replace_df.commonnameid.values[0] != 0:
-        commonname = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.commonnameid.values[0]].name.values[0]
+    firstname_matches = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.firstnameid.values[0]]
+    lastname_matches = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.lastnameid.values[0]]
+    
+    firstname = firstname_matches.name.values[0] if not firstname_matches.empty else ""
+    lastname = lastname_matches.name.values[0] if not lastname_matches.empty else ""
+    
+    commonname_id_val = player_to_replace_df.commonnameid.values[0]
+    if commonname_id_val != 0:
+        common_matches = fifa16_playernames_df[fifa16_playernames_df.nameid == commonname_id_val]
+        commonname = common_matches.name.values[0] if not common_matches.empty else None
     else:
         commonname = None
-        
 
     firstnameid = insert_name_into_playernames_df(firstname)
     lastnameid = insert_name_into_playernames_df(lastname)
-    if commonname is not None:
-        commonnameid = insert_name_into_playernames_df(commonname)
-    
+    commonnameid = insert_name_into_playernames_df(commonname) if commonname is not None else 0
+
     players_df.loc[players_df.playerid == fifa17_playerid, 'firstnameid'] = firstnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'lastnameid'] = lastnameid
     players_df.loc[players_df.playerid == fifa17_playerid, 'playerjerseynameid'] = lastnameid
-    if commonname is not None:
-        players_df.loc[players_df.playerid == fifa17_playerid, 'commonnameid'] = commonnameid
+    players_df.loc[players_df.playerid == fifa17_playerid, 'commonnameid'] = commonnameid
     
     #adjust teamplayer_links
     fifa16_teamplayerlink_df = fifa16_teamplayerlinks_df[(fifa16_teamplayerlinks_df.teamid == fifa16_teamid) & (fifa16_teamplayerlinks_df.playerid == fifa16_playerid)]
@@ -207,7 +215,7 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
     default_teamsheets_to_replace_df = fifa16_defaul_teamsheets_df[fifa16_defaul_teamsheets_df.teamid == fifa16_teamid]
     for column in default_teamsheets_to_replace_df.columns:
         if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in default_teamsheets_df.columns:
-            default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, column] = default_teamsheets_df[column].values[0]
+            default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, column] = default_teamsheets_to_replace_df[column].values[0]
 
     defaultteamdata_to_replace_df = fifa16_defaultteamdata_df[fifa16_defaultteamdata_df.teamid == fifa16_teamid]
     for column in defaultteamdata_to_replace_df.columns:
@@ -232,7 +240,12 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
         replace_player_from_fifa17_with_one_from_fifa16(fifa17_row.playerid, fifa16_row.playerid, fifa17_teamid, fifa16_teamid)
 
     if len(fifa16_players) < len(fifa17_players):
-        teamplayerlinks_df.drop(teamplayerlinks_df.index[len(fifa16_players):len(fifa17_players)], inplace=True)
+        extra_players = fifa17_players.iloc[len(fifa16_players):]
+        drop_indices = teamplayerlinks_df[
+            (teamplayerlinks_df.teamid == fifa17_teamid) & 
+            (teamplayerlinks_df.playerid.isin(extra_players.playerid))
+        ].index
+        teamplayerlinks_df.drop(drop_indices, inplace=True)
 
 
 
