@@ -9,9 +9,13 @@ if (-Not (Test-Path -Path $TargetDirectory -PathType Container)) {
     exit
 }
 
-# Ensure texconv is available in the system PATH
-if (-not (Get-Command texconv -ErrorAction SilentlyContinue)) {
-    Write-Host "Error: texconv.exe is not found in the system PATH."
+# texconv: TEXCONV_PATH from .env / environment, else PATH
+if (-not $env:TEXCONV_PATH -and (Test-Path (Join-Path (Split-Path $PSScriptRoot -Parent) '.env'))) {
+    . "$PSScriptRoot\Load-Env.ps1"
+}
+$texconv = if ($env:TEXCONV_PATH) { $env:TEXCONV_PATH } else { (Get-Command texconv -ErrorAction SilentlyContinue).Source }
+if (-not $texconv -or -not (Test-Path $texconv)) {
+    Write-Host "Error: texconv.exe not found. Set TEXCONV_PATH in .env or add it to PATH."
     exit
 }
 
@@ -27,10 +31,14 @@ if ($pngFiles.Count -eq 0) {
 # Loop through each PNG file and convert it
 foreach ($file in $pngFiles) {
     $outputFile = [System.IO.Path]::ChangeExtension($file.FullName, ".dds")
-    $command = "texconv -f BC3_UNORM -srgb -o $($file.DirectoryName) $($file.FullName) -y"
-    
-    Write-Host "Converting $($file.Name) to $outputFile"
-    Invoke-Expression $command
+    # FIFA 17 kit data maps (*_coeff, *_normal) are linear BC1 (DXT1); colour textures are sRGB BC3 (DXT5).
+    if ($file.BaseName -match '_(coeff|normal)$') {
+        $texArgs = @('-f', 'BC1_UNORM')
+    } else {
+        $texArgs = @('-f', 'BC3_UNORM', '-srgb')
+    }
+    Write-Host "Converting $($file.Name) to $outputFile ($($texArgs -join ' '))"
+    & $texconv @texArgs -o $file.DirectoryName $file.FullName -y
 }
 
 Write-Host "Conversion complete!"

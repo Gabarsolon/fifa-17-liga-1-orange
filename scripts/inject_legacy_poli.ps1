@@ -1,7 +1,9 @@
-$env:FIFA17_DIR = "D:\Games\FIFA 17"
-$FrostyCmd = ".\FrostyCmd.exe"
-$Project = "D:\Games\fifaModding\fifa-17-liga-1-orange\Liga1Orange.fbproject"
-$AssetsDir = "D:\Games\fifaModding\fifa-17-liga-1-orange\assets\teams\poli"
+. "$PSScriptRoot\Load-Env.ps1"
+
+$FrostyCmd = $env:FROSTYCLI_PATH
+$RepoRoot = Split-Path $PSScriptRoot -Parent
+$Project = Join-Path $RepoRoot "Liga1Orange.fbproject"
+$AssetsDir = Join-Path $RepoRoot "assets\teams\poli"
 
 $legacyMap = @{
     "data/ui/imgAssets/crest/dark/l1443.dds" = "$AssetsDir\team_130022_crest_standard.dds"
@@ -17,7 +19,8 @@ $legacyMap = @{
     "data/ui/imgAssets/kits/j2_1443_0.dds" = "$AssetsDir\team_130022_kit_2_minikit.dds"
 }
 
-Set-Location -Path "C:\Users\remus\dnSpy-net-win64\FrostyToolsuite\FrostyEditor\bin\Developer\Debug"
+# FrostyCmd must run from its own folder (it loads sibling DLLs).
+Set-Location -Path (Split-Path $FrostyCmd -Parent)
 
 foreach ($key in $legacyMap.Keys) {
     $payload = $legacyMap[$key]

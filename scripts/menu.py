@@ -190,7 +190,6 @@ def extract_assets_with_cmcli(command, entity_id, out_dir=None, convert_to_dds=F
         db_path = os.environ.get("FIFA16_DB_PATH")
         xml_path = os.environ.get("FIFA16_XML_PATH")
         fifa_dir = fifa16_dir
-        year = "16"
     else:
         print("ERROR: FIFA 16 directory found as specified in .env is invalid or missing.")
         return
@@ -209,7 +208,6 @@ def extract_assets_with_cmcli(command, entity_id, out_dir=None, convert_to_dds=F
             db_path, 
             xml_path, 
             fifa_dir, 
-            year,
             str(entity_id), 
             out_dir
         ], check=True)

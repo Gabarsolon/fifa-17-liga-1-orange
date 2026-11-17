@@ -198,34 +198,54 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
     # print(players_df[players_df.playerid == fifa17_playerid])
     # print(playernames_df.iloc[-1])
 
-def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teamid, fifa16_teamid):
-    fifa16_formation_name = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid].formationname.values[0] 
-    formationfullnameid = -1
-    #get the formationfullnameid
-    for (row) in formations_df.itertuples():
-        if row.formationname == fifa16_formation_name:
-            formationfullnameid = row.formationid
-            break
-    
-    formation_to_replace_df = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid]
-    for column in formation_to_replace_df.columns:
-        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in formations_df.columns:
-            formations_df.loc[formations_df.teamid == fifa17_teamid, column] = formation_to_replace_df[column].values[0]
-    
-    default_teamsheets_to_replace_df = fifa16_defaul_teamsheets_df[fifa16_defaul_teamsheets_df.teamid == fifa16_teamid]
-    for column in default_teamsheets_to_replace_df.columns:
-        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in default_teamsheets_df.columns:
-            default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, column] = default_teamsheets_to_replace_df[column].values[0]
+ORIGINAL_FORMATIONS_TSV = os.path.join(os.path.dirname(__file__), "..", "db", "original_tables", "formations.txt")
+def normalize_formation_name(name):
+    # FIFA 17 `formations.formationname` is only the shape ("4-3-3"); the variant ("Holding", "Wide"...) lives in
+    # formationfullnameid. FIFA 16 rows may carry a suffix ("4-3-3 Holding", "4-3-3 Halten"): keep the shape only.
+    return str(name).split(' ')[0]
 
-    defaultteamdata_to_replace_df = fifa16_defaultteamdata_df[fifa16_defaultteamdata_df.teamid == fifa16_teamid]
-    for column in defaultteamdata_to_replace_df.columns:
-        if (not column.endswith('id') or column in ['formationid', 'tacticid', 'formationaudioid']) and column in defaultteamdata_df.columns:
-            defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, column] = defaultteamdata_to_replace_df[column].values[0]
-            
+def find_formationfullnameid(fifa16_formation_row, fifa17_reference_df):
+    """formationfullnameid is the id of the string Formation_FullName_<id> (e.g. 3 = '4-2-3-1 Wide').
+    It is NOT a formationid. Pick it from FIFA 17 rows with the same shape (formation name without suffix); if there are several
+    variants (Wide/Narrow, Flat/Holding...) take the one whose player offsets are closest to the FIFA 16 layout."""
+    name = normalize_formation_name(fifa16_formation_row.formationname)
+    candidates = fifa17_reference_df[(fifa17_reference_df.formationname.map(normalize_formation_name) == name) & (fifa17_reference_df.formationfullnameid > 0)]
+    if candidates.empty:
+        print(f"WARNING: no FIFA 17 formation named '{name}', formationfullnameid left unchanged")
+        return None
+    offset_cols = [c for c in candidates.columns if c.startswith('offset') and c in fifa16_formation_row.index]
+    distances = ((candidates[offset_cols].astype(float) - fifa16_formation_row[offset_cols].astype(float)) ** 2).sum(axis=1)
+    return int(candidates.loc[distances.idxmin(), 'formationfullnameid'])
+
+def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teamid, fifa16_teamid):
+    original_formations_df = pd.read_csv(ORIGINAL_FORMATIONS_TSV, sep='	', encoding='utf-16le')
+    formation_to_replace_df = fifa16_formations_df[fifa16_formations_df.teamid == fifa16_teamid]
+    fifa16_formation_row = formation_to_replace_df.iloc[0]
+    formationfullnameid = find_formationfullnameid(fifa16_formation_row, original_formations_df)
+
+    # formationid is the primary key of `formations` (unique per row): never copy it from FIFA 16, it collides
+    # with other FIFA 17 rows (duplicate key -> crash). Everything else that is not an id is copied.
+    copy_id_columns = ['tacticid', 'formationaudioid']
+    for column in formation_to_replace_df.columns:
+        if (not column.endswith('id') or column in copy_id_columns) and column in formations_df.columns:
+            formations_df.loc[formations_df.teamid == fifa17_teamid, column] = formation_to_replace_df[column].values[0]
+    original_formationid = original_formations_df.loc[original_formations_df.teamid == fifa17_teamid, 'formationid'].values
+    if len(original_formationid):
+        formations_df.loc[formations_df.teamid == fifa17_teamid, 'formationid'] = original_formationid[0]
+
+    for target_df, source_df in (
+        (default_teamsheets_df, fifa16_defaul_teamsheets_df),
+        (defaultteamdata_df, fifa16_defaultteamdata_df),
+    ):
+        source_row_df = source_df[source_df.teamid == fifa16_teamid]
+        for column in source_row_df.columns:
+            if (not column.endswith('id') or column in copy_id_columns) and column in target_df.columns:
+                target_df.loc[target_df.teamid == fifa17_teamid, column] = source_row_df[column].values[0]
+
     #set the formationfullnameid which is missing in fifa16 default_teamsheets and defaultteamdata
-    formations_df.loc[formations_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
-    default_teamsheets_df.loc[default_teamsheets_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
-    defaultteamdata_df.loc[defaultteamdata_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
+    if formationfullnameid is not None:
+        for target_df in (formations_df, default_teamsheets_df, defaultteamdata_df):
+            target_df.loc[target_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
 
 def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_teamid):
     fifa16_players = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
