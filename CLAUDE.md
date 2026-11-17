@@ -7,3 +7,4 @@
 - Before running anything that writes into a game folder, `Program Files`, or `Liga1Orange.fbproject`: make a backup or work on a copy, and say so. `regenerate-bh` already writes `.bh.bak` files.
 - No game, injector or Frosty GUI is available to the agent: in-game results must be reported as unverified until the user tests.
 - Screenshots and temp files go to the scratchpad directory, not the repo.
+- After running the import pipeline on a team, always end with the squad report described in AGENTS.md rule 10 (chosen/cut players with OVR and Transfermarkt data). Propose swaps, do not apply them without the user's OK.

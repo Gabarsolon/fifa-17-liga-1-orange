@@ -25,6 +25,7 @@ from db_operations import (
     replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16,
     replace_players_from_fifa16_with_players_from_fifa17,
     player_pairs,
+    apply_player_swaps,
     save_tsv,
 )
 from menu import extract_assets_with_cmcli
@@ -55,6 +56,9 @@ def import_db(team):
     replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(team.teamid_fifa17, team.teamid_fifa16)
     print('3. Players (sorted by overall, best first)')
     replace_players_from_fifa16_with_players_from_fifa17(team.teamid_fifa17, team.teamid_fifa16)
+    if team.player_swaps:
+        print('3b. Player swaps')
+        apply_player_swaps(team.teamid_fifa17, team.teamid_fifa16, team.player_swaps)
     print('4. Saving TSV files')
     save_tsv()
 

@@ -268,6 +268,21 @@ def player_pairs(fifa17_teamid, fifa16_teamid):
     return pairs
 
 
+def apply_player_swaps(fifa17_teamid, fifa16_teamid, swaps):
+    """Give the FIFA 17 slot of FIFA 16 player `out` to FIFA 16 player `in`. The incoming player takes the
+    jersey number of the outgoing one (FIFA 16 data can have the same number twice in one squad)."""
+    for out_id, in_id in swaps:
+        slot = {f16: f17 for f17, f16 in player_pairs(fifa17_teamid, fifa16_teamid)}.get(out_id)
+        if slot is None:
+            print(f"WARNING: FIFA 16 player {out_id} is not in the FIFA 17 squad, swap with {in_id} skipped")
+            continue
+        mask = (teamplayerlinks_df.playerid == slot) & (teamplayerlinks_df.teamid == fifa17_teamid)
+        jersey = teamplayerlinks_df.loc[mask, 'jerseynumber'].values[0]
+        replace_player_from_fifa17_with_one_from_fifa16(slot, in_id, fifa17_teamid, fifa16_teamid)
+        teamplayerlinks_df.loc[mask, 'jerseynumber'] = jersey
+        print(f"Swapped FIFA 16 player {out_id} -> {in_id} in FIFA 17 slot {slot}, jersey {jersey}")
+
+
 def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_teamid):
     fifa16_players = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
     fifa16_players = fifa16_players[fifa16_players.teamid == fifa16_teamid]

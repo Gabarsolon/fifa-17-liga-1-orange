@@ -1,11 +1,14 @@
 class Team:
-    def __init__(self, teamid_fifa17, teamid_fifa16, name="", foundation_year="", cityname=""):
+    def __init__(self, teamid_fifa17, teamid_fifa16, name="", foundation_year="", cityname="", player_swaps=None):
         self.teamid_fifa17 = teamid_fifa17
         self.teamid_fifa16 = teamid_fifa16
         self.name = name
         #Foundation year is not part of FIFA 16 table, but part of FIFA 17. Must be modified manually
         self.foundation_year = foundation_year
         self.cityname = cityname
+        # [(fifa16_playerid_out, fifa16_playerid_in)]: after the OVR import, the slot of "out" is given to "in".
+        # Used when a player who became relevant later (Transfermarkt) would otherwise be cut by the OVR ranking.
+        self.player_swaps = player_swaps or []
 
 class Player:
     def __init__(self, playerid, firstname, lastname):
@@ -23,7 +26,8 @@ liga1orange_teams = {
     'viitorul': Team(272, 130024, "Viitorul", foundation_year=2009, cityname="Constanța"),
     'craiova': Team(819, 130021, "Craiova", foundation_year=2013, cityname="Craiova"),
     'dinamo': Team(820, 130027, "Dinamo", foundation_year=1948, cityname="București"),
-    'poli': Team(1443, 130022, "Poli", foundation_year=2012, cityname="Timișoara"),
+    'poli': Team(1443, 130022, "Poli", foundation_year=2012, cityname="Timișoara",
+                 player_swaps=[(50311, 50253)]),  # Emanuel Vasi (retired) -> Sebastian Mailat (FC Botosani, 1M EUR)
 }
 
 from enum import Enum
