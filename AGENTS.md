@@ -118,6 +118,12 @@ Idea for the other teams: run the same Transfermarkt comparison (club search by 
 - `menu.py` and `import_poli.py` import each other's helpers; `menu.py` pulled in `year` for CmCli (removed).
 - Previous history is in git (170 commits): per-team manual work for FCSB, CFR, Viitorul, Craiova, Dinamo, Astra (kits/hotspots/fonts/logos/socks done by hand in Photoshop, `.psd` kept in `assets/teams/fcsb`).
 
+## Issue #5: 3D league logo (investigation started 2026-11-17, not solved)
+Goal: replace the 3D logo mesh of the Danish league (`leaguelogo_1_mesh`, league id 1) with a Liga 1 Orange one. The user already tried (commits `64e7c78`, `fa421d3`, `481fe94` "Gave up"): Frosty Editor corrupts an imported FBX, even the unmodified FBX exported by Frosty itself. Material in the repo: `assets/league/` (exported FBX 2006/2012/2013, ImageToStl extrusion of `Liga_I_logo.png`, `.obj`) and `assets/bins/leaguelogo_1*.bin` (raw RES/chunk dumps of the original, mesh 4192 bytes).
+Findings so far:
+- FIFA 16 + FRLT has a 3D model for Liga 1 Orange, `data/sceneassets/trophy/trophy_83.rx3` (83 = leagueid). It is the league **trophy** (a tall cup, 1079 vertices, 22 x 57 x 21 units), not a flat logo, so it is not a drop-in for `leaguelogo_1_mesh`. Exported with the new `CmCli export-obj <file.rx3> <out.obj> float32` (use `float32`; the default Float16 decoding gives garbage coordinates). Possible separate use: a Liga 1 trophy model in FIFA 17 (not investigated).
+- Frosty source for the mesh path: `FrostyToolsuite/Plugins/MeshSetPlugin` (`Fbx.cs` 2185 lines, `Resources/MeshSet.cs`, `FrostyMeshSetEditor.cs`). Round-trip diagnosis idea (needs new `FrostyCmd` commands): export the original MeshSet, import the same FBX, re-export and diff vertex/index/bounds data to find what the importer breaks; or bypass the FBX importer and write the vertex/index buffers into the MeshSet from an OBJ directly with the SDK. Where the 3D logo is shown in game, and how to verify it, is not yet known.
+
 ## Proposed project structure (not applied, needs user OK)
 ```
 liga1/                 python package (replaces scripts/*.py)
