@@ -36,6 +36,7 @@ DB_DIR = os.path.join(ROOT, 'db')
 # Last commit of Liga1Orange.fbproject before the (broken) Poli injection.
 FBPROJECT_BASELINE_REF = '00ac879'
 TEST_PROJECT = os.path.join(ROOT, 'Liga1Orange.test.fbproject')
+GENERIC_HEAD = os.path.join(ROOT, 'assets', 'generic', 'notfound_head.png')  # 128x128 silhouette (from assets/teams/viitorul/notfound_0.dds)
 
 FIFA_TABLES = [
     'defaultteamdata.txt', 'default_teamsheets.txt', 'formations.txt',
@@ -168,7 +169,13 @@ def build_minifaces(key, team):
         if result.returncode == 0 and os.path.exists(src):
             shutil.copy(src, os.path.join(heads, f'p{f17id}.png'))
         else:
-            print(f'  no photo for FIFA 16 player {f16id} (FIFA 17 id {f17id}), keeping FIFA 17 default')
+            # Never leave the face of the replaced FIFA 17 player: use the neutral silhouette.
+            print(f'  no photo for FIFA 16 player {f16id} (FIFA 17 id {f17id}), using the generic silhouette')
+            shutil.copy(GENERIC_HEAD, os.path.join(heads, f'p{f17id}.png'))
+    # Hand-made faces (players without a FIFA 16 photo): assets/teams/<key>/heads_custom/p<FIFA17 playerid>.png, 128x128 RGBA
+    for custom in glob.glob(os.path.join(ROOT, 'assets', 'teams', key, 'heads_custom', 'p*.png')):
+        print(f'  custom face {os.path.basename(custom)}')
+        shutil.copy(custom, os.path.join(heads, os.path.basename(custom)))
     run(['powershell.exe', '-ExecutionPolicy', 'Bypass', '-File', os.path.join(ROOT, 'scripts', 'ConvertPNGsToDDS.ps1'),
          '-TargetDirectory', heads])
     return heads
