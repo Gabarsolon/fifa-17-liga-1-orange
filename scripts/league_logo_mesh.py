@@ -27,6 +27,18 @@ PALETTE = [(254, 254, 254), (248, 90, 3), (101, 102, 99), (218, 213, 205), (29, 
 CELL, TEX = 16, 64
 
 
+def auto_palette(png, k=8):
+    """k-means colours of the opaque pixels, most frequent first (index 0 = base colour, normally white)."""
+    img = np.asarray(Image.open(png).convert("RGBA"))
+    px = img[..., :3][img[..., 3] >= 250].astype(np.float32)
+    if len(px) > 200000:
+        px = px[np.random.default_rng(0).choice(len(px), 200000, replace=False)]
+    crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 60, 0.5)
+    _, lab, cen = cv2.kmeans(px, k, None, crit, 5, cv2.KMEANS_PP_CENTERS)
+    order = np.argsort(-np.bincount(lab.ravel(), minlength=k))
+    return [tuple(int(round(x)) for x in cen[i]) for i in order]
+
+
 def label_map(png, scale, sigma):
     """Per-class smooth label map at `scale` x the PNG size; -1 = transparent."""
     img = np.asarray(Image.open(png).convert("RGBA"))
@@ -184,8 +196,12 @@ def main():
     ap.add_argument("--raise", dest="raise_m", type=float, default=0.012, help="height of the colour layers above the base")
     ap.add_argument("--scale", type=int, default=8)
     ap.add_argument("--sigma", type=float, default=6.0)
+    ap.add_argument("--auto-palette", type=int, default=0, metavar="K", help="compute K colours from the logo instead of the built-in PALETTE")
     a = ap.parse_args()
 
+    if a.auto_palette:
+        PALETTE[:] = auto_palette(a.logo, a.auto_palette)
+        print("palette", PALETTE)
     mesh, size = build(a.logo, a.width, a.half_depth, a.raise_m, a.scale, a.sigma)
     pos, nrm, tan, bin_, uv = (np.array(x) for x in (mesh.pos, mesh.nrm, mesh.tan, mesh.bin, mesh.uv))
     tris = np.array(mesh.tris, dtype=np.int64)
