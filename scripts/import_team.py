@@ -1,10 +1,10 @@
 """Import one Liga 1 team from FIFA 16 into FIFA 17 and inject it into a TEST copy of the Frosty project.
 
-    python scripts/import_team.py poli [--skip-db] [--skip-assets] [--skip-frosty]
+    python scripts/import_team.py poli [--skip-db] [--skip-assets] [--skip-frosty] [--fresh]
 
-Never touches Liga1Orange.fbproject: a clean baseline (git ref FBPROJECT_BASELINE_REF) is written to
-Liga1Orange.test.fbproject and everything is injected there. Copy it over the real project yourself
-once it works in game.
+Never touches Liga1Orange.fbproject. Everything is injected into Liga1Orange.test.fbproject: it is created from a clean
+baseline (git ref FBPROJECT_BASELINE_REF) the first time and then reused, so teams accumulate; `--fresh` resets it.
+Copy it over the real project yourself once it works in game.
 """
 import argparse
 import glob
@@ -109,7 +109,12 @@ def frosty_cmd(*args, **kwargs):
     run([frosty, 'FIFA17', *args], cwd=os.path.dirname(frosty), **kwargs)
 
 
-def write_baseline_project():
+def write_baseline_project(fresh):
+    """Cumulative by default: keep the existing test project (it already holds the teams imported before) and add this
+    team to it. `--fresh` starts again from the clean baseline project."""
+    if os.path.exists(TEST_PROJECT) and not fresh:
+        print(f'Continuing from the existing {os.path.basename(TEST_PROJECT)} (teams imported earlier stay in it)')
+        return
     print(f'Writing clean baseline project ({FBPROJECT_BASELINE_REF}) to {os.path.basename(TEST_PROJECT)}')
     with open(TEST_PROJECT, 'wb') as out:
         subprocess.run(['git', '-C', ROOT, 'show', f'{FBPROJECT_BASELINE_REF}:Liga1Orange.fbproject'], check=True, stdout=out)
@@ -219,11 +224,14 @@ def main():
     parser.add_argument('--skip-db', action='store_true', help='keep current TSVs')
     parser.add_argument('--skip-assets', action='store_true', help='reuse assets/teams/<team>/{f16_raw,final,heads}')
     parser.add_argument('--skip-frosty', action='store_true', help='stop before injecting into the Frosty project')
+    parser.add_argument('--fresh', action='store_true', help='restart the test project from the clean baseline (drops teams imported earlier)')
     args = parser.parse_args()
     team = liga1orange_teams[args.team]
     print(f'Importing {team.name}: FIFA 16 id {team.teamid_fifa16} -> FIFA 17 id {team.teamid_fifa17}')
 
     if not args.skip_db:
+        if not team.foundation_year:
+            sys.exit(f'{team.name}: foundation_year is not set in scripts/constants.py (it is not in the FIFA 16 tables). Fill it in first.')
         import_db(team)
     team_dir = os.path.join(ROOT, 'assets', 'teams', args.team)
     if args.skip_assets:
@@ -239,7 +247,7 @@ def main():
         sys.exit(1)
     print('Validation OK')
 
-    write_baseline_project()
+    write_baseline_project(args.fresh)
     with tempfile.TemporaryDirectory() as base_dir:
         base = export_base_dbs(base_dir)
         dbs = rebuild_dbs(base)

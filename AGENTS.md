@@ -161,6 +161,12 @@ Also: move `.fbmod`, `.zip`, `legacy_dump.txt` out of git history/GitHub Release
 ## GitHub
 Open issues: #24 formations, #23 presentation page, #22 flags/banners, #21 custom heads, #20 loans, #18 Poli Iasi, #17 Botosani, #16 Gaz Metan, #15 Pandurii, #14 ASA Tg. Mures, #13 Voluntari, #12 Chiajna, #9 Poli Timisoara, #6 translate LanguageStrings, #5 3D league logo, #3 vgmstream, #2 commentary. The user also uses a Kanboard/GitHub project board; `gh` needs `gh auth refresh -s read:project` to read it.
 
+## Generic pipeline status (2026-11-18)
+`python scripts/import_team.py <key> [--skip-db] [--skip-assets] [--skip-frosty] [--fresh]` works for every key in `liga1orange_teams` (14 teams). Done: fcsb, astra, cfr, viitorul, craiova, dinamo (by hand, older flow) and poli (pipeline). Remaining 7 have entries but need the user's input: `foundation_year` is `None` (not in FIFA 16 tables; `import_team.py` refuses until it is set; Transfermarkt `club_profile` was tried for it but the server answered 406) and the proposed Danish slot mapping must be confirmed: botosani 1445 (Esbjerg fB), pandurii 1446 (AC Horsens), poli_iasi 1447 (SonderjyskE), voluntari 1516 (FC Midtjylland), chiajna 1786 (Randers FC), gazmetan 1788 (FC Nordsjaelland), asa 15001 (Lyngby BK).
+- The test project is now cumulative: `Liga1Orange.test.fbproject` is created from the clean baseline the first time and reused afterwards, so each new team is added on top of the previous ones; `--fresh` resets it. The databases are always rebuilt from the project's own databases plus the full TSV tables, so they accumulate too.
+- Not automated yet: kit `hotspots` offsets (EBX `PlayerHotspotDataAsset`, Vec4 UV rectangles for Jersey Team/NumberBack/NumberFront/Name and Shorts; the user tunes them by eye per kit; hand-tuned values of earlier teams are in `Liga1Orange.fbproject`), kit font types, `teams` ratings/prestige columns, 3D league logo step, the Transfermarkt squad report (rule 10), `player_swaps` proposals.
+- Kit number colours: `db_operations.apply_fifa16_number_colors` converts the FIFA 16 palette index (`numbercolor`, `shortsnumbercolor`, Creation Master `KitForm.c_ColorPalette`) to FIFA 17 RGB prim/sec/ter and copies the three placement codes. Only run for newly imported teams.
+
 ## Team import workflow
 1. Add the team to `liga1orange_teams` in `scripts/constants.py` (FIFA 17 id of a Danish team, FIFA 16 id, foundation year, city).
 2. DB: team details (colours, year, strings), formation/teamdata/teamsheets, players (sorted by OVR), TSV save.
