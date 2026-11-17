@@ -34,6 +34,9 @@ foreach ($file in $pngFiles) {
     # FIFA 17 kit data maps (*_coeff, *_normal) are linear BC1 (DXT1); colour textures are sRGB BC3 (DXT5).
     if ($file.BaseName -match '_(coeff|normal)$') {
         $texArgs = @('-f', 'BC1_UNORM')
+    } elseif ($file.BaseName -match '^p\d+$') {
+        # player minifaces (data/ui/imgAssets/heads/p<id>.dds): 128x128 BC3 sRGB, single mip like the game's own files
+        $texArgs = @('-f', 'BC3_UNORM', '-srgb', '-m', '1')
     } else {
         $texArgs = @('-f', 'BC3_UNORM', '-srgb')
     }

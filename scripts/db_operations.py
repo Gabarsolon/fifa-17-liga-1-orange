@@ -247,6 +247,27 @@ def replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16(fifa17_teami
         for target_df in (formations_df, default_teamsheets_df, defaultteamdata_df):
             target_df.loc[target_df.teamid == fifa17_teamid, 'formationfullnameid'] = formationfullnameid
 
+def player_pairs(fifa17_teamid, fifa16_teamid):
+    """[(fifa17_playerid, fifa16_playerid)] for a team that was already imported: players are matched by
+    (first, last, common) name text, which replace_player_from_fifa17_with_one_from_fifa16 copied from FIFA 16."""
+    def names(players_df, names_df, links_df, teamid):
+        rows = pd.merge(players_df, links_df[links_df.teamid == teamid], on='playerid')
+        by_id = names_df.drop_duplicates('nameid').set_index('nameid')['name']
+        def text(nameid):
+            return by_id.get(nameid, '') if nameid != 0 else ''
+        return [(row.playerid, (text(row.firstnameid), text(row.lastnameid), text(row.commonnameid))) for row in rows.itertuples()]
+
+    fifa16 = {}
+    for playerid, key in names(fifa16_players_df, fifa16_playernames_df, fifa16_teamplayerlinks_df, fifa16_teamid):
+        fifa16.setdefault(key, []).append(playerid)
+    pairs = []
+    for playerid, key in names(players_df, playernames_df, teamplayerlinks_df, fifa17_teamid):
+        candidates = fifa16.get(key)
+        if candidates:
+            pairs.append((int(playerid), int(candidates.pop(0))))
+    return pairs
+
+
 def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_teamid):
     fifa16_players = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
     fifa16_players = fifa16_players[fifa16_players.teamid == fifa16_teamid]

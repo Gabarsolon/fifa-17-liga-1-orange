@@ -24,6 +24,7 @@ from db_operations import (
     replace_team_details_from_fifa17_with_ones_from_fif16,
     replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16,
     replace_players_from_fifa16_with_players_from_fifa17,
+    player_pairs,
     save_tsv,
 )
 from menu import extract_assets_with_cmcli
@@ -31,7 +32,6 @@ from kit_textures import socks_from_f16_atlas
 import validate
 
 DB_DIR = os.path.join(ROOT, 'db')
-ORIGINAL_DIR = os.path.join(DB_DIR, 'original_tables')
 # Last commit of Liga1Orange.fbproject before the (broken) Poli injection.
 FBPROJECT_BASELINE_REF = '00ac879'
 TEST_PROJECT = os.path.join(ROOT, 'Liga1Orange.test.fbproject')
@@ -98,45 +98,92 @@ def build_assets(key, team):
     return raw, final
 
 
-def rebuild_dbs():
+def frosty_cmd(*args, **kwargs):
+    frosty = os.environ['FROSTYCLI_PATH']
+    # FrostyCmd loads sibling DLLs from its own folder
+    run([frosty, 'FIFA17', *args], cwd=os.path.dirname(frosty), **kwargs)
+
+
+def write_baseline_project():
+    print(f'Writing clean baseline project ({FBPROJECT_BASELINE_REF}) to {os.path.basename(TEST_PROJECT)}')
+    with open(TEST_PROJECT, 'wb') as out:
+        subprocess.run(['git', '-C', ROOT, 'show', f'{FBPROJECT_BASELINE_REF}:Liga1Orange.fbproject'], check=True, stdout=out)
+
+
+def export_base_dbs(base_dir):
+    """The databases inside the baseline project are the base we import onto, NOT the pristine game files:
+    they carry manual edits that are not in the TSVs (e.g. `leagues` row: Denmark Superliga -> Romania Liga 1)."""
+    paths = {
+        'fifa_db': ('data/db/fifa_ng_db.db', 'fifa_ng_db.DB'),
+        'fifa_xml': ('data/db/fifa_ng_db-meta.xml', 'fifa_ng_db-meta.XML'),
+        'eng_db': ('data/loc/eng_us.db', 'eng_us.DB'),
+        'eng_xml': ('data/loc/eng_us-meta.xml', 'eng_us-meta.XML'),
+    }
+    out = {}
+    for key, (legacy, name) in paths.items():
+        out[key] = os.path.join(base_dir, name)
+        frosty_cmd('export-legacy', TEST_PROJECT, legacy, out[key])
+        if not os.path.exists(out[key]):
+            sys.exit(f'export-legacy failed for {legacy}')
+    return out
+
+
+def rebuild_dbs(base):
     dbcli = os.environ['DBCLI_PATH']
     out_fifa_db = os.path.join(DB_DIR, 'fifa_ng_db.DB')
     out_fifa_xml = os.path.join(DB_DIR, 'fifa_ng_db-meta.XML')
     out_eng_db = os.path.join(DB_DIR, 'eng_us.DB')
     out_eng_xml = os.path.join(DB_DIR, 'eng_us-meta.XML')
-    print('Rebuilding databases (DbCli)')
-    # Start from the original schema XMLs; DbCli overwrites them with a regenerated XML when the schema changes.
-    shutil.copy2(os.path.join(ORIGINAL_DIR, 'fifa_ng_db-meta.og.XML'), out_fifa_xml)
-    shutil.copy2(os.path.join(ORIGINAL_DIR, 'eng_us-meta.XML'), out_eng_xml)
+    print('Rebuilding databases (DbCli) on top of the baseline project databases')
+    # Start from the baseline schema XMLs; DbCli overwrites them with a regenerated XML when the schema changes.
+    shutil.copy2(base['fifa_xml'], out_fifa_xml)
+    shutil.copy2(base['eng_xml'], out_eng_xml)
     with tempfile.TemporaryDirectory() as tsv_dir:
         for table in FIFA_TABLES:
             shutil.copy2(os.path.join(DB_DIR, table), tsv_dir)
-        run([dbcli, 'import-all', os.path.join(ORIGINAL_DIR, 'fifa_ng_db.og.DB'),
-             os.path.join(ORIGINAL_DIR, 'fifa_ng_db-meta.og.XML'), tsv_dir, out_fifa_db])
-    run([dbcli, 'import-table', os.path.join(ORIGINAL_DIR, 'eng_us.DB'), os.path.join(ORIGINAL_DIR, 'eng_us-meta.XML'),
+        run([dbcli, 'import-all', base['fifa_db'], base['fifa_xml'], tsv_dir, out_fifa_db])
+    run([dbcli, 'import-table', base['eng_db'], base['eng_xml'],
          'LanguageStrings', os.path.join(DB_DIR, 'LanguageStrings.txt'), out_eng_db])
     return out_fifa_db, out_fifa_xml, out_eng_db, out_eng_xml
 
 
-def inject(team, raw, final, dbs):
-    frosty = os.environ['FROSTYCLI_PATH']
-    cwd = os.path.dirname(frosty)  # FrostyCmd loads sibling DLLs from its own folder
-    print(f'7. Writing clean baseline project ({FBPROJECT_BASELINE_REF}) to {os.path.basename(TEST_PROJECT)}')
-    with open(TEST_PROJECT, 'wb') as out:
-        subprocess.run(['git', '-C', ROOT, 'show', f'{FBPROJECT_BASELINE_REF}:Liga1Orange.fbproject'], check=True, stdout=out)
+def build_minifaces(key, team):
+    """2D head photos (minifaces): FIFA 16 data/ui/imgassets/heads/p<f16id>.dds -> FIFA 17 p<f17id>.dds (128x128 DXT5, no mips)."""
+    heads = os.path.join(ROOT, 'assets', 'teams', key, 'heads')
+    shutil.rmtree(heads, ignore_errors=True)
+    os.makedirs(heads)
+    pairs = player_pairs(team.teamid_fifa17, team.teamid_fifa16)
+    print(f'Exporting {len(pairs)} minifaces from FIFA 16 (CmCli export-photo)')
+    cmcli = os.environ['CMCLI_PATH']
+    fifa16 = os.environ['FIFA16_DIR']
+    raw = os.path.join(heads, 'raw')
+    for f17id, f16id in pairs:
+        result = subprocess.run([cmcli, 'export-photo', os.environ['FIFA16_DB_PATH'], os.environ['FIFA16_XML_PATH'],
+                                 fifa16, str(f16id), raw], capture_output=True)
+        src = os.path.join(raw, f'p{f16id}.png')
+        if result.returncode == 0 and os.path.exists(src):
+            shutil.copy(src, os.path.join(heads, f'p{f17id}.png'))
+        else:
+            print(f'  no photo for FIFA 16 player {f16id} (FIFA 17 id {f17id}), keeping FIFA 17 default')
+    run(['powershell.exe', '-ExecutionPolicy', 'Bypass', '-File', os.path.join(ROOT, 'scripts', 'ConvertPNGsToDDS.ps1'),
+         '-TargetDirectory', heads])
+    return heads
 
-    def legacy(target, source):
-        run([frosty, 'FIFA17', 'import-legacy', TEST_PROJECT, target, source], cwd=cwd)
 
+def inject(team, raw, final, heads, dbs):
     print('8. Injecting DBs + meta XMLs')
     out_fifa_db, out_fifa_xml, out_eng_db, out_eng_xml = dbs
+
+    def legacy(target, source):
+        frosty_cmd('import-legacy', TEST_PROJECT, target, source)
+
     legacy('data/db/fifa_ng_db.db', out_fifa_db)
     legacy('data/db/fifa_ng_db-meta.xml', out_fifa_xml)
     legacy('data/loc/eng_us.db', out_eng_db)
     legacy('data/loc/eng_us-meta.xml', out_eng_xml)
 
     print('9. Injecting 3D kit textures')
-    run([frosty, 'FIFA17', 'import-team', str(team.teamid_fifa16), str(team.teamid_fifa17), final, TEST_PROJECT], cwd=cwd)
+    frosty_cmd('import-team', str(team.teamid_fifa16), str(team.teamid_fifa17), final, TEST_PROJECT)
 
     print('10. Injecting UI crests and minikits')
     f17, f16 = team.teamid_fifa17, team.teamid_fifa16
@@ -150,24 +197,29 @@ def inject(team, raw, final, dbs):
         if os.path.exists(src):
             legacy(f'data/ui/imgAssets/kits/j{n}_{f17}_0.dds', src)
 
+    print('11. Injecting player minifaces')
+    for dds in sorted(glob.glob(os.path.join(heads, 'p*.dds'))):
+        legacy(f'data/ui/imgAssets/heads/{os.path.basename(dds)}', dds)
+
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('team', choices=sorted(liga1orange_teams))
     parser.add_argument('--skip-db', action='store_true', help='keep current TSVs')
-    parser.add_argument('--skip-assets', action='store_true', help='reuse assets/teams/<team>/{f16_raw,final}')
-    parser.add_argument('--skip-frosty', action='store_true', help='stop before touching the Frosty project')
+    parser.add_argument('--skip-assets', action='store_true', help='reuse assets/teams/<team>/{f16_raw,final,heads}')
+    parser.add_argument('--skip-frosty', action='store_true', help='stop before injecting into the Frosty project')
     args = parser.parse_args()
     team = liga1orange_teams[args.team]
     print(f'Importing {team.name}: FIFA 16 id {team.teamid_fifa16} -> FIFA 17 id {team.teamid_fifa17}')
 
     if not args.skip_db:
         import_db(team)
+    team_dir = os.path.join(ROOT, 'assets', 'teams', args.team)
     if args.skip_assets:
-        raw = os.path.join(ROOT, 'assets', 'teams', args.team, 'f16_raw')
-        final = os.path.join(ROOT, 'assets', 'teams', args.team, 'final')
+        raw, final, heads = (os.path.join(team_dir, d) for d in ('f16_raw', 'final', 'heads'))
     else:
         raw, final = build_assets(args.team, team)
+        heads = build_minifaces(args.team, team)
 
     problems = validate.validate(team, final)
     if problems:
@@ -176,10 +228,13 @@ def main():
         sys.exit(1)
     print('Validation OK')
 
-    dbs = rebuild_dbs()
+    write_baseline_project()
+    with tempfile.TemporaryDirectory() as base_dir:
+        base = export_base_dbs(base_dir)
+        dbs = rebuild_dbs(base)
     if args.skip_frosty:
         return
-    inject(team, raw, final, dbs)
+    inject(team, raw, final, heads, dbs)
     print(f'Done. Test project: {TEST_PROJECT}')
 
 
