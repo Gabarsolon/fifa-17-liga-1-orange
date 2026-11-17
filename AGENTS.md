@@ -25,7 +25,7 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 | texconv | `C:\Users\remus\tools\texconv\texconv.exe` (`TEXCONV_PATH`) |
 | Python deps | `requirements.txt`: pandas, python-dotenv, deep-translator (Python 3.12) |
 
-- **No injector needed.** A custom `CryptBase.dll` (95,744 bytes, not the 70,096-byte System32 one) already sits in `C:\Games\FIFA 17`, so the game loads it by itself (the README's Extreme Injector step is the alternative way). FIFA 16 is a data source only and is never launched.
+- **No injector needed (confirmed by logs).** A custom `CryptBase.dll` (95,744 bytes, not the 70,096-byte System32 one) already sits in `C:\Games\FIFA 17`, so the game loads it by itself (the README's Extreme Injector step is the alternative way). FIFA 16 is a data source only and is never launched.
 - Not found on disk yet: `FrostyEditor.exe` / Frosty Mod Manager (`FROSTY_EDITOR_PATH` empty).
 - GitHub repos of the user: `Gabarsolon/CreationMaster16Cli`, `DbMasterCli`, `FrostyCLI` (public). The user also runs `agyp` (`~/.local/bin/agyp.ps1`, profile `remus` exists): `agyp remus --dangerously-skip-permissions -p "<prompt>"` runs the Antigravity agent headless. Used once to audit and extend the CLIs.
 
@@ -48,7 +48,8 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 
 ## Launching the game from the CLI (2026-11-17)
 `FrostyCmd FIFA17 launch-project <project>` works: it writes `Mods/<profile>/FrostyCmdMod.fbmod` next to the exe, rebuilds `C:\Games\FIFA 17\ModData\Editor` (symlink `Data`) and starts `FIFA17.exe` (~10 s). Must run with `FIFA17_DIR` set (load `.env`) and cwd = FrostyCmd folder.
-**Open problem:** `FIFA17.exe` exits after ~4 s with exit code -6, no Windows crash report, even when started directly with no mods and even with the pre-Poli baseline project. So the current crash is NOT caused by the Poli data. Not yet known how the user normally starts the game (`stp-selector.exe`? admin? Frosty Mod Manager?). `stp-origin_emu.ini` and `unins000.dat` were rewritten today 14:34, so the game was (re)installed today; FIFA 17 files date from 2017, `CryptBase.dll` from 2026-08-17.
+**Diagnosis (agy, 2026-11-17, evidence = logs, not a confirmed fix):** `FIFA17.exe` terminates itself (`ExitProcess(-6)`) about 3 s after start, with any working directory, with or without mods, with the pre-Poli baseline project, and with or without injecting `CryptBase.dll` (it is already loaded automatically). Windows Defender quarantined a component of the game repack (`stp-fifa17.exe`, detected as a trojan) at 14:34 today, and no EA license file for FIFA 17 exists, so the game has no working activation. VC++ runtimes are installed. This is NOT caused by the mod data, the CLIs or the pipeline.
+**Policy for agents:** do not restore quarantined files, run licence/activation tools, injectors, or otherwise help bypass the game's copy protection. In-game testing is done by the user with a FIFA 17 install that starts. Agents keep working on data, textures, validation and the import pipeline, and can run `FrostyCmd launch-project` once the user has a working game. Note: Defender exclusion on all of `C:\Games` is risky; prefer narrow exclusions.
 
 ## Findings and fixes (2026-11-17)
 
