@@ -25,7 +25,7 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 | texconv | `C:\Users\remus\tools\texconv\texconv.exe` (`TEXCONV_PATH`) |
 | Python deps | `requirements.txt`: pandas, python-dotenv, deep-translator (Python 3.12) |
 
-- **No injector needed.** The Extreme Injector / `cryptbase.dll` workaround from the README is only for a FIFA 17 launch crash with Frosty. The user says the game last ran without it. FIFA 16 is a data source only and is never launched.
+- **No injector needed.** A custom `CryptBase.dll` (95,744 bytes, not the 70,096-byte System32 one) already sits in `C:\Games\FIFA 17`, so the game loads it by itself (the README's Extreme Injector step is the alternative way). FIFA 16 is a data source only and is never launched.
 - Not found on disk yet: `FrostyEditor.exe` / Frosty Mod Manager (`FROSTY_EDITOR_PATH` empty).
 - GitHub repos of the user: `Gabarsolon/CreationMaster16Cli`, `DbMasterCli`, `FrostyCLI` (public). The user also runs `agyp` (`~/.local/bin/agyp.ps1`, profile `remus` exists): `agyp remus --dangerously-skip-permissions -p "<prompt>"` runs the Antigravity agent headless. Used once to audit and extend the CLIs.
 
@@ -45,6 +45,10 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 7. UI legacy assets: crests `data/ui/imgAssets/crest{,16x16,32x32,50x50}/{light,dark}/l<teamid>.dds`; minikits `data/ui/imgAssets/kits/j{0,1,2}_<teamid>_0.dds`.
 8. Pristine FIFA 17 baselines live in `db/original_tables/` (`fifa_ng_db.og.DB`, `fifa_ng_db-meta.og.XML`, `eng_us.DB`, `eng_us-meta.XML`). `import_team.py` always rebuilds the `.db` files from them.
 9. Per user config: ask clarifying questions before architecture-changing work.
+
+## Launching the game from the CLI (2026-11-17)
+`FrostyCmd FIFA17 launch-project <project>` works: it writes `Mods/<profile>/FrostyCmdMod.fbmod` next to the exe, rebuilds `C:\Games\FIFA 17\ModData\Editor` (symlink `Data`) and starts `FIFA17.exe` (~10 s). Must run with `FIFA17_DIR` set (load `.env`) and cwd = FrostyCmd folder.
+**Open problem:** `FIFA17.exe` exits after ~4 s with exit code -6, no Windows crash report, even when started directly with no mods and even with the pre-Poli baseline project. So the current crash is NOT caused by the Poli data. Not yet known how the user normally starts the game (`stp-selector.exe`? admin? Frosty Mod Manager?). `stp-origin_emu.ini` and `unins000.dat` were rewritten today 14:34, so the game was (re)installed today; FIFA 17 files date from 2017, `CryptBase.dll` from 2026-08-17.
 
 ## Findings and fixes (2026-11-17)
 
