@@ -35,6 +35,7 @@ def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_
     languagestrings_df.loc[languagestrings_df.stringid == citystringid, 'sourcetext'] = cityname
     
     fix_kits_colors(Team(teamid_fifa16=fifa16_teamid, teamid_fifa17=fifa17_teamid))
+    apply_fifa16_number_colors(Team(teamid_fifa16=fifa16_teamid, teamid_fifa17=fifa17_teamid))
     
     teams_df.loc[teams_df.teamid == fifa17_teamid, 'foundationyear'] = foundation_year
     team_details_from_fifa16_df = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid]
@@ -61,6 +62,53 @@ def fix_kits_colors(team):
                     (fifa16_teamkits_df.teamkittypetechid == teamkittypetechid), 
                     column
                 ].values[0]
+
+# FIFA 16 `teamkits.numbercolor` / `shortsnumbercolor` are indexes into Creation Master's KitForm.c_ColorPalette
+# (.NET colours). FIFA 17 stores the number colours as RGB in jersey/shortsnumbercolor{prim,sec,ter}{r,g,b}.
+# White and black use the slightly dimmed values the finished teams use (no pure 255 / 0 bloom).
+FIFA16_NUMBER_COLORS = [
+    (255, 255, 255),  # 0 Transparent (treated as white)
+    (255, 255, 255),  # 1 White
+    (12, 12, 12),     # 2 Black
+    (0, 0, 255),      # 3 Blue
+    (255, 0, 0),      # 4 Red
+    (255, 255, 0),    # 5 Yellow
+    (0, 128, 0),      # 6 Green
+    (255, 165, 0),    # 7 Orange
+    (148, 0, 211),    # 8 DarkViolet
+    (90, 60, 30),     # 9
+    (255, 192, 203),  # 10 Pink
+    (139, 0, 0),      # 11 DarkRed
+    (135, 206, 250),  # 12 LightSkyBlue
+    (0, 0, 139),      # 13 DarkBlue
+    (128, 128, 128),  # 14 Gray
+    (200, 200, 100),  # 15
+    (160, 140, 85),   # 16
+    (255, 215, 0),    # 17 Gold
+    (255, 69, 0),     # 18 OrangeRed
+    (34, 139, 34),    # 19 ForestGreen
+]
+
+
+def apply_fifa16_number_colors(team):
+    """Set the FIFA 17 jersey/shorts number colours (prim = sec = ter) of every kit of the team from the FIFA 16 indexes.
+    Without this the number keeps the colour of the replaced Danish team (e.g. Viborg's green)."""
+    for kit_type in teamkits_df.loc[teamkits_df.teamtechid == team.teamid_fifa17, 'teamkittypetechid'].unique():
+        src = fifa16_teamkits_df[(fifa16_teamkits_df.teamtechid == team.teamid_fifa16) & (fifa16_teamkits_df.teamkittypetechid == kit_type)]
+        if src.empty:
+            continue
+        target = (teamkits_df.teamtechid == team.teamid_fifa17) & (teamkits_df.teamkittypetechid == kit_type)
+        # where the back name / front number / shorts number are printed (FIFA 16 codes, same meaning in FIFA 17)
+        for column in ('jerseybacknameplacementcode', 'jerseyfrontnumberplacementcode', 'shortsnumberplacementcode'):
+            if column in teamkits_df.columns and column in src.columns:
+                teamkits_df.loc[target, column] = src.iloc[0][column]
+        for prefix, column in (('jersey', 'numbercolor'), ('shorts', 'shortsnumbercolor')):
+            index = int(src.iloc[0][column])
+            rgb = FIFA16_NUMBER_COLORS[index] if 0 <= index < len(FIFA16_NUMBER_COLORS) else FIFA16_NUMBER_COLORS[1]
+            for level in ('prim', 'sec', 'ter'):
+                for channel, value in zip('rgb', rgb):
+                    teamkits_df.loc[target, f'{prefix}numbercolor{level}{channel}'] = value
+
 
 def change_kit_foreground_color(team, kit_type, color):
     teamkittypetechid = KitType.from_name(kit_type).id
