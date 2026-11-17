@@ -25,4 +25,7 @@
 Thumbs.db
 
 # Environment variables
-.env
+.env
+# Test project written by scripts/import_team.py
+*.test.fbproject
+scratch/
