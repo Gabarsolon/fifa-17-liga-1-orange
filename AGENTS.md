@@ -25,7 +25,7 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 | texconv | `C:\Users\remus\tools\texconv\texconv.exe` (`TEXCONV_PATH`) |
 | Python deps | `requirements.txt`: pandas, python-dotenv, deep-translator (Python 3.12) |
 
-- **No injector needed (confirmed by logs).** A custom `CryptBase.dll` (95,744 bytes, not the 70,096-byte System32 one) already sits in `C:\Games\FIFA 17`, so the game loads it by itself (the README's Extreme Injector step is the alternative way). FIFA 16 is a data source only and is never launched.
+- **No injector needed.** A custom `CryptBase.dll` (95,744 bytes, not the 70,096-byte System32 one) already sits in `C:\Games\FIFA 17`, so the game loads it by itself (the README's Extreme Injector step is the alternative way). FIFA 16 is a data source only and is never launched.
 - Not found on disk yet: `FrostyEditor.exe` / Frosty Mod Manager (`FROSTY_EDITOR_PATH` empty).
 - GitHub repos of the user: `Gabarsolon/CreationMaster16Cli`, `DbMasterCli`, `FrostyCLI` (public). The user also runs `agyp` (`~/.local/bin/agyp.ps1`, profile `remus` exists): `agyp remus --dangerously-skip-permissions -p "<prompt>"` runs the Antigravity agent headless. Used once to audit and extend the CLIs.
 
@@ -48,8 +48,12 @@ All paths live in the git-ignored `.env` (template: `.env.example`). Never hardc
 
 ## Launching the game from the CLI (2026-11-17)
 `FrostyCmd FIFA17 launch-project <project>` works: it writes `Mods/<profile>/FrostyCmdMod.fbmod` next to the exe, rebuilds `C:\Games\FIFA 17\ModData\Editor` (symlink `Data`) and starts `FIFA17.exe` (~10 s). Must run with `FIFA17_DIR` set (load `.env`) and cwd = FrostyCmd folder.
-**Diagnosis (agy, 2026-11-17, evidence = logs, not a confirmed fix):** `FIFA17.exe` terminates itself (`ExitProcess(-6)`) about 3 s after start, with any working directory, with or without mods, with the pre-Poli baseline project, and with or without injecting `CryptBase.dll` (it is already loaded automatically). Windows Defender quarantined a component of the game repack (`stp-fifa17.exe`, detected as a trojan) at 14:34 today, and no EA license file for FIFA 17 exists, so the game has no working activation. VC++ runtimes are installed. This is NOT caused by the mod data, the CLIs or the pipeline.
-**Policy for agents:** do not restore quarantined files, run licence/activation tools, injectors, or otherwise help bypass the game's copy protection. In-game testing is done by the user with a FIFA 17 install that starts. Agents keep working on data, textures, validation and the import pipeline, and can run `FrostyCmd launch-project` once the user has a working game. Note: Defender exclusion on all of `C:\Games` is risky; prefer narrow exclusions.
+(Resolved) `FIFA17.exe` exiting after ~4 s with exit code -6 was an environment problem the user fixed by hand (cause unknown); direct launches work now. The later 0xC0000005 crashes with mods were the DbCli bug below. `stp-origin_emu.ini` and `unins000.dat` were rewritten today 14:34, so the game was (re)installed today; FIFA 17 files date from 2017, `CryptBase.dll` from 2026-08-17.
+
+### ROOT CAUSE of the startup crash (found 2026-11-17 night)
+Bisecting on the clean baseline project proved the crash was the database, not Poli's textures: even an unchanged export-all/import-all roundtrip through the GitHub `DbMasterCli` crashed the game (access violation 0xC0000005, ~5 s after start), while the original DB injected through the CLI ran fine. Cause: the decompiled `FifaLibrary14` in the GitHub repo had two writer bugs fixed only in the user's local copy: `FifaUtil.WriteNullPaddedString` used `w.Write(0)` (4 bytes) instead of `w.Write((byte)0)`, and `Table.cs` wrote `w.Write(0); w.Write(0);` instead of `w.Write(new byte[3])`. Every table came out 5 bytes too long (+745 bytes, 149 tables). Fixed in `DbMasterCli` branch `audit-and-bh`; an unchanged roundtrip now has exactly the original size (4,121,308 bytes). DbCli also writes a regenerated meta XML next to the output DB when the schema changed (`<out minus .DB>-meta.XML`); `import_team.py` copies the original XML first and lets DbCli overwrite it.
+With the fixed DbCli the Poli test project (`Liga1Orange.test.fbproject`) started and stayed up: `FIFA17.exe` running with the window "FIFA 17", 2.2 GB, responding, >2 minutes. Kits, socks, crests and formation still need to be checked by eye in game.
+Test method that works: `FrostyCmd FIFA17 launch-project <project>` (launches the game elevated via runas; the launcher does not return while the game keeps running, a hung launcher means the game survived), then poll `Get-Process FIFA17`. A crash shows within ~5 s.
 
 ## Findings and fixes (2026-11-17)
 

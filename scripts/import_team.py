@@ -105,16 +105,16 @@ def rebuild_dbs():
     out_eng_db = os.path.join(DB_DIR, 'eng_us.DB')
     out_eng_xml = os.path.join(DB_DIR, 'eng_us-meta.XML')
     print('Rebuilding databases (DbCli)')
+    # Start from the original schema XMLs; DbCli overwrites them with a regenerated XML when the schema changes.
+    shutil.copy2(os.path.join(ORIGINAL_DIR, 'fifa_ng_db-meta.og.XML'), out_fifa_xml)
+    shutil.copy2(os.path.join(ORIGINAL_DIR, 'eng_us-meta.XML'), out_eng_xml)
     with tempfile.TemporaryDirectory() as tsv_dir:
         for table in FIFA_TABLES:
             shutil.copy2(os.path.join(DB_DIR, table), tsv_dir)
         run([dbcli, 'import-all', os.path.join(ORIGINAL_DIR, 'fifa_ng_db.og.DB'),
              os.path.join(ORIGINAL_DIR, 'fifa_ng_db-meta.og.XML'), tsv_dir, out_fifa_db])
-    # DbCli only rewrites the .db; the schema XML is unchanged but must be injected together with it.
-    shutil.copy2(os.path.join(ORIGINAL_DIR, 'fifa_ng_db-meta.og.XML'), out_fifa_xml)
     run([dbcli, 'import-table', os.path.join(ORIGINAL_DIR, 'eng_us.DB'), os.path.join(ORIGINAL_DIR, 'eng_us-meta.XML'),
          'LanguageStrings', os.path.join(DB_DIR, 'LanguageStrings.txt'), out_eng_db])
-    shutil.copy2(os.path.join(ORIGINAL_DIR, 'eng_us-meta.XML'), out_eng_xml)
     return out_fifa_db, out_fifa_xml, out_eng_db, out_eng_xml
 
 
