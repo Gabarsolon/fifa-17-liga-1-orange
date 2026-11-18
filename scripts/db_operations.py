@@ -641,6 +641,36 @@ def port_team_extras(fifa17_teamid, fifa16_teamid):
             leagueteamlinks_df.loc[link17, column] = row16_league[column]
 
 
+ORIGINAL_MAX_PLAYERID = 236210  # highest playerid of the pristine FIFA 17 players table; players added by us are above it
+
+
+def add_extra_players(fifa17_teamid, fifa16_teamid):
+    """Issue #25: the FIFA 17 team only has as many slots as the replaced Danish team, so the OVR selection drops the rest of
+    the FIFA 16 squad. Every FIFA 16 squad member without a slot gets a NEW player row (playerid above the pristine maximum)
+    and a teamplayerlinks row, so the whole FIFA 16 squad is in the team. The new players have no miniface file (Frosty cannot
+    add legacy files), the game shows the generic head for them. Returns the list of new FIFA 17 player ids."""
+    global players_df, teamplayerlinks_df
+    pairs = pairs_by_identity(fifa17_teamid, fifa16_teamid)
+    squad16 = fifa16_teamplayerlinks_df[fifa16_teamplayerlinks_df.teamid == fifa16_teamid].playerid
+    extras = [int(p) for p in squad16 if int(p) not in pairs]
+    links = teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid]
+    template_player_id = int(links.iloc[-1].playerid)
+    added = []
+    for f16_player in extras:
+        new_id = int(players_df.playerid.max()) + 1
+        player_row = players_df[players_df.playerid == template_player_id].copy()
+        player_row['playerid'] = new_id
+        players_df = pd.concat([players_df, player_row], ignore_index=True)
+        link_row = teamplayerlinks_df[(teamplayerlinks_df.teamid == fifa17_teamid) & (teamplayerlinks_df.playerid == template_player_id)].copy()
+        link_row['playerid'] = new_id
+        link_row['artificialkey'] = int(teamplayerlinks_df.artificialkey.max()) + 1
+        link_row['position'] = 29
+        teamplayerlinks_df = pd.concat([teamplayerlinks_df, link_row], ignore_index=True)
+        replace_player_from_fifa17_with_one_from_fifa16(new_id, f16_player, fifa17_teamid, fifa16_teamid)
+        added.append(new_id)
+    return added
+
+
 def dedupe_jersey_numbers(fifa17_teamid):
     """FIFA 16 data can give two players of a squad the same number: the later row gets the lowest free number."""
     rows = teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid]

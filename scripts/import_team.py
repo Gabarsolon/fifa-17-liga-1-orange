@@ -26,6 +26,13 @@ from db_operations import (
     replace_players_from_fifa16_with_players_from_fifa17,
     player_pairs,
     apply_player_swaps,
+    add_extra_players,
+    dedupe_jersey_numbers,
+    port_lineup_and_roles,
+    port_team_extras,
+    normalize_league_table,
+    port_loans,
+    ORIGINAL_MAX_PLAYERID,
     save_tsv,
 )
 from cmcli import extract_assets_with_cmcli
@@ -61,6 +68,9 @@ def import_db(team):
     if team.player_swaps:
         print('3b. Player swaps')
         apply_player_swaps(team.teamid_fifa17, team.teamid_fifa16, team.player_swaps)
+    print('3b2. Extra players: the rest of the FIFA 16 squad as new players (issue 25)')
+    add_extra_players(team.teamid_fifa17, team.teamid_fifa16)
+    dedupe_jersey_numbers(team.teamid_fifa17)
     print('3c. Lineup, positions, captain and set-piece takers (FIFA 16 ids -> FIFA 17 slot ids)')
     port_lineup_and_roles(team.teamid_fifa17, team.teamid_fifa16)
     print('3d. Team extras: ratings, budget, prestige, rivals, manager, stadium, Career league row')
@@ -179,6 +189,8 @@ def build_minifaces(key, team):
     fifa16 = os.environ['FIFA16_DIR']
     raw = os.path.join(heads, 'raw')
     for f17id, f16id in pairs:
+        if f17id > ORIGINAL_MAX_PLAYERID:
+            continue  # players added by add_extra_players: no miniface file exists for their ids
         result = subprocess.run([cmcli, 'export-photo', os.environ['FIFA16_DB_PATH'], os.environ['FIFA16_XML_PATH'],
                                  fifa16, str(f16id), raw], capture_output=True)
         src = os.path.join(raw, f'p{f16id}.png')
