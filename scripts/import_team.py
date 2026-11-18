@@ -41,7 +41,7 @@ GENERIC_HEAD = os.path.join(ROOT, 'assets', 'generic', 'notfound_head.png')  # 1
 FIFA_TABLES = [
     'defaultteamdata.txt', 'default_teamsheets.txt', 'formations.txt',
     'teams.txt', 'teamkits.txt', 'players.txt', 'playernames.txt', 'teamplayerlinks.txt',
-    'leagueteamlinks.txt', 'rivals.txt', 'manager.txt', 'teamstadiumlinks.txt', 'stadiumassignments.txt',
+    'leagueteamlinks.txt', 'rivals.txt', 'manager.txt', 'teamstadiumlinks.txt', 'stadiumassignments.txt', 'playerloans.txt',
 ]
 
 
@@ -66,6 +66,7 @@ def import_db(team):
     print('3d. Team extras: ratings, budget, prestige, rivals, manager, stadium, Career league row')
     port_team_extras(team.teamid_fifa17, team.teamid_fifa16)
     normalize_league_table()
+    port_loans()
     print('4. Saving TSV files')
     save_tsv()
 

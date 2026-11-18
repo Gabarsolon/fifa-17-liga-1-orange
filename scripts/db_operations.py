@@ -16,7 +16,8 @@ def save_tsv():
     languagestrings_df.to_csv(languagestrings, sep='\t', encoding='utf-16le', index=False)
     teamplayerlinks_df.to_csv(teamplayerlinks, sep='\t', encoding='utf-16le', index=False)
     for df, name in ((leagueteamlinks_df, 'leagueteamlinks'), (rivals_df, 'rivals'), (manager_df, 'manager'),
-                     (teamstadiumlinks_df, 'teamstadiumlinks'), (stadiumassignments_df, 'stadiumassignments')):
+                     (teamstadiumlinks_df, 'teamstadiumlinks'), (stadiumassignments_df, 'stadiumassignments'),
+                     (playerloans_df, 'playerloans')):
         df.to_csv(os.path.join(os.path.dirname(__file__), '..', 'db', name + '.txt'), sep='\t', encoding='utf-16le', index=False)
 
 def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year, cityname):
@@ -535,6 +536,39 @@ def set_team_ratings(fifa17_teamid, models):
         value = int(round(min(99, max(1, slope * feat[group] + intercept))))
         teams_df.loc[row, column] = value
         teams_df.loc[row, 'matchday' + column] = value
+
+
+LOAN_END_JAN, LOAN_END_JUN = 158594, 158775  # the two loan end dates FIFA 17 uses most (Jan / Jun 2017)
+
+
+def port_loans():
+    """playerloans (teamidloanedfrom, playerid, loandateend) for the 14 teams. The FIFA 17 rows were the Danish league's:
+    5 rows named our slots as the lending club or used slot player ids. They are removed; the FIFA 16 loans that involve
+    a Liga 1 squad player are added with the player id translated to the FIFA 17 slot id: loans INTO Liga 1 (the lender is
+    a club that exists in FIFA 17) and loans between Liga 1 clubs. FIFA 16 loan dates (2016) are mapped to the FIFA 17 ones."""
+    ours = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    f16_to_f17_team = {int(t.teamid_fifa16): int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    pair_map = {}
+    for t in liga1orange_teams.values():
+        pair_map.update(pairs_by_identity(t.teamid_fifa17, t.teamid_fifa16))
+    slot_players = set(teamplayerlinks_df[teamplayerlinks_df.teamid.isin(ours)].playerid)
+    playerloans_df.drop(playerloans_df.index[playerloans_df.teamidloanedfrom.isin(ours) | playerloans_df.playerid.isin(slot_players)],
+                        inplace=True)
+    playerloans_df.reset_index(drop=True, inplace=True)
+    known_teams = set(teams_df.teamid)
+    added = []
+    for row in fifa16_playerloans_df.itertuples():
+        f17_player = pair_map.get(int(row.playerid))
+        if f17_player is None:
+            continue  # the loaned player is not in a Liga 1 squad (e.g. a Liga 1 club's player loaned abroad)
+        lender = f16_to_f17_team.get(int(row.teamidloanedfrom), int(row.teamidloanedfrom))
+        current = int(teamplayerlinks_df[teamplayerlinks_df.playerid == f17_player].teamid.iloc[0])
+        if lender == current or lender not in known_teams:
+            continue
+        end = LOAN_END_JAN if int(row.loandateend) < 158300 else LOAN_END_JUN
+        playerloans_df.loc[len(playerloans_df)] = [lender, f17_player, end]
+        added.append((f17_player, lender, current, end))
+    return added
 
 
 def normalize_league_table():

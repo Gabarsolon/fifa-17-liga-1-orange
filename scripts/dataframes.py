@@ -64,6 +64,8 @@ fifa16_leagueteamlinks_df = _read("db", "fifa-16", "leagueteamlinks.txt")
 fifa16_manager_df = _read("db", "fifa-16", "manager.txt")
 fifa16_teamstadiumlinks_df = _read("db", "fifa-16", "teamstadiumlinks.txt")
 fifa16_stadiumassignments_df = _read("db", "fifa-16", "stadiumassignments.txt")
+playerloans_df = _read("db", "playerloans.txt")
+fifa16_playerloans_df = _read("db", "fifa-16", "playerloans.txt")
 
 def print_new_columns_in_fifa17():
     df_pairs = [
