@@ -30,14 +30,14 @@ liga1orange_teams = {
                  player_swaps=[(50311, 50253)]),  # Emanuel Vasi (retired) -> Sebastian Mailat (FC Botosani, 1M EUR)
     # Remaining Liga 1 teams. FIFA 17 ids are the remaining Danish league slots (proposed order, 1445 Esbjerg, 1446 Horsens,
     # 1447 SonderjyskE, 1516 Midtjylland, 1786 Randers, 1788 Nordsjaelland, 15001 Lyngby).
-    # foundation_year is None on purpose: it is not in the FIFA 16 tables, fill it in before importing (import_team.py refuses None).
-    'botosani': Team(1445, 130020, "FC Botoșani", foundation_year=None, cityname="Botoșani"),
-    'pandurii': Team(1446, 130025, "Pandurii", foundation_year=None, cityname="Târgu Jiu"),
-    'poli_iasi': Team(1447, 130028, "Poli Iași", foundation_year=None, cityname="Iași"),
-    'voluntari': Team(1516, 130030, "FC Voluntari", foundation_year=None, cityname="Voluntari"),
-    'chiajna': Team(1786, 130031, "Concordia Chiajna", foundation_year=None, cityname="Chiajna"),
-    'gazmetan': Team(1788, 130039, "Gaz Metan", foundation_year=None, cityname="Mediaș"),
-    'asa': Team(15001, 130067, "ASA Târgu Mureș", foundation_year=None, cityname="Târgu Mureș"),
+    # foundation_year is not in the FIFA 16 tables: filled in 2026-11-18 from Wikipedia via agyp (year of the club entity that played 2016/17; same convention as craiova 2013, poli 2012).
+    'botosani': Team(1445, 130020, "FC Botoșani", foundation_year=2001, cityname="Botoșani"),
+    'pandurii': Team(1446, 130025, "Pandurii", foundation_year=1962, cityname="Târgu Jiu"),
+    'poli_iasi': Team(1447, 130028, "Poli Iași", foundation_year=2010, cityname="Iași"),
+    'voluntari': Team(1516, 130030, "FC Voluntari", foundation_year=2010, cityname="Voluntari"),
+    'chiajna': Team(1786, 130031, "Concordia Chiajna", foundation_year=1957, cityname="Chiajna"),
+    'gazmetan': Team(1788, 130039, "Gaz Metan", foundation_year=1945, cityname="Mediaș"),
+    'asa': Team(15001, 130067, "ASA Târgu Mureș", foundation_year=2008, cityname="Târgu Mureș"),
 }
 
 from enum import Enum
