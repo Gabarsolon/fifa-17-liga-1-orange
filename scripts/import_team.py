@@ -278,6 +278,9 @@ def main():
     if args.skip_frosty:
         return
     inject(team, raw, final, heads, dbs)
+    if args.team != 'fcsb':
+        print('11a. Fan flags and stadium banners (fan_flags.py)')
+        run([sys.executable, os.path.join(ROOT, 'scripts', 'fan_flags.py'), args.team, '--project', TEST_PROJECT])
     if os.environ.get('FROSTYMESHCLI_PATH') and os.path.exists(os.environ['FROSTYMESHCLI_PATH']):
         print('11b. Name hotspot off printed art (fix_hotspots.py)')
         run([sys.executable, os.path.join(ROOT, 'scripts', 'fix_hotspots.py'), args.team, '--project', TEST_PROJECT])
