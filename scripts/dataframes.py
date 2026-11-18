@@ -50,6 +50,21 @@ fifa16_playernames_df = pd.read_csv(fifa16_playernames, sep='\t', encoding='utf-
 fifa16_teamplayerlinks_df = pd.read_csv(fifa16_teamplayerlinks, sep='\t', encoding='utf-16le')
 fifa16_languagestrings_df = pd.read_csv(fifa16_languagestrings, sep='\t', encoding='utf-16le')
 
+# Tables added for the team "extras" (rivals, manager, stadium, league table), see db_operations.port_team_extras
+def _read(*parts):
+    return pd.read_csv(os.path.join(os.path.dirname(__file__), "..", *parts), sep='\t', encoding='utf-16le')
+
+
+leagueteamlinks_df = _read("db", "leagueteamlinks.txt")
+rivals_df = _read("db", "rivals.txt")
+manager_df = _read("db", "manager.txt")
+teamstadiumlinks_df = _read("db", "teamstadiumlinks.txt")
+stadiumassignments_df = _read("db", "stadiumassignments.txt")
+fifa16_leagueteamlinks_df = _read("db", "fifa-16", "leagueteamlinks.txt")
+fifa16_manager_df = _read("db", "fifa-16", "manager.txt")
+fifa16_teamstadiumlinks_df = _read("db", "fifa-16", "teamstadiumlinks.txt")
+fifa16_stadiumassignments_df = _read("db", "fifa-16", "stadiumassignments.txt")
+
 def print_new_columns_in_fifa17():
     df_pairs = [
         ("defaultteamdata", defaultteamdata_df, fifa16_defaultteamdata_df),

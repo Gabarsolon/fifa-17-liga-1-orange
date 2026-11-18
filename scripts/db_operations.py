@@ -15,6 +15,9 @@ def save_tsv():
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
     languagestrings_df.to_csv(languagestrings, sep='\t', encoding='utf-16le', index=False)
     teamplayerlinks_df.to_csv(teamplayerlinks, sep='\t', encoding='utf-16le', index=False)
+    for df, name in ((leagueteamlinks_df, 'leagueteamlinks'), (rivals_df, 'rivals'), (manager_df, 'manager'),
+                     (teamstadiumlinks_df, 'teamstadiumlinks'), (stadiumassignments_df, 'stadiumassignments')):
+        df.to_csv(os.path.join(os.path.dirname(__file__), '..', 'db', name + '.txt'), sep='\t', encoding='utf-16le', index=False)
 
 def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year, cityname):
     fifa16_suffix = f"_{fifa16_teamid}"
@@ -458,6 +461,150 @@ def port_lineup_and_roles(fifa17_teamid, fifa16_teamid):
             if column in df.columns and column in source.index:
                 df.loc[index, column] = pairs.get(int(source[column]), fallback)
     return len(pairs), len(unpaired)
+
+
+# teams columns copied from FIFA 16 as they are: same meaning and scale in both games (checked on the 621 teams that exist in
+# both: correlation 0.95-1.0 and similar means). The prestige columns use another scale and are fitted, see below.
+TEAM_COPY_COLUMNS = ['transferbudget', 'latitude', 'longitude', 'utcoffset', 'adboardid', 'defteamwidth', 'defaggression', 'ccpassing',
+                     'cccrossing', 'ccshooting', 'busdribbling', 'ccpositioning', 'buspositioning', 'defdefenderline']
+PRESTIGE_COLUMNS = ['domesticprestige', 'internationalprestige']
+LEAGUE_ROW_KEEP = {'teamid', 'leagueid', 'prevleagueid', 'artificialkey'}  # everything else is the FIFA 16 start of season
+
+
+def _fit_prestige(column):
+    """Linear fit FIFA 16 -> FIFA 17 over the teams that exist in both games (prestige is 0-20 in FIFA 16, 0-10 in FIFA 17)."""
+    common = fifa16_teams_df.merge(teams_df, on='teamid', suffixes=('_16', '_17'))
+    a, b = common[column + '_16'].astype(float), common[column + '_17'].astype(float)
+    slope = a.cov(b) / a.var()
+    intercept = b.mean() - slope * a.mean()
+    low, high = int(teams_df[column].min()), int(teams_df[column].max())
+    return lambda value: int(min(high, max(low, round(slope * float(value) + intercept))))
+
+
+def _xi_features(sheet_row, info):
+    """Mean OVR of the XI and of its goalkeeper+defence / midfield / attack, from the formation roles position0..10."""
+    groups = {'all': [], 'def': [], 'mid': [], 'att': []}
+    for i in range(11):
+        pid = int(sheet_row[f'playerid{i}'])
+        if pid not in info.index:
+            return None
+        role = int(sheet_row[f'position{i}'])
+        ovr = float(info.loc[pid, 'overallrating'])
+        groups['all'].append(ovr)
+        groups['def' if role <= 8 else 'mid' if role <= 19 else 'att'].append(ovr)
+    if not all(groups.values()):
+        return None
+    return {k: sum(v) / len(v) for k, v in groups.items()}
+
+
+def fit_team_rating_models(exclude_teamids):
+    """Linear models XI mean OVR -> team rating, fitted on the FIFA 17 teams that were not imported. Returns
+    {rating column: (slope, intercept, r)} for overall/attack/midfield/defense."""
+    import numpy as np
+    info = players_df.set_index('playerid')
+    targets = {'overallrating': 'all', 'attackrating': 'att', 'midfieldrating': 'mid', 'defenserating': 'def'}
+    xs, ys = {c: [] for c in targets}, {c: [] for c in targets}
+    teams_by_id = teams_df.set_index('teamid')
+    for sheet in default_teamsheets_df.itertuples(index=False):
+        sheet = pd.Series(sheet._asdict())
+        if sheet['teamid'] in exclude_teamids or sheet['teamid'] not in teams_by_id.index:
+            continue
+        feat = _xi_features(sheet, info)
+        if feat is None:
+            continue
+        for column, group in targets.items():
+            xs[column].append(feat[group])
+            ys[column].append(float(teams_by_id.loc[sheet['teamid'], column]))
+    models = {}
+    for column in targets:
+        x, y = np.array(xs[column]), np.array(ys[column])
+        slope, intercept = np.polyfit(x, y, 1)
+        models[column] = (slope, intercept, float(np.corrcoef(x, y)[0, 1]), len(x))
+    return models
+
+
+def set_team_ratings(fifa17_teamid, models):
+    """Team ratings from the imported XI (FIFA 16 only has the default 50 for most of these teams)."""
+    info = players_df.set_index('playerid')
+    sheet = default_teamsheets_df[default_teamsheets_df.teamid == fifa17_teamid].iloc[0]
+    feat = _xi_features(sheet, info)
+    row = teams_df.index[teams_df.teamid == fifa17_teamid][0]
+    groups = {'overallrating': 'all', 'attackrating': 'att', 'midfieldrating': 'mid', 'defenserating': 'def'}
+    for column, group in groups.items():
+        slope, intercept = models[column][:2]
+        value = int(round(min(99, max(1, slope * feat[group] + intercept))))
+        teams_df.loc[row, column] = value
+        teams_df.loc[row, 'matchday' + column] = value
+
+
+def normalize_league_table():
+    """The FIFA 16 league rows have repeated and missing table positions (e.g. two teams at 13). At the start of a season
+    the table follows last season: rank by previousyeartableposition, ties by team rating, positions 1..n."""
+    ours = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    rows = leagueteamlinks_df[leagueteamlinks_df.teamid.isin(ours)]
+    rating = teams_df.set_index('teamid').overallrating
+    order = sorted(rows.index, key=lambda i: (int(rows.loc[i, 'previousyeartableposition']), -int(rating[rows.loc[i, 'teamid']])))
+    for rank, i in enumerate(order, start=1):
+        leagueteamlinks_df.loc[i, 'currenttableposition'] = rank
+        leagueteamlinks_df.loc[i, 'previousyeartableposition'] = rank
+
+
+RATING_MODELS = None
+
+
+def port_team_extras(fifa17_teamid, fifa16_teamid):
+    """The team level data that is not players or kits (issue #26): rivals, manager names, ratings/budget/location/tactics,
+    prestige, stadium and its Romanian name, and the Career league row (season state of the replaced Danish team)."""
+    global RATING_MODELS
+    team_ids = {int(t.teamid_fifa16): int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    if RATING_MODELS is None:
+        RATING_MODELS = fit_team_rating_models({int(t.teamid_fifa17) for t in liga1orange_teams.values()})
+    row16 = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid].iloc[0]
+    row = teams_df.index[teams_df.teamid == fifa17_teamid][0]
+    # budget, location, tactics (the ratings come from set_team_ratings, run port_lineup_and_roles first)
+    set_team_ratings(fifa17_teamid, RATING_MODELS)
+    for column in TEAM_COPY_COLUMNS:
+        if column in teams_df.columns and column in fifa16_teams_df.columns:
+            teams_df.loc[row, column] = row16[column]
+    for column in PRESTIGE_COLUMNS:
+        teams_df.loc[row, column] = _fit_prestige(column)(row16[column])
+    # rivals: FIFA 16 has no `rivals` rows for these teams, only teams.rivalteam; the FIFA 17 rows are the Danish rivalries
+    rival17 = team_ids.get(int(row16['rivalteam']))
+    if rival17 is not None:
+        teams_df.loc[row, 'rivalteam'] = rival17
+        ours = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+        rivals_df.drop(rivals_df.index[(rivals_df.teamid1 == fifa17_teamid) |
+                                       ((rivals_df.teamid2 == fifa17_teamid) & ~rivals_df.teamid1.isin(ours))], inplace=True)
+        rivals_df.reset_index(drop=True, inplace=True)  # `loc[len(df)]` below must not reuse an existing label
+        new = {'rivaltype': 0, 'teamid2': rival17, 'teamid1': fifa17_teamid}
+        rivals_df.loc[len(rivals_df)] = [new[c] for c in rivals_df.columns]
+    # manager (names only; the look of the Danish manager stays)
+    m16 = fifa16_manager_df[fifa16_manager_df.teamid == fifa16_teamid]
+    m17 = manager_df.index[manager_df.teamid == fifa17_teamid]
+    if len(m16) and len(m17):
+        manager_df.loc[m17[0], 'firstname'] = str(m16.iloc[0].firstname).strip()
+        manager_df.loc[m17[0], 'surname'] = str(m16.iloc[0].surname).strip()
+    # stadium: the same stadium id means the same stadium in both games (512 of 619 teams use the same id); the Romanian
+    # name goes to stadiumassignments (a FIFA 16 feature, empty in FIFA 17: unverified in game)
+    link16 = fifa16_teamstadiumlinks_df[fifa16_teamstadiumlinks_df.teamid == fifa16_teamid]
+    names = dict(zip(teamstadiumlinks_df.stadiumid, teamstadiumlinks_df.stadiumname))
+    if len(link16) and int(link16.iloc[0].stadiumid) in names:
+        stadium = int(link16.iloc[0].stadiumid)
+        idx = teamstadiumlinks_df.index[teamstadiumlinks_df.teamid == fifa17_teamid]
+        teamstadiumlinks_df.loc[idx, 'stadiumid'] = stadium
+        teamstadiumlinks_df.loc[idx, 'stadiumname'] = names[stadium]
+    custom = fifa16_stadiumassignments_df[fifa16_stadiumassignments_df.teamid == fifa16_teamid]
+    stadiumassignments_df.drop(stadiumassignments_df.index[stadiumassignments_df.teamid == fifa17_teamid], inplace=True)
+    stadiumassignments_df.reset_index(drop=True, inplace=True)
+    if len(custom):
+        text = str(custom.iloc[0].stadiumcustomname).replace('\\t', ' ').strip()
+        stadiumassignments_df.loc[len(stadiumassignments_df)] = [text, fifa17_teamid]
+    # Career league row: start of the FIFA 16 season (no matches played, last season's table position, objective)
+    link17 = leagueteamlinks_df.index[leagueteamlinks_df.teamid == fifa17_teamid][0]
+    row16_league = fifa16_leagueteamlinks_df[fifa16_leagueteamlinks_df.teamid == fifa16_teamid].iloc[0]
+    for column in leagueteamlinks_df.columns:
+        if column not in LEAGUE_ROW_KEEP and column in fifa16_leagueteamlinks_df.columns:
+            leagueteamlinks_df.loc[link17, column] = row16_league[column]
 
 
 def dedupe_jersey_numbers(fifa17_teamid):

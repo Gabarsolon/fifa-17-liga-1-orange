@@ -41,6 +41,7 @@ GENERIC_HEAD = os.path.join(ROOT, 'assets', 'generic', 'notfound_head.png')  # 1
 FIFA_TABLES = [
     'defaultteamdata.txt', 'default_teamsheets.txt', 'formations.txt',
     'teams.txt', 'teamkits.txt', 'players.txt', 'playernames.txt', 'teamplayerlinks.txt',
+    'leagueteamlinks.txt', 'rivals.txt', 'manager.txt', 'teamstadiumlinks.txt', 'stadiumassignments.txt',
 ]
 
 
@@ -62,6 +63,9 @@ def import_db(team):
         apply_player_swaps(team.teamid_fifa17, team.teamid_fifa16, team.player_swaps)
     print('3c. Lineup, positions, captain and set-piece takers (FIFA 16 ids -> FIFA 17 slot ids)')
     port_lineup_and_roles(team.teamid_fifa17, team.teamid_fifa16)
+    print('3d. Team extras: ratings, budget, prestige, rivals, manager, stadium, Career league row')
+    port_team_extras(team.teamid_fifa17, team.teamid_fifa16)
+    normalize_league_table()
     print('4. Saving TSV files')
     save_tsv()
 
