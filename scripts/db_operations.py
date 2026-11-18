@@ -201,10 +201,46 @@ def get_player_from_fifa16_given_name_and_team(name, teamid):
                 )
             return Player(row.playerid, firstname, lastname)
    
+PLAYERNAMES_MAX_NAMEID = 29999  # fifa_ng_db-meta.XML: playernames.nameid rangehigh. Higher ids show as an empty name in game.
+ORIGINAL_PLAYERNAMES_ROWS = 28708  # rows of the pristine FIFA 17 table (nameid 0..28707)
+NAME_COLUMNS = ['firstnameid', 'lastnameid', 'commonnameid', 'playerjerseynameid']
+
+
 def insert_name_into_playernames_df(name):
+    """Id of a playernames row with this text: an existing row is reused (it keeps its commentary id), otherwise a new
+    row is appended. nameid must stay <= 29999 (meta rangehigh); players with a higher id have no name in game."""
+    existing = playernames_df.index[playernames_df.name == name]
+    if len(existing):
+        return playernames_df.loc[existing[0], 'nameid']
     last_available_nameid = playernames_df.iloc[-1].nameid + 1
+    if last_available_nameid > PLAYERNAMES_MAX_NAMEID:
+        raise RuntimeError(f'playernames is full: nameid {last_available_nameid} > {PLAYERNAMES_MAX_NAMEID} (meta rangehigh)')
     playernames_df.loc[len(playernames_df)] = [name, 900000, last_available_nameid]
     return last_available_nameid
+
+
+def compact_playernames():
+    """Repair a table filled by the old insert (one row per occurrence): rows >= ORIGINAL_PLAYERNAMES_ROWS are merged by
+    text (an original row with the same text wins), renumbered contiguously and the players' name ids are remapped."""
+    global playernames_df
+    orig = playernames_df[playernames_df.nameid < ORIGINAL_PLAYERNAMES_ROWS]
+    text_to_id = {}
+    for row in orig.itertuples():
+        text_to_id.setdefault(row.name, row.nameid)
+    mapping, new_rows, next_id = {}, [], ORIGINAL_PLAYERNAMES_ROWS
+    for row in playernames_df[playernames_df.nameid >= ORIGINAL_PLAYERNAMES_ROWS].itertuples():
+        if row.name in text_to_id:
+            mapping[row.nameid] = text_to_id[row.name]
+        else:
+            text_to_id[row.name] = next_id
+            mapping[row.nameid] = next_id
+            new_rows.append([row.name, row.commentaryid, next_id])
+            next_id += 1
+    assert next_id - 1 <= PLAYERNAMES_MAX_NAMEID, next_id
+    for column in NAME_COLUMNS:
+        players_df[column] = players_df[column].map(lambda v: mapping.get(v, v))
+    playernames_df = pd.concat([orig, pd.DataFrame(new_rows, columns=playernames_df.columns)], ignore_index=True)
+    print(f'playernames: {len(mapping)} appended rows -> {len(new_rows)} new rows, last nameid {next_id - 1}')
         
 def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_playerid, fifa17_teamid, fifa16_teamid):
     player_to_replace_df = fifa16_players_df[fifa16_players_df.playerid == fifa16_playerid]

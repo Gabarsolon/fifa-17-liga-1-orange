@@ -100,6 +100,10 @@ def build_assets(key, team):
     print('6. PNG -> DDS (final)')
     run(['powershell.exe', '-ExecutionPolicy', 'Bypass', '-File', os.path.join(ROOT, 'scripts', 'ConvertPNGsToDDS.ps1'),
          '-TargetDirectory', final])
+    # The replaced Danish team's normal/coeff maps carry its sponsor prints: flat maps (see kit_flat_maps.py)
+    print('7. Flat normal/coeff maps (removes the Danish sponsor prints)')
+    import kit_flat_maps
+    kit_flat_maps.build(final, team.teamid_fifa17)
     return raw, final
 
 
