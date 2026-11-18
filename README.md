@@ -18,30 +18,32 @@ The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/201
 
 ### Status
 
-- ✅ Romanian league replaces the Danish league (names, league structure, team colours, formations)
-- ✅ Squads from FIFA 16 / FRLT, sorted by overall rating into the free FIFA 17 squad slots
-- ✅ Kits (jersey, shorts, socks, minikits), crests and 3D badges
+- ✅ Romanian league replaces the Danish league: all **14 teams** (names, league structure, colours, formations, lineups, captains and takers)
+- ✅ Squads from FIFA 16 / FRLT, sorted by overall rating into the free FIFA 17 squad slots, with FIFA 16 jersey numbers
+- ✅ Kits (jersey, shorts, socks, minikits), crests and 3D badges; flat bump/material maps so the old sponsor prints are gone
 - ✅ Player minifaces (FIFA 16 photos, generic silhouette when a player has none)
+- ✅ Team data: ratings (computed from each squad), budget, prestige, rivals, managers, stadiums, clean Career league table
+- ✅ Romanian language in the UI: all 32,025 texts translated and validated, Romanian flag and "Română" in the language menu ([#6](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/6))
 - ✅ 3D league logo in the intro and replays
-- ✅ Romanian language in the UI: all 32,025 texts translated and checked by a validator, language-select flag and label ([#6](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/6)); looks fine in game, long texts not checked one by one
-- ⬜ Romanian commentary ([#2](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/2), [#3](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/3)): researched, the game's commentary is EAOpus in EA containers; nothing implemented yet
-- ⬜ Custom scoreboards, flags and banners ([#22](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/22))
-- ⬜ Player loans ([#20](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/20)), formations ([#24](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/24)), custom player heads ([#21](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/21))
+- ⬜ Romanian commentary ([#2](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/2), [#3](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/3)): researched, nothing implemented
+- ⬜ Custom scoreboards, flags and banners ([#22](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/22)), player loans ([#20](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/20)), formations ([#24](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/24)), custom player heads ([#21](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/21))
+
+Latest release: [v0.3.0](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases) (pre-release; the newer data is checked in the database, in-game checks are still pending).
 
 ### Teams
 
 | Team | Status |
 |---|---|
-| FCSB (Steaua), Astra Giurgiu, CFR Cluj, Viitorul Constanța, CS U Craiova, Dinamo București | ✅ done |
-| ACS Poli Timișoara | ✅ imported with the new pipeline, confirmed working in Kick-Off |
-| FC Botoșani, Pandurii Târgu Jiu, Poli Iași, FC Voluntari, Concordia Chiajna, Gaz Metan Mediaș, ASA Târgu Mureș | 🚧 imported with the pipeline (test projects only, [#12](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/12)–[#18](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/18)), waiting for the in-game check |
+| FCSB (Steaua), Astra Giurgiu, CFR Cluj, Viitorul Constanța, CS U Craiova, Dinamo București | ✅ done, kits tuned by hand |
+| ACS Poli Timișoara | ✅ confirmed working in Kick-Off |
+| FC Botoșani, Pandurii Târgu Jiu, Poli Iași, FC Voluntari, Concordia Chiajna, Gaz Metan Mediaș, ASA Târgu Mureș | ✅ imported with the pipeline ([#12](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/12)–[#18](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/18)); kit fonts and number positions not tuned by hand yet |
 
 ### Known limitations
 
 - Commentary stays in English.
-- Not everything is copied from FIFA 16 yet: team captain and set-piece takers, rivals, stadiums, managers and team ratings still hold the replaced Danish team's values ([#26](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/26)).
 - A squad is limited to the free slots of the replaced FIFA 17 team; extra FIFA 16 players are dropped ([#25](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/25)).
-- Players have generic 3D heads; only the 2D miniface comes from FIFA 16.
+- Players have generic 3D heads; only the 2D miniface comes from FIFA 16, and slots without a miniface file show a silhouette (Frosty cannot add legacy files).
+- Kit fonts, collars and number positions of the seven pipeline teams use the replaced Danish kit's values; fabric weave is flat on the pipeline kits.
 - Tested mostly in Kick-Off. Career Mode has not been checked team by team.
 
 ---
