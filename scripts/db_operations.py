@@ -14,6 +14,7 @@ def save_tsv():
     teams_df.to_csv(teams, sep='\t', encoding='utf-16le', index=False)
     formations_df.to_csv(formations, sep='\t', encoding='utf-16le', index=False)
     languagestrings_df.to_csv(languagestrings, sep='\t', encoding='utf-16le', index=False)
+    teamplayerlinks_df.to_csv(teamplayerlinks, sep='\t', encoding='utf-16le', index=False)
 
 def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year, cityname):
     fifa16_suffix = f"_{fifa16_teamid}"
@@ -244,9 +245,11 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
     fifa16_teamplayerlink_df = fifa16_teamplayerlinks_df[(fifa16_teamplayerlinks_df.teamid == fifa16_teamid) & (fifa16_teamplayerlinks_df.playerid == fifa16_playerid)]
     fifa16_teamplayerlink_df = fifa16_teamplayerlink_df.drop(['playerid', 'teamid'], axis=1)
 
-    for column in fifa16_teamplayerlink_df.columns:
-        if column in teamplayerlinks_df.columns:
-            teamplayerlinks_df.loc[(teamplayerlinks_df.playerid == fifa17_playerid)  & (teamplayerlinks_df.teamid == fifa17_teamid), column] = fifa16_teamplayerlink_df[column].values[0]
+    # Only the jersey number is copied. Everything else in teamplayerlinks must stay: `artificialkey` is globally unique,
+    # `position` has to agree with default_teamsheets, and the season stats are the replaced player's. (Before
+    # 2026-11-18 every column was assigned in memory, but save_tsv() never wrote teamplayerlinks, so nothing persisted.)
+    teamplayerlinks_df.loc[(teamplayerlinks_df.playerid == fifa17_playerid) & (teamplayerlinks_df.teamid == fifa17_teamid),
+                           'jerseynumber'] = fifa16_teamplayerlink_df['jerseynumber'].values[0]
         
     # print(players_df[players_df.playerid == fifa17_playerid])
     # print(playernames_df.iloc[-1])
@@ -336,6 +339,31 @@ def apply_player_swaps(fifa17_teamid, fifa16_teamid, swaps):
         print(f"Swapped FIFA 16 player {out_id} -> {in_id} in FIFA 17 slot {slot}, jersey {jersey}")
 
 
+def dedupe_jersey_numbers(fifa17_teamid):
+    """FIFA 16 data can give two players of a squad the same number: the later row gets the lowest free number."""
+    rows = teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid]
+    seen = set()
+    for idx, number in rows.jerseynumber.items():
+        if number in seen:
+            free = next(n for n in range(1, 100) if n not in seen and n not in set(rows.jerseynumber))
+            print(f"  duplicate jersey {number} in team {fifa17_teamid}, row {idx} -> {free}")
+            teamplayerlinks_df.loc[idx, 'jerseynumber'] = free
+            number = free
+        seen.add(number)
+
+
+def apply_fifa16_jersey_numbers(fifa17_teamid, fifa16_teamid):
+    """For a team that was imported before the jersey fix: copy the FIFA 16 jersey numbers by name pairs."""
+    pairs = player_pairs(fifa17_teamid, fifa16_teamid)
+    for fifa17_playerid, fifa16_playerid in pairs:
+        number = fifa16_teamplayerlinks_df[(fifa16_teamplayerlinks_df.teamid == fifa16_teamid) &
+                                           (fifa16_teamplayerlinks_df.playerid == fifa16_playerid)].jerseynumber.values[0]
+        teamplayerlinks_df.loc[(teamplayerlinks_df.playerid == fifa17_playerid) &
+                               (teamplayerlinks_df.teamid == fifa17_teamid), 'jerseynumber'] = number
+    dedupe_jersey_numbers(fifa17_teamid)
+    return len(pairs)
+
+
 def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_teamid):
     fifa16_players = pd.merge(fifa16_players_df, fifa16_teamplayerlinks_df, on='playerid')
     fifa16_players = fifa16_players[fifa16_players.teamid == fifa16_teamid]
@@ -355,6 +383,8 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
             (teamplayerlinks_df.playerid.isin(extra_players.playerid))
         ].index
         teamplayerlinks_df.drop(drop_indices, inplace=True)
+
+    dedupe_jersey_numbers(fifa17_teamid)
 
 
 

@@ -23,7 +23,7 @@ The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/201
 - ✅ Kits (jersey, shorts, socks, minikits), crests and 3D badges
 - ✅ Player minifaces (FIFA 16 photos, generic silhouette when a player has none)
 - ✅ 3D league logo in the intro and replays
-- 🚧 Romanian language in the UI: translation pipeline built, translation in progress ([#6](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/6))
+- ✅ Romanian language in the UI: all 32,025 texts translated and checked by a validator, language-select flag and label ([#6](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/6)); looks fine in game, long texts not checked one by one
 - ⬜ Romanian commentary ([#2](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/2), [#3](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/3)): researched, the game's commentary is EAOpus in EA containers; nothing implemented yet
 - ⬜ Custom scoreboards, flags and banners ([#22](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/22))
 - ⬜ Player loans ([#20](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/20)), formations ([#24](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/24)), custom player heads ([#21](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/21))
@@ -34,7 +34,7 @@ The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/201
 |---|---|
 | FCSB (Steaua), Astra Giurgiu, CFR Cluj, Viitorul Constanța, CS U Craiova, Dinamo București | ✅ done |
 | ACS Poli Timișoara | ✅ imported with the new pipeline, confirmed working in Kick-Off |
-| FC Botoșani, Pandurii Târgu Jiu, Poli Iași, FC Voluntari, Concordia Chiajna, Gaz Metan Mediaș, ASA Târgu Mureș | ⬜ planned ([#12](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/12)–[#18](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/18)) |
+| FC Botoșani, Pandurii Târgu Jiu, Poli Iași, FC Voluntari, Concordia Chiajna, Gaz Metan Mediaș, ASA Târgu Mureș | 🚧 imported with the pipeline (test projects only, [#12](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/12)–[#18](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/18)), waiting for the in-game check |
 
 ### Known limitations
 

@@ -224,6 +224,7 @@ def main():
     parser.add_argument('--skip-db', action='store_true', help='keep current TSVs')
     parser.add_argument('--skip-assets', action='store_true', help='reuse assets/teams/<team>/{f16_raw,final,heads}')
     parser.add_argument('--skip-frosty', action='store_true', help='stop before injecting into the Frosty project')
+    parser.add_argument('--no-ro', action='store_true', help='leave the English UI strings (default: Romanian UI + language flag are applied after the import)')
     parser.add_argument('--fresh', action='store_true', help='restart the test project from the clean baseline (drops teams imported earlier)')
     args = parser.parse_args()
     team = liga1orange_teams[args.team]
@@ -254,6 +255,10 @@ def main():
     if args.skip_frosty:
         return
     inject(team, raw, final, heads, dbs)
+    if not args.no_ro:
+        print('12. Romanian UI (eng_us from LanguageStrings.ro.txt + language flag)')
+        import ro_import
+        ro_import.apply(TEST_PROJECT)
     print(f'Done. Test project: {TEST_PROJECT}')
 
 
