@@ -213,6 +213,11 @@ def replace_player_from_fifa17_with_one_from_fifa16(fifa17_playerid, fifa16_play
         if column in players_df.columns:
             players_df.loc[players_df.playerid == fifa17_playerid, column] = player_to_replace_df[column].values[0]
 
+    # FIFA 16 head flags mean "this player has his own head model", but FIFA 17 has no head assets
+    # for this slot, so every imported player uses a generic head (issue #21).
+    players_df.loc[players_df.playerid == fifa17_playerid, 'headclasscode'] = 1
+    players_df.loc[players_df.playerid == fifa17_playerid, 'hashighqualityhead'] = 0
+
     firstname_matches = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.firstnameid.values[0]]
     lastname_matches = fifa16_playernames_df[fifa16_playernames_df.nameid == player_to_replace_df.lastnameid.values[0]]
     
