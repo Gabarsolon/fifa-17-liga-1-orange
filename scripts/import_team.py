@@ -265,6 +265,11 @@ def main():
     if args.skip_frosty:
         return
     inject(team, raw, final, heads, dbs)
+    if os.environ.get('FROSTYMESHCLI_PATH') and os.path.exists(os.environ['FROSTYMESHCLI_PATH']):
+        print('11b. Name hotspot off printed art (fix_hotspots.py)')
+        run([sys.executable, os.path.join(ROOT, 'scripts', 'fix_hotspots.py'), args.team, '--project', TEST_PROJECT])
+    else:
+        print('11b. FROSTYMESHCLI_PATH not set: hotspots left as they are (see scripts/fix_hotspots.py)')
     if not args.no_ro:
         print('12. Romanian UI (eng_us from LanguageStrings.ro.txt + language flag)')
         import ro_import
