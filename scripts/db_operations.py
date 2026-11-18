@@ -375,6 +375,91 @@ def apply_player_swaps(fifa17_teamid, fifa16_teamid, swaps):
         print(f"Swapped FIFA 16 player {out_id} -> {in_id} in FIFA 17 slot {slot}, jersey {jersey}")
 
 
+ROLE_COLUMNS = ['captainid', 'penaltytakerid', 'freekicktakerid', 'leftfreekicktakerid', 'rightfreekicktakerid',
+                'longkicktakerid', 'leftcornerkicktakerid', 'rightcornerkicktakerid']
+SHEET_SQUAD_COLUMNS = 42  # default_teamsheets.playerid0..41 hold the squad (XI, bench, reserves) then -1 padding; 42..51 are 0
+
+
+def pairs_by_identity(fifa17_teamid, fifa16_teamid):
+    """{fifa16_playerid: fifa17_playerid} of the squad. Name text first (player_pairs); slots that still have no
+    partner are matched by identical (overallrating, birthdate, height, weight, preferredposition1), because the import
+    copied every common `players` column of the FIFA 16 player into the slot."""
+    pairs = {f16: f17 for f17, f16 in player_pairs(fifa17_teamid, fifa16_teamid)}
+    slots = players_df[players_df.playerid.isin(teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid].playerid)]
+    squad16 = fifa16_players_df[fifa16_players_df.playerid.isin(
+        fifa16_teamplayerlinks_df[fifa16_teamplayerlinks_df.teamid == fifa16_teamid].playerid)]
+    key = ['overallrating', 'birthdate', 'height', 'weight', 'preferredposition1']
+    taken = set(pairs.values())
+    for slot in slots[~slots.playerid.isin(taken)].itertuples():
+        match = squad16[(~squad16.playerid.isin(pairs)) & (squad16[key] == [getattr(slot, c) for c in key]).all(axis=1)]
+        if len(match):
+            pairs[int(match.iloc[0].playerid)] = int(slot.playerid)
+    return pairs
+
+
+def port_lineup_and_roles(fifa17_teamid, fifa16_teamid):
+    """Translate FIFA 16 player ids into the FIFA 17 slot ids for everything that points at players:
+    - teamplayerlinks.position: the FIFA 16 squad position of the paired player (0 = goalkeeper, formation slots, bench)
+    - default_teamsheets.playerid0..41: the FIFA 16 squad order with the ids translated (cut players dropped, -1 padding)
+    - captain and set-piece takers (teams + default_teamsheets)
+    The import used to copy the FIFA 16 ids verbatim, so the sheet pointed at players that do not exist in FIFA 17 and
+    position 0 was a field player for most teams."""
+    pairs = pairs_by_identity(fifa17_teamid, fifa16_teamid)
+    links17 = teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid]
+    links16 = fifa16_teamplayerlinks_df[fifa16_teamplayerlinks_df.teamid == fifa16_teamid].set_index('playerid')
+    # 1. positions
+    used = set()
+    for f16, f17 in pairs.items():
+        position = int(links16.loc[f16, 'position'])
+        teamplayerlinks_df.loc[(teamplayerlinks_df.teamid == fifa17_teamid) & (teamplayerlinks_df.playerid == f17), 'position'] = position
+        used.add(position)
+    unpaired = links17[~links17.playerid.isin(pairs.values())]
+    free = [n for n in list(range(11, 28)) + [28, 29] + list(range(2, 11)) if n not in used]
+    for idx in unpaired.index:
+        teamplayerlinks_df.loc[idx, 'position'] = free.pop(0)
+    # 2. team sheet. XI (playerid0..10, roles = position0..10) first: a FIFA 16 starter that was cut by the OVR selection
+    # is replaced by the closest kept player (same position group, nearest position code, then best OVR).
+    row = default_teamsheets_df.index[default_teamsheets_df.teamid == fifa17_teamid][0]
+    sheet16 = fifa16_defaul_teamsheets_df[fifa16_defaul_teamsheets_df.teamid == fifa16_teamid].iloc[0]
+    kept = [int(p) for p in teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid].playerid]
+    info = players_df.set_index('playerid')
+
+    def group(code):
+        return 0 if code == 0 else 1 if code <= 8 else 2 if code <= 19 else 3
+
+    xi = []
+    for i in range(11):
+        old = int(sheet16[f'playerid{i}'])
+        xi.append(pairs.get(old))
+    for i in range(11):
+        if xi[i] is not None:
+            continue
+        role = int(sheet16[f'position{i}'])
+        candidates = [p for p in kept if p not in xi]
+        best = min(candidates, key=lambda p: (group(int(info.loc[p, 'preferredposition1'])) != group(role),
+                                              abs(int(info.loc[p, 'preferredposition1']) - role),
+                                              -int(info.loc[p, 'overallrating'])))
+        xi[i] = best
+        teamplayerlinks_df.loc[(teamplayerlinks_df.teamid == fifa17_teamid) & (teamplayerlinks_df.playerid == best), 'position'] = role
+        print(f'  team {fifa17_teamid}: FIFA 16 starter {sheet16[f"playerid{i}"]} was cut, slot {i} (role {role}) goes to player {best}')
+    rest = [pairs[int(sheet16[f'playerid{i}'])] for i in range(11, SHEET_SQUAD_COLUMNS)
+            if int(sheet16[f'playerid{i}']) in pairs and pairs[int(sheet16[f'playerid{i}'])] not in xi]
+    rest += [p for p in kept if p not in xi and p not in rest]  # players the FIFA 16 sheet did not list (swapped in)
+    ordered = (xi + rest)[:SHEET_SQUAD_COLUMNS]
+    ordered += [-1] * (SHEET_SQUAD_COLUMNS - len(ordered))
+    for i in range(SHEET_SQUAD_COLUMNS):
+        default_teamsheets_df.loc[row, f'playerid{i}'] = ordered[i]
+    # 3. captain and takers
+    fallback = ordered[1]  # a field player of the XI when the FIFA 16 choice was cut
+    teams_row = teams_df.index[teams_df.teamid == fifa17_teamid][0]
+    team16 = fifa16_teams_df[fifa16_teams_df.teamid == fifa16_teamid].iloc[0]
+    for column in ROLE_COLUMNS:
+        for df, index, source in ((teams_df, teams_row, team16), (default_teamsheets_df, row, sheet16)):
+            if column in df.columns and column in source.index:
+                df.loc[index, column] = pairs.get(int(source[column]), fallback)
+    return len(pairs), len(unpaired)
+
+
 def dedupe_jersey_numbers(fifa17_teamid):
     """FIFA 16 data can give two players of a squad the same number: the later row gets the lowest free number."""
     rows = teamplayerlinks_df[teamplayerlinks_df.teamid == fifa17_teamid]
@@ -421,9 +506,3 @@ def replace_players_from_fifa16_with_players_from_fifa17(fifa17_teamid, fifa16_t
         teamplayerlinks_df.drop(drop_indices, inplace=True)
 
     dedupe_jersey_numbers(fifa17_teamid)
-
-
-
-print('------------------')
-for col in teamkits_df.columns:
-    print(col)

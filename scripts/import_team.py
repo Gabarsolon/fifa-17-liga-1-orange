@@ -28,7 +28,7 @@ from db_operations import (
     apply_player_swaps,
     save_tsv,
 )
-from menu import extract_assets_with_cmcli
+from cmcli import extract_assets_with_cmcli
 from kit_textures import socks_from_f16_atlas
 import validate
 
@@ -60,6 +60,8 @@ def import_db(team):
     if team.player_swaps:
         print('3b. Player swaps')
         apply_player_swaps(team.teamid_fifa17, team.teamid_fifa16, team.player_swaps)
+    print('3c. Lineup, positions, captain and set-piece takers (FIFA 16 ids -> FIFA 17 slot ids)')
+    port_lineup_and_roles(team.teamid_fifa17, team.teamid_fifa16)
     print('4. Saving TSV files')
     save_tsv()
 

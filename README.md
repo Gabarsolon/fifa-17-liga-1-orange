@@ -57,10 +57,10 @@ The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/201
 
 1. Install **FIFA 17** (PC).
 2. Install **Frosty Mod Manager**.
-3. Import `Liga1Orange.fbmod` (or export a fresh one from `Liga1Orange.fbproject` with Frosty Editor, see below).
+3. Download `Liga1Orange-<version>.fbmod` from the [latest release](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases) and import it in the Mod Manager.
 4. Apply the mod and launch the game from Frosty.
 
-> `Liga1Orange.fbmod` is a build of the project at some point in time and can lag behind the repository. The source of truth is `Liga1Orange.fbproject`.
+> The source of truth is `Liga1Orange.fbproject` in this repository; releases are built from it with `FrostyCmd build-mod`.
 
 ## 🎮 Compatibility
 
@@ -78,7 +78,7 @@ The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/201
 | [DbMasterCli](https://github.com/Gabarsolon/DbMasterCli) | Headless DB Master: export/import the `.db` tables |
 | [CreationMaster16Cli](https://github.com/Gabarsolon/CreationMaster16Cli) | Headless Creation Master 16: export kits, crests and player photos from FIFA 16 |
 | texconv (DirectXTex) | PNG to DDS |
-| Python 3.12 | Import pipeline (`pandas`, `python-dotenv`, ...) |
+| Python 3.12 | Import pipeline (`pandas`, `python-dotenv`) |
 | Photoshop / Blender | Hand-made kit and logo work |
 
 The three CLIs are built from the decompiled sources of the original GUI tools and live in their own repositories.
@@ -92,26 +92,34 @@ The three CLIs are built from the decompiled sources of the original GUI tools a
 ├── assets/
 │   ├── league/              # League logo (2D and 3D sources)
 │   ├── generic/             # Fallback assets (silhouette miniface)
-│   └── teams/<team>/        # f16_raw (FIFA 16 export) and final (FIFA 17 ready) per team
+│   ├── language_flags/      # Romanian language-select flag (12 frames)
+│   └── teams/<team>/        # Hand-made kit/crest sources of the first six teams; the pipeline teams only
+│                            # have generated f16_raw/, final/, heads/ (git-ignored)
 │
 ├── db/
 │   ├── *.txt                # TSV dumps of the FIFA 17 tables that the mod edits
+│   ├── LanguageStrings.txt  # English strings (+ the Liga 1 team names); LanguageStrings.ro.txt = Romanian
 │   ├── fifa-16/             # Reference tables from FIFA 16 (FRLT)
 │   ├── original_tables/     # Pristine FIFA 17 baselines
-│   └── translation_ro/      # Romanian translation work (batches, instructions)
+│   ├── reference/           # Reference dumps (legacy file names of the game)
+│   └── translation_ro/      # Romanian translation work (batches, instructions, overrides.json)
 │
 ├── scripts/
-│   ├── import_team.py       # Import one team end to end
+│   ├── import_team.py       # Import one team end to end (also applies the Romanian UI)
+│   ├── import_remaining.sh  # Import several teams one after another
 │   ├── validate.py          # Checks keys, ids, texture sizes before injecting
-│   ├── ro_translate*.py    # Romanian translation pipeline
+│   ├── audit_teams.py       # Compares the imported teams with FIFA 16 and checks their assets in a project
+│   ├── tm_report.py         # Transfermarkt part of the squad report
+│   ├── kit_flat_maps.py     # Flat normal/coeff maps for kits (removes the old sponsor prints)
+│   ├── ro_translate.py, ro_import.py   # Romanian translation: prepare/validate/merge, inject into a project
+│   ├── translation/         # Drivers that run the translation with agyp / opencode / sub-agents
 │   ├── import_league_logo.py, league_logo_mesh.py   # 3D league logo
-│   └── menu.py              # Older interactive menu
+│   └── db_operations.py, dataframes.py, constants.py  # Table helpers and the team list
 │
 ├── AGENTS.md                # Detailed project notes and findings (read this first)
 ├── .env.example             # Template for the local paths
 ├── requirements.txt
-├── Liga1Orange.fbproject    # Frosty Editor project
-└── Liga1Orange.fbmod        # Exported mod
+└── Liga1Orange.fbproject    # Frosty Editor project (the mod)
 ```
 
 ---
@@ -153,7 +161,9 @@ Important: whenever a database is rebuilt, inject both the `.db` **and** its `-m
 
 - Check data before injecting: `python scripts/validate.py`
 - 3D league logo: `python scripts/import_league_logo.py`
-- Romanian translation: `python scripts/ro_translate.py prepare | validate | merge`
+- Romanian translation: `python scripts/ro_translate.py prepare | validate | merge`, then `python scripts/ro_import.py` (or just import a team: `import_team.py` applies it)
+- Audit of the imported teams: `python scripts/audit_teams.py [team ...]`
+- Release: `FrostyCmd FIFA17 build-mod <project> <out.fbmod> <title> <author> <category> <version>`; to test it apply it with `FrostyCmd FIFA17 apply-mods <pack> <mod.fbmod>` (this also starts the game; `launch <pack>` alone rebuilds the pack WITHOUT mods)
 
 ---
 
