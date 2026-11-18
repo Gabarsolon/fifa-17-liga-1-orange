@@ -35,6 +35,7 @@ from db_operations import (
     port_career_team_columns,
     clean_career_leftovers,
     apply_career_strings,
+    dedupe_players,
     ORIGINAL_MAX_PLAYERID,
     save_tsv,
 )
@@ -83,6 +84,7 @@ def import_db(team, args_key):
     port_career_team_columns(args_key, team.teamid_fifa17)
     clean_career_leftovers()
     apply_career_strings()
+    dedupe_players()
     print('4. Saving TSV files')
     save_tsv()
 

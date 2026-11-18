@@ -644,6 +644,108 @@ def apply_career_strings():
         set_string(sid, 'Poli Iași')
 
 
+FREE_AGENTS_TEAMID = 111592
+
+
+def _group_of(code):
+    return 0 if code == 0 else 1 if code <= 8 else 2 if code <= 19 else 3
+
+
+def remove_player_from_team(teamid, playerid):
+    """Take a player out of a team: delete the link, give his place in the team sheet to the closest bench player (XI) or
+    close the gap (bench), and replace him in captain/takers by a field player of the XI."""
+    global teamplayerlinks_df
+    mask = (teamplayerlinks_df.teamid == teamid) & (teamplayerlinks_df.playerid == playerid)
+    if not mask.any():
+        return
+    teamplayerlinks_df = teamplayerlinks_df[~mask].reset_index(drop=True)
+    rows = default_teamsheets_df.index[default_teamsheets_df.teamid == teamid]
+    if not len(rows):
+        return
+    row = rows[0]
+    sheet = [int(default_teamsheets_df.loc[row, f'playerid{i}']) for i in range(SHEET_SQUAD_COLUMNS)]
+    if playerid in sheet:
+        idx = sheet.index(playerid)
+        bench = [p for p in sheet[11:] if p != -1 and p != playerid]
+        if idx <= 10:
+            role = int(default_teamsheets_df.loc[row, f'position{idx}'])
+            info = players_df.set_index('playerid')
+            if bench:
+                best = min(bench, key=lambda p: (_group_of(int(info.loc[p, 'preferredposition1'])) != _group_of(role),
+                                                 abs(int(info.loc[p, 'preferredposition1']) - role),
+                                                 -int(info.loc[p, 'overallrating'])))
+                bench.remove(best)
+                sheet[idx] = best
+                teamplayerlinks_df.loc[(teamplayerlinks_df.teamid == teamid) & (teamplayerlinks_df.playerid == best), 'position'] = role
+            else:
+                sheet[idx] = -1
+            new = sheet[:11] + bench
+        else:
+            new = sheet[:11] + [p for p in sheet[11:] if p != playerid and p != -1]
+        new = (new + [-1] * SHEET_SQUAD_COLUMNS)[:SHEET_SQUAD_COLUMNS]
+        for i in range(SHEET_SQUAD_COLUMNS):
+            default_teamsheets_df.loc[row, f'playerid{i}'] = new[i]
+        sheet = new
+    fallback = next((p for p in sheet[1:11] if p != -1), -1)
+    team_row = teams_df.index[teams_df.teamid == teamid]
+    for column in ROLE_COLUMNS:
+        if column in default_teamsheets_df.columns and int(default_teamsheets_df.loc[row, column]) == playerid:
+            default_teamsheets_df.loc[row, column] = fallback
+        if len(team_row) and column in teams_df.columns and int(teams_df.loc[team_row[0], column]) == playerid:
+            teams_df.loc[team_row[0], column] = fallback
+
+
+def dedupe_players():
+    """Issue #28: players that exist twice (same name + birth date) because our club copy is a new row of a FIFA 16 player that
+    FIFA 17 already had. Rule 11 (end of 2015-16): the club copy of ours is right.
+    - national team rows of the other copy are re-pointed at OUR player id (one id is then club and country player; the team
+      sheet and roles of the national team follow), his Free Agents row is deleted;
+    - the other copy at a foreign club is removed from that club (sheet and roles repaired);
+    The orphan `players` row stays (other tables may still point at it). Idempotent. Returns a list of what was done."""
+    import unicodedata
+    ours_teams = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    national = set(pd.read_csv(os.path.join(os.path.dirname(__file__), '..', 'db', 'reference', 'teamnationlinks.txt'),
+                               sep='\t', encoding='utf-16le').teamid)
+    names = dict(zip(playernames_df.nameid, playernames_df.name))
+
+    def norm(value):
+        return ''.join(c for c in unicodedata.normalize('NFKD', str(value)) if not unicodedata.combining(c)).lower().strip()
+
+    key = players_df.apply(lambda r: norm(names.get(r.firstnameid, '')) + '|' + norm(names.get(r.lastnameid, '')) + '|' + str(r.birthdate), axis=1)
+    ours_ids = set(teamplayerlinks_df[teamplayerlinks_df.teamid.isin(ours_teams)].playerid)
+    done = []
+    for k, group in players_df.groupby(key):
+        if len(group) < 2 or k.startswith('|'):
+            continue
+        mine = [int(p) for p in group.playerid if int(p) in ours_ids]
+        others = [int(p) for p in group.playerid if int(p) not in ours_ids]
+        if len(mine) != 1 or not others:
+            continue
+        u = mine[0]
+        for o in others:
+            for _, link in teamplayerlinks_df[teamplayerlinks_df.playerid == o].iterrows():
+                team = int(link.teamid)
+                if team == FREE_AGENTS_TEAMID:
+                    teamplayerlinks_df.drop(teamplayerlinks_df.index[(teamplayerlinks_df.teamid == team) & (teamplayerlinks_df.playerid == o)], inplace=True)
+                    teamplayerlinks_df.reset_index(drop=True, inplace=True)
+                elif team in national:
+                    teamplayerlinks_df.loc[(teamplayerlinks_df.teamid == team) & (teamplayerlinks_df.playerid == o), 'playerid'] = u
+                    srow = default_teamsheets_df.index[default_teamsheets_df.teamid == team]
+                    if len(srow):
+                        for column in [f'playerid{i}' for i in range(SHEET_SQUAD_COLUMNS)] + ROLE_COLUMNS:
+                            if column in default_teamsheets_df.columns and int(default_teamsheets_df.loc[srow[0], column]) == o:
+                                default_teamsheets_df.loc[srow[0], column] = u
+                    trow = teams_df.index[teams_df.teamid == team]
+                    for column in ROLE_COLUMNS:
+                        if len(trow) and column in teams_df.columns and int(teams_df.loc[trow[0], column]) == o:
+                            teams_df.loc[trow[0], column] = u
+                    done.append(f'national team {team}: {o} -> {u}')
+                else:
+                    remove_player_from_team(team, o)
+                    done.append(f'club {team}: removed {o} (ours {u})')
+    return done
+
+
 def normalize_league_table():
     """The FIFA 16 league rows have repeated and missing table positions (e.g. two teams at 13). At the start of a season
     the table follows last season: rank by previousyeartableposition, ties by team rating, positions 1..n."""
