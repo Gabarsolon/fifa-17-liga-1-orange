@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Concurrent;
+using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -19,6 +21,11 @@ namespace Liga1Orange.Launcher
         readonly FrostyRunner _runner = new FrostyRunner();
         readonly StringBuilder _log = new StringBuilder();
         readonly DispatcherTimer _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(2) };
+        readonly DispatcherTimer _flush = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(150) };
+        readonly ConcurrentQueue<string> _queue = new ConcurrentQueue<string>();
+        string _lastRaw;
+        volatile string _percent;
+        string _shownPercent;
         string _gameDir;
         bool _modRunning;
         string _logFile;
@@ -26,8 +33,13 @@ namespace Liga1Orange.Launcher
         public MainWindow()
         {
             InitializeComponent();
+            // tall enough to show the whole log, but never taller than the screen
+            Height = Math.Min(940, SystemParameters.WorkArea.Height - 30);
+            Top = Math.Max(0, (SystemParameters.WorkArea.Height - Height) / 2);
             LauncherVersionText.Text = "Launcher " + typeof(MainWindow).Assembly.GetName().Version.ToString(2);
-            _runner.Line += line => Dispatcher.BeginInvoke(new Action(() => OnFrostyLine(line)));
+            _runner.Line += OnFrostyOutput; // runs on a worker thread: filter here, never flood the UI thread
+            _flush.Tick += (s, e) => FlushLog();
+            _flush.Start();
             _timer.Tick += (s, e) => RefreshGameRunning();
             _timer.Start();
             Loaded += async (s, e) => await Startup();
@@ -50,6 +62,9 @@ namespace Liga1Orange.Launcher
                 Log("Nu am găsit FIFA 17. Apasă „Alege folderul…” și selectează folderul care conține FIFA17.exe.");
             if (Updater.InstalledModPath() == null || Settings.Get("autoupdate") != "off")
                 await CheckUpdates(silent: true);
+            // "Liga1OrangeLauncher.exe --play" starts the game right away (for a desktop shortcut)
+            if (Environment.GetCommandLineArgs().Contains("--play") && PlayButton.IsEnabled)
+                PlayButton_Click(this, new RoutedEventArgs());
         }
 
         static bool IsAdmin()
@@ -109,20 +124,61 @@ namespace Liga1Orange.Launcher
             string stamped = DateTime.Now.ToString("HH:mm:ss") + "  " + line;
             _log.AppendLine(stamped);
             LogBox.AppendText(stamped + Environment.NewLine);
+            TrimLogBox();
             LogBox.ScrollToEnd();
             try { if (_logFile != null) File.AppendAllText(_logFile, stamped + Environment.NewLine); } catch { }
         }
 
-        void OnFrostyLine(string raw)
+        void TrimLogBox()
         {
-            if (raw.Contains("progress:")) return; // Frosty prints hundreds of these
-            string line = System.Text.RegularExpressions.Regex.Replace(raw, @"^\[[^\]]*\]:\s*", "").Trim();
-            if (line.Length == 0) return;
-            Log(line);
-            if (line.StartsWith("Loading Data")) SetStatus("Se pregătește cache-ul jocului (doar la prima pornire, ~4 minute)…", "warn", true);
-            else if (line.StartsWith("Applying")) SetStatus("Se aplică modul…", "warn", true);
-            else if (line.StartsWith("Launching Game")) SetStatus("Se pornește jocul…", "warn", true);
-            else if (line.Contains("Game launched successfully")) SetStatus("Jocul rulează", "ok");
+            if (LogBox.LineCount > 500)
+            {
+                string[] lines = LogBox.Text.Split('\n');
+                LogBox.Text = string.Join("\n", lines.Skip(lines.Length - 300));
+            }
+        }
+
+        // Frosty prints thousands of lines (progress:, "Loading Data (...)", "Initial load - Indexing data (2%)" repeated):
+        // they are dropped or reduced to a percentage here, on the worker thread.
+        void OnFrostyOutput(string raw)
+        {
+            if (raw.Contains("progress:")) return;
+            string line = Regex.Replace(raw, @"^\[[^\]]*\]:\s*", "").Trim();
+            if (line.Length == 0 || line == _lastRaw) return;
+            _lastRaw = line;
+            if (line.StartsWith("Loading Data (")) return;
+            Match m = Regex.Match(line, @"\((\d+)%\)");
+            if (m.Success) { _percent = m.Groups[1].Value; return; }
+            _queue.Enqueue(line);
+        }
+
+        void FlushLog()
+        {
+            string pct = _percent;
+            if (pct != null && pct != _shownPercent && _modRunning)
+            {
+                _shownPercent = pct;
+                SetStatus("Se pregătește cache-ul jocului (doar la prima pornire, ~4 minute): " + pct + "%", "warn", true);
+            }
+            var batch = new StringBuilder();
+            string line;
+            int n = 0;
+            while (n < 80 && _queue.TryDequeue(out line))
+            {
+                n++;
+                string stamped = DateTime.Now.ToString("HH:mm:ss") + "  " + line;
+                _log.AppendLine(stamped);
+                batch.AppendLine(stamped);
+                if (line.StartsWith("Applying")) SetStatus("Se aplică modul…", "warn", true);
+                else if (line.StartsWith("Launching Game")) SetStatus("Se pornește jocul…", "warn", true);
+                else if (line.Contains("Game launched successfully")) SetStatus("Jocul rulează", "ok");
+                else if (line.StartsWith("Loading Complete")) SetStatus("Cache gata, se aplică modul…", "warn", true);
+            }
+            if (n == 0) return;
+            LogBox.AppendText(batch.ToString());
+            TrimLogBox();
+            LogBox.ScrollToEnd();
+            try { if (_logFile != null) File.AppendAllText(_logFile, batch.ToString()); } catch { }
         }
 
         void RefreshGameRunning()
@@ -205,6 +261,12 @@ namespace Liga1Orange.Launcher
             if (!GameLocator.IsGameDir(_gameDir) || mod == null) return;
             if (!IsAdmin())
                 Log("Atenție: launcherul nu rulează ca administrator, aplicarea modului poate eșua. Pornește-l cu clic dreapta → Run as administrator.");
+            if (FrostyRunningFromThisFolder())
+            {
+                MessageBox.Show(this, "Frosty rulează deja (poate dintr-o altă fereastră a launcherului). Așteaptă să termine sau închide-l din Task Manager (FrostyCmd.exe), apoi încearcă din nou.",
+                    "Frosty rulează", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
             if (Process.GetProcessesByName("FIFA17").Length > 0)
             {
                 MessageBox.Show(this, "FIFA 17 rulează deja. Închide jocul și încearcă din nou.", "Joc pornit", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -231,6 +293,21 @@ namespace Liga1Orange.Launcher
                 _modRunning = false;
                 UpdatePlayEnabled();
             }
+        }
+
+        /// <summary>A second Frosty on the same tools folder would write the same cache file at the same time.</summary>
+        static bool FrostyRunningFromThisFolder()
+        {
+            foreach (Process p in Process.GetProcessesByName("FrostyCmd"))
+            {
+                try
+                {
+                    if (string.Equals(p.MainModule.FileName, Path.GetFullPath(AppPaths.FrostyExe), StringComparison.OrdinalIgnoreCase))
+                        return true;
+                }
+                catch { }
+            }
+            return false;
         }
 
         void VanillaButton_Click(object sender, RoutedEventArgs e)

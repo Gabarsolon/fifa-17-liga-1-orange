@@ -28,8 +28,11 @@ Remove-Item $out -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force "$pkg\tools\Profiles", "$pkg\tools\ThirdParty", "$pkg\tools\Plugins", "$pkg\mods" | Out-Null
 
 Write-Host "1. build launcher $Version"
+# A stale obj\ from a UI-test build (-p:RequireAdmin=false) would keep the asInvoker manifest: always build clean.
+Remove-Item "$root\launcher\obj", "$root\launcher\bin" -Recurse -Force -ErrorAction SilentlyContinue
 dotnet build "$root\launcher\Liga1OrangeLauncher.csproj" -c Release -p:Version=$Version -o "$out\bin" | Out-Null
 if ($LASTEXITCODE -ne 0) { throw "launcher build failed" }
+if (-not (Select-String -Path "$out\bin\Liga1OrangeLauncher.exe" -Pattern "requireAdministrator" -Quiet)) { throw "the exe does not ask for administrator rights (stale build?)" }
 Copy-Item "$out\bin\Liga1OrangeLauncher.exe", "$out\bin\Liga1OrangeLauncher.exe.config" $pkg
 
 Write-Host "2. headless Frosty (FIFA 17 profile only)"
