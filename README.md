@@ -58,7 +58,7 @@ Latest release: [v0.3.0](https://github.com/Gabarsolon/fifa-17-liga-1-orange/rel
 ## 📦 Installation
 
 ### Easiest: the launcher
-1. Install **FIFA 17** (PC) with the patched `CryptBase.dll` in its folder (see Troubleshooting; it is not included).
+1. Install **FIFA 17** (PC). Nothing else: Frosty copies its own `CryptBase.dll` (the mod loader) into the game folder on the first start.
 2. Download `Liga1OrangeLauncher-<version>.zip` from the [releases](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases), unzip it anywhere (not in Program Files) and run `Liga1OrangeLauncher.exe` (it asks for administrator rights).
 3. It finds FIFA 17 (or asks for the folder) and the button **JOACĂ LIGA 1 ORANGE** applies the mod and starts the game. The first start builds a cache (~4 minutes, once). "Pornește jocul original" starts FIFA 17 without the mod.
 
@@ -187,7 +187,7 @@ Important: whenever a database is rebuilt, inject both the `.db` **and** its `-m
 
 ### 💥 Game crashes on launch
 - Most startup crashes come from the database: always inject the `.db` together with its `-meta.xml`, and never use a database with duplicate keys.
-- If the game does not start at all, a patched `CryptBase.dll` may be needed. Place it in the game folder, or inject it with [Extreme Injector](https://github.com/master131/ExtremeInjector) (helper script: [scripts/extreme_injector_loop.ps1](scripts/extreme_injector_loop.ps1)).
+- If the game does not start at all, check that `CryptBase.dll` (95,744 bytes, the one from Frosty's `ThirdParty` folder) is in the game folder: Frosty copies it on the first apply, but an antivirus can remove it. The alternative is injecting it with [Extreme Injector](https://github.com/master131/ExtremeInjector) (helper script: [scripts/extreme_injector_loop.ps1](scripts/extreme_injector_loop.ps1)).
 - Disable other mods, delete the `ModData` folder and let Frosty regenerate it, run Frosty as administrator.
 
 ### 👕 Kits / logos not appearing

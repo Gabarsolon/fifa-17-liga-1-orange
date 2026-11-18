@@ -67,9 +67,9 @@ namespace Liga1Orange.Launcher
             bool game = GameLocator.IsGameDir(_gameDir);
             GamePathText.Text = game ? _gameDir : "Folderul FIFA 17 nu a fost găsit";
             SetChip(ChipExe, "FIFA17.exe", game ? "ok" : "bad");
+            // Frosty's executor copies its own ThirdParty\CryptBase.dll into the game folder on the first apply, so a missing file is normal.
             bool crypt = game && GameLocator.HasPatchedCryptBase(_gameDir);
-            SetChip(ChipCrypt, "CryptBase.dll", !game ? "bad" : crypt ? "ok" : "warn");
-            CryptHint.Visibility = game && !crypt ? Visibility.Visible : Visibility.Collapsed;
+            SetChip(ChipCrypt, crypt ? "CryptBase.dll" : "CryptBase.dll (o instalează Frosty la prima pornire)", !game ? "bad" : "ok");
             bool admin = IsAdmin();
             SetChip(ChipAdmin, admin ? "Drepturi de administrator" : "Fără drepturi de administrator", admin ? "ok" : "warn");
             bool tools = File.Exists(AppPaths.FrostyExe);

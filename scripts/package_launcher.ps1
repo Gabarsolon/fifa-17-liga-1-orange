@@ -5,7 +5,7 @@
 #   tools\FrostyCmd.exe + libraries  headless Frosty (FrostyCLI, GPL-3), only the FIFA 17 profile; it builds its own cache on first use
 #   mods\Liga1Orange-<tag>.fbmod     the mod (+ version.txt)
 #   CITESTE-MA.txt                   short instructions, licences and where the sources are
-# CryptBase.dll (the patched one the game needs) is NOT included.
+# CryptBase.dll: tools\ThirdParty\CryptBase.dll is Frosty's loader; the executor copies it into the game folder on the first apply.
 param(
     [string]$Mod = "",
     [string]$Version = "1.0.0"
@@ -52,8 +52,7 @@ Mod pentru FIFA 17 (PC): Liga 1 Orange 2016/17 in locul ligii daneze, interfata 
 
 CE TREBUIE SA AI
  - FIFA 17 instalat pe PC (Windows 10/11).
- - CryptBase.dll modificat in folderul jocului (cel care face ca FIFA 17 sa porneasca cu moduri).
-   Launcherul NU il include. Vezi sectiunea Troubleshooting din README-ul proiectului.
+ - Nimic altceva: Frosty copiaza singur CryptBase.dll (incarcatorul de mod) in folderul jocului la prima pornire.
 
 CUM FOLOSESTI
  1. Dezarhiveaza intregul folder oriunde (nu in Program Files).

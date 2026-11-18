@@ -71,13 +71,10 @@
                         </Grid>
                         <WrapPanel Margin="0,14,0,0">
                             <TextBlock x:Name="ChipExe" Text="● FIFA17.exe" Margin="0,0,22,4" FontSize="13" />
-                            <TextBlock x:Name="ChipCrypt" Text="● CryptBase.dll" Margin="0,0,22,4" FontSize="13" />
+                            <TextBlock x:Name="ChipCrypt" Text="● CryptBase.dll (o pune Frosty singur)" Margin="0,0,22,4" FontSize="13" />
                             <TextBlock x:Name="ChipAdmin" Text="● Drepturi de administrator" Margin="0,0,22,4" FontSize="13" />
                             <TextBlock x:Name="ChipTools" Text="● Frosty" Margin="0,0,0,4" FontSize="13" />
                         </WrapPanel>
-                        <TextBlock x:Name="CryptHint" Visibility="Collapsed" TextWrapping="Wrap" FontSize="12" Margin="0,6,0,0"
-                                   Foreground="{StaticResource WarnBrush}"
-                                   Text="Lipsește CryptBase.dll modificat din folderul jocului. Fără el FIFA 17 poate să nu pornească (vezi secțiunea Troubleshooting din README). Launcherul nu îl include." />
                     </StackPanel>
                 </Border>
 
