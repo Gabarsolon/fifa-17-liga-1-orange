@@ -34,7 +34,20 @@ Copy-Item "$out\bin\Liga1OrangeLauncher.exe", "$out\bin\Liga1OrangeLauncher.exe.
 
 Write-Host "2. headless Frosty (FIFA 17 profile only)"
 $frostyDir = Split-Path -Parent $env:FROSTYCLI_PATH
-Copy-Item "$frostyDir\*.dll", "$frostyDir\FrostyCmd.exe", "$frostyDir\FrostyCmd.exe.config" "$pkg\tools"
+Copy-Item "$frostyDir\*.dll", "$frostyDir\FrostyCmd.exe" "$pkg\tools"
+# The zip comes from the internet: its files carry the Mark of the Web and .NET Framework refuses to Assembly.LoadFile them
+# unless loadFromRemoteSources is on (the launcher also removes the marks). Reproduced and verified 2026-11-19.
+@'
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8"/>
+    </startup>
+    <runtime>
+        <loadFromRemoteSources enabled="true"/>
+    </runtime>
+</configuration>
+'@ | Set-Content "$pkg\tools\FrostyCmd.exe.config" -Encoding UTF8
 Copy-Item "$frostyDir\Profiles\Fifa17SDK.dll" "$pkg\tools\Profiles"
 Copy-Item "$frostyDir\Plugins\*" "$pkg\tools\Plugins" -Recurse -Exclude "*.disabled"
 $skip = "avcodec-58.dll", "avformat-58.dll", "avutil-56.dll", "swresample-3.dll", "GFSDK_Txaa.win64.dll"
@@ -56,6 +69,8 @@ CE TREBUIE SA AI
 
 CUM FOLOSESTI
  1. Dezarhiveaza intregul folder oriunde (nu in Program Files).
+ 1b. Daca Windows blocheaza fisierele descarcate: clic dreapta pe zip -> Proprietati -> Deblocare, inainte de dezarhivare
+     (launcherul deblocheaza si singur fisierele din tools\ si mods\).
  2. Porneste Liga1OrangeLauncher.exe (cere drepturi de administrator; Frosty leaga fisierele moduluii de joc
     printr-un link simbolic).
  3. Launcherul gaseste FIFA 17; daca nu, apasa "Alege folderul..." si alege folderul cu FIFA17.exe.

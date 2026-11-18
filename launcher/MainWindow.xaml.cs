@@ -39,6 +39,8 @@ namespace Liga1Orange.Launcher
         {
             Directory.CreateDirectory(AppPaths.LogDir);
             _logFile = Path.Combine(AppPaths.LogDir, "launcher-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".log");
+            int unblocked = await Task.Run(() => Unblocker.UnblockTree(AppPaths.ToolsDir) + Unblocker.UnblockTree(AppPaths.ModsDir));
+            if (unblocked > 0) Log("Am deblocat " + unblocked + " fișiere descărcate din internet.");
             _gameDir = GameLocator.Find();
             if (_gameDir != null) Settings.Set("gamepath", _gameDir);
             RefreshChecks();
@@ -211,6 +213,7 @@ namespace Liga1Orange.Launcher
             _modRunning = true;
             UpdatePlayEnabled();
             SetStatus("Se pregătește modul…", "warn", true);
+            await Task.Run(() => Unblocker.UnblockTree(AppPaths.ToolsDir));
             Log("Aplic " + Path.GetFileName(mod) + " și pornesc jocul…");
             try
             {

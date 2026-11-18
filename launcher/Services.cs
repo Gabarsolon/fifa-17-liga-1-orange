@@ -58,6 +58,30 @@ namespace Liga1Orange.Launcher
         }
     }
 
+    /// <summary>
+    /// A zip downloaded in a browser marks every extracted file with a Zone.Identifier stream (Mark of the Web) and .NET Framework
+    /// then refuses to load such assemblies with Assembly.LoadFile ("an attempt was made to load an assembly from a network
+    /// location"). Removing the stream unblocks them (same as "Unblock" in the file properties).
+    /// </summary>
+    public static class Unblocker
+    {
+        [System.Runtime.InteropServices.DllImport("kernel32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode, SetLastError = true)]
+        static extern bool DeleteFile(string path);
+
+        public static int UnblockTree(string dir)
+        {
+            int n = 0;
+            try
+            {
+                if (!Directory.Exists(dir)) return 0;
+                foreach (string f in Directory.EnumerateFiles(dir, "*", SearchOption.AllDirectories))
+                    if (DeleteFile(f + ":Zone.Identifier")) n++;
+            }
+            catch { }
+            return n;
+        }
+    }
+
     public static class GameLocator
     {
         public static bool IsGameDir(string dir)
