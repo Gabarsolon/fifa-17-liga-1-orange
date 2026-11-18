@@ -275,6 +275,8 @@ Scanned every table of the project DB for our 14 team ids. Besides the tables al
 - Strings: the Danish cup trophy `TrophyName_215` ("DBU Pokalen") -> "Cupa României"; Astra's city string `CityName_559` still "Silkeborg" -> "Giurgiu" (constants now carry `cityname` for fcsb "București" and astra "Giurgiu"); `BallName_117` ("SELECT Brilliant Super Alka Superliga OMB", the league ball of every team of the slots) -> "Liga 1 Orange Official Ball" / ro override "Mingea oficială Liga 1 Orange" (the ball model is still the Danish league ball: `teams.balltype`, ids differ between the games, not changed); Poli Iasi short names `TeamName_Abbr15/Abbr10_1447` and `CT_TeamName_1447` "CSMS Iași" -> "Poli Iași" (rule 11, state at the end of 2015-16).
 - Seen but not changed: `LeagueName_10001` "Denmark League 2" (the second tier, its clubs are Danish), `NationName_13` Denmark (national team, correct), commentary club-name ids of the Danish clubs, `OSDK_CLUBS_LANGUAGES` list. Verified in the project DB; NOT tested in game (Career mode).
 
+**User test in game (2026-11-19, `Liga1Orange.fbproject` = v0.5.0 content): "merge! cel putin in kick-off".** Kick-Off starts and a match was played with Cobrea (a new Dinamo goalkeeper, id above 236210) in goal without a crash: full squads with new player ids work in Kick-Off. Career mode not tested yet. Confirmed earlier: formations. Still unconfirmed by the user: fan flags, Career data, Gaz Metan name hotspot, hand-tuned kit details.
+
 ## Proposed project structure (not applied, needs user OK)
 ```
 liga1/                 python package (replaces scripts/*.py)
