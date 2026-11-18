@@ -12,16 +12,37 @@
 
 ---
 
-## 📌 Features
+## 📌 What this mod does
 
-- ✅ Romanian Liga 1 Orange 2016/2017 in FIFA 17 (replaces Denmark league)  
-- ✅ Correct squads & formations  
-- ✅ Real kits  
-- ✅ Logos & badges  
-- ✅ Updated league structure
-- ⬜ Custom scoreboards 
-- ⬜ Romanian commentary
-- ⬜ Romanian language in the UI
+The mod replaces the Danish Superliga with the Romanian **Liga 1 Orange 2016/2017**. Players, kits, badges and team data come from **FIFA 16 with the FRLT V2 patch** and are written into **FIFA 17** (Frostbite) by a set of Python scripts and custom command-line tools. Other game versions are not supported.
+
+### Status
+
+- ✅ Romanian league replaces the Danish league (names, league structure, team colours, formations)
+- ✅ Squads from FIFA 16 / FRLT, sorted by overall rating into the free FIFA 17 squad slots
+- ✅ Kits (jersey, shorts, socks, minikits), crests and 3D badges
+- ✅ Player minifaces (FIFA 16 photos, generic silhouette when a player has none)
+- ✅ 3D league logo in the intro and replays
+- 🚧 Romanian language in the UI: translation pipeline built, translation in progress ([#6](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/6))
+- ⬜ Romanian commentary ([#2](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/2), [#3](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/3)): researched, the game's commentary is EAOpus in EA containers; nothing implemented yet
+- ⬜ Custom scoreboards, flags and banners ([#22](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/22))
+- ⬜ Player loans ([#20](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/20)), formations ([#24](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/24)), custom player heads ([#21](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/21))
+
+### Teams
+
+| Team | Status |
+|---|---|
+| FCSB (Steaua), Astra Giurgiu, CFR Cluj, Viitorul Constanța, CS U Craiova, Dinamo București | ✅ done |
+| ACS Poli Timișoara | ✅ imported with the new pipeline, confirmed working in Kick-Off |
+| FC Botoșani, Pandurii Târgu Jiu, Poli Iași, FC Voluntari, Concordia Chiajna, Gaz Metan Mediaș, ASA Târgu Mureș | ⬜ planned ([#12](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/12)–[#18](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/18)) |
+
+### Known limitations
+
+- Commentary stays in English.
+- Not everything is copied from FIFA 16 yet: team captain and set-piece takers, rivals, stadiums, managers and team ratings still hold the replaced Danish team's values ([#26](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/26)).
+- A squad is limited to the free slots of the replaced FIFA 17 team; extra FIFA 16 players are dropped ([#25](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues/25)).
+- Players have generic 3D heads; only the 2D miniface comes from FIFA 16.
+- Tested mostly in Kick-Off. Career Mode has not been checked team by team.
 
 ---
 
@@ -29,213 +50,152 @@
 | | | |
 |---|---|---|
 | ![](assets/screenshots/screenshot_1.png) | ![](assets/screenshots/screenshot_2.png) | ![](assets/screenshots/screenshot_3.png) |
+
 ---
 
 ## 📦 Installation
 
-1. Install **FIFA 17**
-2. Install **Frosty Mod Manager**
-3. Import the `.fbmod` file
-4. Apply and launch the game
+1. Install **FIFA 17** (PC).
+2. Install **Frosty Mod Manager**.
+3. Import `Liga1Orange.fbmod` (or export a fresh one from `Liga1Orange.fbproject` with Frosty Editor, see below).
+4. Apply the mod and launch the game from Frosty.
 
----
-
-## 🛠 Tools Used
-
-- Frosty Editor & FrostyCli (Custom CLI built from decompiled Frosty Editor)
-- Frosty Mod Manager  
-- DB Master & DbCli (Custom CLI built from decompiled DB Master)
-- Creation Master 16 & CmCli (Custom CLI built from decompiled CM16)
-- Photoshop 
-- Blender
----
-
-## 📂 Project Structure
-```
-```text
-.
-├── assets/                  # Game assets
-│   ├── league/              # League-specific assets
-│   └── teams/               # One folder per team with faces, kits, logos
-│
-├── db/                      # Database files (TSV exports from fifa_ng_db.DB)
-│   ├── fifa-16/             # Reference tables from FIFA 16
-│   └── original_tables/     # Backup of original FIFA 17 tables
-│
-├── scripts/                 # Python & Windows scripts
-│                            # Used for DB management & image processing
-│
-├── Liga1Orange.fbmod        # Exported Frosty mod
-└── Liga1Orange.fbproject    # Frosty Editor project file
-```
-
-
----
+> `Liga1Orange.fbmod` is a build of the project at some point in time and can lag behind the repository. The source of truth is `Liga1Orange.fbproject`.
 
 ## 🎮 Compatibility
 
-- Game Version: FIFA 17 (PC)
-- Mode: Career Mode / Kick-Off
-- Platform: Windows
+- Game: FIFA 17 (PC), Windows
+- Modes: Kick-Off (tested), Career Mode (partly tested)
+
+---
+
+## 🛠 Tools
+
+| Tool | Used for |
+|---|---|
+| [Frosty Editor / Mod Manager](https://github.com/CadeEvs/FrostyToolsuite) | Editing and applying the mod |
+| [FrostyCLI](https://github.com/Gabarsolon/FrostyCLI) | Headless build of Frosty: inject databases, legacy files and textures, launch the game |
+| [DbMasterCli](https://github.com/Gabarsolon/DbMasterCli) | Headless DB Master: export/import the `.db` tables |
+| [CreationMaster16Cli](https://github.com/Gabarsolon/CreationMaster16Cli) | Headless Creation Master 16: export kits, crests and player photos from FIFA 16 |
+| texconv (DirectXTex) | PNG to DDS |
+| Python 3.12 | Import pipeline (`pandas`, `python-dotenv`, ...) |
+| Photoshop / Blender | Hand-made kit and logo work |
+
+The three CLIs are built from the decompiled sources of the original GUI tools and live in their own repositories.
+
+---
+
+## 📂 Project structure
+
+```text
+.
+├── assets/
+│   ├── league/              # League logo (2D and 3D sources)
+│   ├── generic/             # Fallback assets (silhouette miniface)
+│   └── teams/<team>/        # f16_raw (FIFA 16 export) and final (FIFA 17 ready) per team
+│
+├── db/
+│   ├── *.txt                # TSV dumps of the FIFA 17 tables that the mod edits
+│   ├── fifa-16/             # Reference tables from FIFA 16 (FRLT)
+│   ├── original_tables/     # Pristine FIFA 17 baselines
+│   └── translation_ro/      # Romanian translation work (batches, instructions)
+│
+├── scripts/
+│   ├── import_team.py       # Import one team end to end
+│   ├── validate.py          # Checks keys, ids, texture sizes before injecting
+│   ├── ro_translate*.py    # Romanian translation pipeline
+│   ├── import_league_logo.py, league_logo_mesh.py   # 3D league logo
+│   └── menu.py              # Older interactive menu
+│
+├── AGENTS.md                # Detailed project notes and findings (read this first)
+├── .env.example             # Template for the local paths
+├── requirements.txt
+├── Liga1Orange.fbproject    # Frosty Editor project
+└── Liga1Orange.fbmod        # Exported mod
+```
+
+---
+
+## 🧰 Working on the project
+
+### 1. Requirements
+
+- FIFA 17 and FIFA 16 (PC); FIFA 16 is only a data source and is never launched
+- [FRLT V2 patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) installed over FIFA 16 (gives the Liga 1 data)
+- The three CLIs above, built with the .NET SDK
+- texconv, Python 3.12, Git
+
+### 2. Set up
+
+```bash
+git clone https://github.com/Gabarsolon/fifa-17-liga-1-orange.git
+cd fifa-17-liga-1-orange
+pip install -r requirements.txt
+cp .env.example .env      # then fill in your own paths
+```
+
+All paths live in the git-ignored `.env`; never hardcode them in scripts.
+
+### 3. Import a team
+
+Teams are listed in `scripts/constants.py` (`liga1orange_teams`: FIFA 17 id of the Danish team it replaces, FIFA 16 id, foundation year, city).
+
+```bash
+python scripts/import_team.py <team_key>
+# useful flags: --skip-db  --skip-assets  --skip-frosty  --fresh
+```
+
+The script replaces the players, team data and formations in the TSVs, exports and converts kits, crests and photos from FIFA 16, validates everything, rebuilds the databases with `DbCli` and injects the result into `Liga1Orange.test.fbproject` (created from the clean project and reused, so teams accumulate). Test that project in game; if it works, copy it over `Liga1Orange.fbproject`. Details and rules are in [AGENTS.md](AGENTS.md).
+
+Important: whenever a database is rebuilt, inject both the `.db` **and** its `-meta.xml`, otherwise the game crashes at startup.
+
+### 4. Other jobs
+
+- Check data before injecting: `python scripts/validate.py`
+- 3D league logo: `python scripts/import_league_logo.py`
+- Romanian translation: `python scripts/ro_translate.py prepare | validate | merge`
 
 ---
 
 ## 🛠 Troubleshooting
 
-If something isn’t working correctly, check the solutions below.
+### 🚫 Mod not showing in game
+- Make sure the mod is applied in Frosty Mod Manager and launch the game through Frosty.
+- Check for conflicts with other mods.
 
-### 🚫 Mod Not Showing in Game
+### 💥 Game crashes on launch
+- Most startup crashes come from the database: always inject the `.db` together with its `-meta.xml`, and never use a database with duplicate keys.
+- If the game does not start at all, a patched `CryptBase.dll` may be needed. Place it in the game folder, or inject it with [Extreme Injector](https://github.com/master131/ExtremeInjector) (helper script: [scripts/extreme_injector_loop.ps1](scripts/extreme_injector_loop.ps1)).
+- Disable other mods, delete the `ModData` folder and let Frosty regenerate it, run Frosty as administrator.
 
-- Make sure the mod is applied in Frosty Mod Manager  
-- Launch the game through Frosty, not directly from Origin/EA App  
-- Check for conflicts with other installed mods  
+### 👕 Kits / logos not appearing
+- Check that team ids match in the database tables and the texture names.
+- Verify the `teamkits` rows and that the textures were imported.
+- Clear `ModData` and rebuild.
 
----
+### 📊 Database changes not applying
+- Run `python scripts/validate.py` (duplicate ids, missing references).
+- Test in Kick-Off before Career Mode.
 
-### 💥 Game Crashes on Launch
-
-- Use [Extreme injector](https://github.com/master131/ExtremeInjector) to inject [cryptbase.dll](https://www.dll-files.com/cryptbase.dll.html) when the game launches. You can use a helper script for this (place in game dir) [scripts\extreme_injector_loop.ps1](scripts\extreme_injector_loop.ps1)
-- Disable other mods and test again  
-- Delete the `ModData` folder and let Frosty regenerate it  
-- Run Frosty as Administrator  
-
----
-
-### 👕 Kits / Logos Not Appearing
-
-- Check if team IDs match correctly in database tables  
-- Verify kit assignments in `teamkits` table  
-- Make sure texture files are properly imported  
-- Clear ModData and rebuild  
+If the issue persists, open an issue with a clear description, screenshots, and your FIFA 17 and Frosty versions.
 
 ---
 
-### 📊 Database Changes Not Applying
+## 🤝 How to contribute
 
-- Confirm you saved and exported the mod properly  
-- Check table relations (teamId, playerId, leagueId)  
-- Ensure no duplicate IDs exist  
-- Test changes in Kick-Off before Career Mode  
+- Fix incorrect player data or update squads
+- Improve kits, textures, faces, banners and flags
+- Pick one of the open [issues](https://github.com/Gabarsolon/fifa-17-liga-1-orange/issues) (remaining teams, translation, loans, formations)
+- Report bugs
 
----
-
-### 🐌 Performance Issues
-
-- Remove unnecessary high-resolution textures  
-- Disable other heavy mods  
-- Clear ModData folder  
+Guidelines: keep the database structure consistent, do not overwrite unrelated tables, test in game before submitting, use clear commit messages, and open a pull request from a new branch with screenshots when relevant.
 
 ---
-
-If the issue persists:
-
-1. Open an Issue  
-2. Describe the problem clearly  
-3. Include screenshots  
-4. Mention your FIFA 17 version and Frosty version  
-
----
-
-
-## 🤝 How to Contribute
-
-Contributions are welcome! If you’d like to improve this mod, follow the steps below.
-
-### 🔧 Ways You Can Help
-
-- Fix incorrect player data
-- Update squads / transfers
-- Improve kits or textures
-- Fix player's faces
-- Improve banners, flags, or UI elements
-- Report bugs or database issues
-
-#### Don't forget to check the issues page!
-
-### 🧰 Preparing Your Workspace
-
-Before making changes, make sure your environment is properly set up.
-
-#### 1️⃣ Requirements
-
-- FIFA 17 (PC)
-- FIFA 16 (PC)
-- Frosty Editor
-- Frosty Mod Manager
-- Creation Master 16
-- DB Master
-- Python 3.x (for scripts)
-- Photo editor
-- Git
-- [FRLT V2 Patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) for FIFA 16 (used for importing liga 1 data)
-
-#### 2️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/fifa-17-liga-1-orange.git
-cd fifa-17-liga-1-orange
-```
-
-#### 3️⃣ Set Up Frosty
-- Open Frosty Editor
-- Load your FIFA 17 installation
-- Open the Liga1Orange.fbproject file
-- Make sure the project loads without errors
-
-#### 4️⃣ Database Workflow
-- TSV files are located in db/
-- Edit tables carefully (respect IDs and relations)
-- Run `python scripts/menu.py` for automation functions
-  - You can fix kit colors, swap player data, and extract FIFA 16 textures (kits, crests, player faces) via CmCli directly from the menu!
-- Import the saved TSV's into the `.db` files using `DbCli` (or DB Master manually)
-- Import saved DB files into Frosty Editor (use `FrostyCli` for automated inspections if needed)
-
-#### 5️⃣ FIFA 16 FRLT V2 importing 
-- Download the [FRLT V2 Patch](https://dl.fifa-infinity.com/fifa-16/frlt-16-v2/) and add it to fifa 16
-- Use CreationMaster16 or the automated `CmCli` tools inside `menu.py` for reading and exporting data
-
-
-
-### 📥 Submitting Changes
-
-1. Create a new branch 
-2. Create a pull request with your changes 
-
-Please describe clearly what you changed and include screenshots if relevant.
-
-### 🐛 Reporting Issues
-
-If you find a bug:
-
-- Open an Issue
-- Describe the problem
-- Include steps to reproduce
-- Attach screenshots if possible
-
----
-
-### 📋 Contribution Guidelines
-
-- Keep database structure consistent
-- Do not overwrite unrelated tables
-- Test changes in-game before submitting
-- Use clear commit messages
-
----
-
-Thank you for helping improve the project! ⚽
 
 ## ⚠ Disclaimer
 
-This is a fan-made project.  
-All rights belong to EA Sports & EFET team for FRLT V2 patch
-
----
+This is a fan-made project. All rights belong to EA Sports and to the EFET team for the FRLT V2 patch.
 
 ## 👤 Author
 
-Created by **Gabarsolon**
-
-If you like the project, give it a ⭐
-
----
+Created by **Gabarsolon**. If you like the project, give it a ⭐
