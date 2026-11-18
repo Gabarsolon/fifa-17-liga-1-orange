@@ -1,0 +1,287 @@
+[
+{
+"id": 31721,
+"ctx": "news_body_seasonpreview_fightforpromotion_5",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nKeeping out the opposition will at least give <TeamName> a chance to remain in the pack chasing promotion this season and, if <FullPlayerName1> can contribute with goals and assists at the other end, then they might just have say in who goes up this year.\\nFor promotion to be an option, however, the rest of the team must do its share of the work – at both ends of the field. Whether it's through a tireless midfield that includes <FullPlayerName2>, or a group of defenders featuring <FullPlayerName3>, everyone has a part to play. Any slackening off in terms of work ethic and promotion will surely remain a distant dream.\\n%2s  "
+},
+{
+"id": 31722,
+"ctx": "news_body_seasonpreview_fightforthetitle_10",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nAssembling a title-winning side is not easy, but it seems that <TeamName> may have all the building blocks in place this season and will be hoping they can push all the way to he very summit.\\n<FullPlayerName3> can prove integral to a defensive unit that will need form a daunting barrier to opposition strikers while, in midfield, players such as <FullPlayerName2> can help to break up play and quickly put his side on the attack.\\nHoping to benefit from such speed-of-thought will be an attacking force that features <FullPlayerName1> as the side goes in search of the goals that can bring them the title they crave so badly.\\n%2s"
+},
+{
+"id": 31723,
+"ctx": "SUB_SS_EPL_L_1",
+"en": "{C:TORO}{2.74-3.74}Unacceptable.{C:ALEX}{5.02-6.83}Come on, Hunter, you're better than that.{C:TORO}{8.01-12.21}Football is a team sport, Alex. You're not the only one at fault for today's result.{C:LI-LI}{12.77-16.35}C'est vrai. Win alone, lose as a team. That's what I say.{C:TORO}{17.45-18.58}It's not funny.{C:LI-LI}{19.24-23.14}This game is funny! N'oublie pas. This is just a game.{C:TORO}{23.68-25.75}Is the money we make just a game? {26.60-34.95}All the people who feed their families with their club job, is it a game for them? The little ones who look to us for inspiration… Just a game? {36.21-39.89}This means a lot more to a lot of people, even if it means nothing to you."
+},
+{
+"id": 31724,
+"ctx": "news_body_intmanager_arrives_oldteampoor_4",
+"en": "\"\\n\\nThe performances of <UserName>'s club side have come under scrutiny since his appointment as the new <TeamName1> national coach. Despite dwindling form in his domestic season the <TeamName1> board still decided he was the right man for the job. With the expectations of the national team being set high both players and fans across the world will be looking to see how the new international manager will do under pressure. \"\"I'm not going to go into this role with my eyes closed. I know it's going to be hard and the team will need to be focused and have belief in themselves. At an international level there is no room for error\"\" were the words of a relatively calm <UserName>.\""
+},
+{
+"id": 31725,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_DecisionToStay_HATESCOUNTRY_1",
+"en": "\"<TeamName> fans finally exhaled today after <FullPlayerName> ended weeks of speculation surrounding his intentions by publicly pledging his future to the club.\\n<PlayerName> said: \"\"There has been much written about me not liking this country, but nothing could be further from the truth. I have been made to feel very welcome by everyone, both at the club and when I am out and about in the city and elsewhere. I'm delighted to announce my decision to stay. I hope we can now put all the rumours to bed once and for all.\"\"\\n<PlayerName> was thought to be close to a move earlier in the year after press reported the <PreferredPos1> unhappy with his life away from the training ground.\""
+},
+{
+"id": 31726,
+"ctx": "TalkToPress_Body_Unnerve_DisciplineBad_OpponentNone_Player_1",
+"en": "\"<ManagerName>, has hit out at his <TeamName2> opposite number, <ManagerName2>, suggesting that his <TeamName> on-field discipline is superior and therefore more likely to succeed this season. In particular, the <TeamName> boss called out <FullPlayerName2> as a player who could cost his side valuable points if he didn't pay close attention to his disciplinary record.\\n\"\"We have highlighted what we believe is an area that we can exploit,\"\" he revealed at a recent press conference. \"\"If you look at players like <PlayerName2> then it's perfectly legitimate to question whether they have the temperament to be successful this season. We don't believe we have a problem in that area.\"\"\""
+},
+{
+"id": 31727,
+"ctx": "news_body_intmanager_postmatch_debutfriendly_draw_4",
+"en": "\"<UserName> was left in two minds over the debut friendly draw that he experienced. \"\"In some ways I'm upset that we didn't manage to win the game when we had plenty of chances to do so. On the other hand it could have been a much worse scoreline and in hindsight the draw has shown the players where they need to improve before they play competitive matches\"\" explained the manager after the <TeamName> match. With this in mind many will be questioning what changes might be needed and where the team need to improve. The manager seemed to know that people would be asking this when he said \"\"Consistency, control and clinical finishing is what we need to focus on in the games ahead.\"\"\""
+},
+{
+"id": 31728,
+"ctx": "news_body_seasonpreview_avoidlowlyfinish_4",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nDefender <FullPlayerName3> believes he has enough talent around him in the <TeamName> squad to avoid a low-place finish this season.\\nHe said: \"\"We are good enough, I'm sure of it and so are the lads in the dressing room. But now we have to go out and prove it.\"\"\\nSuch confidence will not be misplaced if forwards such as <FullPlayerName1> can find their scoring boots quickly while, in midfield, the ability of <FullPlayerName2> to defend and attack will have a major effect on how the season progresses. If they can all gel, then the club has a chance of avoiding an embarrassing finishing position. But it wont be easy.\\n%2s\\r\\n\""
+},
+{
+"id": 31729,
+"ctx": "news_body_seasonpreview_playoffsemifinal_5",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nMidfielder <FullPlayerName2> expects a tough season ahead for <TeamName> as he helps to push them towards a coveted Semi-Final Playoff place.\\nHe said: \"\"We are ready for a fight. We know it will be tough but we also know we are capable of reaching the Semi-Final and we can't wait to get started.\"\"\\nAny success this season will depend significantly on the defence's ability to avoid costly errors and <FullPlayerName3> will need to concentrate fully.\\nAt the front, goals will again be vital to any assault on the latter stages of the Playoffs and <FullPlayerName1> will be hoping to have his scoring boots on from match one.\\n%2s \""
+},
+{
+"id": 31730,
+"ctx": "news_body_seasonpreview_promotion_10",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nAutomatic promotion this season is vital to <TeamName> if they are to hold on to their very best players next year, and they will be going flat out from the start of the campaign to ensure they remain at the head of affairs throughout.\\nForwards such as <FullPlayerName1> will need to do everything he can to bring goals and assists to the team while, in midfield, <FullPlayerName2> can help provide additional goal-scoring opportunities as well assist in the equally vital defensive duties.\\nDefender <FullPlayerName3>, meanwhile, will have to be ready to turn defence in to attack as soon as the opportunity presents itself.\\n%2s    "
+},
+{
+"id": 31731,
+"ctx": "CM_News_PlayerCash_Success_TopPlayer_Body_1",
+"en": "\"%1s have confirmed the capture of %8s after completing a deal that involved a fee of %4s and the transfer of %9s to %2s. \"\"We're very excited to have reached an agreement with %2s, and we're sure the team, the fans and the entire organisation are looking forward to the contribution that %3s will make\"\", said a club's representative.\\r\\nAs for %2s, the arrival of %7s promises to be a huge boost and improve the quality of the team in a key area. \"\"This was the right decision for our club\"\", a spokesman said earlier today, adding \"\"we have lost an important player, but now welcome a top talent to our club and we will continue to strengthen the squad and bring success to our fans.\"\"\""
+},
+{
+"id": 31732,
+"ctx": "TXT_DEMO_SELLSHEET_GP_1_DESC",
+"en": "Experience the emotion of scoring great goals in FIFA 17. Innovations to the award-winning gameplay make the game more authentic and more fun. Dictate the tempo of a match, create chances through midfield, and then unleash the perfect strike. New features called Pure Shot and Real Ball Physics transform shooting, making every shot attempt feel real, and when players connect with the perfect strike, feel exhilarating.\\n\\nA new feature called Precision Movement ensures every step counts as players plant, pivot, cut, and shift momentum with the agility and explosiveness of real footballers. Player acceleration and deceleration is more realistic with a game-changing effect on gameplay."
+},
+{
+"id": 31733,
+"ctx": "news_body_loanlisted_above30_below_avg_4",
+"en": "\"Veteran <PreferredPos1> <FullPlayerName>, may not be a <TeamName> player for much longer, as the club have alerted other clubs that they are prepared to allow him to leave on a loan deal. The man from <Nationality> may be prepared to drop down a division to join a club where he can have more of an influence on proceedings than he has had at <TeamName> recently. He's also shown an interest in a coaching career after he finishes playing, so perhaps this will be on his mind too as he contemplates the future. <ManagerName> said that he \"\"is a great player to have around the dressing room, but at his age he needs to play football, so we hope we can both benefit from some time apart\"\".\""
+},
+{
+"id": 31734,
+"ctx": "news_body_seasonpreview_qualifyforeurope_7",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> defender, <FullPlayerName3>, is just one of a squad talented enough to achieve a European qualifying place this season, according to some insiders at the club ahead of the new campaign. After all, most good sides are built on sound defences and this one will need to be as good as any in the league if the team is to progress.\\nThe defensive capabilities of midfielders such as <FullPlayerName2> will come under as much scrutiny as his ability to create and convert goalscoring chances while, even in attack, the likes of <FullPlayerName1> will be expected to do his bit to regain possession every time the ball is lost.\\n%2s"
+},
+{
+"id": 31735,
+"ctx": "TalkToPress_Body_MotivateUnnerveUserTeamNeither_SemiQuarter_WorseThanUser_1",
+"en": "\"It's getting close to the <CompetitionName> Final and <TeamName1> & <TeamName2> meet with both feeling it could be their year to lift the famous trophy. For one of the managers involved in this big clash, it's a game he feels his team can win. <ManagerName1> invited the press to see his team train yesterday and had the following to say about the game. \"\"We probably look the better team on paper, and I'd have to agree with that assessment.\"\" he began. \"\"I've got an amazing bunch of players out there, and I wouldn't swap them for anyone else's team.\"\" he went on to say. \"\"At the end of the day I'd take my team over the other lot any day, and I'm sure they won't let the fans down.\"\"\""
+},
+{
+"id": 31736,
+"ctx": "SUB_SS_U_WARN_CALM",
+"en": "\"{C:BUTLER}{3.72-5.49}Hunter, get in here.{8.54-10.00}Sit.{16.97-22.17}You know, when I was a player the other lads used to call me \"\"The Engine.\"\" I could run all day.{23.16-28.13}But if I tried to do tricks or step-overs, I'd fall flat on my backside.{29.22-36.08}Then there were the flash lads who'd nutmeg defenders just for fun, but they'd get a cramp if they had to backtrack past halfway.{38.17-45.13}Hard work and talent, each of them on their own, they're never enough if you want to make it at the very top level.{46.62-50.20}The trouble is I'm not seeing much of either from you, lad.{52.18-57.95}You okay, Alex? I don't mean to pry, but is everything okay in your personal life?\""
+},
+{
+"id": 31737,
+"ctx": "news_contractrebel_body_stage5_speculation_3",
+"en": "Sometimes the life of a reporter is akin to getting water out of a rock. One such occasion is the situation developing between <TeamName> and <FullPlayerName>. There has been no word from either in this whole sorry saga. Let me repeat that. Neither have spoken to the media yet, so separating fact from fiction is impossible. Meanwhile the only chirpy individual has been the player's agent, who of course is perfectly sat on the fence. It seems fair to conclude that <PlayerName> is angling for more money, a lot more money, and if he's not going to be offered the sum he is looking for then having a few clubs waiting in the wings is a nice plan B. But that's just the cynic in me writing."
+},
+{
+"id": 31738,
+"ctx": "news_body_newmanager_postmatch_thirdmatch_drawfirst_wonsecond_3",
+"en": "\"\\n\\nAn encouraging start is what <UserName> was after at <TeamName> and this is exactly what he provided. With a draw and then a win the fans were almost treated to a fairytale beginning. \"\"It would have been excellent to have got two wins before this third match, but luck was not on our side. However I am still extremely proud of the performances my players have put on for the fans. They have made the other teams stand up and take notice.\"\" Fans agreed and rallied around their team with many of them waving banners of the manager's name. \"\"That made my day it's nice to know I'm welcome. Not many managers are lucky enough to have the support that I have here\"\" explained <UserName>.\""
+},
+{
+"id": 31739,
+"ctx": "news_body_seasonpreview_euroleague_8",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> forward, <FullPlayerName1>, has fully backed his manager's target of Euro League qualification this season and is happy to lead by example and let his goals do all the talking.\\n\"\"We all know why we are here,\"\" he admitted \"\"and I am confident that we can keep everyone happy in terms of Euro League qualification. My job will be to score and create as many goals as possible and that is exactly what I intend to do.\"\" \\nHe will be helped in both tasks by midfielder <FullPlayerName2>, while any goals from defender <FullPlayerName3> will be a welcome bonus as long as an equal premium is placed on keeping clean sheets.\\n%2s\""
+},
+{
+"id": 31740,
+"ctx": "News_body_ForeignPlayerWantsToLeave_AgentComments_HATESWEATHER_2",
+"en": "\"<FullPlayerName> is committed to <TeamName> and intent on seeing out his entire contract, according to the player's agent.\\nSpeaking to the press earlier this week, the agent maintained he had no idea where speculation linking his client with a move away had come from and dismissed rumours the <PreferredPos1> was depressed with the weather as 'irrelevant'.\\n\"\"Who knows where these things begin,\"\" he shrugged. \"\"I think the weather thing is irrelevant. We knew what the weather was like before we signed for <TeamName>, so we can hardly now use it as an excuse. Of course <PlayerName> would prefer it to be more like the weather he's used to, but it wont be the reason he stays or goes.\"\"\""
+},
+{
+"id": 31741,
+"ctx": "TalkToPress_Body_PraiseUserTeamNeither_Final_MuchBetterThanUser_1",
+"en": "\"On the eve of the <CompetitionName> Final between <TeamName1> & <TeamName2>, <ManagerName> has been quick to talk about how much confidence he has in his team. \"\"They might be a much stronger team than us on paper perhaps, but the game isn't played on paper, and it's going to be a cracking day out for the fans to play in the final of a major trophy\"\" he began. \"\"But in all honesty I wouldn't swap my team's spirit for theirs. I've got a cracking bunch of lads, we're good all over the pitch, and as I said their team spirit is second to none. I think we'll be fine, certainly won't disgrace ourselves and I've every confidence that my team will handle the big occasion with no problem.\"\" \""
+},
+{
+"id": 31742,
+"ctx": "TalkToPress_Body_MotivateUnnerveOpponentDerbyRival_Other_WorseThanUser_1",
+"en": "\"It's still a long way until the glamour of a cup final in the <CompetitionName>, but two great rivals <TeamName1> & <TeamName2> have to overcome the other before they can let themselves think of progressing any further in this year's tournament. <ManagerName1> has some thoughts on this cup tie ahead of the game. \"\"Well these teams like to have a crack at a bigger team don't they, but you often see their league form suffer as a result\"\" he said. \"\"That tends to be the thing we're judged on more than anything these days, so I wouldn't be surprised if that was their major concern\"\" he concluded. The two teams are not evenly matched on paper, but with the magic of the cup you never know.\""
+},
+{
+"id": 31743,
+"ctx": "TalkToPress_Body_MotivateUnnerveOpponentDerbyRival_Other_Even_1",
+"en": "\"It's still a long way until the glamour of a cup final in the <CompetitionName>, but two great rivals <TeamName1> & <TeamName2> have to overcome the other before they can let themselves think of progressing any further in this year's tournament. <ManagerName1> has some thoughts on this cup tie ahead of the game. \"\"Well they've probably got their mind on their league form to be honest\"\" he said. \"\"That tends to be the thing we're judged on more than anything these days, so I wouldn't be surprised if that was their major concern\"\" he concluded. The two teams are quite evenly matched heading into this game, so it could easily go to either of them, perhaps home advantage will be the key.\""
+},
+{
+"id": 31744,
+"ctx": "news_body_seasonpreview_highfinish_9",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<FullPlayerName1> will be among a <TeamName> forward line looking to score enough goals to ensure a high finish this season but, as he explained, it wont be easy against the division's best defenders.\\n\"\"There are some excellent defenders out there,\"\" he said. \"\"We'll just have to remain patient and make sure we take the chances when they come.\"\"\\nMidfielder <FullPlayerName2> can help to create plenty of those chances himself but he will also be expected to score as well. And it goes almost without saying that a defensive line that includes <FullPlayerName3> will also look to its midfield for help in repelling opposing teams.\\n%2s\""
+},
+{
+"id": 31745,
+"ctx": "news_body_seasonpreview_promotion_6",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nAutomatic promotion will not be easy for <TeamName> but, according to the team's midfielder <FullPlayerName2>, there is a quiet confidence among the players that this will be the year.\\nHe said: \"\"We feel we can do it and that's what we're aiming at. I can promise the fans that we want it as much as they do and we'll certainly be giving it everything we've got.\"\"\\nThe team's task will be made much easier if forward <FullPlayerName1> finds the target with regularity, while defender <FullPlayerName3> must help to construct a steel-like defence as well as make a contribution to the ‘goals scored' column whenever he gets a chance.\\n%2s\""
+},
+{
+"id": 31746,
+"ctx": "news_body_intmanager_postmatch_thirdmatch_drawfirst_wonsecond_1",
+"en": "\"\\n\\nAfter <TeamName>'s third match fixture <UserName> was still talking about the first and second match results. \"\"The draw and then the win was a great moment for me and the team. We started off in the first game well but gave away the ball and almost the game too many times. We weren't clinical enough to win that game. Then second game was a complete turn around. We managed to seal a convincing victory but some may argue that lady luck was on our side. I think we all need a bit of luck now and then though\"\" explained the smiling manager. He went on to add \"\"I would like to say that the supporters have been wonderful to me since I arrived. I couldn't have asked for a better welcome\"\"\""
+},
+{
+"id": 31747,
+"ctx": "TalkToPress_Body_MotivateUnnerveOpponentDerbyRival_Other_MuchBetterThanUser_1",
+"en": "\"It's still a long way until the glamour of a cup final in the <CompetitionName>, but two great rivals <TeamName1> & <TeamName2> have to overcome the other before they can let themselves think of progressing any further in this year's tournament. <ManagerName1> has some thoughts on this cup tie ahead of the game. \"\"Well they've probably got their mind on their league form to be honest\"\" he said. \"\"That tends to be the thing we're judged on more than anything these days, so I wouldn't be surprised if that was their major concern\"\" he concluded. The two teams are from different ends of the football spectrum so their should only be one outcome, but with the magic of the cup you never know.\""
+},
+{
+"id": 31748,
+"ctx": "CM_Email_body_foullanguage_postmatch_stage3_player_1",
+"en": "Dear Mr. <PlayerFirstName1>,\\n\\nIt's come to our attention lately that your conduct on the field of play has been less than satisfactory. I am of course referring to your language. The blueness of its nature reflects badly on us as a team and you as a person. You should always remember that in an age where we have multiple cameras, microphones and TV replays everything you do is visible and possibly audible.\\n\\nWe understand the frustration you no doubt felt at times but please try and keep a cooler head. Continuing down the same path could lead to a ban and possibly other sanctions from the board. It's in all our interests that you calm yourself down a bit.\\n\\nCheers,\\nAssistant Manager"
+},
+{
+"id": 31749,
+"ctx": "news_body_seasonpreview_playoffquarterfinal_7",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> insiders are targeting a quarter-final playoff finish as a minimum this season and the fans are unlikely to be in the mood to tolerate any excuses if the team fails to make it.\\nMuch of the pressure is likely to fall on a forward line that includes <FullPlayerName1>, but the responsibility to score sufficient goals will not rest with him alone.\\nIn midfield, for instance, <FullPlayerName2> can make a make a vital contribution, in addition to his other duties, and the same might even be said for defender, <FullPlayerName3>. Goals will be gratefully received from everywhere and will certainly help to keep the fans happy.\\n%2s"
+},
+{
+"id": 31750,
+"ctx": "news_dirtygame_draw_body_2",
+"en": "\"Both managers shook their heads at the end of this fight, during which from time to time a football match broke out. \"\"It certainly wasn't a good advert for the game\"\" were the words of <ManagerName> in his post match press conference. \"\"A few small things seemed to get them started and then all hell broke loose\"\" he continued. His opposite number <ManagerName2> was of the same opinion, \"\"It's hard to know if one incident sparked that off, but it certainly kicked off big time in the second half.\"\" The major flashpoint during the game saw the referee show red cards to both <FullPlayerName1> and <FullPlayerName2> for their part. Let's hope we don't see too many of these games this season.\""
+},
+{
+"id": 31751,
+"ctx": "News_Body_OneForTheFuture_CM_Played_1",
+"en": "Great box-to-box midfielders are worth their weight in gold. An engine that means they can cover the ground for the entire 90 mins and the ability to pop up in the box to score a vital goal or make a saving challenge at the other end. In young <FullPlayerName> it is thought that <TeamName> might have a player we'll be admiring for years to come. The <PlayerAge>-year-old midfielder has come to prominence in recent months with a string of outstanding displays which have led to a number of clubs being linked with the <PreferredFoot> footer. Hailing from <Nationality>, fans of the national team hope he can continue his considerable progress and burst onto the world scene in the next few years."
+},
+{
+"id": 31752,
+"ctx": "news_body_intmanager_postmatch_thirdmatch_drawfirst_lostsecond_4",
+"en": "\"\\n\\nAfter the side's recent game the manager of <TeamName> was still being asked about their first two fixture results. <UserName> explained his feelings on these games by saying \"\"The draw was a just result when you look at the team's performance on the day, however the loss was something we didn't deserve. We played well and held the ball for most of the game. But we couldn't get the ball in the back of the net and at the end of the day that's all that matters.\"\" The teams assistant manager went on to defend his boss and said \"\"There's only so much a manager can do if the team can't break down their opponent then ultimately it's the players' fault. We just needed to be more clinical.\"\"\""
+},
+{
+"id": 31753,
+"ctx": "news_body_seasonpreview_championscup_6",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nPundits are touting a Champions' Cup place for <TeamName> this season and handling the pressure that comes with such massive expectation will be essential. As a defender, <FullPlayerName3> understands the need to stay focused and alert to all dangers, while also keeping an eye open for any opportunities that present themselves going forwards. \\n\"\"Players these days must be aware of their responsibilities, for sure,\"\" he explained, \"\"But we must also turn defence in to attack in the blink of an eye.\"\" \\nForward <FullPlayerName1> will need to be a regular name on the score sheet, while the same goes for midfielder <FullPlayerName2>.\\n%2s\""
+},
+{
+"id": 31754,
+"ctx": "news_body_seasonpreview_qualifyforeurope_5",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nThe Promised Land of European football awaits <TeamName> this season if they can live up to media predictions and reach a qualifying position by the end of the campaign.\\nTo be successful, players such as defender <FullPlayerName3> will need to remain fit and focused on the job at hand, while midfielder <FullPlayerName2> can prove vital, both in terms of creating and converting chancers, and in helping to recycle the ball when possession breaks down.\\nUp front, fans will need to place their trust in the likes of <FullPlayerName1> as only a hatful of goals and assists are likely to be sufficient for the team to make a European place.\\n%2s"
+},
+{
+"id": 31755,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_HATESWEATHER_1",
+"en": "<FullPlayerName> is likely to seek a move away from <TeamName> as he is unable to come to terms with the weather. It's not the first time we've seen this from a player from warmer climes, but fans of the team and player are likely to find this a hard pill to swallow. <PlayerName> has yet to speak out about his problem to <ManagerName>, but close associates of the player have verified that the <PreferredPos1> is seriously considering asking for a move away just to get away from winters that he does not enjoy and he believes affect his football. His agent was unavailable for comment about the rumour, but we would not be surprised if the player headed south in January or the end of the season."
+},
+{
+"id": 31756,
+"ctx": "TalkToPress_Body_PraiseUserTeamDerbyRival_RelegationBattle_3",
+"en": "\"Winning local bragging rights will be of little use to <TeamName> if they fail to rescue their precarious position, according to <ManagerName>.\\nTalking to the media ahead of what could be a season-defining clash with local rivals, <TeamName2>, the manager talked about the self-belief evident in his players but warned against taking the opposition lightly.\\n\"\"We are in terrific heart at the moment and I'm lucky to have such a remarkable group of players here. We are not treating this any different to any other 'must win' match. Come the end of the season, the only thing that matters is where you end up and nobody is going to worry too much about whether we beat them in this one match.\"\"  \""
+},
+{
+"id": 31757,
+"ctx": "news_body_seasonpreview_championscup_4",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> will be expected to achieve a Champions' Cup qualifying position this season if they are to keep a demanding set of fans happy.\\nForward <FullPlayerName1> will know that he must quickly find his range in what promises to be an exhausting campaign.\\n<FullPlayerName2>, meanwhile, must carry the burden of helping to make the best use of the ball, while ensuring possession is quickly regained and recycled by the team as they bid to find the consistency required to achieve a place in the Champions' Cup. \\n<FullPlayerName3> forms part of a defence that will need to be close to impregnable if the fans' dreams are to be realised.\\n%2s"
+},
+{
+"id": 31758,
+"ctx": "CM_TransferMove_Body_1",
+"en": "\"%1s have announced on their official website that they have completed the transfer of %2s from %3s for a fee of %7s. The %5s-year old %6s from %9s enjoyed a fruitful spell at his former club, %3s, and joins his new team-mates with a glowing reputation as a player who can add a little something extra to any team he plays for.\\r\\nHis new manager was over the moon with his new signing. \"\"I can't wait to get him in the team and start working with him. He is going to give us a big boost and the extra motivation that we have been sorely lacking in recent weeks,\"\" he said outside the club's training facilities.\\r\\nInitial reports suggest that the player will receive a %8s salary in his new club.\""
+},
+{
+"id": 31759,
+"ctx": "SUB_1_SC_0495_2",
+"en": "{C:BUTLER}{1.49-7.50}My advice to you lads - work as hard on getting to know your teammates as you do in training.{7.52-14.95} Lot of different personalities on this team, some big egos. If we want to be successful in the Premier League, we need team chemistry.{15.00-18.34} No good just having eleven individuals out there.{18.75-22.25}All right. Get cracking. Training starts in fifteen minutes {22.79-27.25}and I’m not having the pair of you looking like a couple of boy band rejects on my pitch. {27.50-32.09}If you want to know the one direction you need to go in it's that way to the dressing room.{C:ALEX}{38.99-40.55}We won't let you down, Mr. Butler.{C:BUTLER}{40.89-43.29}Fourteen minutes."
+},
+{
+"id": 31760,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_DecisionToLeave_UNSETTLED_1",
+"en": "<TeamName> fans are in mourning today after it finally became clear that <FullPlayerName> was intent on leaving the club.\\nSpeculation has been rife for some time that the <PreferredPos1> from <Nationality> was unsettled at <TeamName>, but fans and officials alike were hopeful of a change of heart. Sadly, that appears not now to be the case and the player has formally handed in a transfer request that will see him leave as soon as a deal has been ironed out.\\nExactly where <PlayerName> is going remains a toss up with both <TeamName2> and <TeamName4> believed to be in the running for his signature. <TeamName3> were also thought to be interested but their desire may have waned in recent weeks."
+},
+{
+"id": 31761,
+"ctx": "news_contractrebel_body_transfer_complete_4",
+"en": "\"A proud <ManagerName> sat next to a beaming <FullPlayerName> before the world's press this morning, as the <PreferredPos1> put pen to paper on his <Currency> move from <TeamName2>. The player was delighted with the move saying, \"\"This is a great move for me at this point in my career. I felt I'd gone as far as I could with <TeamName2> and so <TeamName>'s interest came along at just the right time for me.\"\"  The player's new manager was equally upbeat about his signing, \"\"For sure, <PlayerName> is a great capture for this football club. He has much to offer us both on the pitch and off it too. I think the fans will very quickly take him to their hearts, and I feel he will be great for us.\"\"\""
+},
+{
+"id": 31762,
+"ctx": "news_body_seasonpreview_midtable_1",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nRemaining clear of the lower reaches of the table in the early stages will be vital for <TeamName> this season if they are to finish in a mid-table position, according to the side's defender, <FullPlayerName3>.\\nHe said: \"\"It can be easy to get sucked in to a fight at the bottom if you're not careful. We feel we are better than that, but so do all the teams, and we will have to go out and prove it in every game.\"\"\\nMuch of the responsibility for winning the points necessary for a  mid-table finish will come through the goals of <FullPlayerName1>. He will try to take advantage of chances created in the midfield by <FullPlayerName2>.\\n%2s\""
+},
+{
+"id": 31763,
+"ctx": "news_body_seasonpreview_highfinish_5",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> forward <FullPlayerName1> is confident the goals will come regularly throughout the season and he sees no reason the club should not be chasing a high-place finish for most of the year.\\n\"\"scoring goals is about confidence and I think there's always a lot of that in pre-season,\"\" he revealed.\\nMaintaining confidence levels will be a major challenge that can be made easier if the likes of midfielder <FullPlayerName2> make a contribution to both the assists and goals scored tallies.\\nThere should also be a few goals in defender <FullPlayerName3>, although his first priority will undoubtedly be keeping out the opposition.\\n%2s   \""
+},
+{
+"id": 31764,
+"ctx": "news_body_newmanager_postmatch_thirdmatch_drawfirst_drawsecond_4",
+"en": "\"\\n\\nA draw in both the first and second games leading up to the third match was not the perfect start for <UserName>, however fans seemed pleased with the teams run of form. Many fans stated that it could have been worse, with many of them agreeing that the manager needs time before we making a judgement. Facing more games, the manager will have to be gracious with the <TeamName> fans understanding his new position. \"\"It's great to have fans who understand that it's a learning process for me. I've only been here a short time and it will take a few games for me to familiarise myself with the lads. But now I will sit down with the players, discuss the third game result and then go from there.\"\"\""
+},
+{
+"id": 31765,
+"ctx": "news_body_seasonpreview_playofffinal_5",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<FullPlayerName1> is ready to help lead the hunt for goals this season as <TeamName> begin a campaign they hope will end in a Playoff Final.\\n\"\"It is down to me and the other forwards to provide as many goals as possible and I am happy with that responsibility,\"\" he said. \"\"Scoring is everything to me.\"\"\\nSuch commitment to the cause will reassure the fans who will also be looking for a significant number of goals from a midfield that includes <FullPlayerName2>.\\nBut chances can fall to any player at any time, and that includes defenders such as <FullPlayerName3> who will hope to make a telling contribution of his own whenever he can.\\n%2s\""
+},
+{
+"id": 31766,
+"ctx": "news_body_seasonpreview_playofffinal_6",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nThere seem few reasons <TeamName> cannot go all the way to the Playoff Final this year, but talk is cheap at this level and the club will need to demonstrate it has the dressing-room talent to back up the optimism in the stands.\\nUp front, for instance, players such as <FullPlayerName1> will be under pressure to perform at a high level week in, week out.\\nA midfield that includes <FullPlayerName2> will have the extra responsibility of ensuring they retain and recycle enough possession to make a difference while, at the back, defender <FullPlayerName3> will be looking to help build a foundation that can take them all the way to the Final.\\n%2s"
+},
+{
+"id": 31767,
+"ctx": "news_body_seasonpreview_runattheplayoffs_2",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nA sustained run at the playoffs is very much on the agenda for <TeamName> this season as they look to build for the future.\\nBut, to succeed, they will need to demonstrate an ability to attack and defend as a unit whenever possible.\\nForwards such as <FullPlayerName1> must accept that they are also the first line of defence whenever the ball is lost, while a midfield containing <FullPlayerName2> must be equally at home scoring goals as they are in helping to recycle the ball. At the back, meanwhile, defender <FullPlayerName3> can help to build a solid barrier against opposition attack while proving equally adept on the counter-attacking.\\n%2s"
+},
+{
+"id": 31768,
+"ctx": "TalkToPress_Body_PraiseUserTeamNeither_SemiQuarter_MuchBetterThanUser_1",
+"en": "\"On the eve of the massive <CompetitionName> tie between <TeamName1> & <TeamName2>, <ManagerName> has been quick to talk about how much confidence he has in his team. \"\"They might be a much stronger team than us on paper perhaps, but the game isn't played on paper, and it's going to be a nervous day for the fans as they can see the final so tantilsiingly close\"\" he began. \"\"But in all honesty I wouldn't swap my team's spirit for theirs. I've got a cracking bunch of lads, we're good all over the pitch, and as I said their team spirit is second to none. I think we'll be fine, certainly won't disgrace ourselves and I've every confidence that my team will handle the big occasion with no problem.\"\" \""
+},
+{
+"id": 31769,
+"ctx": "news_body_newmanager_postmatch_thirdmatch_drawfirst_lostsecond_1",
+"en": "\"\\n\\nAfter the side's recent game, the manager of <TeamName> was still being asked about the first two results. <UserName> explained his feelings on those games by saying \"\"The draw was a fair result, when you look at the team's performance on the day, however the loss was something we didn't deserve. We played well and held the ball for most of the game. But we couldn't get the ball in the back of the net and at the end of the day that's all that matters.\"\" The team's assistant manager went on to defend his boss and said \"\"There's only so much a manager can do if the team can't break down their opponent then ultimately it's the players' fault. We just needed to be more clinical in hindsight.\"\"\""
+},
+{
+"id": 31770,
+"ctx": "TalkToPress_Body_MotivateUnnerveOpponentNeither_Final_Even_1",
+"en": "\"It's the eve of the <CompetitionName> Final and the two teams <TeamName1> & <TeamName2> both are dreaming of having their name etched into the famous old trophy. However <ManagerName1> wonders how the match will play out. \"\"Since the teams are so well matched, I wonder if it will be the team that handles the emotion of the occasion the best that wins. The fans will be right up for it for sure, and will be backing their teams to the hilt. I've got a lot of wise heads in my squad, the types I can trust to pull it all together out on the pitch. But looking at their team, there are a few loose cannons and you wonder if one of them might cost his team a chance by doing something daft\"\" he concluded.\""
+},
+{
+"id": 31771,
+"ctx": "news_body_seasonpreview_fightforthetitle_2",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nDefender <FullPlayerName3> can be a key member of a <TeamName> squad destined to challenge for the title this season but, as he explained, it will be no stroll to victory.\\nHe said: \"\"We know that we have the capability to win the title, but we also know that it can only be done through working harder than everyone else.\"\"\\nWorkrate will be especially important for players such as midfielder <FullPlayerName2>, as he will need to be aware of both his attacking and defensive responsibilities.\\nUp front, the goals and assists of <FullPlayerName1> will likely be crucial in what promises to be a long and arduous campaign. Let battle commence! %2s\""
+},
+{
+"id": 31772,
+"ctx": "news_body_seasonpreview_avoidrelegation_4",
+"en": "\"Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\nA season-long relegation dogfight faces <TeamName> as they try to preserve their status in the division.\\nFans will be kept happy along the way if the side can take a couple of high-profile caps, but the likes of forward <FullPlayerName1> knows that wins are what counts.\\n\"\"Of course we want to try and beat everyone,\"\" he explained. \"\"But the only thing that really matters is winning enough points to avoid relegation.\"\" \\n<FullPlayerName3> can play a significant part in building the solid defence required to avoid the trap door, while midfielder <FullPlayerName2> will shoulder his share of responsibility in both attack and at the back.\\n%2s \""
+},
+{
+"id": 31773,
+"ctx": "news_body_seasonpreview_highfinish_1",
+"en": "Predicted Finish: %1s\\nKey Player: <FullPlayerName5>\\n<TeamName> will measure progress in small steps towards a best-possible finish this season, but the team will need to be constantly alert to the dangers that can come on the back of just a few poor results.\\nThe search for consistency starts early and will be helped by a free-scoring forward line which includes <FullPlayerName1>.\\nDefender <FullPlayerName3> will be required to help steady any problems at the back and can look to be a threat going forward when the chance presents itself.\\nOne of the hardest-working areas is in midfield, and players such as <FullPlayerName2> will need to be effective at both ends, with and without the ball.\\n%2s"
+},
+{
+"id": 31774,
+"ctx": "news_body_playtimemorale_loanme_notlisted_2",
+"en": "\"A lack of first team football and a refusal to grant his wish of a loan move has put <FullPlayerName> on the verge of questioning his career.\\n<TeamName> have used the <PreferredPos1> sparingly this season which is a situation the <PlayerAge> year old cannot tolerate any longer.\\n\"\"I love this football club, and I want to play for the fans, but if that is not possible then I'd like to go out on loan and get some first team football somewhere\"\" he said. \"\"However my request has been totally ignored, which questions my value to this club and the man management policies it employs\"\".\\nQuite what <ManagerName> will make of these comments is hard to predict, but he is unlikely to take kindly to them.\""
+},
+{
+"id": 31775,
+"ctx": "news_body_loanplayer_arrives_oldteampoor_3",
+"en": "\"\\n\\nA poor season followed by a poor decision will be what most people think with <ManagerName2>'s recent choice to send <PlayerName1> on loan. But according to reports, the undisclosed fees were enough to push the deal through. When provoked about the move and his club's form, <ManagerName2> snapped \"\"Money? What's the money got to do with it? I simply saw a window which I thought would benefit the team in the long run. Players need experience in various situations and this seemed the right choice to make for <PlayerName1>'s career and for <TeamName2>.\"\" With poor form being a major concern to the <TeamName2> fans most are left bewildered as to what they can salvage now they are a player short.\""
+},
+{
+"id": 31776,
+"ctx": "news_body_newmanager_arrives_3",
+"en": "\"After <TeamName1>'s drawn out attempts to replace their previous manager they have finally got their man when <UserName> put pen to paper. This deal has finally put fans minds at ease and many agreed he was the best candidate for the club. One optimistic fan said \"\"The manager looks like a good choice to me and I think he might be exactly what we need. Hopefully he can help provide the club with good results. As long as we are winning the fans will love him.\"\" <TeamName1>'s chief executive seemed to echo that sentiment, \"\"We are going through lots of changes at this club and we are convinced that <UserName> is the right man to lead the club, inspire our players and bring happiness to our fans.\"\"\""
+},
+{
+"id": 31777,
+"ctx": "news_body_loanreturn_arrives_oldteampoor_1",
+"en": "\"\\n\\n<TeamName2> will be sad to see <PlayerName1> leave after his loan deal came to an end in the midst of an unimpressive series of performances. \"\"It's another blow we must take on the chin. We've got a great set of players here already and we need to pick up our form.\"\" added <ManagerName2>. But with the <PlayerAge2> year old <PreferredPos2> arriving back at the training ground <TeamName1> fans will be questioning if the manager will play him in the fixtures ahead. \"\"I need to assess the situation. He's only just stepped foot back in the ground and people are asking me if he's going to play. We will see what happens and how he fits back into the team in time\"\" were the words of <ManagerName1>.\""
+}
+]

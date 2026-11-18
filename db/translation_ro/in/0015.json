@@ -1,0 +1,1252 @@
+[
+{
+"id": 3750,
+"ctx": "CM_HUB_Advancing",
+"en": "ADVANCING"
+},
+{
+"id": 3751,
+"ctx": "tm_BuildUpPosFreeForm",
+"en": "Free Form"
+},
+{
+"id": 3752,
+"ctx": "NewPacks",
+"en": "New Packs"
+},
+{
+"id": 3753,
+"ctx": "ucc_telephone",
+"en": "Telephone"
+},
+{
+"id": 3754,
+"ctx": "Licencing",
+"en": "Licensing"
+},
+{
+"id": 3755,
+"ctx": "OSDK_CLUBS_CREATE_NAME",
+"en": "Club Name"
+},
+{
+"id": 3756,
+"ctx": "WinPercentDraw_Event4",
+"en": "Copacetic"
+},
+{
+"id": 3757,
+"ctx": "FUT_IB_CHALKTUT_CHEMISTRY",
+"en": "CHEMISTRY"
+},
+{
+"id": 3758,
+"ctx": "CreatedTournamentName_3",
+"en": "Ultra Cup"
+},
+{
+"id": 3759,
+"ctx": "LS_lastweek",
+"en": "Last Week"
+},
+{
+"id": 3760,
+"ctx": "Rendering",
+"en": "Rendering"
+},
+{
+"id": 3761,
+"ctx": "PPA_MRF_BAD_ANGLE",
+"en": "Bad Angle"
+},
+{
+"id": 3762,
+"ctx": "PlainBadge1",
+"en": "Plain Red"
+},
+{
+"id": 3763,
+"ctx": "Offsides_FIFA",
+"en": "Off-sides"
+},
+{
+"id": 3764,
+"ctx": "CLUBS_VIEWCLUBCAMPUS",
+"en": "VIEW CLUB"
+},
+{
+"id": 3765,
+"ctx": "PPA_MRF_GOOD_SHOT",
+"en": "Good Shot"
+},
+{
+"id": 3766,
+"ctx": "KIN_Mentality4",
+"en": "DEFENSIVE"
+},
+{
+"id": 3767,
+"ctx": "Animators",
+"en": "Animators"
+},
+{
+"id": 3768,
+"ctx": "TM_PI_FREE_ROAM",
+"en": "Free Roam"
+},
+{
+"id": 3769,
+"ctx": "TXT_EASFC_GOALS_FOR",
+"en": "GOALS FOR"
+},
+{
+"id": 3770,
+"ctx": "musiccategory_footer_1_0",
+"en": "Team Goal"
+},
+{
+"id": 3771,
+"ctx": "CLUB_COMMENTARY_NAME_4172",
+"en": "Morecambe"
+},
+{
+"id": 3772,
+"ctx": "PPA_MRF_NICE_IDEA_upper",
+"en": "NICE IDEA"
+},
+{
+"id": 3773,
+"ctx": "CM_PA_PressDay",
+"en": "Press Day"
+},
+{
+"id": 3774,
+"ctx": "SL_RETRY",
+"en": "Retry\\r\\n"
+},
+{
+"id": 3775,
+"ctx": "AWARD_LABEL_100",
+"en": "(Special)"
+},
+{
+"id": 3776,
+"ctx": "ucc_handsout",
+"en": "Hands Out"
+},
+{
+"id": 3777,
+"ctx": "morale_summary_story_ConsideringRetiring_short",
+"en": "Retiring?"
+},
+{
+"id": 3778,
+"ctx": "CMYS_ScoutRegion_7_upper",
+"en": "AUSTRALIA"
+},
+{
+"id": 3779,
+"ctx": "OSDK_THANKYOU",
+"en": "Thank You"
+},
+{
+"id": 3780,
+"ctx": "SM_HASHTAG_NICKNAME_106",
+"en": "BlackCats"
+},
+{
+"id": 3781,
+"ctx": "tourny_SimNextMatch",
+"en": "Sim Match"
+},
+{
+"id": 3782,
+"ctx": "FUT_MC_CHEMISTRY",
+"en": "Chemistry"
+},
+{
+"id": 3783,
+"ctx": "TXT_FREE_KICK_STAR_6",
+"en": "Technique"
+},
+{
+"id": 3784,
+"ctx": "SM_HOME_EXIT_TRIAL_RESULT_2",
+"en": "WELL DONE"
+},
+{
+"id": 3785,
+"ctx": "KIN_mentalityvoice",
+"en": "mentality"
+},
+{
+"id": 3786,
+"ctx": "WinPercentDraw_Event8",
+"en": "Off Night"
+},
+{
+"id": 3787,
+"ctx": "INFO_DEVELOPER",
+"en": "EA Canada"
+},
+{
+"id": 3788,
+"ctx": "GoldPack_Name",
+"en": "Gold Pack"
+},
+{
+"id": 3789,
+"ctx": "TXT_SUB_TAB_LIKES",
+"en": "THUMBS UP"
+},
+{
+"id": 3790,
+"ctx": "FxArtist",
+"en": "Fx Artist"
+},
+{
+"id": 3791,
+"ctx": "CARD_GOALS_PER_GAME",
+"en": "Goals P/G"
+},
+{
+"id": 3792,
+"ctx": "PPA_MRF_NICE_GOAL_upper",
+"en": "NICE GOAL"
+},
+{
+"id": 3793,
+"ctx": "GoalForDraw_Event3",
+"en": "You Drew?"
+},
+{
+"id": 3794,
+"ctx": "EarStyle",
+"en": "Ear Style"
+},
+{
+"id": 3795,
+"ctx": "MM_CUSTOMISE_ONLINE_CREATE_ORIGIN_TITLE",
+"en": "PUBLIC ID"
+},
+{
+"id": 3796,
+"ctx": "CM_LastName_Header",
+"en": "LAST NAME"
+},
+{
+"id": 3797,
+"ctx": "GoalKick",
+"en": "Goal Kick"
+},
+{
+"id": 3798,
+"ctx": "CM_CurrWage",
+"en": "WAGE/WEEK"
+},
+{
+"id": 3799,
+"ctx": "TXT_FRIENDLIES_GAMEHISTORY_GAMETITLE",
+"en": "Match %1d"
+},
+{
+"id": 3800,
+"ctx": "OSDK_LV3_FILTER_DOWNLOADS",
+"en": "Downloads"
+},
+{
+"id": 3801,
+"ctx": "FUT_AWAY_KITS",
+"en": "AWAY KITS"
+},
+{
+"id": 3802,
+"ctx": "Position_colon",
+"en": "Position:"
+},
+{
+"id": 3803,
+"ctx": "PPA_MRF_GREAT_RUN",
+"en": "Great Run"
+},
+{
+"id": 3804,
+"ctx": "OSDK_VOLUME_UP",
+"en": "Volume Up"
+},
+{
+"id": 3805,
+"ctx": "LS_attribute",
+"en": "Attribute"
+},
+{
+"id": 3806,
+"ctx": "OSDK_OL_STATE_PRESEASON",
+"en": "Preseason"
+},
+{
+"id": 3807,
+"ctx": "ProfileStat_68",
+"en": "ET 2 Subs"
+},
+{
+"id": 3808,
+"ctx": "OSDK_CLUBS_DIVISION99",
+"en": "Division:"
+},
+{
+"id": 3809,
+"ctx": "vp_style_wing_back_upper",
+"en": "WING BACK"
+},
+{
+"id": 3810,
+"ctx": "Z_PC_AXIS_3_UP",
+"en": "AXIS 3 UP"
+},
+{
+"id": 3811,
+"ctx": "Node_CYC_Fist_Pump",
+"en": "Fist Pump"
+},
+{
+"id": 3812,
+"ctx": "FUT_VIEW_SQUAD_AWAY",
+"en": "View Away"
+},
+{
+"id": 3813,
+"ctx": "FOC_7_OR_MORE",
+"en": "7 or more"
+},
+{
+"id": 3814,
+"ctx": "TXT_RIVAL_MATCH_VOTED",
+"en": "1 VOTE..."
+},
+{
+"id": 3815,
+"ctx": "LOC_LB_SCORE_BUILDER",
+"en": "TOP SQUAD"
+},
+{
+"id": 3816,
+"ctx": "FUT_PLANNING_AREA",
+"en": "WORK AREA"
+},
+{
+"id": 3817,
+"ctx": "CT_AwayTeam_Title",
+"en": "Away Side"
+},
+{
+"id": 3818,
+"ctx": "QuitDemo",
+"en": "QUIT DEMO"
+},
+{
+"id": 3819,
+"ctx": "PRESIDENT",
+"en": "President"
+},
+{
+"id": 3820,
+"ctx": "NetShape_0",
+"en": "Rectangle"
+},
+{
+"id": 3821,
+"ctx": "FUT_CHAMP_PLATINUM_SUBTIER",
+"en": "ELITE %1d"
+},
+{
+"id": 3822,
+"ctx": "CT_GameTime_FullTime_upper",
+"en": "FULL TIME"
+},
+{
+"id": 3823,
+"ctx": "TXT_TEAM_FORM_LOWER",
+"en": "Team Form"
+},
+{
+"id": 3824,
+"ctx": "TXT_WC_BrazilCity11_lower",
+"en": "Sao Paulo"
+},
+{
+"id": 3825,
+"ctx": "OSDK_RoomName",
+"en": "Room Name"
+},
+{
+"id": 3826,
+"ctx": "TOURNAMENT_LIVE_NAME_071",
+"en": "Nomad Cup"
+},
+{
+"id": 3827,
+"ctx": "FoulsDraw_Event3",
+"en": "Dusted Up"
+},
+{
+"id": 3828,
+"ctx": "clubleague_centraleurope_abbr",
+"en": "C. Europe"
+},
+{
+"id": 3829,
+"ctx": "Tactics_THREE",
+"en": "Tactics 3"
+},
+{
+"id": 3830,
+"ctx": "BestWin_c",
+"en": "Best Win:"
+},
+{
+"id": 3831,
+"ctx": "OSDK_CLUBS_COL_CLUBNAME",
+"en": "CLUB NAME"
+},
+{
+"id": 3832,
+"ctx": "OSDK_CNTRY_SZ",
+"en": "Swaziland"
+},
+{
+"id": 3833,
+"ctx": "CO_HeadPass",
+"en": "Head Pass"
+},
+{
+"id": 3834,
+"ctx": "PPA_MRF_NICE_CHIP",
+"en": "Nice Chip"
+},
+{
+"id": 3835,
+"ctx": "CO_CallForPass",
+"en": "Call Pass"
+},
+{
+"id": 3836,
+"ctx": "TXT_EASFC_NEW_CLUB",
+"en": "NEW CLUB:"
+},
+{
+"id": 3837,
+"ctx": "PPA_MRF_GOOD_PASS",
+"en": "Good Pass"
+},
+{
+"id": 3838,
+"ctx": "OfflineTournament_WonYouHaveWon",
+"en": "Winner is"
+},
+{
+"id": 3839,
+"ctx": "OSDK_STATE_LOU",
+"en": "Louisiana"
+},
+{
+"id": 3840,
+"ctx": "Z_PC_AXIS_0_UP",
+"en": "AXIS 0 UP"
+},
+{
+"id": 3841,
+"ctx": "FUT_MC_YOUR_ITEM",
+"en": "Your Item"
+},
+{
+"id": 3842,
+"ctx": "TXT_ONLINE_SPEVENT_HOURS",
+"en": "%1d HOURS"
+},
+{
+"id": 3843,
+"ctx": "SM_HASHTAG_HASHFLAG_1795",
+"en": "watfordfc"
+},
+{
+"id": 3844,
+"ctx": "CM_HUB_Dynamic Panel_Header_8",
+"en": "BOTTOM 15"
+},
+{
+"id": 3845,
+"ctx": "CM_Cup_Progress",
+"en": "Progress:"
+},
+{
+"id": 3846,
+"ctx": "Frostbite",
+"en": "Frostbite"
+},
+{
+"id": 3847,
+"ctx": "tourny_news_head_loss_0",
+"en": "Dreadful!"
+},
+{
+"id": 3848,
+"ctx": "vpvision1",
+"en": "VISION +1"
+},
+{
+"id": 3849,
+"ctx": "Reactions_Abbr12_upper",
+"en": "REACTIONS"
+},
+{
+"id": 3850,
+"ctx": "TXT_EASFC_YEARS_AGO",
+"en": "years ago"
+},
+{
+"id": 3851,
+"ctx": "FUT_NewValue",
+"en": "New Value"
+},
+{
+"id": 3852,
+"ctx": "OwnGoalsTime_abbr",
+"en": "(og %1d')"
+},
+{
+"id": 3853,
+"ctx": "SDB_ST_BELTSDEF",
+"en": "BELTS DEF"
+},
+{
+"id": 3854,
+"ctx": "ucc_coackroach",
+"en": "Cockroach"
+},
+{
+"id": 3855,
+"ctx": "vpgkgold",
+"en": "GK HELMET"
+},
+{
+"id": 3856,
+"ctx": "PPA_MRF_NICE_CHIP_upper",
+"en": "NICE CHIP"
+},
+{
+"id": 3857,
+"ctx": "FUT_UC_YOUR_ITEM",
+"en": "YOUR ITEM"
+},
+{
+"id": 3858,
+"ctx": "TipShape",
+"en": "Tip Shape"
+},
+{
+"id": 3859,
+"ctx": "ACH_TITLE_33",
+"en": "Upgraded!"
+},
+{
+"id": 3860,
+"ctx": "OSDK_CLUB_INFO",
+"en": "Club Info"
+},
+{
+"id": 3861,
+"ctx": "InstantReplayCam_4",
+"en": "Dynamic 2"
+},
+{
+"id": 3862,
+"ctx": "PPA_MRF_BAD_PASS_upper",
+"en": "POOR PASS"
+},
+{
+"id": 3863,
+"ctx": "PPA_MRF_BAD_CROSS",
+"en": "Bad Cross"
+},
+{
+"id": 3864,
+"ctx": "CM_NewsType_Exclusive_upper",
+"en": "EXCLUSIVE"
+},
+{
+"id": 3865,
+"ctx": "BodyType",
+"en": "Body Type"
+},
+{
+"id": 3866,
+"ctx": "suspended_lowcase",
+"en": "suspended"
+},
+{
+"id": 3867,
+"ctx": "Z_PC_CONTROL_BUTTON09",
+"en": "BUTTON 09"
+},
+{
+"id": 3868,
+"ctx": "BirthDay",
+"en": "Birth Day"
+},
+{
+"id": 3869,
+"ctx": "FUT_NI_CloseTag",
+"en": "Untag All"
+},
+{
+"id": 3870,
+"ctx": "TXT_MC_LABEL",
+"en": "Club Type"
+},
+{
+"id": 3871,
+"ctx": "AttackingTactic_2",
+"en": "Left Wing"
+},
+{
+"id": 3872,
+"ctx": "Level_X",
+"en": "Level %1d"
+},
+{
+"id": 3873,
+"ctx": "Sneakiest",
+"en": "Sneakiest"
+},
+{
+"id": 3874,
+"ctx": "PPA_MRF_BAD_CROSS_upper",
+"en": "BAD CROSS"
+},
+{
+"id": 3875,
+"ctx": "OSDK_RECIPIENT",
+"en": "Recipient"
+},
+{
+"id": 3876,
+"ctx": "EditTeam",
+"en": "Edit Team"
+},
+{
+"id": 3877,
+"ctx": "ucc_eartwist",
+"en": "Ear Twist"
+},
+{
+"id": 3878,
+"ctx": "TopRight",
+"en": "Top Right"
+},
+{
+"id": 3879,
+"ctx": "FUT_SELECTTEAM_AWAY_CLUB",
+"en": "AWAY CLUB"
+},
+{
+"id": 3880,
+"ctx": "Z_PC_CONTROL_BUTTON01",
+"en": "BUTTON 01"
+},
+{
+"id": 3881,
+"ctx": "CMYS_Knowledge_tag",
+"en": "Judgment:"
+},
+{
+"id": 3882,
+"ctx": "OpenPack",
+"en": "Open Pack"
+},
+{
+"id": 3883,
+"ctx": "StoryModeSubtitles",
+"en": "Subtitles"
+},
+{
+"id": 3884,
+"ctx": "CM_Email_From_6_upper",
+"en": "SCOUT %1s"
+},
+{
+"id": 3885,
+"ctx": "RoundX",
+"en": "Round %1d"
+},
+{
+"id": 3886,
+"ctx": "PPA_MRF_GOOD_PASS_upper",
+"en": "GOOD PASS"
+},
+{
+"id": 3887,
+"ctx": "FoulsLose_Event5",
+"en": "Merciless"
+},
+{
+"id": 3888,
+"ctx": "Z_PC_CONTROL_BUTTON05",
+"en": "BUTTON 05"
+},
+{
+"id": 3889,
+"ctx": "KIN_Sub3voice",
+"en": "Sub three"
+},
+{
+"id": 3890,
+"ctx": "tourny_Selection",
+"en": "Selection"
+},
+{
+"id": 3891,
+"ctx": "ucc_punchanddodge",
+"en": "Baby Girl"
+},
+{
+"id": 3892,
+"ctx": "OSDK_SHOW_MENU",
+"en": "Show Menu"
+},
+{
+"id": 3893,
+"ctx": "ManufacturerEASports",
+"en": "EA Sports"
+},
+{
+"id": 3894,
+"ctx": "OSDK_STATE_WISC",
+"en": "Wisconsin"
+},
+{
+"id": 3895,
+"ctx": "LobThrow",
+"en": "Lob Throw"
+},
+{
+"id": 3896,
+"ctx": "CM_Email_From_2",
+"en": "%1s Board"
+},
+{
+"id": 3897,
+"ctx": "FOC_4_OR_MORE",
+"en": "4 or more"
+},
+{
+"id": 3898,
+"ctx": "RankDiffDraw_Event2",
+"en": "Bad Times"
+},
+{
+"id": 3899,
+"ctx": "EditCreatedLogo",
+"en": "Edit Logo"
+},
+{
+"id": 3900,
+"ctx": "KitNameDefault",
+"en": "C. Player"
+},
+{
+"id": 3901,
+"ctx": "TXT_EASFC_CONTROL_MAP_CALM_DOWN",
+"en": "Calm Down"
+},
+{
+"id": 3902,
+"ctx": "Z_XENON_BUTTON_DPAD_DOWN",
+"en": "DPAD DOWN"
+},
+{
+"id": 3903,
+"ctx": "Z_PC_CONTROL_BUTTON11",
+"en": "BUTTON 11"
+},
+{
+"id": 3904,
+"ctx": "FUT_TimeEligibility_Status_Open",
+"en": "Available"
+},
+{
+"id": 3905,
+"ctx": "ClearDay",
+"en": "Clear Day"
+},
+{
+"id": 3906,
+"ctx": "Z_PC_CONTROL_BUTTON15",
+"en": "BUTTON 15"
+},
+{
+"id": 3907,
+"ctx": "MainMenu",
+"en": "Main Menu"
+},
+{
+"id": 3908,
+"ctx": "PossessionDraw_Event7",
+"en": "Possessed"
+},
+{
+"id": 3909,
+"ctx": "JawWidth",
+"en": "Jaw Width"
+},
+{
+"id": 3910,
+"ctx": "OSDK_LOBBY_CREATOR",
+"en": "Room Host"
+},
+{
+"id": 3911,
+"ctx": "CM_Email_From_6",
+"en": "Scout %1s"
+},
+{
+"id": 3912,
+"ctx": "SDB_SF_PASSPCT",
+"en": "Passing %"
+},
+{
+"id": 3913,
+"ctx": "FUT_TF_SOLD",
+"en": "Sold: %1s"
+},
+{
+"id": 3914,
+"ctx": "TXT_ACCOMP_NAME_THROWINS",
+"en": "Throw-Ins"
+},
+{
+"id": 3915,
+"ctx": "SecondRound",
+"en": "2nd Round"
+},
+{
+"id": 3916,
+"ctx": "CM_Inbox_Sender_Teammates",
+"en": "Teammates"
+},
+{
+"id": 3917,
+"ctx": "Attract_Video_40",
+"en": "Our game."
+},
+{
+"id": 3918,
+"ctx": "OSDK_CNTRY_LT",
+"en": "Lithuania"
+},
+{
+"id": 3919,
+"ctx": "news_goals_hattrick_upper",
+"en": "HAT-TRICK"
+},
+{
+"id": 3920,
+"ctx": "CM_Inbox_Sender_Magazine Name",
+"en": "Magazines"
+},
+{
+"id": 3921,
+"ctx": "TXT_DRILL_PERFORMANCE_B",
+"en": "GOOD JOB!"
+},
+{
+"id": 3922,
+"ctx": "CO_GKCharge",
+"en": "GK Charge"
+},
+{
+"id": 3923,
+"ctx": "TXT_MATCH_DAY_LIVE_GOALS",
+"en": "%1d Goals"
+},
+{
+"id": 3924,
+"ctx": "OSDK_ONDEMAND_TITLE",
+"en": "On Demand"
+},
+{
+"id": 3925,
+"ctx": "LuckyDipCard",
+"en": "Lucky Dip"
+},
+{
+"id": 3926,
+"ctx": "GTN_sListAgeRange",
+"en": "Age Range"
+},
+{
+"id": 3927,
+"ctx": "LIFTLIVE",
+"en": "Lift Live"
+},
+{
+"id": 3928,
+"ctx": "CM_PitchArea_GK_upper",
+"en": "GOALKEEPER"
+},
+{
+"id": 3929,
+"ctx": "MM_CONTINUE_TEAM_FORM",
+"en": "Team form:"
+},
+{
+"id": 3930,
+"ctx": "Formation_FullName_17",
+"en": "4-3-3 Flat"
+},
+{
+"id": 3931,
+"ctx": "TXT_EASFC_TOTAL_FANS",
+"en": "Total Fans"
+},
+{
+"id": 3932,
+"ctx": "THEATRE_SHARE_FILM",
+"en": "SHARE FILM"
+},
+{
+"id": 3933,
+"ctx": "OSDK_ESPN_PLAYING",
+"en": "Playing..."
+},
+{
+"id": 3934,
+"ctx": "OSDK_WITHIN_60_PERCENT",
+"en": "Within 60%"
+},
+{
+"id": 3935,
+"ctx": "SM_MANAGER_RATING_SUB",
+"en": "SUBSTITUTE"
+},
+{
+"id": 3936,
+"ctx": "vpagility2",
+"en": "AGILITY +2"
+},
+{
+"id": 3937,
+"ctx": "GM_FUTMENU",
+"en": "FUT 17 HUB"
+},
+{
+"id": 3938,
+"ctx": "OnlineCup",
+"en": "Online Cup"
+},
+{
+"id": 3939,
+"ctx": "TXT_H2H_FIRST_SEASON",
+"en": "1ST SEASON"
+},
+{
+"id": 3940,
+"ctx": "TXT_CUSTOM_KIT",
+"en": "Custom Kit"
+},
+{
+"id": 3941,
+"ctx": "FUT_CHAMP_TIER_0",
+"en": "Bronze %1d"
+},
+{
+"id": 3942,
+"ctx": "SM_LOADING",
+"en": "LOADING..."
+},
+{
+"id": 3943,
+"ctx": "CreatePlayerHairStyle_61",
+"en": "Low Mohawk"
+},
+{
+"id": 3944,
+"ctx": "FUT_PLAY_DRAFT_MATCH",
+"en": "PLAY MATCH"
+},
+{
+"id": 3945,
+"ctx": "SetPieces",
+"en": "Set Pieces"
+},
+{
+"id": 3946,
+"ctx": "TXT_SQUAD_COPY",
+"en": "Copy Squad"
+},
+{
+"id": 3947,
+"ctx": "OSDK_CNTRY_MZ",
+"en": "Mozambique"
+},
+{
+"id": 3948,
+"ctx": "SoccerRole_MIDFIELDER",
+"en": "Midfielder"
+},
+{
+"id": 3949,
+"ctx": "CMYS_HireScout_upper",
+"en": "HIRE SCOUT"
+},
+{
+"id": 3950,
+"ctx": "CM_Website_Denmark_1",
+"en": "Statistics"
+},
+{
+"id": 3951,
+"ctx": "vpro_physical_accomreward3",
+"en": "Stamina +1"
+},
+{
+"id": 3952,
+"ctx": "IWL_UCC_finishing_ForwardRollToSit",
+"en": "Floor Spin"
+},
+{
+"id": 3953,
+"ctx": "SKILL_GOLD_LEVEL",
+"en": "GOLD LEVEL"
+},
+{
+"id": 3954,
+"ctx": "CO_MouseMove",
+"en": "Move Mouse"
+},
+{
+"id": 3955,
+"ctx": "vpro_stat_9",
+"en": "Laces Shot"
+},
+{
+"id": 3956,
+"ctx": "TXT_EASFC_TUTORIAL_CHALLENGES_TITLE",
+"en": "CHALLENGES"
+},
+{
+"id": 3957,
+"ctx": "Aggression_Abbr12",
+"en": "Aggression"
+},
+{
+"id": 3958,
+"ctx": "CMYS_PlayerType_4",
+"en": "Goalkeeper"
+},
+{
+"id": 3959,
+"ctx": "OSDK_WITHIN_40_PERCENT",
+"en": "Within 40%"
+},
+{
+"id": 3960,
+"ctx": "OSDK_TICKER_NBA",
+"en": "NBA Scores"
+},
+{
+"id": 3961,
+"ctx": "SL_YesMakeCurrent",
+"en": "Yes, apply"
+},
+{
+"id": 3962,
+"ctx": "worldranking",
+"en": "World Rank"
+},
+{
+"id": 3963,
+"ctx": "FUT_QUICK_SELL",
+"en": "QUICK SELL"
+},
+{
+"id": 3964,
+"ctx": "CLUB_COMMENTARY_NAME_200231",
+"en": "Shrewsbury"
+},
+{
+"id": 3965,
+"ctx": "Forfeiture",
+"en": "Forfeiture"
+},
+{
+"id": 3966,
+"ctx": "FUT_Search_Club",
+"en": "CLUB ITEMS"
+},
+{
+"id": 3967,
+"ctx": "txt_deadlineday_hoursleft",
+"en": "HOURS LEFT"
+},
+{
+"id": 3968,
+"ctx": "CM_HUB_TransfersIn",
+"en": "Players IN"
+},
+{
+"id": 3969,
+"ctx": "FIFACam_EndToEnd",
+"en": "End to End"
+},
+{
+"id": 3970,
+"ctx": "IWL_TM_PI_TARGET_MAN",
+"en": "Target Man"
+},
+{
+"id": 3971,
+"ctx": "CM_Objective",
+"en": "Objective:"
+},
+{
+"id": 3972,
+"ctx": "CT_MenuState_EASFC",
+"en": "EAS FC Hub"
+},
+{
+"id": 3973,
+"ctx": "FUT_Earn_Coins",
+"en": "Earn Coins"
+},
+{
+"id": 3974,
+"ctx": "tcmf_club_worth",
+"en": "CLUB WORTH"
+},
+{
+"id": 3975,
+"ctx": "Vpro_appearance",
+"en": "APPEARANCE"
+},
+{
+"id": 3976,
+"ctx": "OSDK_ENTER_NAME",
+"en": "Enter Name"
+},
+{
+"id": 3977,
+"ctx": "OTP_SelectKit",
+"en": "Select Kit"
+},
+{
+"id": 3978,
+"ctx": "SavesGameDescr",
+"en": "Saves Game"
+},
+{
+"id": 3979,
+"ctx": "vpro_defence_accomreward9",
+"en": "Marking +2"
+},
+{
+"id": 3980,
+"ctx": "OSDK_TICKER_GOLF_NEWS",
+"en": "Golf News "
+},
+{
+"id": 3981,
+"ctx": "hud_tactic_WA",
+"en": "Swap Wings"
+},
+{
+"id": 3982,
+"ctx": "OSDK_LOBBY_GAME_MODES",
+"en": "Game Modes"
+},
+{
+"id": 3983,
+"ctx": "OSDK_TS_GSETUP",
+"en": "Game Setup"
+},
+{
+"id": 3984,
+"ctx": "vpheading1",
+"en": "HEADING +1"
+},
+{
+"id": 3985,
+"ctx": "KO_Two_button",
+"en": "Two Button"
+},
+{
+"id": 3986,
+"ctx": "MIN_PRICE",
+"en": "Min. Price"
+},
+{
+"id": 3987,
+"ctx": "FUT_MC_PROCESSING",
+"en": "Processing"
+},
+{
+"id": 3988,
+"ctx": "OSDK_CNTRY_MR",
+"en": "Mauritania"
+},
+{
+"id": 3989,
+"ctx": "SM_HASHTAG_ALEXHUNTER",
+"en": "AlexHunter"
+},
+{
+"id": 3990,
+"ctx": "OSDK_WITHIN_20_PERCENT",
+"en": "Within 20%"
+},
+{
+"id": 3991,
+"ctx": "Tradepileauction",
+"en": "Post Trade"
+},
+{
+"id": 3992,
+"ctx": "CM_HUB_NewsHeaderWorld",
+"en": "WORLD NEWS"
+},
+{
+"id": 3993,
+"ctx": "FUT_NI_TB_DuplicateTitle",
+"en": "DUPLICATE!"
+},
+{
+"id": 3994,
+"ctx": "FUT_TUT_CONGRATS",
+"en": "Well done!"
+},
+{
+"id": 3995,
+"ctx": "vpro_physical_accomreward23",
+"en": "Stamina +2"
+},
+{
+"id": 3996,
+"ctx": "Comparison",
+"en": "COMPARISON"
+},
+{
+"id": 3997,
+"ctx": "3inleague_upper",
+"en": "3RD IN %1s"
+},
+{
+"id": 3998,
+"ctx": "CLUB_COMMENTARY_NAME_4145",
+"en": "Lillestrøm"
+},
+{
+"id": 3999,
+"ctx": "Next Match",
+"en": "Next Match"
+}
+]

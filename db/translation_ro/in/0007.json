@@ -1,0 +1,1252 @@
+[
+{
+"id": 1750,
+"ctx": "CLUB_COMMENTARY_NAME_4156",
+"en": "Málaga"
+},
+{
+"id": 1751,
+"ctx": "SM_CONTRACT_TITLES_WON",
+"en": "TITLES"
+},
+{
+"id": 1752,
+"ctx": "CreatePlayerHairStyle_23",
+"en": "Caesar"
+},
+{
+"id": 1753,
+"ctx": "TXT_ACCEPT",
+"en": "Accept"
+},
+{
+"id": 1754,
+"ctx": "CLUB_COMMENTARY_NAME_200173",
+"en": "Moskva"
+},
+{
+"id": 1755,
+"ctx": "OSDK_CNTRY_TR",
+"en": "Turkey"
+},
+{
+"id": 1756,
+"ctx": "Built",
+"en": "Built:"
+},
+{
+"id": 1757,
+"ctx": "FUT_KEEPER",
+"en": "Keeper"
+},
+{
+"id": 1758,
+"ctx": "CM_Inbox_Sender_Family",
+"en": "Family"
+},
+{
+"id": 1759,
+"ctx": "SecondExtraTime",
+"en": "ET 2nd"
+},
+{
+"id": 1760,
+"ctx": "LongShots_abbr6",
+"en": "LNGSHT"
+},
+{
+"id": 1761,
+"ctx": "OSDK_TEAM2",
+"en": "Team 2"
+},
+{
+"id": 1762,
+"ctx": "Chants",
+"en": "Chants"
+},
+{
+"id": 1763,
+"ctx": "CT_WinDrawLoss_Losing",
+"en": "Losing"
+},
+{
+"id": 1764,
+"ctx": "OSDK_spokenlang_SA_upper",
+"en": "ARABIC"
+},
+{
+"id": 1765,
+"ctx": "GM_Booting",
+"en": "Intros"
+},
+{
+"id": 1766,
+"ctx": "OSDK_CNTRY_IL",
+"en": "Israel"
+},
+{
+"id": 1767,
+"ctx": "FIFACam_Action",
+"en": "Action"
+},
+{
+"id": 1768,
+"ctx": "SM_HASHTAG_NICKNAME_1799",
+"en": "Eagles"
+},
+{
+"id": 1769,
+"ctx": "CLUB_COMMENTARY_NAME_200063",
+"en": "Chiefs"
+},
+{
+"id": 1770,
+"ctx": "OSDK_CNTRY_TV",
+"en": "Tuvalu"
+},
+{
+"id": 1771,
+"ctx": "OSDK_CNTRY_BN",
+"en": "Brunei"
+},
+{
+"id": 1772,
+"ctx": "OSDK_SPOKENLANG_SA",
+"en": "Arabic"
+},
+{
+"id": 1773,
+"ctx": "CLUB_COMMENTARY_NAME_4013",
+"en": "Athens"
+},
+{
+"id": 1774,
+"ctx": "CM_InitialLengthLabel",
+"en": "Length"
+},
+{
+"id": 1775,
+"ctx": "RENAME",
+"en": "Rename"
+},
+{
+"id": 1776,
+"ctx": "TXT_ONLINE_MEMBER",
+"en": "MEMBER"
+},
+{
+"id": 1777,
+"ctx": "FoulsLose_Event4",
+"en": "Brutal"
+},
+{
+"id": 1778,
+"ctx": "FirstExtraTime",
+"en": "ET 1st"
+},
+{
+"id": 1779,
+"ctx": "GTN_adj_Strong",
+"en": "Strong"
+},
+{
+"id": 1780,
+"ctx": "Jostle",
+"en": "Jostle"
+},
+{
+"id": 1781,
+"ctx": "CurrentStreak2",
+"en": "1 Loss"
+},
+{
+"id": 1782,
+"ctx": "1_On_1",
+"en": "1 On 1"
+},
+{
+"id": 1783,
+"ctx": "CreateGenericPlayerBoot_1_12_12",
+"en": "Maroon"
+},
+{
+"id": 1784,
+"ctx": "OSDK_LOCKED",
+"en": "Locked"
+},
+{
+"id": 1785,
+"ctx": "OSDK_SPOKENLANG_KR",
+"en": "Korean"
+},
+{
+"id": 1786,
+"ctx": "CLUB_COMMENTARY_NAME_4117",
+"en": "Hearts"
+},
+{
+"id": 1787,
+"ctx": "Monday",
+"en": "Monday"
+},
+{
+"id": 1788,
+"ctx": "Huge2",
+"en": "Huge 2"
+},
+{
+"id": 1789,
+"ctx": "TXT_ACCOMP_NAME_PASSES",
+"en": "Passes"
+},
+{
+"id": 1790,
+"ctx": "StickLabelLeftUp_5",
+"en": "Folded"
+},
+{
+"id": 1791,
+"ctx": "CLUB_COMMENTARY_NAME_200188",
+"en": "Oldham"
+},
+{
+"id": 1792,
+"ctx": "ORIGIN",
+"en": "ORIGIN"
+},
+{
+"id": 1793,
+"ctx": "FUT_REWARD",
+"en": "REWARD"
+},
+{
+"id": 1794,
+"ctx": "CLUB_COMMENTARY_NAME_4085",
+"en": "Dublin"
+},
+{
+"id": 1795,
+"ctx": "FUT_PLAYSTYLE_10",
+"en": "ENGINE"
+},
+{
+"id": 1796,
+"ctx": "FUT_MC_PLAYSTYLE_20",
+"en": "Shield"
+},
+{
+"id": 1797,
+"ctx": "XKilometres_abbr2",
+"en": "%1d km"
+},
+{
+"id": 1798,
+"ctx": "CLUB_COMMENTARY_NAME_200047",
+"en": "Brugge"
+},
+{
+"id": 1799,
+"ctx": "OSDK_PRESENCE_ONLINE",
+"en": "online"
+},
+{
+"id": 1800,
+"ctx": "OSDK_STATE_HAW",
+"en": "Hawaii"
+},
+{
+"id": 1801,
+"ctx": "Novice",
+"en": "Novice"
+},
+{
+"id": 1802,
+"ctx": "CLUB_COMMENTARY_NAME_4266",
+"en": "United"
+},
+{
+"id": 1803,
+"ctx": "CM_Rivals",
+"en": "Rivals"
+},
+{
+"id": 1804,
+"ctx": "Mental",
+"en": "MENTAL"
+},
+{
+"id": 1805,
+"ctx": "CM_Inbox_Toggle_Emails",
+"en": "Emails"
+},
+{
+"id": 1806,
+"ctx": "TXT_VPROSTATS_SUMMARYTITLE",
+"en": "TOTALS"
+},
+{
+"id": 1807,
+"ctx": "SM_HASHTAG_NICKNAME_1952",
+"en": "Tigers"
+},
+{
+"id": 1808,
+"ctx": "CLUB_COMMENTARY_NAME_4081",
+"en": "Devils"
+},
+{
+"id": 1809,
+"ctx": "tm_DefenceAggression2",
+"en": "Double"
+},
+{
+"id": 1810,
+"ctx": "SCRAPBOOK_PHOTOS",
+"en": "PHOTOS"
+},
+{
+"id": 1811,
+"ctx": "RefereeHomeCity_189",
+"en": "Zurich"
+},
+{
+"id": 1812,
+"ctx": "FCE_Top_22",
+"en": "Top 22"
+},
+{
+"id": 1813,
+"ctx": "CLUB_COMMENTARY_NAME_4033",
+"en": "Bolton"
+},
+{
+"id": 1814,
+"ctx": "ManufacturerAstore",
+"en": "Astore"
+},
+{
+"id": 1815,
+"ctx": "CLUB_COMMENTARY_NAME_4289",
+"en": "Yeovil"
+},
+{
+"id": 1816,
+"ctx": "Visual",
+"en": "VISUAL"
+},
+{
+"id": 1817,
+"ctx": "Eatech",
+"en": "EAtech"
+},
+{
+"id": 1818,
+"ctx": "SDB_ST_OFF_PG",
+"en": "OFF PG"
+},
+{
+"id": 1819,
+"ctx": "FUT_PLAYSTYLE_18",
+"en": "SHADOW"
+},
+{
+"id": 1820,
+"ctx": "CLUB_COMMENTARY_NAME_4237",
+"en": "Sparta"
+},
+{
+"id": 1821,
+"ctx": "OneGoalStat",
+"en": "1 goal"
+},
+{
+"id": 1822,
+"ctx": "GkGloveType_2",
+"en": "Type 2"
+},
+{
+"id": 1823,
+"ctx": "CLUB_COMMENTARY_NAME_4099",
+"en": "Fulham"
+},
+{
+"id": 1824,
+"ctx": "Groups",
+"en": "Groups"
+},
+{
+"id": 1825,
+"ctx": "OnlineCup_Round",
+"en": "Round:"
+},
+{
+"id": 1826,
+"ctx": "FUT_MC_DIVING",
+"en": "Diving"
+},
+{
+"id": 1827,
+"ctx": "SDB_ST_LPATTP",
+"en": "LPATTP"
+},
+{
+"id": 1828,
+"ctx": "OSDK_GENDER",
+"en": "Gender"
+},
+{
+"id": 1829,
+"ctx": "Height",
+"en": "Height"
+},
+{
+"id": 1830,
+"ctx": "Attack_mixedcase",
+"en": "Attack"
+},
+{
+"id": 1831,
+"ctx": "OSDK_STATE_NEV",
+"en": "Nevada"
+},
+{
+"id": 1832,
+"ctx": "sprint_upper",
+"en": "SPRINT"
+},
+{
+"id": 1833,
+"ctx": "OSDK_OL_MEMBER",
+"en": "Member"
+},
+{
+"id": 1834,
+"ctx": "OSDK_CNTRY_RW",
+"en": "Rwanda"
+},
+{
+"id": 1835,
+"ctx": "Aggression_abbr6",
+"en": "AGGRS "
+},
+{
+"id": 1836,
+"ctx": "Weight_upper",
+"en": "WEIGHT"
+},
+{
+"id": 1837,
+"ctx": "CLUB_COMMENTARY_NAME_200257",
+"en": "Tigres"
+},
+{
+"id": 1838,
+"ctx": "Lesson",
+"en": "Lesson"
+},
+{
+"id": 1839,
+"ctx": "OSDK_(HOST)",
+"en": "(Host)"
+},
+{
+"id": 1840,
+"ctx": "tester",
+"en": "Tester"
+},
+{
+"id": 1841,
+"ctx": "CLUB_COMMENTARY_NAME_4191",
+"en": "Palace"
+},
+{
+"id": 1842,
+"ctx": "FIFACam_Replay_Follow",
+"en": "Follow"
+},
+{
+"id": 1843,
+"ctx": "FUT_IB_CAPTAINNAME_4",
+"en": "Cahill"
+},
+{
+"id": 1844,
+"ctx": "OSDK_CNTRY_AO",
+"en": "Angola"
+},
+{
+"id": 1845,
+"ctx": "OSDK_STATE_KAN",
+"en": "Kansas"
+},
+{
+"id": 1846,
+"ctx": "KIN_cancelvoice",
+"en": "cancel"
+},
+{
+"id": 1847,
+"ctx": "Height_upper",
+"en": "HEIGHT"
+},
+{
+"id": 1848,
+"ctx": "STORE_HELP_UPDATE",
+"en": "Update"
+},
+{
+"id": 1849,
+"ctx": "FUT_SEASON_SCORES",
+"en": "SCORES"
+},
+{
+"id": 1850,
+"ctx": "SDB_CLUBS_LEAGUETYPE_CASUAL",
+"en": "Casual"
+},
+{
+"id": 1851,
+"ctx": "Injury",
+"en": "Injury"
+},
+{
+"id": 1852,
+"ctx": "Crossing_abbr6",
+"en": "CROSS "
+},
+{
+"id": 1853,
+"ctx": "LeftStickTitle_14",
+"en": "Detail"
+},
+{
+"id": 1854,
+"ctx": "news_append_goal_number_second",
+"en": "second"
+},
+{
+"id": 1855,
+"ctx": "FUT_PLAYSTYLE_15",
+"en": "ANCHOR"
+},
+{
+"id": 1856,
+"ctx": "TXT_WC_BrazilCity8_lower",
+"en": "Recife"
+},
+{
+"id": 1857,
+"ctx": "PlayerHUB_Draws",
+"en": "Draws:"
+},
+{
+"id": 1858,
+"ctx": "goalscolon",
+"en": "Goals:"
+},
+{
+"id": 1859,
+"ctx": "TXT_FUT_AGREED",
+"en": "AGREED"
+},
+{
+"id": 1860,
+"ctx": "Unused",
+"en": "Unused"
+},
+{
+"id": 1861,
+"ctx": "tm_DefenceAggression2_upper",
+"en": "DOUBLE"
+},
+{
+"id": 1862,
+"ctx": "Salary",
+"en": "Salary"
+},
+{
+"id": 1863,
+"ctx": "Totals",
+"en": "Totals"
+},
+{
+"id": 1864,
+"ctx": "WRITER",
+"en": "Writer"
+},
+{
+"id": 1865,
+"ctx": "LIVECOMP_REG_FLOW_RATINGS_DATA_UNIQUE",
+"en": "Unique"
+},
+{
+"id": 1866,
+"ctx": "FUT_UC_COMMON",
+"en": "COMMON"
+},
+{
+"id": 1867,
+"ctx": "Fosqa",
+"en": "FOS QA"
+},
+{
+"id": 1868,
+"ctx": "Cheeks",
+"en": "Cheeks"
+},
+{
+"id": 1869,
+"ctx": "FUT_TXT_Prize",
+"en": "Prize:"
+},
+{
+"id": 1870,
+"ctx": "Booked",
+"en": "Booked"
+},
+{
+"id": 1871,
+"ctx": "ko_traits",
+"en": "Traits"
+},
+{
+"id": 1872,
+"ctx": "Coach_Title",
+"en": "Coach:"
+},
+{
+"id": 1873,
+"ctx": "CM_HUB_Dynamic Panel_Header_TOP_12",
+"en": "TOP 12"
+},
+{
+"id": 1874,
+"ctx": "Strength_abbr6",
+"en": "STRGTH"
+},
+{
+"id": 1875,
+"ctx": "CM_TCM_PP_STATUS_FAILING",
+"en": "DANGER"
+},
+{
+"id": 1876,
+"ctx": "CM_CurrentBonus",
+"en": "Bonus:"
+},
+{
+"id": 1877,
+"ctx": "OSDK_OL_GAMES_TO_PLAY",
+"en": "Games:"
+},
+{
+"id": 1878,
+"ctx": "BootManufacturerAdidas",
+"en": "Adidas"
+},
+{
+"id": 1879,
+"ctx": "CM_JobOffers",
+"en": "Offers"
+},
+{
+"id": 1880,
+"ctx": "OnOff",
+"en": "On/Off"
+},
+{
+"id": 1881,
+"ctx": "OSDK_CNTRY_UG",
+"en": "Uganda"
+},
+{
+"id": 1882,
+"ctx": "CM_AndOr",
+"en": "And/Or"
+},
+{
+"id": 1883,
+"ctx": "AWARD_LABEL_39",
+"en": "KIT(S)"
+},
+{
+"id": 1884,
+"ctx": "HEIGHT_METRIC_UPPER",
+"en": "%1d CM"
+},
+{
+"id": 1885,
+"ctx": "OSDK_CNTRY_GN",
+"en": "Guinea"
+},
+{
+"id": 1886,
+"ctx": "OverlayMiddle",
+"en": "Middle"
+},
+{
+"id": 1887,
+"ctx": "Rewind",
+"en": "Rewind"
+},
+{
+"id": 1888,
+"ctx": "OSDK_RANKED",
+"en": "Ranked"
+},
+{
+"id": 1889,
+"ctx": "CurrentStreak3",
+"en": "1 Draw"
+},
+{
+"id": 1890,
+"ctx": "CreatePlayerHairStyle_63",
+"en": "Mohawk"
+},
+{
+"id": 1891,
+"ctx": "OSDK_PROV_QUE",
+"en": "Quebec"
+},
+{
+"id": 1892,
+"ctx": "TXT_TAB_ALERTS_SHORT",
+"en": "ALERTS"
+},
+{
+"id": 1893,
+"ctx": "CM_HUB_Player_Picked",
+"en": "Picked"
+},
+{
+"id": 1894,
+"ctx": "ONL_HALF_LENGTH_3",
+"en": "4 Mins"
+},
+{
+"id": 1895,
+"ctx": "OSDK_ACCEPT_NONE",
+"en": "No one"
+},
+{
+"id": 1896,
+"ctx": "OSDK_CNTRY_GR",
+"en": "Greece"
+},
+{
+"id": 1897,
+"ctx": "1Year",
+"en": "1 Year"
+},
+{
+"id": 1898,
+"ctx": "FUT_PLAYSTYLE_1",
+"en": "SNIPER"
+},
+{
+"id": 1899,
+"ctx": "ONL_HALF_LENGTH_7",
+"en": "8 Mins"
+},
+{
+"id": 1900,
+"ctx": "Rarity",
+"en": "Rarity"
+},
+{
+"id": 1901,
+"ctx": "SDB_ST_SHOT_ON_GOAL_PG",
+"en": "SOG PG"
+},
+{
+"id": 1902,
+"ctx": "OSDK_spokenlang_FR_upper",
+"en": "FRENCH"
+},
+{
+"id": 1903,
+"ctx": "MATCHDAY_REWARD_TXT",
+"en": "%1d XP"
+},
+{
+"id": 1904,
+"ctx": "FUT_OR",
+"en": "or %1s"
+},
+{
+"id": 1905,
+"ctx": "OSDK_STATE_ALAS",
+"en": "Alaska"
+},
+{
+"id": 1906,
+"ctx": "FUT_MC_PLAYSTYLE_15",
+"en": "Anchor"
+},
+{
+"id": 1907,
+"ctx": "txt_deadlineday_spent",
+"en": "Spent:"
+},
+{
+"id": 1908,
+"ctx": "OSDK_OL_PUBLIC",
+"en": "Public"
+},
+{
+"id": 1909,
+"ctx": "TXT_SKILL_LEADERBOARDS_GLOBAL",
+"en": "GLOBAL"
+},
+{
+"id": 1910,
+"ctx": "IWL_BADGE_Name_7",
+"en": "Crosser"
+},
+{
+"id": 1911,
+"ctx": "OSDK_CNTRY_BM",
+"en": "Bermuda"
+},
+{
+"id": 1912,
+"ctx": "IWL_BADGE_Name_11",
+"en": "Acrobat"
+},
+{
+"id": 1913,
+"ctx": "FUT_MYCLUB_CONSUMABLES_FITNESS_EARNED",
+"en": "Fitness"
+},
+{
+"id": 1914,
+"ctx": "Average",
+"en": "Average"
+},
+{
+"id": 1915,
+"ctx": "match_day_in_form",
+"en": "IN FORM"
+},
+{
+"id": 1916,
+"ctx": "KIN_Tacticsvoice",
+"en": "Tactics"
+},
+{
+"id": 1917,
+"ctx": "Minutes",
+"en": "Minutes"
+},
+{
+"id": 1918,
+"ctx": "CreatePlayerHairStyle_65",
+"en": "Cropped"
+},
+{
+"id": 1919,
+"ctx": "TUT_MENU_CAT_0_TYPE_2",
+"en": "Contain"
+},
+{
+"id": 1920,
+"ctx": "Dribbling_abbr6",
+"en": "DRIBBL "
+},
+{
+"id": 1921,
+"ctx": "FUT_GH_DREAMSQUADSELECT_0",
+"en": "CONCEPT"
+},
+{
+"id": 1922,
+"ctx": "FCE_Group_F_upper",
+"en": "GROUP F"
+},
+{
+"id": 1923,
+"ctx": "OSDK_L_WS",
+"en": "WinStrk"
+},
+{
+"id": 1924,
+"ctx": "morale_summary_story_ContractRebel_Underachieve_short",
+"en": "Unhappy"
+},
+{
+"id": 1925,
+"ctx": "UCC_running_ComeOn",
+"en": "Come On"
+},
+{
+"id": 1926,
+"ctx": "NoGoal",
+"en": "NO GOAL"
+},
+{
+"id": 1927,
+"ctx": "SM_MANAGER_RATING_RESERVE",
+"en": "RESERVE"
+},
+{
+"id": 1928,
+"ctx": "TXT_LIVE_COMP_REG_BTN_AGREE",
+"en": "I Agree"
+},
+{
+"id": 1929,
+"ctx": "FCE_Group_K",
+"en": "Group K"
+},
+{
+"id": 1930,
+"ctx": "OSDK_CNTRY_GD",
+"en": "Grenada"
+},
+{
+"id": 1931,
+"ctx": "clubleague_oceania_abbr",
+"en": "Oceania"
+},
+{
+"id": 1932,
+"ctx": "CLUB_COMMENTARY_NAME_4049",
+"en": "Burnley"
+},
+{
+"id": 1933,
+"ctx": "Kicking_GK",
+"en": "KICKING"
+},
+{
+"id": 1934,
+"ctx": "PPA_MRF_BAD_LUCK_upper",
+"en": "UNLUCKY"
+},
+{
+"id": 1935,
+"ctx": "FUT_KICKING",
+"en": "Kicking"
+},
+{
+"id": 1936,
+"ctx": "OSDK_CNTRY_BI",
+"en": "Burundi"
+},
+{
+"id": 1937,
+"ctx": "FIWC_Stadium",
+"en": "Stadium"
+},
+{
+"id": 1938,
+"ctx": "SM_HASHTAG_NICKNAME_1796",
+"en": "Clarets"
+},
+{
+"id": 1939,
+"ctx": "GKPositioning_Abbr12_upper",
+"en": "GK POS."
+},
+{
+"id": 1940,
+"ctx": "LanguageSelect_ger",
+"en": "Deutsch"
+},
+{
+"id": 1941,
+"ctx": "FUT_STEP1",
+"en": "Step 1:"
+},
+{
+"id": 1942,
+"ctx": "IWL_Forward",
+"en": "Forward"
+},
+{
+"id": 1943,
+"ctx": "foc_results",
+"en": "Results"
+},
+{
+"id": 1944,
+"ctx": "Tactic_Buildup",
+"en": "Buildup"
+},
+{
+"id": 1945,
+"ctx": "FUT_UC_ADVANCE",
+"en": "ADVANCE"
+},
+{
+"id": 1946,
+"ctx": "XMinutes_abbr",
+"en": "%1d min"
+},
+{
+"id": 1947,
+"ctx": "TM_PR_TXT_CAPTAIN",
+"en": "CAPTAIN"
+},
+{
+"id": 1948,
+"ctx": "OSDK_PRESENCE_OFFLINE",
+"en": "offline"
+},
+{
+"id": 1949,
+"ctx": "Skill_Amateur_Difficulty",
+"en": "Amateur"
+},
+{
+"id": 1950,
+"ctx": "OSDK_JAN_EX",
+"en": "January"
+},
+{
+"id": 1951,
+"ctx": "CLUB_COMMENTARY_NAME_200264",
+"en": "Udinese"
+},
+{
+"id": 1952,
+"ctx": "SM_CONTRACT_YEAR_FOUNDED",
+"en": "FOUNDED"
+},
+{
+"id": 1953,
+"ctx": "FCE_Group_C",
+"en": "Group C"
+},
+{
+"id": 1954,
+"ctx": "TXT_ONLINE_SEASONS_TAB_TITLE",
+"en": "SEASONS"
+},
+{
+"id": 1955,
+"ctx": "FatigueBar",
+"en": "Fatigue"
+},
+{
+"id": 1956,
+"ctx": "OSDK_PRESENCE_BLOCKED",
+"en": "Blocked"
+},
+{
+"id": 1957,
+"ctx": "Credits_Manager",
+"en": "Manager"
+},
+{
+"id": 1958,
+"ctx": "FUT_UC_WINNER_EX",
+"en": "WINNER!"
+},
+{
+"id": 1959,
+"ctx": "Captain",
+"en": "Captain"
+},
+{
+"id": 1960,
+"ctx": "SC_WEBSTOP",
+"en": "WebStop"
+},
+{
+"id": 1961,
+"ctx": "CLUB_COMMENTARY_NAME_4045",
+"en": "Bristol"
+},
+{
+"id": 1962,
+"ctx": "FCE_Group_G",
+"en": "Group G"
+},
+{
+"id": 1963,
+"ctx": "OSDK_CNTRY_UA",
+"en": "Ukraine"
+},
+{
+"id": 1964,
+"ctx": "TXT_HEADTOHEAD_PTS",
+"en": "%1d PTS"
+},
+{
+"id": 1965,
+"ctx": "cmp_ovr_TACKLES",
+"en": "TACKLES"
+},
+{
+"id": 1966,
+"ctx": "CLUB_COMMENTARY_NAME_200260",
+"en": "Torquay"
+},
+{
+"id": 1967,
+"ctx": "FCE_Stage_2",
+"en": "Stage 2"
+},
+{
+"id": 1968,
+"ctx": "Jumping_Abbr20",
+"en": "Jumping"
+},
+{
+"id": 1969,
+"ctx": "PERF_ASSISTS_DD_upper",
+"en": "ASSISTS"
+},
+{
+"id": 1970,
+"ctx": "Referee_upper",
+"en": "REFEREE"
+},
+{
+"id": 1971,
+"ctx": "THEATRE_CREATOR",
+"en": "CREATOR"
+},
+{
+"id": 1972,
+"ctx": "Balance",
+"en": "Balance"
+},
+{
+"id": 1973,
+"ctx": "OSDK_CNTRY_LB",
+"en": "Lebanon"
+},
+{
+"id": 1974,
+"ctx": "TXT_MANMARKING_TAB_TITLE",
+"en": "MARKING"
+},
+{
+"id": 1975,
+"ctx": "OSDK_CNTRY_BE",
+"en": "Belgium"
+},
+{
+"id": 1976,
+"ctx": "CLUB_COMMENTARY_NAME_200229",
+"en": "Sevilla"
+},
+{
+"id": 1977,
+"ctx": "Created",
+"en": "Created"
+},
+{
+"id": 1978,
+"ctx": "Left_Stick_Up",
+"en": "Move Up"
+},
+{
+"id": 1979,
+"ctx": "scrolltocompare",
+"en": "Compare"
+},
+{
+"id": 1980,
+"ctx": "OSDK_LOADING",
+"en": "Loading"
+},
+{
+"id": 1981,
+"ctx": "CLUB_COMMENTARY_NAME_4251",
+"en": "Swansea"
+},
+{
+"id": 1982,
+"ctx": "FUTWEB",
+"en": "FUT Web"
+},
+{
+"id": 1983,
+"ctx": "ONL_HALF_LENGTH_9",
+"en": "10 Mins"
+},
+{
+"id": 1984,
+"ctx": "CLUB_COMMENTARY_NAME_200129",
+"en": "Ipswich"
+},
+{
+"id": 1985,
+"ctx": "IWL_SoccerFormationPos_Full_Story_LF",
+"en": "forward"
+},
+{
+"id": 1986,
+"ctx": "FUT_DETAILS",
+"en": "Details"
+},
+{
+"id": 1987,
+"ctx": "tourny_FillFromLeagues",
+"en": "Leagues"
+},
+{
+"id": 1988,
+"ctx": "OSDK_CNTRY_LR",
+"en": "Liberia"
+},
+{
+"id": 1989,
+"ctx": "CM_CupObjective_8",
+"en": "Qualify"
+},
+{
+"id": 1990,
+"ctx": "BallControl_abbr6",
+"en": "BLCTRL "
+},
+{
+"id": 1991,
+"ctx": "kin_tactics",
+"en": "TACTICS"
+},
+{
+"id": 1992,
+"ctx": "WinPercentWin_Event7",
+"en": "Typical"
+},
+{
+"id": 1993,
+"ctx": "SignIn",
+"en": "Sign In"
+},
+{
+"id": 1994,
+"ctx": "Friends_upper",
+"en": "FRIENDS"
+},
+{
+"id": 1995,
+"ctx": "OSDK_SPOKENLANG_EN",
+"en": "English"
+},
+{
+"id": 1996,
+"ctx": "UCC_AndTap",
+"en": "And Tap"
+},
+{
+"id": 1997,
+"ctx": "DifficultySelection_Classic_upper",
+"en": "CLASSIC"
+},
+{
+"id": 1998,
+"ctx": "FIFACam_Endzone",
+"en": "Endzone"
+},
+{
+"id": 1999,
+"ctx": "LOC_LB_SCORE_SEASON_PLAYED",
+"en": "Seasons"
+}
+]

@@ -1,0 +1,1252 @@
+[
+{
+"id": 750,
+"ctx": "node_END_baby",
+"en": "Baby"
+},
+{
+"id": 751,
+"ctx": "2_SC_0310_1_C",
+"en": "Why?"
+},
+{
+"id": 752,
+"ctx": "Foul",
+"en": "Foul"
+},
+{
+"id": 753,
+"ctx": "TXT_TECH",
+"en": "Tech"
+},
+{
+"id": 754,
+"ctx": "CO_GKDive",
+"en": "Dive"
+},
+{
+"id": 755,
+"ctx": "TXT_EASFC_MATCH_OUTCOME_3",
+"en": "drew"
+},
+{
+"id": 756,
+"ctx": "NewsFIFAWebOfferScreenbutton1",
+"en": "NEXT"
+},
+{
+"id": 757,
+"ctx": "tm_ChanceCreationCrossing2_upper",
+"en": "LOTS"
+},
+{
+"id": 758,
+"ctx": "SM_HASHTAG_HASHFLAG_1943",
+"en": "afcb"
+},
+{
+"id": 759,
+"ctx": "CreatePlayerAccessoryColour_2",
+"en": "Blue"
+},
+{
+"id": 760,
+"ctx": "TablePosition_32",
+"en": "32nd"
+},
+{
+"id": 761,
+"ctx": "CM_Form_Neutral",
+"en": "Okay"
+},
+{
+"id": 762,
+"ctx": "cm_suit",
+"en": "Suit"
+},
+{
+"id": 763,
+"ctx": "THEATRE_SIZE",
+"en": "SIZE"
+},
+{
+"id": 764,
+"ctx": "SDB_ST_GOALSCONCEDED_AVE",
+"en": "AVGC"
+},
+{
+"id": 765,
+"ctx": "CreatePlayerWristType_3",
+"en": "Tape"
+},
+{
+"id": 766,
+"ctx": "Subs",
+"en": "SUBS"
+},
+{
+"id": 767,
+"ctx": "TablePosition_36",
+"en": "36th"
+},
+{
+"id": 768,
+"ctx": "CM_Est.",
+"en": "Est."
+},
+{
+"id": 769,
+"ctx": "LeftWingMidfield_FIFA _abbr3",
+"en": "LWM "
+},
+{
+"id": 770,
+"ctx": "CM_Form_Good",
+"en": "Good"
+},
+{
+"id": 771,
+"ctx": "OSDK_CS_WIN",
+"en": "Win%"
+},
+{
+"id": 772,
+"ctx": "Slim",
+"en": "Slim"
+},
+{
+"id": 773,
+"ctx": "Hair",
+"en": "Hair"
+},
+{
+"id": 774,
+"ctx": "SM_HASHTAG_HASHFLAG_13",
+"en": "NUFC"
+},
+{
+"id": 775,
+"ctx": "CreatePlayerAccessoryColour_12",
+"en": "Navy"
+},
+{
+"id": 776,
+"ctx": "SDB_SURVEY1_Q2_A1",
+"en": "Josh"
+},
+{
+"id": 777,
+"ctx": "OSDK_CLUBS_COL_ROOM",
+"en": "ROOM"
+},
+{
+"id": 778,
+"ctx": "Sold",
+"en": "Sold"
+},
+{
+"id": 779,
+"ctx": "SC_STOP",
+"en": "Stop"
+},
+{
+"id": 780,
+"ctx": "ucc_spinlower",
+"en": "spin"
+},
+{
+"id": 781,
+"ctx": "LPTS",
+"en": "LPTS"
+},
+{
+"id": 782,
+"ctx": "TablePosition_caps_15",
+"en": "15TH"
+},
+{
+"id": 783,
+"ctx": "SC_NUMPAD5",
+"en": "Pad5"
+},
+{
+"id": 784,
+"ctx": "SM_HASHTAG_NICKNAME_91",
+"en": "Rams"
+},
+{
+"id": 785,
+"ctx": "TablePosition_caps_11",
+"en": "11TH"
+},
+{
+"id": 786,
+"ctx": "SM_HASHTAG_HASHFLAG_1806",
+"en": "scfc"
+},
+{
+"id": 787,
+"ctx": "SC_NUMPAD1",
+"en": "Pad1"
+},
+{
+"id": 788,
+"ctx": "Bite",
+"en": "Bite"
+},
+{
+"id": 789,
+"ctx": "OSDK_EMAIL_DOTNET",
+"en": ".net"
+},
+{
+"id": 790,
+"ctx": "CLUB_COMMENTARY_NAME_200163",
+"en": "Metz"
+},
+{
+"id": 791,
+"ctx": "Nose",
+"en": "Nose"
+},
+{
+"id": 792,
+"ctx": "SM_HASHTAG_CHANTS_18",
+"en": "THFC"
+},
+{
+"id": 793,
+"ctx": "TablePosition_22",
+"en": "22nd"
+},
+{
+"id": 794,
+"ctx": "SC_RWIN",
+"en": "RWin"
+},
+{
+"id": 795,
+"ctx": "User",
+"en": "User"
+},
+{
+"id": 796,
+"ctx": "SC_NUMPAD9",
+"en": "Pad9"
+},
+{
+"id": 797,
+"ctx": "type",
+"en": "TYPE"
+},
+{
+"id": 798,
+"ctx": "TablePosition_caps_19",
+"en": "19TH"
+},
+{
+"id": 799,
+"ctx": "CLUB_COMMENTARY_NAME_200136",
+"en": "Köln"
+},
+{
+"id": 800,
+"ctx": "More",
+"en": "More"
+},
+{
+"id": 801,
+"ctx": "CLUB_COMMENTARY_NAME_4217",
+"en": "Rome"
+},
+{
+"id": 802,
+"ctx": "SM_ALEX_FIRST_NAME",
+"en": "Alex"
+},
+{
+"id": 803,
+"ctx": "SELECT_DESELECT_PLAYER",
+"en": "Test"
+},
+{
+"id": 804,
+"ctx": "OSDK_JUN_EX",
+"en": "June"
+},
+{
+"id": 805,
+"ctx": "TablePosition_26",
+"en": "26th"
+},
+{
+"id": 806,
+"ctx": "TablePosition_caps_40",
+"en": "40TH"
+},
+{
+"id": 807,
+"ctx": "FUT_UC_HELP",
+"en": "HELP"
+},
+{
+"id": 808,
+"ctx": "TablePosition_caps_35",
+"en": "35TH"
+},
+{
+"id": 809,
+"ctx": "Zoom",
+"en": "Zoom"
+},
+{
+"id": 810,
+"ctx": "FUT_NEXT_PRIZE",
+"en": "Next"
+},
+{
+"id": 811,
+"ctx": "TXT_ONLINE_SEASONS_ROUND_EXIT_MATCH",
+"en": "EXIT"
+},
+{
+"id": 812,
+"ctx": "OSDK_CC_VISA",
+"en": "Visa"
+},
+{
+"id": 813,
+"ctx": "CLUB_COMMENTARY_NAME_4262",
+"en": "Town"
+},
+{
+"id": 814,
+"ctx": "FileName_Road",
+"en": "Road"
+},
+{
+"id": 815,
+"ctx": "tm_New",
+"en": "NEW!"
+},
+{
+"id": 816,
+"ctx": "CLUB_COMMENTARY_NAME_4181",
+"en": "Nice"
+},
+{
+"id": 817,
+"ctx": "TablePosition_caps_31",
+"en": "31ST"
+},
+{
+"id": 818,
+"ctx": "Ears",
+"en": "Ears"
+},
+{
+"id": 819,
+"ctx": "TablePosition_caps_39",
+"en": "39TH"
+},
+{
+"id": 820,
+"ctx": "SM_HASHTAG_HASHFLAG_91",
+"en": "DCFC"
+},
+{
+"id": 821,
+"ctx": "CM_Home_town_upper",
+"en": "CITY"
+},
+{
+"id": 822,
+"ctx": "SM_HASHTAG_NICKNAME_1807",
+"en": "Owls"
+},
+{
+"id": 823,
+"ctx": "GS_ContSetAny",
+"en": "Any "
+},
+{
+"id": 824,
+"ctx": "tourny_Agg",
+"en": "Agg."
+},
+{
+"id": 825,
+"ctx": "SM_HASHTAG_HASHFLAG_95",
+"en": "LCFC"
+},
+{
+"id": 826,
+"ctx": "CM_HUB_Quit",
+"en": "Quit"
+},
+{
+"id": 827,
+"ctx": "CM_Loan",
+"en": "LOAN"
+},
+{
+"id": 828,
+"ctx": "TXT_HEADTOHEAD_HUB_X",
+"en": "x%1d"
+},
+{
+"id": 829,
+"ctx": "CreatePlayerHairLength_0",
+"en": "Afro"
+},
+{
+"id": 830,
+"ctx": "OSDK_CS_RNK",
+"en": "Rnk:"
+},
+{
+"id": 831,
+"ctx": "TablePosition_caps_29",
+"en": "29TH"
+},
+{
+"id": 832,
+"ctx": "Eyes",
+"en": "Eyes"
+},
+{
+"id": 833,
+"ctx": "SDB_ST_GAPERGAME",
+"en": "GCPG"
+},
+{
+"id": 834,
+"ctx": "CLUB_COMMENTARY_NAME_200006",
+"en": "Ajax"
+},
+{
+"id": 835,
+"ctx": "TXT_ONLINE_CUPS_HOUR",
+"en": "Hour"
+},
+{
+"id": 836,
+"ctx": "SC_LALT",
+"en": "LAlt"
+},
+{
+"id": 837,
+"ctx": "FUT_UC_SWAP",
+"en": "SWAP"
+},
+{
+"id": 838,
+"ctx": "TablePosition_12",
+"en": "12th"
+},
+{
+"id": 839,
+"ctx": "TablePosition_16",
+"en": "16th"
+},
+{
+"id": 840,
+"ctx": "OSDK_CNTRY_OM",
+"en": "Oman"
+},
+{
+"id": 841,
+"ctx": "menu_lc",
+"en": "Menu"
+},
+{
+"id": 842,
+"ctx": "SM_CALM",
+"en": "COOL"
+},
+{
+"id": 843,
+"ctx": "TXT_SKILL_TIME",
+"en": "TIME"
+},
+{
+"id": 844,
+"ctx": "Labbr_50_upper",
+"en": "SPFL"
+},
+{
+"id": 845,
+"ctx": "TablePosition_caps_25",
+"en": "25TH"
+},
+{
+"id": 846,
+"ctx": "tm_DefenceTeamWidth2_upper",
+"en": "WIDE"
+},
+{
+"id": 847,
+"ctx": "OSDK_AP_KICK",
+"en": "Kick"
+},
+{
+"id": 848,
+"ctx": "VOIP_VOLUME_DOWN",
+"en": "Vol-"
+},
+{
+"id": 849,
+"ctx": "Shot",
+"en": "Shot"
+},
+{
+"id": 850,
+"ctx": "XWins",
+"en": "W%1d"
+},
+{
+"id": 851,
+"ctx": "TablePosition_caps_21",
+"en": "21ST"
+},
+{
+"id": 852,
+"ctx": "OSDK_STATE_UTAH",
+"en": "Utah"
+},
+{
+"id": 853,
+"ctx": "OSDK_CNTRY_NU",
+"en": "Niue"
+},
+{
+"id": 854,
+"ctx": "DemoStringFIFAName",
+"en": "DEMO"
+},
+{
+"id": 855,
+"ctx": "CM_Latin_Asian_4",
+"en": "Fair"
+},
+{
+"id": 856,
+"ctx": "OHUB_FIREWALL_OPEN",
+"en": "Open"
+},
+{
+"id": 857,
+"ctx": "SM_HASHTAG_HASHFLAG_110",
+"en": "WWFC"
+},
+{
+"id": 858,
+"ctx": "OSDK_CLUBS_MBRS",
+"en": "MBRS"
+},
+{
+"id": 859,
+"ctx": "OSDK_STATE_OHIO",
+"en": "Ohio"
+},
+{
+"id": 860,
+"ctx": "TablePosition_17",
+"en": "17th"
+},
+{
+"id": 861,
+"ctx": "PM_U_GOAL_5_A",
+"en": "Yes."
+},
+{
+"id": 862,
+"ctx": "TablePosition_13",
+"en": "13th"
+},
+{
+"id": 863,
+"ctx": "TablePosition_caps_28",
+"en": "28TH"
+},
+{
+"id": 864,
+"ctx": "TablePosition_caps_20",
+"en": "20TH"
+},
+{
+"id": 865,
+"ctx": "CO_PushPull",
+"en": "Pull"
+},
+{
+"id": 866,
+"ctx": "SM_HASHTAG_HASHFLAG_88",
+"en": "BCFC"
+},
+{
+"id": 867,
+"ctx": "TXT_EASFC_GIFT_OFF",
+"en": "OFF!"
+},
+{
+"id": 868,
+"ctx": "ContractNegotiationAbbr4",
+"en": "CNeg"
+},
+{
+"id": 869,
+"ctx": "ReplayTypeFoul_upper",
+"en": "FOUL"
+},
+{
+"id": 870,
+"ctx": "SM_HASHTAG_HASHFLAG_15015",
+"en": "BAFC"
+},
+{
+"id": 871,
+"ctx": "TablePosition_caps_24",
+"en": "24TH"
+},
+{
+"id": 872,
+"ctx": "SemiControl",
+"en": "Semi"
+},
+{
+"id": 873,
+"ctx": "TEST",
+"en": "TEST"
+},
+{
+"id": 874,
+"ctx": "TablePosition_caps_30",
+"en": "30TH"
+},
+{
+"id": 875,
+"ctx": "Z_SC_NUMPAD8",
+"en": "Pad8"
+},
+{
+"id": 876,
+"ctx": "OSDK_STATE_IOWA",
+"en": "Iowa"
+},
+{
+"id": 877,
+"ctx": "Loan",
+"en": "Loan"
+},
+{
+"id": 878,
+"ctx": "SM_HASHTAG_CHANTS_9",
+"en": "YNWA"
+},
+{
+"id": 879,
+"ctx": "Hard",
+"en": "Hard"
+},
+{
+"id": 880,
+"ctx": "TablePosition_caps_34",
+"en": "34TH"
+},
+{
+"id": 881,
+"ctx": "news_append_goal_number_only",
+"en": "only"
+},
+{
+"id": 882,
+"ctx": "FUT_GH_FIFAPOINTS_0",
+"en": "FIFA"
+},
+{
+"id": 883,
+"ctx": "TXT_ONLINE_CUPS_HUB_DAYS",
+"en": "DAYS"
+},
+{
+"id": 884,
+"ctx": "Z_SC_NUMPAD4",
+"en": "Pad4"
+},
+{
+"id": 885,
+"ctx": "FUT_PLAYSTYLE_19",
+"en": "WALL"
+},
+{
+"id": 886,
+"ctx": "ReplayTypeGoal_upper",
+"en": "GOAL"
+},
+{
+"id": 887,
+"ctx": "SM_HASHTAG_HASHFLAG_94",
+"en": "itfc"
+},
+{
+"id": 888,
+"ctx": "July_upper",
+"en": "JULY"
+},
+{
+"id": 889,
+"ctx": "Info",
+"en": "Info"
+},
+{
+"id": 890,
+"ctx": "tm_ChanceCreationPassing0_upper",
+"en": "SAFE"
+},
+{
+"id": 891,
+"ctx": "SM_HASHTAG_CHANTS_1",
+"en": "COYG"
+},
+{
+"id": 892,
+"ctx": "CM_Email_Widget_Read",
+"en": "READ"
+},
+{
+"id": 893,
+"ctx": "TablePosition_caps_38",
+"en": "38TH"
+},
+{
+"id": 894,
+"ctx": "THEATRE_DATE",
+"en": "DATE"
+},
+{
+"id": 895,
+"ctx": "Z_SC_NUMPAD0",
+"en": "Pad0"
+},
+{
+"id": 896,
+"ctx": "SM_HASHTAG_HASHFLAG_1799",
+"en": "CPFC"
+},
+{
+"id": 897,
+"ctx": "SM_HASHTAG_CHANTS_11",
+"en": "GGMU"
+},
+{
+"id": 898,
+"ctx": "SL_Load",
+"en": "Load"
+},
+{
+"id": 899,
+"ctx": "TablePosition_caps_10",
+"en": "10TH"
+},
+{
+"id": 900,
+"ctx": "SM_HASHTAG_HASHFLAG_1807",
+"en": "swfc"
+},
+{
+"id": 901,
+"ctx": "TXT_ONLINE_CUPS_HUB_MIN",
+"en": "MIN."
+},
+{
+"id": 902,
+"ctx": "SM_HASHTAG_CHANTS_1792",
+"en": "OTBC"
+},
+{
+"id": 903,
+"ctx": "TablePosition_caps_14",
+"en": "14TH"
+},
+{
+"id": 904,
+"ctx": "Lips",
+"en": "Lips"
+},
+{
+"id": 905,
+"ctx": "FUT_UC_DRAW",
+"en": "DRAW"
+},
+{
+"id": 906,
+"ctx": "TablePosition_27",
+"en": "27th"
+},
+{
+"id": 907,
+"ctx": "CentreDefensiveMidfield_FIFA _abbr3",
+"en": "CDM "
+},
+{
+"id": 908,
+"ctx": "ucc_holdlower",
+"en": "hold"
+},
+{
+"id": 909,
+"ctx": "SM_HASHTAG_HASHFLAG_8",
+"en": "LUFC"
+},
+{
+"id": 910,
+"ctx": "Half",
+"en": "Half"
+},
+{
+"id": 911,
+"ctx": "TablePosition_caps_18",
+"en": "18TH"
+},
+{
+"id": 912,
+"ctx": "OSDK_CLUBS_GMTAG",
+"en": "(CM)"
+},
+{
+"id": 913,
+"ctx": "AutoSwitchingOption_Auto",
+"en": "Auto"
+},
+{
+"id": 914,
+"ctx": "SM_HASHTAG_CHANTS_19",
+"en": "COYI"
+},
+{
+"id": 915,
+"ctx": "TablePosition_23",
+"en": "23rd"
+},
+{
+"id": 916,
+"ctx": "TablePosition_37",
+"en": "37th"
+},
+{
+"id": 917,
+"ctx": "OSDK_CNTRY_ML",
+"en": "Mali"
+},
+{
+"id": 918,
+"ctx": "ucc_spinupper",
+"en": "Spin"
+},
+{
+"id": 919,
+"ctx": "FUT_MC_PLAYSTYLE_19",
+"en": "Wall"
+},
+{
+"id": 920,
+"ctx": "OSDK_EMAIL_DOTEDU",
+"en": ".edu"
+},
+{
+"id": 921,
+"ctx": "FUT_PLAYSTYLE_5",
+"en": "HAWK"
+},
+{
+"id": 922,
+"ctx": "tm_BuildUpPass2_upper",
+"en": "LONG"
+},
+{
+"id": 923,
+"ctx": "news_goals_goal",
+"en": "goal"
+},
+{
+"id": 924,
+"ctx": "TablePosition_33",
+"en": "33rd"
+},
+{
+"id": 925,
+"ctx": "GTN_adj_Tall",
+"en": "Tall"
+},
+{
+"id": 926,
+"ctx": "TXT_EASFC_STORE_ITEM_LIST_HEADER_ITEM",
+"en": "ITEM"
+},
+{
+"id": 927,
+"ctx": "CM_GTN_sList_Breadcrumb_Edit",
+"en": "EDIT"
+},
+{
+"id": 928,
+"ctx": "OSDK_MALE",
+"en": "Male"
+},
+{
+"id": 929,
+"ctx": "SM_HASHTAG_HASHFLAG_1917",
+"en": "wafc"
+},
+{
+"id": 930,
+"ctx": "OSDK_CNTRY_FJ",
+"en": "Fiji"
+},
+{
+"id": 931,
+"ctx": "tm_BuildUpSpeed2_upper",
+"en": "FAST"
+},
+{
+"id": 932,
+"ctx": "FUT_WIN",
+"en": "WIN!"
+},
+{
+"id": 933,
+"ctx": "TXT_EASFC_WIDGET_LVL",
+"en": "LVL:"
+},
+{
+"id": 934,
+"ctx": "OSDK_CNTRY_TG",
+"en": "Togo"
+},
+{
+"id": 935,
+"ctx": "ReplayTypeMissedShot",
+"en": "Miss"
+},
+{
+"id": 936,
+"ctx": "weather_1",
+"en": "Hazy"
+},
+{
+"id": 937,
+"ctx": "node_END_dance",
+"en": "Dance"
+},
+{
+"id": 938,
+"ctx": "OSDK_ONLINE_LOBBY",
+"en": "Lobby"
+},
+{
+"id": 939,
+"ctx": "TXT_SQUAD_TAB_TITLE",
+"en": "SQUAD"
+},
+{
+"id": 940,
+"ctx": "OSDK_ACTIVE_TRIAL",
+"en": "Trial"
+},
+{
+"id": 941,
+"ctx": "StickLabelRightDown_19",
+"en": "Under"
+},
+{
+"id": 942,
+"ctx": "CardViews",
+"en": "Views"
+},
+{
+"id": 943,
+"ctx": "TXT_EASFC_RECOMMENDATION_ERROR",
+"en": "Error"
+},
+{
+"id": 944,
+"ctx": "OSDK_PROV_YUK",
+"en": "Yukon"
+},
+{
+"id": 945,
+"ctx": "Style",
+"en": "Style"
+},
+{
+"id": 946,
+"ctx": "PERF_FOULS_upper",
+"en": "FOULS"
+},
+{
+"id": 947,
+"ctx": "SDB_ST_SPCMP",
+"en": "SPCMP"
+},
+{
+"id": 948,
+"ctx": "Score",
+"en": "Score"
+},
+{
+"id": 949,
+"ctx": "FoulsLose_Event3",
+"en": "Nasty"
+},
+{
+"id": 950,
+"ctx": "CurrentStreak1",
+"en": "1 Win"
+},
+{
+"id": 951,
+"ctx": "Labbr_68_upper",
+"en": "TUR 1"
+},
+{
+"id": 952,
+"ctx": "news_goals_brace_upper",
+"en": "BRACE"
+},
+{
+"id": 953,
+"ctx": "TXT_EASFC_MY_XP",
+"en": "My XP"
+},
+{
+"id": 954,
+"ctx": "CLUB_COMMENTARY_NAME_4214",
+"en": "River"
+},
+{
+"id": 955,
+"ctx": "CLUB_COMMENTARY_NAME_4249",
+"en": "Suwon"
+},
+{
+"id": 956,
+"ctx": "OSDK_OL_ROUND",
+"en": "Round"
+},
+{
+"id": 957,
+"ctx": "Labbr_190",
+"en": "SUI 2"
+},
+{
+"id": 958,
+"ctx": "Beard",
+"en": "Beard"
+},
+{
+"id": 959,
+"ctx": "Labbr_63_upper",
+"en": "GRE 1"
+},
+{
+"id": 960,
+"ctx": "PreferredFootRight",
+"en": "Right"
+},
+{
+"id": 961,
+"ctx": "FUT_MC_GOALS",
+"en": "Goals"
+},
+{
+"id": 962,
+"ctx": "Labbr_322",
+"en": "FIN 1"
+},
+{
+"id": 963,
+"ctx": "CreatePlayerHairStyle_34",
+"en": "Flick"
+},
+{
+"id": 964,
+"ctx": "CMYS_NameCountry",
+"en": "Scout"
+},
+{
+"id": 965,
+"ctx": "FUT_MYCLUB_WORLD",
+"en": "WORLD"
+},
+{
+"id": 966,
+"ctx": "CLUB_COMMENTARY_NAME_4241",
+"en": "Stade"
+},
+{
+"id": 967,
+"ctx": "CLUB_COMMENTARY_NAME_200283",
+"en": "Wigan"
+},
+{
+"id": 968,
+"ctx": "Name_title",
+"en": "Name:"
+},
+{
+"id": 969,
+"ctx": "FUT_SEASON_HUB_PRIZE",
+"en": "Prize"
+},
+{
+"id": 970,
+"ctx": "Owned",
+"en": "Owned"
+},
+{
+"id": 971,
+"ctx": "Event",
+"en": "EVENT"
+},
+{
+"id": 972,
+"ctx": "World",
+"en": "World"
+},
+{
+"id": 973,
+"ctx": "Foot_colon",
+"en": "Foot:"
+},
+{
+"id": 974,
+"ctx": "CLUB_COMMENTARY_NAME_200139",
+"en": "Legia"
+},
+{
+"id": 975,
+"ctx": "SM_HASHTAG_HASHFLAG_1801",
+"en": "pnefc"
+},
+{
+"id": 976,
+"ctx": "CreateGenericPlayerBoot_1_5_5",
+"en": "Green"
+},
+{
+"id": 977,
+"ctx": "OSDK_CNTRY_GH",
+"en": "Ghana"
+},
+{
+"id": 978,
+"ctx": "Major",
+"en": "Major"
+},
+{
+"id": 979,
+"ctx": "Shots_upper",
+"en": "SHOTS"
+},
+{
+"id": 980,
+"ctx": "tm_BuildUpPass1",
+"en": "Mixed"
+},
+{
+"id": 981,
+"ctx": "OSDK_MAR_EX",
+"en": "March"
+},
+{
+"id": 982,
+"ctx": "Labbr_13_upper",
+"en": "ENG 1"
+},
+{
+"id": 983,
+"ctx": "OSDK_CNTRY_ZR",
+"en": "Zaire"
+},
+{
+"id": 984,
+"ctx": "SetplayAction_PKTakeShot",
+"en": "SHOOT"
+},
+{
+"id": 985,
+"ctx": "ProfileStat_52",
+"en": "Saves"
+},
+{
+"id": 986,
+"ctx": "Labbr_332_upper",
+"en": "UKR 1"
+},
+{
+"id": 987,
+"ctx": "TXT_HEADTOHEAD_CUP_LEVEL_4",
+"en": "Final"
+},
+{
+"id": 988,
+"ctx": "FUT_MC_SQUAD",
+"en": "Squad"
+},
+{
+"id": 989,
+"ctx": "CLUB_COMMENTARY_NAME_4245",
+"en": "Stoke"
+},
+{
+"id": 990,
+"ctx": "GTN_sListResetScoutInstruction",
+"en": "Reset"
+},
+{
+"id": 991,
+"ctx": "OSDK_CLOSE",
+"en": "Close"
+},
+{
+"id": 992,
+"ctx": "tm_DefenceDefLinePosCover_upper",
+"en": "COVER"
+},
+{
+"id": 993,
+"ctx": "CreatePlayerHairStyle_24",
+"en": "Short"
+},
+{
+"id": 994,
+"ctx": "CLUB_COMMENTARY_NAME_200193",
+"en": "Paris"
+},
+{
+"id": 995,
+"ctx": "FUT_IB_CHALKTUT_TEAMS",
+"en": "Teams"
+},
+{
+"id": 996,
+"ctx": "Labbr_66",
+"en": "POL 1"
+},
+{
+"id": 997,
+"ctx": "Labbr_83_upper",
+"en": "KOR 1"
+},
+{
+"id": 998,
+"ctx": "FUT_PLAYSTYLE_23",
+"en": "BASIC"
+},
+{
+"id": 999,
+"ctx": "Z_SC_VOLUMEDOWN",
+"en": "Vol -"
+}
+]

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 19000,
+    "ro": "Deposedează un adversar care te-a faultat"
+  },
+  {
+    "id": 19001,
+    "ro": "Îl voi lăsa pe antrenor să decidă despre ce este vorba."
+  },
+  {
+    "id": 19002,
+    "ro": "Apărarea îl dezamăgeşte pe antrenorul <ManagerName>"
+  },
+  {
+    "id": 19003,
+    "ro": "Omite introducerea demo FIFA Ultimate Team"
+  },
+  {
+    "id": 19004,
+    "ro": "Bilanţ sezon %1d: %2d-%3d-%4d (V-E-Î)"
+  },
+  {
+    "id": 19005,
+    "ro": "Obiect rar de formă fizică: îmbunătăţeşte întreaga echipă"
+  },
+  {
+    "id": 19006,
+    "ro": "%1s învinge %2s şi se califică în runda următoare"
+  },
+  {
+    "id": 19007,
+    "ro": "adidas X - Core Black/Yellow/Night Met"
+  },
+  {
+    "id": 19008,
+    "ro": "Observarea în continuare a lui %1s este în curs"
+  },
+  {
+    "id": 19009,
+    "ro": "Negocierile de contract cu echipa naţională au eşuat"
+  },
+  {
+    "id": 19010,
+    "ro": "Se verifică starea evenimentului. Te rugăm să aştepţi..."
+  },
+  {
+    "id": 19011,
+    "ro": "New Balance Visaro - Blue/White/Orange"
+  },
+  {
+    "id": 19012,
+    "ro": "Navighează aici pentru a vedea tot ce deţii."
+  },
+  {
+    "id": 19013,
+    "ro": "Ligă: <0>\\r\\nJucătorul <1> pentru <2> al tău"
+  },
+  {
+    "id": 19014,
+    "ro": "Se mai întâmplă, spune <ManagerName>"
+  },
+  {
+    "id": 19015,
+    "ro": "Apasă pe ^Y^ pentru a merge pe Piaţa de transferuri"
+  },
+  {
+    "id": 19016,
+    "ro": "Tactici interactive – Schimbă formaţia"
+  },
+  {
+    "id": 19017,
+    "ro": "Goluri din voleu cu piciorul mai slab"
+  },
+  {
+    "id": 19018,
+    "ro": "Se încarcă progresul din The Journey..."
+  },
+  {
+    "id": 19019,
+    "ro": "Jucătorul căruia i-a fost trimisă invitaţia."
+  },
+  {
+    "id": 19020,
+    "ro": "Echipa <TeamName> pare o alegere bună pentru play-off"
+  },
+  {
+    "id": 19021,
+    "ro": "Nu există date de afişat în acest moment."
+  },
+  {
+    "id": 19022,
+    "ro": "S-a ajuns în sfârşit la un acord pentru <PlayerName1>"
+  },
+  {
+    "id": 19023,
+    "ro": "Mentalitate de învingător la echipa <TeamName>"
+  },
+  {
+    "id": 19024,
+    "ro": "<PlayerName1> profită din plin de şansa primită"
+  },
+  {
+    "id": 19025,
+    "ro": "Bogătaşii de la <TeamName> îi urează bun venit lui <PlayerName>"
+  },
+  {
+    "id": 19026,
+    "ro": "Accidentările creează o dilemă pentru echipa <TeamName1>"
+  },
+  {
+    "id": 19027,
+    "ro": "[info] Negocierile de transfer au eşuat"
+  },
+  {
+    "id": 19028,
+    "ro": "Căutarea meciului a eşuat. Te rugăm să încerci din nou."
+  },
+  {
+    "id": 19029,
+    "ro": "<PlayerName1> rămâne la echipa <TeamName1>"
+  },
+  {
+    "id": 19030,
+    "ro": "Ce anume îl nelinişteşte pe <PlayerName>?"
+  },
+  {
+    "id": 19031,
+    "ro": "O încercare bună de a centra mingea."
+  },
+  {
+    "id": 19032,
+    "ro": "Echipa <TeamName> vizează succesul în play-off"
+  },
+  {
+    "id": 19033,
+    "ro": "Te rugăm să selectezi o echipă înainte de a continua."
+  },
+  {
+    "id": 19034,
+    "ro": "Cluburile monitorizează situaţia lui <PlayerName>"
+  },
+  {
+    "id": 19035,
+    "ro": "Revino frecvent pentru mai multe competiţii"
+  },
+  {
+    "id": 19036,
+    "ro": "Se încarcă notificările Football Club..."
+  },
+  {
+    "id": 19037,
+    "ro": "\"<PlayerName>: \"\"Nu pot trăi aici\"\" \""
+  },
+  {
+    "id": 19038,
+    "ro": "Înscrie 2 goluri din corner într-un meci"
+  },
+  {
+    "id": 19039,
+    "ro": "Echipa <TeamName> pare o alegere sigură pentru promovare"
+  },
+  {
+    "id": 19040,
+    "ro": "Apasă pe ^Y^ pentru a merge în modul Turneu"
+  },
+  {
+    "id": 19041,
+    "ro": "Evoluţii uluitoare din partea lui <PlayerName>"
+  },
+  {
+    "id": 19042,
+    "ro": "Înfrângere pentru echipa <TeamName> la debutul lui <PlayerName>"
+  },
+  {
+    "id": 19043,
+    "ro": "%1s îşi arată viziunea în meciurile recente"
+  },
+  {
+    "id": 19044,
+    "ro": "Cu cât înscriem mai mulţi dintre noi, cu atât mai bine."
+  },
+  {
+    "id": 19045,
+    "ro": "Finalizează 8 realizări de îndemânare cu mingea"
+  },
+  {
+    "id": 19046,
+    "ro": "Seceta de goluri continuă pentru <PlayerName1>"
+  },
+  {
+    "id": 19047,
+    "ro": "adidas Ace Zones Pro - Solar Red/Black"
+  },
+  {
+    "id": 19048,
+    "ro": "<PlayerName> îşi continuă forma din pre-sezon"
+  },
+  {
+    "id": 19049,
+    "ro": "Foloseşte-l pentru a completa locurile libere din echipele existente"
+  },
+  {
+    "id": 19050,
+    "ro": "E uşor să înscrii cu asemenea pase."
+  },
+  {
+    "id": 19051,
+    "ro": "Privind vânzarea jucătorului <FullPlayerName>"
+  },
+  {
+    "id": 19052,
+    "ro": "<PlayerName> a fost pus pe liber de <ManagerName>"
+  },
+  {
+    "id": 19053,
+    "ro": "<UserName> se răzgândeşte în privinţa contractului cu naţionala"
+  },
+  {
+    "id": 19054,
+    "ro": "a fost unul dintre golgheteri în sezonul trecut"
+  },
+  {
+    "id": 19055,
+    "ro": "Schimbă rangul jucătorului selectat"
+  },
+  {
+    "id": 19056,
+    "ro": "Toate punctele XP şi FCC din meci revin câştigătorului!"
+  },
+  {
+    "id": 19057,
+    "ro": "A apărut o eroare la copierea acestei echipe."
+  },
+  {
+    "id": 19058,
+    "ro": "Ar fi trebuit să creezi %1s ocazii până acum"
+  },
+  {
+    "id": 19059,
+    "ro": "Ar putea fi echipa <TeamName> o surpriză în lupta pentru titlu?"
+  },
+  {
+    "id": 19060,
+    "ro": "mai are mai puţin de un an de contract"
+  },
+  {
+    "id": 19061,
+    "ro": "adidas X - Iron Met/Black/Solar Yellow"
+  },
+  {
+    "id": 19062,
+    "ro": "<PlayerName1> vrea să-şi reducă criticii la tăcere"
+  },
+  {
+    "id": 19063,
+    "ro": "Acest eveniment nu este disponibil în prezent."
+  },
+  {
+    "id": 19064,
+    "ro": "Obiectele Jucător împrumutat au un contur albastru."
+  },
+  {
+    "id": 19065,
+    "ro": "Umbro UX-2 Pro - Black/White/Vermilion"
+  },
+  {
+    "id": 19066,
+    "ro": "<ManagerName> admiră stilul de joc al adversarului"
+  },
+  {
+    "id": 19067,
+    "ro": "Nike Hypervenom - Green/Blue/White - W"
+  },
+  {
+    "id": 19068,
+    "ro": "<UserName> lasă echipa naţională în aşteptare"
+  },
+  {
+    "id": 19069,
+    "ro": "Ieşit din formă, <PlayerName1> rămâne fără echipă"
+  },
+  {
+    "id": 19070,
+    "ro": "Ai vreo problemă @MrAlexHunter? #dontcare"
+  },
+  {
+    "id": 19071,
+    "ro": "Zvonurile persistă privind viitorul lui <PlayerName>"
+  },
+  {
+    "id": 19072,
+    "ro": "Nu mai poţi negocia cu %1s."
+  },
+  {
+    "id": 19073,
+    "ro": "Be A Pro: Sezoane - Sezoane finalizate:"
+  },
+  {
+    "id": 19074,
+    "ro": "{C:ALEX}{2.00-4.45}Am sosit, Gaz."
+  },
+  {
+    "id": 19075,
+    "ro": "<ManagerName> cere echipei să-i răsplătească pe suporteri"
+  },
+  {
+    "id": 19076,
+    "ro": "a fost printre cei mai buni pasatori decisivi"
+  },
+  {
+    "id": 19077,
+    "ro": "Acest conţinut a fost actualizat cu succes."
+  },
+  {
+    "id": 19078,
+    "ro": "Luaţi-mă de aici, imploră <PlayerName>"
+  },
+  {
+    "id": 19079,
+    "ro": "Echipa <TeamName> îl consideră pe <PlayerName> în plus"
+  },
+  {
+    "id": 19080,
+    "ro": "Filtrează obiectele din catalog în funcţie de nivel."
+  },
+  {
+    "id": 19081,
+    "ro": "Echipa <TeamName> refuză să-l vândă pe <PlayerName>"
+  },
+  {
+    "id": 19082,
+    "ro": "Clubul său afirmă că %1s nu este de vânzare"
+  },
+  {
+    "id": 19083,
+    "ro": "VP/COO EA SPORTS Worldwide Development"
+  },
+  {
+    "id": 19084,
+    "ro": "Adaugă distanţă suplimentară la aruncările tale de la margine."
+  },
+  {
+    "id": 19085,
+    "ro": "Căzut în dizgraţie, <PlayerName> are şansa unui împrumut"
+  },
+  {
+    "id": 19086,
+    "ro": "Echipa <TeamName> este prea bună pentru a rămâne la coadă"
+  },
+  {
+    "id": 19087,
+    "ro": "considerăm că sunt un jucător prea valoros pentru echipa ta"
+  },
+  {
+    "id": 19088,
+    "ro": "Prestaţie strălucitoare a lui <PlayerName2>"
+  },
+  {
+    "id": 19089,
+    "ro": "Bifează 90 de prezenţe în cariera ta Pro"
+  },
+  {
+    "id": 19090,
+    "ro": "Câştigă 150 de lovituri de cap din săritură în carieră"
+  },
+  {
+    "id": 19091,
+    "ro": "Se conectează la EA SPORTS Football Club…"
+  },
+  {
+    "id": 19092,
+    "ro": "Procentaj total de deblocare a realizărilor"
+  },
+  {
+    "id": 19093,
+    "ro": "Aminteşte lumii întregi de ce este în stare un Hunter."
+  },
+  {
+    "id": 19094,
+    "ro": "<PlayerName> este tras pe linie moartă la <TeamName>"
+  },
+  {
+    "id": 19095,
+    "ro": "Pachete Jumbo Bronz, doar în acest weekend."
+  },
+  {
+    "id": 19096,
+    "ro": "Apasă pe Înapoi pentru a face asta mai târziu."
+  },
+  {
+    "id": 19097,
+    "ro": "Trebuie să fie similar cu utilizator@ea.com."
+  },
+  {
+    "id": 19098,
+    "ro": "Echipa <TeamName> îi permite lui <PlayerName> să plece"
+  },
+  {
+    "id": 19099,
+    "ro": "Impresarul este deschis să discute despre <PlayerName>"
+  },
+  {
+    "id": 19100,
+    "ro": "Nu există schimburi în aşteptare de afişat"
+  },
+  {
+    "id": 19101,
+    "ro": "• Cheltuieşte monedele pe pachete pentru a progresa"
+  },
+  {
+    "id": 19102,
+    "ro": "Găseşte un adversar şi luptă pentru promovare!"
+  },
+  {
+    "id": 19103,
+    "ro": "Se actualizează săptămânal pe baza rezultatelor reale."
+  },
+  {
+    "id": 19104,
+    "ro": "adidas Ace - Iron Met/Core Black/Yellow"
+  },
+  {
+    "id": 19105,
+    "ro": "Revenirea lui <PlayerName>, punctul luminos din remiză"
+  },
+  {
+    "id": 19106,
+    "ro": "Data Collection and Reference Community"
+  },
+  {
+    "id": 19107,
+    "ro": "1000 de monede pentru Echipa Turneului!"
+  },
+  {
+    "id": 19108,
+    "ro": "Nu mai poţi împrumuta alţi jucători în acest moment."
+  },
+  {
+    "id": 19109,
+    "ro": "Nu urca niciodată în atac în faza ofensivă"
+  },
+  {
+    "id": 19110,
+    "ro": "adidas conext15 - Solar Gold/Blue/White"
+  },
+  {
+    "id": 19111,
+    "ro": "Echipa de clasificare pe vârste / Aprobări"
+  },
+  {
+    "id": 19112,
+    "ro": "Finalizează 60% din realizările Pro"
+  },
+  {
+    "id": 19113,
+    "ro": "%1s merge mai departe; %2s este eliminată din %6s"
+  },
+  {
+    "id": 19114,
+    "ro": "Seria echipei <TeamName1> este spulberată de <TeamName2>"
+  },
+  {
+    "id": 19115,
+    "ro": "\"<PlayerName>: \"\"Am nevoie de un împrumut!\"\"\""
+  },
+  {
+    "id": 19116,
+    "ro": "Echipa <TeamName1> mizează pe succesul antrenorului debutant"
+  },
+  {
+    "id": 19117,
+    "ro": "Finalizează 20 de realizări de portar"
+  },
+  {
+    "id": 19118,
+    "ro": "Zvonurile despre <PlayerName> îl forţează pe impresar să reacţioneze"
+  },
+  {
+    "id": 19119,
+    "ro": "Câştigă 15 premii Omul meciului ca Pro"
+  },
+  {
+    "id": 19120,
+    "ro": "<PlayerName> respinge categoric zvonurile despre dorul de casă!"
+  },
+  {
+    "id": 19121,
+    "ro": "Business Systems & Technology - Live Ops"
+  },
+  {
+    "id": 19122,
+    "ro": "Ne aşteptăm la mai puţin de %1s faulturi pe meci"
+  },
+  {
+    "id": 19123,
+    "ro": "Suporterii echipei <TeamName> sunt nemulţumiţi de <UserName>"
+  },
+  {
+    "id": 19124,
+    "ro": "Ar putea fi acesta sezonul pentru <TeamName>"
+  },
+  {
+    "id": 19125,
+    "ro": "Echipa <TeamName> asistă la o înfrângere la debutul noului antrenor"
+  },
+  {
+    "id": 19126,
+    "ro": "Echipa <TeamName> compensează prestaţia slabă a lui <PlayerName>"
+  },
+  {
+    "id": 19127,
+    "ro": "Sigur vrei să ieşi din joc?"
+  },
+  {
+    "id": 19128,
+    "ro": "Vis la nivel internaţional pentru <ManagerName1>?"
+  },
+  {
+    "id": 19129,
+    "ro": "Câştigă premiul Jucătorul anului din ligă"
+  },
+  {
+    "id": 19130,
+    "ro": "Finalizează 20% din realizările Pro"
+  },
+  {
+    "id": 19131,
+    "ro": "<ManagerName1> nu reuşeşte să astupe breşele"
+  },
+  {
+    "id": 19132,
+    "ro": "E uşor să greşeşti sincronizarea la tackling în această ligă."
+  },
+  {
+    "id": 19133,
+    "ro": "Ambiţii de Champions' Cup pentru echipa <TeamName>"
+  },
+  {
+    "id": 19134,
+    "ro": "Întotdeauna ofer echipei mele o şansă de a câştiga."
+  },
+  {
+    "id": 19135,
+    "ro": "Ai finalizat pagina %1s din My Club."
+  },
+  {
+    "id": 19136,
+    "ro": "Menţine o rată de conversie a golurilor de %1s%"
+  },
+  {
+    "id": 19137,
+    "ro": "Sigur vrei să ieşi din joc?"
+  },
+  {
+    "id": 19138,
+    "ro": "A apărut o eroare la crearea acestei ligi"
+  },
+  {
+    "id": 19139,
+    "ro": "#C00F21 Ţintire/Deplasare jucător + #C00F03 Şut"
+  },
+  {
+    "id": 19140,
+    "ro": "Creează un jucător şi adaugă-l la orice echipă"
+  },
+  {
+    "id": 19141,
+    "ro": "Stochează obiectele pe care vrei să le păstrezi pentru mai târziu."
+  },
+  {
+    "id": 19142,
+    "ro": "Încerci cumva să mă provoci?"
+  },
+  {
+    "id": 19143,
+    "ro": "Finalizează 28 de realizări de portar"
+  },
+  {
+    "id": 19144,
+    "ro": "Seria fără gol marcat continuă pentru <PlayerName1>"
+  },
+  {
+    "id": 19145,
+    "ro": "este printre cei mai buni jucători ai noştri pe postul său"
+  },
+  {
+    "id": 19146,
+    "ro": "Te-ai alăturat cu succes acestui club!"
+  },
+  {
+    "id": 19147,
+    "ro": "Finalizează 30% din realizările Pro"
+  },
+  {
+    "id": 19148,
+    "ro": "Goluri din şuturi cu efect din interiorul careului"
+  },
+  {
+    "id": 19149,
+    "ro": "<UserName> demisionează din funcţia de antrenor la echipa <TeamName1>"
+  },
+  {
+    "id": 19150,
+    "ro": "Încă un meci fără gol pentru <PlayerName1>"
+  },
+  {
+    "id": 19151,
+    "ro": "Eşti deja membru al acestei ligi."
+  },
+  {
+    "id": 19152,
+    "ro": "<PlayerName> vrea să profite de şansa unui împrumut"
+  },
+  {
+    "id": 19153,
+    "ro": "Apasă pe TRIMITE pentru a-ţi crea contul EA."
+  },
+  {
+    "id": 19154,
+    "ro": "Echipa <TeamName> îl trece pe listă pe rebelul <PlayerName>"
+  },
+  {
+    "id": 19155,
+    "ro": "Cine ar putea fi interesat de <ManagerName1>?"
+  },
+  {
+    "id": 19156,
+    "ro": "Echipa <TeamName> simte că lupta pentru titlu este posibilă"
+  },
+  {
+    "id": 19157,
+    "ro": "Forma lui <PlayerName> îl îngrijorează pe antrenorul <ManagerName>"
+  },
+  {
+    "id": 19158,
+    "ro": "Felicitări, acum ai statutul de Legendar!"
+  },
+  {
+    "id": 19159,
+    "ro": "<PlayerName1> depune o cerere de transfer"
+  },
+  {
+    "id": 19160,
+    "ro": "Ar putea echipa <TeamName> să ocupe un loc european?"
+  },
+  {
+    "id": 19161,
+    "ro": "Debut cu remiză pentru noul antrenor de la <TeamName>"
+  },
+  {
+    "id": 19162,
+    "ro": "Vino la primit şi cere mingea la picior"
+  },
+  {
+    "id": 19163,
+    "ro": "Joacă în 5 meciuri pe timp de ninsoare"
+  },
+  {
+    "id": 19164,
+    "ro": "Pasele tale scurte au fost de primă clasă astăzi."
+  },
+  {
+    "id": 19165,
+    "ro": "nu a semnat încă o înţelegere pe termen lung cu noi"
+  },
+  {
+    "id": 19166,
+    "ro": "Verifică programul pentru evenimentele viitoare."
+  },
+  {
+    "id": 19167,
+    "ro": "Echipa <TeamName> speră să le dea bătăi de cap granzilor"
+  },
+  {
+    "id": 19168,
+    "ro": "salariul pe care mi l-ai oferit este prea mic"
+  },
+  {
+    "id": 19169,
+    "ro": "Un loc în cupele europene este posibil pentru echipa <TeamName>"
+  },
+  {
+    "id": 19170,
+    "ro": "Nu te arunca prea devreme la tacklinguri!"
+  },
+  {
+    "id": 19171,
+    "ro": "Se cere lăsarea pe bancă a lui <PlayerName>, ieşit din formă"
+  },
+  {
+    "id": 19172,
+    "ro": "Se trimit datele către server. Te rugăm să aştepţi…"
+  },
+  {
+    "id": 19173,
+    "ro": "EA Digital Platform Developer Relations"
+  },
+  {
+    "id": 19174,
+    "ro": "Aşază noile tale obiecte în teancul corect!"
+  },
+  {
+    "id": 19175,
+    "ro": "Avertisment! Nu mai ai schimbări disponibile."
+  },
+  {
+    "id": 19176,
+    "ro": "Echipa <TeamName1> încă are încredere în <UserName>"
+  },
+  {
+    "id": 19177,
+    "ro": "Această serie de play-off a fost finalizată."
+  },
+  {
+    "id": 19178,
+    "ro": "Chiar e prea frig pentru <PlayerName>?"
+  },
+  {
+    "id": 19179,
+    "ro": "Nike Magista - Total Crimson/Black/Volt"
+  },
+  {
+    "id": 19180,
+    "ro": "Driblează 150 de jucători în cariera ta"
+  },
+  {
+    "id": 19181,
+    "ro": "Acest jucător a semnat deja cu tine"
+  },
+  {
+    "id": 19182,
+    "ro": "Reuşeşte 50 de pase lungi ca mijlocaş"
+  },
+  {
+    "id": 19183,
+    "ro": "Pasează mingea cu capul înapoi la propriul portar"
+  },
+  {
+    "id": 19184,
+    "ro": "@<HeroTeam> @MrAlexHunter titular vă rog."
+  },
+  {
+    "id": 19185,
+    "ro": "După meciul ăsta, mă mulţumesc şi cu egalul!"
+  },
+  {
+    "id": 19186,
+    "ro": "Încărcare finalizată. Apasă pe START pentru a continua."
+  },
+  {
+    "id": 19187,
+    "ro": "Finalizează 40% din realizările Pro"
+  },
+  {
+    "id": 19188,
+    "ro": "Zvonurile despre <PlayerName> refuză să se stingă"
+  },
+  {
+    "id": 19189,
+    "ro": "Arată când a fost generată ştirea."
+  },
+  {
+    "id": 19190,
+    "ro": "Mai multe informaţii despre crearea unui cont EA."
+  },
+  {
+    "id": 19191,
+    "ro": "<ManagerName> nu îl riscă pe <PlayerName>"
+  },
+  {
+    "id": 19192,
+    "ro": "<PlayerName> se alătură bogaţilor de la <TeamName>"
+  },
+  {
+    "id": 19193,
+    "ro": "Creşte energia pe finalul unui meci."
+  },
+  {
+    "id": 19194,
+    "ro": "<ManagerName> ridică miza pentru meciul din cupă"
+  },
+  {
+    "id": 19195,
+    "ro": "Nu, nu restaura setările implicite ale jocului"
+  },
+  {
+    "id": 19196,
+    "ro": "Gata cu dorul de casă! <PlayerName> rămâne!"
+  },
+  {
+    "id": 19197,
+    "ro": "Nu coborî pentru a sprijini apărarea"
+  },
+  {
+    "id": 19198,
+    "ro": "Veştile despre <PlayerName> sunt foarte puţine"
+  },
+  {
+    "id": 19199,
+    "ro": "A apărut o problemă la copierea echipei tale."
+  },
+  {
+    "id": 19200,
+    "ro": "O victorie bună pentru <HeroTeam>. Treabă bine făcută."
+  },
+  {
+    "id": 19201,
+    "ro": "Marchează un gol de la cel puţin 30 de yarzi"
+  },
+  {
+    "id": 19202,
+    "ro": "@MrAlexHunter a primit astăzi un cartonaş galben."
+  },
+  {
+    "id": 19203,
+    "ro": "POZIŢIONARE: POZIŢIONARE FUNDAŞ LATERAL - CPU"
+  },
+  {
+    "id": 19204,
+    "ro": "Te-ai alăturat cu succes acestui club."
+  },
+  {
+    "id": 19205,
+    "ro": "Înscrie din voleu o dată în cariera ta"
+  },
+  {
+    "id": 19206,
+    "ro": "Protejează mingea în faţa unui adversar de 6 ori"
+  },
+  {
+    "id": 19207,
+    "ro": "Dezamăgit, <ManagerName> deplânge lipsa de noroc"
+  },
+  {
+    "id": 19208,
+    "ro": "Dezamăgit de selecţia echipei, şefule"
+  },
+  {
+    "id": 19209,
+    "ro": "Obiectele de tip jucător pot fi folosite în echipa ta."
+  },
+  {
+    "id": 19210,
+    "ro": "Distragerea atenţiei nu ajută, spune <ManagerName>"
+  },
+  {
+    "id": 19211,
+    "ro": "Speculaţiile persistă în privinţa lui <PlayerName>"
+  },
+  {
+    "id": 19212,
+    "ro": "Se preia raportul meciului de pe serverele EA."
+  },
+  {
+    "id": 19213,
+    "ro": "Înscrie 20 de goluri cu şuturi cu efect în cariera ta"
+  },
+  {
+    "id": 19214,
+    "ro": "Fă demarcări în profunzime în spatele apărării"
+  },
+  {
+    "id": 19215,
+    "ro": "Nemulţumit, starul <PlayerName> îşi vede dorinţa împlinită"
+  },
+  {
+    "id": 19216,
+    "ro": "North West Studios Executive Management"
+  },
+  {
+    "id": 19217,
+    "ro": "Echipa <TeamName2> îl obţine la preţ redus pe <PlayerName1>"
+  },
+  {
+    "id": 19218,
+    "ro": "@MrAlexHunter, măcar am obţinut un punct!"
+  },
+  {
+    "id": 19219,
+    "ro": "mulţumită Global Transfer Network."
+  },
+  {
+    "id": 19220,
+    "ro": "Mult calm la transformarea penalty-ului."
+  },
+  {
+    "id": 19221,
+    "ro": "Nu este loc în echipă pentru ieşirile tale nervoase"
+  },
+  {
+    "id": 19222,
+    "ro": "Finalizează 3 realizări de îndemânare cu mingea"
+  },
+  {
+    "id": 19223,
+    "ro": "Finalizează 15% din realizările Pro"
+  },
+  {
+    "id": 19224,
+    "ro": "adidas Ace - White/Met/Solar Orange - W"
+  },
+  {
+    "id": 19225,
+    "ro": "Cluburile sunt în alertă privind situaţia lui <PlayerName>"
+  },
+  {
+    "id": 19226,
+    "ro": "Bogătaşii de la <TeamName> îl aduc pe <PlayerName>"
+  },
+  {
+    "id": 19227,
+    "ro": "Pasă un-doi ( a 2-a pasă este o pasă înaltă)"
+  },
+  {
+    "id": 19228,
+    "ro": "Finalizează 17 realizări de portar"
+  },
+  {
+    "id": 19229,
+    "ro": "Poate conţine doar caractere numerice."
+  },
+  {
+    "id": 19230,
+    "ro": "Bravo pentru marcarea golului egalizator!"
+  },
+  {
+    "id": 19231,
+    "ro": "%1s nu poate fi transferat în acest moment."
+  },
+  {
+    "id": 19232,
+    "ro": "Plănuieşte o vacanţă lungă după retragere!"
+  },
+  {
+    "id": 19233,
+    "ro": "Înscrie în 5 meciuri consecutive"
+  },
+  {
+    "id": 19234,
+    "ro": "Echipa <TeamName> se bucură de succesul adus de <UserName>"
+  },
+  {
+    "id": 19235,
+    "ro": "Accidentarea ar putea pune capăt carierei lui <PlayerName>"
+  },
+  {
+    "id": 19236,
+    "ro": "Felicitări! Acum deţii acest obiect."
+  },
+  {
+    "id": 19237,
+    "ro": "Garantează 18 jucători din Echipa Săptămânii!"
+  },
+  {
+    "id": 19238,
+    "ro": "<PlayerName> semnează cu bogaţii de la <TeamName>"
+  },
+  {
+    "id": 19239,
+    "ro": "<ManagerName> îl laudă pe arbitrul asistent"
+  },
+  {
+    "id": 19240,
+    "ro": "Oportunitate de împrumut pentru tânărul <PlayerName>"
+  },
+  {
+    "id": 19241,
+    "ro": "Finalizează 50% din realizările Pro"
+  },
+  {
+    "id": 19242,
+    "ro": "Mai multe informaţii despre crearea unui cont EA."
+  },
+  {
+    "id": 19243,
+    "ro": "Actualizează adresa de e-mail / parola părintelui"
+  },
+  {
+    "id": 19244,
+    "ro": "<ManagerName> laudă inteligenţa echipei"
+  },
+  {
+    "id": 19245,
+    "ro": "Selectează accesoriile cu stick-ul stâng."
+  },
+  {
+    "id": 19246,
+    "ro": "<PlayerName> părăseşte în sfârşit echipa <TeamName2>"
+  },
+  {
+    "id": 19247,
+    "ro": "Va rămâne <PlayerName> la echipa <TeamName>?"
+  },
+  {
+    "id": 19248,
+    "ro": "Echipa <TeamName> se concentrează pe o victorie decisivă pentru sezon"
+  },
+  {
+    "id": 19249,
+    "ro": "Poziţionare: Poziţionare fundaş lateral - CPU"
+  }
+]

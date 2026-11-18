@@ -1,0 +1,1252 @@
+[
+{
+"id": 15500,
+"ctx": "SM_SPONSOR_TITLE_0",
+"en": "ADIDAS ACE16+ PURECONTROL"
+},
+{
+"id": 15501,
+"ctx": "featureheadline22",
+"en": "TAKE YOUR CLUB TO THE TOP"
+},
+{
+"id": 15502,
+"ctx": "TXT_SWITCH_TOURNAMENT_TREE",
+"en": "Switch to Tournament Tree"
+},
+{
+"id": 15503,
+"ctx": "BallName_20",
+"en": "EA SPORTS™ Red / White #3"
+},
+{
+"id": 15504,
+"ctx": "Download Match Details",
+"en": "Downloading Match Details"
+},
+{
+"id": 15505,
+"ctx": "banner_starchallenge1",
+"en": "Star Challenge Tournament"
+},
+{
+"id": 15506,
+"ctx": "TXT_DOWNLOAD_TOP_SCORERS",
+"en": "Retrieving Top Scorers..."
+},
+{
+"id": 15507,
+"ctx": "BootName_156",
+"en": "adidas X 16+ Stellar Pack"
+},
+{
+"id": 15508,
+"ctx": "news_title_internationalrenewal_fired_2",
+"en": "<UserName> Shown the Door"
+},
+{
+"id": 15509,
+"ctx": "CM_CupObjective_1",
+"en": "Reach the Knockout Stage."
+},
+{
+"id": 15510,
+"ctx": "BootName_89",
+"en": "BootName_89_Auth-FullChar"
+},
+{
+"id": 15511,
+"ctx": "news_title_seasonpreview_avoidlowlyfinish_4",
+"en": "<TeamName> Fancied By Few"
+},
+{
+"id": 15512,
+"ctx": "TXT_EATV",
+"en": "LOADING EA SPORTS NEWS..."
+},
+{
+"id": 15513,
+"ctx": "SS_U_EPL_PF_1_A",
+"en": "Shake it off, train hard."
+},
+{
+"id": 15514,
+"ctx": "Podcast_Setting7",
+"en": "EA South American Podcast"
+},
+{
+"id": 15515,
+"ctx": "CM_Email_PAP_Club_Promoted_SquadMember_Subject",
+"en": "Officially a Squad Member"
+},
+{
+"id": 15516,
+"ctx": "LocalizationCoordination",
+"en": "Localisation Coordination"
+},
+{
+"id": 15517,
+"ctx": "TryDifferentChallenge",
+"en": "Try A Different Challenge"
+},
+{
+"id": 15518,
+"ctx": "CM_UnsuccesfulNegotiations",
+"en": "Unsuccessful Negotiations"
+},
+{
+"id": 15519,
+"ctx": "OSDK_OL_LOAD_TRADES_FAILURE",
+"en": "Error loading Trades List"
+},
+{
+"id": 15520,
+"ctx": "QUALITYASSURANCEANALYST",
+"en": "Quality Assurance Analyst"
+},
+{
+"id": 15521,
+"ctx": "FUT_Bannerheader4",
+"en": "New Promo Packs Available"
+},
+{
+"id": 15522,
+"ctx": "Boot_178",
+"en": "Puma v1.08 - Black / Blue"
+},
+{
+"id": 15523,
+"ctx": "vpro_accompcat",
+"en": "ACCOMPLISHMENT CATEGORIES"
+},
+{
+"id": 15524,
+"ctx": "TXT_TRIAL_LOADING",
+"en": "LOADING TRIAL INFORMATION"
+},
+{
+"id": 15525,
+"ctx": "TXT_ONLINESEASONS_CUP_4_ROUND_1",
+"en": "PREMIER CUP - Round of 16"
+},
+{
+"id": 15526,
+"ctx": "OSDK_OL_NO_RECENTGAMES_DATA",
+"en": "No recent games available"
+},
+{
+"id": 15527,
+"ctx": "BootName_99",
+"en": "BootName_99_Auth-FullChar"
+},
+{
+"id": 15528,
+"ctx": "BallName_165",
+"en": "SELECT Brillant Super OMB"
+},
+{
+"id": 15529,
+"ctx": "TXT_PAP_desc_MENTAL_12",
+"en": "Complete 50 Slide Tackles"
+},
+{
+"id": 15530,
+"ctx": "TOURNAMENT_LIVE_NAME_113",
+"en": "EA Sports Platinum Shield"
+},
+{
+"id": 15531,
+"ctx": "MatchNotPlayed",
+"en": "Match has not been played"
+},
+{
+"id": 15532,
+"ctx": "OSDK_D_C1",
+"en": "No Recent Games Available"
+},
+{
+"id": 15533,
+"ctx": "CM_Contract_Renewal_Squad_Warning_No",
+"en": "No - Review My Selections"
+},
+{
+"id": 15534,
+"ctx": "BootName_91",
+"en": "BootName_91_Auth-FullChar"
+},
+{
+"id": 15535,
+"ctx": "CM_SIM_Player Manager_Header_Start_Excellent team_1",
+"en": "Player Manager announced!"
+},
+{
+"id": 15536,
+"ctx": "Player_Rarity_8",
+"en": "Domestic Man of the Match"
+},
+{
+"id": 15537,
+"ctx": "BootName_95",
+"en": "BootName_95_Auth-FullChar"
+},
+{
+"id": 15538,
+"ctx": "Tackles_Attempted_Desc",
+"en": "AVERAGE TACKLES PER MATCH"
+},
+{
+"id": 15539,
+"ctx": "news_title_weakspot_stage2_1",
+"en": "Attention <ManagerName1>!"
+},
+{
+"id": 15540,
+"ctx": "CreatePlayerBoot_17",
+"en": "EA SPORTS™ - White/Yellow"
+},
+{
+"id": 15541,
+"ctx": "TXT_ACCOMP_NAME_GOALS_FROM_DIVING_HEADERS",
+"en": "Goals from Diving Headers"
+},
+{
+"id": 15542,
+"ctx": "sombreroflickback",
+"en": "Sombrero Flick Backwards "
+},
+{
+"id": 15543,
+"ctx": "OUTSOURCINGCGSUPERVISOR",
+"en": "Outsourcing Cg Supervisor"
+},
+{
+"id": 15544,
+"ctx": "news_title_seasonpreview_playofffinal_6",
+"en": "Near Miss For <TeamName>?"
+},
+{
+"id": 15545,
+"ctx": "FUT_SWAP_WITH_CURRENT_MANAGER",
+"en": "SWAP WITH CURRENT MANAGER"
+},
+{
+"id": 15546,
+"ctx": "CM_RemainingContractLength",
+"en": "Remaining Contract Length"
+},
+{
+"id": 15547,
+"ctx": "vpro_physical_accomdesc46",
+"en": "Play 250 matches as a Pro"
+},
+{
+"id": 15548,
+"ctx": "FUT_UC_LAST_LOGGED_IN",
+"en": "SINCE YOU LAST LOGGED IN:"
+},
+{
+"id": 15549,
+"ctx": "BallName_73",
+"en": "BallName_73_Auth-FullChar"
+},
+{
+"id": 15550,
+"ctx": "CM_TCM_OVRV_MGR_PP_RATING_upper",
+"en": "MANAGER POPULARITY RATING"
+},
+{
+"id": 15551,
+"ctx": "vpro_traits_accomreward11",
+"en": "Unlocks Second Wind trait"
+},
+{
+"id": 15552,
+"ctx": "GcGkAbilityUser",
+"en": "Goalkeeper Ability - User"
+},
+{
+"id": 15553,
+"ctx": "news_title_id_sss_champion_2",
+"en": "%1s Achieve the %2s Title"
+},
+{
+"id": 15554,
+"ctx": "news_title_id_sss_Euro_League_Entry_1",
+"en": "%1s Land Euro League Spot"
+},
+{
+"id": 15555,
+"ctx": "TXT_ACTION_GO_TO_PRACTICE_ARENA",
+"en": "TAKE ME TO PRACTICE ARENA"
+},
+{
+"id": 15556,
+"ctx": "LeadFrontEndProgrammer",
+"en": "Lead Front End Programmer"
+},
+{
+"id": 15557,
+"ctx": "TXT_PAP_desc_PASSING_42",
+"en": "Complete 750 Short Passes"
+},
+{
+"id": 15558,
+"ctx": "BootName_87",
+"en": "BootName_87_Auth-FullChar"
+},
+{
+"id": 15559,
+"ctx": "BootName_83",
+"en": "BootName_83_Auth-FullChar"
+},
+{
+"id": 15560,
+"ctx": "TXT_DOWNLOAD_NEWS_upper",
+"en": "RETRIEVING LATEST NEWS..."
+},
+{
+"id": 15561,
+"ctx": "news_title_streak_postmatch_draw_continues_2",
+"en": "No Relief For <TeamName1>"
+},
+{
+"id": 15562,
+"ctx": "EASPORTSCOREOPERATIONS",
+"en": "EA SPORTS Core Operations"
+},
+{
+"id": 15563,
+"ctx": "cm_playerstatus_tier2",
+"en": "Important 1st Team Player"
+},
+{
+"id": 15564,
+"ctx": "news_title_overpriceddeal_underpriced_1",
+"en": "<TeamName2> Bag a Bargain"
+},
+{
+"id": 15565,
+"ctx": "BootName_97",
+"en": "BootName_97_Auth-FullChar"
+},
+{
+"id": 15566,
+"ctx": "FUT_STORE_PACK_1210_DESC_MOBILE",
+"en": "18 EPL Players, 3 on Loan"
+},
+{
+"id": 15567,
+"ctx": "TXT_ONLINE_COOP_SEASONS_PLAYING_ONLINE",
+"en": "%1s Playing Co-op Seasons"
+},
+{
+"id": 15568,
+"ctx": "Easportsonlineservices",
+"en": "EA SPORTS Online Services"
+},
+{
+"id": 15569,
+"ctx": "Dribbling_Bronze",
+"en": "Dribbling - Bronze Player"
+},
+{
+"id": 15570,
+"ctx": "TXT_EASFC_VID_SUBTITLE_28",
+"en": "and of course Challenges."
+},
+{
+"id": 15571,
+"ctx": "BootName_93",
+"en": "BootName_93_Auth-FullChar"
+},
+{
+"id": 15572,
+"ctx": "PlayerFeedbackPopUp_PotentialRetirement_SufferedSevereInjury_subject",
+"en": "This Injury and My Future"
+},
+{
+"id": 15573,
+"ctx": "CM_EMAIL_FUTURESTAR_SCOUTSENT_SUBJECT",
+"en": "Scout has Been Dispatched"
+},
+{
+"id": 15574,
+"ctx": "OSDK_WITH_SAME_LVL",
+"en": "With the same skill level"
+},
+{
+"id": 15575,
+"ctx": "FUT_WON_TWO_PRIZE",
+"en": "You have won %1s and %2s."
+},
+{
+"id": 15576,
+"ctx": "CM_LeagueObjective_12",
+"en": "Reach the Wildcard Stage."
+},
+{
+"id": 15577,
+"ctx": "CreatePlayerBoot_19",
+"en": "EA SPORTS™ - Black/Yellow"
+},
+{
+"id": 15578,
+"ctx": "OSDK_CLUB_INVITE_CONTEXT",
+"en": "Club Invitation from: <0>"
+},
+{
+"id": 15579,
+"ctx": "OSDK_CS_CREATE_HELP",
+"en": "Create this game session."
+},
+{
+"id": 15580,
+"ctx": "OSDK_TICKER_BUSCH",
+"en": "Nationwide Series Results"
+},
+{
+"id": 15581,
+"ctx": "news_title_request_endofwindow_transferrequest_1",
+"en": "No Move for <PlayerName1>"
+},
+{
+"id": 15582,
+"ctx": "TXT_EASFC_ALERTS_TITLE_FUT_SEASONS",
+"en": "TRY ULTIMATE TEAM SEASONS"
+},
+{
+"id": 15583,
+"ctx": "LeftPanelInternationalTeams",
+"en": "Left Panel – Change Teams"
+},
+{
+"id": 15584,
+"ctx": "TXT_TRIAL_SELLSCREEN_BUY_CALLOUT",
+"en": "Buy Now & Play Instantly!"
+},
+{
+"id": 15585,
+"ctx": "TXT_ONLINESEASONS_CUP_1_ROUND_2",
+"en": "EA SHIELD - Quarter-Final"
+},
+{
+"id": 15586,
+"ctx": "OSDK_CNTRY_WF",
+"en": "Wallis and Futuna Islands"
+},
+{
+"id": 15587,
+"ctx": "news_title_loanlisted_above20_above_avg_2",
+"en": "<PlayerName> To Be Loaned"
+},
+{
+"id": 15588,
+"ctx": "1_SC_0541_C",
+"en": "Start of something great."
+},
+{
+"id": 15589,
+"ctx": "cm_ap_release_cannotaffordfee",
+"en": "Cannot Afford Release Fee"
+},
+{
+"id": 15590,
+"ctx": "EarlyCrossOnTheGround",
+"en": "Early Cross On The Ground"
+},
+{
+"id": 15591,
+"ctx": "TXT_PAP_desc_DEFENCE_23",
+"en": "Complete 80 Slide Tackles"
+},
+{
+"id": 15592,
+"ctx": "FUT_SignLoanPlayerConfirmation",
+"en": "Sign this Player on loan?"
+},
+{
+"id": 15593,
+"ctx": "FUT_CHALKTUT_SBC_CHALL2_REQ1",
+"en": "Team Chemistry: \\nMin. 12"
+},
+{
+"id": 15594,
+"ctx": "vpacrobatic",
+"en": "ACROBATIC CLEARANCE TRAIT"
+},
+{
+"id": 15595,
+"ctx": "CM_EuropeanCupObjecive",
+"en": "Continental Cup Objective"
+},
+{
+"id": 15596,
+"ctx": "Attract_Video_24",
+"en": "As the new season dawns, "
+},
+{
+"id": 15597,
+"ctx": "CAPTURELABCHARACTERART",
+"en": "Capture Lab Character Art"
+},
+{
+"id": 15598,
+"ctx": "FUT_STORE_PACK_105_NAME",
+"en": "JUMBO PREMIUM BRONZE PACK"
+},
+{
+"id": 15599,
+"ctx": "OSDK_RANKED_QM",
+"en": "Ranked Quick Match Search"
+},
+{
+"id": 15600,
+"ctx": "CM_Chief_Exec_Comments",
+"en": "Chief Executive Comments:"
+},
+{
+"id": 15601,
+"ctx": "TXT_EASFC_CHOOSE_DEFAULT_TEAM",
+"en": "Make this my Default Team"
+},
+{
+"id": 15602,
+"ctx": "CM_NegotiatorFeedback_OutgoingTransfer_TopScorer",
+"en": "leads the league in goals"
+},
+{
+"id": 15603,
+"ctx": "TXT_EASFC_ACTION_GO_TO_CATALOGUE",
+"en": "TAKE ME TO THE CATALOGUE!"
+},
+{
+"id": 15604,
+"ctx": "Contract extension_Silver",
+"en": "Extension - Silver Player"
+},
+{
+"id": 15605,
+"ctx": "SaveDisplay_CareerManager",
+"en": "Career - Manager Progress"
+},
+{
+"id": 15606,
+"ctx": "DevelopedAtEACanada",
+"en": "Developed at EA Vancouver"
+},
+{
+"id": 15607,
+"ctx": "FUT_STORE_PACK_1203_DESC_MOBILE",
+"en": "18 LaLiga Players, 1 Rare"
+},
+{
+"id": 15608,
+"ctx": "EADPTECHNICALOPERATIONS",
+"en": "EADP TECHNICAL OPERATIONS"
+},
+{
+"id": 15609,
+"ctx": "vpro_accessories_accomdesc5",
+"en": "Win a Cup in Manager Mode"
+},
+{
+"id": 15610,
+"ctx": "FCC_CU_Arena_title_18",
+"en": "Quick Selling vs. Earning"
+},
+{
+"id": 15611,
+"ctx": "CM_NegHistory_To_ContractOffer",
+"en": "Amend the Contract Offer?"
+},
+{
+"id": 15612,
+"ctx": "musictabsubtitle_1",
+"en": "Edit Pro & Pro Club Audio"
+},
+{
+"id": 15613,
+"ctx": "TXT_EASFC_FUT_LEADERBOARD_TABLE_HEADER",
+"en": "PASSED ON FUT LEADERBOARD"
+},
+{
+"id": 15614,
+"ctx": "OSDK_OL_SIMULATE_PLAYOFF_SUCCESS",
+"en": "Game Simulation Complete."
+},
+{
+"id": 15615,
+"ctx": "banner_tip22",
+"en": "X coins earned last week."
+},
+{
+"id": 15616,
+"ctx": "ProductionArtSupervisor",
+"en": "Production Art Supervisor"
+},
+{
+"id": 15617,
+"ctx": "vpro_stat_37",
+"en": "Sliding Tackles Attempted"
+},
+{
+"id": 15618,
+"ctx": "vpro_traits_accomdesc11",
+"en": "Play 100 matches as a Pro"
+},
+{
+"id": 15619,
+"ctx": "CM_LeagueObjective_Email_12",
+"en": "reach the Wildcard Stage."
+},
+{
+"id": 15620,
+"ctx": "FreeJumboRarePlayersPackDesc",
+"en": "1 Jumbo Rare Players Pack"
+},
+{
+"id": 15621,
+"ctx": "StoryModeHalfLength_upper",
+"en": "HALF LENGTH (THE JOURNEY)"
+},
+{
+"id": 15622,
+"ctx": "CT_WinDrawLoss_NAME",
+"en": "Winning Drawing or Losing"
+},
+{
+"id": 15623,
+"ctx": "TXT_HEADTOHEAD_SEARCHING",
+"en": "Searching for Opponent..."
+},
+{
+"id": 15624,
+"ctx": "MotionCaptureSupervisor",
+"en": "Motion Capture Supervisor"
+},
+{
+"id": 15625,
+"ctx": "PING_CLUBS_TROPHY_WIN_3_GAMES_ROW",
+"en": "Win 3 consecutive matches"
+},
+{
+"id": 15626,
+"ctx": "ManagerOfGlobalContent",
+"en": "Manager of Global Content"
+},
+{
+"id": 15627,
+"ctx": "FUT_STORE_PACK_1101_NAME",
+"en": "LIGUE 1 PREMIUM GOLD PACK"
+},
+{
+"id": 15628,
+"ctx": "EngageShieldingOpponent",
+"en": "Engage Shielding Opponent"
+},
+{
+"id": 15629,
+"ctx": "ResetManMarking",
+"en": "Reset Marking Assignments"
+},
+{
+"id": 15630,
+"ctx": "SS_EPL_GF_2_A",
+"en": "Always have, always will."
+},
+{
+"id": 15631,
+"ctx": "CM_AcceptOffer",
+"en": "Accept/Stall/Reject Offer"
+},
+{
+"id": 15632,
+"ctx": "news_title_id_19_4",
+"en": "%1s Defeat Rivals %3d-%4d"
+},
+{
+"id": 15633,
+"ctx": "HYPNOSENTERTAINMENTINC",
+"en": "Hypnos Entertainment Inc."
+},
+{
+"id": 15634,
+"ctx": "FUT_WEEKEND_ENTRY_TOKEN_ITEM",
+"en": "Entry into Weekend League"
+},
+{
+"id": 15635,
+"ctx": "BallName_4",
+"en": "EA SPORTS™ Black / Silver"
+},
+{
+"id": 15636,
+"ctx": "EmiratesFACupChampions",
+"en": "Emirates FA Cup Champions"
+},
+{
+"id": 15637,
+"ctx": "CM_Email_PG_Pos_Subject",
+"en": "[Info] Player Improvement"
+},
+{
+"id": 15638,
+"ctx": "OSDK_CNTRY_VC",
+"en": "St. Vincent & Grenadines "
+},
+{
+"id": 15639,
+"ctx": "news_title_id_65_3",
+"en": "Fresh Hope for New Season"
+},
+{
+"id": 15640,
+"ctx": "TXT_EASFC_ACTION_GO_TO_SKILLS_GAME",
+"en": "PLAY THIS SKILL GAME NOW!"
+},
+{
+"id": 15641,
+"ctx": "TOURNAMENT_LIVE_NAME_175",
+"en": "Platinum Global Challenge"
+},
+{
+"id": 15642,
+"ctx": "XboxAccomplishment12Name",
+"en": "Defender Man of the Match"
+},
+{
+"id": 15643,
+"ctx": "FIFA12_EASFCVID_046",
+"en": "to the top of the tables?"
+},
+{
+"id": 15644,
+"ctx": "news_title_seasonpreview_playoffsemifinal_8",
+"en": "Looks Good For <TeamName>"
+},
+{
+"id": 15645,
+"ctx": "PlayerFeedbackPopUp_PlayerNotPlayed_subject",
+"en": "Disappointed Not to Start"
+},
+{
+"id": 15646,
+"ctx": "MM_CUSTOMISE_SETTINGS_CELEBRATIONS_STORY",
+"en": "Goal celebration controls"
+},
+{
+"id": 15647,
+"ctx": "FUT_STORE_PACK_813_DESC_MOBILE",
+"en": "1 high rated loan Player."
+},
+{
+"id": 15648,
+"ctx": "news_title_id_61_3",
+"en": "%1s in Relegation Trouble"
+},
+{
+"id": 15649,
+"ctx": "Boot_157",
+"en": "adidas Predator ® - Black"
+},
+{
+"id": 15650,
+"ctx": "TXT_PAP_desc_DEFENCE_22",
+"en": "Complete 60 Slide Tackles"
+},
+{
+"id": 15651,
+"ctx": "FUT_DRAFT_DIFFICULTY_DESCRIPTION_0",
+"en": "You are brand new to FUT."
+},
+{
+"id": 15652,
+"ctx": "TXT_DEMO_NEWFEATURE_SUB_TRAINER",
+"en": "COMPETE AT A HIGHER LEVEL"
+},
+{
+"id": 15653,
+"ctx": "BallName_17",
+"en": "EA SPORTS™ Red / White #2"
+},
+{
+"id": 15654,
+"ctx": "FCE_CL_Group_Stage_Team_Setup",
+"en": "CL Group Stage Team Setup"
+},
+{
+"id": 15655,
+"ctx": "cm_ap_approach_transferwindowclosed",
+"en": "Transfer Window is Closed"
+},
+{
+"id": 15656,
+"ctx": "CM_SIM_Player_Header_New season_Remain with team_1",
+"en": "He's Staying Another Year"
+},
+{
+"id": 15657,
+"ctx": "FUT_DRAFT_DIFFICULTY_DESCRIPTION_4",
+"en": "You live and breathe FUT."
+},
+{
+"id": 15658,
+"ctx": "CM_Career Summary_Stats_9",
+"en": "League Objective Achieved"
+},
+{
+"id": 15659,
+"ctx": "FUT_TF_AUCTION_WON_BID",
+"en": "%1s - Auction won via Bid"
+},
+{
+"id": 15660,
+"ctx": "OSDK_PRESENCE_IDLE_OFF",
+"en": "idle; not signed in to EA"
+},
+{
+"id": 15661,
+"ctx": "PlayerFeedbackPopUp_LMTR_TransferRequested_subject",
+"en": "Request To Be Transferred"
+},
+{
+"id": 15662,
+"ctx": "Defending_Bronze",
+"en": "Defending - Bronze Player"
+},
+{
+"id": 15663,
+"ctx": "Squads_Download",
+"en": "Downloading latest squads"
+},
+{
+"id": 15664,
+"ctx": "news_title_id_100_1",
+"en": "%3s Hijack %2s's %1s Deal"
+},
+{
+"id": 15665,
+"ctx": "vpro_mental_accomdesc23",
+"en": "Play 300 matches as a Pro"
+},
+{
+"id": 15666,
+"ctx": "IndirectFKToX",
+"en": "Indirect free kick to %1s"
+},
+{
+"id": 15667,
+"ctx": "InMenusAndMatch",
+"en": "In Menus And During Match"
+},
+{
+"id": 15668,
+"ctx": "TXT_EASFC_ACTION_GO_TO_CLUBS_TRANSFER",
+"en": "GO TO PRO CLUBS TRANSFERS"
+},
+{
+"id": 15669,
+"ctx": "News_Title_BadPreseasonBadMatch_Tier1_3",
+"en": "<PlayerName> Form A Worry"
+},
+{
+"id": 15670,
+"ctx": "OSDK_OL_LEAGUE_UNAVAIL",
+"en": "Unable to load the league"
+},
+{
+"id": 15671,
+"ctx": "News_title_ID_22_4",
+"en": "%1s Record Upset Over %2s"
+},
+{
+"id": 15672,
+"ctx": "StudioDirectorStockholm",
+"en": "Studio Director Stockholm"
+},
+{
+"id": 15673,
+"ctx": "FUT_RESET_LEFT",
+"en": "Club creations remaining:"
+},
+{
+"id": 15674,
+"ctx": "CM_Career Summary_Stats_5",
+"en": "Manager of the Year Award"
+},
+{
+"id": 15675,
+"ctx": "KickTakerFinesse",
+"en": "Kick taker (Finesse shot)"
+},
+{
+"id": 15676,
+"ctx": "OSDK_TS_PST",
+"en": "<0> is choosing settings."
+},
+{
+"id": 15677,
+"ctx": "OSDK_TICKER_FIFA_SOUTH_AMERICA",
+"en": "FIFA South America Scores"
+},
+{
+"id": 15678,
+"ctx": "LeftStickTitle_20",
+"en": "Upper Lip Shape/Thickness"
+},
+{
+"id": 15679,
+"ctx": "OSDK_PRESENCE_IN_CLUB_DRESSING",
+"en": "inside club dressing room"
+},
+{
+"id": 15680,
+"ctx": "BootName_92",
+"en": "BootName_92_Auth-FullChar"
+},
+{
+"id": 15681,
+"ctx": "TalkToPress_Title_Unnerve_Win_Previous Result_1",
+"en": "<ManagerName> Recalls Win"
+},
+{
+"id": 15682,
+"ctx": "KIN_BAPDesc8",
+"en": "Call for teammate support"
+},
+{
+"id": 15683,
+"ctx": "OSDK_OL_PREVIOUS_HELP",
+"en": "Return to previous screen"
+},
+{
+"id": 15684,
+"ctx": "BootName_96",
+"en": "BootName_96_Auth-FullChar"
+},
+{
+"id": 15685,
+"ctx": "TXT_ACCOMP_NAME_GOALS_FROM_WITHIN_3_YARDS",
+"en": "Goals from within 3 yards"
+},
+{
+"id": 15686,
+"ctx": "RetireFantasyTeam",
+"en": "DELETE YOUR Ultimate Team"
+},
+{
+"id": 15687,
+"ctx": "PM_U_POORFORM_1_B",
+"en": "Bad luck and poor supply."
+},
+{
+"id": 15688,
+"ctx": "ExternalDevelopmentTeam",
+"en": "External Development Team"
+},
+{
+"id": 15689,
+"ctx": "CM_NegHistory_To_TransferOffer",
+"en": "Amend the Transfer Offer?"
+},
+{
+"id": 15690,
+"ctx": "IWL_WomenTournament",
+"en": "WOMEN'S INTERNATIONAL CUP"
+},
+{
+"id": 15691,
+"ctx": "BattleForPossessionFeatureScreenTitle",
+"en": "360 Battle For Possession"
+},
+{
+"id": 15692,
+"ctx": "TXT_EASFC_RECONNECT",
+"en": "CONNECT TO EAS FC SERVERS"
+},
+{
+"id": 15693,
+"ctx": "FCC_CU_Arena_title_29",
+"en": "Chemistry and Nationality"
+},
+{
+"id": 15694,
+"ctx": "TXT_HOME_ONLINE_FRIENDLIS_PLAYING_ONLINE",
+"en": "Playing Online Friendlies"
+},
+{
+"id": 15695,
+"ctx": "CM_SIM_Manager_Header_Start_Excellent team_1",
+"en": "Unknown Manager Appointed"
+},
+{
+"id": 15696,
+"ctx": "StoryModeHalfLength",
+"en": "Half Length (The Journey)"
+},
+{
+"id": 15697,
+"ctx": "PlayerFeedbackpopup_announcingretirement_notret",
+"en": "Staying on Another Season"
+},
+{
+"id": 15698,
+"ctx": "TXT_PAP_desc_MENTAL_11",
+"en": "Complete 30 Slide Tackles"
+},
+{
+"id": 15699,
+"ctx": "PM_U_TACKLES_1_A",
+"en": "Defending from the front."
+},
+{
+"id": 15700,
+"ctx": "RightStickTitle_20",
+"en": "Lower Lip Shape/Thickness"
+},
+{
+"id": 15701,
+"ctx": "WorkforceSchedulingLead",
+"en": "Workforce Scheduling Lead"
+},
+{
+"id": 15702,
+"ctx": "CM_Email_GTN_NoResults_Subject",
+"en": "[GTN] No Luck in %1s Boss"
+},
+{
+"id": 15703,
+"ctx": "TXT_DEMO_GOTW_MAN_ARS",
+"en": "Manchester City v Arsenal"
+},
+{
+"id": 15704,
+"ctx": "RestoreDefaultFormation",
+"en": "Restore Default Formation"
+},
+{
+"id": 15705,
+"ctx": "Boot_136",
+"en": "adidas F50 TUNiT - Yellow"
+},
+{
+"id": 15706,
+"ctx": "FUT_SEASON_COMPLETE_RELEGATION",
+"en": "You have been relegated. "
+},
+{
+"id": 15707,
+"ctx": "OSDK_FWD_STATS",
+"en": "Forward End-of-Game Stats"
+},
+{
+"id": 15708,
+"ctx": "FUT_CURRENT_TEAM",
+"en": "Select squad to challenge"
+},
+{
+"id": 15709,
+"ctx": "vpro_accessories_accomreward9",
+"en": "Unlocks Undershirt option"
+},
+{
+"id": 15710,
+"ctx": "PROJECTMANAGEMENTOFFICE",
+"en": "Project Management Office"
+},
+{
+"id": 15711,
+"ctx": "news_title_id_39_3",
+"en": "%1s Crowned %3s Champions"
+},
+{
+"id": 15712,
+"ctx": "news_title_internationalmanagerrumours_2",
+"en": "<ManagerName1>: In Demand"
+},
+{
+"id": 15713,
+"ctx": "CM_Contract_Player_3",
+"en": "Goal scoring bonus: %1d %"
+},
+{
+"id": 15714,
+"ctx": "cm_ap_withdrawtransferrequest",
+"en": "Withdraw Transfer Request"
+},
+{
+"id": 15715,
+"ctx": "BootName_82",
+"en": "BootName_82_Auth-FullChar"
+},
+{
+"id": 15716,
+"ctx": "TM_PI_STAY_BACK_WHILE_ATTACKING",
+"en": "Stay Back While Attacking"
+},
+{
+"id": 15717,
+"ctx": "OSDK_CANCEL_SESSION_STANDBY",
+"en": "Cancel Session On Standby"
+},
+{
+"id": 15718,
+"ctx": "OSDK_CLUBS_PRESS_X_TO_FIND_CLUB",
+"en": "Press ^X^ to find a match"
+},
+{
+"id": 15719,
+"ctx": "BootName_86",
+"en": "BootName_86_Auth-FullChar"
+},
+{
+"id": 15720,
+"ctx": "TXT_PAP_desc_DEFENCE_16",
+"en": "Complete 40 Slide Tackles"
+},
+{
+"id": 15721,
+"ctx": "OSDK_PRESENCE_IN_<0>LOBBYROOM",
+"en": "inside the <0> lobby room"
+},
+{
+"id": 15722,
+"ctx": "fcc_manageradvtraining",
+"en": "Manager Advanced Training"
+},
+{
+"id": 15723,
+"ctx": "SimulateSeason",
+"en": "Simulating Rest of Season"
+},
+{
+"id": 15724,
+"ctx": "FUT_SinglePlayer_Tournament",
+"en": "SINGLE PLAYER TOURNAMENTS"
+},
+{
+"id": 15725,
+"ctx": "CM_Email_Transit_ToAccRejPlayer",
+"en": "To Accept / Reject Player"
+},
+{
+"id": 15726,
+"ctx": "vpro_stat_16",
+"en": "Goals from Inside the Box"
+},
+{
+"id": 15727,
+"ctx": "News_Title_InjuredPlayerSubbedEarly_1",
+"en": "<PlayerName> Plays A Part"
+},
+{
+"id": 15728,
+"ctx": "CM_Email_Subject_foullanguage_postmatch_stage2_manager_3",
+"en": "Learn to Bite Your Tongue"
+},
+{
+"id": 15729,
+"ctx": "news_lastminuteswinner_title_10",
+"en": "Wild Finish For <TeamName>"
+},
+{
+"id": 15730,
+"ctx": "FCCLeaderboard",
+"en": "Ultimate Team LEADERBOARDS"
+},
+{
+"id": 15731,
+"ctx": "BootName_143",
+"en": "BootName_143_Auth-FullChar"
+},
+{
+"id": 15732,
+"ctx": "CONTINUOUSIMPROVEMENT",
+"en": "Continuous Improvement\\r\\n"
+},
+{
+"id": 15733,
+"ctx": "FUT_TOTW_TYPE",
+"en": "Change TotW Challenge Type"
+},
+{
+"id": 15734,
+"ctx": "QualifyForNextRound",
+"en": "Qualify for the Next Round"
+},
+{
+"id": 15735,
+"ctx": "news_title_intmanager_postmatch_neutral_4",
+"en": "<UserName> 50/50 with Fans"
+},
+{
+"id": 15736,
+"ctx": "vpro_ballskills_accomreward5",
+"en": "Unlocks 2 Star Skill Moves"
+},
+{
+"id": 15737,
+"ctx": "SOFTWAREENGINEERSINTEST",
+"en": "Software Engineers in Test"
+},
+{
+"id": 15738,
+"ctx": "dragback_standing",
+"en": "Drag Back (while standing)"
+},
+{
+"id": 15739,
+"ctx": "FUT_STORE_PACK_514_NAME_MOBILE",
+"en": "JUMBO PREMIUM GOLD PLAYERS"
+},
+{
+"id": 15740,
+"ctx": "BootName_147",
+"en": "adidas X 16.1 Mercury Pack"
+},
+{
+"id": 15741,
+"ctx": "TXT_NO_DATA_AVAILABLE",
+"en": "No data available to show."
+},
+{
+"id": 15742,
+"ctx": "FUT_STORE_PACK_1114_NAME_MOBILE",
+"en": "BUNDESLIGA PREMIUM PLAYERS"
+},
+{
+"id": 15743,
+"ctx": "BootName_112",
+"en": "BootName_112_Auth-FullChar"
+},
+{
+"id": 15744,
+"ctx": "OSDK_ENTER_SMS_ADD",
+"en": "Enter Your SMS Address\\r\\n"
+},
+{
+"id": 15745,
+"ctx": "DEMO_WHATS_NEW_10_TITLE",
+"en": "FUT 15 - FRIENDLY\\nSEASONS"
+},
+{
+"id": 15746,
+"ctx": "GLOBALADVISORPROCESS",
+"en": "Global Advisor Process\\r\\n"
+},
+{
+"id": 15747,
+"ctx": "TXT_ACCOMP_NAME_GOALS_FROM_OUTSIDE_THE_BOX",
+"en": "Goals from Outside the Box"
+},
+{
+"id": 15748,
+"ctx": "news_title_id_sss_Avoid_Relegation_3",
+"en": "%1s Escape Relegation Zone"
+},
+{
+"id": 15749,
+"ctx": "EASPORTSLABELMANAGEMENT",
+"en": "EA SPORTS Label Management"
+}
+]

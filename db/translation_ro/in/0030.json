@@ -1,0 +1,1252 @@
+[
+{
+"id": 7500,
+"ctx": "TXT_PAP_desc_SHOOTING_5",
+"en": "Score 5 Goals"
+},
+{
+"id": 7501,
+"ctx": "CO_Shoot",
+"en": "Hold to Shoot"
+},
+{
+"id": 7502,
+"ctx": "TXT_EASFC_GROUP_SUMMARY",
+"en": "GROUP SUMMARY"
+},
+{
+"id": 7503,
+"ctx": "OSDK_STATE_WVIRG",
+"en": "West Virginia"
+},
+{
+"id": 7504,
+"ctx": "TXT_ACC_LABEL",
+"en": "Avoid My Club"
+},
+{
+"id": 7505,
+"ctx": "TXT_EASFC_MATCH_TYPE_32",
+"en": "Virgin Gaming"
+},
+{
+"id": 7506,
+"ctx": "SELECT_SWAP",
+"en": "Select / Swap"
+},
+{
+"id": 7507,
+"ctx": "GameFXVolume",
+"en": "Sound Effects"
+},
+{
+"id": 7508,
+"ctx": "FUT_DeviceIdRestriction",
+"en": "LIMIT REACHED"
+},
+{
+"id": 7509,
+"ctx": "CO_BouncingLobPass",
+"en": "Bouncing Pass"
+},
+{
+"id": 7510,
+"ctx": "BookingsDraw_Event2",
+"en": "Grinding Axes"
+},
+{
+"id": 7511,
+"ctx": "TOURNAMENT_LIVE_NAME_035",
+"en": "EA Sports Cup"
+},
+{
+"id": 7512,
+"ctx": "FUT_FIND_ALL",
+"en": "Compare Price"
+},
+{
+"id": 7513,
+"ctx": "vpro_nationSelect_purchase",
+"en": "Purchase Code"
+},
+{
+"id": 7514,
+"ctx": "FIWCSelectMenuOption",
+"en": "Select option"
+},
+{
+"id": 7515,
+"ctx": "RIGGINGLEADS",
+"en": "Rigging Leads"
+},
+{
+"id": 7516,
+"ctx": "OSDK_OTP_LOCKPOS_HINT",
+"en": "Lock Position"
+},
+{
+"id": 7517,
+"ctx": "GoToStore",
+"en": "FIFA 17 Store"
+},
+{
+"id": 7518,
+"ctx": "ovl_PaPNewMentality",
+"en": "New Mentality"
+},
+{
+"id": 7519,
+"ctx": "RightForward_FIFA",
+"en": "Right Forward"
+},
+{
+"id": 7520,
+"ctx": "vpshotpower1",
+"en": "SHOT POWER +1"
+},
+{
+"id": 7521,
+"ctx": "TXT_PAP_desc_GK_41",
+"en": "Make 50 Saves"
+},
+{
+"id": 7522,
+"ctx": "vpaggression2",
+"en": "AGGRESSION +2"
+},
+{
+"id": 7523,
+"ctx": "TXT_EASFC_LEVELED_UP",
+"en": "LEVELED UP!!!"
+},
+{
+"id": 7524,
+"ctx": "vpgkkicking4",
+"en": "GK KICKING +4"
+},
+{
+"id": 7525,
+"ctx": "VPro_WhatNextTitle2",
+"en": "Grow your Pro"
+},
+{
+"id": 7526,
+"ctx": "tourny_MatchDay",
+"en": "Match Day %1d"
+},
+{
+"id": 7527,
+"ctx": "DolbyDigitalNotice_title",
+"en": "Dolby Digital"
+},
+{
+"id": 7528,
+"ctx": "FUT_CHALKTUT_PLAYERVIEWS_DESC_4",
+"en": "Loyalty Bonus"
+},
+{
+"id": 7529,
+"ctx": "ZonalMarking",
+"en": "Zonal Marking"
+},
+{
+"id": 7530,
+"ctx": "WEBDEVELOPER",
+"en": "Web Developer"
+},
+{
+"id": 7531,
+"ctx": "SM_MO_M_GO_AHEAD_GOAL",
+"en": "TAKE THE LEAD"
+},
+{
+"id": 7532,
+"ctx": "MoveTheWall",
+"en": "Move The Wall"
+},
+{
+"id": 7533,
+"ctx": "match_day_in_form_clubs",
+"en": "IN FORM TEAMS"
+},
+{
+"id": 7534,
+"ctx": "MainCommentator_por_br_upper",
+"en": "TIAGO LEIFERT"
+},
+{
+"id": 7535,
+"ctx": "CM_Transfers_TransferType_TwoSeasonsLoan",
+"en": "Two-year Loan"
+},
+{
+"id": 7536,
+"ctx": "RandomizeAll",
+"en": "Randomise All"
+},
+{
+"id": 7537,
+"ctx": "Audio&Movie",
+"en": "Audio & Movie"
+},
+{
+"id": 7538,
+"ctx": "CM_RecoveryPhase_3",
+"en": "Physiotherapy"
+},
+{
+"id": 7539,
+"ctx": "PPA_MRF_NICE_PASS",
+"en": "Nice Passing "
+},
+{
+"id": 7540,
+"ctx": "OnlineTeamPlayCustomMatch",
+"en": "Custom Match "
+},
+{
+"id": 7541,
+"ctx": "TXT_NO_TEAM_SHEET",
+"en": "NO TEAM SHEET"
+},
+{
+"id": 7542,
+"ctx": "GM_FUT_OFFLINE_SEAS",
+"en": "S. Pl. Season"
+},
+{
+"id": 7543,
+"ctx": "Formation_FullName_6_upper",
+"en": "4-3-3 FALSE 9"
+},
+{
+"id": 7544,
+"ctx": "BallName_153",
+"en": "Macron Fusion"
+},
+{
+"id": 7545,
+"ctx": "TXT_GIFT_NOT_SENT",
+"en": "GIFT NOT SENT"
+},
+{
+"id": 7546,
+"ctx": "GM_VIRTUALBUNDESLIGA",
+"en": "V. Bundesliga"
+},
+{
+"id": 7547,
+"ctx": "recordcomparison3",
+"en": "TOUGH TRAVELS"
+},
+{
+"id": 7548,
+"ctx": "Randomiseall",
+"en": "Randomise all"
+},
+{
+"id": 7549,
+"ctx": "LineProducer",
+"en": "Line Producer"
+},
+{
+"id": 7550,
+"ctx": "IGNITEONLINE",
+"en": "IGNITE Online"
+},
+{
+"id": 7551,
+"ctx": "LeadModelers",
+"en": "Lead Modelers"
+},
+{
+"id": 7552,
+"ctx": "LOC_LB_CAT_MEPAC",
+"en": "Rest of World"
+},
+{
+"id": 7553,
+"ctx": "PPA_MRF_USE_BALL_upper",
+"en": "MOVE THE BALL"
+},
+{
+"id": 7554,
+"ctx": "Positioning_Abbr12_upper",
+"en": "ATT. POSITION"
+},
+{
+"id": 7555,
+"ctx": "TXT_MATCH_REWARDS",
+"en": "MATCH REWARDS"
+},
+{
+"id": 7556,
+"ctx": "Screenwriters",
+"en": "Screenwriters"
+},
+{
+"id": 7557,
+"ctx": "TXT_TIP_TITLE_ESPN",
+"en": "FOOTBALL NEWS"
+},
+{
+"id": 7558,
+"ctx": "FUT_MINMAX_PRICES",
+"en": "Min/Max Price"
+},
+{
+"id": 7559,
+"ctx": "ChinPosition",
+"en": "Chin Position"
+},
+{
+"id": 7560,
+"ctx": "ToggleStages",
+"en": "Toggle Stages"
+},
+{
+"id": 7561,
+"ctx": "TXT_EASFC_CHALLENGE_XP",
+"en": "CHALLENGE XP:"
+},
+{
+"id": 7562,
+"ctx": "Attract_Video_38",
+"en": "Every second,"
+},
+{
+"id": 7563,
+"ctx": "FUT_END_OF_SEASON_COIN_AWARD",
+"en": "Season Reward"
+},
+{
+"id": 7564,
+"ctx": "vplongshots2",
+"en": "LONG SHOTS +2"
+},
+{
+"id": 7565,
+"ctx": "PPA_MRF_TERRIBLE_SHOT_upper",
+"en": "TERRIBLE SHOT"
+},
+{
+"id": 7566,
+"ctx": "XGroup",
+"en": "%1s Group %2s"
+},
+{
+"id": 7567,
+"ctx": "FootballNews",
+"en": "Football News"
+},
+{
+"id": 7568,
+"ctx": "ToggleVideos",
+"en": "Toggle Videos"
+},
+{
+"id": 7569,
+"ctx": "GameDesigner",
+"en": "Game Designer"
+},
+{
+"id": 7570,
+"ctx": "ToggleAimMode_upper",
+"en": "CHANGE CAMERA"
+},
+{
+"id": 7571,
+"ctx": "GreatPassing",
+"en": "Great Passing"
+},
+{
+"id": 7572,
+"ctx": "OSDK_StatsLeaders",
+"en": "Stats Leaders"
+},
+{
+"id": 7573,
+"ctx": "PK_prompt_2_upper",
+"en": "#C00F21 BEGIN"
+},
+{
+"id": 7574,
+"ctx": "CM_Transfers_TransferType_SeasonLoan",
+"en": "One-year Loan"
+},
+{
+"id": 7575,
+"ctx": "foc_club_settings",
+"en": "Club Settings"
+},
+{
+"id": 7576,
+"ctx": "OSDK_OL_PLAYOFFS_IND",
+"en": "Playoffs: <0>"
+},
+{
+"id": 7577,
+"ctx": "TXT_ITEM_REDEEMED",
+"en": "ITEM REDEEMED"
+},
+{
+"id": 7578,
+"ctx": "CurrentTotal",
+"en": "Current Total"
+},
+{
+"id": 7579,
+"ctx": "FCC_CU_Arena_title_14",
+"en": "Bandana Items"
+},
+{
+"id": 7580,
+"ctx": "TESTLEAD",
+"en": "Test Lead\\r\\n"
+},
+{
+"id": 7581,
+"ctx": "CM_OfferDetails",
+"en": "Offer Details"
+},
+{
+"id": 7582,
+"ctx": "SDB_SF_LDEC",
+"en": "DECISION LOSS"
+},
+{
+"id": 7583,
+"ctx": "FreeBronzePackDesc",
+"en": "1 Bronze Pack"
+},
+{
+"id": 7584,
+"ctx": "MainCommentator_Ita_it_3",
+"en": "FABIO CARESSA"
+},
+{
+"id": 7585,
+"ctx": "NosePosition",
+"en": "Nose Position"
+},
+{
+"id": 7586,
+"ctx": "ucc_spanishdance",
+"en": "Spanish Dance"
+},
+{
+"id": 7587,
+"ctx": "KIN_Keeper",
+"en": "Keeper charge"
+},
+{
+"id": 7588,
+"ctx": "news_injury_type_torn_meniscus",
+"en": "Torn Meniscus"
+},
+{
+"id": 7589,
+"ctx": "vpgkkicking1",
+"en": "GK KICKING +1"
+},
+{
+"id": 7590,
+"ctx": "SDB_ST_AVG_SCORE",
+"en": "Average Score"
+},
+{
+"id": 7591,
+"ctx": "LosingStreakDescr",
+"en": "Losing Streak"
+},
+{
+"id": 7592,
+"ctx": "TOURNAMENT_LIVE_NAME_224",
+"en": "Throwback Cup"
+},
+{
+"id": 7593,
+"ctx": "LeftEarTape",
+"en": "Left Ear Tape"
+},
+{
+"id": 7594,
+"ctx": "StarDiffLose_Event6",
+"en": "Came Up Short"
+},
+{
+"id": 7595,
+"ctx": "OSDK_FAV_TEAM",
+"en": "Favorite Team"
+},
+{
+"id": 7596,
+"ctx": "MainCommentator_Fre_fr_3",
+"en": "HERVE MATHOUX"
+},
+{
+"id": 7597,
+"ctx": "PM_U_GOAL_4_A",
+"en": "Pretty sweet."
+},
+{
+"id": 7598,
+"ctx": "GoalsAllowed",
+"en": "Goals Allowed"
+},
+{
+"id": 7599,
+"ctx": "StatTacklesFouls",
+"en": "TACKLES/FOULS"
+},
+{
+"id": 7600,
+"ctx": "KIN_HelpCustomTactics",
+"en": "QUICK TACTICS"
+},
+{
+"id": 7601,
+"ctx": "OSDK_STATE_MASS",
+"en": "Massachusetts"
+},
+{
+"id": 7602,
+"ctx": "CM_Contract_Offered_Terms",
+"en": "OFFERED TERMS"
+},
+{
+"id": 7603,
+"ctx": "tm_BuildUp",
+"en": "Build Up Play"
+},
+{
+"id": 7604,
+"ctx": "MLS_mlsresults",
+"en": "My LS Results"
+},
+{
+"id": 7605,
+"ctx": "CM_GroupLeaders",
+"en": "Group Leaders"
+},
+{
+"id": 7606,
+"ctx": "ShotAnalysis",
+"en": "Shot Analysis"
+},
+{
+"id": 7607,
+"ctx": "WinterGloves",
+"en": "Winter Gloves"
+},
+{
+"id": 7608,
+"ctx": "LoadSettings",
+"en": "Load Settings"
+},
+{
+"id": 7609,
+"ctx": "kit_13",
+"en": "Physical - 25"
+},
+{
+"id": 7610,
+"ctx": "ucc_handsonears",
+"en": "Hands on Ears"
+},
+{
+"id": 7611,
+"ctx": "ColourCommentator_spa_es",
+"en": "Paco González"
+},
+{
+"id": 7612,
+"ctx": "OSDK_OL_EDITTROPHY",
+"en": "Change Trophy"
+},
+{
+"id": 7613,
+"ctx": "BallTrailIndicator",
+"en": "GK Ball Trail"
+},
+{
+"id": 7614,
+"ctx": "SM_HASHTAG_HASHFLAG_1962",
+"en": "bristolrovers"
+},
+{
+"id": 7615,
+"ctx": "FLB_Cat_Earnings",
+"en": "CM - Earnings"
+},
+{
+"id": 7616,
+"ctx": "node_END_fall_to_knees",
+"en": "Fall To Knees"
+},
+{
+"id": 7617,
+"ctx": "CM_PlayerGrowth",
+"en": "PLAYER GROWTH"
+},
+{
+"id": 7618,
+"ctx": "TXT_EASFC_ENTER_YOUR_ID",
+"en": "Enter Your ID"
+},
+{
+"id": 7619,
+"ctx": "OSDK_OL_SELECT_TEAM",
+"en": "*Select Team:"
+},
+{
+"id": 7620,
+"ctx": "HeavyTacklerCard",
+"en": "Heavy Tackler"
+},
+{
+"id": 7621,
+"ctx": "foc_club_rankings",
+"en": "Club Rankings"
+},
+{
+"id": 7622,
+"ctx": "news_injury_type_broken_finger",
+"en": "Broken Finger"
+},
+{
+"id": 7623,
+"ctx": "CM_RecoveryPhase_6",
+"en": "80% Match Fit"
+},
+{
+"id": 7624,
+"ctx": "SM_MO_M_CROWD_PLEASER",
+"en": "CROWD PLEASER"
+},
+{
+"id": 7625,
+"ctx": "SignContract",
+"en": "Sign Contract"
+},
+{
+"id": 7626,
+"ctx": "CM_No_Role",
+"en": "Not Specified"
+},
+{
+"id": 7627,
+"ctx": "ToggleEvents",
+"en": "Toggle Events"
+},
+{
+"id": 7628,
+"ctx": "TXT_PAP_desc_GK_40",
+"en": "Make 30 Saves"
+},
+{
+"id": 7629,
+"ctx": "vpaggression3",
+"en": "AGGRESSION +3"
+},
+{
+"id": 7630,
+"ctx": "MaxCredits",
+"en": "Maximum Price"
+},
+{
+"id": 7631,
+"ctx": "OSDK_Expand",
+"en": "Increase Size"
+},
+{
+"id": 7632,
+"ctx": "ProfileStat_123",
+"en": "Avg. Opponent"
+},
+{
+"id": 7633,
+"ctx": "SM_MO_S_SCORE_2_GOALS",
+"en": "SCORE 2 GOALS"
+},
+{
+"id": 7634,
+"ctx": "ONL_PERF_PENALTY",
+"en": "Perf. Penalty"
+},
+{
+"id": 7635,
+"ctx": "mls_PlayerFixtures",
+"en": "MY LS RESULTS"
+},
+{
+"id": 7636,
+"ctx": "FUT_SQUAD_WIZARD_TITLE",
+"en": "SQUAD BUILDER"
+},
+{
+"id": 7637,
+"ctx": "OSDK_MUTE_UNMUTE",
+"en": "Mute/ Un-mute"
+},
+{
+"id": 7638,
+"ctx": "COMPLIANCEQA",
+"en": "Compliance QA"
+},
+{
+"id": 7639,
+"ctx": "OSDK_CREATE_LOUNGE",
+"en": "Create Lounge"
+},
+{
+"id": 7640,
+"ctx": "OSDK_CLUBS_TOTAL_CLUBS",
+"en": "Total Clubs: "
+},
+{
+"id": 7641,
+"ctx": "FLB_Cat_Trophies",
+"en": "CM - Trophies"
+},
+{
+"id": 7642,
+"ctx": "vplongshots3",
+"en": "LONG SHOTS +3"
+},
+{
+"id": 7643,
+"ctx": "TeamManagers",
+"en": "Team Managers"
+},
+{
+"id": 7644,
+"ctx": "IGNITEWEBSDK",
+"en": "IGNITE WebSDK"
+},
+{
+"id": 7645,
+"ctx": "top5Scorers",
+"en": "TOP 5 SCORERS"
+},
+{
+"id": 7646,
+"ctx": "CM_NegotiationStatus_AbbrTeamRejected",
+"en": "Club Rejected"
+},
+{
+"id": 7647,
+"ctx": "ColourCommentator_spa_es_upper",
+"en": "PACO GONZÁLEZ"
+},
+{
+"id": 7648,
+"ctx": "IGNITEENGINE",
+"en": "IGNITE Engine"
+},
+{
+"id": 7649,
+"ctx": "PlayerCard",
+"en": "Player Search"
+},
+{
+"id": 7650,
+"ctx": "vpro_onlinefriendly",
+"en": "Drop-In Match"
+},
+{
+"id": 7651,
+"ctx": "CM_Additional_Funds",
+"en": "Request Funds"
+},
+{
+"id": 7652,
+"ctx": "CLASSIC_MATCH",
+"en": "Classic Match"
+},
+{
+"id": 7653,
+"ctx": "TXT_CO_SETTINGS_LABEL",
+"en": "FIFA Trainer:"
+},
+{
+"id": 7654,
+"ctx": "TXT_EASFC_DAILY_XP",
+"en": "DAILY XP CAP:"
+},
+{
+"id": 7655,
+"ctx": "FCE_Quarter_Final_upper",
+"en": "QUARTER FINAL"
+},
+{
+"id": 7656,
+"ctx": "Attract_Video_1",
+"en": "FEEL THE GAME"
+},
+{
+"id": 7657,
+"ctx": "RankDiffWin_Event10",
+"en": "For the Fans!"
+},
+{
+"id": 7658,
+"ctx": "TXT_EASFC_FRIEND_NEWS",
+"en": "FRIENDS' NEWS"
+},
+{
+"id": 7659,
+"ctx": "StatOffsidesTotal",
+"en": "OFFSIDES: %1d"
+},
+{
+"id": 7660,
+"ctx": "CreatePlayerCurrentTeam",
+"en": "Current Team:"
+},
+{
+"id": 7661,
+"ctx": "TXT_FRIENDLIES_SUBMIT",
+"en": "SUBMIT INVITE"
+},
+{
+"id": 7662,
+"ctx": "TOURNAMENT_LIVE_NAME_038",
+"en": "Southern Open"
+},
+{
+"id": 7663,
+"ctx": "PlayScenario",
+"en": "Play Scenario"
+},
+{
+"id": 7664,
+"ctx": "TESTENGINEER",
+"en": "Test Engineer"
+},
+{
+"id": 7665,
+"ctx": "1_SC_0377_A",
+"en": "Born with it."
+},
+{
+"id": 7666,
+"ctx": "GTN_hubScoutStatusAreaScouting",
+"en": "Area Scouting"
+},
+{
+"id": 7667,
+"ctx": "MainCommentator_por_br",
+"en": "Tiago Leifert"
+},
+{
+"id": 7668,
+"ctx": "MOTM_ShotsOnOff",
+"en": "On/Off Target"
+},
+{
+"id": 7669,
+"ctx": "TeamTactics",
+"en": "%1s's Tactics"
+},
+{
+"id": 7670,
+"ctx": "tcmf_merchandising_mixed",
+"en": "Merchandising"
+},
+{
+"id": 7671,
+"ctx": "PositionEdit",
+"en": "Position Edit"
+},
+{
+"id": 7672,
+"ctx": "FUT_UC_BADGE_SEARCH",
+"en": "Badges Search"
+},
+{
+"id": 7673,
+"ctx": "TXT_TROPHY_BEST_DIV",
+"en": "BEST DIVISION"
+},
+{
+"id": 7674,
+"ctx": "FUT_QuantityLeft",
+"en": "QUANTITY LEFT"
+},
+{
+"id": 7675,
+"ctx": "FUT_Message",
+"en": "Leave Message"
+},
+{
+"id": 7676,
+"ctx": "OSDK_OL_REJECT_TRADE",
+"en": "Decline Trade"
+},
+{
+"id": 7677,
+"ctx": "TOURNAMENT_LIVE_NAME_069",
+"en": "Champions Cup"
+},
+{
+"id": 7678,
+"ctx": "ShotDistance",
+"en": "Shot Distance"
+},
+{
+"id": 7679,
+"ctx": "CMYS_ScoutRegion_1_upper",
+"en": "NORTH AMERICA"
+},
+{
+"id": 7680,
+"ctx": "PM_SETTINGS_SELECTSIDES",
+"en": "SELECT\\nSIDES"
+},
+{
+"id": 7681,
+"ctx": "ONAIRTALENT",
+"en": "On Air Talent"
+},
+{
+"id": 7682,
+"ctx": "DeleteSelectedPlayer",
+"en": "DELETE PLAYER"
+},
+{
+"id": 7683,
+"ctx": "ResetDefaults",
+"en": "Reset Changes"
+},
+{
+"id": 7684,
+"ctx": "CLUBS_SEASON_RECORD",
+"en": "SEASON RECORD"
+},
+{
+"id": 7685,
+"ctx": "CM_Email_Transit_ToJobOffers",
+"en": "To Job Offers"
+},
+{
+"id": 7686,
+"ctx": "FCE_Playoff_Round",
+"en": "Playoff Round"
+},
+{
+"id": 7687,
+"ctx": "CM_Email_PAP_Club_Demoted_Starting11_Subject",
+"en": "More Expected"
+},
+{
+"id": 7688,
+"ctx": "FUT_IB_CHALKTUT_REWARDPACK",
+"en": "A reward pack"
+},
+{
+"id": 7689,
+"ctx": "TRAINERLEVEL",
+"en": "TRAINER LEVEL"
+},
+{
+"id": 7690,
+"ctx": "GTN_adj_AttackMinded",
+"en": "Attack Minded"
+},
+{
+"id": 7691,
+"ctx": "Generic_ManagerName",
+"en": "%1s's manager"
+},
+{
+"id": 7692,
+"ctx": "CM_Transfer_Email_Others",
+"en": "and others..."
+},
+{
+"id": 7693,
+"ctx": "FUT_SEASON_OPPONENT_QUIT",
+"en": "Opponent Quit"
+},
+{
+"id": 7694,
+"ctx": "OSDK_SPORTS_SCORES",
+"en": "Sports Scores"
+},
+{
+"id": 7695,
+"ctx": "OSDK_OL_NAME",
+"en": "*LEAGUE NAME:"
+},
+{
+"id": 7696,
+"ctx": "News_Title_ID_5_1",
+"en": "%1s to Leave?"
+},
+{
+"id": 7697,
+"ctx": "TXT_SKILLGAME_NAME_81",
+"en": "PENALTY SAVES"
+},
+{
+"id": 7698,
+"ctx": "CM_HUB_Dynamic Panel_Header_4",
+"en": "Int. Fixtures"
+},
+{
+"id": 7699,
+"ctx": "MouthCorners",
+"en": "Mouth Corners"
+},
+{
+"id": 7700,
+"ctx": "TXT_EASFC_SEASONS_STATS",
+"en": "SEASONS STATS"
+},
+{
+"id": 7701,
+"ctx": "SavesBlocked",
+"en": "Saves Parried"
+},
+{
+"id": 7702,
+"ctx": "CM_SubmitSearch",
+"en": "SUBMIT SEARCH"
+},
+{
+"id": 7703,
+"ctx": "ProfileStat_50",
+"en": "Shot Attempts"
+},
+{
+"id": 7704,
+"ctx": "tcmf_yf_cost",
+"en": "MONTHLY COSTS"
+},
+{
+"id": 7705,
+"ctx": "TOURNAMENT_LIVE_NAME_018",
+"en": "Jester's Open"
+},
+{
+"id": 7706,
+"ctx": "TOURNAMENT_LIVE_NAME_118",
+"en": "European Open"
+},
+{
+"id": 7707,
+"ctx": "CM_Calendar_ViewFixtures",
+"en": "View Fixtures"
+},
+{
+"id": 7708,
+"ctx": "MainCommentator_pol_pl",
+"en": "D. Szpakowski"
+},
+{
+"id": 7709,
+"ctx": "NostrilWidth",
+"en": "Nostril Width"
+},
+{
+"id": 7710,
+"ctx": "KIN_ChangeCameraHelp",
+"en": "Change Camera"
+},
+{
+"id": 7711,
+"ctx": "SubmitSearch",
+"en": "Submit Search"
+},
+{
+"id": 7712,
+"ctx": "FUT_NI_Actions_DuplicateKit",
+"en": "Already Owned"
+},
+{
+"id": 7713,
+"ctx": "Traits_24",
+"en": "Shooting - 75"
+},
+{
+"id": 7714,
+"ctx": "UIARCHITECTS",
+"en": "UI ARCHITECTS"
+},
+{
+"id": 7715,
+"ctx": "Passes_upper",
+"en": "PASS ATTEMPTS"
+},
+{
+"id": 7716,
+"ctx": "Traits_20",
+"en": "Physical - 30"
+},
+{
+"id": 7717,
+"ctx": "SDB_ML <0>",
+"en": "My Level #<0>"
+},
+{
+"id": 7718,
+"ctx": "TXT_ELASTICO_CHOP",
+"en": "Elastico Chop"
+},
+{
+"id": 7719,
+"ctx": "GM_Practice",
+"en": "Practice Mode"
+},
+{
+"id": 7720,
+"ctx": "SaveType_GoldenTicket",
+"en": "Golden Ticket"
+},
+{
+"id": 7721,
+"ctx": "vpro_shooting_accomreward39",
+"en": "Long Shots +4"
+},
+{
+"id": 7722,
+"ctx": "ScrollUsers",
+"en": "Scroll Gamers"
+},
+{
+"id": 7723,
+"ctx": "TXT_ACCOMP_NAME_DRAWING_FOULS",
+"en": "Drawing Fouls"
+},
+{
+"id": 7724,
+"ctx": "CurrentLevel",
+"en": "Current Level"
+},
+{
+"id": 7725,
+"ctx": "CM_talk_to_press",
+"en": "Talk to Press"
+},
+{
+"id": 7726,
+"ctx": "OSDK_SPONSOR_EVENTS",
+"en": "Online Events"
+},
+{
+"id": 7727,
+"ctx": "TOURNAMENT_LIVE_NAME_241",
+"en": "Wooden Shield"
+},
+{
+"id": 7728,
+"ctx": "ShotAccDraw_Event1",
+"en": "Buy a Striker"
+},
+{
+"id": 7729,
+"ctx": "KIN_formation1voice",
+"en": "Formation one"
+},
+{
+"id": 7730,
+"ctx": "BirthCountry",
+"en": "Birth Country"
+},
+{
+"id": 7731,
+"ctx": "menucontrols",
+"en": "MENU CONTROLS"
+},
+{
+"id": 7732,
+"ctx": "EarPlacement",
+"en": "Ear Placement"
+},
+{
+"id": 7733,
+"ctx": "ComboBadge6",
+"en": "Black & White"
+},
+{
+"id": 7734,
+"ctx": "TXT_TROPHY_DBL_BRONZE_TITLE",
+"en": "Bronze Double"
+},
+{
+"id": 7735,
+"ctx": "TXT_CLUBS_RECOMMENDED",
+"en": "(Recommended)"
+},
+{
+"id": 7736,
+"ctx": "Formation_FullName_13_upper",
+"en": "5-4-1 DIAMOND"
+},
+{
+"id": 7737,
+"ctx": "SL_YesSaveFile",
+"en": "Yes, save %1s"
+},
+{
+"id": 7738,
+"ctx": "KIN_BAPDesc4",
+"en": "Keeper Charge"
+},
+{
+"id": 7739,
+"ctx": "LongThrownIn",
+"en": "Long Throw In"
+},
+{
+"id": 7740,
+"ctx": "InternalMemo",
+"en": "Internal Memo"
+},
+{
+"id": 7741,
+"ctx": "OSDK_CNTRY_GF",
+"en": "French Guiana"
+},
+{
+"id": 7742,
+"ctx": "GoalAnalysis",
+"en": "Goal Analysis"
+},
+{
+"id": 7743,
+"ctx": "Formation_FullName_1",
+"en": "3-4-3 Diamond"
+},
+{
+"id": 7744,
+"ctx": "SM_BC_afreshstart",
+"en": "A Fresh Start"
+},
+{
+"id": 7745,
+"ctx": "TXT_GAMEFACE_TOGGLE",
+"en": "USE GAME FACE"
+},
+{
+"id": 7746,
+"ctx": "Fall",
+"en": "Autumn / Fall"
+},
+{
+"id": 7747,
+"ctx": "ControllerFX",
+"en": "Controller FX"
+},
+{
+"id": 7748,
+"ctx": "clubs_kit_choosecolour",
+"en": "Select Colour"
+},
+{
+"id": 7749,
+"ctx": "WORLDARTISTS",
+"en": "World Artists"
+}
+]

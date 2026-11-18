@@ -1,0 +1,434 @@
+[
+{
+"id": 29790,
+"ro": "Bună dimineaţa.\\r\\nConducerea noastră analizează oferta ta de a-l lua împrumut pe %1s, cu opţiune de cumpărare la finalul perioadei de împrumut.\\nConsiderăm că suma implicată este corectă, dar încă nu am luat o decizie finală privind permiterea acestuia de a petrece o perioadă sub formă de împrumut şi, în cele din urmă, de a părăsi clubul nostru.\\r\\nVom reveni cu un răspuns în scurt timp.\\r\\nCu stimă,\\nDirector executiv %2s."
+},
+{
+"id": 29791,
+"ro": "\"\\n\\nUn <UserName> pragmatic a declarat după meci presei: \"\"Ei bine, aşa este în fotbal. Uneori câştigi, alteori pierzi.\"\" \"\"Ne vom întoarce pe terenul de antrenament pentru a lucra la fazele fixe şi pentru a ne pune la punct apărarea\"\", a continuat el. \"\"A fi antrenor este un joc continuu de jonglerie, iar astăzi am scăpat mingea din mână. Voi învăţa din asta şi voi merge mai departe.\"\"\""
+},
+{
+"id": 29792,
+"ro": "Odată cu apropierea evaluării iminente a lui <UserName>, mulţi se întreabă cum se va descurca în ochii comisiei echipei naţionale. Majoritatea suporterilor şi a criticilor deopotrivă sunt siguri că va rămâne în funcţie după evaluare, dar, ca întotdeauna, există o minoritate vocală care nu este niciodată impresionată şi de obicei cei care strigă cel mai tare primesc ceea ce vor."
+},
+{
+"id": 29793,
+"ro": "Covorul i-a fost tras de sub picioare lui <FullPlayerName1> în ceea ce priveşte transferul la <TeamName2>, după ce aceştia s-au retras din negocieri. Totul indica faptul că jucătorul de <PlayerAge1> de ani care evoluează ca <PreferredPos1> era pe picior de plecare de la <TeamName1>, dar această telenovelă a transferului a luat o întorsătură neaşteptată când conducerea echipei <TeamName2> a decis pentru <PlayerName1> să retragă oferta. "
+},
+{
+"id": 29794,
+"ro": "\"\\n\\n<ManagerName> este încântat că şi suporterii sunt mulţumiţi de recenta convocare a lui <PlayerName1> la lot. \"\"Aş fi fost naiv să nu-l aduc pe băiat la echipă. A avut evoluţii bune în campionatul intern şi a deprins gustul victoriei. Sperăm că acest lucru se va transmite şi la echipa naţională şi va fi molipsitor pentru restul echipei\"\", a adăugat antrenorul.\""
+},
+{
+"id": 29795,
+"ro": "\"Mă veţi vedea şi în sezonul viitor, a declarat <FullPlayerName> în timp ce a anunţat că va continua să joace şi în sezonul următor. \"\"M-am simţit bine în aceste ultime luni, aşa că socotesc că mai pot continua cel puţin un an\"\", a spus el. <ManagerName> a declarat că \"\"Sunt încântat la gândul că <PlayerName> va fi alături de noi şi în sezonul viitor. Este un băiat minunat în cadrul clubului\"\".\""
+},
+{
+"id": 29796,
+"ro": "Două echipe aflate în partea de jos a clasamentului se întâlnesc în campionat. <TeamName2> face deplasarea pe terenul formaţiei <TeamName1> pentru acest meci de ligă fără mare strălucire, sperând să le aplice o înfrângere rivalilor de clasament. Cum <TeamName3> are un uşor avantaj în clasament în acest sezon, aceştia vor căuta să-şi menţină adversarii sub ei în ierarhie o dată pentru totdeauna."
+},
+{
+"id": 29797,
+"ro": "\\n\\nÎn cele din urmă, un post care i-ar putea atrage atenţia lui <ManagerName1> este banca tehnică de la <TeamName2>, unde există potenţialul de a construi o echipă redutabilă, capabilă să-l propulseze către realizări şi mai mari. Cei de la <TeamName2> sunt dispuşi la rândul lor să fie o rampă de lansare în carieră pentru <ManagerName1>, într-o mutare care ar putea fi benefică pentru ambele părţi."
+},
+{
+"id": 29798,
+"ro": "Salut %1s,\\n\\nTe anunţ că %2s este pe drum şi va sosi în câteva zile pentru a începe activitatea de observare.\\n\\nFiecare observator va încerca să găsească jucători care corespund tuturor criteriilor stabilite în Instrucţiunile pentru observatori.\\n\\nDacă observi că nu primeşti rezultate, ai putea încerca să modifici criteriile pentru a fi mai puţin specifice.\\n\\nCu respect\\nAntrenor secund"
+},
+{
+"id": 29799,
+"ro": "\"\\n\\nCu mulţi suporteri încă entuziasmaţi după victoria din primul meci şi cu un moral al echipei la fel de ridicat, fanii aşteaptă o nouă victorie în al doilea meci al lui <UserName> pe banca tehnică. \"\"Nu există niciun motiv pentru care să nu repetăm victoria, aceşti băieţi ştiu exact ce au de făcut şi cum să o facă. Totuşi, niciunul dintre ei nu va trata acest meci cu uşurinţă\"\", a adăugat un antrenor extrem de încrezător.\""
+},
+{
+"id": 29800,
+"ro": "\"Înaintea unui meci important între rivalele <TeamName> şi <TeamName2>, <ManagerName> a avut numai cuvinte de laudă la adresa adversarului. \"\"Ambele cluburi se află în poziţii deloc ideale, să fim sinceri\"\", a spus antrenorul, \"\"<TeamName2> este un club mare şi nu îşi merită locul din clasament. Se aşteaptă ca ei să câştige acest meci, aşa că vom merge acolo decişi să le punem piedică.\"\"\""
+},
+{
+"id": 29801,
+"ro": "\"\\n\\n\"\"Ultima persoană care va pune presiune pe echipă în această etapă sunt eu\"\", a declarat <UserName>. \"\"Ei ştiu ce au de făcut şi sunt sigur că vor intra pe teren şi vor da totul pentru a obţine rezultatul de care au nevoie. Însă din momentul în care se aude fluierul de start, totul depinde doar de ei.\"\" Cu un egal şi o victorie în ultimele două meciuri, fanii vor aştepta un alt rezultat bun.\""
+},
+{
+"id": 29802,
+"ro": "{C:MICHAEL}{0.44-3.70}Dacă vrei să prinzi un loc într-o echipă, ai putea alege variante mult mai rele decât Bournemouth.{4.52-11.10}Antrenorul Eddie Howe este unul dintre cei mai buni tehnicieni în ascensiune din ligă şi a făcut o treabă excelentă menţinându-i în prima ligă sezonul trecut, după ce au promovat.{11.85-17.25}Ai putea fi un jucător-cheie care să-i ajute să se salveze din nou în acest sezon. Şi cine ştie, poate chiar mai mult."
+},
+{
+"id": 29803,
+"ro": "\"Mi-a stricat ziua, a fost părerea exprimată de <ManagerName> când a fost întrebat despre golul marcat de <TeamName2>, care a fost la limită în poziţie regulamentară. \"\"Eram destul de sigur că băiatul era în ofsaid la momentul respectiv, dar acum că am avut ocazia să revăd faza, văd că a fost într-adevăr în joc\"\", a spus el. \"\"Trebuie să le dau dreptate arbitrilor, a fost la limită şi au judecat faza perfect\"\", a concluzionat el.\""
+},
+{
+"id": 29804,
+"ro": "Acestea sunt zilele care mă ţin în fotbal, a declarat un <FullPlayerName> vizibil emoţionat după ce <TeamName> s-a calificat în runda următoare a cupei. Vorbind despre gândurile sale de retragere la începutul sezonului, el a precizat clar că totul va depinde de cât de competitiv se simte. Un parcurs lung în cupă l-ar putea face să alunge deocamdată orice discuţie despre retragere."
+},
+{
+"id": 29805,
+"ro": "\\n\\nÎntr-o întorsătură nefericită a evenimentelor, noua achiziţie de la <TeamName1>, <FullPlayerName1>, a fost forţat să părăsească terenul după ce a suferit o accidentare în timpul meciului. Deşi accidentările pe teren sunt obişnuite şi aceasta este prima sa accidentare de când evoluează pentru <TeamName1>, majoritatea fanilor sunt fără îndoială îngrijoraţi că acest lucru l-ar putea afecta pe termen lung pe jucătorul de <PlayerAge1> de ani."
+},
+{
+"id": 29806,
+"ro": "<TeamName1> a terminat la egalitate astăzi, în al doilea meci al lui <UserName> la conducerea echipei, într-o partidă din <CompetitionName> împotriva formaţiei <TeamName2>. A fost un meci disputat aprig, în care ambele echipe au părut capabile să smulgă victoria. Cel mai probabil, <UserName> a văzut jocul ca pe o bună ocazie de a-şi evalua unii jucători, fiind antrenor de doar o scurtă perioadă de timp."
+},
+{
+"id": 29807,
+"ro": "\\n\\nDe asemenea, în căutarea unui antrenor se află şi <TeamName2>, care par în prezent outsideri în cursa pentru semnătura lui <ManagerName1>, dar şansa de a prelua un rol atât de neaşteptat ar putea fi una tentantă pentru tehnicianul de la <TeamName1>. Reprezentanţii echipei <TeamName2> au declarat recent în presă că au nevoie de o schimbare de direcţie şi că <ManagerName1> s-ar potrivi perfect cerinţelor."
+},
+{
+"id": 29808,
+"ro": "Câteva parade extraordinare reuşite săptămâna trecută de un <PreferredPos1>, <FullPlayerName>, au făcut ca numele tânărului promiţător să fie notat cu febrilitate în carnetele observatorilor din întreaga lume.\\nPortarul de la <TeamName>, în vârstă de doar <PlayerAge> de ani, a atras nenumărate laude din partea presei locale încă de la debut şi ar putea fi foarte bine un viitor star în devenire."
+},
+{
+"id": 29809,
+"ro": "\"<ManagerName> a lăudat spiritul de muncă arătat de <TeamName2>.\\nVorbind cu presa înaintea a ceea ce va fi un meci foarte important, <ManagerName> a spus: \"\"<TeamName2> este incredibil de disciplinată, <ManagerName2> petrece mult timp asigurându-se că elevii săi au o conduită exemplară pe teren şi nu-i vezi plângându-se la arbitru la prima ocazie.\"\"\""
+},
+{
+"id": 29810,
+"ro": "Ei bine, ai avut cu siguranţă un sezon fantastic. Sunt extrem de încântat că ai reuşit să-mi depăşeşti toate aşteptările în ceea ce priveşte progresul tău. Aşadar, îţi mulţumesc pentru dedicarea faţă de club şi sper că te-ai bucurat de acest sezon la fel de mult ca mine.\\r\\nNe gândim să-ţi mărim salariul şi am fi încântaţi dacă ai decide să rămâi la club.\\r\\nÎţi mulţumesc,\\nAntrenor"
+},
+{
+"id": 29811,
+"ro": "<UserName>,\\n\\nIeri am avut o întâlnire cu impresarul jucătorului <FullPlayerName1>. Acesta ne-a spus că jucătorul său a vorbit cu tine despre salariu şi că nimic nu a avansat. Am fost de acord să-l trecem pe <PlayerName1> pe lista de transferuri. Poţi rezolva această problemă convenind un nou contract cu el, iar apoi îl poţi scoate de pe lista de transferuri.\\n\\nConducerea clubului <TeamName>"
+},
+{
+"id": 29812,
+"ro": "\"\\n\\nAcest tip de prestaţie disciplinată a noii sale echipe oferă un exemplu pentru restul sezonului. Dacă pot menţine această formă pentru o perioadă îndelungată, nu va trece mult până când <TeamName1> va urca în clasament. \"\"Este încă devreme\"\", a declarat un <UserName> prudent. \"\"Trebuie să ne asigurăm că menţinem acest ritm. Este un sezon lung.\"\"\""
+},
+{
+"id": 29813,
+"ro": "Un moment pur şi simplu groaznic pentru <FullPlayerName>, a cărui accidentare gravă îi pune sub semnul întrebării ultimul sezon din fotbal. Există acum semne de întrebare dacă jucătorul de <PlayerAge> de ani va putea lupta pentru a reveni după această lovitură sau dacă va decide că a fost de ajuns şi că a sosit momentul să agaţe ghetele în cui. O decizie ar putea fi luată în curând."
+},
+{
+"id": 29814,
+"ro": "Salut %1s,\\n\\nTe informăm că următorii jucători au contracte care vor expira în curând:\\n\\n%2s\\n\\nAvând şase luni sau mai puţin rămase de contract, orice jucător de 23 de ani sau mai în vârstă poate negocia trecerea la un alt club la expirarea înţelegerii.\\n\\nAr fi bine să iei măsuri pentru a nu pierde jucătorii pe care doreşti să-i păstrezi.\\n\\nCu respect\\nDirector executiv"
+},
+{
+"id": 29815,
+"ro": "<TeamName1> a anunţat vânzarea lui <PlayerName1> la <TeamName2>. Jucătorul de <PlayerAge1> de ani care evoluează ca <PreferredPos1> a semnat un contract în valoare de <Currency1>, prin care fotbalistul originar din <Nationality> se va muta la o nouă echipă. <ManagerName1> i-a asigurat pe suporteri că va discuta cu preşedintele clubului pentru a se asigura că profiturile din vânzare vor fi reinvestite în lot."
+},
+{
+"id": 29816,
+"ro": "\"<FullPlayerName> a stat în tăcere în tribună şi a privit cum echipa sa <TeamName> a pierdut fără el în faţa celor de la <TeamName2>. \"\"A vrut să joace\"\", a spus <ManagerName>, \"\"dar nu am vrut să risc o nouă recidivă\"\", a continuat el. \"\"Sunt sigur că va fi la 100% până la meciul următor, aşa că atunci vom asista cel mai probabil la revenirea lui în echipă\"\".\""
+},
+{
+"id": 29817,
+"ro": "\"Meciul de ieri, deşi probabil nu cel mai important, a fost cu siguranţă captivant şi i-a permis lui <ManagerName1> să descopere potenţialul lotului său. <FullPlayerName1>, care a fost disponibil după partidă pentru comentarii, a ţinut să-l laude pe tehnicianul de la <TeamName1>: \"\"<ManagerName1> este un tip incredibil. Am lăsat să se înţeleagă că vreau să joc şi, uite-aşa, m-am trezit pe foaia de joc.\"\"\""
+},
+{
+"id": 29818,
+"ro": "<PlayerName1>,\\n\\nTe rugăm să fii conştient că remarcile tale la adresa arbitrilor riscă să pună în umbră munca bună şi realizările tale de la club. Te rugăm să te abţii pe viitor de la comentarii privind deciziile controversate din timpul meciului şi să te concentrezi sută la sută pe rolul tău de <PreferredPos1> la <TeamName1>.\\n<ManagerName1>"
+},
+{
+"id": 29819,
+"ro": "\"\\n\\n<TeamName> se află în pline pregătiri înaintea primului meci oficial sub conducerea lui <UserName>. Totuşi, cu meciul apropiindu-se cu paşi repezi, vor fi oare pregătiţi să se ridice la nivelul aşteptărilor pentru sezonul ce urmează? \"\"Avem jucători excelenţi şi un moral excelent în cadrul lotului. Aşa că nu văd de ce nu ne-am putea ridica la nivelul valoric al tuturor celorlalţi\"\", a declarat <UserName>.\""
+},
+{
+"id": 29820,
+"ro": "Pentru prima dată în FIFA, trăieşte-ţi propria poveste pe teren şi în afara lui ca următoarea stea în ascensiune din Premier League, Alex Hunter. Joacă la orice club din Premier League, sub comanda unor antrenori autentici şi alături de unii dintre cei mai buni fotbalişti ai planetei. Descoperă lumi complet noi în FIFA 17, în timp ce treci prin toate trăirile intense din The Journey."
+},
+{
+"id": 29821,
+"ro": "În timp ce revenitul <FullPlayerName> a jucat cu sufletul şi a fost unul dintre cei mai buni oameni de pe teren, restul echipei sale <TeamName> nu a putut ţine pasul, iar formaţia a suferit o înfrângere în faţa celor de la <TeamName2>. <ManagerName> merită felicitat pentru modul în care a gestionat revenirea titularului său de post <PreferredPos1>, dar restul echipei a fost pur şi simplu de nerecunoscut într-o evoluţie dezamăgitoare."
+},
+{
+"id": 29822,
+"ro": "\"În conferinţa de presă dinaintea meciului împotriva unora dintre rivalii lor tradiţionali, <ManagerName> a avut numai cuvinte de laudă la adresa viitorilor adversari de la <TeamName2>. \"\"<TeamName2> este un club bun, cu câţiva jucători foarte periculoşi pe care va trebui să-i supraveghem atent. Ne-am făcut temele, deoarece suntem obişnuiţi să jucăm împotriva acestui club,\"\" a spus antrenorul. \""
+},
+{
+"id": 29823,
+"ro": "\"<ManagerName> nu a riscat deloc cu jucătorul revenit după accidentare <FullPlayerName>, iar decizia s-a dovedit a fi corectă, în condiţiile în care <TeamName> s-a impus în faţa celor de la <TeamName2>. \"\"Am fost tentat să-l folosesc\"\", a spus tehnicianul, \"\"dar am simţit că era un meci pe care îl puteam câştiga cu jucătorii apţi din punct de vedere fizic pe care îi aveam la dispoziţie, aşa că am decis să nu risc introducerea lui pe teren prea devreme\"\".\""
+},
+{
+"id": 29824,
+"ro": "\"<ManagerName> şi-a exprimat admiraţia pentru tânărul atacant de la <TeamName2>, <FullPlayerName2>, arătându-şi deschis interesul pentru promiţătorul vârf în vârstă de <PlayerAge2> de ani în cadrul unei conferinţe de presă.\\n\"\"O, nu mă ascund deloc,\"\" a recunoscut <ManagerName>, \"\"<PlayerName2> este un tânăr atacant excelent şi orice antrenor ar fi încântat să pregătească pe cineva ca el. Cu siguranţă nici eu nu fac excepţie.\"\" \""
+},
+{
+"id": 29825,
+"ro": "Cel mai recent zvon de pe piaţa transferurilor de astăzi este că %4s îl monitorizează pe jucătorul celor de la %3s, %1s, care a fost golgheterul campionatului în sezonul trecut cu %2s goluri. Aflat într-o formă excelentă, fotbalistul ce evoluează ca %6s va fi cu siguranţă dorit de numeroase cluburi de top după evoluţiile sale prolifice la %3s, dar nu au apărut comentarii oficiale din tabăra clubului cu privire la disponibilitatea jucătorului de %5s de ani."
+},
+{
+"id": 29826,
+"ro": "Nu, nu-mi place să trăiesc aici şi nu-mi place ţara în mod deosebit, dar îmi place să joc sub comanda ta şi nu vreau să plec decât dacă vrei tu să o fac. Ştirile din ziare sunt exagerate ca de obicei, deşi am spus într-adevăr că nu-mi place ţara. Totuşi, asta ţine mai mult de lucrurile cu care sunt eu obişnuit. Sper că mă vei lăsa să rămân şi să-ţi demonstrez că mai am multe de oferit."
+},
+{
+"id": 29827,
+"ro": "<ManagerName1>,\\n\\nUltimul meci nu a fost unul pe care am fi dorit să-l vedem încheindu-se cu o înfrângere şi suntem îngrijoraţi că ţi-ar fi putut afecta cota în rândul suporterilor. Conducerea doreşte să te asigure că te susţine, dar ar dori de asemenea să te vadă făcând schimbări mai vizibile în abordarea meciurilor importante.\\n\\nÎţi mulţumim,\\nConsiliul de Administraţie al <TeamName1>"
+},
+{
+"id": 29828,
+"ro": "\"\\n\\n<PlayerName1> a sărbătorit din toată inima pe teren, fără nicio reţinere, după ce echipa sa a câştigat meciul, demonstrând că acum este cu adevărat un jucător al celor de la <TeamName1>. Când a fost întrebat dacă consideră că a arătat o lipsă de respect faţă de foştii săi coechipieri, a răspuns: \"\"Păi, nu prea. Adică, nu m-am gândit la asta. M-a luat valul momentului. Nu am vrut să jignesc pe nimeni.\"\"\""
+},
+{
+"id": 29829,
+"ro": "O prestaţie solidă a debutantului de la <TeamName1>, <FullPlayerName1>, a dat tonul unei victorii frumoase împotriva unei echipe dificile precum <TeamName2>. Jucătorul de <PlayerAge1> de ani care evoluează ca <PreferredPos1> a arătat mult potenţial şi a părut netulburat de saltul la acest nivel. Viitorul echipei <TeamName1> pare mult mai luminos cu jucători de calitatea lui <PlayerName1> venind din urmă."
+},
+{
+"id": 29830,
+"ro": "{C:MICHAEL}{0.53-7.61}Acum câţiva ani, Stoke nu era tocmai cunoscută pentru un fotbal spectaculos, dar în ultimele sezoane totul s-a schimbat.{8.30-10.97}Echipa e plină acum de talente ofensive creative.{11.55-19.07}Adâncimea lotului e o problemă însă, aşa că ai avea o şansă excelentă de a pătrunde în prima echipă la un club care vrea să realizeze lucruri mari."
+},
+{
+"id": 29831,
+"ro": "{C:ALEX}{0.18-5.82}Sincer să fiu, nu mă aşteptam să-mi văd numele pe foaia de joc, darămite să prind minute pe teren. {6.02-10.63}Dar profiţi de ocazie când ţi se oferă şi am fost de-a dreptul încântat când antrenorul mi-a strigat numărul. {11.10-17.69}A crezut că pot face o treabă bună acolo şi, din fericire pentru mine, a avut dreptate. Înseamnă enorm că are încredere în mine."
+},
+{
+"id": 29832,
+"ro": "Bună dimineaţa.\\n\\nSuntem îngrijoraţi de tensiunile provocate de situaţia lui <FullPlayerName>.\\nDacă nu intenţionezi să foloseşti jucătorul, ar trebui să-l scoatem de pe statul de plată, deoarece ne costă un salariu semnificativ. Aşadar, te rugăm să iei măsurile corespunzătoare pentru a-l include în prima echipă sau a-l vinde la un alt club.\\r\\nCu respect,\\nConsiliul de Administraţie al <TeamName>"
+},
+{
+"id": 29833,
+"ro": "\"Calificarea în Champions' Cup a fost ultima grijă pentru %1s la începutul sezonului. Dar acum, după ce au reuşit să obţină un loc în competiţie, suporterii şi echipa sunt în al nouălea cer. \"\"Este extraordinar să ştim că vom juca împotriva unora dintre cei mai buni fotbalişti din lume şi sperăm că vom intra pe teren şi ne vom face fanii mândri\"\", a declarat antrenorul echipei.\""
+},
+{
+"id": 29834,
+"ro": "Tânărului <FullPlayerName> i s-a transmis că nu mai are niciun viitor la <TeamName>. Un jucător creditat cândva cu mari perspective în fotbal, tânărul de <PlayerAge> de ani care joacă pe postul de <PreferredPos1> s-a chinuit să se impună la <TeamName>, astfel că nu este deloc o surpriză că a fost declarat transferabil. Se pare că cei din club doresc o sumă de transfer pentru jucător, dar vor asculta orice ofertă."
+},
+{
+"id": 29835,
+"ro": "“High And Low”\\r\\nPerformed by Empire Of The Sun\\r\\nWritten by Jonathan Sloan, Luke Steele, Nicholas Littlemore and Peter Mayes\\r\\nPublished by Sony/ATV Music Publishing (Australia) Pty. and Chenfeld Ltd. administered by Universal PolyGram Intl. Publishing\\r\\nRecording courtesy of Universal Music Australia/Astralwerks under license from Universal Music Enterprises"
+},
+{
+"id": 29836,
+"ro": "\"Al treilea meci pentru noul antrenor de la <TeamName1>, <UserName>, iar victoria le aduce trei puncte cruciale în încercarea de a urca în clasament. \"\"Cu o floare nu se face primăvară\"\", a spus un <UserName> filozofic. \"\"Aşa cum nici această singură victorie nu ne rezolvă sezonul. Este totuşi un punct de plecare, iar aceste trei puncte s-ar putea dovedi decisive la sfârşitul sezonului.\"\"\""
+},
+{
+"id": 29837,
+"ro": "Pe fondul zvonurilor legate de nemulţumirea privind timpul de joc primit de <PlayerName1>, acesta ar trebui să fie mai mulţumit de oportunitatea de a pleca sub formă de împrumut. Rămâne însă sub semnul întrebării viitorul pe termen lung al lui <PlayerName1> la <TeamName1> după transferul lui <PlayerName2>. Deocamdată, rămâne de văzut cum se va afirma <PlayerName1> la un alt club."
+},
+{
+"id": 29838,
+"ro": "<FullPlayerName1> a depus o cerere de transfer la <TeamName1>, ceea ce a alertat mai multe cluburi, declanşând o cursă pentru semnătura jucătorului de <PlayerAge> de ani care evoluează ca <PreferredPos1>. Vestea vine ca o lovitură grea pentru <TeamName1>, deoarece el este considerat unul dintre jucătorii de top ai echipei, iar un fotbalist de calibrul său va fi greu de înlocuit dacă cei din club decid să accepte cererea."
+},
+{
+"id": 29839,
+"ro": "\"<ManagerName1> a declarat presei că a refuzat oferta de a prelua conducerea tehnică la <TeamName2> şi că va continua să dea totul pentru a transforma <TeamName1> într-o forţă importantă. \"\"Pur şi simplu am simţit că nu era momentul potrivit pentru mine să preiau acest post\"\", a spus tehnicianul de la <TeamName1>. \"\"Am cel mai mare respect pentru toată lumea de la <TeamName2>, dar pur şi simplu nu am simţit că este postul potrivit pentru mine în acest moment.\"\"\""
+},
+{
+"id": 29840,
+"ro": "Bună dimineaţa, şefu'.\\r\\nO actualizare privind starea de sănătate a lui <FullPlayerName>. Acea problemă de <InjuryName> pe care a suferit-o la sfârşitul sezonului trecut se vindecă frumos. Există o şansă să fie apt pentru primul meci oficial al sezonului, dar probabil nu va fi la 100% din capacitate fizică până atunci, aşa că ai grijă să nu-l reintroduci prea devreme pe teren.\\r\\nCu respect,\\nAntrenor secund."
+},
+{
+"id": 29841,
+"ro": "Cu mult timp în urmă mi s-a spus că ai un potenţial uriaş. Cu siguranţă nu am pierdut timpul urmărindu-te mai atent şi oferindu-ţi minute în echipă. Acum te consider unul dintre jucătorii-cheie ai primului unsprezece. Ai făcut progrese remarcabile de când te-ai alăturat echipei. Dar ţine minte că acesta este doar începutul carierei tale de fotbalist.\\r\\nCu stimă,\\nAntrenor"
+},
+{
+"id": 29842,
+"ro": "\"\\n\\n\"\"Două meciuri şi două victorii, este pur şi simplu minunat. Ce aş putea cere mai mult?\"\" au fost cuvintele unui antrenor mulţumit. \"\"Este incredibil cât de multe par să fi învăţat de la <UserName> într-un interval atât de scurt de timp\"\", a declarat un suporter extaziat după meci. Cu această serie de rezultate, jucătorii şi fanii se vor întreba dacă lucrurile ar putea merge chiar şi mai bine pentru <TeamName>.\""
+},
+{
+"id": 29843,
+"ro": "Pentru a doua oară în ultimele zile, <TeamName> a primit un refuz public categoric din cauza înaintării unei oferte jignitoare pentru un jucător. De data aceasta, fotbalistul în cauză a fost <FullPlayerName>, care evoluează desigur la <TeamName2>. O sumă de <Currency> a fost propusă pentru jucătorul ce acoperă postul de <PreferredPos1>, însă oferta nu avea nicio şansă de reuşită şi nu a făcut decât să-i irite pe oficialii de la <TeamName2>."
+},
+{
+"id": 29844,
+"ro": "Am vrut să ştii că am decis să plec. Pur şi simplu nu mă pot adapta în această ţară şi nu m-am simţit niciodată ca acasă. Ştiu acum că nu o voi face niciodată, aşa că mai bine privesc realitatea în faţă şi îmi rezolv un transfer cât mai curând posibil. Spune-mi cum doreşti să procedez. Te respect pe tine şi ceea ce încerci să realizezi, dar acest loc nu este pentru mine. Îmi pare rău."
+},
+{
+"id": 29845,
+"ro": "Suporterii au sărbătorit pe cinste după ce %1s şi-a asigurat un loc în Champions' Cup datorită unei serii excelente de rezultate în %2s. Fanii au descris perspectiva participării în cupele europene drept o provocare, dar au explicat în continuare că au încredere că echipa lor se poate ridica la nivelul aşteptărilor. Având în vedere acest lucru, toţi ochii vor fi aţintiţi asupra antrenorului şi jucătorilor pentru a confirma încă din primele faze."
+},
+{
+"id": 29846,
+"ro": "{C:MICHAEL}{0.23-8.17}Tony Pulis ştie cum să obţină rezultate. Peste tot pe unde a antrenat a transformat echipele în grupuri extrem de disciplinate şi foarte greu de învins.{8.98-13.26}Aceasta ar putea fi una dintre cele mai bune opţiuni pentru tine dacă vrei să fii titular meci de meci şi, cine ştie,{13.82-18.75}poate ai putea fi jucătorul care aduce un plus de forţă ofensivă pentru a ajuta trupa Baggies să treacă la nivelul următor."
+},
+{
+"id": 29847,
+"ro": "\\n\\nFavoriţii pentru a-l atrage pe <ManagerName1> pe scena internaţională sunt cei de la <TeamName2>, care se află în căutarea unui nou selecţioner. Federaţia de Fotbal din <TeamName2> este dornică, conform relatărilor, să-i ofere entuziasmantului antrenor primul contact cu fotbalul la nivel de reprezentative, cu speranţa că va reuşi să-şi impună stilul de joc de succes la echipa naţională din <TeamName2>."
+},
+{
+"id": 29848,
+"ro": "Cotat foarte bine, <FullPlayerName> a fost pus pe lista de împrumuturi de către <TeamName>. Se spune că tânărul <PreferredPos1> are un viitor strălucit în fotbal, iar clubul său a luat măsuri pentru a-i oferi experienţă la nivel de primă echipă în altă parte. <ManagerName> îl consideră pe jucător o piesă vitală pentru viitorul clubului şi nu există niciun indiciu că un eventual împrumut ar deveni permanent."
+},
+{
+"id": 29849,
+"ro": "Un purtător de cuvânt al lui <FullPlayerName1> a emis un comunicat prin care confirmă relatările conform cărora <PlayerName1> a depus o cerere la club pentru a fi împrumutat. Jucătorul de <PlayerAge1> de ani originar din <Nationality> doreşte să-şi menţină ritmul de joc în acest sezon şi consideră că un împrumut la un alt club îl va păstra într-o formă optimă pentru provocările viitoare. "
+},
+{
+"id": 29850,
+"ro": "\"<UserName> se apropie de sfârşitul perioadei de graţie ca proaspăt numit selecţioner la <TeamName1>. Al treilea său meci pe bancă s-a încheiat la egalitate, într-o confruntare tensionată din <CompetitionName> împotriva formaţiei <TeamName2>. După meci, <UserName> a declarat presei aflate la faţa locului: \"\"A fost un meci greu, cu siguranţă. Ar fi fost frumos să obţinem victoria, dar c'est la vie, pur şi simplu nu a fost să fie.\"\"\""
+},
+{
+"id": 29851,
+"ro": "Înfrângerea a durut pentru <TeamName>, iar <ManagerName> s-a întrebat probabil de pe margine dacă a procedat corect refuzându-i revenirea după accidentare lui <FullPlayerName>. A fost cu siguranţă o decizie prudentă, dar adesea deciziile curajoase definesc marile echipe, iar lăsând pe dinafară un membru crucial al lotului care primise acordul medicilor de a juca, poate că antrenorul şi-a arătat adevăratele limite."
+},
+{
+"id": 29852,
+"ro": "© 2016 MLS. MLS, sigla MLS, Major League Soccer şi elementele de identificare ale echipelor MLS utilizate pe sau în legătură cu acest produs sunt mărci înregistrate, drepturi de autor şi alte forme de proprietate intelectuală ale Major League Soccer, L.L.C., sunt utilizate cu permisiune şi nu pot fi utilizate, integral sau parţial, fără acordul prealabil scris al Major League Soccer, L.L.C. Toate drepturile rezervate."
+},
+{
+"id": 29853,
+"ro": "Îmi pare foarte rău, dar lucrurile nu funcţionează pentru mine şi trebuie să plec, şefu'. Mi-e foarte dor de casă. Cred că am încercat din răsputeri, dar uneori lucrurile pur şi simplu nu merg şi îmi lipsesc prea mult prietenii şi familia. Cred că a început să-mi afecteze jocul şi chiar trebuie să mă transfer. Sper că nu vei avea o părere prea proastă despre mine, dar pur şi simplu nu văd cum aş putea rămâne la <TeamName>."
+},
+{
+"id": 29854,
+"ro": "\\n\\n<FullPlayerName1> are toate motivele să fie entuziasmat, deoarece acest meci a marcat debutul său în acest sezon şi le-a oferit suporterilor de la <TeamName1> o demonstraţie de calitate din partea unui tânăr talent promiţător. Publicul şi-a arătat încântarea la sfârşitul jocului aplaudându-l în picioare pe tânărul de <PlayerAge1> de ani, în timp ce acesta părăsea terenul în îmbrăţişările antrenorului de la <TeamName1>, <ManagerName1>."
+},
+{
+"id": 29855,
+"ro": "\"\\n\\nAl treilea meci pentru noul antrenor de la <TeamName1>, <UserName>, iar victoria le aduce trei puncte cruciale în încercarea de a urca în clasament. \"\"Cu o floare nu se face primăvară\"\", a spus un <UserName> filozofic. \"\"Aşa cum nici această singură victorie nu ne rezolvă sezonul. Este totuşi un punct de plecare, iar aceste trei puncte s-ar putea dovedi decisive la sfârşitul sezonului.\"\"\""
+},
+{
+"id": 29856,
+"ro": "Următorul pas pe drumul către un posibil titlu de campioană pentru <TeamName3> este o partidă împotriva modestei formaţii <TeamName4> . Liderul clasamentului nu ar trebui să aibă mari probleme în a obţine cele trei puncte în această confruntare, dar în această fază a sezonului emoţiile pot prelua uneori controlul, aşa că trebuie să fie atenţi să nu facă un pas greşit împotriva unei echipe pe care ar trebui să o învingă confortabil."
+},
+{
+"id": 29857,
+"ro": "<TeamName1> primeşte vizita rivalilor de la <TeamName2> într-un meci uriaş, care ar putea decide soarta titlului de campioană şi ar putea clarifica bătălia din subsolul clasamentului. În mod evident, <TeamName4> are o misiune extrem de dificilă în faţa valorosului adversar, dar s-au mai văzut şi surprize mai mari, iar dacă <TeamName3> este cuprinsă de tracul din lupta pentru titlu, am putea asista la şocul sezonului."
+},
+{
+"id": 29858,
+"ro": "Zona centrală a terenului a stârnit anumite îngrijorări pentru <TeamName1>. Dacă echipa doreşte să câştige mai multe meciuri, va trebui să întărească linia mediană pentru a câştiga duelurile din treimea mijlocie. Suporterii au creat un sondaj pe blogul echipei <TeamName1> pentru a vedea pe cine şi-ar dori la club; iată o listă de jucători din acel sondaj pe care clubul i-ar putea aduce: "
+},
+{
+"id": 29859,
+"ro": "\"<FullPlayerName> a confirmat cu regret că accidentarea recentă l-a convins să pună capăt carierei. Stăpânindu-şi cu greu lacrimile într-o conferinţă de presă plină de emoţie, el a explicat: \"\"La vârsta de <PlayerAge> de ani, pur şi simplu nu te mai recuperezi atât de uşor şi devine tot mai greu de fiecare dată. Aşa că, având inima frântă, am luat astăzi decizia extrem de dificilă de a mă retrage din fotbalul profesionist.\"\"\""
+},
+{
+"id": 29860,
+"ro": "\"<PlayerName1> este foarte aproape de un acord de împrumut care l-ar putea trimite la <TeamName2>. Fotbalistul de <PlayerAge> de ani din <Nationality> a avut doar câteva cuvinte de spus despre această chestiune. \"\"Nu vreau să-mi fac încă speranţe prea mari, deoarece se pot întâmpla multe până la finalizarea tranzacţiei. Sper ca în curând să punem la punct toate detaliile.\"\"\""
+},
+{
+"id": 29861,
+"ro": "\"\\n\\nEste oare viitorul luminos pentru <TeamName1>? Cu jucători precum <PlayerName> demonstrându-şi noul talent în campionat, este limpede că lucrurile merg spre bine. <ManagerName> a fost de acord, declarând: \"\"Este minunat să vezi jucători noi descurcându-se bine la cluburile lor, dar este şi mai frumos când respectivul joacă pentru echipa ta. Sunt entuziasmat pentru viitor şi cred că şi fanii sunt la fel.\"\"\""
+},
+{
+"id": 29862,
+"ro": "Sincer să fiu, habar nu am de unde vin toate aceste speculaţii. Nu am vorbit cu nimeni din presă. Desigur că nu este întotdeauna uşor să te integrezi la fiecare club, dar muncesc din greu pentru a mă simţi mai acomodat, iar băieţii s-au purtat excelent cu mine până acum. Suporterii par să mă placă, aşa că nu există scuze reale pentru care să nu mă simt în cele din urmă ca acasă aici. Dar, nu, nu este uşor."
+},
+{
+"id": 29863,
+"ro": "\"Reprezentanţii clubului <TeamName1> au susţinut o scurtă conferinţă de presă în această dimineaţă pentru a discuta speculaţiile recente din presă privind pe <ManagerName1> şi deciziile sale din ultima vreme. \"\"<ManagerName1> are întreaga noastră susţinere,\"\" a început unul dintre purtătorii de cuvânt, \"\"rugăm pe toată lumea, inclusiv mass-media, să aibă de asemenea încredere în el şi să contribuie la întărirea spiritului de echipă care reprezintă temelia acestei formaţii.\"\"\""
+},
+{
+"id": 29864,
+"ro": "\"\\n\\nDupă ce a respins oferta celor de la <TeamName2>, <ManagerName1> a fost citat spunând: \"\"Până la urmă, oferta nu a fost întru totul convenabilă. <TeamName2> este o echipă excelentă, dar nu cred că ne potrivim unul cu celălalt.\"\" Majoritatea analiştilor consideră acum că refuzul ar fi putut rezulta din interesul antrenorului de la <TeamName1> pentru alte echipe sau oferte primite recent.\""
+},
+{
+"id": 29865,
+"ro": "\"Sunt foarte mulţumit de felul în care au jucat băieţii. Nu aş fi putut cere un debut mai bun de atât, a declarat <UserName>, la care a adăugat: \"\"Sper ca fiecare meci să se termine la fel. Cu măiestria arătată astăzi, cred că este posibil să învingem pe oricine.\"\" După această victorie la debut, fanii vor fi impresionaţi şi optimişti în privinţa viitorului echipei <TeamName> sub comanda lui <UserName>.\""
+},
+{
+"id": 29866,
+"ro": "\"Tot înainte şi din ce în ce mai bine, au fost cuvintele rostite de <PlayerName> după o serie impresionantă de evoluţii bune în acest sezon. El a adăugat: \"\"Această perioadă fastă din ultima vreme mi-a crescut cu adevărat încrederea. Mulţumită colegilor de echipă şi susţinerii antrenorului, am reuşit să-mi ridic jocul la un alt nivel.\"\" <ManagerName> a adăugat: \"\"Mă bucur pentru băiat şi sper să continue tot aşa. Simt că poate deveni doar mai bun.\"\"\""
+},
+{
+"id": 29867,
+"ro": "\"În duelul de astăzi din %3s dintre %1s şi %2s, %1s este cea care a avansat în faza de %4s a competiţiei %6s după o partidă extrem de spectaculoasă. \"\"A fost un meci greu pentru noi. Odată ce ajungi în această fază a unei competiţii majore, nu există victorii uşoare, dar băieţii au dat dovadă de mult calm pe teren şi nu aş putea fi mai fericit\"\", a declarat %5s într-o conferinţă de presă după încheierea meciului.\""
+},
+{
+"id": 29868,
+"ro": "Jocul pe sezoane îşi face debutul în FIFA Interactive World Cup, adăugând promovări, retrogradări şi titluri campaniei tale de a deveni cel mai bun din lume şi de a concura în Grand Final! Există şase competiţii lunare în FIFA 17, fiecare oferind o şansă de a te remarca. Doar cei care pot concura în diviziile superioare vor avea şansa de a deveni campioni."
+},
+{
+"id": 29869,
+"ro": "\\n\\nNorocul jucătorului ce evoluează ca <PreferredPos1>, <FullPlayerName1>, s-a încheiat în timpul apariţiei sale pentru <TeamName1> în ceea ce mulţi consideraseră un meci fără miză. Tânărul de <PlayerAge1> de ani a fost schimbat în timpul partidei după ce a suferit o accidentare şi a rămas să regrete o ocazie ratată de a emite pretenţii la un loc de titular în prima echipă, după ce îl convinsese pe <ManagerName1> să-l folosească în următorul meci."
+},
+{
+"id": 29870,
+"ro": "\\n\\nAvând în vedere succesul de care s-a bucurat <PlayerName1> pe postul de <PreferredPos2> în echipă, te-ai putea gândi că este de neînţeles de ce <ManagerName1> a ales să aducă un nou jucător pentru acel post. <PlayerName2> a avansat în ierarhia echipei <TeamName1>, iar un observator poate doar să speculeze cu privire la lipsa aparentă de încredere în viitorul lui <PlayerName1> la club."
+},
+{
+"id": 29871,
+"ro": "\"Al treilea meci al lui <UserName> la cârma echipei naţionale din <TeamName1> s-a încheiat astăzi la egalitate, după o partidă nedecisă împotriva celor de la <TeamName2>. În ciuda rezultatului, s-a afirmat că <UserName> a fost mulţumit de evoluţia elevilor săi, declarând: \"\"Rezultatul poate că nu a fost cel mai bun, dar jocul prestat m-a mulţumit. Începem să jucăm aşa cum îmi doresc, însă suntem încă în plină perioadă de tranziţie.\"\"\""
+},
+{
+"id": 29872,
+"ro": "\\n\\nSuporterii echipei <TeamName1> vor fi nerăbdători înaintea meciului de debut al antrenorului <UserName>. Cu tehnicianul urmând să anunţe echipa, atât fanii, cât şi jucătorii se vor întreba cine va fi titularizat înaintea acestui meci atât de aşteptat. Chiar dacă este vorba doar de un amical, scorul final va conta enorm dacă <UserName> îşi doreşte să fie acceptat în noul mediu."
+},
+{
+"id": 29873,
+"ro": "Norii s-ar putea risipi de deasupra viitorului lui <FullPlayerName>, după apariţia unor zvonuri recente conform cărora <TeamName2>, <TeamName3> şi <TeamName4> ar fi dispuse să pună capăt exilului rece şi ploios al jucătorului la <TeamName>.\\nJucătorul originar din <Nationality> care joacă pe postul de <PreferredPos1> a întâmpinat dificultăţi în a se adapta la un climat mai puţin temperat decât cel cu care era obişnuit şi se pare că este deschis la un transfer."
+},
+{
+"id": 29874,
+"ro": "Stimate domnule <ManagerName1>,\\n\\nTemperamentul dumneavoastră pare să vă scape de sub control în ultimele meciuri. Vă rugăm să conştientizaţi că sunteţi un ambasador al acestui club de fotbal, iar limbajul folosit ne pune pe toţi într-o lumină nefavorabilă. Vă rugăm să vă abţineţi pe viitor de la folosirea unui astfel de limbaj colorat şi să vă controlaţi pornirile exagerat de agresive.\\nConsiliul de Administraţie al <TeamName1>"
+},
+{
+"id": 29875,
+"ro": "\"O campanie solidă în faza grupelor din partea %2s îi propulsează pe primul loc în %1s cu %3s puncte. \"\"Sunt extrem de mândru de toţi jucătorii. Au fost excelenţi până acum\"\", a declarat %6s la câteva momente după ultimul meci din faza grupelor, adăugând \"\"acum urmează partea cea mai grea, aşa că este timpul să ne întoarcem la treabă.\"\" %2s va fi însoţită de %4s în faza următoare din %7s, echipă care a încheiat pe locul doi în grupă cu %5s puncte.\""
+},
+{
+"id": 29876,
+"ro": "\"\\n\\nÎn ciuda victoriei din primul său meci pentru <TeamName1>, fanii au rămas rezervaţi în privinţa talentatului antrenor <UserName>. După prima partidă, <UserName> a fost citat declarând: \"\"Sper să le câştig simpatia suporterilor oferindu-le rezultatele pe care le merită. Rezultate pe care <TeamName1> şi jucătorii le merită. Nu m-am aşteptat să mă îndrăgească de la bun început şi nici nu ar fi trebuit.\"\"\""
+},
+{
+"id": 29877,
+"ro": "\"<ManagerName> îi compătimeşte pe toţi cei care înfruntă <TeamName> în acest moment, în timp ce echipa aflată pe val se pregăteşte să dea piept cu <TeamName2>.\\nAdresându-se jurnaliştilor sportivi, a declarat: \"\"Avem atât de multă încredere acum încât chiar îmi pare rău pentru oricine trebuie să joace împotriva noastră. Suntem într-un moment excelent şi vrem să ne asigurăm că profităm la maximum de asta, indiferent împotriva cui jucăm.\"\"\""
+},
+{
+"id": 29878,
+"ro": "<TeamName2> a decis cu reticenţă că nu ar trebui să stea în calea lui <FullPlayerName> şi i-a acceptat cererea de transfer. Acum este doar o chestiune legată de care club va veni cu cea mai bună ofertă în scurta perioadă rămasă la dispoziţie. Cei de la <TeamName2> au considerat că a împiedica plecarea jucătorului ar crea prea multe fricţiuni şi tensiuni în vestiar, aşa că i s-a permis să se transfere."
+},
+{
+"id": 29879,
+"ro": "Căutarea unui nou antrenor s-ar putea încheia pentru <TeamName2>, postul fiind propus lui <ManagerName1>. Reputaţia lui <ManagerName1> a crescut enorm în lumea fotbalului în ultimele luni. Evident, acest lucru nu a trecut neobservat de cluburile rivale, aşa cum demonstrează această ofertă. Mingea este acum în terenul lui <ManagerName1>, în timp ce acesta analizează oportunitatea mutării."
+},
+{
+"id": 29880,
+"ro": "<TeamName> a demonstrat că se poate descurca şi fără <FullPlayerName> – aflat pe punctul de a reveni după accidentare – învingând fără emoţii pe <TeamName2> în absenţa omului de bază. Se presupunea că acesta ar fi putut fi meciul de revenire pentru <PlayerName>, însă acest lucru nu s-a materializat şi a urmărit partida de pe margine, sperând să primească o şansă de a reveni în meciul următor."
+},
+{
+"id": 29881,
+"ro": "\"În duelul dintre două rivale care traversează momente dificile în subsolul clasamentului, <TeamName> şi <TeamName2> se vor înfrunta cu ambele cluburi căutând să urce în clasament. <ManagerName> a fost bine dispus, anticipând o evoluţie solidă a clubului său. \"\"Unul dintre cele mai mari atuuri ale noastre este capacitatea de luptă. Vom intra pe teren şi vom juca dârz de la început până la sfârşit,\"\" a declarat antrenorul.\""
+},
+{
+"id": 29882,
+"ro": "Liderul clasamentului dă piept cu una dintre marile sale rivale, care va căuta să-i oprească marşul triumfal spre titlu. Nu contează că <TeamName3> face legea, iar <TeamName4> se zbate la coada clasamentului, căci rivalitatea dintre aceste formaţii transcende simplele poziţii din clasament. Aşadar, acest meci s-ar putea să nu fie atât de simplu pe cât pare pe hârtie."
+},
+{
+"id": 29883,
+"ro": "\"\\n\\n<UserName> se apropie de sfârşitul perioadei de graţie ca proaspăt numit antrenor la <TeamName1>. Al treilea său meci pe bancă s-a încheiat la egalitate, o confruntare tensionată din <CompetitionName> împotriva formaţiei <TeamName2>. După meci, <UserName> a declarat reprezentanţilor presei: \"\"A fost un meci greu, cu siguranţă. Ar fi fost frumos să obţinem victoria, dar c'est la vie, pur şi simplu nu a fost să fie.\"\"\""
+},
+{
+"id": 29884,
+"ro": "<FullPlayerName1> a fost îmbărbătat în această dimineaţă de vestea că <TeamName1> a primit o ofertă de împrumut de la <TeamName2> pentru el. Se pare că <PlayerName1> şi-ar putea îndeplini în sfârşit dorinţa de a juca mai des la nivelul primei echipe. Deşi trecerea mai are de depăşit câteva formalităţi birocratice, o sursă apropiată jucătorului ne spune că detaliile finale sunt doar o formalitate."
+},
+{
+"id": 29885,
+"ro": "<UserName> ar putea fi în mare încurcătură. Activitatea sa la conducerea echipei naţionale urmează să fie analizată şi se crede că decizia poate fi oricare. De asemenea, opinia suporterilor pare oarecum împărţită, unii lăudându-l pentru abilităţile sale de gestionare a vestiarului şi inteligenţa tactică, în timp ce alţii îl critică aspru pentru favoritismele faţă de anumiţi jucători şi lipsa de pasiune pe marginea terenului. "
+},
+{
+"id": 29886,
+"ro": "\"Am toată încrederea că vom obţine rezultatul aşteptat împotriva celor de la <TeamName2>, a declarat tehnicianul de la <TeamName> în interviul dinaintea partidei. \"\"Este un meci echilibrat, dar am deplină încredere în băieţi că se vor ridica la nivelul adversarilor. Unii ar putea fi de altă părere, dar eu consider că jucătorii noştri dau dovadă de multă inimă şi determinare când vine vorba de meciuri importante, iar această partidă nu face excepţie.\"\"\""
+},
+{
+"id": 29887,
+"ro": "\"Tânărul talent al lui <ManagerName>, <FullPlayerName1>, se află în gândurile suporterilor de când antrenorul de la <TeamName1> l-a promovat de la echipa de tineret. \"\"Aveam nevoie de un nou <PreferredPos1> şi abia aştept să văd cum joacă alături de toţi băieţii experimentaţi de pe teren\"\", a început un fan entuziasmat, \"\"Cum acesta este primul său test adevărat, pun pariu că va încerca să facă un adevărat spectacol.\"\"\""
+},
+{
+"id": 29888,
+"ro": "Dragă %1s,\\r\\nAm ajuns la finalul sezonului, iar conducerea nu ar putea fi mai mulţumită de performanţele tale de până acum.\\r\\nJucătorii şi stafful te privesc cu mult respect şi ai făcut o treabă excelentă integrându-te în viziunea clubului, atât pe teren, cât şi în afara lui.\\r\\nAm fi încântaţi să rămâi la club şi în sezonul următor.\\r\\nCu stimă,\\r\\nConsiliul de Administraţie"
+},
+{
+"id": 29889,
+"ro": "\"<TeamName1> s-a impus astăzi în faţa celor de la <TeamName2>, bifând o victorie frumoasă în al doilea meci al lui <UserName> ca selecţioner. Un <UserName> vizibil fericit a comentat: \"\"Mă bucur mult pentru jucători, au rămas uniţi şi au reuşit o evoluţie solidă. Este întotdeauna dificil la acest nivel, dar dacă vom continua să jucăm aşa cum am făcut-o astăzi, vom putea bifa şi mai multe victorii.\"\"\""
+},
+{
+"id": 29890,
+"ro": "%1s,\\n\\nDupă o evaluare atentă a potenţialilor candidaţi, avem plăcerea de a-ţi oferi postul de selecţioner al echipei naţionale a %2s.\\n\\nPrelungirea acestui contract este condiţionată de o campanie de succes în următoarele 12 luni. Ne aşteptăm de asemenea să îndeplineşti următoarele obiective:\\n%3s\\nReţine că această ofertă va expira la data de %4s dacă nu primim un răspuns din partea ta."
+},
+{
+"id": 29891,
+"ro": "<ManagerName1> a devenit principalul candidat pentru a prelua banca tehnică de la <TeamName2>. Moara de zvonuri s-a turat la maximum în ultima perioadă, o mulţime de nume pentru ocuparea postului fiind vehiculate în presă. În acest moment se pare că <ManagerName1> este favorit să preia conducerea tehnică, iar o ofertă se află în pregătire pentru serviciile antrenorului de la <TeamName1>."
+},
+{
+"id": 29892,
+"ro": "După o perioadă de incertitudine, jucătorul de <PlayerAge1> de ani de la <TeamName1>, ce evoluează ca <PreferredPos1>, <FullPlayerName1>, a fost trecut pe lista de transferuri de antrenorul <ManagerName1>. Acest lucru pune în sfârşit capăt telenovelei continue privind viitorul său, începută odată cu aducerea lui <PlayerName2> acum câteva săptămâni. Mai multe cluburi s-au arătat interesate, dar ar putea fi descurajate de preţul cerut."
+},
+{
+"id": 29893,
+"ro": "Se pare că, după un start dificil de sezon, <ManagerName1> a apelat la calităţile lui <FullPlayerName1> pentru a întări ceea ce majoritatea criticilor consideră a fi cel mai vulnerabil compartiment de pe teren pentru <TeamName1>. Jucătorul de <PlayerAge1> de ani ce evoluează ca <PreferredPos1>, originar din <Nationality>, şi-a petrecut ultimii ani la <TeamName2>, unde plecarea sa va supăra cu siguranţă o mare parte dintre suporterii săi actuali. "
+},
+{
+"id": 29894,
+"ro": "<TeamName1> a avut mari bătăi de cap în apărare în ultima vreme şi mulţi consideră că le lipseşte adâncimea lotului dacă pierd un om din linia defensivă. Suporterii şi-au exprimat opinia cu privire la cine şi-ar dori să joace în culorile clubului pe acel post. Un site de fotbal a întocmit o listă de jucători cu care ar putea fi asociaţi. Iată câţiva dintre jucătorii de pe acea listă:"
+},
+{
+"id": 29895,
+"ro": "Meciurile de debut pot decide felul în care eşti perceput ca profesionist. Presa are tendinţa de a pune o presiune uriaşă pe toată lumea. Dar mie îmi plac provocările, aşa că nu mă las intimidat de aşteptările legate de acest post, a afirmat <UserName>. Cu o încredere la cote maxime, atât suporterii, cât şi spectatorii neutri vor fi intrigaţi să vadă cum se va descurca antrenorul pe banca tehnică."
+},
+{
+"id": 29896,
+"ro": "Până chiar înaintea fluierului de start nu am ştiut sigur dacă vom asista la revenirea după accidentare a lui <FullPlayerName>, dar el a fost inclus în lot şi, din păcate pentru jucător, nu a părut deloc conectat la ritmul meciului, în timp ce <TeamName> a obţinut doar un egal cu <TeamName2>. Accidentarea i-a afectat fără îndoială randamentul, însă a dus meciul la bun sfârşit fără probleme şi îşi va recăpăta forma maximă în săptămânile următoare."
+},
+{
+"id": 29897,
+"ro": "\"<ManagerName> a preferat să nu rişte cu <FullPlayerName>, aflat în perioada de refacere, o decizie în privinţa căreia s-ar putea să aibă rezerve după ce echipa sa a remizat împotriva celor de la <TeamName2>. Tehnicianul de la <TeamName> a declarat: \"\"Ar fi fost un oarecare risc să-l reintroduc pe <PlayerName> astăzi, aşa că am considerat că este cel mai bine să-l las în afara lotului. Dacă era la capacitate maximă, poate ar fi făcut diferenţa pe teren astăzi.\"\"\""
+}
+]

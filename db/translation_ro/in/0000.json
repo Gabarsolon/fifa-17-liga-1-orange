@@ -1,0 +1,1252 @@
+[
+{
+"id": 0,
+"ctx": "SoccerFormationPosition_LB_upper",
+"en": "LB"
+},
+{
+"id": 1,
+"ctx": "ESPNScreenLeagueInfoTxt10",
+"en": "RC"
+},
+{
+"id": 2,
+"ctx": "StickLabelRightLeft_5",
+"en": "In"
+},
+{
+"id": 3,
+"ctx": "TXT_FUT_CHAMPION_REGISTRATION_OK",
+"en": "OK"
+},
+{
+"id": 4,
+"ctx": "OTP_OK",
+"en": "Ok"
+},
+{
+"id": 5,
+"ctx": "Positions_LF_abbr",
+"en": "LF"
+},
+{
+"id": 6,
+"ctx": "HeadCoach_abbr2",
+"en": "HC"
+},
+{
+"id": 7,
+"ctx": "ESPNScreenLeagueInfoTxt18",
+"en": "GA"
+},
+{
+"id": 8,
+"ctx": "TXT_EASFC_3RD_SUFFIX",
+"en": "RD"
+},
+{
+"id": 9,
+"ctx": "TXT_EASFC_VERSUS",
+"en": "VS"
+},
+{
+"id": 10,
+"ctx": "RB",
+"en": "RB"
+},
+{
+"id": 11,
+"ctx": "FitnessCoach_abbr2",
+"en": "FC"
+},
+{
+"id": 12,
+"ctx": "awaygoals_abbr3",
+"en": "ag"
+},
+{
+"id": 13,
+"ctx": "NarrowDefence_abbr2",
+"en": "ND"
+},
+{
+"id": 14,
+"ctx": "Kilograms_abbr2",
+"en": "kg"
+},
+{
+"id": 15,
+"ctx": "NorthEast_abbr2",
+"en": "NE"
+},
+{
+"id": 16,
+"ctx": "RF",
+"en": "RF"
+},
+{
+"id": 17,
+"ctx": "OTP_No",
+"en": "No"
+},
+{
+"id": 18,
+"ctx": "SoccerFormationPosition_RES_upper",
+"en": "RS"
+},
+{
+"id": 19,
+"ctx": "CentreBack_FIFA _abbr3",
+"en": "CB"
+},
+{
+"id": 20,
+"ctx": "GkCoach_abbr2",
+"en": "GC"
+},
+{
+"id": 21,
+"ctx": "IWL_SoccerRole_abbr3_GK",
+"en": "GK"
+},
+{
+"id": 22,
+"ctx": "GamesPlayed_Abbr1",
+"en": "GP"
+},
+{
+"id": 23,
+"ctx": "mls_postponed",
+"en": "PP"
+},
+{
+"id": 24,
+"ctx": "SC_AX",
+"en": "Ax"
+},
+{
+"id": 25,
+"ctx": "StickLabelLeftUp_21",
+"en": "Up"
+},
+{
+"id": 26,
+"ctx": "Large_Morale_Abbr",
+"en": "LG"
+},
+{
+"id": 27,
+"ctx": "Podcast_Setting2",
+"en": "On"
+},
+{
+"id": 28,
+"ctx": "vs",
+"en": "Vs"
+},
+{
+"id": 29,
+"ctx": "ExtraTime_abbr2",
+"en": "ET"
+},
+{
+"id": 30,
+"ctx": "foc_out_of",
+"en": "of"
+},
+{
+"id": 31,
+"ctx": "CLUB_COMMENTARY_NAME_200250",
+"en": "SV"
+},
+{
+"id": 32,
+"ctx": "CompletedDribbles_abbr3",
+"en": "CD"
+},
+{
+"id": 33,
+"ctx": "Z_XENON_BUTTON_LT",
+"en": "LT"
+},
+{
+"id": 34,
+"ctx": "TW",
+"en": "TW"
+},
+{
+"id": 35,
+"ctx": "TS",
+"en": "TS"
+},
+{
+"id": 36,
+"ctx": "SoccerFormationPosition_CF_upper",
+"en": "CF"
+},
+{
+"id": 37,
+"ctx": "SoccerFormationPosition_CM_upper",
+"en": "CM"
+},
+{
+"id": 38,
+"ctx": "CM_CleanSheet_abbr2",
+"en": "CS"
+},
+{
+"id": 39,
+"ctx": "SoccerFormationPosition_LW_upper",
+"en": "LW"
+},
+{
+"id": 40,
+"ctx": "YellowCards_Abbr2",
+"en": "YC"
+},
+{
+"id": 41,
+"ctx": "To",
+"en": "TO"
+},
+{
+"id": 42,
+"ctx": "Morale_VH_Abbr",
+"en": "VH"
+},
+{
+"id": 43,
+"ctx": "Striker_FIFA _abbr3",
+"en": "ST"
+},
+{
+"id": 44,
+"ctx": "Pass_Accuracy_Abbr",
+"en": "PA"
+},
+{
+"id": 45,
+"ctx": "On_allcaps",
+"en": "ON"
+},
+{
+"id": 46,
+"ctx": "CM_HT",
+"en": "HT"
+},
+{
+"id": 47,
+"ctx": "TXT_ONLINE_NO_CAPS",
+"en": "NO"
+},
+{
+"id": 48,
+"ctx": "SoccerFormationPos_Abbr4_SW",
+"en": "SW"
+},
+{
+"id": 49,
+"ctx": "CM_Goal_Difference_label",
+"en": "GD"
+},
+{
+"id": 50,
+"ctx": "SDB_ST_MIN_PLAYED",
+"en": "MP"
+},
+{
+"id": 51,
+"ctx": "It",
+"en": "It"
+},
+{
+"id": 52,
+"ctx": "OSDK_OL_COL_GAMEROOM_ROOM",
+"en": "RM"
+},
+{
+"id": 53,
+"ctx": "HighDefensiveLine_abbr2",
+"en": "HD"
+},
+{
+"id": 54,
+"ctx": "SoccerFormationPos_Abbr4_RW",
+"en": "RW"
+},
+{
+"id": 55,
+"ctx": "LM",
+"en": "LM"
+},
+{
+"id": 56,
+"ctx": "PC",
+"en": "PC"
+},
+{
+"id": 57,
+"ctx": "TXT_HEADTOHEAD_PT_ONLY",
+"en": "PT"
+},
+{
+"id": 58,
+"ctx": "ucc_ko",
+"en": "KO"
+},
+{
+"id": 59,
+"ctx": "SpecialistAreaAbbr3",
+"en": "SA"
+},
+{
+"id": 60,
+"ctx": "NorthWest_abbr2",
+"en": "NW"
+},
+{
+"id": 61,
+"ctx": "FOC_CARD_CM",
+"en": "cm"
+},
+{
+"id": 62,
+"ctx": "StatDistanceMiles_abbr4",
+"en": "mi"
+},
+{
+"id": 63,
+"ctx": "ESPNScreenLeagueInfoTxt11",
+"en": "TC"
+},
+{
+"id": 64,
+"ctx": "Tackles_Attempted_Abbr",
+"en": "AT"
+},
+{
+"id": 65,
+"ctx": "LeftWingAttack_abbr2",
+"en": "LA"
+},
+{
+"id": 66,
+"ctx": "SoccerFormationPos_Abbr4_LS",
+"en": "LS"
+},
+{
+"id": 67,
+"ctx": "eism_Time_AM",
+"en": "AM"
+},
+{
+"id": 68,
+"ctx": "CLUB_COMMENTARY_NAME_200126",
+"en": "IF"
+},
+{
+"id": 69,
+"ctx": "BillionAbbreviation",
+"en": "Bn"
+},
+{
+"id": 70,
+"ctx": "X360_RT_abbr2",
+"en": "RT"
+},
+{
+"id": 71,
+"ctx": "CM_NegotiationTo",
+"en": "To"
+},
+{
+"id": 72,
+"ctx": "SDB_ST_CURWSTK",
+"en": "CU"
+},
+{
+"id": 73,
+"ctx": "SDB_ORIGIN_ID",
+"en": "ID"
+},
+{
+"id": 74,
+"ctx": "Passes_Attempted_Abbr",
+"en": "AP"
+},
+{
+"id": 75,
+"ctx": "RightWingAttack_abbr2",
+"en": "RA"
+},
+{
+"id": 76,
+"ctx": "ESPNScreenLeagueInfoTxt17",
+"en": "GS"
+},
+{
+"id": 77,
+"ctx": "Tactic0Abbr",
+"en": "DA"
+},
+{
+"id": 78,
+"ctx": "QA",
+"en": "QA"
+},
+{
+"id": 79,
+"ctx": "Average_Shots_Abbr",
+"en": "AS"
+},
+{
+"id": 80,
+"ctx": "Morale_VL_Abbr",
+"en": "VL"
+},
+{
+"id": 81,
+"ctx": "CM_pm",
+"en": "PM"
+},
+{
+"id": 82,
+"ctx": "QE",
+"en": "QE"
+},
+{
+"id": 83,
+"ctx": "SDB_CLUBS_COL_FREE_AGENT_S",
+"en": "FA"
+},
+{
+"id": 84,
+"ctx": "CLUB_COMMENTARY_NAME_4233",
+"en": "SK"
+},
+{
+"id": 85,
+"ctx": "FUT_GH_MYPACK_0",
+"en": "MY"
+},
+{
+"id": 86,
+"ctx": "OSDK_OL_OR",
+"en": "Or"
+},
+{
+"id": 87,
+"ctx": "TD",
+"en": "TD"
+},
+{
+"id": 88,
+"ctx": "WingBlock_abbr2",
+"en": "WB"
+},
+{
+"id": 89,
+"ctx": "OSDK_COMMON_COL_ISGM",
+"en": "GM"
+},
+{
+"id": 90,
+"ctx": "TP",
+"en": "TP"
+},
+{
+"id": 91,
+"ctx": "LowDefensiveLine_abbr2",
+"en": "LD"
+},
+{
+"id": 92,
+"ctx": "FoulsSuffered_abbr3",
+"en": "FS"
+},
+{
+"id": 93,
+"ctx": "Weight_abbr2",
+"en": "WT"
+},
+{
+"id": 94,
+"ctx": "TeamTalksAbbr2",
+"en": "TT"
+},
+{
+"id": 95,
+"ctx": "FX",
+"en": "FX"
+},
+{
+"id": 96,
+"ctx": "TXT_EASFC_4TH_SUFFIX",
+"en": "TH"
+},
+{
+"id": 97,
+"ctx": "CM_Goals_For_label",
+"en": "GF"
+},
+{
+"id": 98,
+"ctx": "TXT_EASFC_XP",
+"en": "XP"
+},
+{
+"id": 99,
+"ctx": "SouthEast_abbr2",
+"en": "SE"
+},
+{
+"id": 100,
+"ctx": "Tactic2Abbr",
+"en": "OT"
+},
+{
+"id": 101,
+"ctx": "CM_FT",
+"en": "FT"
+},
+{
+"id": 102,
+"ctx": "CounterAttack_abbr2",
+"en": "CA"
+},
+{
+"id": 103,
+"ctx": "FUT_OF",
+"en": "OF"
+},
+{
+"id": 104,
+"ctx": "OwnGoal_abbr2",
+"en": "OG"
+},
+{
+"id": 105,
+"ctx": "Credits_abbr2",
+"en": "CR"
+},
+{
+"id": 106,
+"ctx": "SDB_ST_TACKLE_ATTEMPT",
+"en": "TA"
+},
+{
+"id": 107,
+"ctx": "Or",
+"en": "or"
+},
+{
+"id": 108,
+"ctx": "Small_Morale_Abbr",
+"en": "SM"
+},
+{
+"id": 109,
+"ctx": "mls_Matchday_abbrev",
+"en": "MD"
+},
+{
+"id": 110,
+"ctx": "GoalDifferential_abbr3",
+"en": "GD "
+},
+{
+"id": 111,
+"ctx": "FIFACam_Replay_Pro",
+"en": "Pro"
+},
+{
+"id": 112,
+"ctx": "New",
+"en": "NEW"
+},
+{
+"id": 113,
+"ctx": "RWB",
+"en": "RWB"
+},
+{
+"id": 114,
+"ctx": "GreenwichMeanTime_abbr3",
+"en": "GMT"
+},
+{
+"id": 115,
+"ctx": "Power_abbr3",
+"en": "PWR"
+},
+{
+"id": 116,
+"ctx": "TEAM_NAME_ABBR_9",
+"en": "AGU"
+},
+{
+"id": 117,
+"ctx": "FUT_PLAYSTYLE_ABBR_4",
+"en": "MRK"
+},
+{
+"id": 118,
+"ctx": "FUT_CHAMPIONS_SELL_HEADER1_2",
+"en": "FUT"
+},
+{
+"id": 119,
+"ctx": "FUT2_MAY",
+"en": "May"
+},
+{
+"id": 120,
+"ctx": "Gains_abbr3",
+"en": "GNS"
+},
+{
+"id": 121,
+"ctx": "February_abbr3",
+"en": "Feb"
+},
+{
+"id": 122,
+"ctx": "TXT_EASFC_FCC",
+"en": "FCC"
+},
+{
+"id": 123,
+"ctx": "FUT_Playstyle_ABBR_0",
+"en": "BAS"
+},
+{
+"id": 124,
+"ctx": "OSDK_OCT",
+"en": "Oct"
+},
+{
+"id": 125,
+"ctx": "ContractAbbr3",
+"en": "CTR"
+},
+{
+"id": 126,
+"ctx": "TablePosition_9",
+"en": "9th"
+},
+{
+"id": 127,
+"ctx": "SoccerFormationPosition_RDM",
+"en": "RDM"
+},
+{
+"id": 128,
+"ctx": "OSDK_PM_REC",
+"en": "REC"
+},
+{
+"id": 129,
+"ctx": "StickLabelRightRight_19",
+"en": "Out"
+},
+{
+"id": 130,
+"ctx": "vpro_stat_1",
+"en": "Won"
+},
+{
+"id": 131,
+"ctx": "InstantReplayCam_2",
+"en": "End"
+},
+{
+"id": 132,
+"ctx": "FUT2_SEP",
+"en": "Sep"
+},
+{
+"id": 133,
+"ctx": "Thursday_abbr3",
+"en": "Thu"
+},
+{
+"id": 134,
+"ctx": "TablePosition_1",
+"en": "1st"
+},
+{
+"id": 135,
+"ctx": "FUT_PLAYSTYLE_ABBR_22",
+"en": "GLO"
+},
+{
+"id": 136,
+"ctx": "AwayLosses_abbr3",
+"en": "AL "
+},
+{
+"id": 137,
+"ctx": "LAbbr_76",
+"en": "ROW"
+},
+{
+"id": 138,
+"ctx": "TEAM_NAME_ABBR_5",
+"en": "MES"
+},
+{
+"id": 139,
+"ctx": "SoccerRole_abbr3_FWD_upper",
+"en": "FWD"
+},
+{
+"id": 140,
+"ctx": "TEAM_NAME_ABBR_1",
+"en": "ALA"
+},
+{
+"id": 141,
+"ctx": "Labbr_2133",
+"en": "UNI"
+},
+{
+"id": 142,
+"ctx": "FUT_CHALKTUT_BUILDINGCHEMISTRY_DESC_8",
+"en": "NAT"
+},
+{
+"id": 143,
+"ctx": "Any",
+"en": "Any"
+},
+{
+"id": 144,
+"ctx": "Z_SC_TAB",
+"en": "Tab"
+},
+{
+"id": 145,
+"ctx": "SDB_ST_CS_DEF",
+"en": "DCS"
+},
+{
+"id": 146,
+"ctx": "FUT_DREAMSQUAD_INTRO_YES",
+"en": "Yes"
+},
+{
+"id": 147,
+"ctx": "Offense_abbr3",
+"en": "ATT"
+},
+{
+"id": 148,
+"ctx": "TablePosition_5",
+"en": "5th"
+},
+{
+"id": 149,
+"ctx": "CM_Points_label",
+"en": "PTS"
+},
+{
+"id": 150,
+"ctx": "SDB_ST_PLAYERRATING",
+"en": "RTG"
+},
+{
+"id": 151,
+"ctx": "FUT2_NOV",
+"en": "Nov"
+},
+{
+"id": 152,
+"ctx": "CO_Settings_Off",
+"en": "Off"
+},
+{
+"id": 153,
+"ctx": "TablePosition_caps_3",
+"en": "3RD"
+},
+{
+"id": 154,
+"ctx": "SoccerFormationPosition_CAM_upper",
+"en": "CAM"
+},
+{
+"id": 155,
+"ctx": "SoccerFormationPosition_LDM",
+"en": "LDM"
+},
+{
+"id": 156,
+"ctx": "StickLabelRightUp_10",
+"en": "Low"
+},
+{
+"id": 157,
+"ctx": "SoccerFormationPosition_RWM_upper",
+"en": "RWM"
+},
+{
+"id": 158,
+"ctx": "Abbr_Accuracy",
+"en": "ACC"
+},
+{
+"id": 159,
+"ctx": "Ovr",
+"en": "Ovr"
+},
+{
+"id": 160,
+"ctx": "OSDK_TBD",
+"en": "TBD"
+},
+{
+"id": 161,
+"ctx": "OSDK_WIN",
+"en": "Win"
+},
+{
+"id": 162,
+"ctx": "OSDK_SMS",
+"en": "SMS"
+},
+{
+"id": 163,
+"ctx": "musictabtitle_1",
+"en": "PRO"
+},
+{
+"id": 164,
+"ctx": "SoccerFormationPosition_RESERVE3",
+"en": "RES"
+},
+{
+"id": 165,
+"ctx": "LWB",
+"en": "LWB"
+},
+{
+"id": 166,
+"ctx": "CLUB_COMMENTARY_NAME_200270",
+"en": "VFB"
+},
+{
+"id": 167,
+"ctx": "TopRadar",
+"en": "Top"
+},
+{
+"id": 168,
+"ctx": "news_injury_type_acl",
+"en": "ACL"
+},
+{
+"id": 169,
+"ctx": "Abbr_PassRating",
+"en": "PAS"
+},
+{
+"id": 170,
+"ctx": "FUT_Season_Div",
+"en": "DIV"
+},
+{
+"id": 171,
+"ctx": "CreateGenericPlayerBoot_1_11_11",
+"en": "Red"
+},
+{
+"id": 172,
+"ctx": "SDB_ST_DBLSWON3",
+"en": "SDW"
+},
+{
+"id": 173,
+"ctx": "TablePosition_caps_7",
+"en": "7TH"
+},
+{
+"id": 174,
+"ctx": "CM_DefaultFirstName",
+"en": "Mr."
+},
+{
+"id": 175,
+"ctx": "SoccerFormationPosition_CDM",
+"en": "CDM"
+},
+{
+"id": 176,
+"ctx": "LogoKit2",
+"en": "LK2"
+},
+{
+"id": 177,
+"ctx": "OSDK_LOBBY_OTP",
+"en": "OTP"
+},
+{
+"id": 178,
+"ctx": "Penalties_abbr3",
+"en": "PEN"
+},
+{
+"id": 179,
+"ctx": "news_injury_type_mcl",
+"en": "MCL"
+},
+{
+"id": 180,
+"ctx": "CM_Buy",
+"en": "BUY"
+},
+{
+"id": 181,
+"ctx": "news_injury_type_lcl",
+"en": "LCL"
+},
+{
+"id": 182,
+"ctx": "LogoKit6",
+"en": "LK6"
+},
+{
+"id": 183,
+"ctx": "Labbr_51_upper",
+"en": "SCL"
+},
+{
+"id": 184,
+"ctx": "LeftCentreForward_FIFA _abbr3",
+"en": "LCF"
+},
+{
+"id": 185,
+"ctx": "CLUB_COMMENTARY_NAME_4004",
+"en": "AFC"
+},
+{
+"id": 186,
+"ctx": "Curve_abbr3",
+"en": "CRV"
+},
+{
+"id": 187,
+"ctx": "SoccerFormationPosition_RCB_upper",
+"en": "RCB"
+},
+{
+"id": 188,
+"ctx": "news_injury_type_pulled_hip_flexor",
+"en": "Hip"
+},
+{
+"id": 189,
+"ctx": "January_abbr3_upper",
+"en": "JAN"
+},
+{
+"id": 190,
+"ctx": "FUT_PLAYSTYLE_ABBR_12",
+"en": "GRD"
+},
+{
+"id": 191,
+"ctx": "SoccerRole_abbr3_M_upper",
+"en": "MID"
+},
+{
+"id": 192,
+"ctx": "TeamBreakdownDEF",
+"en": "DEF"
+},
+{
+"id": 193,
+"ctx": "Hub",
+"en": "Hub"
+},
+{
+"id": 194,
+"ctx": "TML_abbr",
+"en": "MTL"
+},
+{
+"id": 195,
+"ctx": "SDB_ST_SAVES_AVE",
+"en": "AVS"
+},
+{
+"id": 196,
+"ctx": "CLUB_COMMENTARY_NAME_4271",
+"en": "VFL"
+},
+{
+"id": 197,
+"ctx": "ComboKit9",
+"en": "CK9"
+},
+{
+"id": 198,
+"ctx": "Pos_unlocked",
+"en": "ANY"
+},
+{
+"id": 199,
+"ctx": "SuccessfulTackles_abbr3",
+"en": "TAK"
+},
+{
+"id": 200,
+"ctx": "Prestige_abbr3",
+"en": "REP"
+},
+{
+"id": 201,
+"ctx": "LeftStriker_FIFA _abbr3",
+"en": "LS "
+},
+{
+"id": 202,
+"ctx": "FUT_PLAYSTYLE_ABBR_16",
+"en": "HUN"
+},
+{
+"id": 203,
+"ctx": "CLUB_COMMENTARY_NAME_200005",
+"en": "AIK"
+},
+{
+"id": 204,
+"ctx": "November_abbr3_upper",
+"en": "NOV"
+},
+{
+"id": 205,
+"ctx": "RedCards_Abbr2",
+"en": "BAN"
+},
+{
+"id": 206,
+"ctx": "FUT_SEC",
+"en": "Sec"
+},
+{
+"id": 207,
+"ctx": "ComboKit5",
+"en": "CK5"
+},
+{
+"id": 208,
+"ctx": "ProfileStat_68Abbr",
+"en": "ET2"
+},
+{
+"id": 209,
+"ctx": "April_abbr3_upper",
+"en": "APR"
+},
+{
+"id": 210,
+"ctx": "ComboKit1",
+"en": "CK1"
+},
+{
+"id": 211,
+"ctx": "Number_abbrCL",
+"en": "No."
+},
+{
+"id": 212,
+"ctx": "TeamStrength_abbr3",
+"en": "STR"
+},
+{
+"id": 213,
+"ctx": "HomeWins_abbr3",
+"en": "HW "
+},
+{
+"id": 214,
+"ctx": "SDB_ST_SHOT_ON_GOAL",
+"en": "SOG"
+},
+{
+"id": 215,
+"ctx": "Kit",
+"en": "Kit"
+},
+{
+"id": 216,
+"ctx": "SUB",
+"en": "SUB"
+},
+{
+"id": 217,
+"ctx": "LongestUndefeatedStreak_abbr3",
+"en": "UDF"
+},
+{
+"id": 218,
+"ctx": "OSDK_NOW",
+"en": "Now"
+},
+{
+"id": 219,
+"ctx": "GTN_Tab_Recent",
+"en": "ALL"
+},
+{
+"id": 220,
+"ctx": "TimeOfDay_1",
+"en": "Day"
+},
+{
+"id": 221,
+"ctx": "CM_EC_Connector_and",
+"en": "and"
+},
+{
+"id": 222,
+"ctx": "FUT_NI_Tag",
+"en": "Tag"
+},
+{
+"id": 223,
+"ctx": "March_abbr3",
+"en": "Mar"
+},
+{
+"id": 224,
+"ctx": "Average_Match_Rating_Abbr",
+"en": "AVG"
+},
+{
+"id": 225,
+"ctx": "FitnessIncreaseAbbr3",
+"en": "FT+"
+},
+{
+"id": 226,
+"ctx": "PlainKit6",
+"en": "PK6"
+},
+{
+"id": 227,
+"ctx": "DEMO_NAME_ABBR_2",
+"en": "UL2"
+},
+{
+"id": 228,
+"ctx": "LCB",
+"en": "LCB"
+},
+{
+"id": 229,
+"ctx": "CM_FreeAgents_Abbr3",
+"en": "FrA"
+},
+{
+"id": 230,
+"ctx": "CleanSheets_abbr3",
+"en": "CS "
+},
+{
+"id": 231,
+"ctx": "goals_Abbr",
+"en": "GLS"
+},
+{
+"id": 232,
+"ctx": "August_abbr3",
+"en": "Aug"
+},
+{
+"id": 233,
+"ctx": "Appearances_abbr3",
+"en": "APP"
+},
+{
+"id": 234,
+"ctx": "NIBState",
+"en": "HUD"
+},
+{
+"id": 235,
+"ctx": "FUT_UC_CHM",
+"en": "CHM"
+},
+{
+"id": 236,
+"ctx": "mm_Position",
+"en": "Pos"
+},
+{
+"id": 237,
+"ctx": "PlainKit2",
+"en": "PK2"
+},
+{
+"id": 238,
+"ctx": "Off_allcaps",
+"en": "OFF"
+},
+{
+"id": 239,
+"ctx": "MLS_posabbrev",
+"en": "POS"
+},
+{
+"id": 240,
+"ctx": "Assists_abbr",
+"en": "AST"
+},
+{
+"id": 241,
+"ctx": "Substitute_abbr3",
+"en": "Sub"
+},
+{
+"id": 242,
+"ctx": "OSDK_NAV_ONLINE_FAQ",
+"en": "FAQ"
+},
+{
+"id": 243,
+"ctx": "SM_HASHTAG_CHANTS_2",
+"en": "UTV"
+},
+{
+"id": 244,
+"ctx": "aggregate_abbr3",
+"en": "agg"
+},
+{
+"id": 245,
+"ctx": "FUT2_JUL",
+"en": "Jul"
+},
+{
+"id": 246,
+"ctx": "Injury_Leg",
+"en": "Leg"
+},
+{
+"id": 247,
+"ctx": "FOC_OVR",
+"en": "OVR"
+},
+{
+"id": 248,
+"ctx": "tourny_FillFromAll",
+"en": "All"
+},
+{
+"id": 249,
+"ctx": "PlainKit3",
+"en": "PK3"
+}
+]

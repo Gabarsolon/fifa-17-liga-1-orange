@@ -1,0 +1,1252 @@
+[
+{
+"id": 20250,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_NEWS_LONG_RANGE_GOAL_6",
+"en": "Just saw Alex Hunter's wonder goal. #sublime"
+},
+{
+"id": 20251,
+"ctx": "KIN_reffeedback",
+"en": "Fuck\\r\\nShit\\r\\nWank\\r\\nCock\\r\\nTwat\\r\\nKnob"
+},
+{
+"id": 20252,
+"ctx": "news_title_playeroffer_loanoffermade_4",
+"en": "<TeamName1> Receive <PlayerName1> Loan Offer"
+},
+{
+"id": 20253,
+"ctx": "tourny_TeamsAdvancingGroupDescr",
+"en": "Select how many teams can advance per group."
+},
+{
+"id": 20254,
+"ctx": "TalkToPress_Title_Unnerve_Bad_OpponentDEF_Player_1",
+"en": "<ManagerName> Not Impressed By <PlayerName2>"
+},
+{
+"id": 20255,
+"ctx": "News_Title_InjuredPlayer_PlayingBad_TeamDraws_4",
+"en": "<PlayerName> Unimpressive In <TeamName> Draw"
+},
+{
+"id": 20256,
+"ctx": "vpro_mintacklesslide",
+"en": "A minimum of 2 tackles per match is required"
+},
+{
+"id": 20257,
+"ctx": "FUT_NO_MANAGERS",
+"en": "There are no managers available in your Club"
+},
+{
+"id": 20258,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_HERO_BREAKS_RECORD_1",
+"en": "@MrAlexHunter's record. i-n-c-r-e-d-i-b-l-e."
+},
+{
+"id": 20259,
+"ctx": "news_title_newsigning_progress_neutralform_2",
+"en": "Not Bad, But Not Great Declares <PlayerName>"
+},
+{
+"id": 20260,
+"ctx": "ACH_DESC_38",
+"en": "Win the Women's International Cup tournament"
+},
+{
+"id": 20261,
+"ctx": "OSDK_CLUBS_ENTER_ROOM_HELP",
+"en": "Press ^Y^ to enter the selected Match Lobby."
+},
+{
+"id": 20262,
+"ctx": "news_title_criticizes_notplayed_1",
+"en": "<PlayerName> Disappointed with <ManagerName>"
+},
+{
+"id": 20263,
+"ctx": "ConfirmDiscardChanges",
+"en": "Are you sure you want to reset your changes?"
+},
+{
+"id": 20264,
+"ctx": "news_title_happyplayer_tier1_1",
+"en": "<PlayerName> Enjoying <TeamName> Involvement"
+},
+{
+"id": 20265,
+"ctx": "news_title_streak_postmatch_win_continues_4",
+"en": "<TeamName2> Unable Disrupt <TeamName1>'s Run"
+},
+{
+"id": 20266,
+"ctx": "vpro_ballskills_accomdesc11",
+"en": "Pull off all 2 star skill moves in the Arena"
+},
+{
+"id": 20267,
+"ctx": "DoYouWantToLoad",
+"en": "Do you want to load the selected saved game?"
+},
+{
+"id": 20268,
+"ctx": "TalkToPress_Title_MotivateUnnerveUserTeamDerbyRival_RelegationBattle_4",
+"en": "<ManagerName> Doubts Importance Of Big Clash"
+},
+{
+"id": 20269,
+"ctx": "cm_news_title_matchobjective_allmet_1",
+"en": "Manager Praises Outstanding %1s Performances"
+},
+{
+"id": 20270,
+"ctx": "FIFA12_EASFCVID_022",
+"en": "match scenarios of games that just happened."
+},
+{
+"id": 20271,
+"ctx": "CM_Email_ContractRebel_PlayerRejectContractSubject_1",
+"en": "[Info] <PlayerName> Contract Refusal Problem"
+},
+{
+"id": 20272,
+"ctx": "TimeScoreDisplayDescr",
+"en": "Toggles the time and score display on & off."
+},
+{
+"id": 20273,
+"ctx": "TalkToPress_Title_PraiseUserTeamNeither_HighTeams_4",
+"en": "Team Effort Nothing To Do With <ManagerName>"
+},
+{
+"id": 20274,
+"ctx": "OSDK_CLUBS_JOIN_CONFIRM",
+"en": "Are you sure you wish to sign for this Club?"
+},
+{
+"id": 20275,
+"ctx": "SL_Load_File_Not_Exist",
+"en": "%1s failed to load, the file does not exist."
+},
+{
+"id": 20276,
+"ctx": "OSDK_OL_CREATE_LEAGUE_HELP",
+"en": "Create the League with your chosen settings."
+},
+{
+"id": 20277,
+"ctx": "FCC_NEW_MENU",
+"en": "Earn, Trade, and Battle your way to victory!"
+},
+{
+"id": 20278,
+"ctx": "news_title_request_requestmade_transfer_2",
+"en": "Transfer Request Issued by <FullPlayerName1>"
+},
+{
+"id": 20279,
+"ctx": "OSDK_OL_CONFIRM_SIMULATING_GAME",
+"en": "Are you sure you wish to simulate this game?"
+},
+{
+"id": 20280,
+"ctx": "vpro_defence_accomdesc2",
+"en": "Make 2 successful sliding tackles in a match"
+},
+{
+"id": 20281,
+"ctx": "TXT_TRIAL_BUY_TODAY",
+"en": "BUY FIFA 17 TODAY! SELECT YOUR VERSION BELOW"
+},
+{
+"id": 20282,
+"ctx": "OSDK_CLUBS_PETITION_AUTO_ACCEPTED",
+"en": "Congratulations, you've signed for the Club."
+},
+{
+"id": 20283,
+"ctx": "news_title_newsigning_progress_poorform_2",
+"en": "<ManagerName> Sure <PlayerName> Will Improve"
+},
+{
+"id": 20284,
+"ctx": "SprintSpeedDesc",
+"en": "Select this trait to increase your top speed"
+},
+{
+"id": 20285,
+"ctx": "TalkToPress_Title_Praise_FormBad_OwnNone_Player_1",
+"en": "<ManagerName> Praises Poor Form <PlayerName>"
+},
+{
+"id": 20286,
+"ctx": "TXT_VP_SHOOTING_41_DESC",
+"en": "Score from a penalty 10 times in your career"
+},
+{
+"id": 20287,
+"ctx": "News_Title_ForeignPlayerWantsToLeave_Transfered_HATESWEATHER_2",
+"en": "<PlayerName>: Bye Bye Rain, Hello <TeamName>"
+},
+{
+"id": 20288,
+"ctx": "CM_managertalk_preview_2a_1",
+"en": " We should win this match against this team."
+},
+{
+"id": 20289,
+"ctx": "CM_PAP_NOT_PICKED",
+"en": "You have not been selected in today's squad."
+},
+{
+"id": 20290,
+"ctx": "News_Title_ForeignPlayerWantsToLeave_SpeculativeTeamsCloseIn_UNSETTLED_3",
+"en": "Efforts Being Made To Hang Onto <PlayerName>"
+},
+{
+"id": 20291,
+"ctx": "TalkToPress_Title_PraiseOpponentDerbyRival_generic_1",
+"en": "<ManagerName> Demands Respect For Opposition"
+},
+{
+"id": 20292,
+"ctx": "OSDK_NEWS_RROFS",
+"en": "Retrieving recent offers from the EA Server."
+},
+{
+"id": 20293,
+"ctx": "MF_goalassist_2",
+"en": "You showed great awareness to set up a goal."
+},
+{
+"id": 20294,
+"ctx": "OSDK_OL_SUBMIT_CREATE",
+"en": "Are you sure you want to create this league?"
+},
+{
+"id": 20295,
+"ctx": "TXT_VP_PHYSICAL_34_DESC",
+"en": "Win a jumping header 70 times in your career"
+},
+{
+"id": 20296,
+"ctx": "FUT_CHALKTUT_TRANSFERTARGETS_DESC_6",
+"en": "The item expired or was won by another user."
+},
+{
+"id": 20297,
+"ctx": "SM_SOURCE_FEMALE_FAN_GENERAL_SUBTOPIC_MATCH_DAY_AFTER_WIN_2",
+"en": "LOVE IT WHEN THE BOYS GET THE JOB DONE! WIN!"
+},
+{
+"id": 20298,
+"ctx": "vpro_physical_accomdesc2",
+"en": "Win 5 man of the match awards in your career"
+},
+{
+"id": 20299,
+"ctx": "UserTeamCPUControlledWarning",
+"en": "A user team cannot be controlled by the CPU."
+},
+{
+"id": 20300,
+"ctx": "news_title_lost_lostplayerprogress_doingaverage_4",
+"en": "<TeamName1> Review Purchase of <PlayerName1>"
+},
+{
+"id": 20301,
+"ctx": "BeTheProNoSideWarning",
+"en": "You need to select a side to play this mode."
+},
+{
+"id": 20302,
+"ctx": "news_title_investor_stagemoney_10",
+"en": "Splash the Cash Demand <TeamName> Supporters"
+},
+{
+"id": 20303,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_HERO_MATCH_GET_YELLOW_CARD_1",
+"en": "Yellow card for youngster Alex Hunter today."
+},
+{
+"id": 20304,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_HERO_MATCH_STARTING_ELEVEN_9",
+"en": "<HeroTeam> giving Alex Hunter a start today."
+},
+{
+"id": 20305,
+"ctx": "FUT_LP_RONDON_BIO",
+"en": "2x Team of the Season\\n\\n1x Man of the Match"
+},
+{
+"id": 20306,
+"ctx": "OperationsAndLiveSupportSupportServices",
+"en": "Operations & Live Support - Support Services"
+},
+{
+"id": 20307,
+"ctx": "OSDK_CLUB_SEARCH_FAILURE",
+"en": "Unable to find this Club.  Please try again."
+},
+{
+"id": 20308,
+"ctx": "vpro_ballskills_accomdesc24",
+"en": "Pull off all 4 star skill moves in the Arena"
+},
+{
+"id": 20309,
+"ctx": "TUT_WELCOME_TITLE",
+"en": "WELCOME TO THE FIFA 17 INTERACTIVE TUTORIAL!"
+},
+{
+"id": 20310,
+"ctx": "news_title_seasonpreview_promotion_2",
+"en": "Going Up The Battle Cry From <TeamName> Fans"
+},
+{
+"id": 20311,
+"ctx": "cm_emails_internationals_players_leaving_subject",
+"en": "[Info] Players Leaving on International Duty"
+},
+{
+"id": 20312,
+"ctx": "GENERALMANAGERSENIORVICEPRESIDENT",
+"en": "Senior Vice President, Group General Manager"
+},
+{
+"id": 20313,
+"ctx": "PM_U_SRC_2_C",
+"en": "More worried about what the Gaffer will say."
+},
+{
+"id": 20314,
+"ctx": "TalkToPress_Title_MotivateUnnerveOpponentDerbyRival_HighTeams_3",
+"en": "<ManagerName> Questions Opposition Potential"
+},
+{
+"id": 20315,
+"ctx": "TalkToPress_Title_PraiseOpponentNeither_generic_2",
+"en": "<TeamName2> A Threat To <TeamName> Progress "
+},
+{
+"id": 20316,
+"ctx": "OSDK_CLUBS_CAPTAIN_SEARCH_FOR_CHALLENGE",
+"en": "CAPTAIN SEARCHING FOR A CLUB TO CHALLENGE..."
+},
+{
+"id": 20317,
+"ctx": "news_title_request_loan_denied_1",
+"en": "<PlayerName1> Has a Role to Play This Season"
+},
+{
+"id": 20318,
+"ctx": "NewsFIFAWebOfferLeague",
+"en": "Select which league you would like news for?"
+},
+{
+"id": 20319,
+"ctx": "rt_Title2",
+"en": "THE REPLAY THEATRE & END OF MATCH HIGHLIGHTS"
+},
+{
+"id": 20320,
+"ctx": "news_title_newmanager_prematch_debutfriendly_3",
+"en": "Friendly set to be First Test for <UserName>"
+},
+{
+"id": 20321,
+"ctx": "FUT_DRAFT_PICK_DIFFICULTY_REWARD_DESC",
+"en": "Earn more match coins at higher difficulties"
+},
+{
+"id": 20322,
+"ctx": "news_title_investor_firstplayer_9",
+"en": "Newly Minted <TeamName> Snap Up <PlayerName>"
+},
+{
+"id": 20323,
+"ctx": "FUT_SECURITY_ANSWER_CREATE_FAILED",
+"en": "Your Security Question could not be created."
+},
+{
+"id": 20324,
+"ctx": "FUT-QUEST_STARTER_PACK_DESCRIPTION_NAV_SMALL",
+"en": "You can find more player packs in the Store."
+},
+{
+"id": 20325,
+"ctx": "Licence_on2_3",
+"en": "ON2 TECHNOLOGY © 2003 ON2 TECHNOLOGIES, INC."
+},
+{
+"id": 20326,
+"ctx": "TalkToPress_Title_Unnerve_Draw_Previous Result_1",
+"en": "<ManagerName> Feels Previous Draw Was Unjust"
+},
+{
+"id": 20327,
+"ctx": "FUT_MANAGER_ADDED_TO_SQUAD",
+"en": "Manager has been added to your Active Squad."
+},
+{
+"id": 20328,
+"ctx": "CM_ContractNegotiationStatus_InitialDemandContractLength",
+"en": "my contract length demands have not been met"
+},
+{
+"id": 20329,
+"ctx": "News_Title_InjuredPlayer_PlayingWell_TeamDraws_4",
+"en": "<TeamName> Welcome Back <PlayerName> In Draw"
+},
+{
+"id": 20330,
+"ctx": "cm_emails_squad_submission_reminder",
+"en": "National Squad Submission Deadline Coming Up"
+},
+{
+"id": 20331,
+"ctx": "news_title_seasonpreview_runattheplayoffs_2",
+"en": "Unfancied <TeamName> Harbour Play Off Desire"
+},
+{
+"id": 20332,
+"ctx": "OSDK_MAIL_UNAVAILABLE",
+"en": "This item is no longer available for action."
+},
+{
+"id": 20333,
+"ctx": "news_title_player_vs_former_team_prematch_home_1",
+"en": "<PlayerName1> Faces Visit From Old Teammates"
+},
+{
+"id": 20334,
+"ctx": "vpro_mental_accomdesc8",
+"en": "Create an assist with a chipped through ball"
+},
+{
+"id": 20335,
+"ctx": "TXT_TROPHY_SILVER_DESC_COOP",
+"en": "Awarded for winning the title\\nin Division 3"
+},
+{
+"id": 20336,
+"ctx": "PMA1PopupLine2",
+"en": "Please choose another item to apply this to."
+},
+{
+"id": 20337,
+"ctx": "ConfirmBuyPack",
+"en": "Are you sure you want to purchase this pack?"
+},
+{
+"id": 20338,
+"ctx": "news_title_seasonpreview_playofffinal_7",
+"en": "Big Season Expected By <TeamName> Supporters"
+},
+{
+"id": 20339,
+"ctx": "News_Title_InjuredPlayer_PlayingWell_TeamLoses_1",
+"en": "<PlayerName>'s Heroic Performance Not Enough"
+},
+{
+"id": 20340,
+"ctx": "CM_Email_ContractRebel_ForceList_Subject_3",
+"en": "[Info] <PlayerName> Has Been Transfer Listed"
+},
+{
+"id": 20341,
+"ctx": "OSDK_ORIGIN_ACCT_UPGRADE_SUCCESS",
+"en": "Your account has been successfully upgraded."
+},
+{
+"id": 20342,
+"ctx": "news_title_poorrun_poorform_postmatch_3",
+"en": "Poor Run of Form for <PlayerName1> Continues"
+},
+{
+"id": 20343,
+"ctx": "TXT_TROPHY_GOLD_DESC_COOP",
+"en": "Awarded for winning the title\\nin Division 2"
+},
+{
+"id": 20344,
+"ctx": "kit_6_descr",
+"en": "Get fouled & win 5 free kicks in your career"
+},
+{
+"id": 20345,
+"ctx": "SL_AllPreviouslyUnsavedChangesLost",
+"en": "All previously unsaved changes will be lost."
+},
+{
+"id": 20346,
+"ctx": "news_title_happyplayer_tier3_4",
+"en": "<PlayerName> Jubilant With <TeamName> Chance"
+},
+{
+"id": 20347,
+"ctx": "OSDK_CLUBS_PETITION_CLUB_LIMIT_REACHED",
+"en": "Your Club has reached the maximum Squad size."
+},
+{
+"id": 20348,
+"ctx": "STORE_CONGRATULATIONS_CODE_ACCEPTED",
+"en": "Congratulations! Code successfully redeemed. "
+},
+{
+"id": 20349,
+"ctx": "BootName_26",
+"en": "adidas Messi - Matt Ice Met/Yellow/Core Black"
+},
+{
+"id": 20350,
+"ctx": "kit_26_descr",
+"en": "Complete 40 of the 71 Mental Accomplishments "
+},
+{
+"id": 20351,
+"ctx": "TalkToPress_Title_MotivateUnnerveUserTeamNeither_SemiQuarter_Even_1",
+"en": "<ManagerName> Galvanises Team For Big Cup Tie"
+},
+{
+"id": 20352,
+"ctx": "CustomSettingOffsides",
+"en": "Set the Offside requirements for this session"
+},
+{
+"id": 20353,
+"ctx": "news_title_overpriceddeal_underpriced_2",
+"en": "<PlayerName1> Leaves <TeamName1> on the Cheap"
+},
+{
+"id": 20354,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_MENTIONS_FANS_BEFORE_CUP_MATCH_6",
+"en": "@MrAlexHunter. Win the cup match. That is all"
+},
+{
+"id": 20355,
+"ctx": "news_title_manageroffer_offerrejected_3",
+"en": "<ManagerName1> Rejects <TeamName2>'s Advances"
+},
+{
+"id": 20356,
+"ctx": "TM_PI_TXT_FULLDESCRIPTION_20",
+"en": "Always try to stay wide and close to the line"
+},
+{
+"id": 20357,
+"ctx": "Traits_18_descr",
+"en": "Complete 20 of the 45 Defence Accomplishments"
+},
+{
+"id": 20358,
+"ctx": "news_title_playeroffer_loanofferaccepted_3",
+"en": "<PreferredPos1> Loan to <TeamName2> Confirmed"
+},
+{
+"id": 20359,
+"ctx": "FUT_INTRO_BULLET_1_3",
+"en": "• NEW! Play A Friend to practice your skills."
+},
+{
+"id": 20360,
+"ctx": "OSDK_CLUBS_INVITE_NO_LONGER_THERE",
+"en": "This transfer request is no longer available."
+},
+{
+"id": 20361,
+"ctx": "BootName_67",
+"en": "Umbro Speciali Eternal Pro - Black/White/Blue"
+},
+{
+"id": 20362,
+"ctx": "vpro_physical_accomdesc18",
+"en": "Travel 3500 yards in 5 matches in your career"
+},
+{
+"id": 20363,
+"ctx": "Do you want to save your changes and advance?",
+"en": "Do you want to save your changes and advance?"
+},
+{
+"id": 20364,
+"ctx": "SUB_1_SC_0470_1_B",
+"en": "{C:ALEX}{0.39-3.09}Hunters are back, Grandad!"
+},
+{
+"id": 20365,
+"ctx": "news_contractrebel_title_stage5_speculation_4",
+"en": "Tight Lipped <PlayerName> Keeping Low Profile"
+},
+{
+"id": 20366,
+"ctx": "OSDK_CLUBS_INVITEE_ALREADY_MEMBER",
+"en": "This person is already a member of your Club."
+},
+{
+"id": 20367,
+"ctx": "CM_Email_Subject_weakspot_stage4_4",
+"en": "<FullPlayerName1> Is Now A <TeamName1> Player"
+},
+{
+"id": 20368,
+"ctx": "news_title_internationalmanagerrumours_4",
+"en": "<ManagerName1> Tops Many Countries Wish Lists"
+},
+{
+"id": 20369,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_MENTIONS_PRE_LOAN_MAIN_CHAR_PRE_MATCH_1",
+"en": "@MrAlexHunter need to use those minutes mate."
+},
+{
+"id": 20370,
+"ctx": "TXT_PAP_desc_PHYSICAL_42",
+"en": "Score 15 Goals from the Volley Inside the Box"
+},
+{
+"id": 20371,
+"ctx": "MF_oopten_1",
+"en": "Work on being more aware of your positioning."
+},
+{
+"id": 20372,
+"ctx": "TM_PI_TXT_FULLDESCRIPTION_14",
+"en": "Take a free role and roam the attacking third"
+},
+{
+"id": 20373,
+"ctx": "TalkToPress_Title_PraiseUserTeamNeither_SemiQuarter_Even_1",
+"en": "<ManagerName> Bangs Drum Ahead Of Big Cup Tie"
+},
+{
+"id": 20374,
+"ctx": "TalkToPress_Title_MotivateUnnerveUserTeamNeither_generic_3",
+"en": "<TeamName> Players Get Permission To Have Fun"
+},
+{
+"id": 20375,
+"ctx": "BeAGoalkeeperAttacking",
+"en": "BE A PRO: GOALKEEPER (ATTACKING OFF THE BALL)"
+},
+{
+"id": 20376,
+"ctx": "TXT_VP_PHYSICAL_30_DESC",
+"en": "Get fouled & win 13 free kicks in your career"
+},
+{
+"id": 20377,
+"ctx": "TalkToPress_Title_Unnerve_GoalscoringGood_OwnNone_Player_1",
+"en": "<ManagerName> Warns Free Scoring <PlayerName>"
+},
+{
+"id": 20378,
+"ctx": "TM_PI_TXT_FULLDESCRIPTION_18",
+"en": "Make cutting runs to the inside from out wide"
+},
+{
+"id": 20379,
+"ctx": "FUT_UC_YOU_HAVE_WON",
+"en": "Congratulations, you have won:\\n%1s\\n%2s\\n%3s"
+},
+{
+"id": 20380,
+"ctx": "news_title_manager_internationaloffer_offermade_3",
+"en": "<ManagerName1> Approached for <TeamName2> Job"
+},
+{
+"id": 20381,
+"ctx": "OSDK_CLUBS_USER_NO_LONGER_MEMBER",
+"en": "This player is no longer a member of the Club"
+},
+{
+"id": 20382,
+"ctx": "OSDK_INFORM_EA_STUFF",
+"en": "Contact me about EA products, news and events"
+},
+{
+"id": 20383,
+"ctx": "news_title_newsigning_progress_poorform_1",
+"en": "<PlayerName> Fails to Impress <TeamName> Fans"
+},
+{
+"id": 20384,
+"ctx": "CustomSettingStadium",
+"en": "Set the Stadium requirements for this session"
+},
+{
+"id": 20385,
+"ctx": "news_title_newmanager_prematch_debutfriendly_1",
+"en": "<UserName> Seeks to Impress on Friendly Debut"
+},
+{
+"id": 20386,
+"ctx": "TalkToPress_Title_PraiseOpponentDerbyRival_TopofTable_1",
+"en": "<ManagerName> Praises High Flying <TeamName2>"
+},
+{
+"id": 20387,
+"ctx": "TXT_DEMO_SELL_GOTW_DESC2",
+"en": "Toggle through available 'Games of the Week.'"
+},
+{
+"id": 20388,
+"ctx": "Traits_29_descr",
+"en": "Complete 40 of the 51 Passing Accomplishments"
+},
+{
+"id": 20389,
+"ctx": "MF_yellowcard_2",
+"en": "Be careful we cannot afford to be down a man."
+},
+{
+"id": 20390,
+"ctx": "MF_switchplay_2",
+"en": "Some pinpoint cross-field passing. Good work."
+},
+{
+"id": 20391,
+"ctx": "news_title_seasonpreview_qualifyforeurope_3",
+"en": "<TeamName> Fans Expect To Go On European Tour"
+},
+{
+"id": 20392,
+"ctx": "MF_passthroughball_1",
+"en": "Great vision with those through balls passes."
+},
+{
+"id": 20393,
+"ctx": "TalkToPress_Title_PraiseOpponentNeither_generic_4",
+"en": "<ManagerName> Praises Rivals' Grown-Up Style "
+},
+{
+"id": 20394,
+"ctx": "MF_shotofftargetinsidebox_0",
+"en": "Good effort, try to hit the target next time."
+},
+{
+"id": 20395,
+"ctx": "CreatePlayerBoot_183",
+"en": "Nike Tiempo Legend VI - Clear Jade/Black/Volt"
+},
+{
+"id": 20396,
+"ctx": "TXT_PAP_desc_SHOOTING_93",
+"en": "Score 10 Goals from the Volley Inside the Box"
+},
+{
+"id": 20397,
+"ctx": "PlayerDoesntLikeTheSalaryThatYouOffered",
+"en": "%1s doesn't like the salary that you offered."
+},
+{
+"id": 20398,
+"ctx": "News_Title_PreSeasonInjury_4",
+"en": "<PlayerName> An Early Casualty For <TeamName>"
+},
+{
+"id": 20399,
+"ctx": "CreatePlayerBoot_66",
+"en": "Puma EvoSPEED SL - Electric Blue/White/Orange"
+},
+{
+"id": 20400,
+"ctx": "TXT_VP_PHYSICAL_21_DESC",
+"en": "Play 17 matches in your Pro Clubs only career"
+},
+{
+"id": 20401,
+"ctx": "TXT_VP_BALLSKILLS_16_DESC",
+"en": "Get fouled & win 45 free kicks in your career"
+},
+{
+"id": 20402,
+"ctx": "vpro_passing_accomdesc10",
+"en": "Claim 2 assists with ground passes in a match"
+},
+{
+"id": 20403,
+"ctx": "kit_11_descr",
+"en": "Complete 10 of the 71 Mental Accomplishments "
+},
+{
+"id": 20404,
+"ctx": "FUT_QUEST_BUY_PACK_DESCRIPTION_NAV_BIG",
+"en": "From the Main Menu, navigate to the Store tab"
+},
+{
+"id": 20405,
+"ctx": "CustomSettingBookings",
+"en": "Set the Booking requirements for this session"
+},
+{
+"id": 20406,
+"ctx": "OSDK_OL_NOLEAGUEMEMBERSHIPS",
+"en": "You are currently not a member of any league."
+},
+{
+"id": 20407,
+"ctx": "news_lastminuteswinner_title_8",
+"en": "<ManagerName> Lauds His Team For Dramatic Win"
+},
+{
+"id": 20408,
+"ctx": "BootName_46",
+"en": "Nike Hypervenom - Total Orange/Citrus/Crimson"
+},
+{
+"id": 20409,
+"ctx": "TXT_VP_SHOOTING_38_DESC",
+"en": "Score from a free kick 5 times in your career"
+},
+{
+"id": 20410,
+"ctx": "News_Title_ForeignPlayerWantsToLeave_DecisionToStay_HATESWEATHER_2",
+"en": "<PlayerName> Backtracks Over Weather Decision"
+},
+{
+"id": 20411,
+"ctx": "CM_TCM_Objective_9",
+"en": "Finish the season with a profit margin of %1s"
+},
+{
+"id": 20412,
+"ctx": "CM_ContractNegotiationStatus_SquadRoleTooLow",
+"en": "I would like a greater squad role at the club"
+},
+{
+"id": 20413,
+"ctx": "cm_europe_first_season_help_swap_title",
+"en": "Setup European Competitions in the 1st Season"
+},
+{
+"id": 20414,
+"ctx": "OSDK_LOADING_SERVER_DATA",
+"en": "Retrieving data from server. Please wait. . ."
+},
+{
+"id": 20415,
+"ctx": "FUT_CHALKTUT_ITEMS_DESC_14",
+"en": "Players selected for the FIFPro World XI team"
+},
+{
+"id": 20416,
+"ctx": "SM_SOURCE_LI_LI_SUBTOPIC_PARENT_TEAM_POOR_START_CL_1",
+"en": "We lost. We move on. Next game we do better. "
+},
+{
+"id": 20417,
+"ctx": "TXT_VP_PHYSICAL_59_DESC",
+"en": "Play 92 matches in your Pro Clubs only career"
+},
+{
+"id": 20418,
+"ctx": "vpro_physical_accomdesc11",
+"en": "Perform a fake shot inside the box in a match"
+},
+{
+"id": 20419,
+"ctx": "GoToNewCardsScreen",
+"en": "You will now be taken to the new items screen"
+},
+{
+"id": 20420,
+"ctx": "news_dodgygoal_offside_title_7",
+"en": "Assistant's Decision Right says <ManagerName>"
+},
+{
+"id": 20421,
+"ctx": "TXT_VP_BALLSKILLS_5_DESC",
+"en": "Get fouled & win 10 free kicks in your career"
+},
+{
+"id": 20422,
+"ctx": "news_title_lost_lostteamprogress_doingpoorly_2",
+"en": "<TeamName1> Struggle to Make a Big Impression"
+},
+{
+"id": 20423,
+"ctx": "PUU2Popup",
+"en": "You have already unlocked all of these items."
+},
+{
+"id": 20424,
+"ctx": "news_title_newsigning_progress_goodform_2",
+"en": "<TeamName> Show Just How Good <PlayerName> is"
+},
+{
+"id": 20425,
+"ctx": "LicensedContentLine12",
+"en": "© 2016: United States Soccer Federation, Inc."
+},
+{
+"id": 20426,
+"ctx": "vpro_physical_accomdesc19",
+"en": "Win 20 man of the match awards in your career"
+},
+{
+"id": 20427,
+"ctx": "LOC_LB_DESC_SEASON_CHAMPIONSHIPS",
+"en": "Number of Titles won in all Seasons combined."
+},
+{
+"id": 20428,
+"ctx": "CM_Email_Board_Obj_StruggleIsReal_Inline",
+"en": "finish the season with a profit margin of %1s"
+},
+{
+"id": 20429,
+"ctx": "TXT_PRESEASON_START_NEWS_TITLE",
+"en": "Special: Pre-Season Friendly Tournament Guide"
+},
+{
+"id": 20430,
+"ctx": "banner_tip18",
+"en": "<Player X> was sold for <X amount> yesterday."
+},
+{
+"id": 20431,
+"ctx": "CM_NegotiatorFeedback_OutgoingTransfer_PlayerNotAmongBest_1",
+"en": "is not a crucial player for their starting XI"
+},
+{
+"id": 20432,
+"ctx": "News_Title_InjuredPlayer_PlayingWell_TeamDraws_3",
+"en": "<PlayerName> Shows Well On Return From Injury"
+},
+{
+"id": 20433,
+"ctx": "news_title_LMTR_Result_TransferComplete_2",
+"en": "<TeamName1> Cash In On Unsettled <PlayerName>"
+},
+{
+"id": 20434,
+"ctx": "YouCanPlayFriendlyMatchesWithThisTeam",
+"en": "You can play friendly matches with this team."
+},
+{
+"id": 20435,
+"ctx": "kit_19_descr",
+"en": "Complete 20 of the 71 Mental Accomplishments "
+},
+{
+"id": 20436,
+"ctx": "TXT_EASFC_CONFIRM_GOTO_RECOMMENDATION",
+"en": "Are you sure you want to exit this game mode?"
+},
+{
+"id": 20437,
+"ctx": "news_title_seasonpreview_euroleague_8",
+"en": "\"<ManagerName> Claims \"\"We Can Make Europe\"\"\""
+},
+{
+"id": 20438,
+"ctx": "FUT_CANNOT_APPLY_MANAGER_LEAGUE_ITEM",
+"en": "This Manager already has this league applied."
+},
+{
+"id": 20439,
+"ctx": "FUT_GOTO_DREAMSQUAD_NOW",
+"en": "Get started with our new Squad planning tool."
+},
+{
+"id": 20440,
+"ctx": "vpro_defence_accomdesc20",
+"en": "Make 100 career sliding tackles as a defender"
+},
+{
+"id": 20441,
+"ctx": "TXT_VP_PHYSICAL_19_DESC",
+"en": "Play 15 matches in your Pro Clubs only career"
+},
+{
+"id": 20442,
+"ctx": "TXT_VP_GK_3_DESC",
+"en": "Play 7 matches as a goalkeeper in your career"
+},
+{
+"id": 20443,
+"ctx": "TXT_TROPHY_LEAGUE_TITLES_DESC",
+"en": "Awarded for winning the title\\nin Division 1 "
+},
+{
+"id": 20444,
+"ctx": "MatchdaySquadsSaveDescriptionArabic",
+"en": "Contains updates to Match Day Squads (Arabic)"
+},
+{
+"id": 20445,
+"ctx": "News_Title_InjuredPlayer_PlayingWell_TeamDraws_1",
+"en": "Impressive <PlayerName> Injury Return In Draw"
+},
+{
+"id": 20446,
+"ctx": "news_title_newsigning_postmatch_played_3",
+"en": "Fans Turn Up to See <PlayerName>'s First Game"
+},
+{
+"id": 20447,
+"ctx": "Traits_23_descr",
+"en": "Complete 30 of the 45 Defence Accomplishments"
+},
+{
+"id": 20448,
+"ctx": "news_title_pfr_released_3",
+"en": "<PlayerName1> Shown the Door by Ruthless Boss"
+},
+{
+"id": 20449,
+"ctx": "MM_CUSTOMISE_ONLINE_HOSPITALITY_STORY",
+"en": "Synchronise your settings with the EA Servers"
+},
+{
+"id": 20450,
+"ctx": "News_Title_InjuredPlayer_DidNotPlay_Won_3",
+"en": "<PlayerName> Not Risked In <TeamName> Victory"
+},
+{
+"id": 20451,
+"ctx": "TXT_VP_PHYSICAL_58_DESC",
+"en": "Play 120 matches as a defender in your career"
+},
+{
+"id": 20452,
+"ctx": "FUT_ENTER_DRAFT_VIA_DRAFT_TOKEN",
+"en": "Would you like to use a Draft Token to enter?"
+},
+{
+"id": 20453,
+"ctx": "TXT_ONLINE_CLUBTRANSFERS_RECOMMEND_ACCEPT_MSG",
+"en": "A Friend has recommended you join their club."
+},
+{
+"id": 20454,
+"ctx": "news_title_seasonpreview_qualifyforeurope_8",
+"en": "Highly Fancied <TeamName> Have European Dream"
+},
+{
+"id": 20455,
+"ctx": "MF_tacklewon_2",
+"en": "Some great tackling. Your timing was spot on."
+},
+{
+"id": 20456,
+"ctx": "vpro_physical_accomdesc7",
+"en": "Win 10 man of the match awards in your career"
+},
+{
+"id": 20457,
+"ctx": "TalkToPress_Title_Praise_FormBad_OpponentNone_Player_1",
+"en": "<ManagerName> Praises Poor Form <PlayerName2>"
+},
+{
+"id": 20458,
+"ctx": "FUT_TOTW_ONLY_ACTIVE_COINS",
+"en": "Only the active challenge awards bonus coins."
+},
+{
+"id": 20459,
+"ctx": "News_Title_ForeignPlayerWantsToLeave_RumourSpeculation_HOMESICK_2",
+"en": "No Smoke Without Fire For Lonely <PlayerName>"
+},
+{
+"id": 20460,
+"ctx": "News_Title_ForeignPlayerWantsToLeave_HATESCOUNTRY_2",
+"en": "<PlayerName> Dislikes Life In Adopted Country"
+},
+{
+"id": 20461,
+"ctx": "news_title_poorrun_nogoal_postmatch_7",
+"en": "Another Game without a Goal for <PlayerName1>"
+},
+{
+"id": 20462,
+"ctx": "MF_playerregainsdefensivethird_1",
+"en": "Great play, well done getting that ball back."
+},
+{
+"id": 20463,
+"ctx": "TalkToPress_Title_Unnerve_GoalscoringBad_OwnNone_Player_1",
+"en": "<ManagerName> Warns Goal Drought <PlayerName>"
+},
+{
+"id": 20464,
+"ctx": "Traits_19_descr",
+"en": "Complete 25 of the 51 Passing Accomplishments"
+},
+{
+"id": 20465,
+"ctx": "CreatePlayerBoot_70",
+"en": "Umbro UX-2 Pro - Green Gecko/Dark Navy/Toucan"
+},
+{
+"id": 20466,
+"ctx": "news_title_captaincychange_firstgame_lowexp_lowcaliber_1",
+"en": "Captaincy Shocker as <PlayerName> New Skipper"
+},
+{
+"id": 20467,
+"ctx": "VICEPRESIDENTCHIEFOPERATINGOFFICER",
+"en": "Vice President, Group Chief Operating Officer"
+},
+{
+"id": 20468,
+"ctx": "TXT_CLUBS_Custom_Details",
+"en": "Create and edit your own custom kit and crest"
+},
+{
+"id": 20469,
+"ctx": "OSDK_CLUBS_ALREADY_GM",
+"en": "This member is already a Manager of the Club."
+},
+{
+"id": 20470,
+"ctx": "news_title_newmanager_postmatch_debutfriendly_lost_1",
+"en": "Not Best of Starts for <UserName> in Friendly"
+},
+{
+"id": 20471,
+"ctx": "FUT_SB_Formation",
+"en": "This is the formation Squad Builder will use."
+},
+{
+"id": 20472,
+"ctx": "TXT_VP_PHYSICAL_53_DESC",
+"en": "Play 95 matches in your Pro Clubs only career"
+},
+{
+"id": 20473,
+"ctx": "kit_21_descr",
+"en": "Complete 30 of the 71 Mental Accomplishments "
+},
+{
+"id": 20474,
+"ctx": "FOC_CUPROUNDSUCCESS_1",
+"en": "Your next Cup match will be the Quarter Final"
+},
+{
+"id": 20475,
+"ctx": "vpro_shooting_accomdesc16",
+"en": "Score 2 goals from outside the box in a match"
+},
+{
+"id": 20476,
+"ctx": "SUPERVISINGDEVELOPMENTDIRECTOR(EAROMANIA)",
+"en": "Supervising Development Director (EA Romania)"
+},
+{
+"id": 20477,
+"ctx": "DeleteProfileXConf",
+"en": "Are you sure you want delete the profile %1s?"
+},
+{
+"id": 20478,
+"ctx": "AYS_SendOutThis Scout",
+"en": "Are you sure you want to send out this scout?"
+},
+{
+"id": 20479,
+"ctx": "SM_SOURCE_EA_SPORTS_FIFA_SUBTOPIC_HERO_WIN_GAME_3",
+"en": "Another win for @MrAlexHunter and <HeroTeam>."
+},
+{
+"id": 20480,
+"ctx": "OSDK_OTP_GAMES_AVAILABLE",
+"en": "Online Team Play Game Sessions Available: <0>"
+},
+{
+"id": 20481,
+"ctx": "news_contentiousredcard_title_10",
+"en": "<ManagerName> Believes Red Card Was Justified"
+},
+{
+"id": 20482,
+"ctx": "Traits_26_descr",
+"en": "Complete 35 of the 51 Passing Accomplishments"
+},
+{
+"id": 20483,
+"ctx": "FUT_NO_LOGIN_INVITE",
+"en": "No, discard the invite and continue the intro"
+},
+{
+"id": 20484,
+"ctx": "ViewGroupsHelp",
+"en": "Use the right stick to view the other groups."
+},
+{
+"id": 20485,
+"ctx": "news_title_newmanager_postmatch_debut_won_4",
+"en": "Fans Enjoy Manager <UserName>'s Debut Success"
+},
+{
+"id": 20486,
+"ctx": "OSDK_CLUBS_CREATE_FAILURE",
+"en": "Could not create this Club. Please try again."
+},
+{
+"id": 20487,
+"ctx": "OSDK_COOP_SIGNIN_FAILURE",
+"en": "Your guest could not be added to the session."
+},
+{
+"id": 20488,
+"ctx": "news_title_investor_firstplayer_5",
+"en": "Nouveau Riche <TeamName> Snap Up <PlayerName>"
+},
+{
+"id": 20489,
+"ctx": "TalkToPress_Title_PraiseOpponentDerbyRival_TopofTable_3",
+"en": "Media Pressure 'Unhelpful' Says <ManagerName>"
+},
+{
+"id": 20490,
+"ctx": "news_title_Saga_InjuryEnding_1",
+"en": "Serious Injury Curtails Move For <PlayerName>"
+},
+{
+"id": 20491,
+"ctx": "TXT_PAP_desc_SHOOTING_94",
+"en": "Score 20 Goals from the Volley Inside the Box"
+},
+{
+"id": 20492,
+"ctx": "MF_crosswasted_2",
+"en": "Your crosses were poor. Too many were wasted!"
+},
+{
+"id": 20493,
+"ctx": "TXT_VP_PHYSICAL_54_DESC",
+"en": "Play 97 matches in your Pro Clubs only career"
+},
+{
+"id": 20494,
+"ctx": "TXT_VP_DEFENCE_16_DESC",
+"en": "Play 107 matches as a defender in your career"
+},
+{
+"id": 20495,
+"ctx": "ACH_DESC_25",
+"en": "Complete a Financial objective in Career Mode"
+},
+{
+"id": 20496,
+"ctx": "CM_NegotiatorFeedback_OutgoingTransfer_ShortContract_1",
+"en": "is yet to sign a long-term deal with the club"
+},
+{
+"id": 20497,
+"ctx": "TXT_VP_PHYSICAL_40_DESC",
+"en": "Play 46 matches in your Pro Clubs only career"
+},
+{
+"id": 20498,
+"ctx": "news_title_internationalrenewal_declined_2",
+"en": "National Fans Left Shocked by <UserName> Snub"
+},
+{
+"id": 20499,
+"ctx": "FUT_CHALKTUT_SIXATTRIBUTES_DESC_5",
+"en": "DRIBBLING - Ball control, agility and balance"
+}
+]

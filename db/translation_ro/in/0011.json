@@ -1,0 +1,1252 @@
+[
+{
+"id": 2750,
+"ctx": "Location_FIFAPractice",
+"en": "Location"
+},
+{
+"id": 2751,
+"ctx": "FUT_DRAFT_SELL_HEADER_3",
+"en": "WIN BIG!"
+},
+{
+"id": 2752,
+"ctx": "CLUBS_SEARCH_FOR",
+"en": "Forwards"
+},
+{
+"id": 2753,
+"ctx": "FUT_underway",
+"en": "Underway"
+},
+{
+"id": 2754,
+"ctx": "FUT_upcoming",
+"en": "Upcoming"
+},
+{
+"id": 2755,
+"ctx": "OSDK_EAL_DOWN",
+"en": "Download"
+},
+{
+"id": 2756,
+"ctx": "OSDK_DEC_EX",
+"en": "December"
+},
+{
+"id": 2757,
+"ctx": "FUT_MC_PLAYSTYLE_23",
+"en": "GK Basic"
+},
+{
+"id": 2758,
+"ctx": "GamePlay_Penalties_Advance",
+"en": "ADVANCED"
+},
+{
+"id": 2759,
+"ctx": "CM_expiring",
+"en": "Expiring"
+},
+{
+"id": 2760,
+"ctx": "FCE_Apertura",
+"en": "Apertura"
+},
+{
+"id": 2761,
+"ctx": "CLUB_COMMENTARY_NAME_200119",
+"en": "Hereford"
+},
+{
+"id": 2762,
+"ctx": "TeamNickname_1807_FullChar",
+"en": "The Owls"
+},
+{
+"id": 2763,
+"ctx": "NoFouls",
+"en": "No Fouls"
+},
+{
+"id": 2764,
+"ctx": "OSDK_STATE_MARY",
+"en": "Maryland"
+},
+{
+"id": 2765,
+"ctx": "CLUB_COMMENTARY_NAME_4261",
+"en": "Toulouse"
+},
+{
+"id": 2766,
+"ctx": "FUT_MC_PLAYSTYLE_4",
+"en": "Marksman"
+},
+{
+"id": 2767,
+"ctx": "locale_ita_it",
+"en": "Italiano"
+},
+{
+"id": 2768,
+"ctx": "CLUB_COMMENTARY_NAME_200044",
+"en": "Brisbane"
+},
+{
+"id": 2769,
+"ctx": "FUT_Champions_Regional_upper",
+"en": "REGIONAL"
+},
+{
+"id": 2770,
+"ctx": "KIN_Sub5Voice",
+"en": "Sub five"
+},
+{
+"id": 2771,
+"ctx": "ONLINE_CLUBS_SCOUTING",
+"en": "Scouting"
+},
+{
+"id": 2772,
+"ctx": "SM_HASHTAG_NICKNAME_1808",
+"en": "Seagulls"
+},
+{
+"id": 2773,
+"ctx": "BeAPro_TheGood",
+"en": "THE GOOD"
+},
+{
+"id": 2774,
+"ctx": "Quantity",
+"en": "Quantity"
+},
+{
+"id": 2775,
+"ctx": "SC_UP",
+"en": "Up Arrow"
+},
+{
+"id": 2776,
+"ctx": "FUT_DEFENDER",
+"en": "Defender"
+},
+{
+"id": 2777,
+"ctx": "TXT_CO_DISABLED",
+"en": "Disabled"
+},
+{
+"id": 2778,
+"ctx": "CLUB_COMMENTARY_NAME_4238",
+"en": "Sporting"
+},
+{
+"id": 2779,
+"ctx": "FUT_PLAYSTYLE_17",
+"en": "CATALYST"
+},
+{
+"id": 2780,
+"ctx": "TXT_CONTINUE_SKILLGAME",
+"en": "CONTINUE"
+},
+{
+"id": 2781,
+"ctx": "MarkOut",
+"en": "Mark Out"
+},
+{
+"id": 2782,
+"ctx": "OSDK_REQUIRED",
+"en": "Required"
+},
+{
+"id": 2783,
+"ctx": "tm_DefencePressure",
+"en": "Pressure"
+},
+{
+"id": 2784,
+"ctx": "FccEndSidelineDesc",
+"en": "Sideline"
+},
+{
+"id": 2785,
+"ctx": "CM_Finances_Select_Team",
+"en": "FINANCES"
+},
+{
+"id": 2786,
+"ctx": "CM_Currency",
+"en": "Currency"
+},
+{
+"id": 2787,
+"ctx": "StickLabelLeftLeft_9",
+"en": "Ear Lobe"
+},
+{
+"id": 2788,
+"ctx": "OSDK_LANG_JP",
+"en": "Japanese"
+},
+{
+"id": 2789,
+"ctx": "GTN_adj_Prolific",
+"en": "Prolific"
+},
+{
+"id": 2790,
+"ctx": "OSDK_CLUBS_AWARDS",
+"en": "TROPHIES"
+},
+{
+"id": 2791,
+"ctx": "Strength_Abbr20",
+"en": "Strength"
+},
+{
+"id": 2792,
+"ctx": "CARD_COOP_POINTS",
+"en": "RANK PTS"
+},
+{
+"id": 2793,
+"ctx": "KickOffLocalMatch",
+"en": "KICK OFF"
+},
+{
+"id": 2794,
+"ctx": "CupsWon",
+"en": "CUPS WON"
+},
+{
+"id": 2795,
+"ctx": "WEBTEAM",
+"en": "WEB TEAM"
+},
+{
+"id": 2796,
+"ctx": "ForLoan",
+"en": "For Loan"
+},
+{
+"id": 2797,
+"ctx": "MowPattern5",
+"en": "Diagonal"
+},
+{
+"id": 2798,
+"ctx": "OSDK_STATE_VIRG",
+"en": "Virginia"
+},
+{
+"id": 2799,
+"ctx": "TXT_EASFC_MINUTES_AGO",
+"en": "mins ago"
+},
+{
+"id": 2800,
+"ctx": "FUT_UltimateDifficulty",
+"en": "Ultimate"
+},
+{
+"id": 2801,
+"ctx": "TXT_EASFC_GIFTING_UNKNOWN_FRIEND",
+"en": "a person"
+},
+{
+"id": 2802,
+"ctx": "1_SC_0376_B",
+"en": "Shut it."
+},
+{
+"id": 2803,
+"ctx": "SC_NUMPADENTER",
+"en": "PadEnter"
+},
+{
+"id": 2804,
+"ctx": "Contract",
+"en": "CONTRACT"
+},
+{
+"id": 2805,
+"ctx": "LOC_LB_VIEW",
+"en": "Compare:"
+},
+{
+"id": 2806,
+"ctx": "ucc_whoami",
+"en": "Who Am I"
+},
+{
+"id": 2807,
+"ctx": "CT_GameTime_SecondHalf",
+"en": "2nd Half"
+},
+{
+"id": 2808,
+"ctx": "CM_Email_PAP_Teammate_Suspension_Expired_Subject",
+"en": "%1s Back"
+},
+{
+"id": 2809,
+"ctx": "PlayerTwo",
+"en": "Player 2"
+},
+{
+"id": 2810,
+"ctx": "Subject_colon",
+"en": "Subject:"
+},
+{
+"id": 2811,
+"ctx": "morale_summary_story_ForeignPlayer_HatesWeather_short",
+"en": "Homesick"
+},
+{
+"id": 2812,
+"ctx": "OSDK_OPP_QUIT",
+"en": "Opp Quit"
+},
+{
+"id": 2813,
+"ctx": "BestOverallAbbr",
+"en": "Best Ovr"
+},
+{
+"id": 2814,
+"ctx": "VPCFO",
+"en": "VP, CFO "
+},
+{
+"id": 2815,
+"ctx": "FUT_PLAYSTYLE_12",
+"en": "GUARDIAN"
+},
+{
+"id": 2816,
+"ctx": "OSDK_CLUBS_GOTO_MYCLUBS",
+"en": "My Clubs"
+},
+{
+"id": 2817,
+"ctx": "ReplayTypeOwnGoal_upper",
+"en": "OWN GOAL"
+},
+{
+"id": 2818,
+"ctx": "SM_CONTRACT_WAGE_PER_WEEK",
+"en": "PER WEEK"
+},
+{
+"id": 2819,
+"ctx": "def_low",
+"en": "defender"
+},
+{
+"id": 2820,
+"ctx": "CM_Fixtures_upper",
+"en": "FIXTURES"
+},
+{
+"id": 2821,
+"ctx": "MixModeGroupBox",
+"en": "Mix Mode"
+},
+{
+"id": 2822,
+"ctx": "TXT_CLUBS_LANGUAGE_ONLY",
+"en": "%1s Only"
+},
+{
+"id": 2823,
+"ctx": "tourny_MoreThan4Stars",
+"en": "4+ Stars"
+},
+{
+"id": 2824,
+"ctx": "OSDK_REDEEMED",
+"en": "Redeemed"
+},
+{
+"id": 2825,
+"ctx": "Americas",
+"en": "Americas"
+},
+{
+"id": 2826,
+"ctx": "SDB_ST_POS",
+"en": "POSITION"
+},
+{
+"id": 2827,
+"ctx": "OSDK_OL_COL_USER",
+"en": "Gamertag"
+},
+{
+"id": 2828,
+"ctx": "PERF_BOOKINGS_upper",
+"en": "BOOKINGS"
+},
+{
+"id": 2829,
+"ctx": "RP_MODE_47",
+"en": "Kick Off"
+},
+{
+"id": 2830,
+"ctx": "Flickup",
+"en": "Flick Up"
+},
+{
+"id": 2831,
+"ctx": "morale_summary_story_Retiring_short",
+"en": "Retiring"
+},
+{
+"id": 2832,
+"ctx": "news_injury_type_bruised_shoulder",
+"en": "Shoulder"
+},
+{
+"id": 2833,
+"ctx": "SL_Autosave",
+"en": "Autosave"
+},
+{
+"id": 2834,
+"ctx": "TXT_SKILL_CATEGORY_NAME_MIXED_106",
+"en": "Crossing"
+},
+{
+"id": 2835,
+"ctx": "OSDK_CNTRY_SI",
+"en": "Slovenia"
+},
+{
+"id": 2836,
+"ctx": "CM_Inbox_Contacts",
+"en": "Contacts"
+},
+{
+"id": 2837,
+"ctx": "CARD_TEAMWORK",
+"en": "Teamwork"
+},
+{
+"id": 2838,
+"ctx": "TXT_TIME_DAYS",
+"en": "%1d days"
+},
+{
+"id": 2839,
+"ctx": "TXT_SKILLGAME_RESULTS_LOSER",
+"en": "NICE TRY"
+},
+{
+"id": 2840,
+"ctx": "vpcurve4",
+"en": "CURVE +4"
+},
+{
+"id": 2841,
+"ctx": "OSDK_CNTRY_DM",
+"en": "Dominica"
+},
+{
+"id": 2842,
+"ctx": "TeamNickname_9_FullChar",
+"en": "The Reds"
+},
+{
+"id": 2843,
+"ctx": "UCC_running_ArmsLow",
+"en": "Arms Low"
+},
+{
+"id": 2844,
+"ctx": "Seasonal",
+"en": "Seasonal"
+},
+{
+"id": 2845,
+"ctx": "Controls",
+"en": "CONTROLS"
+},
+{
+"id": 2846,
+"ctx": "StickLabelRightRight_20",
+"en": "Straight"
+},
+{
+"id": 2847,
+"ctx": "SM_TRAINING_RESERVES",
+"en": "RESERVES"
+},
+{
+"id": 2848,
+"ctx": "OSDK_STATE_OKLA",
+"en": "Oklahoma"
+},
+{
+"id": 2849,
+"ctx": "ucc_comeone1",
+"en": "Come On!"
+},
+{
+"id": 2850,
+"ctx": "SM_FAVTEAM_NICKNAME",
+"en": "NICKNAME"
+},
+{
+"id": 2851,
+"ctx": "AddPack",
+"en": "Add Pack"
+},
+{
+"id": 2852,
+"ctx": "TXT_EASFC_DAYS_AGO",
+"en": "days ago"
+},
+{
+"id": 2853,
+"ctx": "Overall_colon_upper",
+"en": "OVERALL:"
+},
+{
+"id": 2854,
+"ctx": "ReplayTypeFoulRed_upper",
+"en": "RED CARD"
+},
+{
+"id": 2855,
+"ctx": "CARD_TOTAL_CUPS",
+"en": "Cups Won"
+},
+{
+"id": 2856,
+"ctx": "NewRank",
+"en": "New Rank"
+},
+{
+"id": 2857,
+"ctx": "Stadiums",
+"en": "STADIUMS"
+},
+{
+"id": 2858,
+"ctx": "elastico",
+"en": "Elastico"
+},
+{
+"id": 2859,
+"ctx": "GoalsAgainstLose_Event2",
+"en": "Blow Out"
+},
+{
+"id": 2860,
+"ctx": "weather_6",
+"en": "Flurries"
+},
+{
+"id": 2861,
+"ctx": "FUT_MYCLUB_MANAGERS",
+"en": "Managers"
+},
+{
+"id": 2862,
+"ctx": "FUT_PRICE",
+"en": "Buy Now:"
+},
+{
+"id": 2863,
+"ctx": "CreatePlayerAccessoryColour_10",
+"en": "Burgundy"
+},
+{
+"id": 2864,
+"ctx": "OSDK_CNTRY_HN",
+"en": "Honduras"
+},
+{
+"id": 2865,
+"ctx": "FUT_FIRST_TEAM",
+"en": "My Squad"
+},
+{
+"id": 2866,
+"ctx": "OSDK_CNTRY_PY",
+"en": "Paraguay"
+},
+{
+"id": 2867,
+"ctx": "AimKick",
+"en": "Aim Kick"
+},
+{
+"id": 2868,
+"ctx": "FUT_STORE_CAT_MYPACKS_NAME",
+"en": "MY PACKS"
+},
+{
+"id": 2869,
+"ctx": "STORE_HELP_PURCHASEMORE",
+"en": "Buy More"
+},
+{
+"id": 2870,
+"ctx": "FUT_MC_PLAYSTYLE_12",
+"en": "Guardian"
+},
+{
+"id": 2871,
+"ctx": "TXT_ONLINE_COOP_SEASONS_SEASON_TILE_TITLE",
+"en": "WITH %1s"
+},
+{
+"id": 2872,
+"ctx": "TXT_ONLINE_CLUBS_RECEIVED",
+"en": "RECEIVED"
+},
+{
+"id": 2873,
+"ctx": "OSDK_TICKER_NFL_NEWS",
+"en": "NFL News"
+},
+{
+"id": 2874,
+"ctx": "OSDK_SHOW_ALL",
+"en": "Show All"
+},
+{
+"id": 2875,
+"ctx": "SM_HASHTAG_NICKNAME_1939",
+"en": "Terriers"
+},
+{
+"id": 2876,
+"ctx": "IWL_TXT_EASFC_CONTROL_MAP_THE_BEAR",
+"en": "The Bear"
+},
+{
+"id": 2877,
+"ctx": "FUT_UNDERWAY_TOURNAMENT",
+"en": "UNDERWAY"
+},
+{
+"id": 2878,
+"ctx": "CreatePlayerHairStyle_7",
+"en": "Ponytail"
+},
+{
+"id": 2879,
+"ctx": "custom_D",
+"en": "Custom D"
+},
+{
+"id": 2880,
+"ctx": "ManufacturerUhlsport",
+"en": "Uhlsport"
+},
+{
+"id": 2881,
+"ctx": "OSDK_FAILURE",
+"en": "Failure!"
+},
+{
+"id": 2882,
+"ctx": "Untucked",
+"en": "Untucked"
+},
+{
+"id": 2883,
+"ctx": "FUT_MQ_QUESTS_COMPLETE",
+"en": "PROGRESS"
+},
+{
+"id": 2884,
+"ctx": "MyStats",
+"en": "MY STATS"
+},
+{
+"id": 2885,
+"ctx": "vpro_ballskills_accomreward12",
+"en": "Curve +5"
+},
+{
+"id": 2886,
+"ctx": "ForSale",
+"en": "For Sale"
+},
+{
+"id": 2887,
+"ctx": "FUT_CHAMPIONS_ATTEMPTS",
+"en": "ATTEMPTS"
+},
+{
+"id": 2888,
+"ctx": "FUT_GH_PAF_C_1",
+"en": "FRIEND'S"
+},
+{
+"id": 2889,
+"ctx": "FOC_VPRO_EDIT",
+"en": "Edit Pro"
+},
+{
+"id": 2890,
+"ctx": "FUT_PS_ICON_Midfielder",
+"en": "Midfield"
+},
+{
+"id": 2891,
+"ctx": "ThrowIn",
+"en": "Throw In"
+},
+{
+"id": 2892,
+"ctx": "SGT_SUB_CAT_LOBPASS",
+"en": "LOB PASS"
+},
+{
+"id": 2893,
+"ctx": "OSDK_CNTRY_TH",
+"en": "Thailand"
+},
+{
+"id": 2894,
+"ctx": "OHUB_FIREWALL_MODERATE",
+"en": "Moderate"
+},
+{
+"id": 2895,
+"ctx": "TXT_ONLINE_SPEVENT_DAYS",
+"en": "%1d DAYS"
+},
+{
+"id": 2896,
+"ctx": "PlayNow",
+"en": "Play Now"
+},
+{
+"id": 2897,
+"ctx": "CM_BAD_SemiPro",
+"en": "Semi Pro"
+},
+{
+"id": 2898,
+"ctx": "February_upper",
+"en": "FEBRUARY"
+},
+{
+"id": 2899,
+"ctx": "injury_type_whiplash",
+"en": "Whiplash"
+},
+{
+"id": 2900,
+"ctx": "CMYS_PlayerType_5",
+"en": "Attacker"
+},
+{
+"id": 2901,
+"ctx": "CM_HUB_Messages",
+"en": "Messages"
+},
+{
+"id": 2902,
+"ctx": "KIN_balancedvoice",
+"en": "balanced"
+},
+{
+"id": 2903,
+"ctx": "custom_D_upper",
+"en": "CUSTOM D"
+},
+{
+"id": 2904,
+"ctx": "SemiPro_Difficulty_upper",
+"en": "SEMI-PRO"
+},
+{
+"id": 2905,
+"ctx": "OverlayTopHalf_upper",
+"en": "TOP HALF"
+},
+{
+"id": 2906,
+"ctx": "Tactical",
+"en": "Tactical"
+},
+{
+"id": 2907,
+"ctx": "SDB_ALLTIME",
+"en": "All-Time"
+},
+{
+"id": 2908,
+"ctx": "Training",
+"en": "Training"
+},
+{
+"id": 2909,
+"ctx": "CMYS_MissionDuration_2",
+"en": "9 Months"
+},
+{
+"id": 2910,
+"ctx": "FUT_SoldOut",
+"en": "Sold Out"
+},
+{
+"id": 2911,
+"ctx": "OSDK_CLUBS_COL_RANK",
+"en": "Standing"
+},
+{
+"id": 2912,
+"ctx": "DifficultySelection_LobPass",
+"en": "Lob Pass"
+},
+{
+"id": 2913,
+"ctx": "TXT_WC_BrazilCity9_lower",
+"en": "Salvador"
+},
+{
+"id": 2914,
+"ctx": "CM_PoundsCurrency",
+"en": "Sterling"
+},
+{
+"id": 2915,
+"ctx": "Z_SC_RMENU",
+"en": "RightAlt"
+},
+{
+"id": 2916,
+"ctx": "achievement_category_4",
+"en": "Gameplay"
+},
+{
+"id": 2917,
+"ctx": "TXT_EASFC_CONTROL_MAP_WORM",
+"en": "The Worm"
+},
+{
+"id": 2918,
+"ctx": "Nostrils",
+"en": "Nostrils"
+},
+{
+"id": 2919,
+"ctx": "GameOps",
+"en": "Game Ops"
+},
+{
+"id": 2920,
+"ctx": "PG_TRAIT_STRENGTH",
+"en": "STRENGTH"
+},
+{
+"id": 2921,
+"ctx": "SDB_ST_LTKO",
+"en": "TKO LOSS"
+},
+{
+"id": 2922,
+"ctx": "SM_MENTIONS",
+"en": "MENTIONS"
+},
+{
+"id": 2923,
+"ctx": "STORE_HELP_PURCHASE",
+"en": "Purchase"
+},
+{
+"id": 2924,
+"ctx": "TopLeft",
+"en": "Top Left"
+},
+{
+"id": 2925,
+"ctx": "MOTM_TacklesWonLost",
+"en": "Won/Lost"
+},
+{
+"id": 2926,
+"ctx": "mm_category",
+"en": "CATEGORY"
+},
+{
+"id": 2927,
+"ctx": "OSDK_CNTRY_ZW",
+"en": "Zimbabwe"
+},
+{
+"id": 2928,
+"ctx": "UpForTrade",
+"en": "TO TRADE"
+},
+{
+"id": 2929,
+"ctx": "news_append_win_2",
+"en": "win over"
+},
+{
+"id": 2930,
+"ctx": "OneMinuteStat",
+"en": "1 minute"
+},
+{
+"id": 2931,
+"ctx": "CLUBS_SEARCH_FOR_upper",
+"en": "FORWARDS"
+},
+{
+"id": 2932,
+"ctx": "Progress",
+"en": "Progress"
+},
+{
+"id": 2933,
+"ctx": "CLUB_COMMENTARY_NAME_4003",
+"en": "Adelaide"
+},
+{
+"id": 2934,
+"ctx": "KilometresPerHour_abbr4",
+"en": "%1d km/h"
+},
+{
+"id": 2935,
+"ctx": "QuitTo",
+"en": "Quit To:"
+},
+{
+"id": 2936,
+"ctx": "GROUP_GM",
+"en": "GROUP GM"
+},
+{
+"id": 2937,
+"ctx": "CMYS_Eligible_allcaps",
+"en": "ELIGIBLE"
+},
+{
+"id": 2938,
+"ctx": "LIVEOPS",
+"en": "Live Ops"
+},
+{
+"id": 2939,
+"ctx": "FUT_PLAYSTYLE_4",
+"en": "MARKSMAN"
+},
+{
+"id": 2940,
+"ctx": "Attribute_All",
+"en": "ALL ATTR"
+},
+{
+"id": 2941,
+"ctx": "CreatePlayerHairStyle_72",
+"en": "Receding"
+},
+{
+"id": 2942,
+"ctx": "FUT_NEW_ITEMS",
+"en": "NEW ITEM"
+},
+{
+"id": 2943,
+"ctx": "CM_Contract_Chairman",
+"en": "CHAIRMAN"
+},
+{
+"id": 2944,
+"ctx": "OSDK_STATE_DELA",
+"en": "Delaware"
+},
+{
+"id": 2945,
+"ctx": "CLUB_COMMENTARY_NAME_200222",
+"en": "Salzburg"
+},
+{
+"id": 2946,
+"ctx": "ProfileStatCategory2",
+"en": "My Goals"
+},
+{
+"id": 2947,
+"ctx": "November_upper",
+"en": "NOVEMBER"
+},
+{
+"id": 2948,
+"ctx": "CLUB_COMMENTARY_NAME_200290",
+"en": "Zaragoza"
+},
+{
+"id": 2949,
+"ctx": "CLUB_COMMENTARY_NAME_200277",
+"en": "Warszawa"
+},
+{
+"id": 2950,
+"ctx": "SM_HASHTAG_HASHFLAG_17",
+"en": "SaintsFC"
+},
+{
+"id": 2951,
+"ctx": "FUT_CHAMPIONS_SCHEDULE",
+"en": "SCHEDULE"
+},
+{
+"id": 2952,
+"ctx": "Negative",
+"en": "Negative"
+},
+{
+"id": 2953,
+"ctx": "DefensiveTactic_3",
+"en": "Sit High"
+},
+{
+"id": 2954,
+"ctx": "FUT_MC_PLAYSTYLE_14",
+"en": "Backbone"
+},
+{
+"id": 2955,
+"ctx": "FUT_CHAMP_GOLD_SUBTIER",
+"en": "GOLD %1d"
+},
+{
+"id": 2956,
+"ctx": "vpbook_contents",
+"en": "CONTENTS"
+},
+{
+"id": 2957,
+"ctx": "OSDK_STATE_MISSO",
+"en": "Missouri"
+},
+{
+"id": 2958,
+"ctx": "attacker_low",
+"en": "attacker"
+},
+{
+"id": 2959,
+"ctx": "custom_B",
+"en": "Custom B"
+},
+{
+"id": 2960,
+"ctx": "OSDK_CLUBS_CAPT",
+"en": "CAPTAIN:"
+},
+{
+"id": 2961,
+"ctx": "OSDK_CNTRY_PK",
+"en": "Pakistan"
+},
+{
+"id": 2962,
+"ctx": "OSDK_PROV_MA",
+"en": "Manitoba"
+},
+{
+"id": 2963,
+"ctx": "OSDK_CNTRY_BB",
+"en": "Barbados"
+},
+{
+"id": 2964,
+"ctx": "TM_PI_MAN_MARK",
+"en": "Man Mark"
+},
+{
+"id": 2965,
+"ctx": "FoulsLose_Event8",
+"en": "Monster!"
+},
+{
+"id": 2966,
+"ctx": "RenderingQualitySuperLowRadioButtonString",
+"en": "Very Low"
+},
+{
+"id": 2967,
+"ctx": "CLUB_COMMENTARY_NAME_4146",
+"en": "Lincoln "
+},
+{
+"id": 2968,
+"ctx": "CLUB_COMMENTARY_NAME_200263",
+"en": "Tranmere"
+},
+{
+"id": 2969,
+"ctx": "CreatePlayerHairStyle_33",
+"en": "Scraggly"
+},
+{
+"id": 2970,
+"ctx": "CLUB_COMMENTARY_NAME_4246",
+"en": "Strikers"
+},
+{
+"id": 2971,
+"ctx": "CT_GameTime_FirstHalf",
+"en": "1st Half"
+},
+{
+"id": 2972,
+"ctx": "tourny_Top20s",
+"en": "TOP 20'S"
+},
+{
+"id": 2973,
+"ctx": "SuccessfulTackles_c",
+"en": "Tackles:"
+},
+{
+"id": 2974,
+"ctx": "CMYS_MissionDuration_0",
+"en": "3 Months"
+},
+{
+"id": 2975,
+"ctx": "TXT_EASFC_TUTORIAL",
+"en": "TUTORIAL"
+},
+{
+"id": 2976,
+"ctx": "DEMO_NAME_FULL_1",
+"en": "DRAFT FC"
+},
+{
+"id": 2977,
+"ctx": "CLUB_COMMENTARY_NAME_200236",
+"en": "Southend"
+},
+{
+"id": 2978,
+"ctx": "User/CPU",
+"en": "User/CPU"
+},
+{
+"id": 2979,
+"ctx": "CLUB_COMMENTARY_NAME_200036",
+"en": "Bradford"
+},
+{
+"id": 2980,
+"ctx": "CreatePlayerHairStyle_62",
+"en": "Wavy Mop"
+},
+{
+"id": 2981,
+"ctx": "OSDK_CNTRY_MY",
+"en": "Malaysia"
+},
+{
+"id": 2982,
+"ctx": "TXT_EASFC_YEAR_AGO",
+"en": "year ago"
+},
+{
+"id": 2983,
+"ctx": "OSDK_STATE_ILL",
+"en": "Illinois"
+},
+{
+"id": 2984,
+"ctx": "Lighters",
+"en": "Lighters"
+},
+{
+"id": 2985,
+"ctx": "vpro_ballskills_accomreward6",
+"en": "Curve +4"
+},
+{
+"id": 2986,
+"ctx": "KnownAs",
+"en": "Known As"
+},
+{
+"id": 2987,
+"ctx": "OSDK_CNTRY_TZ",
+"en": "Tanzania"
+},
+{
+"id": 2988,
+"ctx": "tcmf_earnings_mixed",
+"en": "Earnings"
+},
+{
+"id": 2989,
+"ctx": "tourny_Duration",
+"en": "DURATION"
+},
+{
+"id": 2990,
+"ctx": "Offsides",
+"en": "Offsides"
+},
+{
+"id": 2991,
+"ctx": "tcmf_expenses_mixed",
+"en": "Expenses"
+},
+{
+"id": 2992,
+"ctx": "OnOffer",
+"en": "On Offer"
+},
+{
+"id": 2993,
+"ctx": "OSDK_CNTRY_KH",
+"en": "Cambodia"
+},
+{
+"id": 2994,
+"ctx": "EyeBags",
+"en": "Eye Bags"
+},
+{
+"id": 2995,
+"ctx": "FUT_MC_HANDLING",
+"en": "Handling"
+},
+{
+"id": 2996,
+"ctx": "OSDK_STATE_KEN",
+"en": "Kentucky"
+},
+{
+"id": 2997,
+"ctx": "Handball_upper",
+"en": "HANDBALL"
+},
+{
+"id": 2998,
+"ctx": "SM_CONTRACT_STADIUM_CAPACITY",
+"en": "CAPACITY"
+},
+{
+"id": 2999,
+"ctx": "Closing_Down_OwnHalf",
+"en": "Own Half"
+}
+]

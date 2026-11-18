@@ -1,0 +1,1252 @@
+[
+{
+"id": 26250,
+"ctx": "CM_Email_Body_PAP_ResponseLoan_AllowWithdraw",
+"en": "%1s,\\n\\nI have considered your request to be removed from the loan list and have decided to remove you.\\n\\n%2s."
+},
+{
+"id": 26251,
+"ctx": "FCC_CU_Arena_help_20",
+"en": "Morale will affect your players performance so be sure to use the team talk items to increase it when required."
+},
+{
+"id": 26252,
+"ctx": "FCC_CU_Arena_help_28",
+"en": "Playing a specific formation will give a chemistry boost to all players who have that same preferred formation."
+},
+{
+"id": 26253,
+"ctx": "SM_SOURCE_PUNDIT_2_SUBTOPIC_MENTIONS_AFTER_RECALL_PUNDITS_LOSS_2",
+"en": "I'm sure <HeroTeam> would like that match back. No player had that little bit extra, particularly @MrAlexHunter"
+},
+{
+"id": 26254,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_PARENT_TEAM_KNOCKED_OUT_CL_1",
+"en": "Out of Europe. Wonderful. Can't help but think if we hadn't loaned out @MrAlexHunter we might still be playing?"
+},
+{
+"id": 26255,
+"ctx": "PlayerFeedbackPopUp_PlayerNotPlayed_4",
+"en": "I feel a bit down boss, that was a game I had a real desire to play in. I trust your judgment though of course."
+},
+{
+"id": 26256,
+"ctx": "OSDK_OL_INVITE_MEMBER_LIMIT",
+"en": "This league has reached its member limit. No invitations can be sent until there is space open for new members."
+},
+{
+"id": 26257,
+"ctx": "news_body_seasonpreview_young_20",
+"en": "Fans have high hopes for youngster <FullPlayerName4> and he may well have an influence before the season ends. "
+},
+{
+"id": 26258,
+"ctx": "OSDK_A_R3",
+"en": "You have canceled this process. You must have the latest rosters in order to play online. Do you want to retry?"
+},
+{
+"id": 26259,
+"ctx": "SM_SOURCE_PUNDIT_2_SUBTOPIC_SPONSORSHIP_DEALS_SHOOT_1",
+"en": "Di Maria to spearhead adidas ad campaign that will also include <HeroTeam>'s Alex Hunter. #walkingamongstgiants"
+},
+{
+"id": 26260,
+"ctx": "TXT_DRILL_INFO_HUB_31",
+"en": "Cross the ball successfully in order to score as many goals as possible. Try to not leave the highlighted areas."
+},
+{
+"id": 26261,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_RESULTS_PARENT_TEAM_DRAW_HOME_1",
+"en": "<ParentTeam> need to be doing better than drawing home games against the likes of <ParentTeamMatchOpponentTeam>."
+},
+{
+"id": 26262,
+"ctx": "OSDK_EA_ACCT_DEACTIVATED_BODY",
+"en": "The email address for your account has been claimed by another user.  Select a new email address to play online."
+},
+{
+"id": 26263,
+"ctx": "SUB_SS_EPL_TRAIN_FREE FORM_1",
+"en": "{0.68-4.94}{C:BUTLER}Alright, lads. Listen up. We're done for today. But if you'd like to stay out, be my guest."
+},
+{
+"id": 26264,
+"ctx": "TXT_DRILL_INFO_BUTTONS_126",
+"en": "#C00F21 Aim/Move Player + #C00F03 Shoot\\n\\n#C00F03 + (Tap) #C00F03 Low Shot/Downward Header #C01F17 Protect Ball"
+},
+{
+"id": 26265,
+"ctx": "SUB_1_SC_0497_A",
+"en": "{C:ALEX}{0.66-4.27}Pff. I don’t know. Maybe you boys will learn something yourselves.{C:GARETH}{8.68-10.11}Nice!"
+},
+{
+"id": 26266,
+"ctx": "new_feature_pro_clubs",
+"en": "Seasonal Play makes its debut in Pro Clubs, adding promotion, relegation, and titles to 11 v 11 online gameplay."
+},
+{
+"id": 26267,
+"ctx": "FIFAChant_2",
+"en": "“Blue Moon”\\r\\nWritten by Richard Rodgers and Lorenz Hart\\r\\nPublished by EMI Robbins Catalogue Inc. (ASCAP)\\r\\n"
+},
+{
+"id": 26268,
+"ctx": "BeAProInfo_PositionText",
+"en": "Stay in position with help from this arrow.  Being out of position too often will negatively affect your rating."
+},
+{
+"id": 26269,
+"ctx": "CM_BIO_INTRO_12",
+"en": "Middlesbrough Football Club was formed by members of Middlesbrough Cricket Club at a meeting in a hotel in 1876."
+},
+{
+"id": 26270,
+"ctx": "IWL_TXT_DRILL_INFO_HUB_7",
+"en": "Play passes to your teammates while avoiding defenders. Bonus points are awarded for passing through the arrows."
+},
+{
+"id": 26271,
+"ctx": "SM_SOURCE_PUNDIT_2_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_PERF_AVERAGE_1",
+"en": "He may be raw, he may lack experience, but @MrAlexHunter provided some glimmers of potential on his debut today."
+},
+{
+"id": 26272,
+"ctx": "popup_reserverequest_appeal_4",
+"en": "If you are resting a few players for the next game, boss; could I put myself forward as one of the replacements?"
+},
+{
+"id": 26273,
+"ctx": "CMYS_Email_RiskFactor_Body",
+"en": "Boss.\\r\\nThe following players have been lured away by other clubs and signed to their youth academies:\\n\\r\\n%1s"
+},
+{
+"id": 26274,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_PARENT_TEAM_BRINK_OF_ELIMINATION_1",
+"en": "<ParentTeam> desperate to avoid early European elimination in crunch time. Based on form, it's not looking good."
+},
+{
+"id": 26275,
+"ctx": "TXT_CC_CONTENT_ONLINE_BANNED",
+"en": "This team has been flagged and banned from online play due to inappropriate content. Please choose another team."
+},
+{
+"id": 26276,
+"ctx": "new_feature_skills_mode",
+"en": "Test your FIFA skills in the brand new Skill Games & prove your mastery of passing, shooting, dribbling, & more."
+},
+{
+"id": 26277,
+"ctx": "TM_PI_TXT_FULLDESCRIPTION_29",
+"en": "Drops into midfield to create attacking space for teammates and has time and space to dribble or pick up passes."
+},
+{
+"id": 26278,
+"ctx": "SUB_SS_EPL_GF_2_A",
+"en": "{C:ALEX}{0.51-2.77}I've always worked hard, Toro. Not going to stop now.{C:TORO}{3.67-4.77}Good to hear, hombre."
+},
+{
+"id": 26279,
+"ctx": "FUT_COIN_SELLING_BAD_G3_2",
+"en": "Buying coins is a violation of our Terms of Service, which can result in an account reset or permanent FIFA ban."
+},
+{
+"id": 26280,
+"ctx": "SUB_PM_A1_S_WIN_2",
+"en": "{C:KAREN WALSTON}{0.10-4.50}Your squad manages to bring an important win today. A word on clinching the victory."
+},
+{
+"id": 26281,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_MENTIONS_AFTER_RECALL_FANS_PRE_MATCH_2",
+"en": "Would be nice to see @MrAlexHunter in the starting 11. We need goals and he produces goals. Kind of a no-brainer"
+},
+{
+"id": 26282,
+"ctx": "GTN_sListAgeContractPanelDescription",
+"en": "Select a row to edit the age range and contract remaining you are looking for. This section allows 2 selections."
+},
+{
+"id": 26283,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_MENTIONS_AFTER_RECALL_MAIN_CHAR_PRE_MATCH_1",
+"en": "Rising Star talent @MrAlexHunter to continue his growth and hopefully be named in the starting 11 for <HeroTeam>"
+},
+{
+"id": 26284,
+"ctx": "OSDK_OTP_HOST_LEFT",
+"en": "Another player appears to be disconnecting, please wait while we re-configure the session, and re-try operation."
+},
+{
+"id": 26285,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_AUTOGRAPH_ANSWER_C_1",
+"en": "@MrAlexHunter is the best. Gave me his autograph but no one else. Must know I'm his biggest fan ever. #alexrules"
+},
+{
+"id": 26286,
+"ctx": "DEMO_WHATS_NEW_5_TEXT",
+"en": "Witness over 50 new save animations, improved AI, reactions, a realistic player model and all new ways to score."
+},
+{
+"id": 26287,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_MENTIONS_AFTER_RECALL_PUNDITS_PRE_MATCH_1",
+"en": "@MrAlexHunter should be a regular starter. If <HeroTeam> doesn't give him adequate match-time another club will."
+},
+{
+"id": 26288,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_LAST_SEASON_STANDING_DISCUSSION_AVERAGE_1",
+"en": "<HeroTeam> got lost in the pack last season. You have to wonder if they've done enough to improve this campaign."
+},
+{
+"id": 26289,
+"ctx": "Standingtackledescription",
+"en": "A good Standing Tackle rating will mean you are more likely to come out with the ball when putting your foot in."
+},
+{
+"id": 26290,
+"ctx": "popup_reserverequest_appeal_2",
+"en": "Boss, with this next game if you're thinking of resting a few of the lads then I'd really love to get a run out."
+},
+{
+"id": 26291,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_PERF_BAD_1",
+"en": "Thought Alex Hunter was disappointing on his debut today for <HeroTeam>. Nerves seemed to get the better of him."
+},
+{
+"id": 26292,
+"ctx": "popup_unhappy_MidSeason_tier3_4",
+"en": "I want to play games boss, that's not happening for me here. So how about I go out on loan and see what happens?"
+},
+{
+"id": 26293,
+"ctx": "TXT_CONTACT_INFO_TEAM_689",
+"en": "New York Red Bulls\\nRed Bull Arena\\n600 Cape May St. #1\\nHarrison, NJ 07029\\nhttp://www.newyorkredbulls.com/\\r\\n"
+},
+{
+"id": 26294,
+"ctx": "CM_BIO_INTRO_479",
+"en": "Based in the city of Pamplona, the club was founded in 1920 after the merging of Sociedad Sportiva and New Club."
+},
+{
+"id": 26295,
+"ctx": "IWL_GcInjurySeverityUserdescr",
+"en": "When a player from a user controlled team gets an injury, this will increase/reduce the severity of that injury."
+},
+{
+"id": 26296,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_HERO_LONG_RANGE_GOAL_2",
+"en": "That amazing goal just goes to prove that @MrAlexHunter has the potential be a world class player. #HandsOffReal"
+},
+{
+"id": 26297,
+"ctx": "STORE_HAS_FUT_ACHS",
+"en": "Thanks for playing the full version of FIFA 17 Ultimate Team! A new boot is now available for you. Go try it on!"
+},
+{
+"id": 26298,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_RESULTS_PARENT_TEAM_DRAW_HOME_1",
+"en": "<ParentTeam> in need of another goal or 2 today. Starting to think maybe @MrAlexHunter could have provided that?"
+},
+{
+"id": 26299,
+"ctx": "TXT_EASFC_TUTORIAL_LEADERBOARD_RANK",
+"en": "Each person's rank will appear in a list.  People are ranked based on XP or level, depending on the leaderboard."
+},
+{
+"id": 26300,
+"ctx": "OSDK_SUBSCRIPTION_ROOMS_RETAIL_DDP_MISMATCH",
+"en": "Unable to join this room. The Early Access and retail versions of this game do not support matchmaking together."
+},
+{
+"id": 26301,
+"ctx": "PG_DribblingHelp",
+"en": "Dribbling attributes involve the players ball control, skill moves and how good they are at moving with the ball"
+},
+{
+"id": 26302,
+"ctx": "SM_SOURCE_LI_LI_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_PERF_BAD_1",
+"en": "Debuts are only the first step of a player's journey @MrAlexHunter. Put today behind you and look to the future."
+},
+{
+"id": 26303,
+"ctx": "CM_BIO_FACT_52",
+"en": "\"Roma are nicknamed \"\"La Magica\"\" (\"\"The Magic One\"\") by their supporters. Their symbol is the Capitoline Wolf.\""
+},
+{
+"id": 26304,
+"ctx": "CM_BIO_FACT_44",
+"en": "In 2010, Inter managed to win a treble of trophies and became the first team in Italian football to achieve this."
+},
+{
+"id": 26305,
+"ctx": "SM_SOURCE_TORO_SUBTOPIC_YOUNG_PLAYER_SELECTED_DUE_TO_INJURY_1",
+"en": "Best of luck to the talented young players @MrAlexHunter and @RealGazWalker who will get their opportunity today."
+},
+{
+"id": 26306,
+"ctx": "news_item_id_31_4",
+"en": "%1s have agreed on a %4s transfer fee for %3s from %2s. The player signed a %5s per week deal on a %6d year deal."
+},
+{
+"id": 26307,
+"ctx": "FUT_STADIA_ITEM_INFO",
+"en": "You can set one stadium as your home home ground. Please note that stadia differ in size and effect on your team."
+},
+{
+"id": 26308,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_PARENT_CLUB_LOAN_YOUTH_1",
+"en": "<ParentTeam> fringe player Alex Hunter moves to <HeroTeam> on loan. Clearly he wasn't ready for the big time yet."
+},
+{
+"id": 26309,
+"ctx": "CM_managertalk_preview_5a_LB_2",
+"en": " Let's use the fact that %1s is %2s for this match and take the play to his replacement and make supporting runs."
+},
+{
+"id": 26310,
+"ctx": "MF_crossblockedbyopponent_3",
+"en": "Too many of your crosses were blocked but it was positive to see you always looking to create chances in the box."
+},
+{
+"id": 26311,
+"ctx": "FUT_STORE_PACK_401_DESC",
+"en": "Your one-time chance to upgrade to a Silver team! Includes 12 common Silver items, with 11 players and 1 manager."
+},
+{
+"id": 26312,
+"ctx": "CM_Cal_sim",
+"en": "Advancing the date in this way will mean all of your matches will be simulated.\\r\\nDo you still want to continue?"
+},
+{
+"id": 26313,
+"ctx": "menu_gamemodes_description",
+"en": "Start a Career, play or create a Tournament, take part in a Live Season or challenge your Friends in Lounge Mode."
+},
+{
+"id": 26314,
+"ctx": "SM_SOURCE_DANNY_WILLIAMS_SUBTOPIC_FUT_TOTS_1",
+"en": "Hey, @MrAlexHunter, just saw your name on @EASPORTSFIFA's Player of the Season list. You deserve it, mate. #lucky"
+},
+{
+"id": 26315,
+"ctx": "TXT_DRILL_INFO_HUB_44",
+"en": "Score as many times as possible from different free kick positions. Bonus points are awarded for hitting targets."
+},
+{
+"id": 26316,
+"ctx": "FUT_MAXED_LOAN_PLAYER_WARNING",
+"en": "You've reached the maximum amount of contracts a loan Player can have. The remaining contracts will be discarded."
+},
+{
+"id": 26317,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_FUT_TOTW_3",
+"en": "Good to see young talents like Alex Hunter being recognised for their good form by @EASPORTSFIFA. #TOTW @EASPORTS"
+},
+{
+"id": 26318,
+"ctx": "SUB_PM_U_MOM_3",
+"en": "{C:KAREN WALSTON}{0.09-6.07}So! Alex! Man of the Match! A special game for you or just another day at the office?"
+},
+{
+"id": 26319,
+"ctx": "FUT_STORE_PACK_1111_DESC",
+"en": "Nothing but players to build out your Ligue 1 squads! Includes 12 Ligue 1 players, at least 10 Gold with 3 Rares."
+},
+{
+"id": 26320,
+"ctx": "CM_Email_Body_Enquiry_Free",
+"en": "%1s,\\n\\nThank you for your enquiry of %2s, we are happy to listen to any offers you put forward.\\n\\nRegards,\\n%5s"
+},
+{
+"id": 26321,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_POSITION_BAD_6",
+"en": "Time for us all to get behind the lads and not on their backs. They're already under enough pressure. #<HeroTeam>"
+},
+{
+"id": 26322,
+"ctx": "CM_BIO_FACT_109",
+"en": "Known in their early days as the Throstles, the club's more popular nickname amongst fans came to be the Baggies."
+},
+{
+"id": 26323,
+"ctx": "OSDK_SUBSCRIPTION_RETRIEVE_TIMEOUT",
+"en": "Unable to retrieve EA SPORTS Season Ticket content from the EA server in a timely manner. Please try again later."
+},
+{
+"id": 26324,
+"ctx": "SM_SOURCE_DANNY_WILLIAMS_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_ONE_GOAL_1",
+"en": "@MrAlexHunter. Remember me? Ran rings around you at the exit trials. Saw you scored on your debut. #beginnersluck"
+},
+{
+"id": 26325,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_NEWS_GOOD_FORM_2",
+"en": "This is turning into quite a season for young Alex Hunter, whose recent run of form has again proved his quality."
+},
+{
+"id": 26326,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_PRE_SEASON_TOURS_PREPARE_1",
+"en": "Pre-season is upon us as the new Premier League season countdown begins. Which club will clock up the most miles?"
+},
+{
+"id": 26327,
+"ctx": "news_body_newsigning_prematch_extra_2",
+"en": "\\n\\nRecently signed, <FullPlayerName1> may get a chance to make his debut following his arrival from <TeamName2>."
+},
+{
+"id": 26328,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_PARENT_TEAM_FIRST_POINTS_CL_1",
+"en": "It's a start but we need more goals. I know! Bring back @MrAlexHunter. You sent him out on loan remember? #recall"
+},
+{
+"id": 26329,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_NEWS_FA_CUP_LOSS_1",
+"en": "Gareth Walker claims bragging rights over Alex Hunter as <HeroMatchOpponentTeam> beat <HeroTeam> in FA Cup final."
+},
+{
+"id": 26330,
+"ctx": "FUT_PlaystyleDefendersDESC",
+"en": "Each Chemistry Style affects different Player Attributes. Change Chemistry Styles to change how your Squad plays."
+},
+{
+"id": 26331,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_PARENT_TEAM_NOTHING_TO_PLAY_CL_1",
+"en": "As the curtain drops on <ParentTeam>'s European farce, it's hard not to feel this has been an opportunity missed."
+},
+{
+"id": 26332,
+"ctx": "OSDK_ORIGIN_ACCT_UPGRADE_ACCOUNT_BODY",
+"en": "You are now able to upgrade to a full EA Account. Please fill out the below form to complete the upgrade process."
+},
+{
+"id": 26333,
+"ctx": "FUT_STORE_PACK_1121_DESC",
+"en": "Nothing but players to build out your Ligue 1 squads! Includes 12 Ligue 1 players, at least 10 Gold with 6 Rares."
+},
+{
+"id": 26334,
+"ctx": "popup_unhappy_tier5_1",
+"en": "I know I'm way down the pile at the club, but I really want to play football and so I need to consider my future."
+},
+{
+"id": 26335,
+"ctx": "OSDK_ONLINEPASS_CODE_ENTRY_DESCRIPTION",
+"en": "Activate your Online Pass to access all online features. Codes are NOT case sensitive and do NOT require hyphens."
+},
+{
+"id": 26336,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_NEWS_FA_CUP_WIN_1",
+"en": "Alex Hunter claims bragging rights over Gareth Walker as <HeroTeam> beat <HeroMatchOpponentTeam> in FA Cup final."
+},
+{
+"id": 26337,
+"ctx": "CM_NegotiatorFeedback_OutgoingTransfer_BadForm",
+"en": "This player has been poor in recent matches. We could offer closer to %1s and still have a chance of signing him."
+},
+{
+"id": 26338,
+"ctx": "SUB_VO_EPL_TRAIN_SET_PIECE_06",
+"en": "{C:BUTLER}{0.00-6.18}I want to get our set pieces organized with this session, they've been looking a bit sloppy."
+},
+{
+"id": 26339,
+"ctx": "SUB_VO_EPL_TRAIN_SET_PIECE_02",
+"en": "{C:BUTLER}{0.00-9.12}So set pieces then. The gaffer wants us to lock them down. Let's give him what he wants, eh?"
+},
+{
+"id": 26340,
+"ctx": "CM_BIO_FACT_88",
+"en": "Originally formed as Small Heath Alliance, the club changed its name in 1905, adopting the name of Birmingham FC."
+},
+{
+"id": 26341,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_PERF_BAD_1",
+"en": "@MrAlexHunter takes the first exciting step in his pro career as he debuts for <HeroTeam>. Congratulations, Alex."
+},
+{
+"id": 26342,
+"ctx": "CM_PlayerType_Create_VPro_Help",
+"en": "Select this option if you want to create a Pro now. Note that this will be your Pro for this career journey only."
+},
+{
+"id": 26343,
+"ctx": "OSDK_CLUBS_CONFIRM_WIPE_STATS",
+"en": "Are you sure you want to wipe the Head-to-Head Stats and Leaderboards for this Club? This Action is Irreversible."
+},
+{
+"id": 26344,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_PRE_SEASON_TOURS_PREPARE_1",
+"en": "Premier League teams jet off on their pre-season tours. How many will burn out before the new campaign kicks off?"
+},
+{
+"id": 26345,
+"ctx": "CM_BIO_INTRO_54",
+"en": "The club was founded in 1906 when they absorbed the former club FC Torinese and adopted the current club colours."
+},
+{
+"id": 26346,
+"ctx": "BeAProInfo_CallPassText",
+"en": "Press the pass button to ask your team-mate for a pass or cross.  But if you're a bad option, you may be ignored."
+},
+{
+"id": 26347,
+"ctx": "SUB_VO_CHAMP_TRAIN_PASSING_02",
+"en": "{C:DINO}{0.00-11.12}A club that is passing well controls the tempo of the match. So we work on our ball movement."
+},
+{
+"id": 26348,
+"ctx": "DMDesc_EA Sports Football World",
+"en": "Visit www.easports.com/gameface to download your Photo Game Face as well as get access to other web only features"
+},
+{
+"id": 26349,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_ALEX_RECALLED_1",
+"en": "Rising Star client @MrAlexHunter recalled to <ParentTeam> after successful loan spell. We wish him every success."
+},
+{
+"id": 26350,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_GARETH_TRANSFERED_TO_RIVAL_1",
+"en": "Rising Star would like to announce they have parted company with @RealGazWalker. We wish him well for the future."
+},
+{
+"id": 26351,
+"ctx": "MF_oopthirtyone_3",
+"en": "You showed a tendency to wander out of position, which made the whole team lose its shape. This needs to improve!"
+},
+{
+"id": 26352,
+"ctx": "TXT_WELCOME_EASFC_USER_DESCRIPTION",
+"en": "Welcome back, %1s!  Based on your EA SPORTS Football Club history we've pre-selected a couple of options for you."
+},
+{
+"id": 26353,
+"ctx": "FUT_STORE_IS_NOT_READY",
+"en": "FIFA Points are temporarily unavailable for purchase. We apologize for the inconvenience, please try again later."
+},
+{
+"id": 26354,
+"ctx": "FUT_STORE_PACK_802_DESC",
+"en": "Smaller and cheaper than a standard Gold Pack, and going fast! A mix of 4 items, all Gold with at least 1 player."
+},
+{
+"id": 26355,
+"ctx": "News_item_ID_40_1",
+"en": "%1s have won the %3s title in what has been a highly competitive and enjoyable season for fans and players alike."
+},
+{
+"id": 26356,
+"ctx": "DEMO_WHATS_NEW_1_TEXT",
+"en": "Players will now react and respond organically with new reactions to bad tackles, missed chances, goals, and more."
+},
+{
+"id": 26357,
+"ctx": "FCC_CU_Arena_help_22",
+"en": "All staff have a value that effects the developments items. Find the right staff member to improve key attributes."
+},
+{
+"id": 26358,
+"ctx": "TXT_DRILL_INFO_BUTTONS_111_0_PCMOUSE",
+"en": "#C00F21 Move player #C00F27 Skill Move #C00F01 Ground Pass\\n\\n#C00F03 Shoot #C00F02 Lob/Cross #C00F04 Through Pass"
+},
+{
+"id": 26359,
+"ctx": "SUB_1_SC_0380",
+"en": "{C:GEORGE}{0.27-5.00}Looking sharp today, Hunter. Can't say I'm surprised. You've got football in your blood, lad."
+},
+{
+"id": 26360,
+"ctx": "TXT_ONLINE_SESSION_SYSTEM_FULL",
+"en": "Sorry, you were not invited to this session. To play with your Friends, go to Online Friendlies to send an invite."
+},
+{
+"id": 26361,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_SOCIAL_MEDIA_TRENDING_1",
+"en": "It's always satisfying to see a young player you tip for stardom achieving such widespread popularity. #AlexHunter"
+},
+{
+"id": 26362,
+"ctx": "CM_NoUserControlledTeam_Warning",
+"en": "In order to continue, you must have a controller assigned to the team you have chosen to play this game mode with."
+},
+{
+"id": 26363,
+"ctx": "News_item_ID_7_3",
+"en": "%2s against %3s on the opening weekend is the news that greeted %1s fans when the fixture list was released today."
+},
+{
+"id": 26364,
+"ctx": "CM_BIO_FACT_2",
+"en": "Aston Villa became the second team ever to win the double when they won the First Division and The FA Cup in 1897."
+},
+{
+"id": 26365,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_PARENT_TEAM_BRINK_OF_ELIMINATION_1",
+"en": "<ParentTeam> stand on the brink of EU elimination. Given their cup form so far this season, it's not looking good."
+},
+{
+"id": 26366,
+"ctx": "CM_BIO_FACT_175",
+"en": "By winning the Bundesliga title in 2009, Wolfsburg were only the 12th team in history to have won the competition."
+},
+{
+"id": 26367,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_HERO_CONSECUTIVE_MATCHES_WITH_GOALS_2",
+"en": "Well then! @MrAlexHunter scored AGAIN! Hm. Starting to think this is what the boy does-- scores goals. #givememore"
+},
+{
+"id": 26368,
+"ctx": "SM_SOURCE_PUNDIT_2_SUBTOPIC_NEWS_ASSIST_1",
+"en": "One of the standout moments from <HeroTeam>'s game was Alex Hunter's precise pass that led to a goal. #greatassist"
+},
+{
+"id": 26369,
+"ctx": "CM_BIO_FACT_241",
+"en": " FC Barcelona won their first league title in 1928/1929 with 25 points, in the very first year of the competition."
+},
+{
+"id": 26370,
+"ctx": "OSDK_RESTORE_CONFIRM_SHORT",
+"en": "Are you sure you want to restore these settings to their default values?  Anything you have changed will be reset."
+},
+{
+"id": 26371,
+"ctx": "TXT_EASFC_SCENARIO_1_DESCRIPTION",
+"en": "Down three goals early in the first half you must complete the miraculous comeback with Tottenham against Chelsea."
+},
+{
+"id": 26372,
+"ctx": "SM_SOURCE_TORO_SUBTOPIC_LAST_SEASON_STANDING_DISCUSSION_BAD_1",
+"en": "We're determined not to repeat last season's failures. Each of us must play our part. We are <HeroTeam>!! #focused"
+},
+{
+"id": 26373,
+"ctx": "Skilleddribblingdescription",
+"en": "Unlock Skilled Dribbling & you'll be able to twist & turn the opposition with that extra bit of dribbling control."
+},
+{
+"id": 26374,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_NEWS_DERBY_UPCOMING_1",
+"en": "Today is derby day so please don't talk to me until after the match. If we lose, don't talk to me until next week."
+},
+{
+"id": 26375,
+"ctx": "OSDK_MP_QM_NO_OPP_FOUND",
+"en": "No opponents were found who are near your skill level.  Would you like to search again or create your own session?"
+},
+{
+"id": 26376,
+"ctx": "FUT_QUEST_FIRST_MATCH_DESCRIPTION_NAV_BIG",
+"en": "From the Main Menu, navigate to the Single Player or Online tab. Select a Season or Tournament to get into a game."
+},
+{
+"id": 26377,
+"ctx": "OSDK_OL_DRAFT_RUN_WARNING",
+"en": "The draft for this league has already occurred. Your selected team roster will be based on default draft settings."
+},
+{
+"id": 26378,
+"ctx": "FUT_ERROR_NO_FRIENDS",
+"en": "Your Friends list is currently empty. To use the Play a Friend feature you must have Friends on your Friends list."
+},
+{
+"id": 26379,
+"ctx": "SUB_2_SC_0220_Harry_A",
+"en": "{C:ALEX}{0.52-2.31}Ready for some competition?{C:HARRY KANE}{2.56-4.56}Yeah, definitely. How about you? You ready?"
+},
+{
+"id": 26380,
+"ctx": "CM_Transfer_Old",
+"en": "The player is in the latter stages of his career and has plans to retire soon, you should look for another player."
+},
+{
+"id": 26381,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_HERO_MAN_OF_MATCH_AWARD_2",
+"en": "@MrAlexHunter was on song today, showing up many of the more senior players with his man of the match performance."
+},
+{
+"id": 26382,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_RESULTS_PARENT_TEAM_DRAW_HOME_1",
+"en": "Should have got the three points today. Some of the lads didn't do themselves justice out there. #twopointsdropped"
+},
+{
+"id": 26383,
+"ctx": "IWL_PassAssistanceDescr3",
+"en": "Pass direction and power will be assisted to help play passes into the receiver's path and avoid opponent players."
+},
+{
+"id": 26384,
+"ctx": "FUT_STORE_PACK_900_DESC",
+"en": "A Gold Pack with a bonus item! A mix of 13 items, including players and consumables, at least 11 Gold with 1 Rare."
+},
+{
+"id": 26385,
+"ctx": "CM_managertalk_preview_5b_CAM_3",
+"en": " %1s may give us a tough time in the middle of the park and we'll have to play together as a unit in the midfield."
+},
+{
+"id": 26386,
+"ctx": "SM_SOURCE_CATHERINE_HUNTER_SUBTOPIC_SPONSORSHIP_DEALS_PRINT_1",
+"en": "Bet you never thought you'd have your face on an adidas billboard, @MrAlexHunter. Just shows what you can achieve."
+},
+{
+"id": 26387,
+"ctx": "OSDK_EMAIL_ADD_HELP",
+"en": "Enter your Email address if you want to receive alerts and end-of-game stats.  EA will not share this information."
+},
+{
+"id": 26388,
+"ctx": "TXT_CO_TOGGLE_HUD_DESC",
+"en": "Choose whether you want to show or hide the Trainer during gameplay, or whether you want to disable it completely."
+},
+{
+"id": 26389,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_BAD_BLOOD_BETWEEN_TWO_FRIENDS_1",
+"en": "@RealGazWalker’s vitriol towards his former best friend @MrAlexHunter seems motivated only by jealousy and malice."
+},
+{
+"id": 26390,
+"ctx": "news_item_id_31_3",
+"en": "%1s have secured the services of %3s for %4s from %2s with the player putting pen to paper on a %6d year contract."
+},
+{
+"id": 26391,
+"ctx": "TXT_DRILL_INFO_HUB_125",
+"en": "Use chip shots to beat the goalkeeper and score on goal. The longer you press the button; higher the shot will be."
+},
+{
+"id": 26392,
+"ctx": "OSDK_CLUBS_INVITE_ALREADY_MEMBER",
+"en": "You are already a member of another club. You must leave the club you are a member of before joining another club."
+},
+{
+"id": 26393,
+"ctx": "CM_BIO_INTRO_111974",
+"en": "Founded in 1920, Sassuolo played for the very first time in a professional Italian league in the 1984/1985 season."
+},
+{
+"id": 26394,
+"ctx": "CM_BIO_INTRO_18",
+"en": "Tottenham Hotspur was formed by boys from Hotspur Cricket Club, so they could play sport during the winter months."
+},
+{
+"id": 26395,
+"ctx": "CLUBS_HLP_POSITION_WANTED",
+"en": "Select the positions your Club would like to fill. This will help Free Agents when they search for a club to join."
+},
+{
+"id": 26396,
+"ctx": "news_body_newmanager_postmatch_secondmatch_lostfirst_1",
+"en": "\\n\\nLosing in his first game in charge was a big blow to <UserName> but as the song once said, the only way is up."
+},
+{
+"id": 26397,
+"ctx": "TXT_EASFC_TUTORIAL_PFYC_DAILY_TABLE",
+"en": "The Daily Table shows the rankings and projected points that day based on the average XP their fans earn for them."
+},
+{
+"id": 26398,
+"ctx": "news_item_id_19_4",
+"en": "%1s and %2s played an entertaining %3d-%4d victory for %1s in a contest of two teams with a long standing rivalry."
+},
+{
+"id": 26399,
+"ctx": "CM_BIO_FACT_452",
+"en": "Although RCD Espanyol are now known for wearing a blue and white home kit, their original shirt colour was yellow."
+},
+{
+"id": 26400,
+"ctx": "news_body_streak_postmatch_loss_lostthis_4",
+"en": "\\n\\n<TeamName1> has slipped further with their loss to <TeamName2> today and further into their %1s losing streak."
+},
+{
+"id": 26401,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_TEAM_SELECTION_REACTION_1",
+"en": "Can't believe I just signed a pro contract with <HeroTeam> on the same day as my best mate @MrAlexHunter. #buzzing"
+},
+{
+"id": 26402,
+"ctx": "TXT_EASFC_TUTORIAL_PFYC_XP_COMPARISON",
+"en": "Compares your XP to your club's average XP. Scrolling through teams will compare your club's average XP to theirs."
+},
+{
+"id": 26403,
+"ctx": "TXT_FE_TUTORIAL_H2H_HUB_DESC",
+"en": "Play online against those at your skill level, and rise through the divisions in a quest for silverware and glory!"
+},
+{
+"id": 26404,
+"ctx": "CM_managertalk_preview_5b_ST_3",
+"en": " %1s is playing well right now, try to give him tough decisions to make so we can get him out of his comfort area."
+},
+{
+"id": 26405,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_HERO_GOOD_FORM_1",
+"en": "@MrAlexHunter's recent performances have made him one of the league's most in-form players, but can he keep it up?"
+},
+{
+"id": 26406,
+"ctx": "SM_SOURCE_DANNY_WILLIAMS_SUBTOPIC_RESULTS_PARENT_TEAM_WIN_AWAY_1",
+"en": "Oi @MrAlexHunter, <ParentTeam> with another 3 points today. They're doing alright mate. We need you more. #selfish"
+},
+{
+"id": 26407,
+"ctx": "FLB_CMAwards_NoRecord",
+"en": "Are you regularly winning prestigious awards in your Career? This leaderboard will tell all your Friends about it."
+},
+{
+"id": 26408,
+"ctx": "SUB_PM_U_GOAL_4_B",
+"en": "{C:ALEX}{0.21-6.17}Yeah, for me it's more about the feeling you get when you score, there's nothing quite like it."
+},
+{
+"id": 26409,
+"ctx": "FUT_COIN_SELLING_BAD_G3_1",
+"en": "Please be aware that EA does not sell FIFA Ultimate Team coins and has no affiliation with coin selling websites. "
+},
+{
+"id": 26410,
+"ctx": "CM_Transfer_TeamTooGood",
+"en": "the player feels he would only be a fringe player on this team, you will have to pay him extra to accept this role"
+},
+{
+"id": 26411,
+"ctx": "FreeGoldPackDetailDesc",
+"en": "This item grants your club a gold item pack. It will be used the next time you purchase a gold pack from the Shop."
+},
+{
+"id": 26412,
+"ctx": "PAP_MATCH_OBJ_DESC_DIFFICULTY_VERY_HARD2",
+"en": "The next few games will be a massive test for us. I expect a big effort but understand the difficulty we may have."
+},
+{
+"id": 26413,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_TWO_GOALS_1",
+"en": "Rising Star client @MrAlexHunter shows why we rate him so highly with a brace on his debut. Congratulations, Alex."
+},
+{
+"id": 26414,
+"ctx": "FUT_DRAFT_NOT_ENOUGH_POINTS",
+"en": "You do not have enough FIFA Points to pay the entry fee. Would you like to go to the store to purchase FIFA Points?"
+},
+{
+"id": 26415,
+"ctx": "TXT_DRILL_INFO_HUB_8",
+"en": "Shoot at the open section of the goal. Get more points by placing your shot closer to the posts or hitting targets."
+},
+{
+"id": 26416,
+"ctx": "FUT_STORE_PACK_1210_DESC",
+"en": "Get your EPL squad started! Includes 18 EPL players, at least 16 Gold, with 3 Rare Loan players rated 82 or higher."
+},
+{
+"id": 26417,
+"ctx": "news_body_fivegameform_okay_cpu_4",
+"en": " Not usually a soft-spoken crowd, <TeamName1> fans are eager to see their team's banal form boosted by a win today."
+},
+{
+"id": 26418,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_HERO_MATCH_PERFORMANCE_BAD_2",
+"en": "I think @MrAlexHunter's performance today makes it pretty clear that he's not ready for the Premier League. #sithim"
+},
+{
+"id": 26419,
+"ctx": "TXT_REWARDS_PRO_CLUBS_HEADER_TWO_DESC_RIGHT_ERROR",
+"en": "There was a problem accessing your FIFA 16 Online Pro progress to award your FIFA 16 badge. Please try again later."
+},
+{
+"id": 26420,
+"ctx": "SM_SOURCE_HERO_PARENT_CLUB_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_ONE_GOAL_1",
+"en": "Congratulations to @MrAlexHunter who was one of the team's standout performers with a goal on his impressive debut."
+},
+{
+"id": 26421,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_FA_CUP_BUILD_UP_1",
+"en": "@MrAlexHunter. Ready for the FA Cup final, mate? Time to show the world who England's best young player is! #IOWNYO"
+},
+{
+"id": 26422,
+"ctx": "SUB_VO_CHAMP_TRAIN_HELLO_04",
+"en": "{C:DINO}{0.00-10.27}Diligence and focus are what make great players and great teams and so I ask this of you today."
+},
+{
+"id": 26423,
+"ctx": "SM_SOURCE_TORO_SUBTOPIC_NEWS_FA_CUP_FINAL_REACTION_1",
+"en": "A childhood dream come true to be playing in the FA Cup final. Now we must focus 110% to ensure we claim the prize."
+},
+{
+"id": 26424,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_BAD_BLOOD_PART1_3",
+"en": "So @MrAlexHunter, <HeroTeam> think you can fill the hole I've left in the team? We both know who's better. #getreal"
+},
+{
+"id": 26425,
+"ctx": "TXT_DRILL_INFO_HUB_19",
+"en": "Beat all the defenders while staying in the zone. Bonus points are awarded for using skill moves and scoring goals."
+},
+{
+"id": 26426,
+"ctx": "CM_BIO_INTRO_110734",
+"en": "The club was founded in 1923 under the name of Società Sportiva Crotona before changing to the current name in use."
+},
+{
+"id": 26427,
+"ctx": "SUB_VO_EPL_TRAIN_TACKLING_06",
+"en": "{C:BUTLER}{0.00-9.03}The gaffer asked me to work on tackling with you lot. If you can believe it, I agree with him."
+},
+{
+"id": 26428,
+"ctx": "CMYS_Popup_LeaveScoutReport",
+"en": "The scouting network for this country has ended. Leaving this scout report will reject all remaining youth players."
+},
+{
+"id": 26429,
+"ctx": "TXT_CONTACT_INFO_LEAGUE_19",
+"en": "DFL Deutsche Fußball Liga GmbH\\nGuiollettstraße 44-46\\n60325 Frankfurt am Main\\nGermany\\nhttp://www.bundesliga.com/"
+},
+{
+"id": 26430,
+"ctx": "SUB_VO_CHAMP_TRAIN_FREE_FORM_04",
+"en": "{C:DINO}{0.00-9.02}Today's session will in your hands, ragazzi. You have earned the freedom to train what you like."
+},
+{
+"id": 26431,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_NEWS_ENGLAND_NEEDS_NEW_BLOOD_1",
+"en": "With England's squad failing to deliver its time youngsters like Walker or Hunter were given a shot. One, not both."
+},
+{
+"id": 26432,
+"ctx": "MaxNumberFilesExceeded",
+"en": "You have reached the maximum saved games for %1s.  You must delete some saved games before you can save more games."
+},
+{
+"id": 26433,
+"ctx": "fcc_unassignedcardswarning",
+"en": "You have to assign all items before being able to leave this screen.\\r\\nPlease select one of the following options:"
+},
+{
+"id": 26434,
+"ctx": "MatchDayRequiresLeadProfile",
+"en": "Please go to Customise, Profile, and in Profile Manager set your profile as the active profile to access Match Day."
+},
+{
+"id": 26435,
+"ctx": "TXT_EASFC_SCENARIO_2_DESCRIPTION",
+"en": "Down 0-3 to Schalke at the start of the second half, you must mount a huge comeback with Duisburg to win the cup.  "
+},
+{
+"id": 26436,
+"ctx": "SM_SOURCE_HERO_PARENT_CLUB_SUBTOPIC_REACTION_TO_HUNTER_WALKER_TOUR_PERF_1",
+"en": "Congratulations to youngsters @MrAlexHunter and @RealGazWalker, who today made their debuts on our tour of the USA."
+},
+{
+"id": 26437,
+"ctx": "SM_SOURCE_HERO_PARENT_CLUB_SUBTOPIC_PARENT_TEAM_KNOCKED_OUT_CL_1",
+"en": "Having dropped out of Europe the team can now concentrate on building on its strong position in the Premier League."
+},
+{
+"id": 26438,
+"ctx": "SM_SOURCE_CATHERINE_HUNTER_SUBTOPIC_HERO_GOOD_FORM_2",
+"en": "@MrAlexHunter. You've been playing so well again. Keep going and soon you'll reach the stars. #workhard #stayhumble"
+},
+{
+"id": 26439,
+"ctx": "FaceAlreadyUpToDate",
+"en": "There have been no changes to your Game Face to download. Visit www.easports.com/gameface to update your Game Face."
+},
+{
+"id": 26440,
+"ctx": "CM_Email_ForfeitMatch",
+"en": "We're sorry you saw fit to end the game early.\\r\\nWe trust this is not something that will be a regular occurrence."
+},
+{
+"id": 26441,
+"ctx": "FUT_SKIP_ICEBREAKER_FLOW",
+"en": "We have noticed that you have already played FIFA Ultimate Team before.\\r\\nWould you like to skip the introduction?"
+},
+{
+"id": 26442,
+"ctx": "PNC1PopupLine2",
+"en": "You can get more items by purchasing a pack through the Buying menu, or by trading through the item Exchange menu. "
+},
+{
+"id": 26443,
+"ctx": "SM_SOURCE_LI_LI_SUBTOPIC_MENTIONS_BIG_NAME_TRANSFER_1",
+"en": "He's here @MrAlexHunter! Bienvenue @<BigNameSigningPlayer>! Your presence will certainly make my job easier. #merci"
+},
+{
+"id": 26444,
+"ctx": "TXT_MG_DESC_MATCH",
+"en": "If you have a guest, you will only play an opponent with a guest; if you are solo, you will only play someone solo."
+},
+{
+"id": 26445,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_NEWS_END_OF_SEASON_WIN_1",
+"en": "<HeroTeam> got lucky in the league with @MrAlexHunter. It'll be a different story in the FA Cup final! #paybacktime"
+},
+{
+"id": 26446,
+"ctx": "SM_SOURCE_MICHAEL_TAYLOR_SUBTOPIC_REACTION_TO_HUNTER_WALKER_TOUR_PERF_1",
+"en": "Rising Star clients @MrAlexHunter and @RealGazWalker showed glimpses of what they're capable of today. #onestowatch"
+},
+{
+"id": 26447,
+"ctx": "MF_unsuccessfulforwardpass_2",
+"en": "Too often your forward passes let you down. You need to work harder to improve your composure and passing accuracy."
+},
+{
+"id": 26448,
+"ctx": "FUT_STORE_PACK_1112_DESC",
+"en": "Nothing but players to build out your Calcio A squads! Includes 12 Calcio A players, at least 10 Gold with 3 Rares."
+},
+{
+"id": 26449,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_GARETH_TRANSFERED_TO_RIVAL_6",
+"en": "<HeroTeam> made you, @RealGazWalker. You should be ashamed of yourself walking out on us half way through a season."
+},
+{
+"id": 26450,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_LOAN_SEASON_NEWS_1",
+"en": "Several <HeroTeam> youngsters rumoured to be available on loan. Who will get snapped up and who'll get left behind?"
+},
+{
+"id": 26451,
+"ctx": "CommentaryVolumeDescr",
+"en": "The volume level of commentary during the match.\\n\\nNote audio sliders will not impact some elements of The Journey"
+},
+{
+"id": 26452,
+"ctx": "FUT_ILLEGAL_FEEDBACK_MESSAGE",
+"en": "Your message contains a censored word. Please remove any censored words from your message before you send it again."
+},
+{
+"id": 26453,
+"ctx": "SM_SOURCE_TORO_SUBTOPIC_RUMOURS_OF_UNREST_DRESSINGROOM_PARENT_TEAM_1",
+"en": "Without naming names there are those who must check their egos at the door and take a long hard look in the mirror."
+},
+{
+"id": 26454,
+"ctx": "FUT_NEWCARDS_SquadFullMsg",
+"en": "Your Active Squad is full. To put a new item in, you must choose which item in your Active Squad below to swap out."
+},
+{
+"id": 26455,
+"ctx": "FUT_STORE_PACK_1122_DESC",
+"en": "Nothing but players to build out your Calcio A squads! Includes 12 Calcio A players, at least 10 Gold with 6 Rares."
+},
+{
+"id": 26456,
+"ctx": "Pack_NotEnoughPoints",
+"en": "You currently don't have enough FIFA Points to purchase the pack you've selected.\\r\\nDo you want to add FIFA Points?"
+},
+{
+"id": 26457,
+"ctx": "IWL_BADGE_Description_16",
+"en": "This player is multitalented and excels in a number of key attacking areas, making her the complete Forward package."
+},
+{
+"id": 26458,
+"ctx": "TXT_DRILL_INFO_HUB_126",
+"en": "Battle against the defender and beat the keeper to score. Get more points by placing your shots closer to the posts."
+},
+{
+"id": 26459,
+"ctx": "SUB_VO_CHAMP_TRAIN_SET_PIECE_03",
+"en": "{C:DINO}{0.00-11.17}Our focus for today will be the positioning in our set-pieces. They have been, disorganized, no?"
+},
+{
+"id": 26460,
+"ctx": "popup_unhappy_tier5_4",
+"en": "For me to believe that I have any kind of future at this club, I need to get a chance in the team from time to time."
+},
+{
+"id": 26461,
+"ctx": "news_item_id_46_3",
+"en": "It's time for the %1s again and plenty of teams will fancy their chances of lifting the silverware this time around."
+},
+{
+"id": 26462,
+"ctx": "SUB_VO_EPL_TRAIN_HELLO_12",
+"en": "{C:BUTLER}{0.00-7.11}The best teams train harder than the rest and that's a fact. So guess what we're doing today..."
+},
+{
+"id": 26463,
+"ctx": "DEMO_WHATS_NEW_8_TEXT",
+"en": "An all-new hub powered by Goal.com keeps fans connected to the football news and action from their favorite leagues."
+},
+{
+"id": 26464,
+"ctx": "SM_SOURCE_SPORTS_NEWS_SUBTOPIC_NEWS_DERBY_UPCOMING_1",
+"en": "Another chapter in the storied history between <HeroTeam> and <HeroMatchOpponentTeam> writes itself today. #derbyday"
+},
+{
+"id": 26465,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_NEWS_LONG_RANGE_GOAL_2",
+"en": "What a goal by Alex Hunter. If he keeps this up, he may yet become a world class player. Long way to go yet, though."
+},
+{
+"id": 26466,
+"ctx": "UnlockViewStickerbook",
+"en": "Storing this in your Club will unlock this item in game.  Do you want to unlock the item by storing it in your Club?"
+},
+{
+"id": 26467,
+"ctx": "news_item_id_27_3",
+"en": "%2s have been scheduled to play %1s in what could prove to be an exciting %4s clash. The match will be played on %3s"
+},
+{
+"id": 26468,
+"ctx": "news_item_id_51_4",
+"en": "%2s will be out of action indefinitely after picking up an injury that could rule him out of action for some months."
+},
+{
+"id": 26469,
+"ctx": "PlayerFeedbackPopUp_GoodPreSeasonFormNotStarting_3",
+"en": "I hope you're going to include me in the squad for the first game. I've had a good pre-season and I'm feeling great."
+},
+{
+"id": 26470,
+"ctx": "TXT_CONTACT_INFO_TEAM_687",
+"en": "Columbus Crew SC\\nCrew Stadium\\nOne Black and Gold Boulevard\\nColumbus, OH 43211\\nhttp://www.columbuscrewsc.com/\\r\\n"
+},
+{
+"id": 26471,
+"ctx": "SeasonDescr",
+"en": "Choose which season the match is played, which affects the lighting conditions based on the location of the stadium."
+},
+{
+"id": 26472,
+"ctx": "CM_BIO_INTRO_110569",
+"en": "The club was founded in 1998 by the merger of two football clubs based in Dijon, Cercle Dijon Football and Dijon FC."
+},
+{
+"id": 26473,
+"ctx": "MF_playerlossesmidfieldthird_3",
+"en": "Too often you gifted possession to the opposition in the middle of the pitch, instantly putting us on the back foot."
+},
+{
+"id": 26474,
+"ctx": "CM_BIO_INTRO_1809",
+"en": "Founded in 1970, they changed their name from Union Sportive Toulouse to their current name: Toulouse Football Club."
+},
+{
+"id": 26475,
+"ctx": "FCC_CU_Arena_help_6",
+"en": "Team chemistry is crucial. Use Swaps & Exchange to find those players who are key to increasing your overall rating."
+},
+{
+"id": 26476,
+"ctx": "CK_Instruction_2",
+"en": "To switch to a player in the box press the #C00F18 button. Lock in your aim and power to gain control of the player."
+},
+{
+"id": 26477,
+"ctx": "ContinueSeriesDesc",
+"en": "Select 'Yes' to rematch and continue the season (or start the next), or 'No' to return to the Online Friendlies Hub."
+},
+{
+"id": 26478,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_MENTIONS_PRE_LOAN_FANS_DRAW_5",
+"en": "And we're all-even after 90 vs <HeroMatchOpponentTeam>. Thought maybe @MrAlexHunter would make the difference. Nope."
+},
+{
+"id": 26479,
+"ctx": "SUB_PM_U_MISSOP_1_B",
+"en": "{C:ALEX}{0.71-5.84}No thoughts. Just have to put that kind of thing to the back of your mind. I'll get the next one."
+},
+{
+"id": 26480,
+"ctx": "SM_SOURCE_TORO_SUBTOPIC_PARENT_TEAM_KNOCKED_OUT_CAPITAL_1_1",
+"en": "EFL Cup campaign over before it's even begun. We let ourselves, the club and most of all the fans down today. #sorry"
+},
+{
+"id": 26481,
+"ctx": "mustassignunassignedcardsbeforepurchase",
+"en": "You have new unassigned items. These items must be cleared from the new items pile before you purchase another pack."
+},
+{
+"id": 26482,
+"ctx": "SM_SOURCE_CATHERINE_HUNTER_SUBTOPIC_DEBUT_REACTION_TO_HUNTER_MORE_THAN_3_GOALS_1",
+"en": "Amazing debut @MrAlexHunter. I almost lost count how many times you scored. Couldn't be more proud of you right now."
+},
+{
+"id": 26483,
+"ctx": "SM_SOURCE_GARETH_WALKER_SUBTOPIC_POST_EXIT_TRIAL_1",
+"en": "Me and @MrAlexHunter showed 'em what they were missing at today's trial! Never any doubt. Next stop, Premier League!"
+},
+{
+"id": 26484,
+"ctx": "SUB_VO_EPL_TRAIN_FREE_FORM_04",
+"en": "{C:BUTLER}{0.00-7.09}We're going free-form today, lads. You all know what you need to sharpen up so take care of it."
+},
+{
+"id": 26485,
+"ctx": "PAP_MATCH_OBJ_DESC_DIFFICULTY_MODERATE3",
+"en": "The next set of fixtures could prove to be tedious for us. We'll need to put a considerable effort into every match."
+},
+{
+"id": 26486,
+"ctx": "tourny_SelectTournamentDescr",
+"en": "Welcome to Tournament Mode!  Select a country and tournament to start. There are over 50 tournaments to select from."
+},
+{
+"id": 26487,
+"ctx": "TradePileFull",
+"en": "You already have the maximum number of items in your Transfer List. You must Quick Sell or store items in your Club."
+},
+{
+"id": 26488,
+"ctx": "CM_TransferSuccessNegotiation",
+"en": "You have successfully negotiated with the following players, they are waiting for your approval of their transfer..."
+},
+{
+"id": 26489,
+"ctx": "MF_successfulforwardpass_2",
+"en": "Good to see so much positivity from your passes. You were always looking for an opportunity to get the ball forward."
+},
+{
+"id": 26490,
+"ctx": "STORE_BUY_MORE_BOOST",
+"en": "You already have an active Boost in this category. Whatever you buy will add on top of your current stock. Buy more?"
+},
+{
+"id": 26491,
+"ctx": "CM_BIO_FACT_1530",
+"en": "Angers SCO gained promotion to Ligue 1 for the first time in 1956. They reached the French Cup final one year later."
+},
+{
+"id": 26492,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_PARENT_CLUB_LOAN_YOUTH_1",
+"en": "After struggling for match time young <ParentTeam> Alex Hunter joins <HeroTeam> on loan. Could be the making of him."
+},
+{
+"id": 26493,
+"ctx": "SM_SOURCE_HERO_PARENT_CLUB_SUBTOPIC_BIG_PLAYER_TRANSFER_NEWS_ANGEL_1",
+"en": "<ParentTeam> is always in the market for great players to strengthen the team should those players become available."
+},
+{
+"id": 26494,
+"ctx": "SM_SOURCE_KAREN_WALSTON_SUBTOPIC_HERO_BAD_FORM_2",
+"en": "@MrAlexHunter's form continues to cause concern. He just doesn't seem able to stamp his authority on a match lately."
+},
+{
+"id": 26495,
+"ctx": "SM_SOURCE_PUNDIT_1_SUBTOPIC_HERO_FIFTH_YELLOW_CARD_1",
+"en": "Young @MrAlexHunter's fifth booking will be a blow to <HeroTeam>as the youngster is forced to sit out the next game."
+},
+{
+"id": 26496,
+"ctx": "TXT_CONTACT_INFO_TEAM_691",
+"en": "New England Revolution\\nGillette Stadium\\nOne Patriot Place\\nFoxboro, MA 02035\\nhttp://www.revolutionsoccer.net/\\r\\n"
+},
+{
+"id": 26497,
+"ctx": "news_body_seasonpreview_young_1",
+"en": "Meanwhile be on the look out for young <FullPlayerName4> to possibly burst onto the scene with a bang at some point."
+},
+{
+"id": 26498,
+"ctx": "news_item_id_64_2",
+"en": "FIFA's Fair Play campaign begins another season, players are expected to respect each other and the match officials."
+},
+{
+"id": 26499,
+"ctx": "LicensedContentLine31_U",
+"en": "UK\\r\\nAlan McInally\\r\\nGeoff Shreeves\\r\\nAlan Smith\\r\\nMike West\\r\\nAndy Townsend\\r\\nMartin Tyler\\r\\nClive Tyldesley"
+}
+]

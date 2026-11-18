@@ -29,3 +29,7 @@ Thumbs.db
 # Test project written by scripts/import_team.py
 *.test.fbproject
 scratch/
+
+# Romanian translation scratch files
+db/translation_ro/tmp/
+db/translation_ro/built/

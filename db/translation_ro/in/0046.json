@@ -1,0 +1,1252 @@
+[
+{
+"id": 11500,
+"ctx": "CM_NegotiationStatus_Joined",
+"en": "Player Joined Club"
+},
+{
+"id": 11501,
+"ctx": "GcAccelerationCpu",
+"en": "Acceleration - CPU"
+},
+{
+"id": 11502,
+"ctx": "CLUBS_KITS_CHANGE_SHAPE",
+"en": "Change Crest Shape"
+},
+{
+"id": 11503,
+"ctx": "OSDK_CNTRY_IO",
+"en": "British I. O. Ter."
+},
+{
+"id": 11504,
+"ctx": "cm_pst_eu_intl_cup_abbr15",
+"en": "European Int’l Cup"
+},
+{
+"id": 11505,
+"ctx": "TOURNAMENT_LIVE_NAME_047",
+"en": "Kick Off Challenge"
+},
+{
+"id": 11506,
+"ctx": "TXT_ONLINE_TROPHIES_OPEN_POPUP",
+"en": "Trophy Description"
+},
+{
+"id": 11507,
+"ctx": "CM_SIM_Player Manager_Header_New season_New team_same_2",
+"en": "Ready For Anything"
+},
+{
+"id": 11508,
+"ctx": "news_title_id_99_8",
+"en": "%2s Told No By %1s"
+},
+{
+"id": 11509,
+"ctx": "DLCCommentaryName_swe",
+"en": "Swedish Commentary"
+},
+{
+"id": 11510,
+"ctx": "SM_BOOT_SPONSOR_TITLE",
+"en": "ADIDAS SPONSORSHIP"
+},
+{
+"id": 11511,
+"ctx": "news_title_id_95_4",
+"en": "%1s Looking at %2s"
+},
+{
+"id": 11512,
+"ctx": "FCE_Elimination_Finals",
+"en": "Elimination Finals"
+},
+{
+"id": 11513,
+"ctx": "TimeScoreDisplay",
+"en": "Time/Score Display"
+},
+{
+"id": 11514,
+"ctx": "OSDK_CLUBS_INVITIATIONS",
+"en": "PLAYERS APPROACHED"
+},
+{
+"id": 11515,
+"ctx": "DBTrait_rushesoutofgoal",
+"en": "Rushes out of Goal"
+},
+{
+"id": 11516,
+"ctx": "TXT_GIFT_NOT_RETRIEVED",
+"en": "GIFT NOT RETRIEVED"
+},
+{
+"id": 11517,
+"ctx": "StartAtGameMenu",
+"en": "Start at Game Menu"
+},
+{
+"id": 11518,
+"ctx": "Prestige_gained",
+"en": "Reputation gained!"
+},
+{
+"id": 11519,
+"ctx": "ACH_TITLE_25",
+"en": "Positive cash flow"
+},
+{
+"id": 11520,
+"ctx": "OSDK_ChangeLeaderboard",
+"en": "Change Leaderboard"
+},
+{
+"id": 11521,
+"ctx": "TXT_PAP_desc_PHYSICAL_3",
+"en": "Make 5 Appearances"
+},
+{
+"id": 11522,
+"ctx": "vpfancypass",
+"en": "FLAIR PASSES TRAIT"
+},
+{
+"id": 11523,
+"ctx": "ThePremierLeague",
+"en": "The Premier League"
+},
+{
+"id": 11524,
+"ctx": "ThrowInDefensive",
+"en": "Throw In Defensive"
+},
+{
+"id": 11525,
+"ctx": "FCCCardViewScreen",
+"en": "*Debug card viewer"
+},
+{
+"id": 11526,
+"ctx": "FUT_STORE_PACK_815_NAME",
+"en": "PREMIUM COINS PACK"
+},
+{
+"id": 11527,
+"ctx": "MyStatsSummary",
+"en": "My Stats Selection"
+},
+{
+"id": 11528,
+"ctx": "DBTRAIT_GKSweeperKeeper",
+"en": "Rushes Out Of Goal"
+},
+{
+"id": 11529,
+"ctx": "ucc_onekneefistpump",
+"en": "One Knee Fist Pump"
+},
+{
+"id": 11530,
+"ctx": "FUT_STORE_PACK_500_DESC_MOBILE",
+"en": "12 Players, 1 Rare"
+},
+{
+"id": 11531,
+"ctx": "FreeKickWallJump",
+"en": "Make the wall jump"
+},
+{
+"id": 11532,
+"ctx": "OSDK_ENABLE_ONLINE_PASS",
+"en": "Enable Online Pass"
+},
+{
+"id": 11533,
+"ctx": "LoadGoldenTicket",
+"en": "Load Golden Ticket"
+},
+{
+"id": 11534,
+"ctx": "SM_REWARD_1",
+"en": "LOAN PLAYER PACK I"
+},
+{
+"id": 11535,
+"ctx": "NARRATIVEDIRECTOR",
+"en": "Narrative Director"
+},
+{
+"id": 11536,
+"ctx": "SGT_SUB_CAT_ADVANCED_DRIBBLING",
+"en": "ADVANCED DRIBBLING"
+},
+{
+"id": 11537,
+"ctx": "GoalsAgainstDraw_Event5",
+"en": "Schoolboy Football"
+},
+{
+"id": 11538,
+"ctx": "Boot_182",
+"en": "Hummel 6.4 PIO FGX"
+},
+{
+"id": 11539,
+"ctx": "FCE_Western_Conf_Setup",
+"en": "Western Conf Setup"
+},
+{
+"id": 11540,
+"ctx": "cmp_ovr_DISTANCE_TRAVELLED",
+"en": "DISTANCE TRAVELLED"
+},
+{
+"id": 11541,
+"ctx": "OSDK_UPLOAD_IN_PROGRESS",
+"en": "Upload in progress"
+},
+{
+"id": 11542,
+"ctx": "STORE_TAB_FUT",
+"en": "FIFA Ultimate Team"
+},
+{
+"id": 11543,
+"ctx": "cm_pst_na_trophy_abbr15",
+"en": "NA Allstars Trophy"
+},
+{
+"id": 11544,
+"ctx": "TM_PI_TXT_LABEL_13",
+"en": "SUPPORT ON CROSSES"
+},
+{
+"id": 11545,
+"ctx": "DLCCommentaryName_ru",
+"en": "Russian Commentary"
+},
+{
+"id": 11546,
+"ctx": "TXT_CHANGE_TEAM",
+"en": "CHANGE TEAM\\n& KIT"
+},
+{
+"id": 11547,
+"ctx": "KeepACleanSheet",
+"en": "Keep a Clean Sheet"
+},
+{
+"id": 11548,
+"ctx": "FreeKickKeeper",
+"en": "Free Kick – Keeper"
+},
+{
+"id": 11549,
+"ctx": "FUT_STORE_PACK_403_DESC_MOBILE",
+"en": "12 Rare Gold Items"
+},
+{
+"id": 11550,
+"ctx": "AssociateProducer",
+"en": "Associate Producer"
+},
+{
+"id": 11551,
+"ctx": "PPA_MRF_WATCH_FOR_OFFSIDE",
+"en": "Watch For Offside "
+},
+{
+"id": 11552,
+"ctx": "worsthomerecord",
+"en": "WORST HOME RECORDS"
+},
+{
+"id": 11553,
+"ctx": "ONL_SKILL_LEVEL_POINTS",
+"en": "Performance Points"
+},
+{
+"id": 11554,
+"ctx": "CONTENTTECHNOLOGY",
+"en": "Content Technology"
+},
+{
+"id": 11555,
+"ctx": "ProfileStat_17",
+"en": "Possession Defence"
+},
+{
+"id": 11556,
+"ctx": "LessonName_12",
+"en": "Ultimate Team Mode"
+},
+{
+"id": 11557,
+"ctx": "TOURNAMENT_LIVE_NAME_202",
+"en": "Silver Holiday Cup"
+},
+{
+"id": 11558,
+"ctx": "FUT_STORE_PACK_709_NAME",
+"en": "LALIGA PLAYER PACK"
+},
+{
+"id": 11559,
+"ctx": "FreeKickAction_Use3rdKickTaker",
+"en": "Use 3rd Kick Taker"
+},
+{
+"id": 11560,
+"ctx": "PK_prompt_3_upper",
+"en": "#C00F03 POWER SHOT"
+},
+{
+"id": 11561,
+"ctx": "SoccerFormationPosFull_14",
+"en": "Central Midfielder"
+},
+{
+"id": 11562,
+"ctx": "OSDK_PREF_LANG",
+"en": "Preferred Language"
+},
+{
+"id": 11563,
+"ctx": "REAL WORLD RESULTS",
+"en": "REAL WORLD RESULTS"
+},
+{
+"id": 11564,
+"ctx": "SelectKickTakers",
+"en": "Select Kick Takers"
+},
+{
+"id": 11565,
+"ctx": "CM_Other_Results",
+"en": "AROUND THE GROUNDS"
+},
+{
+"id": 11566,
+"ctx": "OSDK_ORIGIN_ACCOUNT_UPGRADE",
+"en": "EA Account Upgrade"
+},
+{
+"id": 11567,
+"ctx": "technicalproducer",
+"en": "Technical Producer"
+},
+{
+"id": 11568,
+"ctx": "Arena",
+"en": "SELECT TEAM/PLAYER"
+},
+{
+"id": 11569,
+"ctx": "GTN_Strengths_Header",
+"en": "Preliminary Report"
+},
+{
+"id": 11570,
+"ctx": "vpro_defence_accomreward10",
+"en": "Standing Tackle +2"
+},
+{
+"id": 11571,
+"ctx": "WinPercentLose_Event9",
+"en": "Is Nothing Sacred?"
+},
+{
+"id": 11572,
+"ctx": "cm_emails_internationals_manager_performancereview_subject",
+"en": "Performance Review"
+},
+{
+"id": 11573,
+"ctx": "FUT_TOURNAMENT_REQUIREMENTS",
+"en": "TOURNAMENT DETAILS"
+},
+{
+"id": 11574,
+"ctx": "LOC_LB_CAT_COMPETITOR_LEADERBOARD",
+"en": "TOP MATCH EARNINGS"
+},
+{
+"id": 11575,
+"ctx": "TXT_CLUBS_Custom_Title",
+"en": "CUSTOM KIT & CREST"
+},
+{
+"id": 11576,
+"ctx": "ENVIRONMENTARTIST",
+"en": "Environment Artist"
+},
+{
+"id": 11577,
+"ctx": "TXT_ONLINE_SPEVENT_COMPETITION_STATUS_TILE_TITLE",
+"en": "COMPETITION STATUS"
+},
+{
+"id": 11578,
+"ctx": "Preferred Position",
+"en": "Preferred Position"
+},
+{
+"id": 11579,
+"ctx": "CM_Email_PlayerSold_Subject",
+"en": "[Info] Player Sold"
+},
+{
+"id": 11580,
+"ctx": "CM_NegotiationStatus_CounterOfferSent",
+"en": "Counter Offer Sent"
+},
+{
+"id": 11581,
+"ctx": "OSDK_GAME_INVITE_REVOKE",
+"en": "Revoke Game Invite"
+},
+{
+"id": 11582,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_MATCH_DAY_AFTER_WIN_2",
+"en": "VICTORYYYYYYYYYYY!"
+},
+{
+"id": 11583,
+"ctx": "TXT_TROPHY_CUP_5",
+"en": "WOMEN'S INT'L x%1d"
+},
+{
+"id": 11584,
+"ctx": "CM_Email_Board_EOSExceedExpectation_Subject",
+"en": "Amazing Season\\r\\n"
+},
+{
+"id": 11585,
+"ctx": "TOURNAMENT_LIVE_NAME_094",
+"en": "Bronze Star Shield"
+},
+{
+"id": 11586,
+"ctx": "1_SC_0495_1_C",
+"en": "Let's get started."
+},
+{
+"id": 11587,
+"ctx": "FUT_STORE_PACK_850_NAME_MOBILE",
+"en": "ONES TO WATCH PACK"
+},
+{
+"id": 11588,
+"ctx": "SelectPlayerHead",
+"en": "Select Player Head"
+},
+{
+"id": 11589,
+"ctx": "CreatePlayerFacialHairType_11",
+"en": "Light Chin Curtain"
+},
+{
+"id": 11590,
+"ctx": "TXT_TRIAL_UPSELL_HEAD",
+"en": "BUY FIFA 17 TODAY!"
+},
+{
+"id": 11591,
+"ctx": "ProfileStat_174",
+"en": "Amount of £ spent:"
+},
+{
+"id": 11592,
+"ctx": "SDB_SA <0>",
+"en": "South America #<0>"
+},
+{
+"id": 11593,
+"ctx": "CM_AssistantCoachAssessment_Other",
+"en": "Nothing to report."
+},
+{
+"id": 11594,
+"ctx": "ProductionSupport",
+"en": "Production Support"
+},
+{
+"id": 11595,
+"ctx": "FreeKickAction_Use2ndKickTaker",
+"en": "Use 2nd Kick Taker"
+},
+{
+"id": 11596,
+"ctx": "CornerKickToX",
+"en": "Corner kick to %1s"
+},
+{
+"id": 11597,
+"ctx": "TOURNAMENT_LIVE_NAME_077",
+"en": "April Fools Trophy"
+},
+{
+"id": 11598,
+"ctx": "WORLDARTCOLEAD",
+"en": "World Art Co-Leads"
+},
+{
+"id": 11599,
+"ctx": "CreatePlayerBoot_193",
+"en": "PUMA evoSPEED SL-S"
+},
+{
+"id": 11600,
+"ctx": "CUSTOMISE_CONTROLS",
+"en": "Customise Controls"
+},
+{
+"id": 11601,
+"ctx": "News_Title_ID_13_2",
+"en": "%1s Hat Trick Hero"
+},
+{
+"id": 11602,
+"ctx": "OSDK_OL_VIEW_LEAGUE_INVITE",
+"en": "View league invite"
+},
+{
+"id": 11603,
+"ctx": "OSDK_MONTH_CARDEXP",
+"en": "Month Card Expires"
+},
+{
+"id": 11604,
+"ctx": "FUT_PositionBonusTutorial",
+"en": "Sign a Loan Player"
+},
+{
+"id": 11605,
+"ctx": "CompletedDribbles",
+"en": "Completed Dribbles"
+},
+{
+"id": 11606,
+"ctx": "CM_Tutorials_Defending_Advanced",
+"en": "Defence - Advanced"
+},
+{
+"id": 11607,
+"ctx": "TotalCheapShotsDescr",
+"en": "Total Lounge items"
+},
+{
+"id": 11608,
+"ctx": "IWL_cm_sheet_unavailable",
+"en": "Unavailable player"
+},
+{
+"id": 11609,
+"ctx": "ArenaReplayOverlayPart2",
+"en": "for Instant Replay"
+},
+{
+"id": 11610,
+"ctx": "OSDK_TICKER_FIFA_MEXICO",
+"en": "FIFA Mexico Scores"
+},
+{
+"id": 11611,
+"ctx": "BackgroundStadium",
+"en": "Background Stadium"
+},
+{
+"id": 11612,
+"ctx": "TXT_FRIENDLIES_INVITE",
+"en": "Invite to Friendly"
+},
+{
+"id": 11613,
+"ctx": "RESEARCHMODERATOR",
+"en": "Research Moderator"
+},
+{
+"id": 11614,
+"ctx": "ActiveDownloads",
+"en": "Downloaded Content"
+},
+{
+"id": 11615,
+"ctx": "FreeKickAction_Use3rdKickTaker_upper",
+"en": "USE 3RD KICK TAKER"
+},
+{
+"id": 11616,
+"ctx": "tcmf_release_total_cost",
+"en": "TOTAL RELEASE FEES"
+},
+{
+"id": 11617,
+"ctx": "CamMulti_upper",
+"en": "MULTIPLAYER CAMERA"
+},
+{
+"id": 11618,
+"ctx": "SettingsAndProfile",
+"en": "SETTINGS & PROFILE"
+},
+{
+"id": 11619,
+"ctx": "PM_U_GOAL_4_C",
+"en": "Not for me to say."
+},
+{
+"id": 11620,
+"ctx": "GkGlovePattern_90",
+"en": "SELECT 88 Pro Grip"
+},
+{
+"id": 11621,
+"ctx": "CONTENTSPECIALIST",
+"en": "Content Specialist"
+},
+{
+"id": 11622,
+"ctx": "BallRollCutLeft",
+"en": "Ball Roll Cut Left"
+},
+{
+"id": 11623,
+"ctx": "RIGGINGCGSUPERVISOR",
+"en": "Rigging Supervisor"
+},
+{
+"id": 11624,
+"ctx": "TOURNAMENT_LIVE_NAME_126",
+"en": "Gold European Open"
+},
+{
+"id": 11625,
+"ctx": "vpbicycle",
+"en": "BICYCLE KICK TRAIT"
+},
+{
+"id": 11626,
+"ctx": "TXT_DEMO_FUT_TITLE",
+"en": "FIFA ULTIMATE TEAM"
+},
+{
+"id": 11627,
+"ctx": "SM_HASHTAG_CHANTS_95",
+"en": "DillyDingDillyDong"
+},
+{
+"id": 11628,
+"ctx": "NoCardsAvailable",
+"en": "No Items Available"
+},
+{
+"id": 11629,
+"ctx": "2_SC_0610_1_C",
+"en": "All about the win."
+},
+{
+"id": 11630,
+"ctx": "FUT_STORE_PACK_804_DESC_MOBILE",
+"en": "4 Silver Contracts"
+},
+{
+"id": 11631,
+"ctx": "BallName_2",
+"en": "EA SPORTS™ Leather"
+},
+{
+"id": 11632,
+"ctx": "UCC_finishing_StandingArmSweep",
+"en": "Standing Arm Sweep"
+},
+{
+"id": 11633,
+"ctx": "IWL_SwitchTakerUserControl",
+"en": "Switch to Receiver"
+},
+{
+"id": 11634,
+"ctx": "TXT_SKILLGAME_NAME_83",
+"en": "1 ON 1 GOALKEEPING"
+},
+{
+"id": 11635,
+"ctx": "FUT_STORE_PACK_1201_NAME",
+"en": "LIGUE 1 SQUAD PACK"
+},
+{
+"id": 11636,
+"ctx": "FCE_Championship_Group",
+"en": "Championship Group"
+},
+{
+"id": 11637,
+"ctx": "CHARACTERARTLEAD",
+"en": "Character Art Lead"
+},
+{
+"id": 11638,
+"ctx": "ColourCommentator_Ger_de_3",
+"en": "SEBASTIAN HELLMANN"
+},
+{
+"id": 11639,
+"ctx": "OSDK_CLUBS_EVENTS",
+"en": "RECENT CLUB EVENTS"
+},
+{
+"id": 11640,
+"ctx": "TXT_SKILL_CATEGORY_NAME_MIXED_5",
+"en": "Advanced Dribbling"
+},
+{
+"id": 11641,
+"ctx": "TXT_ACCOMP_NAME_GET_CAUGHT_OFFSIDE",
+"en": "Get Caught Offside"
+},
+{
+"id": 11642,
+"ctx": "IWL_PlayerInformation",
+"en": "Player Information"
+},
+{
+"id": 11643,
+"ctx": "FLB_CM_PLAYER_AWARDS",
+"en": "CM AWARDS - PLAYER"
+},
+{
+"id": 11644,
+"ctx": "vpro_stat_28",
+"en": "Cross Accuracy (%)"
+},
+{
+"id": 11645,
+"ctx": "FUT_CHAMPIONS_COMP_START",
+"en": "COMPETITION BEGINS"
+},
+{
+"id": 11646,
+"ctx": "TXT_ACCOMP_NAME_GOALS_FROM_VOLLEYS",
+"en": "Goals from Volleys"
+},
+{
+"id": 11647,
+"ctx": "DLCCommentaryName_ita",
+"en": "Italian Commentary"
+},
+{
+"id": 11648,
+"ctx": "FUT_SpecialDesc",
+"en": "Special Item Packs"
+},
+{
+"id": 11649,
+"ctx": "TXT_ACCOMP_NAME_3_START_SKILL_MOVES",
+"en": "2 Star Skill Moves"
+},
+{
+"id": 11650,
+"ctx": "CM_Clean_Sheet_Bonus",
+"en": "Clean Sheet Bonus:"
+},
+{
+"id": 11651,
+"ctx": "TOURNAMENT_LIVE_NAME_136",
+"en": "Gold League Trophy"
+},
+{
+"id": 11652,
+"ctx": "SM_LOCKER_CUSTOMISE_CONTROLS",
+"en": "CUSTOMISE CONTROLS"
+},
+{
+"id": 11653,
+"ctx": "SDB_SF_DBLSWON3",
+"en": "SILVER DOUBLE WINS"
+},
+{
+"id": 11654,
+"ctx": "TXT_EASFC_CONTROL_MAP_EASFC",
+"en": "EAS FC UNLOCKABLES"
+},
+{
+"id": 11655,
+"ctx": "PlayerFeedbackPopUp_InStarting11_TeamPlayer_subject",
+"en": "I'm Exhausted Boss"
+},
+{
+"id": 11656,
+"ctx": "CleanSheetStreakDescr",
+"en": "Clean Sheet Streak"
+},
+{
+"id": 11657,
+"ctx": "FUT_DRAFT_DIFFICULTY_DESCRIPTION_6",
+"en": "There is only FUT."
+},
+{
+"id": 11658,
+"ctx": "CM_SIM_Player_Header_New season_Remain with team_3",
+"en": "%1s Wants to Stay!"
+},
+{
+"id": 11659,
+"ctx": "LBSMANCHESTER",
+"en": "LBS Manchester LTD"
+},
+{
+"id": 11660,
+"ctx": "CM_Email_Board_CategRisk_Subject",
+"en": "We’re not on Track"
+},
+{
+"id": 11661,
+"ctx": "TECHNICALDESIGNER",
+"en": "Technical Designer"
+},
+{
+"id": 11662,
+"ctx": "vpceleb6",
+"en": "NEW CELEBRATIONS 6"
+},
+{
+"id": 11663,
+"ctx": "FUT_DEVELOPMENT_SEARCH",
+"en": "Development Search"
+},
+{
+"id": 11664,
+"ctx": "TOURNAMENT_LIVE_NAME_163",
+"en": "Milan Invitational"
+},
+{
+"id": 11665,
+"ctx": "Attract_Video_7",
+"en": "A new opportunity,"
+},
+{
+"id": 11666,
+"ctx": "1_SC_0372_C",
+"en": "This is all I got!"
+},
+{
+"id": 11667,
+"ctx": "CM_Match_Kickoff",
+"en": "%1s | Kick Off %2s"
+},
+{
+"id": 11668,
+"ctx": "TXT_Instructions",
+"en": "Drill Instructions"
+},
+{
+"id": 11669,
+"ctx": "OSDK_CLUBS_CANCEL_QUICKMATCH",
+"en": "Cancel Quick Match"
+},
+{
+"id": 11670,
+"ctx": "QAPROJECTMANAGER",
+"en": "QA Project Manager"
+},
+{
+"id": 11671,
+"ctx": "TXT_SKILL_CATEGORY_NAME_MIXED_9",
+"en": "Advanced Defending"
+},
+{
+"id": 11672,
+"ctx": "txt_cmhub_title_training",
+"en": "PLAYER DEVELOPMENT"
+},
+{
+"id": 11673,
+"ctx": "SL_SETLEADOPTIONS",
+"en": "Set Active Options"
+},
+{
+"id": 11674,
+"ctx": "CM_Email_Transit_ToAwardNP_upper",
+"en": "TO AWARD NEWS PAGE"
+},
+{
+"id": 11675,
+"ctx": "tcmf_head_tr_in",
+"en": "PLAYER TRANSFER IN"
+},
+{
+"id": 11676,
+"ctx": "FUT_IB_CHALKTUT_YOURSTARTERSQUAD",
+"en": "Your starter squad"
+},
+{
+"id": 11677,
+"ctx": "SDB_CNTRY_RU",
+"en": "RUSSIAN FEDERATION"
+},
+{
+"id": 11678,
+"ctx": "ILTop100ClubUsers",
+"en": "Top 100 Club Users"
+},
+{
+"id": 11679,
+"ctx": "tourny_SimulationOfGames",
+"en": "Simulating Matches"
+},
+{
+"id": 11680,
+"ctx": "vpceleb2",
+"en": "NEW CELEBRATIONS 2"
+},
+{
+"id": 11681,
+"ctx": "FUT_EligibilityRequirements",
+"en": "ENTRY REQUIREMENTS"
+},
+{
+"id": 11682,
+"ctx": "RightForearmBand",
+"en": "Right Forearm Band"
+},
+{
+"id": 11683,
+"ctx": "OSDK_CLUBS_CREATE_REGION",
+"en": "Matchmaking Region"
+},
+{
+"id": 11684,
+"ctx": "OSDK_CLUBS_COL_MEMBER_COUNT_DESC",
+"en": "Current Squad Size"
+},
+{
+"id": 11685,
+"ctx": "PlayerFeedbackPopUp_UpcomingMatch_subject",
+"en": "The Upcoming Match"
+},
+{
+"id": 11686,
+"ctx": "XlastPresenceLeagueInformation",
+"en": "League Information"
+},
+{
+"id": 11687,
+"ctx": "PM_U_GOODFORM_2_B",
+"en": "Carrying the team."
+},
+{
+"id": 11688,
+"ctx": "ucc_cartwheelandroll",
+"en": "Cartwheel and Roll"
+},
+{
+"id": 11689,
+"ctx": "MainCommentator_rus_ru_upper",
+"en": "GEORGY CHERDANTSEV"
+},
+{
+"id": 11690,
+"ctx": "SDB_SF_CUPSENTERED",
+"en": "TOTAL CUPS ENTERED"
+},
+{
+"id": 11691,
+"ctx": "FixturesAndResults",
+"en": "FIXTURES & RESULTS"
+},
+{
+"id": 11692,
+"ctx": "TXT_MATCHDAY_BE_A_PRO_CHALLENGE",
+"en": "BE A PRO CHALLENGE"
+},
+{
+"id": 11693,
+"ctx": "FUT_LB_RETRIEVING_RESULTS",
+"en": "Retrieving Results"
+},
+{
+"id": 11694,
+"ctx": "CM_Inbox_No_Emails",
+"en": "No items available"
+},
+{
+"id": 11695,
+"ctx": "ExecutiveProducer",
+"en": "Executive Producer"
+},
+{
+"id": 11696,
+"ctx": "FUT_END_OF_TOURNAMENT",
+"en": "ULTIMATE TEAM NEWS"
+},
+{
+"id": 11697,
+"ctx": "TOURNAMENT_LIVE_NAME_133",
+"en": "Gold Invitiational"
+},
+{
+"id": 11698,
+"ctx": "CM_EMAIL_FUTURESTAR_SCOUTRETURN_SUBJECT",
+"en": "Scout has Returned"
+},
+{
+"id": 11699,
+"ctx": "mygameface",
+"en": "DOWNLOAD GAME FACE"
+},
+{
+"id": 11700,
+"ctx": "ACH_TITLE_18",
+"en": "Friendship endures"
+},
+{
+"id": 11701,
+"ctx": "ShotAccLose_Event8",
+"en": "Pinpoint Precision"
+},
+{
+"id": 11702,
+"ctx": "DLCCommentaryName_spa",
+"en": "Spanish Commentary"
+},
+{
+"id": 11703,
+"ctx": "TOURNAMENT_LIVE_NAME_089",
+"en": "Bronze Holiday Cup"
+},
+{
+"id": 11704,
+"ctx": "FreeKickAction_Use2ndKickTaker_upper",
+"en": "USE 2ND KICK TAKER"
+},
+{
+"id": 11705,
+"ctx": "StarDiffWin_Event11",
+"en": "A Cinderella Story"
+},
+{
+"id": 11706,
+"ctx": "ACH_TITLE_45",
+"en": "Finish The Journey"
+},
+{
+"id": 11707,
+"ctx": "CM_No_Release_Player",
+"en": "No - Retain Player"
+},
+{
+"id": 11708,
+"ctx": "ShotsPlusOnTarget",
+"en": "Shots/On Target:  "
+},
+{
+"id": 11709,
+"ctx": "LION",
+"en": "LiOn (Lift Online)"
+},
+{
+"id": 11710,
+"ctx": "CM_SIM_Player_Header_Start_Excellent team_3",
+"en": "A Dream Come True!"
+},
+{
+"id": 11711,
+"ctx": "vpceleb3",
+"en": "NEW CELEBRATIONS 3"
+},
+{
+"id": 11712,
+"ctx": "PreviousResult",
+"en": "Previous Encounter"
+},
+{
+"id": 11713,
+"ctx": "popup_unhappy_tier1_subject",
+"en": "I'm Not Happy Boss"
+},
+{
+"id": 11714,
+"ctx": "2_SC_0420_1_B",
+"en": "Same old Williams."
+},
+{
+"id": 11715,
+"ctx": "AttackingSimple",
+"en": "ATTACKING - SIMPLE"
+},
+{
+"id": 11716,
+"ctx": "CreateTournament",
+"en": "CREATE\\nTOURNAMENT"
+},
+{
+"id": 11717,
+"ctx": "TOURNAMENT_LIVE_NAME_166",
+"en": "Paris Coup d'envoi"
+},
+{
+"id": 11718,
+"ctx": "2_SC_0420_3_B",
+"en": "Whatever you need."
+},
+{
+"id": 11719,
+"ctx": "transfer_confirmed",
+"en": "Transfer Confirmed"
+},
+{
+"id": 11720,
+"ctx": "TechnicaDirector",
+"en": "Technical Director"
+},
+{
+"id": 11721,
+"ctx": "TXT_SKILLGAME_NAME_111",
+"en": "SHOOTING SCENARIOS"
+},
+{
+"id": 11722,
+"ctx": "vpstandingtackle2",
+"en": "STANDING TACKLE +2"
+},
+{
+"id": 11723,
+"ctx": "Assistantproducer",
+"en": "Assistant Producer"
+},
+{
+"id": 11724,
+"ctx": "FCE_Eastern_Conf_Setup",
+"en": "Eastern Conf Setup"
+},
+{
+"id": 11725,
+"ctx": "OSDK_PRESENCE_VIEW_HUB",
+"en": "viewing Player Hub"
+},
+{
+"id": 11726,
+"ctx": "YesLoadSettings",
+"en": "Yes, load settings"
+},
+{
+"id": 11727,
+"ctx": "PM_SETTINGS_VIDEO",
+"en": "VIDEO\\nCALIBRATION"
+},
+{
+"id": 11728,
+"ctx": "TXT_EASFC_MATCH_TYPE_86",
+"en": "FUT Online Seasons"
+},
+{
+"id": 11729,
+"ctx": "EnteringTheArena",
+"en": "Entering the Arena"
+},
+{
+"id": 11730,
+"ctx": "view_friends_clubs",
+"en": "VIEW FRIENDS CLUBS"
+},
+{
+"id": 11731,
+"ctx": "PPA_MRF_WASTED_OPPORTUNITY",
+"en": "Missed Opportunity"
+},
+{
+"id": 11732,
+"ctx": "vpceleb7",
+"en": "NEW CELEBRATIONS 7"
+},
+{
+"id": 11733,
+"ctx": "CM_Email_REIntFromOtherClub_Subject",
+"en": "RE: Transfer Offer"
+},
+{
+"id": 11734,
+"ctx": "FUT_USE_BLANKSQUAD",
+"en": "Start from scratch"
+},
+{
+"id": 11735,
+"ctx": "CM_Objective_CurrentFunds",
+"en": "Current funds: %1s"
+},
+{
+"id": 11736,
+"ctx": "CT_MenuState_NoMenu",
+"en": "Enjoying the Arena"
+},
+{
+"id": 11737,
+"ctx": "OSDK_INCOR_PASS",
+"en": "Incorrect Password"
+},
+{
+"id": 11738,
+"ctx": "DeleteUnlockables",
+"en": "Delete Unlockables"
+},
+{
+"id": 11739,
+"ctx": "FUT_STORE_PACK_803_DESC_MOBILE",
+"en": "4 Bronze Contracts"
+},
+{
+"id": 11740,
+"ctx": "PERF_DIST",
+"en": "Distance Travelled"
+},
+{
+"id": 11741,
+"ctx": "IWL_ManOfTheMatch",
+"en": "PLAYER PERFORMANCE"
+},
+{
+"id": 11742,
+"ctx": "MarketingDirector",
+"en": "Marketing Director"
+},
+{
+"id": 11743,
+"ctx": "ProfileStat_63",
+"en": "Injuries Committed"
+},
+{
+"id": 11744,
+"ctx": "CM_Email_Transit_ToTeamManagement",
+"en": "To Team Management"
+},
+{
+"id": 11745,
+"ctx": "OSDK_CLUBS_INVITE_TO_CLUB",
+"en": "Invite to Pro Club"
+},
+{
+"id": 11746,
+"ctx": "MLS_availablematches",
+"en": "Available Matches:"
+},
+{
+"id": 11747,
+"ctx": "FUT_TUTORIAL_TITLE_3",
+"en": "Completing Matches"
+},
+{
+"id": 11748,
+"ctx": "vpbook_defenceattributes",
+"en": "DEFENCE ATTRIBUTES"
+},
+{
+"id": 11749,
+"ctx": "OSDK_HOST_TEAM",
+"en": "Home (Host's) Team"
+}
+]

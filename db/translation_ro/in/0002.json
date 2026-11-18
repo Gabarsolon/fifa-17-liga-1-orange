@@ -1,0 +1,1252 @@
+[
+{
+"id": 500,
+"ctx": "foc_home",
+"en": "HOME"
+},
+{
+"id": 501,
+"ctx": "PING_REGION_ASA_upper",
+"en": "ASIA"
+},
+{
+"id": 502,
+"ctx": "Fast_GameSpeed",
+"en": "Fast"
+},
+{
+"id": 503,
+"ctx": "TXT_EASFC_MATCH_OUTCOME_2",
+"en": "lost"
+},
+{
+"id": 504,
+"ctx": "ManufacturerPuma",
+"en": "Puma"
+},
+{
+"id": 505,
+"ctx": "CT_GameTime_Penalties",
+"en": "Pens"
+},
+{
+"id": 506,
+"ctx": "FUT_MC_FOOT",
+"en": "Foot"
+},
+{
+"id": 507,
+"ctx": "FUT_CHAMPIONS_WINS",
+"en": "WINS"
+},
+{
+"id": 508,
+"ctx": "DemoNationName",
+"en": "Demo"
+},
+{
+"id": 509,
+"ctx": "CLUB_COMMENTARY_NAME_200039",
+"en": "Bray"
+},
+{
+"id": 510,
+"ctx": "CLUB_COMMENTARY_NAME_4141",
+"en": "Lens"
+},
+{
+"id": 511,
+"ctx": "TablePosition_caps_16",
+"en": "16TH"
+},
+{
+"id": 512,
+"ctx": "FUT_BEST_DEAL_0",
+"en": "BEST"
+},
+{
+"id": 513,
+"ctx": "StickLabelLeftLeft_18",
+"en": "Dark"
+},
+{
+"id": 514,
+"ctx": "SC_NUMPAD6",
+"en": "Pad6"
+},
+{
+"id": 515,
+"ctx": "OSDK_LOBBY_WINS",
+"en": "Wins"
+},
+{
+"id": 516,
+"ctx": "Z_SC_MAIL",
+"en": "Mail"
+},
+{
+"id": 517,
+"ctx": "TablePosition_caps_12",
+"en": "12TH"
+},
+{
+"id": 518,
+"ctx": "SM_HASHTAG_HASHFLAG_2",
+"en": "AVFC"
+},
+{
+"id": 519,
+"ctx": "FIFACam_Tele",
+"en": "Tele"
+},
+{
+"id": 520,
+"ctx": "Ball_upper",
+"en": "BALL"
+},
+{
+"id": 521,
+"ctx": "SC_NUMPAD2",
+"en": "Pad2"
+},
+{
+"id": 522,
+"ctx": "news_injury_type_sprained_knee",
+"en": "Knee"
+},
+{
+"id": 523,
+"ctx": "Dusk",
+"en": "Dusk"
+},
+{
+"id": 524,
+"ctx": "ONL_GAME_SPEED_3",
+"en": "Slow"
+},
+{
+"id": 525,
+"ctx": "TablePosition_29",
+"en": "29th"
+},
+{
+"id": 526,
+"ctx": "SM_HASHTAG_CHANTS_13",
+"en": "Toon"
+},
+{
+"id": 527,
+"ctx": "Cost",
+"en": "Cost"
+},
+{
+"id": 528,
+"ctx": "CLUB_COMMENTARY_NAME_200074",
+"en": "CSKA"
+},
+{
+"id": 529,
+"ctx": "weather_3",
+"en": "Rain"
+},
+{
+"id": 530,
+"ctx": "FUT_KNEE_HEALING",
+"en": "KNEE"
+},
+{
+"id": 531,
+"ctx": "SM_HASHTAG_HASHFLAG_14",
+"en": "NFFC"
+},
+{
+"id": 532,
+"ctx": "StickLabelLeftDown_1",
+"en": "Down"
+},
+{
+"id": 533,
+"ctx": "TXT_TAB_SOCIAL_SHORT",
+"en": "NEWS"
+},
+{
+"id": 534,
+"ctx": "CardShop",
+"en": "Shop"
+},
+{
+"id": 535,
+"ctx": "SC_WAKE",
+"en": "Wake"
+},
+{
+"id": 536,
+"ctx": "tourny_Agg_upper",
+"en": "AGG."
+},
+{
+"id": 537,
+"ctx": "FUT_CHALKTUT_SBC_CHALL3_CLUB",
+"en": "Club"
+},
+{
+"id": 538,
+"ctx": "VK_BACK_upper",
+"en": "BACK"
+},
+{
+"id": 539,
+"ctx": "FUT_IB_CHALKTUT_FORM",
+"en": "Form"
+},
+{
+"id": 540,
+"ctx": "SDB_SURVEY1_Q2_A2",
+"en": "Phil"
+},
+{
+"id": 541,
+"ctx": "txt_move",
+"en": "Move"
+},
+{
+"id": 542,
+"ctx": "CLUB_COMMENTARY_NAME_4208",
+"en": "Rayo"
+},
+{
+"id": 543,
+"ctx": "SM_HASHTAG_HASHFLAG_10",
+"en": "MCFC"
+},
+{
+"id": 544,
+"ctx": "OSDK_PRESENCE_IDLE",
+"en": "Idle"
+},
+{
+"id": 545,
+"ctx": "LeanBodyType",
+"en": "Lean"
+},
+{
+"id": 546,
+"ctx": "TablePosition_39",
+"en": "39th"
+},
+{
+"id": 547,
+"ctx": "OSDK_EMAIL_DOTORG",
+"en": ".org"
+},
+{
+"id": 548,
+"ctx": "FUT_HoldingAvoidRelegation",
+"en": "HOLD"
+},
+{
+"id": 549,
+"ctx": "CreatePlayerAccessoryColour_9",
+"en": "Pink"
+},
+{
+"id": 550,
+"ctx": "CLUB_COMMENTARY_NAME_200070",
+"en": "Cork"
+},
+{
+"id": 551,
+"ctx": "SoccnernetNewsBreadcrumb",
+"en": "News"
+},
+{
+"id": 552,
+"ctx": "OSDK_SENT",
+"en": "Sent"
+},
+{
+"id": 553,
+"ctx": "SoccerFormationPosition_RCAM_upper",
+"en": "RCAM"
+},
+{
+"id": 554,
+"ctx": "TablePosition_31",
+"en": "31st"
+},
+{
+"id": 555,
+"ctx": "Z_SC_KANA",
+"en": "KANA"
+},
+{
+"id": 556,
+"ctx": "SoccerFormationPosition_LCAM",
+"en": "LCAM"
+},
+{
+"id": 557,
+"ctx": "CLUB_COMMENTARY_NAME_4100",
+"en": "Fury"
+},
+{
+"id": 558,
+"ctx": "SM_HASHTAG_HASHFLAG_18",
+"en": "COYS"
+},
+{
+"id": 559,
+"ctx": "OSDK_OL_COL_TEAM",
+"en": "Team"
+},
+{
+"id": 560,
+"ctx": "MatchTypeTOTW_upper",
+"en": "TOTW"
+},
+{
+"id": 561,
+"ctx": "CLUB_COMMENTARY_NAME_200125",
+"en": "Hull"
+},
+{
+"id": 562,
+"ctx": "VK_DONE_upper",
+"en": "DONE"
+},
+{
+"id": 563,
+"ctx": "FUT_PLAY_MATCH",
+"en": "PLAY"
+},
+{
+"id": 564,
+"ctx": "FUT_UC_RARE",
+"en": "RARE"
+},
+{
+"id": 565,
+"ctx": "TablePosition_35",
+"en": "35th"
+},
+{
+"id": 566,
+"ctx": "Kits",
+"en": "Kits"
+},
+{
+"id": 567,
+"ctx": "EAST",
+"en": "EAST"
+},
+{
+"id": 568,
+"ctx": "TablePosition_caps_26",
+"en": "26TH"
+},
+{
+"id": 569,
+"ctx": "TablePosition_40",
+"en": "40th"
+},
+{
+"id": 570,
+"ctx": "mid_left",
+"en": "Left"
+},
+{
+"id": 571,
+"ctx": "OTP_AWAY",
+"en": "Away"
+},
+{
+"id": 572,
+"ctx": "Snow",
+"en": "Snow"
+},
+{
+"id": 573,
+"ctx": "OSDK_Edit",
+"en": "Edit"
+},
+{
+"id": 574,
+"ctx": "LOC_TOURN_ELG_SCOPE_0",
+"en": "Min."
+},
+{
+"id": 575,
+"ctx": "TablePosition_19",
+"en": "19th"
+},
+{
+"id": 576,
+"ctx": "CLUB_COMMENTARY_NAME_200050",
+"en": "Bury"
+},
+{
+"id": 577,
+"ctx": "Ovl_Appearances",
+"en": "APPS"
+},
+{
+"id": 578,
+"ctx": "FUT_UC_LOSER_EX",
+"en": "LOST"
+},
+{
+"id": 579,
+"ctx": "Show",
+"en": "Show"
+},
+{
+"id": 580,
+"ctx": "PlayerAge_title",
+"en": "Age:"
+},
+{
+"id": 581,
+"ctx": "CLUB_COMMENTARY_NAME_4192",
+"en": "PAOK"
+},
+{
+"id": 582,
+"ctx": "Then",
+"en": "then"
+},
+{
+"id": 583,
+"ctx": "TablePosition_caps_22",
+"en": "22ND"
+},
+{
+"id": 584,
+"ctx": "ProfileStat_129",
+"en": "ET 1"
+},
+{
+"id": 585,
+"ctx": "SM_SOURCE_FAN_GENERAL_SUBTOPIC_MATCH_DAY_AFTER_WIN_6",
+"en": "Win."
+},
+{
+"id": 586,
+"ctx": "FUT_TYPE",
+"en": "Type"
+},
+{
+"id": 587,
+"ctx": "SC_LWIN",
+"en": "LWin"
+},
+{
+"id": 588,
+"ctx": "TXT_ONLINE_CUPS_DAYS",
+"en": "Days"
+},
+{
+"id": 589,
+"ctx": "TablePosition_11",
+"en": "11th"
+},
+{
+"id": 590,
+"ctx": "OSDK_Rank",
+"en": "Rank"
+},
+{
+"id": 591,
+"ctx": "Long",
+"en": "Long"
+},
+{
+"id": 592,
+"ctx": "Z_SC_HOME",
+"en": "Home"
+},
+{
+"id": 593,
+"ctx": "TablePosition_15",
+"en": "15th"
+},
+{
+"id": 594,
+"ctx": "FIWC_Ball",
+"en": "Ball"
+},
+{
+"id": 595,
+"ctx": "VOIP_TOGGLE_MUTE",
+"en": "Mute"
+},
+{
+"id": 596,
+"ctx": "FUT2_ESTABBR",
+"en": "EST."
+},
+{
+"id": 597,
+"ctx": "FUT_GH_GOLDPACK_0",
+"en": "GOLD"
+},
+{
+"id": 598,
+"ctx": "VK_CAPS",
+"en": "Caps"
+},
+{
+"id": 599,
+"ctx": "FUT_UC_HEAD",
+"en": "HEAD"
+},
+{
+"id": 600,
+"ctx": "SDB_MOM",
+"en": "MOTM"
+},
+{
+"id": 601,
+"ctx": "VOIP_VOLUME_UP",
+"en": "Vol+"
+},
+{
+"id": 602,
+"ctx": "Swap",
+"en": "Swap"
+},
+{
+"id": 603,
+"ctx": "Load",
+"en": "LOAD"
+},
+{
+"id": 604,
+"ctx": "CLUB_COMMENTARY_NAME_4030",
+"en": "Boca"
+},
+{
+"id": 605,
+"ctx": "FUT_PACK",
+"en": "Pack"
+},
+{
+"id": 606,
+"ctx": "Aggregate_Abbr2",
+"en": "(ag)"
+},
+{
+"id": 607,
+"ctx": "TXT_EASFC_MATCH_TYPE_5",
+"en": "OTP "
+},
+{
+"id": 608,
+"ctx": "SM_HASHTAG_CHANTS_7",
+"en": "COYB"
+},
+{
+"id": 609,
+"ctx": "Side",
+"en": "Side"
+},
+{
+"id": 610,
+"ctx": "ReplayTypeMissedShot_upper",
+"en": "MISS"
+},
+{
+"id": 611,
+"ctx": "ManufacturerVoit",
+"en": "Voit"
+},
+{
+"id": 612,
+"ctx": "Game",
+"en": "Game"
+},
+{
+"id": 613,
+"ctx": "GTN_Area_caps",
+"en": "AREA"
+},
+{
+"id": 614,
+"ctx": "OSDK_JUL_EX",
+"en": "July"
+},
+{
+"id": 615,
+"ctx": "CM_Wage_Caps",
+"en": "WAGE"
+},
+{
+"id": 616,
+"ctx": "CM_Name",
+"en": "Name"
+},
+{
+"id": 617,
+"ctx": "TXT_PASS",
+"en": "Pass"
+},
+{
+"id": 618,
+"ctx": "moralepoor",
+"en": "Poor"
+},
+{
+"id": 619,
+"ctx": "Stat",
+"en": "Stat"
+},
+{
+"id": 620,
+"ctx": "tm_ChanceCreationPassing0",
+"en": "Safe"
+},
+{
+"id": 621,
+"ctx": "Neck",
+"en": "Neck"
+},
+{
+"id": 622,
+"ctx": "TXT_EASFC_STORE_GROUPTYPE_KITS",
+"en": "KITS"
+},
+{
+"id": 623,
+"ctx": "SM_HASHTAG_HASHFLAG_1797",
+"en": "rufc"
+},
+{
+"id": 624,
+"ctx": "CLUB_COMMENTARY_NAME_200019",
+"en": "Bari"
+},
+{
+"id": 625,
+"ctx": "TablePosition_caps_36",
+"en": "36TH"
+},
+{
+"id": 626,
+"ctx": "QuitGame",
+"en": "Exit"
+},
+{
+"id": 627,
+"ctx": "June_upper",
+"en": "JUNE"
+},
+{
+"id": 628,
+"ctx": "ReplayTypeGoal",
+"en": "Goal"
+},
+{
+"id": 629,
+"ctx": "FUT_MINS",
+"en": "Mins"
+},
+{
+"id": 630,
+"ctx": "StickLabelRightLeft_23",
+"en": "Full"
+},
+{
+"id": 631,
+"ctx": "CM_talk_to_press_FORM",
+"en": "FORM"
+},
+{
+"id": 632,
+"ctx": "SDB_ST_GOALSCONCEDED",
+"en": "GLSC"
+},
+{
+"id": 633,
+"ctx": "CM_Role",
+"en": "Role"
+},
+{
+"id": 634,
+"ctx": "SM_HASHTAG_NICKNAME_9",
+"en": "Reds"
+},
+{
+"id": 635,
+"ctx": "CM_BO_HIGH_upper",
+"en": "HIGH"
+},
+{
+"id": 636,
+"ctx": "CLUB_COMMENTARY_NAME_4065",
+"en": "City"
+},
+{
+"id": 637,
+"ctx": "TablePosition_caps_32",
+"en": "32ND"
+},
+{
+"id": 638,
+"ctx": "Lead",
+"en": "LEAD"
+},
+{
+"id": 639,
+"ctx": "tourny_SortColumn",
+"en": "Sort"
+},
+{
+"id": 640,
+"ctx": "Z_SC_NUMPAD7",
+"en": "Pad7"
+},
+{
+"id": 641,
+"ctx": "FUT_Sale",
+"en": "SALE"
+},
+{
+"id": 642,
+"ctx": "GTN_hubWage",
+"en": "Wage"
+},
+{
+"id": 643,
+"ctx": "Save",
+"en": "SAVE"
+},
+{
+"id": 644,
+"ctx": "SM_HASHTAG_CHANTS_1952",
+"en": "CTID"
+},
+{
+"id": 645,
+"ctx": "TXT_ONLINE_CUPS_HUB_HOUR",
+"en": "HOUR"
+},
+{
+"id": 646,
+"ctx": "TXT_EASFC_MATCH_TYPE_30",
+"en": "FIWC"
+},
+{
+"id": 647,
+"ctx": "OSDK_EAL_TIME",
+"en": "Time"
+},
+{
+"id": 648,
+"ctx": "OSDK_CLUBS_COL_FROM",
+"en": "From"
+},
+{
+"id": 649,
+"ctx": "Z_SC_NUMPAD3",
+"en": "Pad3"
+},
+{
+"id": 650,
+"ctx": "FUT_DEAL",
+"en": "DEAL"
+},
+{
+"id": 651,
+"ctx": "ProfileStat_130",
+"en": "ET 2"
+},
+{
+"id": 652,
+"ctx": "tm_DefencePressure0_upper",
+"en": "DEEP"
+},
+{
+"id": 653,
+"ctx": "Chin",
+"en": "Chin"
+},
+{
+"id": 654,
+"ctx": "SM_HASHTAG_HASHFLAG_1792",
+"en": "NCFC"
+},
+{
+"id": 655,
+"ctx": "TablePosition_caps_33",
+"en": "33RD"
+},
+{
+"id": 656,
+"ctx": "FUT_UC_LOSS",
+"en": "LOSS"
+},
+{
+"id": 657,
+"ctx": "Name",
+"en": "NAME"
+},
+{
+"id": 658,
+"ctx": "TeamNickname_12_FullChar",
+"en": "Boro"
+},
+{
+"id": 659,
+"ctx": "FUT_MC_PLAYSTYLE_5",
+"en": "Hawk"
+},
+{
+"id": 660,
+"ctx": "CM_None_Upper",
+"en": "NONE"
+},
+{
+"id": 661,
+"ctx": "WEEK",
+"en": "WEEK"
+},
+{
+"id": 662,
+"ctx": "OSDK_DNF",
+"en": "DNF%"
+},
+{
+"id": 663,
+"ctx": "Post",
+"en": "Post"
+},
+{
+"id": 664,
+"ctx": "FUT_GH_BRONZEPACK_1",
+"en": "PACK"
+},
+{
+"id": 665,
+"ctx": "TablePosition_caps_37",
+"en": "37TH"
+},
+{
+"id": 666,
+"ctx": "PlayerPreferredFoot_abbr6_upper",
+"en": "FOOT"
+},
+{
+"id": 667,
+"ctx": "FUT_SECONDS",
+"en": "Secs"
+},
+{
+"id": 668,
+"ctx": "SM_HASHTAG_HASHFLAG_106",
+"en": "SAFC"
+},
+{
+"id": 669,
+"ctx": "TablePosition_caps_23",
+"en": "23RD"
+},
+{
+"id": 670,
+"ctx": "Gold",
+"en": "Gold"
+},
+{
+"id": 671,
+"ctx": "Boot",
+"en": "Boot"
+},
+{
+"id": 672,
+"ctx": "CreateGenericPlayerBoot_1_14_14",
+"en": "Grey"
+},
+{
+"id": 673,
+"ctx": "goalie_save",
+"en": "Save"
+},
+{
+"id": 674,
+"ctx": "FUT_TRANSFER_COST_upper",
+"en": "COST"
+},
+{
+"id": 675,
+"ctx": "TXT_HEADTOHEAD_SEMI",
+"en": "SEMI"
+},
+{
+"id": 676,
+"ctx": "LOC_TOURN_ELG_SCOPE_1",
+"en": "Max."
+},
+{
+"id": 677,
+"ctx": "StickLabelRightDown_20",
+"en": "Thin"
+},
+{
+"id": 678,
+"ctx": "TablePosition_18",
+"en": "18th"
+},
+{
+"id": 679,
+"ctx": "Quit",
+"en": "QUIT"
+},
+{
+"id": 680,
+"ctx": "OSDK_SIZE",
+"en": "Size"
+},
+{
+"id": 681,
+"ctx": "FUT_GH_WATCHLIST_1",
+"en": "LIST"
+},
+{
+"id": 682,
+"ctx": "TablePosition_caps_27",
+"en": "27TH"
+},
+{
+"id": 683,
+"ctx": "Lost",
+"en": "Lost"
+},
+{
+"id": 684,
+"ctx": "FreeTransfer_abbr",
+"en": "Free"
+},
+{
+"id": 685,
+"ctx": "TablePosition_14",
+"en": "14th"
+},
+{
+"id": 686,
+"ctx": "VK_CAPS_upper",
+"en": "CAPS"
+},
+{
+"id": 687,
+"ctx": "XDraws",
+"en": "D%1d"
+},
+{
+"id": 688,
+"ctx": "HardAllCaps",
+"en": "HARD"
+},
+{
+"id": 689,
+"ctx": "LogoKit10",
+"en": "LK10"
+},
+{
+"id": 690,
+"ctx": "OSDK_VIEW",
+"en": "View"
+},
+{
+"id": 691,
+"ctx": "FUT_SKIP",
+"en": "Skip"
+},
+{
+"id": 692,
+"ctx": "TablePosition_10",
+"en": "10th"
+},
+{
+"id": 693,
+"ctx": "FUT_GH_DELETECLUB_1",
+"en": "CLUB"
+},
+{
+"id": 694,
+"ctx": "fade",
+"en": "Fade"
+},
+{
+"id": 695,
+"ctx": "LeftWingBack_FIFA _abbr3",
+"en": "LWB "
+},
+{
+"id": 696,
+"ctx": "CreatePlayerFacialHairType_7",
+"en": "Tuft"
+},
+{
+"id": 697,
+"ctx": "Easy",
+"en": "Easy"
+},
+{
+"id": 698,
+"ctx": "tourny_Position",
+"en": "Pos."
+},
+{
+"id": 699,
+"ctx": "EasyAllCaps",
+"en": "EASY"
+},
+{
+"id": 700,
+"ctx": "FUT_TEAM",
+"en": "TEAM"
+},
+{
+"id": 701,
+"ctx": "TablePosition_38",
+"en": "38th"
+},
+{
+"id": 702,
+"ctx": "tm_ChanceCreationCrossing2",
+"en": "Lots"
+},
+{
+"id": 703,
+"ctx": "SM_HASHTAG_HASHFLAG_11",
+"en": "MUFC"
+},
+{
+"id": 704,
+"ctx": "TXT_FUT_GIFT_TYPE_2",
+"en": "Item"
+},
+{
+"id": 705,
+"ctx": "FUT_StartFrom",
+"en": "FROM"
+},
+{
+"id": 706,
+"ctx": "TXT_WITH",
+"en": "WITH"
+},
+{
+"id": 707,
+"ctx": "FUT_MC_HEAD",
+"en": "Head"
+},
+{
+"id": 708,
+"ctx": "SoccerFormationPosition_LCDM",
+"en": "LCDM"
+},
+{
+"id": 709,
+"ctx": "OSDK_CNTRY_TD",
+"en": "Chad"
+},
+{
+"id": 710,
+"ctx": "SM_MINS_UPPER",
+"en": "MINS"
+},
+{
+"id": 711,
+"ctx": "PreferredFootLeft_lc",
+"en": "left"
+},
+{
+"id": 712,
+"ctx": "FIFA",
+"en": "Fifa"
+},
+{
+"id": 713,
+"ctx": "Draw",
+"en": "Draw"
+},
+{
+"id": 714,
+"ctx": "BetaStringFIFAName",
+"en": "BETA"
+},
+{
+"id": 715,
+"ctx": "Pace",
+"en": "Pace"
+},
+{
+"id": 716,
+"ctx": "TablePosition_34",
+"en": "34th"
+},
+{
+"id": 717,
+"ctx": "StickLabelRightUp_19",
+"en": "Over"
+},
+{
+"id": 718,
+"ctx": "Wait",
+"en": "Wait"
+},
+{
+"id": 719,
+"ctx": "Menu",
+"en": "MENU"
+},
+{
+"id": 720,
+"ctx": "missed_shot",
+"en": "SHOT"
+},
+{
+"id": 721,
+"ctx": "tm_BuildUpSpeed0_upper",
+"en": "SLOW"
+},
+{
+"id": 722,
+"ctx": "PlainKit10",
+"en": "PK10"
+},
+{
+"id": 723,
+"ctx": "Bald",
+"en": "Bald"
+},
+{
+"id": 724,
+"ctx": "OSDK_HOST",
+"en": "Host"
+},
+{
+"id": 725,
+"ctx": "PG_ATTRIB_CAT_PACE",
+"en": "PACE"
+},
+{
+"id": 726,
+"ctx": "OSDK_CNTRY_GU",
+"en": "Guam"
+},
+{
+"id": 727,
+"ctx": "TablePosition_30",
+"en": "30th"
+},
+{
+"id": 728,
+"ctx": "TablePosition_24",
+"en": "24th"
+},
+{
+"id": 729,
+"ctx": "OSDK_TS_CHAT",
+"en": "Chat"
+},
+{
+"id": 730,
+"ctx": "Player_Rarity_4",
+"en": "Hero"
+},
+{
+"id": 731,
+"ctx": "ovl_card",
+"en": "Card"
+},
+{
+"id": 732,
+"ctx": "CreatePlayerHairStyle_64",
+"en": "Neat"
+},
+{
+"id": 733,
+"ctx": "Substitutes_Abbr4",
+"en": "Subs"
+},
+{
+"id": 734,
+"ctx": "ReplayTypePost_upper",
+"en": "POST"
+},
+{
+"id": 735,
+"ctx": "Role_upper",
+"en": "ROLE"
+},
+{
+"id": 736,
+"ctx": "TablePosition_20",
+"en": "20th"
+},
+{
+"id": 737,
+"ctx": "SubstituteIn",
+"en": "(In)"
+},
+{
+"id": 738,
+"ctx": "OSDK_CNTRY_PE",
+"en": "Peru"
+},
+{
+"id": 739,
+"ctx": "RightStickTitle_23",
+"en": "Bulk"
+},
+{
+"id": 740,
+"ctx": "TablePosition_28",
+"en": "28th"
+},
+{
+"id": 741,
+"ctx": "BootManufacturerNike",
+"en": "Nike"
+},
+{
+"id": 742,
+"ctx": "news_injury_type_pulled_quad",
+"en": "Quad"
+},
+{
+"id": 743,
+"ctx": "XLosses",
+"en": "L%1d"
+},
+{
+"id": 744,
+"ctx": "TXT_EASFC_DATE",
+"en": "Date"
+},
+{
+"id": 745,
+"ctx": "TablePosition_caps_13",
+"en": "13TH"
+},
+{
+"id": 746,
+"ctx": "SM_HASHTAG_HASHFLAG_3",
+"en": "brfc"
+},
+{
+"id": 747,
+"ctx": "TablePosition_caps_17",
+"en": "17TH"
+},
+{
+"id": 748,
+"ctx": "CMYS_Hire",
+"en": "Hire"
+},
+{
+"id": 749,
+"ctx": "OSDK_LOSS",
+"en": "Loss"
+}
+]

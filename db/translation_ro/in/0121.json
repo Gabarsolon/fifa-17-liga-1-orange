@@ -1,0 +1,597 @@
+[
+{
+"id": 29558,
+"ctx": "CM_Email_PG_PlayerWithPotentialPlaying",
+"en": "Hi Gaffer.\\r\\nJust wanted to let you know that %1s is making excellent progress. It's great to see that you know a quality footballer when you see one.\\r\\nKeep playing him, he still has lots to learn and I am sure he will keep making quick strides forward as long as he gets enough playing time.\\r\\nCheers,\\nAssistant Manager"
+},
+{
+"id": 29559,
+"ctx": "news_body_formstories_MID_good_4",
+"en": "\\n\\n<ManagerName2> has targeted one danger man in the middle from his upcoming opponents <TeamName1> and that is the <PlayerAge1> year old <FullPlayerName1> who is currently going through a purple patch that is winning him many accolades. <TeamName2> boss <ManagerName2> is obviously looking at shackling the <TeamName1> man."
+},
+{
+"id": 29560,
+"ctx": "FIFAsong_33",
+"en": "“Chariots”\\r\\nPerformed by Paper Route\\r\\nWritten by JT Daly, Chad Howat, Nate Campany and Nick Aranda\\r\\nPublished by Prescription Songs administered by Kobalt Music Publishing America, Inc., Universal Music Publishing and Copyright Control \\r\\nRecording courtesy of Kemosabe Records by arrangement with Sony Music Licensing"
+},
+{
+"id": 29561,
+"ctx": "SUB_VO_TEAMSELECT_PALACE_GEN",
+"en": "{C:MICHAEL}{0.34-6.81}Palace. A team that’s trying to go places. Problem is, they were way too inconsistent last season.{7.61-13.04}For a young lad like you The Eagles could be a good fit and they’ll be looking for a top ten finish minimum.{13.75-16.68}Chances are you’d get lots of opportunities to get minutes on the pitch."
+},
+{
+"id": 29562,
+"ctx": "News_Body_ImportantMatch_Cup_QuarterFinal_BigvsAverage_Higher_Won_1",
+"en": "It's <TeamName5> who have progressed to this year's <CompetitionName> semi-final. In a tense quarter-final, that finished %1s-%2s, where the winners always looked to be by far the stronger of the two teams, they managed to win through %1s-%2s against a visibly distraught <TeamName6> who had done so well to make it this far."
+},
+{
+"id": 29563,
+"ctx": "news_body_poorrun_nogoal_prematch_4",
+"en": "\"All the fans of <TeamName1> will be rooting for their troubled <PreferredPos1> <FullPlayerName1> who has managed a horrible %1s game goal drought. \"\"I'm going out there with a clear head and a lot of time in front of the net in practices\"\", stated the <Nationality> born player, \"\"I've got to get this monkey off my back.\"\"\""
+},
+{
+"id": 29564,
+"ctx": "news_body_newmanager_arrives_manageratrisk_1",
+"en": "\\n\\n<UserName> will have to skip the celebration as the season is fast approaching and starting strong will be key to winning over skeptical <TeamName1> fans. World class teams like <TeamName1> come with world class expectations and only time will tell if he'll be the next great boss to leave his mark on <TeamName1> history."
+},
+{
+"id": 29565,
+"ctx": "tm_PresetStyle2Descr",
+"en": "Classic possession football. The team will move up the pitch when the opportunity presents itself, but keeping the ball will be of paramount importance. Players will opt to support more than going on forward runs.\\nThis is a tactic used by teams who are comfortable on the ball, patient, and like to play a short passing game."
+},
+{
+"id": 29566,
+"ctx": "News_Body_ImportantMatch_Cup_Generic_BigvsAverage_Higher_Won_1",
+"en": "It's <TeamName5> who have triumphed in their latest match in this year's <CompetitionName>. In a tense match that finished %1s-%2s, where the winners always looked to be by far the stronger of the two teams, they managed to win through %1s-%2s against a visibly distraught <TeamName6> who had done so well to make it this far."
+},
+{
+"id": 29567,
+"ctx": "News_Body_ImportantMatch_League_Mid_FirstvsSecond_Lower_Won_1",
+"en": "It was a bit early to call this a potential championship decider, but it was the top two going head to head and it was <TeamName5> who clawed back ground on the leaders by claiming the three points, against a disappointing <TeamName6> who must now wonder if they have the character to bounce back from this significant defeat."
+},
+{
+"id": 29568,
+"ctx": "cm_news_item_matchobjective_pass_1",
+"en": "\"%2s's manager has praised %1s's passing ability the past few matches. \"\"Earlier in the season, %1s and I had  a discussion of what my expectations were and one of them was to control the midfield with good distribution which I can say he has been doing very well lately. I'm very content with his play,\"\" stated the manager.\""
+},
+{
+"id": 29569,
+"ctx": "PlayerFeedbackPopUp_PlayerAnnouncingRetirement_Retires_3",
+"en": "Boss. I'll get straight to the point. I'm going to retire, it feels the right thing to do for myself and my family. I'll miss the daily banter with the lads and yourself, but I've made my mind up. If possible I'd love to be able to play a part in the final game, so I can say goodbye to the fans. I hope that will be possible."
+},
+{
+"id": 29570,
+"ctx": "cm_news_item_matchobjective_creategoals_1",
+"en": "\"%2s's manager was quick to announce praise for %3s %1s for his recent displays in the past few matches. \"\"He seems to have a knack for being in on any goals we score,\"\" said the manager. The manager went on to state that he hopes the %2s %3s's performances will increase his confidence and bring him into a good run of form.\""
+},
+{
+"id": 29571,
+"ctx": "news_body_weakspot_stage2_MID_1",
+"en": "Midfielders have the burden of both containing the oppositions advances before reaching defenders and creating scoring opportunities for the men upfront. Having said this the deficiencies in the current <TeamName1> midfield are glaring and with the transfer window quickly approaching here are a few players that fit the bill."
+},
+{
+"id": 29572,
+"ctx": "news_item_id_sss_Avoid_Relegation_2",
+"en": "Relegation was not what %1s fans would have been expecting at the start of the season, but now that they have secured their %2s spot, they want to put it all behind them. ''Next season needs to be different, hopefully the lads will now step up their game after experiencing a near relegation situation,'' explained %1s manager."
+},
+{
+"id": 29573,
+"ctx": "news_body_LMTR_TransferRequested_4",
+"en": "<TeamName> last night were mulling over a transfer request from <Nationality> <PreferredPos1> <FullPlayerName> as a number of clubs were rumoured to be lining up bids. <TeamName> are acutely aware that keeping the player will not do any good for the team's morale, but will be determined not to allow him to leave on the cheap."
+},
+{
+"id": 29574,
+"ctx": "CM_News_TransferRumour_Body_3",
+"en": "\"Initial reports claim that %1s are keen to sign %2s. The %3s %6s is also allegedly being tracked by a number of other teams. %1s hope to strengthen their squad by landing the %5s-year old from %7s. The %1s boss was not very forthcoming to the press about his interest, just saying that %4s was amongst the club's \"\"targets.\"\"\""
+},
+{
+"id": 29575,
+"ctx": "CONNECTION_LOST_PC_SWITCH_FOCUS",
+"en": "Connection to your opponent has been lost as a result of switching focus off of the game. Pressing Alt + Tab or similar functions that minimizes or switches focus off of the game while in game play will result in a disconnect. For more information, please visit:\\nhttp://help.ea.com/en-us/help/fifa/fifa-17/fifa-17-known-issues"
+},
+{
+"id": 29576,
+"ctx": "PlayerFeedbackPopUp_ForeignPlayerWantsToLeave_HATESCOUNTRY_4",
+"en": "The country is a strange place to me, boss. I hope you can see why I might be unsettled. I'm just not sure I will ever be able to feel at home here. If it's not the weather, it's the food. The whole place is doing my head in and I just wanted to talk it through with you so we might be able to come to some kind of arrangement."
+},
+{
+"id": 29577,
+"ctx": "News_Body_ImportantMatch_League_Late_FirstvsThirdtoFifth_Draw_1",
+"en": "In what could be a significant result, the league leaders were held to a draw by <TeamName4> as they missed out on a chance to stretch their lead at the top of the table. <TeamName4> were good value for their point, as they prevented <TeamName3> from playing the brand of football that has taken them to the summit this season."
+},
+{
+"id": 29578,
+"ctx": "SUB_3_SC_1200_1_B",
+"en": "{C:SUSAN WELLES}{1.03-5.12}I'm sure none of you need reminding about your league position. {6.19-9.60}Relegation is now a very real possibility. {10.38-15.34}I can hardly believe our predicament given where we were just a few months ago. {16.11-22.08}This may not be the biggest club in the world, but we belong in this league."
+},
+{
+"id": 29579,
+"ctx": "news_body_request_loan_requestaccepted_2",
+"en": "With the opportunity of first team football at <TeamName1> limited for <PreferredPos1> <FullPlayerName1>, the <PlayerAge> year old <PreferredPos1> has requested a loan move. <ManagerName1>, never one to stand in a players way, accepted the players request stating he'd do his utmost to try and help him get the move he desired."
+},
+{
+"id": 29580,
+"ctx": "FUT_DEMO_SPLASH_DESCRIPTION_3",
+"en": "In FUT 17 you’ll be able to try out some of the most highly sought after Players in the game right away by signing them to your Club on loan! \\n Sign Loan Players for a set amount of matches and use them wisely during their Loan Contract’s duration to win a big Tournament Final or get the decisive win to clinch a Season Title."
+},
+{
+"id": 29581,
+"ctx": "SUB_SS_U_STARPRAISE_6",
+"en": "{0.23-7.02}{C:KAREN}Alex Hunter has surprised a lot of people this season. A word on his, seemingly sudden, success.{7.11-18.25}{F}{C:ANGEL DI MARIA}Well, I think Alex… I think he has an incredible future.\\nHe's working really hard, little by little he'll continue to improve. He's young, so I think he has an incredible future."
+},
+{
+"id": 29582,
+"ctx": "News_Item_BadPreseasonGoodMatch_Tier1_4",
+"en": "Talking to the press in the week, <FullPlayerName> had said he wasn't overly concerned with his performances in the warm up games, it was when the season started for real that really counted. He was true to his word, as he was one of the best performers on the park in the first match of the season, to prove his doubters wrong."
+},
+{
+"id": 29583,
+"ctx": "SUB_SS_U_WARN_CALM_C",
+"en": "{C:ALEX}{1.12-7.65}Doesn't really matter now does it? My problems are my problems. I just need to perform on the pitch.{C:BUTLER}{8.04-11.73}If that's the way you want to look at it that's fine. {11.73-15.99}Just remember: You performing is what counts. So you better start soon, all right?{C:ALEX}{17.11-19.10}Yeah, Mr. Butler."
+},
+{
+"id": 29584,
+"ctx": "SUB_SS_U_EPL_GF_2_C",
+"en": "{C:ALEX}{0.11-4.02}Been that way since I was ten, Mr. Butler. Just comes natural.{C:BUTLER}{4.08-9.00}You're a good player, Hunter. Just be sure you have the skill to back up that chat, yeah?{C:ALEX}{9.10-12.00}Well, I think my play on the pitch does my talking for me.{C:BUTLER}{13.49-15.99}Time will tell, lad. Time will tell."
+},
+{
+"id": 29585,
+"ctx": "News_Item_BadPreseasonGoodMatch_Tier1_3",
+"en": "Much of the speculation before the game was whether <ManagerName> would keep faith with <FullPlayerName> given he had hardly set the world alight in pre-season. The <TeamName> boss decided to give his <PreferredPos1> another chance to find his form, and he was rewarded with an excellent display from the man from <Nationality>."
+},
+{
+"id": 29586,
+"ctx": "news_body_intmanager_postmatch_secondmatch_won_3",
+"en": "\"<UserName> will be pleased today after his <TeamName1> side beat <TeamName2> in only his second match in charge of the team. <UserName> was clearly happy and it shone through in his post match interview \"\"The boys did themselves proud today. The performance wasn't perfect but we're definitely moving in the right direction.\"\"\""
+},
+{
+"id": 29587,
+"ctx": "News_Item_PlayerReinjured_2",
+"en": "\"<ManagerName> took a big risk on the fitness of <FullPlayerName> and it backfired as his <PreferredPos1> suffered a recurrence of the injury that kept him out in the first place. \"\"Yeah, on reflection I might not have done that, but it's too late now, he wanted to play, we thought it was a risk worth taking.\"\" said the boss.\""
+},
+{
+"id": 29588,
+"ctx": "news_body_pfr_speculation_goodform_3",
+"en": "\\n\\n<PlayerName1> can feel justifiably aggrieved that he faces the chop in order to accommodate the manager's new signing <PlayerName2>. Recent performances have seen <PlayerName1> go from strength to strength but in spite of this it looks certain that his future involvement at <TeamName1> will be looking on from the sidelines."
+},
+{
+"id": 29589,
+"ctx": "Bundesliga_Description",
+"en": "Ensure that you correctly choose your country of residence below. If you progress to the Live Final and you are not a resident of the country you've selected, you will be disqualified. Registered users found cheating will be banned and removed from the competition. Please find the Terms and Conditions at virtuelle.bundesliga.de"
+},
+{
+"id": 29590,
+"ctx": "PlayerFeedbackPopUp_DecisionToStay_HATESWEATHER_2",
+"en": "I'm sorry about the stories that appeared in the press. I made some throwaway line about how cold and wet it was here compared to where I was born and raised and my words were twisted. I feel like such a fool. I hope you'll forgive me and let me prove myself in the team. I really didn't want to leave at this stage of my career."
+},
+{
+"id": 29591,
+"ctx": "News_Item_GoodPreseasonNotPicked_Tier3_2",
+"en": "\"Despite some match winning performances in pre-season, <FullPlayerName> was left out of the team for the season opener. \"\"Yes it was disappointing not to get a chance, as I thought I'd done well in the warm up games\"\", he said. \"\"But I'll keep my head down, work hard in training, and hope to be given a chance at some stage.\"\"\""
+},
+{
+"id": 29592,
+"ctx": "news_body_lost_lostteamprogress_doingwell_3",
+"en": "\"The loss of a player usually causes most teams to experience the butterfly effect, but <TeamName1> have managed to pull off an impressive set of results. \"\"Determination, commitment and belief have been fundamental in our progress. I can't describe how proud I am of the team\"\" were the words of a very emotional <ManagerName1>.\""
+},
+{
+"id": 29593,
+"ctx": "SUB_1_SC_0320_1",
+"en": "{C:GEORGE}{2.97-3.85}Hunter. {6.16-10.75}Listen, I know you fancy yourself as a bit of a multi-dimensional player that can play anywhere, {11.30-14.38}but today you get to choose which position's best for you. {14.85-18.60}So put your best foot forward. Impress these scouts, all right, lad? {18.89-20.98}So what's it going to be?"
+},
+{
+"id": 29594,
+"ctx": "FUT_QUEST_SWAP_PLAYER_DESCRIPTION_NAV_BIG",
+"en": "On the Squad screen, select a player and bring up the Actions menu. Choose Swap Player, then use the filters to find the type of player you want to swap into your squad from your Club. \\nAdditionally, you can also bring a player from your club into your squad by highlighting an empty position and selecting the Add Player option."
+},
+{
+"id": 29595,
+"ctx": "news_body_newmanager_postmatch_secondmatch_won_2",
+"en": "\\n\\nIt's early days yet in the <TeamName1> career of <UserName>, but this victory can only prove to his critics that he has the tools to get the most out of the players at his disposal. The upcoming games will give him a better chance to assess his squads strengths and weaknesses which may see him delve into the transfer market."
+},
+{
+"id": 29596,
+"ctx": "PlayerFeedbackPopUp_DecisionToLeave_HATESCOUNTRY_2",
+"en": "I've given it my best shot, boss, but I just don't like it here and I want to leave. I know you'll be annoyed but that can't be helped. I want to go somewhere I feel more suited to. I hope you won't stand in my way. I've spoken to my agent and he says it might take a while. I'm still committed to you and the team while I'm here."
+},
+{
+"id": 29597,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_Transfered_HATESWEATHER_4",
+"en": "<FullPlayerName> is a finally a <TeamName> player after inking a %1s year contract that sees the <PreferredPos1> move from <TeamName2> in a transfer deal worth a reported <Currency>.\\n<PlayerName> had been widely expected to move after publicly doubting his ability to adjust to weather conditions far colder than he was used to. "
+},
+{
+"id": 29598,
+"ctx": "News_Body_ImportantMatch_Cup_SemiFinal_BigvsSmall_Higher_Won_1",
+"en": "To nobody's surprise, it's <TeamName5> who have progressed to this year's <CompetitionName> final. In a semi-final, that finished %1s-%2s, where the winners always looked to be a class above their opponents, they managed to win through %1s-%2s against a brave <TeamName6> who have had an amazing run in the tournament this season."
+},
+{
+"id": 29599,
+"ctx": "news_body_manageroffer_otheroffersmade_2",
+"en": "\\n\\nIt's been a testing few weeks for the <TeamName1> board as a number of clubs have attempted to prise their talismanic manager away without any success. The latest bid to lure <ManagerName1> away could be seen as the biggest test yet for a board who are eager to carry on with the success brought during <ManagerName1>'s reign."
+},
+{
+"id": 29600,
+"ctx": "SUB_PM_A1_S_GOAL",
+"en": "{C:KAREN WALSTON}{0.19-6.72}Alex, a dream debut for you. I bet you couldn't have imagined you'd be stood here talking with us today. {7.04-13.54}A couple of months ago you were on the fringes of the squad. Then a couple of injuries and suddenly you're on the first team. {14.26-17.16}How does it feel to have scored on your debut?"
+},
+{
+"id": 29601,
+"ctx": "news_body_lost_replaceplayerprogress_doingpoorly_3",
+"en": "The team has had to adjust to the chopping and changing line up since the departure of <PlayerName2>. With his experience and talent gone we have struggled to rebalance the team. But we're hopeful that <PlayerName1> can adjust to the <PreferredPos1> role given more time was the statement of a clearly worried <TeamName1> manager."
+},
+{
+"id": 29602,
+"ctx": "News_Body_ImportantMatch_League_Won_FirstvsBottom_1",
+"en": "Already crowned Champions <TeamName1> may have their league season already determined but <TeamName2> will be hoping <TeamName1> will not be playing in top gear so they can get a extra points on the board. The <TeamName1> fans have a lot to sing about but fans of <TeamName2> will hope to spoil the party at least for a short time."
+},
+{
+"id": 29603,
+"ctx": "news_body_newmanager_prematch_debut_4",
+"en": "\"\\n\\nAfter a string of friendly games under the manager's belt, <UserName> will be looking forward clinching his first competitive win. \"\"This is the real test for the players. As long as they don't become arrogant and stay focused we will succeed. There is no room for error as we will be punished\"\" declared <TeamName>'s manager.\""
+},
+{
+"id": 29604,
+"ctx": "SUB_1_SC_0400_2",
+"en": "{C:CATHERINE}{0.92-2.71}Oh come on, tell him!{C:ALEX}{2.77-3.50}Tell me what?{C:MICHAEL}{4.00-10.06}As soon as you signed with me I started putting out the feelers. Seems like you've been making quite the impression.{C:ALEX}{10.07-11.31}What? You got me an offer?{C:MICHAEL}{11.45-12.45}One or two!{C:ALEX}{12.50-14.87}Ha! For real?"
+},
+{
+"id": 29605,
+"ctx": "CM_Email_ContractRebel_SellHimNow_Body_2",
+"en": "The Board held a meeting last night, and the unanimous decision was that <FullPlayerName> cannot be allowed to continue at this football club and drag our name through the media on a daily basis.\\r\\nWe are instructing you as our employee to sell this disruptive influence and secure a decent price for him.\\r\\nThe Board of Directors."
+},
+{
+"id": 29606,
+"ctx": "News_Item_InjuredPlayer_PlayingBad_TeamLoses_2",
+"en": "The buzz around the ground before kick off, was the difference that returning <FullPlayerName> would make to the team. But as the <TeamName> fans traipsed off home at the end of proceedings, they were looking back on a less than impressive performance from <PlayerName> who would have hoped for far better on his long awaited return."
+},
+{
+"id": 29607,
+"ctx": "SUB_VO_TEAMSELECT_MIDDLESBROUGH_GEN",
+"en": "{C:MICHAEL}{0.33-3.30}Back in the Premier League for the first time in seven years.{4.04-7.52}Boro fans have been looking for a new hero to take the club to the next level.{8.10-15.01}With plenty of match time likely if you signed for them you’d have every chance to impress the faithful and become the hero the fans are looking for."
+},
+{
+"id": 29608,
+"ctx": "cm_emails_squad_submission_tournament_reminder",
+"en": "%1s,\\r\\nThis is a reminder to let you know that you will need to submit the final list of players that will take part in the upcoming %4s for the %2s national team by %3s. You will be notified again on that day, but you should start thinking about which players you would like to bring to the tournament.\\r\\nRegards,\\n%2s FA President"
+},
+{
+"id": 29609,
+"ctx": "news_body_newmanager_prematch_thirdmatch_wonfirst_lostsecond_2",
+"en": "\"\\n\\nBack to back wins were out of reach for <TeamName> after their second match defeat but manager <UserName> is determined not to have back to back losses on his team record. \"\"Another defeat would not be an option. There is no reason why we should not win the next game the players have no excuse and the crowd will be behind us\"\"\""
+},
+{
+"id": 29610,
+"ctx": "News_Body_ImportantMatch_League_Mid_Generic_Rivals_1",
+"en": "This mid season encounter has the extra incentive for the two teams of getting one over their rivals. <TeamName1> welcome <TeamName2> for this league game, with their fans being desperate to obtain the bragging rights. <TeamName3> have the upper hand in the league this season, but that often counts for little in these type of games."
+},
+{
+"id": 29611,
+"ctx": "TalkToPress_Body_PraiseUserTeamNeither_HighTeams_4",
+"en": "\"<ManagerName> has deflected attention away from himself ahead of the upcoming game against <TeamName2>, preferring instead to give credit to the players.\\nHe said: \"\"It's really not about me, it's about them. They have a fantastic work ethic and a strong group identity and that makes managing <TeamName> a pleasure at the moment.\"\"\""
+},
+{
+"id": 29612,
+"ctx": "news_body_intmanager_prematch_thirdmatch_3",
+"en": "Manager <UserName> readies his national side for the encounter against <TeamName2>. <UserName> wants to instil <TeamName> with the same mentality to play football that he's successfully employed at his club side onto the international stage. It's this style that he hopes will achieve victory in only his third game as national coach."
+},
+{
+"id": 29613,
+"ctx": "news_body_weakspot_stage1_ATT_1",
+"en": "Regardless of <TeamName1>'s performances many fans will begin to believe that the strength in the <TeamName1> attack is lacking that certain cutting edge. While fans would want make their opinion heard and acted upon it is up to <ManagerName1> to build his team and unfortunately some of his decisions could go against public opinion."
+},
+{
+"id": 29614,
+"ctx": "CM_Email_PrestigeDown",
+"en": "Dear Mr. %1s,\\r\\nIf you don't perform well, your reputation as a manager will suffer. \\r\\nUnfortunately, this is exactly what has happened. We really hope you can get your act together and turn the ship around.\\r\\nIf not, we might have to show you the door before the end of the season.\\r\\nYours sincerely,\\nThe %2s Board of Directors"
+},
+{
+"id": 29615,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_Transfered_HATESWEATHER_1",
+"en": "The sun shone right on cue today as <FullPlayerName> inked a %1s year contract to join <TeamName> after failing to cope with the weather at <TeamName2>. The deal, worth a reported <Currency> sees an end to the saga begun after <PlayerName> let it be known that he wanted to play in a climate more similar to the one he had grown up in."
+},
+{
+"id": 29616,
+"ctx": "news_body_newmanager_postmatch_secondmatch_draw_4",
+"en": "\\n\\nAlthough eager to enter the transfer market <UserName> is determined to make sure everyone in the squad gets a fair crack of the whip before any movement in or out of the club. The players know they are fighting for a place in the team and if they don't come up to scratch <UserName> will have no qualms about getting new faces in."
+},
+{
+"id": 29617,
+"ctx": "PlayerFeedbackPopUp_ForeignPlayerWantsToLeave_HOMESICK_3",
+"en": "I wanted to explain to you that I'm not entirely happy here at the moment and feeling a bit homesick. I like the lads, and everything, and everyone here has tried really hard to make me feel welcome, but I'm just not sure it's working out for me. I respect you as a manager and I wanted to make sure you knew exactly how I was feeling."
+},
+{
+"id": 29618,
+"ctx": "news_body_manager_internationaloffer_otheroffersmade_1",
+"en": "\\n\\nSpeculation over the future of <ManagerName1> has been rife over recent weeks. Considering the earlier offer from <TeamName2> the <TeamName1> boss might now have a bit of a testing dilemma to solve. How would he divide his time between his club management and his international duties? The ball is firmly in <ManagerName1>'s court."
+},
+{
+"id": 29619,
+"ctx": "news_body_lost_lostplayerprogress_doingaverage_2",
+"en": "\"Fans haven't been overly impressed with their new signing since forking out <Currency1> recently. When asked about his performances <PlayerName1> simply replied \"\"I don't want to let anyone down. The club and manager are behind me one hundred percent. If they weren't I wouldn't be here. It's just going to take a little more time.\"\"\""
+},
+{
+"id": 29620,
+"ctx": "News_Body_ImportantMatch_Cup_SemiFinal_BigvsSmall_Lower_Won_1",
+"en": "Incredibly it's <TeamName5> who have won through to this year's <CompetitionName> final. In a tense semi-final, where the winners looked to have no hope at all, they somehow managed to produce another amazing performance to win through %1s-%2s against overwhelming favourites <TeamName6> who were certain that this would be their year."
+},
+{
+"id": 29621,
+"ctx": "FIFAsong_23",
+"en": "“Jusfayu” feat. No Wyld\\r\\nPerformed by KAMAU\\r\\nWritten by Kamau Agyeman, Mo Kheir, Joe Pasco and Brandon Black\\r\\nPublished by BMG Gold Songs and Sony/ATV Tunes\\r\\nNo Wyld appears courtesy of Columbia Records\\r\\nRecording courtesy of Invisible Firm/Atlantic Recording Corp. by arrangement with Warner Music Group Video Game Licensing"
+},
+{
+"id": 29622,
+"ctx": "News_Body_ImportantMatch_League_Early_Generic_Rivals_1",
+"en": "The fans of both hosts <TeamName1> and the visitors <TeamName2> have been looking forward to this game ever since the fixture computer spluttered out its schedule  for the year. The game looks to be a significant indicator of where these two teams stand at this early stage, and could be a platform for one of them to go on a good run."
+},
+{
+"id": 29623,
+"ctx": "CM_Email_Body_StupidTransfer_Warning_3",
+"en": "This note is to ensure that you cease with the outlandish bids you have been making lately. If players of that ability were to come to this club the way it is right now, then we will all eat our hats. So bring some realism to your transfer dealings and put the club on the back pages for the correct reasons.\\r\\nThe Board of Directors."
+},
+{
+"id": 29624,
+"ctx": "CM_Email_Body_StupidTransfer_Warning_1",
+"en": "The board are not pleased with your attempted dealings in the transfer market. Please concentrate on bringing in realistic targets to improve our team. We're not going to be able to land the calibre of player that you have been attempting to bring in, and frankly you're making this club a bit of a laughing stock.\\r\\nBoard of Directors"
+},
+{
+"id": 29625,
+"ctx": "news_body_intmanager_prematch_thirdmatch_wonfirst_wonsecond_1",
+"en": "\\n\\nWith two victories already under his belt, manager <UserName>, will be looking to add to this good run against <TeamName2>. If <UserName> can gain another victory then the Football Association of <TeamName> will strongly believe they have made a terrific appointment and this series of results will only add merit to their decision."
+},
+{
+"id": 29626,
+"ctx": "SUB_PM_A1_S_WIN_1_C",
+"en": "{C:ALEX}{0.13-4.76}It's a bit of a cliché, I know, but on any given day any team can beat any other team in this league. {5.40-9.43}Uh, you know we lost a few key players, but we've got a talented squad. {9.50-14.97}The gaffer's got the tactics and the side spot on, and we've come away with a win that I think we can be very happy with."
+},
+{
+"id": 29627,
+"ctx": "news_body_intmanager_prematch_thirdmatch_lostfirst_wonsecond_4",
+"en": "\\n\\nDuring his brief career as international manager of <TeamName1>, manager <UserName>, has managed to achieve one loss and one win. Another win will surely give early indication that, under his leadership, he can build a team into a winning unit. However another loss may well rock the team's confidence at this early rebuilding stage."
+},
+{
+"id": 29628,
+"ctx": "News_Body_ForeignPlayerWantsToLeave_FrustratingFiller_HATESCOUNTRY_2",
+"en": "Wide-spread speculation involving a move for <FullPlayerName> refuses to die down despite assurances from the <TeamName> board suggesting the <PreferredPos1> is not for sale under any circumstances.\\nInsiders close to the player have hinted all is not well with <PlayerName> who, they say, is finding life difficult in his adoptive home."
+},
+{
+"id": 29629,
+"ctx": "CM_RequestLetterBody",
+"en": "Dear Members of the Board,\\nAfter carefully investigating the transfer market and our current squad, I have come to the decision that the present transfer budget will not be enough to achieve the level of success I want for this club. As a result, I hereby request that you grant me additional transfer funds for the sum specified below."
+},
+{
+"id": 29630,
+"ctx": "SM_ONBOARD_MANAGER_RATING_DESC",
+"en": "The Team Hub shows all the players' current standing on the team.\\n{I}Increase Alex's manager rating by performing well in matches and training.\\nA better manager rating increases Alex's chance of breaking into the Starting XI for the next match.\\nAlex will be selected ahead of higher rated teammates if he shows consistently good form."
+},
+{
+"id": 29631,
+"ctx": "news_body_newmanager_prematch_secondmatch_1",
+"en": "\"\\n\\n<UserName> was given a warm reception at the start of his first match and is now looking forward to his second game in charge. \"\"The crowd were wonderful at the beginning of the game and made it a lot easier for the lads to relax on the pitch. I just hope they go out there and enjoy the next match\"\" added the <TeamName1> manager.\""
+},
+{
+"id": 29632,
+"ctx": "news_body_negotiate_accept_4",
+"en": "<TeamName2> have agreed on a rumoured <Currency1> fee for <FullPlayerName1> after <TeamName1>'s counter offer was accepted. The <TeamName1> manager admitted that the price was more than fair. <TeamName1>'s fans will be looking to see if <ManagerName1> will be tempted to get in a new <PreferredPos1> to replace the <PlayerAge1>-year old."
+},
+{
+"id": 29633,
+"ctx": "News_Body_ImportantMatch_Cup_QuarterFinal_BigvsSmall_Higher_Won_1",
+"en": "To nobody's surprise, it's <TeamName5> who have progressed to this year's <CompetitionName> semi-final. In a quarter-final, that finished %1s-%2s, where the winners always looked to be a class above their opponents, they managed to win through %1s-%2s against a brave <TeamName6> who have had an amazing run in the tournament this season."
+},
+{
+"id": 29634,
+"ctx": "News_Body_ImportantMatch_League_Won_FirstvsBottom_Rivals_1",
+"en": "Already crowned Champions <TeamName1> may have their league season already determined but rivals <TeamName2> will be hoping <TeamName1> will not be playing in top gear so they can get a extra points on the board. The <TeamName1> fans have a lot to sing about but fans of <TeamName2> will hope to spoil the party at least for a short time."
+},
+{
+"id": 29635,
+"ctx": "news_body_lost_topplayer_summary_replacement_low_4",
+"en": "\\n\\nIt is doubtful <ManagerName1>'s newest attempt to woo the fans will pay off with the manager acquiring the services of <PlayerName2> as a replacement for the clubs recent departures. The <PreferredPos1> will have to step up his game if he is to win over the fans and team mates who seem doubtful that he will make a big enough impact."
+},
+{
+"id": 29636,
+"ctx": "SUB_PM_A1_S_SUB_FRIEND_B",
+"en": "{C:ALEX}{0.07-7.19}To be honest I wasn't really thinking about it. You can't let your emotions get in the way of these big opportunities, you know? {7.14-11.94}Like if you spend your time lost in the moment or focused on the past, it can pass you by. {12.52-16.44}Being able to block all that out, that's what you need to be a top player."
+},
+{
+"id": 29637,
+"ctx": "News_Body_PlayerMightRetire_3",
+"en": "Now at the ripe age of <PlayerAge>, suggestions that <FullPlayerName> is in his final season are rife.  No official word yet from the player or his agent but the player is known to have a variety of interests away from the game and he feels that he has had a long career and now might be the time to move on to the next phase of his life."
+},
+{
+"id": 29638,
+"ctx": "CM_Email_ContractRebel_SellHimNow_Body_4",
+"en": "Today we are instructing you to sell <FullPlayerName> due to the negative impact he is having at this club.\\r\\nWe are fed up of reading constant speculation about this player in the press.\\r\\nHis time to decide to commit his future to the club has passed, and he is a bad apple who must be removed.\\r\\nSell him.\\r\\nThe Board of Directors."
+},
+{
+"id": 29639,
+"ctx": "news_body_manageroffer_otheroffersmade_3",
+"en": "\\n\\nThis latest attempt to lure the <TeamName1> manager away comes hot on the heels of a number of recent enquiries about the enigmatic boss. The past few weeks have tested the resolve of <ManagerName1> and so far he has managed to resist the temptation to leave. Could this latest attempt finally prise the highly sought after boss away?"
+},
+{
+"id": 29640,
+"ctx": "news_body_manageroffer_offerrejected_2",
+"en": "\"<ManagerName1> has told press he has rejected the offer of a job at <TeamName2> and will continue to do his best to turn <TeamName1> into a major force. \"\"I just felt the time wasn't right for me to leave\"\" said the <TeamName1> boss. \"\"I have the utmost respect for everyone at <TeamName2> but it just didn't feel like the job for me.\"\"\""
+},
+{
+"id": 29641,
+"ctx": "CM_Email_Body_weakspot_stage3_ATT_1",
+"en": "Good Morning,\\n\\nWe feel your squad could do with an extra something up front and hope you can strengthen the attacking area with some new talent this transfer window. The fans and the press seem to be expecting a substantial signing this window, please speak with us if you require assistance with this.\\n\\n<TeamName1> Board of Directors"
+},
+{
+"id": 29642,
+"ctx": "news_body_internationalmanagerrumours_firstrumour_4",
+"en": "\\n\\n<ManagerName1> has been the first name on many international teams wish lists to take over as manager but <TeamName2> are thought to be leading the chase to coax him into international management. <ManagerName1> is reportedly thinking long and hard about any opportunity and, should a firm offer come in, he may very well be persuaded."
+},
+{
+"id": 29643,
+"ctx": "news_body_playeroffer_offerretracted_4",
+"en": "<FullPlayerName1>'s possible transfer to <TeamName2> has completely fallen apart. The deal looked all but done and dusted until a set of unreasonable demands conspired to cause it to collapse early this morning. It is thought that personal terms were a big issue with <TeamName2> not willing to match the contract demands of <PlayerName1>."
+},
+{
+"id": 29644,
+"ctx": "news_body_lost_topplayer_summary_replacement_high_1",
+"en": "\\n\\nThe club has given the fans an optimistic outlook with the recent acquisition of <PlayerName2>. The <PreferredPos1> has been welcomed with open arms by supporters and his team mates. With this purchase coming as a surprise to many football pundits the manager will be looking to make a statement to their opponents when they field him."
+},
+{
+"id": 29645,
+"ctx": "news_body_manager_internationaloffer_offerstalled_1",
+"en": "<TeamName2>'s search for a new manager has hit a slight bump in the road. With <ManagerName1> stalling on the offer he received from <TeamName2>, the Football Association of <TeamName2> are in a veritable limbo. Unable to offer another manager a contract their only choice is to wait it out and hope <ManagerName1> chooses to take the job."
+},
+{
+"id": 29646,
+"ctx": "TXT_EA_ACCT_UPLOAD_POSTSHIP_LOG_HELP",
+"en": "Help EA diagnose and fix crashes in FIFA by allowing EA to monitor your activities within this game. The information collected will be used by our Customer Experience team to debug software issues you report to EA and discarded afterwards. You can change this setting at any time by going to CUSTOMISE > ONLINE SETTINGS > PRIVACY SETTINGS."
+},
+{
+"id": 29647,
+"ctx": "news_body_pfr_speculation_poorform_4",
+"en": "\\n\\nSeveral abject displays from <FullPlayerName1> had caused the manager <ManagerName1> to speak candidly to the press about his recent performances and strongly suggested a change in the team line up for upcoming matches. It will be interesting to see how <PlayerName1> responds to his manager's forthright comments in the next few days."
+},
+{
+"id": 29648,
+"ctx": "Email_Recovery_Body_2",
+"en": "Boss.\\nWe've have some news on <PlayerName>'s <InjuryName> injury.\\n The injury status is currently:  <RecoveryPhase>.\\nHe will need approx. <RecoveryWeeks> before recovering completely\\nThat being said, our physio sent me the following information: <Physio_RecoveryPhase>\\n\\r\\nYou could play him. Your choice. Do you want to take the risk?"
+},
+{
+"id": 29649,
+"ctx": "CM_Email_manageratrisk_stage8_Body_2",
+"en": "<ManagerName1>,\\n\\nOn behalf of the board, I want to acknowledge all the work and dedication we have seen you bring to the club. We know you have had a lot of pressure and speculation from the press and we want to reassure you that we are behind you to carry forward the <TeamName1> legacy.\\n\\nGood Luck,\\nChairman of the Board of Directors"
+},
+{
+"id": 29650,
+"ctx": "news_body_poorrun_nogoal_prematch_11",
+"en": "\"It's now or never was the word from <FullPlayerName1> as he spoke to reporters on his way from the training grounds yesterday. \"\"I've maybe missed a couple of chances over the last games but I've played hard during practice to work out those problems.\"\" The <PlayerAge1> year old <PreferredPos1> has gone %1s games without scoring a goal.\""
+},
+{
+"id": 29651,
+"ctx": "news_body_newmanager_prematch_thirdmatch_lostfirst_drawsecond_4",
+"en": "\"\\n\\n\"\"We've got to try and get a win that's all we can do\"\" said <UserName> who added he would not be keeping track of the other scores. \"\"I'm not concerned about any of the other teams I'm here to focus on <TeamName> and the players. So that's what I'm going to do and I expect the players to keep their eye on matters in hand as well.\"\"\""
+},
+{
+"id": 29652,
+"ctx": "FUT_QUEST_CHEMISTRY_LINKS_DESCRIPTION_NAV_BIG",
+"en": "On the Squad screen, use Numpad4 and Numpad6 or move Right Stick (depending on peripheral) left or right to find the player chemistry view that shows nationality, club and league. Move players around to match 2 of their nationality, club or league. This will create a green link between them. Form 3 green links extending out from 1 player."
+},
+{
+"id": 29653,
+"ctx": "news_body_newmanager_prematch_secondmatch_4",
+"en": "\"\\n\\nWith the second game lurking round the corner <UserName> will be hoping to sweep any issues from the first game under the carpet. \"\"Well it's hard to say the game went perfectly but all in all I am proud of my team. Since the first game they have worked hard on the training ground and look like a new <TeamName>\"\" claimed the manager.\""
+},
+{
+"id": 29654,
+"ctx": "News_Body_ImportantMatch_League_Mid_Generic_Higher_Won_1",
+"en": "<TeamName5> were victorious %1s-%2s over <TeamName6> in league action. The two managers gave very different interviews after the match. The losing manager claimed a lot of 50/50 decisions went against his team, while the boss of the victors thought the referee had a good game, and his team just wanted the three points more than the losers."
+},
+{
+"id": 29655,
+"ctx": "News_Body_ImportantMatch_Cup_Generic_BigvsSmall_Higher_Won_1",
+"en": "It's <TeamName5> who have succeeded in claiming victory in the latest match of this year's <CompetitionName>. In a tense match that finished %1s-%2s, where the winners always looked to be a class above their opponents, they managed to win through %1s-%2s against a brave <TeamName6> who have had an amazing run in the tournament this season."
+},
+{
+"id": 29656,
+"ctx": "news_body_intmanager_postmatch_secondmatch_won_2",
+"en": "\"<UserName> revelled today in a good victory for his team in only his second competitive match. <TeamName> have shown they can perform when it really matters under <UserName>'s leadership. A positive <UserName> had this to say, \"\"We played well again. We moved the ball quickly and created chances. I can't ask for any more from the lads.\"\"\""
+},
+{
+"id": 29657,
+"ctx": "cm_news_item_matchobjective_allmet_3",
+"en": "\"%1s was praised early today by his manager in an interview with the club's website. \"\"%1s has been performing very well recently and I'm very impressed with his attitude and commitment to our cause. He's been an integral part of this %2s squad lately and hope he continues his impressive run for the good of our club,\"\" stated the manager.\""
+},
+{
+"id": 29658,
+"ctx": "news_body_poorrun_TransferListed_2",
+"en": "No surprise that last night saw <FullplayerName1> listed by <ManagerName1> most likely related to the <Nationality> born player's recent string of poor performances. The last match the <PlayerAge1> year old played marked the %1s consecutive uninspired match the player has taken part in a statistic that no doubt justifies the managers move."
+},
+{
+"id": 29659,
+"ctx": "CM_Email_Body_weakspot_stage3_DEF_1",
+"en": "Good Morning,\\n\\nWe feel your squad could do with an extra something at the back and hope you can strengthen the defensive area with some new talent this transfer window. The fans and the press seem to be expecting a substantial signing this window, please speak with us if you require assistance with this.\\n\\n<TeamName1> Board of Directors"
+},
+{
+"id": 29660,
+"ctx": "CM_Email_body_foullanguage_postmatch_stage2_player_2",
+"en": "<PlayerName1>,\\n\\nYour temper seems to be getting the better of you in recent matches. Please be aware that you are an ambassador for this football club and the language you have used puts us all in a bad light. Please try and refrain from using such colourful language in the future and control your overly aggressive nature.\\n<ManagerName1>"
+},
+{
+"id": 29661,
+"ctx": "TalkToPress_Body_PraiseOpponentDerbyRival_HighTeams_2",
+"en": "\"<ManagerName> Was Quick To Applaud The Efforts Of Rivals <TeamName2> Ahead Of A Clash That Takes On Extra Significance This Time.\\ntalking At A Recent Press Gathering, He Said: \"\"we Should Give Credit Where It's Due. <TeamName2> Are Not In Their Current Position By Accident And We Will Have To Be At Our Best To Handle Them When We Meet.\"\"\""
+},
+{
+"id": 29662,
+"ctx": "news_body_request_endofwindow_loanlistedinstead_1",
+"en": "After having his transfer request turned down, <FullPlayerName1> was happy he'd at least get to go out on loan. However the transfer window has now passed and <PlayerName1> was unfortunate enough to find that no club wanted to loan him. It appears he'll now need to bide his time with no chance of a move of any kind until the window reopens."
+},
+{
+"id": 29663,
+"ctx": "CM_Email_Body_weakspot_stage3_MID_1",
+"en": "Good Morning,\\n\\nWe feel your squad could do with an extra something in the middle and hope you can strengthen the midfield area with some new talent this transfer window. The fans and the press seem to be expecting a substantial signing this window, please speak with us if you require assistance with this.\\n\\n<TeamName1> Board of Directors"
+},
+{
+"id": 29664,
+"ctx": "news_body_intmanager_prematch_debut_2",
+"en": "\"As long as we play how I want the team to play then the game will be one to remember. No matter the scoreline if the lads give their all then I will be happy stated the manager ahead of his debut competitive match. <UserName> went on to add \"\"There's no reason why we shouldn't win and the team has the confidence to get the right result.\"\"\""
+},
+{
+"id": 29665,
+"ctx": "news_body_newmanager_postmatch_positive_2",
+"en": "\"\\n\\nFans have been in a state of constant euphoria since the appointment of <UserName>. \"\"It's been good to see the supporters having such a great time. I hope they continue to turn up and help the team to success\"\" stated the manager. If recent form is anything to go by then <UserName> will also pick up some new supporters along the way.\""
+},
+{
+"id": 29666,
+"ctx": "news_body_reserverequest_played_well_2",
+"en": "<ManagerName1> was obviously delighted by <FullPlayerName1> performance. The <PlayerAge1> year old from <Nationality> looked eager and put in a great showing during the game. It was pleasing for <ManagerName1> to see fringe players such as <PlayerName1> take their chance in the first team and put on such a show of poise and professionalism."
+},
+{
+"id": 29667,
+"ctx": "SUB_VO_TEAMSELECT_BURNLEY_GEN",
+"en": "{C:MICHAEL}{0.47-6.26}Winning the Championship last season will give Burnley confidence as they look to establish themselves in the Premier League.{6.95-12.89}Sign for The Clarets and you'd stand a great chance of becoming a first team regular, so long as you impress the manager.{13.51-16.54}Could be a great platform to showcase your skills."
+},
+{
+"id": 29668,
+"ctx": "news_body_player_vs_former_team_prematch_rivals_1",
+"en": "\\n\\nMatches between rivals are always heated affairs, often resulting in closely fought competitions and frayed tempers aplenty. The <PlayerAge1> year old <PreferredPos1> might be <ManagerName1>'s key to disarming his former teammates and will no doubt be drilled for any information he might have been privy to during his time at <TeamName2>."
+},
+{
+"id": 29669,
+"ctx": "News_Body_ImportantMatch_Cup_SemiFinal_Rivals_Lower_Won_1",
+"en": "A semi-final is tense enough normally, but throw two rivals together at this stage of the <CompetitionName> and sparks could fly. It ended up as <TeamName5> who won the day %1s-%2s, and progressed onto the final, against a <TeamName6> who ran their hearts out, but sadly couldn't match the endeavour and energy of their less fancied opponents."
+},
+{
+"id": 29670,
+"ctx": "News_Body_ImportantMatch_Cup_QuarterFinal_BigvsSmall_Lower_Won_1",
+"en": "Incredibly it's <TeamName5> who have won through to this year's <CompetitionName> semi-final. In a tense quarter-final, where the winners looked to have no hope at all, they somehow managed to produce another amazing performance to win through %1s-%2s against overwhelming favourites <TeamName6> who were certain that this would be their year."
+},
+{
+"id": 29671,
+"ctx": "news_dodgygoal_offside_body_4",
+"en": "\"The majority of the post match press conference was spent with <ManagerName> shaking his head about their luck surrounding the 'offside' goal his team conceded. \"\"It's disappointing, I was so sure at the time that he was offside\"\" he said. \"\"But yeah, with the benefit of replays, fair dos's, he was on side and the goal was rightly given\"\".\""
+},
+{
+"id": 29672,
+"ctx": "mail_pst_goodteam_final",
+"en": "Dear Mr. %1s,\\r\\nCongratulations on %2s of the %3s. Going deep into the tournament gave us great exposure and the entire organization will benefit from it. We're looking forward to seeing you in action once the season starts. We hope the extra transfer funds help bolster the squad even further.\\r\\nYours sincerely,\\nThe %4s Board of Directors"
+},
+{
+"id": 29673,
+"ctx": "FIFAsong_9",
+"en": "“Vowels”\\r\\nPerformed by Capital Cities\\r\\nWritten by Ryan Merchant, Sibu Simonian and Jamis Sanderson\\r\\nPublished by Sony/ATV Music Publishing and Jamie Sanderson Publishing Designee / Artist Publishing Group West (ASCAP) administered by Warner Chappell\\r\\nRecording courtesy of Capitol Records under license from Universal Music Enterprises"
+},
+{
+"id": 29674,
+"ctx": "SIMON",
+"en": "FIFA 17 is dedicated to the memory of Simon Keith Humber.\\r\\nA loving father, friend and colleague.\\r\\nFrom Ultimate Team to gameplay, Audio to Career Mode, Simon’s fingerprints can be found all over our FIFA franchise.\\r\\nHis passion and refusal to compromise nurtured creativity, talent, and made all of us better.\\r\\nA true football man.\\r\\n"
+},
+{
+"id": 29675,
+"ctx": "news_body_lost_topplayer_rivals_2",
+"en": "\"\\n\\nFans across the league were stunned by <TeamName1>'s choice to sell one of their top players to rival team, <TeamName2>. One forum member exclaimed \"\"We could have sold him to anyone else why sell him to them? It's a disgrace.\"\" A demonstration by supporters at the next home game would not be unexpected over this controversial transfer.\""
+},
+{
+"id": 29676,
+"ctx": "FUT_FIFA_POINTS_TRANSFER",
+"en": "We've noticed you have an outstanding FIFA POINTS balance in FUT 16. Would you like us to transfer it to FUT 17?\\r\\nNOTE: This is not reversible, so once you have transferred your FIFA POINTS balance you will only be able to access it within FUT 17. This is a one-time only transfer, you will not be able to transfer any more points after this."
+}
+]
