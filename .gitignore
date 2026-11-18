@@ -33,3 +33,6 @@ scratch/
 # Romanian translation scratch files
 db/translation_ro/tmp/
 db/translation_ro/built/
+
+# Release builds (published on GitHub Releases)
+releases/
