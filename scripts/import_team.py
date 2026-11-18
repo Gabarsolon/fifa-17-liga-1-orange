@@ -32,6 +32,9 @@ from db_operations import (
     port_team_extras,
     normalize_league_table,
     port_loans,
+    port_career_team_columns,
+    clean_career_leftovers,
+    apply_career_strings,
     ORIGINAL_MAX_PLAYERID,
     save_tsv,
 )
@@ -48,7 +51,7 @@ GENERIC_HEAD = os.path.join(ROOT, 'assets', 'generic', 'notfound_head.png')  # 1
 FIFA_TABLES = [
     'defaultteamdata.txt', 'default_teamsheets.txt', 'formations.txt',
     'teams.txt', 'teamkits.txt', 'players.txt', 'playernames.txt', 'teamplayerlinks.txt',
-    'leagueteamlinks.txt', 'rivals.txt', 'manager.txt', 'teamstadiumlinks.txt', 'stadiumassignments.txt', 'playerloans.txt',
+    'leagueteamlinks.txt', 'rivals.txt', 'manager.txt', 'teamstadiumlinks.txt', 'stadiumassignments.txt', 'playerloans.txt', 'previousteam.txt', 'player_grudgelove.txt',
 ]
 
 
@@ -57,7 +60,7 @@ def run(cmd, **kwargs):
     subprocess.run(cmd, check=True, **kwargs)
 
 
-def import_db(team):
+def import_db(team, args_key):
     print('1. Team details')
     replace_team_details_from_fifa17_with_ones_from_fif16(
         team.teamid_fifa17, team.teamid_fifa16, team.foundation_year, team.cityname)
@@ -77,6 +80,9 @@ def import_db(team):
     port_team_extras(team.teamid_fifa17, team.teamid_fifa16)
     normalize_league_table()
     port_loans()
+    port_career_team_columns(args_key, team.teamid_fifa17)
+    clean_career_leftovers()
+    apply_career_strings()
     print('4. Saving TSV files')
     save_tsv()
 
@@ -256,7 +262,7 @@ def main():
     if not args.skip_db:
         if not team.foundation_year:
             sys.exit(f'{team.name}: foundation_year is not set in scripts/constants.py (it is not in the FIFA 16 tables). Fill it in first.')
-        import_db(team)
+        import_db(team, args.team)
     team_dir = os.path.join(ROOT, 'assets', 'teams', args.team)
     if args.skip_assets:
         raw, final, heads = (os.path.join(team_dir, d) for d in ('f16_raw', 'final', 'heads'))

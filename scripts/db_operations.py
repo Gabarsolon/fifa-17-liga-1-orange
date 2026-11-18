@@ -17,7 +17,8 @@ def save_tsv():
     teamplayerlinks_df.to_csv(teamplayerlinks, sep='\t', encoding='utf-16le', index=False)
     for df, name in ((leagueteamlinks_df, 'leagueteamlinks'), (rivals_df, 'rivals'), (manager_df, 'manager'),
                      (teamstadiumlinks_df, 'teamstadiumlinks'), (stadiumassignments_df, 'stadiumassignments'),
-                     (playerloans_df, 'playerloans')):
+                     (playerloans_df, 'playerloans'), (previousteam_df, 'previousteam'),
+                     (player_grudgelove_df, 'player_grudgelove')):
         df.to_csv(os.path.join(os.path.dirname(__file__), '..', 'db', name + '.txt'), sep='\t', encoding='utf-16le', index=False)
 
 def replace_team_details_from_fifa17_with_ones_from_fif16(fifa17_teamid, fifa16_teamid, foundation_year, cityname):
@@ -569,6 +570,78 @@ def port_loans():
         playerloans_df.loc[len(playerloans_df)] = [lender, f17_player, end]
         added.append((f17_player, lender, current, end))
     return added
+
+
+CAREER_FIT_MODELS = None
+
+
+def fit_career_models(exclude_teamids):
+    """Models for the FIFA 17-only Career columns of `teams`, fitted on the untouched teams: clubworth (log-linear in the team
+    overall, r = 0.86) and popularity (linear in domestic prestige + overall, r = 0.81). profitability and youthdevelopment
+    cannot be predicted (r 0.37 / 0.15): they get the game median (6 / 5)."""
+    import numpy as np
+    a = teams_df[~teams_df.teamid.isin(exclude_teamids)]
+    a = a[(a.overallrating > 0) & (a.clubworth > 0)]
+    models = {}
+    X = np.column_stack([a.overallrating.astype(float), np.ones(len(a))])
+    models['clubworth'] = np.linalg.lstsq(X, np.log(a.clubworth.astype(float)), rcond=None)[0]
+    X = np.column_stack([a.domesticprestige.astype(float), a.overallrating.astype(float), np.ones(len(a))])
+    models['popularity'] = np.linalg.lstsq(X, a.popularity.astype(float), rcond=None)[0]
+    return models
+
+
+def port_career_team_columns(key, fifa17_teamid):
+    """teams.clubworth/popularity/profitability/youthdevelopment/domesticcups/leaguetitles/teamstadiumcapacity held the replaced
+    Danish club's values (Craiova had Copenhagen's club worth 105000). Estimated from the squad rating as above; titles, cups
+    and stadium capacity are real facts from constants.TEAM_FACTS when present (end of 2015-16)."""
+    global CAREER_FIT_MODELS
+    import numpy as np
+    if CAREER_FIT_MODELS is None:
+        CAREER_FIT_MODELS = fit_career_models({int(t.teamid_fifa17) for t in liga1orange_teams.values()})
+    row = teams_df.index[teams_df.teamid == fifa17_teamid][0]
+    overall, prestige = float(teams_df.loc[row, 'overallrating']), float(teams_df.loc[row, 'domesticprestige'])
+    a, b = CAREER_FIT_MODELS['clubworth']
+    teams_df.loc[row, 'clubworth'] = int(round(float(np.exp(a * overall + b)) / 100.0) * 100)
+    c = CAREER_FIT_MODELS['popularity']
+    teams_df.loc[row, 'popularity'] = int(min(10, max(1, round(c[0] * prestige + c[1] * overall + c[2]))))
+    teams_df.loc[row, 'profitability'] = 6
+    teams_df.loc[row, 'youthdevelopment'] = 5
+    facts = TEAM_FACTS.get(key)
+    if facts:
+        teams_df.loc[row, 'leaguetitles'] = facts['league_titles']
+        teams_df.loc[row, 'domesticcups'] = facts['cup_wins']
+        teams_df.loc[row, 'teamstadiumcapacity'] = facts['capacity']
+
+
+def clean_career_leftovers():
+    """Rows of Career tables that still named the Danish clubs of our slots: the players' `previousteam` history (150 rows, other
+    leagues' players showing an ex-Romanian club) and `player_grudgelove` (2 rows)."""
+    global previousteam_df, player_grudgelove_df
+    ours = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
+    previousteam_df = previousteam_df[~previousteam_df.previousteamid.isin(ours)].reset_index(drop=True)
+    player_grudgelove_df = player_grudgelove_df[~player_grudgelove_df.emotional_teamid.isin(ours)].reset_index(drop=True)
+
+
+def set_string(stringid, text):
+    mask = languagestrings_df.stringid == stringid
+    if not mask.any():
+        raise KeyError(stringid)
+    languagestrings_df.loc[mask, 'sourcetext'] = text
+
+
+def apply_career_strings():
+    """Danish names that stayed in the strings: the Danish cup, the city of Astra's slot (Silkeborg), the league ball."""
+    set_string('TrophyName_215', 'Cupa României')
+    set_string('TrophyName_Abbr15_215', 'Cupa României')
+    for team in liga1orange_teams.values():
+        if team.cityname:
+            teams = teams_df[teams_df.teamid == team.teamid_fifa17]
+            set_string(f'CityName_{int(teams.iloc[0].cityid)}_FullChar', team.cityname)
+    set_string('BallName_117', 'Liga 1 Orange Official Ball')
+    # 2016/17 names (AGENTS.md rule 11): FRLT still has the 2015/16 short name CSMS Iasi; the club was CSM Politehnica Iasi
+    # again from 2016-07-22 and is called Poli Iasi.
+    for sid in ('TeamName_Abbr15_1447', 'TeamName_Abbr10_1447', 'CT_TeamName_1447'):
+        set_string(sid, 'Poli Iași')
 
 
 def normalize_league_table():

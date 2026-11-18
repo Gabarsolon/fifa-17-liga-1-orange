@@ -20,8 +20,8 @@ class Player:
         return f"{self.playerid} {self.firstname} {self.lastname}"
 
 liga1orange_teams = {
-    'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947),
-    'astra': Team(270, 130026, "Astra", foundation_year=1921),
+    'fcsb' : Team(269, 106000, "FCSB", foundation_year=1947, cityname="București"),
+    'astra': Team(270, 130026, "Astra", foundation_year=1921, cityname="Giurgiu"),
     'cfr': Team(271, 130023, "CFR", foundation_year=1907, cityname="Cluj-Napoca"),
     'viitorul': Team(272, 130024, "Viitorul", foundation_year=2009, cityname="Constanța"),
     'craiova': Team(819, 130021, "Craiova", foundation_year=2013, cityname="Craiova"),
@@ -79,3 +79,22 @@ home_kitid = 0
 away_kitid = 1
 nitza = 240007
 nitza_sub = 198455
+
+# Career facts at the START of 2016/17 (end of 2015-16), from Wikipedia via agyp (2026-11-18): Liga I titles, Cupa Romaniei wins as the
+# club counts them, capacity of the stadium used in 2016/17. Used by db_operations.port_career_team_columns.
+TEAM_FACTS = {
+    'fcsb': {'league_titles': 26, 'cup_wins': 22, 'capacity': 55634},
+    'astra': {'league_titles': 1, 'cup_wins': 1, 'capacity': 8500},
+    'cfr': {'league_titles': 3, 'cup_wins': 4, 'capacity': 23500},
+    'viitorul': {'league_titles': 0, 'cup_wins': 0, 'capacity': 4554},
+    'craiova': {'league_titles': 4, 'cup_wins': 5, 'capacity': 7000},
+    'dinamo': {'league_titles': 18, 'cup_wins': 13, 'capacity': 15032},
+    'poli': {'league_titles': 0, 'cup_wins': 2, 'capacity': 32972},
+    'botosani': {'league_titles': 0, 'cup_wins': 0, 'capacity': 7782},
+    'pandurii': {'league_titles': 0, 'cup_wins': 0, 'capacity': 20054},  # played at the Severin stadium (FRLT: Stadionul Municipal Severin)
+    'poli_iasi': {'league_titles': 0, 'cup_wins': 0, 'capacity': 11390},
+    'voluntari': {'league_titles': 0, 'cup_wins': 0, 'capacity': 4600},
+    'chiajna': {'league_titles': 0, 'cup_wins': 0, 'capacity': 5123},
+    'gazmetan': {'league_titles': 0, 'cup_wins': 0, 'capacity': 7814},
+    'asa': {'league_titles': 0, 'cup_wins': 0, 'capacity': 8200},
+}
