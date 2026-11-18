@@ -89,9 +89,9 @@ TEAM_FACTS = {
     'viitorul': {'league_titles': 0, 'cup_wins': 0, 'capacity': 4554},
     'craiova': {'league_titles': 4, 'cup_wins': 5, 'capacity': 7000},
     'dinamo': {'league_titles': 18, 'cup_wins': 13, 'capacity': 15032},
-    'poli': {'league_titles': 0, 'cup_wins': 2, 'capacity': 32972},
+    'poli': {'league_titles': 0, 'cup_wins': 2, 'capacity': 32972},  # cups 1958 (Stiinta Timisoara) and 1980 (Politehnica), confirmed by the user's web check
     'botosani': {'league_titles': 0, 'cup_wins': 0, 'capacity': 7782},
-    'pandurii': {'league_titles': 0, 'cup_wins': 0, 'capacity': 20054},  # played at the Severin stadium (FRLT: Stadionul Municipal Severin)
+    'pandurii': {'league_titles': 0, 'cup_wins': 0, 'capacity': 20054},  # Severin stadium (2015-2017 home, FRLT: Stadionul Municipal Severin); 20054 = nominal after the 2009 renovation; 18878 is today's LPF homologation, not used (rule 11)
     'poli_iasi': {'league_titles': 0, 'cup_wins': 0, 'capacity': 11390},
     'voluntari': {'league_titles': 0, 'cup_wins': 0, 'capacity': 4600},
     'chiajna': {'league_titles': 0, 'cup_wins': 0, 'capacity': 5123},
