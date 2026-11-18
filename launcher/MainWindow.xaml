@@ -1,0 +1,150 @@
+<Window x:Class="Liga1Orange.Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Liga 1 Orange 2016/17 · Launcher" Width="780" Height="800" MinWidth="700" MinHeight="660"
+        WindowStartupLocation="CenterScreen" Background="{StaticResource BgBrush}"
+        Icon="Assets/icon.ico" FontFamily="Segoe UI" UseLayoutRounding="True" SnapsToDevicePixels="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header with the logo and the tricolour line -->
+        <Border Grid.Row="0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#13203F" Offset="0" />
+                    <GradientStop Color="#0D1117" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+                <Grid Margin="32,26,32,18">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel VerticalAlignment="Center">
+                        <Border Background="White" CornerRadius="10" Padding="10,6" HorizontalAlignment="Left">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#000000" BlurRadius="16" ShadowDepth="2" Opacity="0.4" />
+                            </Border.Effect>
+                            <Image Source="Assets/logo.png" MaxHeight="58" RenderOptions.BitmapScalingMode="HighQuality" />
+                        </Border>
+                        <TextBlock Text="Sezonul 2016/17 pentru FIFA 17" Margin="2,10,0,0" FontSize="15"
+                                   Foreground="{StaticResource MutedBrush}" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <TextBlock x:Name="ModVersionText" Text="Mod: —" FontSize="12" HorizontalAlignment="Right"
+                                   Foreground="{StaticResource MutedBrush}" />
+                        <TextBlock x:Name="LauncherVersionText" Text="Launcher 1.0" FontSize="12" Margin="0,2,0,0"
+                                   HorizontalAlignment="Right" Foreground="{StaticResource MutedBrush}" />
+                    </StackPanel>
+                </Grid>
+                <Grid Height="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition /><ColumnDefinition /><ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="#002B7F" /><Rectangle Grid.Column="1" Fill="#FCD116" /><Rectangle Grid.Column="2" Fill="#CE1126" />
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="32,24,32,16">
+
+                <!-- Game folder -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock Text="JOCUL" FontSize="11" FontWeight="SemiBold" Foreground="{StaticResource YellowBrush}" />
+                        <Grid Margin="0,10,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock x:Name="GamePathText" Text="Folderul FIFA 17 nu a fost găsit" FontSize="14"
+                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                            <Button x:Name="BrowseButton" Grid.Column="1" Content="Alege folderul…"
+                                    Style="{StaticResource GhostButton}" Margin="12,0,0,0" Click="BrowseButton_Click" />
+                        </Grid>
+                        <WrapPanel Margin="0,14,0,0">
+                            <TextBlock x:Name="ChipExe" Text="● FIFA17.exe" Margin="0,0,22,4" FontSize="13" />
+                            <TextBlock x:Name="ChipCrypt" Text="● CryptBase.dll" Margin="0,0,22,4" FontSize="13" />
+                            <TextBlock x:Name="ChipAdmin" Text="● Drepturi de administrator" Margin="0,0,22,4" FontSize="13" />
+                            <TextBlock x:Name="ChipTools" Text="● Frosty" Margin="0,0,0,4" FontSize="13" />
+                        </WrapPanel>
+                        <TextBlock x:Name="CryptHint" Visibility="Collapsed" TextWrapping="Wrap" FontSize="12" Margin="0,6,0,0"
+                                   Foreground="{StaticResource WarnBrush}"
+                                   Text="Lipsește CryptBase.dll modificat din folderul jocului. Fără el FIFA 17 poate să nu pornească (vezi secțiunea Troubleshooting din README). Launcherul nu îl include." />
+                    </StackPanel>
+                </Border>
+
+                <!-- Mod -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,16,0,0">
+                    <StackPanel>
+                        <TextBlock Text="MODUL" FontSize="11" FontWeight="SemiBold" Foreground="{StaticResource YellowBrush}" />
+                        <Grid Margin="0,10,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBlock x:Name="ModText" Text="Se caută modul…" FontSize="14" />
+                                <TextBlock x:Name="UpdateText" Text="" FontSize="12" Margin="0,4,0,0" TextWrapping="Wrap"
+                                           Foreground="{StaticResource MutedBrush}" />
+                            </StackPanel>
+                            <Button x:Name="UpdateButton" Grid.Column="1" Content="Verifică actualizări"
+                                    Style="{StaticResource GhostButton}" Margin="12,0,0,0" Click="UpdateButton_Click" />
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- Play -->
+                <Button x:Name="PlayButton" Content="▶   JOACĂ  LIGA 1 ORANGE" Style="{StaticResource PrimaryButton}"
+                        Margin="0,22,0,0" Click="PlayButton_Click" />
+                <Grid Margin="0,12,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" /><ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="VanillaButton" Content="Pornește jocul original (fără mod)"
+                            Style="{StaticResource GhostButton}" Margin="0,0,6,0" Click="VanillaButton_Click" />
+                    <Button x:Name="LogFolderButton" Grid.Column="1" Content="Deschide folderul cu jurnale"
+                            Style="{StaticResource GhostButton}" Margin="6,0,0,0" Click="LogFolderButton_Click" />
+                </Grid>
+
+                <!-- Status + log -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,20,0,0" Padding="16">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Ellipse x:Name="StatusDot" Width="10" Height="10" Fill="{StaticResource OkBrush}" Margin="0,0,10,0" />
+                            <TextBlock x:Name="StatusText" Grid.Column="1" Text="Pregătit" FontSize="14" FontWeight="SemiBold" />
+                        </Grid>
+                        <ProgressBar x:Name="Busy" Height="3" Margin="0,10,0,0" IsIndeterminate="True" Visibility="Collapsed"
+                                     Foreground="{StaticResource YellowBrush}" Background="#262D38" BorderThickness="0" />
+                        <TextBox x:Name="LogBox" Margin="0,12,0,0" Height="150" IsReadOnly="True" TextWrapping="NoWrap"
+                                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                                 FontFamily="Consolas" FontSize="12" Background="#0D1117" Foreground="#9FB0C3"
+                                 BorderBrush="#262D38" Padding="8" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" BorderBrush="#1B2230" BorderThickness="0,1,0,0" Padding="32,10">
+            <Grid>
+                <TextBlock Foreground="{StaticResource MutedBrush}" FontSize="11" VerticalAlignment="Center"
+                           Text="Proiect de fani. Toate drepturile aparțin EA Sports și echipei EFET (FRLT V2). Folosește Frosty Toolsuite (GPL-3)." />
+                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11">
+                    <Hyperlink NavigateUri="https://github.com/Gabarsolon/fifa-17-liga-1-orange" RequestNavigate="Link_Navigate"
+                               Foreground="{StaticResource YellowBrush}">GitHub</Hyperlink>
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

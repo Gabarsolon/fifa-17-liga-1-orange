@@ -57,10 +57,17 @@ Latest release: [v0.3.0](https://github.com/Gabarsolon/fifa-17-liga-1-orange/rel
 
 ## 📦 Installation
 
-1. Install **FIFA 17** (PC).
-2. Install **Frosty Mod Manager**.
-3. Download `Liga1Orange-<version>.fbmod` from the [latest release](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases) and import it in the Mod Manager.
-4. Apply the mod and launch the game from Frosty.
+### Easiest: the launcher
+1. Install **FIFA 17** (PC) with the patched `CryptBase.dll` in its folder (see Troubleshooting; it is not included).
+2. Download `Liga1OrangeLauncher-<version>.zip` from the [releases](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases), unzip it anywhere (not in Program Files) and run `Liga1OrangeLauncher.exe` (it asks for administrator rights).
+3. It finds FIFA 17 (or asks for the folder) and the button **JOACĂ LIGA 1 ORANGE** applies the mod and starts the game. The first start builds a cache (~4 minutes, once). "Pornește jocul original" starts FIFA 17 without the mod.
+
+The launcher bundles a headless Frosty (`tools\`, GPL-3) and the mod; its source is in [`launcher/`](launcher/) and `scripts/package_launcher.ps1` builds the zip. It can download newer mod versions from GitHub Releases once they are public.
+
+### With Frosty Mod Manager
+1. Install **FIFA 17** (PC) and **Frosty Mod Manager**.
+2. Download `Liga1Orange-<version>.fbmod` from the [latest release](https://github.com/Gabarsolon/fifa-17-liga-1-orange/releases) and import it in the Mod Manager (not tested with the stock Mod Manager yet).
+3. Apply the mod and launch the game from Frosty.
 
 > The source of truth is `Liga1Orange.fbproject` in this repository; releases are built from it with `FrostyCmd build-mod`.
 
@@ -116,8 +123,11 @@ The three CLIs are built from the decompiled sources of the original GUI tools a
 │   ├── ro_translate.py, ro_import.py   # Romanian translation: prepare/validate/merge, inject into a project
 │   ├── translation/         # Drivers that run the translation with agyp / opencode / sub-agents
 │   ├── import_league_logo.py, league_logo_mesh.py   # 3D league logo
+│   ├── fan_flags.py, fix_hotspots.py                # fan flags/banners, kit name hotspots
+│   ├── package_launcher.ps1 # builds the launcher zip
 │   └── db_operations.py, dataframes.py, constants.py  # Table helpers and the team list
 │
+├── launcher/                # WPF launcher (source)
 ├── AGENTS.md                # Detailed project notes and findings (read this first)
 ├── .env.example             # Template for the local paths
 ├── requirements.txt

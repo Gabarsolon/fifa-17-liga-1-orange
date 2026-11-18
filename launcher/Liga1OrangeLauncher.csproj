@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Liga1OrangeLauncher</AssemblyName>
+    <RootNamespace>Liga1Orange.Launcher</RootNamespace>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Company>Gabarsolon</Company>
+    <Product>Liga 1 Orange Launcher</Product>
+    <Copyright>GPL-3.0 (uses Frosty Toolsuite)</Copyright>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <!-- The mod applies Frosty's ModData with a symbolic link, which needs administrator rights.
+       Build with -p:RequireAdmin=false only for UI development. -->
+  <PropertyGroup Condition="'$(RequireAdmin)' != 'false'">
+    <ApplicationManifest>app.admin.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RequireAdmin)' == 'false'">
+    <ApplicationManifest>app.user.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\icon.ico" />
+  </ItemGroup>
+
+</Project>
