@@ -818,6 +818,15 @@ def port_team_extras(fifa17_teamid, fifa16_teamid):
 ORIGINAL_MAX_PLAYERID = 236210  # highest playerid of the pristine FIFA 17 players table; players added by us are above it
 
 
+def remove_extra_players():
+    """Takes every player above ORIGINAL_MAX_PLAYERID (added by add_extra_players) out of his team: link deleted, team sheet and roles
+    repaired (remove_player_from_team). The `players` rows stay as orphans. Idempotent. Returns how many links were removed."""
+    extra = teamplayerlinks_df[teamplayerlinks_df.playerid > ORIGINAL_MAX_PLAYERID]
+    for _, link in extra.iterrows():
+        remove_player_from_team(int(link.teamid), int(link.playerid))
+    return len(extra)
+
+
 def add_extra_players(fifa17_teamid, fifa16_teamid):
     """Issue #25: the FIFA 17 team only has as many slots as the replaced Danish team, so the OVR selection drops the rest of
     the FIFA 16 squad. Every FIFA 16 squad member without a slot gets a NEW player row (playerid above the pristine maximum)

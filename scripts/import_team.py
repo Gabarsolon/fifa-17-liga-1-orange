@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 load_dotenv(os.path.join(ROOT, '.env'))
 
-from constants import liga1orange_teams
+from constants import ADD_EXTRA_PLAYERS, liga1orange_teams
 from db_operations import (
     replace_team_details_from_fifa17_with_ones_from_fif16,
     replace_formation_and_teamdata_from_fifa17_with_one_from_fifa16,
@@ -27,6 +27,7 @@ from db_operations import (
     player_pairs,
     apply_player_swaps,
     add_extra_players,
+    remove_extra_players,
     dedupe_jersey_numbers,
     port_lineup_and_roles,
     port_team_extras,
@@ -73,7 +74,10 @@ def import_db(team, args_key):
         print('3b. Player swaps')
         apply_player_swaps(team.teamid_fifa17, team.teamid_fifa16, team.player_swaps)
     print('3b2. Extra players: the rest of the FIFA 16 squad as new players (issue 25)')
-    add_extra_players(team.teamid_fifa17, team.teamid_fifa16)
+    if ADD_EXTRA_PLAYERS:
+        add_extra_players(team.teamid_fifa17, team.teamid_fifa16)
+    else:
+        remove_extra_players()
     dedupe_jersey_numbers(team.teamid_fifa17)
     print('3c. Lineup, positions, captain and set-piece takers (FIFA 16 ids -> FIFA 17 slot ids)')
     port_lineup_and_roles(team.teamid_fifa17, team.teamid_fifa16)

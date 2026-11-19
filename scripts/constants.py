@@ -84,6 +84,10 @@ LEAGUE_TABLE_2015_16 = ['astra', 'fcsb', 'pandurii', 'dinamo', 'viitorul', 'asa'
 # Cupa Romaniei 2015-16: CFR Cluj winner, Dinamo finalist.
 CUP_2015_16 = ['cfr', 'dinamo']
 
+# Issue #25: add the FIFA 16 squad members that have no slot as NEW players (ids above 236210). OFF since 2026-11-19: the game crashed
+# when saving a Career with them (assertion, `FIFA17.exe+0x8170438`, dump in Documents/FIFA 17/Temp); without them the save worked.
+ADD_EXTRA_PLAYERS = False
+
 nitza = 240007
 nitza_sub = 198455
 
