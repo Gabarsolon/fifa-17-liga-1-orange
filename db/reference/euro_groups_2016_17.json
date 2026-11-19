@@ -1,0 +1,528 @@
+{
+ "note": "Real 2016-17 group stage (agy, Wikipedia/UEFA). game_id = FIFA 17 team id; replaced=true when the real club is not in FIFA 17 and an in-game team stands in.",
+ "cl": {
+  "A": [
+   {
+    "team": "Paris Saint-Germain",
+    "pot": 1,
+    "game_id": 73,
+    "replaced": false
+   },
+   {
+    "team": "Arsenal",
+    "pot": 2,
+    "game_id": 1,
+    "replaced": false
+   },
+   {
+    "team": "Basel",
+    "pot": 3,
+    "game_id": 896,
+    "replaced": false
+   },
+   {
+    "team": "Ludogorets Razgrad",
+    "pot": 4,
+    "game_id": 436,
+    "replaced": true
+   }
+  ],
+  "B": [
+   {
+    "team": "Benfica",
+    "pot": 1,
+    "game_id": 234,
+    "replaced": false
+   },
+   {
+    "team": "Napoli",
+    "pot": 2,
+    "game_id": 48,
+    "replaced": false
+   },
+   {
+    "team": "Dynamo Kyiv",
+    "pot": 3,
+    "game_id": 100767,
+    "replaced": true
+   },
+   {
+    "team": "Besiktas",
+    "pot": 4,
+    "game_id": 327,
+    "replaced": false
+   }
+  ],
+  "C": [
+   {
+    "team": "Barcelona",
+    "pot": 1,
+    "game_id": 241,
+    "replaced": false
+   },
+   {
+    "team": "Manchester City",
+    "pot": 2,
+    "game_id": 10,
+    "replaced": false
+   },
+   {
+    "team": "Borussia Moenchengladbach",
+    "pot": 3,
+    "game_id": 23,
+    "replaced": false
+   },
+   {
+    "team": "Celtic",
+    "pot": 4,
+    "game_id": 78,
+    "replaced": false
+   }
+  ],
+  "D": [
+   {
+    "team": "Bayern Munich",
+    "pot": 1,
+    "game_id": 21,
+    "replaced": false
+   },
+   {
+    "team": "Atletico Madrid",
+    "pot": 2,
+    "game_id": 240,
+    "replaced": false
+   },
+   {
+    "team": "PSV Eindhoven",
+    "pot": 3,
+    "game_id": 247,
+    "replaced": false
+   },
+   {
+    "team": "Rostov",
+    "pot": 4,
+    "game_id": 110231,
+    "replaced": false
+   }
+  ],
+  "E": [
+   {
+    "team": "CSKA Moscow",
+    "pot": 1,
+    "game_id": 315,
+    "replaced": false
+   },
+   {
+    "team": "Bayer Leverkusen",
+    "pot": 2,
+    "game_id": 32,
+    "replaced": false
+   },
+   {
+    "team": "Tottenham Hotspur",
+    "pot": 3,
+    "game_id": 18,
+    "replaced": false
+   },
+   {
+    "team": "Monaco",
+    "pot": 4,
+    "game_id": 69,
+    "replaced": false
+   }
+  ],
+  "F": [
+   {
+    "team": "Real Madrid",
+    "pot": 1,
+    "game_id": 243,
+    "replaced": false
+   },
+   {
+    "team": "Borussia Dortmund",
+    "pot": 2,
+    "game_id": 22,
+    "replaced": false
+   },
+   {
+    "team": "Sporting CP",
+    "pot": 3,
+    "game_id": 237,
+    "replaced": false
+   },
+   {
+    "team": "Legia Warsaw",
+    "pot": 4,
+    "game_id": 1871,
+    "replaced": false
+   }
+  ],
+  "G": [
+   {
+    "team": "Leicester City",
+    "pot": 1,
+    "game_id": 95,
+    "replaced": false
+   },
+   {
+    "team": "Porto",
+    "pot": 2,
+    "game_id": 236,
+    "replaced": false
+   },
+   {
+    "team": "Club Brugge",
+    "pot": 3,
+    "game_id": 231,
+    "replaced": false
+   },
+   {
+    "team": "Copenhagen",
+    "pot": 4,
+    "game_id": 320,
+    "replaced": true
+   }
+  ],
+  "H": [
+   {
+    "team": "Juventus",
+    "pot": 1,
+    "game_id": 45,
+    "replaced": false
+   },
+   {
+    "team": "Sevilla",
+    "pot": 2,
+    "game_id": 481,
+    "replaced": false
+   },
+   {
+    "team": "Lyon",
+    "pot": 3,
+    "game_id": 66,
+    "replaced": false
+   },
+   {
+    "team": "Dinamo Zagreb",
+    "pot": 4,
+    "game_id": 209,
+    "replaced": true
+   }
+  ]
+ },
+ "el": {
+  "A": [
+   {
+    "team": "Manchester United",
+    "pot": 1,
+    "game_id": 11,
+    "replaced": false
+   },
+   {
+    "team": "Fenerbahce",
+    "pot": 2,
+    "game_id": 326,
+    "replaced": false
+   },
+   {
+    "team": "Feyenoord",
+    "pot": 3,
+    "game_id": 246,
+    "replaced": false
+   },
+   {
+    "team": "Zorya Luhansk",
+    "pot": 4,
+    "game_id": 100325,
+    "replaced": true
+   }
+  ],
+  "B": [
+   {
+    "team": "Olympiacos",
+    "pot": 1,
+    "game_id": 280,
+    "replaced": false
+   },
+   {
+    "team": "APOEL",
+    "pot": 2,
+    "game_id": 325,
+    "replaced": true
+   },
+   {
+    "team": "Young Boys",
+    "pot": 3,
+    "game_id": 900,
+    "replaced": false
+   },
+   {
+    "team": "Astana",
+    "pot": 4,
+    "game_id": 110227,
+    "replaced": true
+   }
+  ],
+  "C": [
+   {
+    "team": "Anderlecht",
+    "pot": 1,
+    "game_id": 229,
+    "replaced": false
+   },
+   {
+    "team": "Saint-Etienne",
+    "pot": 2,
+    "game_id": 1819,
+    "replaced": false
+   },
+   {
+    "team": "Mainz 05",
+    "pot": 3,
+    "game_id": 169,
+    "replaced": false
+   },
+   {
+    "team": "Gabala",
+    "pot": 4,
+    "game_id": 110109,
+    "replaced": true
+   }
+  ],
+  "D": [
+   {
+    "team": "Zenit Saint Petersburg",
+    "pot": 1,
+    "game_id": 100769,
+    "replaced": false
+   },
+   {
+    "team": "AZ",
+    "pot": 2,
+    "game_id": 1906,
+    "replaced": false
+   },
+   {
+    "team": "Maccabi Tel Aviv",
+    "pot": 3,
+    "game_id": 742,
+    "replaced": true
+   },
+   {
+    "team": "Dundalk",
+    "pot": 4,
+    "game_id": 837,
+    "replaced": false
+   }
+  ],
+  "E": [
+   {
+    "team": "Viktoria Plzen",
+    "pot": 1,
+    "game_id": 873,
+    "replaced": true
+   },
+   {
+    "team": "Roma",
+    "pot": 2,
+    "game_id": 52,
+    "replaced": false
+   },
+   {
+    "team": "Austria Wien",
+    "pot": 3,
+    "game_id": 256,
+    "replaced": false
+   },
+   {
+    "team": "Astra Giurgiu",
+    "pot": 4,
+    "game_id": 270,
+    "replaced": false
+   }
+  ],
+  "F": [
+   {
+    "team": "Athletic Bilbao",
+    "pot": 1,
+    "game_id": 448,
+    "replaced": false
+   },
+   {
+    "team": "Genk",
+    "pot": 2,
+    "game_id": 673,
+    "replaced": false
+   },
+   {
+    "team": "Rapid Wien",
+    "pot": 3,
+    "game_id": 254,
+    "replaced": false
+   },
+   {
+    "team": "Sassuolo",
+    "pot": 4,
+    "game_id": 111974,
+    "replaced": false
+   }
+  ],
+  "G": [
+   {
+    "team": "Ajax",
+    "pot": 1,
+    "game_id": 245,
+    "replaced": false
+   },
+   {
+    "team": "Standard Liege",
+    "pot": 2,
+    "game_id": 232,
+    "replaced": false
+   },
+   {
+    "team": "Celta Vigo",
+    "pot": 3,
+    "game_id": 450,
+    "replaced": false
+   },
+   {
+    "team": "Panathinaikos",
+    "pot": 4,
+    "game_id": 1884,
+    "replaced": false
+   }
+  ],
+  "H": [
+   {
+    "team": "Shakhtar Donetsk",
+    "pot": 1,
+    "game_id": 101059,
+    "replaced": false
+   },
+   {
+    "team": "Braga",
+    "pot": 2,
+    "game_id": 1896,
+    "replaced": false
+   },
+   {
+    "team": "Gent",
+    "pot": 3,
+    "game_id": 674,
+    "replaced": false
+   },
+   {
+    "team": "Konyaspor",
+    "pot": 4,
+    "game_id": 101033,
+    "replaced": false
+   }
+  ],
+  "I": [
+   {
+    "team": "Schalke 04",
+    "pot": 1,
+    "game_id": 34,
+    "replaced": false
+   },
+   {
+    "team": "Red Bull Salzburg",
+    "pot": 2,
+    "game_id": 191,
+    "replaced": false
+   },
+   {
+    "team": "Krasnodar",
+    "pot": 3,
+    "game_id": 112218,
+    "replaced": false
+   },
+   {
+    "team": "Nice",
+    "pot": 4,
+    "game_id": 72,
+    "replaced": false
+   }
+  ],
+  "J": [
+   {
+    "team": "Fiorentina",
+    "pot": 1,
+    "game_id": 110374,
+    "replaced": false
+   },
+   {
+    "team": "PAOK",
+    "pot": 2,
+    "game_id": 393,
+    "replaced": false
+   },
+   {
+    "team": "Slovan Liberec",
+    "pot": 3,
+    "game_id": 110770,
+    "replaced": true
+   },
+   {
+    "team": "Qarabag",
+    "pot": 4,
+    "game_id": 101014,
+    "replaced": true
+   }
+  ],
+  "K": [
+   {
+    "team": "Internazionale",
+    "pot": 1,
+    "game_id": 44,
+    "replaced": false
+   },
+   {
+    "team": "Sparta Prague",
+    "pot": 2,
+    "game_id": 100765,
+    "replaced": true
+   },
+   {
+    "team": "Southampton",
+    "pot": 3,
+    "game_id": 17,
+    "replaced": false
+   },
+   {
+    "team": "Hapoel Be'er Sheva",
+    "pot": 4,
+    "game_id": 741,
+    "replaced": true
+   }
+  ],
+  "L": [
+   {
+    "team": "Villarreal",
+    "pot": 1,
+    "game_id": 483,
+    "replaced": false
+   },
+   {
+    "team": "Steaua Bucuresti",
+    "pot": 2,
+    "game_id": 269,
+    "replaced": false
+   },
+   {
+    "team": "Zurich",
+    "pot": 3,
+    "game_id": 322,
+    "replaced": true,
+    "stand_in": "Grasshopper Club Zurich"
+   },
+   {
+    "team": "Osmanlispor",
+    "pot": 4,
+    "game_id": 112958,
+    "replaced": false
+   }
+  ]
+ }
+}
