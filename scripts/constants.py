@@ -77,6 +77,13 @@ fcsb_teamid = 269
 fifa16_fcsb_teamid = 106000
 home_kitid = 0
 away_kitid = 1
+# Final Liga I table of 2015-16 (after the play-offs; agy with Wikipedia/Transfermarkt, 2026-11-19, rule 11). Petrolul Ploiesti (14th,
+# relegated) is not in the game; Gaz Metan (promoted in 2016) takes the last place of the 14 slots.
+LEAGUE_TABLE_2015_16 = ['astra', 'fcsb', 'pandurii', 'dinamo', 'viitorul', 'asa', 'poli_iasi', 'craiova', 'cfr', 'botosani',
+                        'chiajna', 'voluntari', 'poli', 'gazmetan']
+# Cupa Romaniei 2015-16: CFR Cluj winner, Dinamo finalist.
+CUP_2015_16 = ['cfr', 'dinamo']
+
 nitza = 240007
 nitza_sub = 198455
 

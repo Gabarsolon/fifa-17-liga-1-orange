@@ -747,13 +747,12 @@ def dedupe_players():
 
 
 def normalize_league_table():
-    """The FIFA 16 league rows have repeated and missing table positions (e.g. two teams at 13). At the start of a season
-    the table follows last season: rank by previousyeartableposition, ties by team rating, positions 1..n."""
-    ours = {int(t.teamid_fifa17) for t in liga1orange_teams.values()}
-    rows = leagueteamlinks_df[leagueteamlinks_df.teamid.isin(ours)]
-    rating = teams_df.set_index('teamid').overallrating
-    order = sorted(rows.index, key=lambda i: (int(rows.loc[i, 'previousyeartableposition']), -int(rating[rows.loc[i, 'teamid']])))
-    for rank, i in enumerate(order, start=1):
+    """Career season 1 starts from the real final table of 2015-16 (`constants.LEAGUE_TABLE_2015_16`): current and previous
+    position are 1..14 in that order (the FIFA 16 rows had repeated and missing positions)."""
+    by_id = {int(liga1orange_teams[k].teamid_fifa17): rank for rank, k in enumerate(LEAGUE_TABLE_2015_16, start=1)}
+    rows = leagueteamlinks_df[leagueteamlinks_df.teamid.isin(by_id)]
+    for i in rows.index:
+        rank = by_id[int(rows.loc[i, 'teamid'])]
         leagueteamlinks_df.loc[i, 'currenttableposition'] = rank
         leagueteamlinks_df.loc[i, 'previousyeartableposition'] = rank
 
