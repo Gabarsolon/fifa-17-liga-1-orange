@@ -305,6 +305,8 @@ WPF app, .NET Framework 4.8 (nothing to install on Windows 10/11), dark theme, t
 
 - **Ad boards confirmed in game (user, 2026-11-19):** "panourile publicitare sunt ok" (league ad boards with the Liga 1 logo and "LIGA 1 ORANGE", v0.5.1). The small league logo (Career "Clasamente" tile) and #28 duplicates are still unconfirmed.
 
+- **FRLT sponsor ad boards (user: "eu zic sa le faci", 2026-11-19):** FIFA 16 FRLT has real Romanian league boards, `data/sceneassets/adboard/specificadboard_0_83_0_0.rx3` (league 83; also per-team `specificadboard_<teamid>_0_0_0.rx3` and `adboard_1<teamid>_0.rx3`, not used). The RX3 (`RX3l` container, 344-byte header) holds one 512x1024 DXT1 texture with 11 mips, 16 stripes of 64 px (same 8:1 stripe shape as FIFA 17's 1024x2048 atlas with 128 px stripes): Radio Romania, winmasters, SuperBet, Ceresit, NetBet, DentalMed, City Insurance, Suzuki, Adeplast/Look, Orange, Bel Profile, Baumit/Life, Kober, Shell Helix, Nike. `scripts/league_adboards.py` now carves it (`raw[-349544:-349544+262144]`), upscales 2x to 1024x2048 and injects it as `denmark_1/adboard_1_color` (`--own` = the older drawn Liga 1 logo version, which the user had judged OK; source PNG kept in `assets/league/adboard_frlt_512x1024.png`). Read back from the test project: correct. Real brand logos in a public repo (trademarks, same risk as the EA data); the sponsors are FRLT's (about 2015-16, not checked for 2016-17). NOT yet seen in game and NOT in a release (v0.5.1 has the drawn boards); `Liga1Orange.test.fbproject` only, the real project is untouched. Per-team boards are not handled.
+
 ## Proposed project structure (not applied, needs user OK)
 ```
 liga1/                 python package (replaces scripts/*.py)

@@ -8,6 +8,13 @@ The ad boards of a league are one atlas per league: `content/worlds/adboard/text
 "@EASPORTSDANMARK" (6), YouTube, ... a Snapchat stripe and an Instagram stripe "@EASPORTSDANMARK" (15). Only the two Danish
 stripes (6 and 15) are redrawn, with the league logo and the league name; the generic EA/FIFA stripes stay.
 The league slot is the replaced Danish league 1, so the same texture name is used.
+
+Default source (2026-11-19): the Romanian sponsor boards of FIFA 16 FRLT, `data/sceneassets/adboard/specificadboard_0_83_0_0.rx3`
+(league 83 = Liga 1). The RX3 holds one 512x1024 DXT1 texture (16 stripes of 64 px, the same 8:1 stripe shape as FIFA 17's 128 px
+stripes of 1024 px): Radio Romania, SuperBet, winmasters, Ceresit, NetBet, DentalMed, City Insurance, Suzuki, Adeplast, Orange,
+Bel Profile, Baumit, Kober, Shell Helix, Nike. The first mip is carved from the tail of the file (the container header is 344 bytes
+before the 349544 bytes of the mip chain) and upscaled 2x to 1024x2048. `--own` keeps the older drawn version (two stripes with the
+league logo and "LIGA 1 ORANGE", the rest generic EA/FIFA).
 """
 import argparse
 import glob
@@ -63,7 +70,33 @@ def text_stripe():
     return img
 
 
-def build():
+FRLT_RX3 = os.path.join('data', 'sceneassets', 'adboard', 'specificadboard_0_83_0_0.rx3')
+FRLT_PNG = os.path.join(OUT_DIR, 'adboard_frlt_512x1024.png')
+
+
+def frlt_atlas():
+    """The FRLT league board (512x1024) upscaled to the FIFA 17 atlas size. Carved from the RX3 when FIFA 16 is installed, else read
+    from the PNG kept in assets/league."""
+    import struct
+    rx3 = os.path.join(os.environ.get('FIFA16_DIR', ''), FRLT_RX3)
+    if os.path.exists(rx3):
+        raw = open(rx3, 'rb').read()
+        mip0 = raw[-349544:-349544 + 512 * 1024 // 2]
+        header = (b'DDS ' + struct.pack('<7I', 124, 0x1007 | 0x80000, 1024, 512, len(mip0), 0, 1) + bytes(44)
+                  + struct.pack('<2I4s5I', 32, 4, b'DXT1', 0, 0, 0, 0, 0) + struct.pack('<5I', 0x1000, 0, 0, 0, 0))
+        with tempfile.TemporaryDirectory() as tmp:
+            dds = os.path.join(tmp, 'frlt.dds')
+            open(dds, 'wb').write(header + mip0)
+            subprocess.run([os.environ['TEXCONV_PATH'], '-nologo', '-y', '-ft', 'png', '-o', tmp, dds], check=True, capture_output=True)
+            Image.open(os.path.join(tmp, 'frlt.png')).convert('RGB').save(FRLT_PNG)
+    if not os.path.exists(FRLT_PNG):
+        raise SystemExit(f'missing {rx3} and {FRLT_PNG}')
+    return Image.open(FRLT_PNG).convert('RGBA').resize((1024, 2048), Image.LANCZOS)
+
+
+def build(own=False):
+    if not own:
+        return frlt_atlas()
     if not os.path.exists(ORIGINAL):
         raise SystemExit(f'missing {ORIGINAL} (export it: FrostyMeshCli FIFA17 export-texture {TEXTURE} adboard.dds, then texconv -ft png)')
     atlas = Image.open(ORIGINAL).convert('RGBA')
@@ -99,8 +132,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--project', action='append', help='absolute path of a project to inject into (repeatable)')
     ap.add_argument('--no-inject', action='store_true')
+    ap.add_argument('--own', action='store_true', help='older drawn version (league logo + LIGA 1 ORANGE stripes)')
     a = ap.parse_args()
-    atlas = build()
+    atlas = build(a.own)
     png = os.path.join(OUT_DIR, 'adboard_1_color.png')
     atlas.convert('RGB').save(png)
     subprocess.run([os.environ['TEXCONV_PATH'], '-nologo', '-y', '-f', 'BC1_UNORM', '-srgb', '-ft', 'dds', '-o', OUT_DIR, png],
