@@ -91,7 +91,21 @@ def frlt_atlas():
             Image.open(os.path.join(tmp, 'frlt.png')).convert('RGB').save(FRLT_PNG)
     if not os.path.exists(FRLT_PNG):
         raise SystemExit(f'missing {rx3} and {FRLT_PNG}')
-    return Image.open(FRLT_PNG).convert('RGBA').resize((1024, 2048), Image.LANCZOS)
+    return Image.fromarray(unwrap_frlt(Image.open(FRLT_PNG).convert('RGB'))).convert('RGBA').resize((1024, 2048), Image.LANCZOS)
+
+
+def unwrap_frlt(img):
+    """The FRLT stripes are wrapped: x 404-512 holds the START of each board ("AD" of ADEPLAST, "su" of SUPERBET) and the model
+    there reads it first. FIFA 17 maps u 0..1 directly, so roll the stripe by 108 px (right piece to the front) and move that piece
+    4 px down (measured vertical offset between the two pieces; rows are clamped inside the 64 px stripe, never wrapped)."""
+    import numpy as np
+    a = np.roll(np.array(img), 108, axis=1)
+    for s in range(16):
+        y0 = s * 64
+        piece = a[y0:y0 + 64, :108].copy()
+        a[y0 + 4:y0 + 64, :108] = piece[:60]
+        a[y0:y0 + 4, :108] = piece[:1]
+    return a
 
 
 def build(own=False):
