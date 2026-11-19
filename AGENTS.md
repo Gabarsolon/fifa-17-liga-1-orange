@@ -303,6 +303,8 @@ WPF app, .NET Framework 4.8 (nothing to install on Windows 10/11), dark theme, t
 
 - **Season-1 European seed does not work (user test 2026-11-19):** with `initteams.txt` nodes 353/335 set (Astra champion, CFR cup winner) a NEW Career did not put Astra in the Champions League. Left in the mod as is, nothing else done ("lasa-l asa"); the v0.5.1 release notes say it has no effect. Possible reason: the Career seeds the competition tables from the database (`leagueteamlinks`/standings), not from `initteams.txt`; not investigated. Whether the real 2015-16 order shows in the standings was not reported.
 
+- **Ad boards confirmed in game (user, 2026-11-19):** "panourile publicitare sunt ok" (league ad boards with the Liga 1 logo and "LIGA 1 ORANGE", v0.5.1). The small league logo (Career "Clasamente" tile) and #28 duplicates are still unconfirmed.
+
 ## Proposed project structure (not applied, needs user OK)
 ```
 liga1/                 python package (replaces scripts/*.py)
